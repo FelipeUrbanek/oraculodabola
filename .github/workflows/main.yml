@@ -1,0 +1,50 @@
+name: Oráculo da Bola - Automação Total
+
+on:
+  schedule:
+    - cron: '*/30 * * * *' # Roda a cada 30 minutos
+  workflow_dispatch: # Permite rodar manualmente
+
+jobs:
+  run-oracle:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v3
+        with:
+          version: 9
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'pnpm'
+
+      - name: Install Dependencies
+        run: pnpm install
+
+      - name: Install Chrome (for Puppeteer)
+        run: pnpm exec puppeteer browsers install chrome
+
+      - name: Run Oráculo Engine
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          FB_ACCESS_TOKEN: ${{ secrets.FB_ACCESS_TOKEN }}
+          FB_APP_ID: ${{ secrets.FB_APP_ID }}
+          FB_APP_SECRET: ${{ secrets.FB_APP_SECRET }}
+          CLOUDINARY_CLOUD_NAME: ${{ secrets.CLOUDINARY_CLOUD_NAME }}
+          CLOUDINARY_API_KEY: ${{ secrets.CLOUDINARY_API_KEY }}
+          CLOUDINARY_API_SECRET: ${{ secrets.CLOUDINARY_API_SECRET }}
+        run: npx tsx main.ts
+
+      - name: Commit and Push Changes
+        run: |
+          git config --global user.name "Oráculo Bot"
+          git config --global user.email "bot@ooraculodabola.com"
+          git add .
+          git commit -m "🔮 Oráculo: Novos posts gerados [$(date +'%Y-%m-%d %H:%M')]" || echo "Nenhuma mudança para comitar"
+          git push
