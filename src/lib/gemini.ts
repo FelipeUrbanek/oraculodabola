@@ -35,6 +35,22 @@ export async function processNewsWithGemini(title: string, snippet: string): Pro
 
   const result = await model.generateContent(prompt);
   const response = await result.response;
-  const text = response.text();
-  return JSON.parse(text.replace(/```json|```/g, ""));
+  const text = response.text().replace(/```json|```/g, "").trim();
+  let parsedResult = JSON.parse(text);
+
+  // Validação de segurança: Se a legenda for muito grande, tenta gerar de novo mais curta
+  if (parsedResult.caption.length > 2100) {
+    console.log(`⚠️ Legenda muito longa (${parsedResult.caption.length} chars). Tentando reduzir...`);
+    const retryPrompt = `${prompt}\n\nIMPORTANTE: A legenda anterior ficou muito longa. Gere uma versão mais concisa, com no máximo 1800 caracteres.`;
+    const retryResult = await model.generateContent(retryPrompt);
+    const retryText = retryResult.response.text().replace(/```json|```/g, '').trim();
+    parsedResult = JSON.parse(retryText);
+  }
+
+  // Corte final de segurança (Hard Limit)
+  if (parsedResult.caption.length > 2200) {
+    parsedResult.caption = parsedResult.caption.substring(0, 2190) + "...";
+  }
+
+  return parsedResult;
 }

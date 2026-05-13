@@ -76,7 +76,7 @@ export async function resolveAndScrapeImage(googleUrl: string): Promise<{ finalU
 
 export async function fetchFootballNews(): Promise<NewsItem[]> {
   try {
-    const query = encodeURIComponent('(futebol brasileiro OR "Real Madrid" OR "Barcelona" OR "Premier League" OR "Neymar" OR "Cristiano Ronaldo" OR "Arábia Saudita" OR "Mercado da Bola") -site:ge.globo.com (site:uol.com.br OR site:tntsports.com.br OR site:espn.com.br OR site:trivela.com.br) when:1h');
+    const query = encodeURIComponent('(futebol brasileiro OR "Real Madrid" OR "Barcelona" OR "Premier League" OR "Neymar" OR "Cristiano Ronaldo" OR "Arábia Saudita" OR "Mercado da Bola") -site:ge.globo.com (site:uol.com.br OR site:tntsports.com.br OR site:espn.com.br OR site:trivela.com.br OR site:lance.com.br OR site:terra.com.br OR site:gazetaesportiva.com OR site:goal.com) when:1h');
     const feed = await parser.parseURL(`https://news.google.com/rss/search?q=${query}&hl=pt-BR&gl=BR&ceid=BR:pt-150`);
     
     // Filtrar notícias com títulos muito parecidos (ex: SAF)
