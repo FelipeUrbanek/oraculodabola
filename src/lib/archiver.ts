@@ -40,7 +40,7 @@ function zipFolder(folderName: string, parentDir: string): Promise<void> {
     const archive = archiver('zip', { zlib: { level: 9 } });
 
     output.on('close', () => resolve());
-    archive.on('error', (err) => reject(err));
+    archive.on('error', (err: any) => reject(err));
 
     archive.pipe(output);
     archive.directory(path.join(parentDir, folderName), false);
