@@ -8,6 +8,7 @@ const archiver = require('archiver');
  * Verifica se existem pastas de posts com mais de 20 dias e as zipa
  */
 export async function archiveOldPosts() {
+  console.log("🧹 Iniciando limpeza de arquivos antigos...");
   const postsDir = path.join(process.cwd(), 'posts');
   if (!fs.existsSync(postsDir)) return;
 
