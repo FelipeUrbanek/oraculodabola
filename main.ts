@@ -41,7 +41,7 @@ async function runOráculo() {
       return true;
     }
     return false;
-  }).slice(0, 3);
+  }).slice(0, 1); // Apenas 1 post por hora para manter o limite de 25/dia do Instagram
 
   if (newItems.length === 0) {
     console.log("💤 Nenhuma novidade fresquinha na última hora.");
