@@ -36,7 +36,11 @@ async function runOráculo() {
     const isNewContent = !history.some(h => h === cleanTitle) && !processedTitlesInCurrentRun.has(cleanTitle);
     const hasImage = !!item.imageUrl;
 
-    if (isNewLink && isNewContent && hasImage) {
+    // Filtro de utilidade (Ignorar onde assistir, ao vivo, etc)
+    const forbidden = ["onde assistir", "ao vivo", "transmissão", "tempo real", "como assistir", "escalação", "palpite"];
+    const isServiceNews = forbidden.some(word => cleanTitle.includes(word));
+
+    if (isNewLink && isNewContent && hasImage && !isServiceNews) {
       processedTitlesInCurrentRun.add(cleanTitle);
       return true;
     }
