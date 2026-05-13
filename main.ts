@@ -145,6 +145,7 @@ async function runOráculo() {
   }
   
   console.log("🔮 O Oráculo terminou sua jornada.");
+  process.exit(0);
 }
 
 runOráculo();
