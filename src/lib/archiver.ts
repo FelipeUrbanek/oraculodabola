@@ -1,6 +1,8 @@
 import fs from 'fs';
 import path from 'path';
-import archiver from 'archiver';
+import { createRequire } from 'module';
+const require = createRequire(import.meta.url);
+const archiver = require('archiver');
 
 /**
  * Verifica se existem pastas de posts com mais de 20 dias e as zipa
