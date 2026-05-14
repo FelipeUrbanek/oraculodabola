@@ -97,13 +97,17 @@ export async function fetchFootballNews(trendTerms: string[] = []): Promise<News
     
     const uniqueNews: any[] = [];
     const seenWords = new Set();
+    const biasedTerms = ['contra a gente', 'nosso time', 'contra nós', 'roubo', 'vergonha', 'fomos roubados', 'bora ganhar', 'vamos meu', 'nação'];
 
     for (const item of feed.items) {
       if (!item.link || !item.title) continue;
       
-      // Filtrar redes sociais e GE que às vezes vaza
-      const link = item.link.toLowerCase();
-      if (link.includes('ge.globo.com') || link.includes('instagram.com') || link.includes('youtube.com') || link.includes('twitter.com') || link.includes('facebook.com')) continue;
+      const titleLower = item.title.toLowerCase();
+      // Bloquear opiniões e clubismo barato
+      if (biasedTerms.some(term => titleLower.includes(term))) {
+        console.log(`🚫 Notícia clubista descartada: ${item.title}`);
+        continue;
+      }
 
       const words = item.title.split(' ').slice(0, 3).join(' ');
       if (!seenWords.has(words) && uniqueNews.length < 15) {
@@ -115,6 +119,13 @@ export async function fetchFootballNews(trendTerms: string[] = []): Promise<News
     const processedItems = [];
     for (const item of uniqueNews) {
       const { finalUrl, imageUrl } = await resolveAndScrapeImage(item.link || '');
+      
+      // Filtro rígido pós-resolução para redes sociais e GE
+      const lowUrl = finalUrl.toLowerCase();
+      if (lowUrl.includes('instagram.com') || lowUrl.includes('twitter.com') || lowUrl.includes('facebook.com') || lowUrl.includes('ge.globo.com') || lowUrl.includes('youtube.com')) {
+        console.log(`🚫 Fonte inválida (Rede Social/GE) descartada pós-resolução: ${finalUrl}`);
+        continue;
+      }
       
       processedItems.push({
         title: item.title || '',
