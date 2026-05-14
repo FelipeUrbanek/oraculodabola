@@ -86,9 +86,9 @@ export async function fetchFootballNews(trendTerms: string[] = []): Promise<News
     );
 
     const trendQuery = filteredTrends.length > 0 ? `${filteredTrends.join(' OR ')} OR ` : '';
-    const mainTerms = 'Flamengo OR Palmeiras OR Corinthians OR "São Paulo" OR "Atlético-MG" OR Cruzeiro OR Grêmio OR Inter OR Vasco OR Santos OR "Mercado da Bola" OR "Brasileirão" OR "Libertadores" OR "Copa do Brasil" OR "Champions League" OR "Premier League" OR "Seleção Brasileira" OR "Pós-jogo" OR "Oficial" OR "Reforço" OR "Contratação" OR "Escalação" OR "Tabela" OR "Sorteio"';
-    const context = '(futebol OR soccer OR "mercado da bola" OR esporte OR jogo)';
-    const sites = '(site:uol.com.br OR site:tntsports.com.br OR site:espn.com.br OR site:trivela.com.br OR site:lance.com.br OR site:terra.com.br OR site:gazetaesportiva.com OR site:goal.com OR site:metropoles.com OR site:itatiaia.com.br OR site:estadao.com.br)';
+    const mainTerms = 'Flamengo OR Palmeiras OR Corinthians OR "São Paulo" OR "Atlético-MG" OR Cruzeiro OR Grêmio OR Inter OR Vasco OR Santos OR "Mercado da Bola" OR Brasileirão OR Libertadores OR "Copa do Brasil" OR "Champions League" OR "Seleção Brasileira" OR "Pós-jogo" OR Oficial OR Reforço OR Escalação OR Tabela OR Sorteio';
+    const context = '(futebol OR soccer OR "mercado da bola" OR esporte)';
+    const sites = '(site:uol.com.br OR site:espn.com.br OR site:tntsports.com.br OR site:lance.com.br OR site:terra.com.br OR site:goal.com)';
     
     const query = encodeURIComponent(`(${trendQuery}${mainTerms}) ${context} -site:ge.globo.com ${sites} when:4h`);
     const searchUrl = `https://news.google.com/rss/search?q=${query}&hl=pt-BR&gl=BR&ceid=BR:pt-150`;
