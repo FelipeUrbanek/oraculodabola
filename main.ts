@@ -87,7 +87,13 @@ async function runOráculo() {
       const paths = await generateImages(processed, item.imageUrl || null);
       const scheduledTime = i === 0 ? undefined : Math.floor(Date.now() / 1000) + (i * 10 * 60);
       
-      await postToInstagram(paths.feedPath, `${processed.caption}\n\n${processed.hashtags.join(' ')}`, scheduledTime);
+      const formattedHashtags = processed.hashtags.map(h => h.startsWith('#') ? h : `#${h}`).join(' ');
+      
+      await postToInstagram(
+        paths.feedPath, 
+        `${processed.caption}\n\n${formattedHashtags}`,
+        scheduledTime
+      );
       
       history.push(item.link);
       history.push(item.title.split(' - ')[0].toLowerCase().trim());

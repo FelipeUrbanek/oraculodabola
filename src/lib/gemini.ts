@@ -55,7 +55,7 @@ export async function processNewsWithGemini(title: string, snippet: string): Pro
     - headline: MANCHETE EM CAIXA ALTA com o NOME DO JOGADOR (max 40 chars).
     - summary: Resumo curto e direto com o NOME DO JOGADOR e o FATO (max 140 chars).
     - caption: Análise profunda (500-1000 chars) explicando o impacto técnico/financeiro.
-    - hashtags: string[]
+    - hashtags: string[] (Obrigatório começar com #, ex: ["#Futebol", "#Santos"])
     - category: Uma das oficiais.
     - shouldCreateStory: boolean
     - imageKeywords: string
