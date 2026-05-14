@@ -85,15 +85,21 @@ async function runOráculo() {
     try {
       const processed = await processNewsWithGemini(item.title, item.contentSnippet);
       const paths = await generateImages(processed, item.imageUrl || null);
-      const scheduledTime = i === 0 ? undefined : Math.floor(Date.now() / 1000) + (i * 10 * 60);
+      // Removido agendamento via API para evitar erro de Whitelist
+      const scheduledTime = undefined;
       
       const formattedHashtags = processed.hashtags.map(h => h.startsWith('#') ? h : `#${h}`).join(' ');
       
       await postToInstagram(
         paths.feedPath, 
-        `${processed.caption}\n\n${formattedHashtags}`,
-        scheduledTime
+        `${processed.caption}\n\n${formattedHashtags}`
       );
+      
+      // Se houver mais de um post, espera 30 segundos entre eles para evitar block
+      if (i < finalItems.length - 1) {
+        console.log("⏳ Aguardando 30 segundos para a próxima postagem...");
+        await new Promise(resolve => setTimeout(resolve, 30000));
+      }
       
       history.push(item.link);
       history.push(item.title.split(' - ')[0].toLowerCase().trim());
