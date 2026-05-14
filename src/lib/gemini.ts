@@ -47,14 +47,15 @@ export async function processNewsWithGemini(title: string, snippet: string): Pro
     3. SEM "CORPORATIVÊS": Proibido usar clichês como "agressividade no mercado", "planejamento de médio/longo prazo", "estabilidade técnica", "equilibrar fluxo de caixa", "projeto estruturado". 
     4. FOCO NO CAMPO: Fale de futebol, gols, estilo de jogo e o fato em si. Seja direto como um grito de gol.
     5. FIDELIDADE: Não invente análises financeiras se a notícia não trouxer dados reais.
+    6. IDENTIFICAÇÃO CORRETA: Verifique se o sujeito é JOGADOR, TÉCNICO ou DIRIGENTE. Não chame um técnico de atleta/jogador e vice-versa.
 
     Notícia: "${title}" - "${snippet}"
  
     Retorne apenas o JSON:
-    - headline: MANCHETE EM CAIXA ALTA com o NOME DO ATLETA (max 40 chars).
+    - headline: MANCHETE EM CAIXA ALTA com o NOME DO SUJEITO (max 40 chars).
     - summary: Resumo curto com NOME e FATO (max 120 chars).
-    - caption: Texto para Instagram (300-500 chars). Comece direto com o fato. Use tom jornalístico esportivo vibrante, não corporativo. Inclua o nome do atleta.
-    - hashtags: string[] (Relacionadas ao clube e jogador)
+    - caption: Texto para Instagram (300-500 chars). Comece direto com o fato. Use tom jornalístico esportivo vibrante. Inclua o nome e a função correta (ex: "O técnico X", "O atacante Y").
+    - hashtags: string[] (Relacionadas ao clube, jogador/técnico)
     - category: Uma das oficiais.
     - shouldCreateStory: boolean
     - imageKeywords: string
