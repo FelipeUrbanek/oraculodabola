@@ -90,7 +90,7 @@ export async function fetchFootballNews(trendTerms: string[] = []): Promise<News
     const context = '(futebol OR soccer OR "mercado da bola" OR esporte OR jogo)';
     const sites = '(site:uol.com.br OR site:tntsports.com.br OR site:espn.com.br OR site:trivela.com.br OR site:lance.com.br OR site:terra.com.br OR site:gazetaesportiva.com OR site:goal.com OR site:metropoles.com OR site:itatiaia.com.br OR site:estadao.com.br)';
     
-    const query = encodeURIComponent(`(${trendQuery}${mainTerms}) ${context} -site:ge.globo.com ${sites} when:1h`);
+    const query = encodeURIComponent(`(${trendQuery}${mainTerms}) ${context} -site:ge.globo.com ${sites} when:4h`);
     const searchUrl = `https://news.google.com/rss/search?q=${query}&hl=pt-BR&gl=BR&ceid=BR:pt-150`;
     console.log(`\n🔍 Consultando Google News: ${searchUrl}`);
     const feed = await parser.parseURL(searchUrl);

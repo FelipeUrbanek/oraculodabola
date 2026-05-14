@@ -17,9 +17,9 @@ export async function handleCommentsEngagement() {
   try {
     console.log('💬 Iniciando monitoramento de comentários...');
 
-    // 1. Pegar os posts mais recentes (últimos 3)
+    // 1. Pegar os posts mais recentes (últimos 10)
     const mediaResponse = await axios.get(`https://graph.facebook.com/v21.0/${IG_USER_ID}/media`, {
-      params: { access_token: ACCESS_TOKEN, limit: 3, fields: 'id,caption' }
+      params: { access_token: ACCESS_TOKEN, limit: 10, fields: 'id,caption' }
     });
 
     for (const media of mediaResponse.data.data) {
@@ -27,7 +27,7 @@ export async function handleCommentsEngagement() {
 
       // 2. Pegar comentários de cada post
       const commentsResponse = await axios.get(`https://graph.facebook.com/v21.0/${media.id}/comments`, {
-        params: { access_token: ACCESS_TOKEN, fields: 'id,text,from,replies' }
+        params: { access_token: ACCESS_TOKEN, fields: 'id,text,from,replies', limit: 50 }
       });
 
       for (const comment of commentsResponse.data.data) {
