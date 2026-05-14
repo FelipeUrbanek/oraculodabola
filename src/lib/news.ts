@@ -15,128 +15,141 @@ export interface NewsItem {
   imageUrl?: string;
 }
 
+/**
+ * Resolve o link final do Google News e tenta capturar a imagem principal (og:image)
+ */
 export async function resolveAndScrapeImage(googleUrl: string): Promise<{ finalUrl: string, imageUrl?: string }> {
   const browser = await puppeteer.launch({ headless: true, args: ['--no-sandbox'] });
   const page = await browser.newPage();
   
   try {
-    console.log(`\n📡 Iniciando resolução: ${googleUrl.substring(0, 40)}...`);
-    await page.goto(googleUrl, { waitUntil: 'networkidle2', timeout: 30000 });
-    
+    await page.goto(googleUrl, { waitUntil: 'networkidle2', timeout: 20000 });
     if (page.url().includes('news.google.com')) {
-      console.log('⏳ Ainda no Google News, aguardando salto final...');
-      await page.waitForNavigation({ waitUntil: 'networkidle2', timeout: 15000 }).catch(() => {});
+      await page.waitForNavigation({ waitUntil: 'networkidle2', timeout: 10000 }).catch(() => {});
     }
-
     const finalUrl = page.url();
-    console.log(`📍 URL Final: ${finalUrl}`);
-
     const imageUrl = await page.evaluate(() => {
-      const og = document.querySelector('meta[property="og:image"]')?.getAttribute('content');
-      const ogSecure = document.querySelector('meta[property="og:image:secure_url"]')?.getAttribute('content');
-      const twitter = document.querySelector('meta[name="twitter:image"]')?.getAttribute('content');
-      let img = og || ogSecure || twitter;
-
-      if (!img) {
-        const imgEls = Array.from(document.querySelectorAll('img'));
-        for (const el of imgEls) {
-          const src = el.getAttribute('src');
-          if (src && src.startsWith('http') && !src.includes('logo') && !src.includes('icon')) {
-            img = src;
-            break;
-          }
-        }
-      }
-      return img || null;
-    }) || undefined;
-
-    if (imageUrl) {
-      console.log(`🖼️ Sucesso! Imagem encontrada: ${imageUrl.substring(0, 70)}...`);
-    }
-
+      return document.querySelector('meta[property="og:image"]')?.getAttribute('content') || 
+             document.querySelector('meta[name="twitter:image"]')?.getAttribute('content') || null;
+    });
     await browser.close();
-    return { finalUrl, imageUrl };
+    return { finalUrl, imageUrl: imageUrl || undefined };
   } catch (error: any) {
-    console.error('❌ Erro no Processo:', error.message || error);
     await browser.close();
     return { finalUrl: googleUrl, imageUrl: undefined };
   }
 }
 
-export async function fetchFootballNews(trendTerms: string[] = []): Promise<NewsItem[]> {
+/**
+ * Realiza uma busca individual no Google News com filtro de 1 hora
+ */
+async function fetchSingleQuery(queryStr: string): Promise<any[]> {
   try {
-    const mainTerms = '("Flamengo" OR "Palmeiras" OR "Corinthians" OR "São Paulo FC" OR "Atlético-MG" OR "Cruzeiro futebol" OR "Grêmio" OR "Internacional futebol" OR "Vasco" OR "Santos FC" OR "Mercado da Bola" OR "Brasileirão" OR "Libertadores" OR "Copa do Brasil" OR "Champions League")';
-    const context = '(futebol OR soccer OR "contratação" OR "reforço")';
-    
-    const query = encodeURIComponent(`${mainTerms} ${context} -site:ge.globo.com when:6h`);
+    // Filtro when:1h aplicado em cada busca individual para máxima precisão
+    const query = encodeURIComponent(`${queryStr} -site:ge.globo.com when:1h`);
     const searchUrl = `https://news.google.com/rss/search?q=${query}&hl=pt-BR&gl=BR&ceid=BR:pt-150`;
-    
-    console.log(`\n🔍 Consultando Google News: ${searchUrl}`);
     const feed = await parser.parseURL(searchUrl);
+    return feed.items;
+  } catch (e) {
+    console.error(`Erro na query [${queryStr}]:`, e);
+    return [];
+  }
+}
+
+/**
+ * Função principal que coordena as múltiplas buscas paralelas
+ */
+export async function fetchFootballNews(): Promise<NewsItem[]> {
+  try {
+    // LISTA EXPANDIDA DE TIMES E TERMOS (Série A, B e Internacional)
+    const queries = [
+      // G4 e Gigantes
+      'Flamengo futebol', 'Palmeiras futebol', 'Corinthians futebol', '"São Paulo FC" futebol',
+      // Minas e Sul
+      '"Atlético-MG" futebol', 'Cruzeiro futebol', 'Grêmio futebol', 'Internacional futebol',
+      // Rio e SP
+      'Vasco futebol', 'Botafogo futebol', 'Fluminense futebol', 'Santos FC futebol',
+      // Nordeste e Centro-Oeste
+      'Bahia futebol', 'Fortaleza futebol', 'Vitória futebol', 'Ceará futebol', 'Cuiabá futebol',
+      // Outros Série A/B
+      'Athletico-PR futebol', 'Coritiba futebol', 'Bragantino futebol', 'Sport Recife futebol',
+      // Mercado e Competições
+      '"Mercado da Bola" futebol', '"Transferências futebol"', 'Brasileirão', 'Libertadores',
+      '"Copa do Brasil"', '"Champions League"', '"Seleção Brasileira" futebol'
+    ];
+
+    console.log(`\n🚀 Iniciando ${queries.length} buscas paralelas no Google News...`);
     
+    // Executa todas as buscas simultaneamente
+    const results = await Promise.all(queries.map(q => fetchSingleQuery(q)));
+    
+    const allItems = results.flat();
     const uniqueNews: any[] = [];
+    const seenLinks = new Set();
     const seenTitles = new Set();
     
+    // Termos para filtrar notícias que não são sobre o jogo/notícia em si
     const junkTerms = [
       'prefeitura', 'governo', 'bolsa', 'funarte', 'dia internacional', 'institucional', 'anpd', 'concurso', 'vacina', 'sesc', 
       'ingressos', 'bilheteria', 'venda de ingressos', 'sócio-torcedor', 'feminino', 'feminina', 'sub-17', 'sub-15',
-      'onde assistir', 'escalação', 'escalações', 'provável time', 'horário do jogo', 'transmissão', 'vôlei', 'basquete', 'vender'
+      'onde assistir', 'escalação', 'escalações', 'provável time', 'horário do jogo', 'transmissão', 'vôlei', 'basquete'
     ];
 
-    for (const item of feed.items) {
+    for (const item of allItems) {
       if (!item.link || !item.title) continue;
+      
       const titleLower = item.title.toLowerCase();
+      const cleanTitle = item.title.split(' - ')[0].trim();
 
+      // 1. Evitar duplicatas (mesma notícia vindo de buscas diferentes)
+      if (seenLinks.has(item.link) || seenTitles.has(cleanTitle)) continue;
+      
+      // 2. Filtro de lixo institucional
+      if (junkTerms.some(term => titleLower.includes(term))) continue;
+
+      // 3. Filtro temporal de segurança (máximo 70 minutos atrás)
       if (item.pubDate) {
         const pubDate = new Date(item.pubDate);
         const now = new Date();
-        const diffInHours = (now.getTime() - pubDate.getTime()) / (1000 * 60 * 60);
-        
-        if (diffInHours > 6) {
-          console.log(`🚫 Notícia antiga descartada (${Math.floor(diffInHours)}h atrás): ${item.title}`);
-          continue;
-        }
+        const diffInMinutes = (now.getTime() - pubDate.getTime()) / (1000 * 60);
+        if (diffInMinutes > 70) continue; 
       }
-      
-      if (junkTerms.some(term => titleLower.includes(term))) continue;
 
-      const upperCaseLetters = item.title.replace(/[^A-Z]/g, "").length;
-      if (upperCaseLetters > item.title.length * 0.5 && item.title.length > 20) continue;
-
-      const words = titleLower.split(' ').slice(0, 2).join(' ');
-      if (!seenTitles.has(words) && uniqueNews.length < 20) {
-        uniqueNews.push(item);
-        seenTitles.add(words);
-      }
+      uniqueNews.push(item);
+      seenLinks.add(item.link);
+      seenTitles.add(cleanTitle);
     }
     
-    let filteredList = uniqueNews;
-    if (uniqueNews.length > 0) {
-      console.log(`🤖 IA analisando ${uniqueNews.length} candidatos filtrados...`);
-      const validIndices = await filterFootballOnly(uniqueNews.map(n => ({ 
+    console.log(`✅ Total de ${uniqueNews.length} notícias únicas encontradas na última hora.`);
+
+    // Ordenar por mais recente e pegar as top 20 para a IA
+    const sortedNews = uniqueNews
+      .sort((a, b) => new Date(b.pubDate).getTime() - new Date(a.pubDate).getTime())
+      .slice(0, 20);
+
+    // Filtragem final com IA (Gemini)
+    let filteredList = sortedNews;
+    if (sortedNews.length > 0) {
+      console.log(`🤖 IA analisando ${sortedNews.length} candidatos...`);
+      const validIndices = await filterFootballOnly(sortedNews.map(n => ({ 
         title: n.title || '', 
         snippet: n.contentSnippet || n.title || '',
-        source: n.source?.name || n.source || 'Portal de Notícias'
+        source: n.source || 'Portal'
       })));
       
       if (validIndices.length > 0) {
-        console.log(`✅ IA aprovou os índices: ${JSON.stringify(validIndices)}`);
-        filteredList = validIndices.map(i => uniqueNews[i]).filter(n => n !== undefined);
-      } else {
-        console.log('⚠️ IA foi muito rigorosa. Usando candidatos originais como fallback.');
+        filteredList = validIndices.map(i => sortedNews[i]).filter(n => n !== undefined);
       }
     }
 
+    // Resolução de links e imagens
     const processedItems = [];
     for (const item of filteredList) {
       const { finalUrl, imageUrl } = await resolveAndScrapeImage(item.link || '');
       
+      // Bloqueio de fontes indesejadas pós-redirecionamento
       const lowUrl = finalUrl.toLowerCase();
-      const forbiddenDomains = ['instagram.com', 'twitter.com', 'facebook.com', 'ge.globo.com', 'youtube.com', 'tiktok.com'];
-      if (forbiddenDomains.some(domain => lowUrl.includes(domain))) {
-        console.log(`🚫 Fonte inválida descartada pós-resolução: ${finalUrl}`);
-        continue;
-      }
+      if (['instagram.com', 'twitter.com', 'facebook.com', 'ge.globo.com', 'youtube.com'].some(d => lowUrl.includes(d))) continue;
       
       processedItems.push({
         title: item.title || '',
@@ -146,8 +159,6 @@ export async function fetchFootballNews(trendTerms: string[] = []): Promise<News
         id: item.guid || item.link || '',
         imageUrl: imageUrl
       });
-
-      if (processedItems.length >= 5) break;
     }
 
     return processedItems;
