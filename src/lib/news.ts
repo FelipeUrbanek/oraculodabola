@@ -132,14 +132,16 @@ export async function fetchFootballNews(trendTerms: string[] = []): Promise<News
     // NOVO: Filtrar a lista bruta com IA antes do processamento pesado
     let filteredList = uniqueNews;
     if (uniqueNews.length > 0) {
-      console.log(`🤖 IA filtrando ${uniqueNews.length} candidatos para garantir contexto de futebol...`);
+      console.log(`🤖 IA analisando ${uniqueNews.length} candidatos:`);
+      uniqueNews.forEach((n, i) => console.log(`   [${i}] ${n.title}`));
+
       const validIndices = await filterFootballOnly(uniqueNews.map(n => ({ 
         title: n.title || '', 
         snippet: n.contentSnippet || n.title || ''
       })));
       
+      console.log(`✅ IA aprovou os índices: ${JSON.stringify(validIndices)}`);
       filteredList = validIndices.map(i => uniqueNews[i]);
-      console.log(`✅ IA aprovou ${filteredList.length} notícias relevantes.`);
     }
 
     if (filteredList.length === 0) return [];
