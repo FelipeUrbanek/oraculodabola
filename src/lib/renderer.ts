@@ -46,12 +46,21 @@ export async function generateImages(content: ProcessedContent, newsImageUrl: st
     const badgeColor = catColors[content.category] || '#ef4444';
     const bgUrl = (newsImageUrl && newsImageUrl.includes('http')) ? newsImageUrl : `https://images.unsplash.com/photo-1574629810360-7efbbe195018?auto=format&fit=crop&q=80&w=1080&h=1350`;
 
-    const logoPath = path.join(process.cwd(), 'posts', 'logo', 'logo.svg');
-    const logoSvg = fs.existsSync(logoPath) ? fs.readFileSync(logoPath, 'utf-8') : '<div class="w-10 h-10 border-2 border-white flex items-center justify-center font-black text-white text-xl bg-black">Ω</div>';
+    const logoPath = path.resolve(process.cwd(), 'posts', 'logo', 'logo.svg');
+    let logoSvg = '<div class="w-10 h-10 border-2 border-white flex items-center justify-center font-black text-white text-xl bg-black">Ω</div>';
+    
+    if (fs.existsSync(logoPath)) {
+      const rawSvg = fs.readFileSync(logoPath, 'utf-8');
+      // Limpar width/height fixos do SVG para ele caber no container
+      logoSvg = rawSvg
+        .replace(/width=".*?"/, '')
+        .replace(/height=".*?"/, '')
+        .replace(/<svg/, '<svg style="width:75%; height:75%;"');
+    }
 
     const handleTag = `<div class="absolute top-12 left-12 z-[1000] flex items-center gap-0">
       <div class="w-14 h-14 flex items-center justify-center bg-black">
-        ${logoSvg.replace(/<svg/, '<svg style="width:70%;height:70%;"')}
+        ${logoSvg}
       </div>
       <span class="font-bebas text-3xl tracking-[0.2em] text-white px-6 h-14 flex items-center" style="background-color: ${badgeColor}">@OORACULODABOLA</span>
     </div>`;
