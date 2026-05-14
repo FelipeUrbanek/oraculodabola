@@ -62,18 +62,34 @@ export async function resolveAndScrapeImage(googleUrl: string, browser?: any): P
       const og = document.querySelector('meta[property="og:image"]')?.getAttribute('content');
       const twitter = document.querySelector('meta[name="twitter:image"]')?.getAttribute('content');
       
-      // Tenta pegar o texto principal da notícia (p parágrafos iniciais)
-      const paragraphs = Array.from(document.querySelectorAll('article p, .article-content p, .content p'))
-        .slice(0, 3)
-        .map(p => p.textContent?.trim())
-        .filter(t => t && t.length > 20)
-        .join(' ');
+      // Tenta pegar o texto principal da notícia em vários seletores comuns
+      const selectors = [
+        'article p', '.article-content p', '.content p', '.post-content p', 
+        '.entry-content p', '.news-content p', '.texto-noticia p', '.m-news-body p'
+      ];
+      
+      let paragraphs = '';
+      for (const sel of selectors) {
+        const found = Array.from(document.querySelectorAll(sel))
+          .slice(0, 5)
+          .map(p => p.textContent?.trim())
+          .filter(t => t && t.length > 20)
+          .join(' ');
+        if (found.length > 50) {
+          paragraphs = found;
+          break;
+        }
+      }
       
       const metaDesc = document.querySelector('meta[name="description"]')?.getAttribute('content') || '';
+      const metaKeywords = document.querySelector('meta[name="keywords"]')?.getAttribute('content') || '';
+      const articleTags = Array.from(document.querySelectorAll('meta[property="article:tag"]'))
+        .map(m => m.getAttribute('content'))
+        .join(', ');
       
       return { 
         imageUrl: og || twitter || null,
-        fullSnippet: (paragraphs.length > 50 ? paragraphs : metaDesc).substring(0, 800)
+        fullSnippet: `${paragraphs} | Tags: ${articleTags} | Keywords: ${metaKeywords} | Desc: ${metaDesc}`.substring(0, 1000)
       };
     });
 
@@ -152,7 +168,7 @@ async function fetchTerraDirect(target: any): Promise<NewsItem[]> {
 /**
  * Busca notícias via Google News
  */
-async function fetchGoogleNews(queryStr: string, category: string): Promise<NewsItem[]> {
+export async function fetchGoogleNews(queryStr: string, category: string): Promise<NewsItem[]> {
   try {
     // Janela de 24h para garantir cobertura total do dia em todos os temas
     const query = encodeURIComponent(`${queryStr} futebol 2026 -site:ge.globo.com when:24h`);
@@ -160,7 +176,7 @@ async function fetchGoogleNews(queryStr: string, category: string): Promise<News
     const feed = await parser.parseURL(searchUrl);
     
     // Filtro rigoroso para garantir que o título tenha palavras relacionadas a futebol
-    const footballKeywords = ['futebol', 'gol', 'clube', 'treinador', 'técnico', 'jogador', 'partida', 'jogo', 'campeonato', 'contratação', 'reforço', 'elenco', 'campo', 'estádio', 'torcida', 'venda', 'compra', 'mercado', 'bola', 'copa', 'seleção'];
+    const footballKeywords = ['futebol', 'gol', 'clube', 'treinador', 'técnico', 'jogador', 'atleta', 'atacante', 'zagueiro', 'goleiro', 'meia', 'volante', 'lateral', 'partida', 'jogo', 'campeonato', 'contratação', 'reforço', 'elenco', 'campo', 'estádio', 'torcida', 'venda', 'compra', 'mercado', 'bola', 'copa', 'seleção', 'saída', 'chegada', 'contrato', 'renovação', 'rescisão'];
     
     return feed.items
       .filter(item => {
@@ -188,12 +204,16 @@ export async function fetchFootballNews(trends: string[] = []): Promise<NewsItem
     const terraTasks = FOOTBALL_TARGETS.map(target => fetchRSSHubTerra(target));
     const googleTasks = FOOTBALL_TARGETS.map(target => fetchGoogleNews(target.name, target.name));
     
-    const [terraResults, googleResults] = await Promise.all([
+    // Inclui tendências específicas se fornecidas
+    const trendsTasks = trends.map(t => fetchGoogleNews(t, 'TREND'));
+    
+    const [terraResults, googleResults, trendsResults] = await Promise.all([
       Promise.all(terraTasks),
-      Promise.all(googleTasks)
+      Promise.all(googleTasks),
+      Promise.all(trendsTasks)
     ]);
 
-    const allItems = [...terraResults.flat(), ...googleResults.flat()];
+    const allItems = [...terraResults.flat(), ...googleResults.flat(), ...trendsResults.flat()];
     console.log(`📊 Total bruto de itens encontrados: ${allItems.length}`);
 
     const uniqueNews: NewsItem[] = [];

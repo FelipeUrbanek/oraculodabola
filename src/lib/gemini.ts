@@ -44,10 +44,11 @@ export async function processNewsWithGemini(title: string, snippet: string): Pro
     REGRAS DE OURO (NUNCA QUEBRAR):
     1. PROIBIDO MISTÉRIO: Nunca use termos vagos como "ex-rival", "camisa 10" ou "reforço" sem o nome.
     2. NOMES SÃO OBRIGATÓRIOS: O nome do jogador/técnico TEM que aparecer na MANCHETE (headline), no RESUMO (summary) e na LEGENDA (caption).
-    3. SEM "CORPORATIVÊS": Proibido usar clichês como "agressividade no mercado", "planejamento de médio/longo prazo", "estabilidade técnica", "equilibrar fluxo de caixa", "projeto estruturado". 
-    4. FOCO NO CAMPO: Fale de futebol, gols, estilo de jogo e o fato em si. Seja direto como um grito de gol.
-    5. FIDELIDADE: Não invente análises financeiras se a notícia não trouxer dados reais.
-    6. IDENTIFICAÇÃO CORRETA: Verifique se o sujeito é JOGADOR, TÉCNICO ou DIRIGENTE. Não chame um técnico de atleta/jogador e vice-versa.
+    3. NUNCA USE PLACEHOLDERS: Proibido usar "[Nome]", "[Jogador]", "[Técnico]" ou qualquer campo para preencher depois. Se o nome não estiver na notícia, NÃO invente e NÃO use placeholders. Se não souber o nome, retorne um JSON com headline: "ERRO: NOME AUSENTE".
+    4. SEM "CORPORATIVÊS": Proibido usar clichês como "agressividade no mercado", "planejamento de médio/longo prazo", "estabilidade técnica", "equilibrar fluxo de caixa", "projeto estruturado". 
+    5. FOCO NO CAMPO: Fale de futebol, gols, estilo de jogo e o fato em si. Seja direto como um grito de gol.
+    6. FIDELIDADE: Não invente análises financeiras se a notícia não trouxer dados reais.
+    7. IDENTIFICAÇÃO CORRETA: Verifique se o sujeito é JOGADOR, TÉCNICO ou DIRIGENTE. Não chame um técnico de atleta/jogador e vice-versa.
 
     Notícia: "${title}" - "${snippet}"
  
@@ -61,7 +62,20 @@ export async function processNewsWithGemini(title: string, snippet: string): Pro
     - imageKeywords: string
   `;
 
-  return await callGemini(prompt);
+  const processed: ProcessedContent = await callGemini(prompt);
+  
+  // Validação Anti-Placeholder (Evita postagens com "[Nome]", "(Nome)", etc)
+  const placeholders = [
+    "[Nome]", "[NOME]", "[atleta]", "[jogador]", "[técnico]", "[dirigente]", "ERRO: NOME AUSENTE",
+    "(Nome)", "(NOME)", "{Nome}", "{NOME}", "[Nome do Jogador]", "[Nome do Atleta]",
+    "[Insira Nome]", "[Nome do Técnico]"
+  ];
+  const contentStr = JSON.stringify(processed);
+  if (placeholders.some(p => contentStr.includes(p))) {
+    throw new Error(`❌ Erro de Placeholder detectado: ${processed.headline}`);
+  }
+
+  return processed;
 }
 
 export async function filterFootballOnly(candidates: any[]): Promise<number[]> {

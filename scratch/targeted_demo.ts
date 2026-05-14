@@ -8,42 +8,48 @@ import dotenv from 'dotenv';
 dotenv.config({ path: '.env.local' });
 
 async function targetedDemo() {
-  const targets = ['Corinthians', 'São Paulo', 'Santos'];
-  console.log(`🎬 Iniciando DEMO ALVO: ${targets.join(', ')}...\n`);
+  const targets = ['Fortaleza', 'Mercado da Bola'];
+  console.log(`🎬 Iniciando BUSCA POR KAYKE/FORTALEZA...\n`);
 
   // 1. Fetch News
   const newsList = await fetchFootballNews();
   
-  // 2. Filtrar apenas os alvos
-  const targetNews = targets.map(t => newsList.find(n => n.category === t)).filter((n): n is NewsItem => !!n);
+  // 2. Procurar especificamente por Kayke ou Fortaleza
+  const kaykeNews = newsList.find(n => 
+    n.title.toLowerCase().includes('kayke') || 
+    (n.category === 'Fortaleza' && n.title.toLowerCase().includes('saída'))
+  );
 
-  if (targetNews.length === 0) {
-    console.log('⚠️ Nenhuma notícia recente encontrada para esses times nos filtros atuais.');
+  if (!kaykeNews) {
+    console.log('⚠️ Nenhuma notícia do Kayke encontrada no agregador automático.');
+    // Tentar imprimir as de Fortaleza para ver o que tem
+    const fortalezaNews = newsList.filter(n => n.category === 'Fortaleza');
+    console.log('Notícias de Fortaleza encontradas:', fortalezaNews.map(n => n.title));
     return;
   }
 
+  const item = kaykeNews;
+  console.log(`\n💎 Encontrado: [${item.category}]: ${item.title}`);
+
   const results = [];
 
-  for (const item of targetNews) {
-    console.log(`\n💎 Processando [${item.category}]: ${item.title}`);
-    try {
-      // 3. IA Process
-      const processed = await processNewsWithGemini(item.title, item.contentSnippet);
-      
-      // 4. Render
-      console.log(`🎨 Renderizando arte corrigida para ${item.category}...`);
-      const paths = await generateImages(processed, item.imageUrl || null);
-      
-      results.push({
-        category: item.category,
-        headline: processed.headline,
-        image: paths.feedPath
-      });
-      
-      console.log(`✅ Concluído: ${path.basename(paths.feedPath)}`);
-    } catch (e) {
-      console.error(`❌ Erro ao renderizar ${item.category}:`, e);
-    }
+  try {
+    // 3. IA Process
+    const processed = await processNewsWithGemini(item.title, item.contentSnippet);
+    
+    // 4. Render
+    console.log(`🎨 Renderizando arte corrigida para ${item.category}...`);
+    const paths = await generateImages(processed, item.imageUrl || null);
+    
+    results.push({
+      category: item.category,
+      headline: processed.headline,
+      image: paths.feedPath
+    });
+    
+    console.log(`✅ Concluído: ${path.basename(paths.feedPath)}`);
+  } catch (e) {
+    console.error(`❌ Erro ao renderizar ${item.category}:`, e);
   }
 
   console.log('\n✨ ARTES ALVO GERADAS! ✨');
