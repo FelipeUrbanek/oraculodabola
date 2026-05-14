@@ -76,8 +76,21 @@ export async function resolveAndScrapeImage(googleUrl: string): Promise<{ finalU
 
 export async function fetchFootballNews(trendTerms: string[] = []): Promise<NewsItem[]> {
   try {
-    const trendQuery = trendTerms.length > 0 ? `(${trendTerms.join(' OR ')}) ` : '';
-    const query = encodeURIComponent(`${trendQuery}(futebol brasileiro OR "Mercado da Bola" OR Flamengo OR Palmeiras OR Corinthians OR "São Paulo" OR "Atlético-MG" OR Cruzeiro OR Grêmio OR Inter OR Vasco OR Santos OR Botafogo OR Fluminense OR "Pós-jogo" OR "Coletiva" OR "Entrevista" OR "Atuações" OR "Notas" OR "Tabela" OR "Classificação" OR "Goleada" OR "Virada" OR "Oficial" OR "Confirmado" OR "Exclusivo" OR "Demissão" OR "Contratação" OR "Reforço") -site:ge.globo.com (site:uol.com.br OR site:tntsports.com.br OR site:espn.com.br OR site:trivela.com.br OR site:lance.com.br OR site:terra.com.br OR site:gazetaesportiva.com OR site:goal.com OR site:metropoles.com OR site:itatiaia.com.br OR site:estadao.com.br) when:1h`);
+    const footballKeywords = ['futebol', 'soccer', 'gol', 'copa', 'brasileirão', 'libertadores', 'champions', 'escalação', 'mercado', 'transferência', 'treinador', 'estádio', 'fifa', 'nba', 'basquete', 'vôlei', 'tênis', 'reforço', 'contratação', 'arbitragem', 'var', 'tabela', 'clássico'];
+    const popularClubs = ['flamengo', 'palmeiras', 'corinthians', 'santos', 'vasco', 'botafogo', 'fluminense', 'grêmio', 'inter', 'cruzeiro', 'atlético', 'bahia', 'sport', 'vitória', 'fortaleza', 'ceará', 'real madrid', 'barcelona', 'city', 'liverpool', 'psg', 'bayern', 'united', 'chelsea', 'arsenal', 'juventus'];
+    
+    // Filtrar apenas tendências que pareçam esportivas ou de clubes famosos
+    const filteredTrends = trendTerms.filter(term => 
+      footballKeywords.some(key => term.toLowerCase().includes(key)) ||
+      popularClubs.some(club => term.toLowerCase().includes(club))
+    );
+
+    const trendQuery = filteredTrends.length > 0 ? `${filteredTrends.join(' OR ')} OR ` : '';
+    const mainTerms = 'Flamengo OR Palmeiras OR Corinthians OR "São Paulo" OR "Atlético-MG" OR Cruzeiro OR Grêmio OR Inter OR Vasco OR Santos OR "Mercado da Bola" OR "Brasileirão" OR "Libertadores" OR "Copa do Brasil" OR "Champions League" OR "Premier League" OR "Seleção Brasileira" OR "Pós-jogo" OR "Oficial" OR "Reforço" OR "Contratação" OR "Escalação" OR "Tabela" OR "Sorteio"';
+    const context = '(futebol OR soccer OR "mercado da bola" OR esporte OR jogo)';
+    const sites = '(site:uol.com.br OR site:tntsports.com.br OR site:espn.com.br OR site:trivela.com.br OR site:lance.com.br OR site:terra.com.br OR site:gazetaesportiva.com OR site:goal.com OR site:metropoles.com OR site:itatiaia.com.br OR site:estadao.com.br)';
+    
+    const query = encodeURIComponent(`(${trendQuery}${mainTerms}) ${context} -site:ge.globo.com ${sites} when:1h`);
     const searchUrl = `https://news.google.com/rss/search?q=${query}&hl=pt-BR&gl=BR&ceid=BR:pt-150`;
     console.log(`\n🔍 Consultando Google News: ${searchUrl}`);
     const feed = await parser.parseURL(searchUrl);

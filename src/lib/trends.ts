@@ -8,7 +8,7 @@ const parser = new Parser();
 export async function fetchCurrentTrends(): Promise<string[]> {
   try {
     console.log('📈 Buscando tendências no Google Trends...');
-    const feed = await parser.parseURL('https://trends.google.com.br/trends/trendingsearches/daily/rss?geo=BR');
+    const feed = await parser.parseURL('https://trends.google.com/trending/rss?geo=BR');
     
     // Pegamos os 5 primeiros termos de tendência
     const trends = feed.items.slice(0, 5).map(item => item.title || '');
