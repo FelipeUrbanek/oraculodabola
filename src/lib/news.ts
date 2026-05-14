@@ -47,7 +47,7 @@ export async function resolveAndScrapeImage(googleUrl: string): Promise<{ finalU
 async function fetchSingleQuery(queryStr: string): Promise<any[]> {
   try {
     // Filtro when:1h para garantir última hora
-    const query = encodeURIComponent(`${queryStr} -site:ge.globo.com when:1h`);
+    const query = encodeURIComponent(`${queryStr} -site:ge.globo.com when:4h`);
     const searchUrl = `https://news.google.com/rss/search?q=${query}&hl=pt-BR&gl=BR&ceid=BR:pt-150`;
     const feed = await parser.parseURL(searchUrl);
     return feed.items;
