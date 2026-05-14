@@ -108,6 +108,17 @@ export async function fetchFootballNews(trendTerms: string[] = []): Promise<News
       if (!item.link || !item.title) continue;
       
       const titleLower = item.title.toLowerCase();
+
+      // 0. Bloqueio de Notícias Antigas (Mais de 24 horas)
+      if (item.pubDate) {
+        const pubDate = new Date(item.pubDate);
+        const now = new Date();
+        const diffInHours = (now.getTime() - pubDate.getTime()) / (1000 * 60 * 60);
+        if (diffInHours > 24) {
+          console.log(`🚫 Notícia antiga descartada (${Math.floor(diffInHours)}h atrás): ${item.title}`);
+          continue;
+        }
+      }
       
       // 1. Bloqueio Rápido de Lixo Institucional pelo Título
       if (junkTerms.some(term => titleLower.includes(term))) continue;
