@@ -85,8 +85,28 @@ export async function postToInstagram(imagePath: string, caption: string, schedu
 
     const creationId = containerResponse.data.id;
 
-    // 3. Publicar a mídia (Se for agendado, o creationId já basta para o fluxo de agendamento em alguns casos, 
-    // mas na Graph API, posts agendados são finalizados no media_publish)
+    // 3. Aguardar o processamento da mídia (Instagram pode levar alguns segundos)
+    console.log("⏳ Aguardando processamento do Instagram...");
+    let ready = false;
+    let attempts = 0;
+    while (!ready && attempts < 10) {
+      await new Promise(resolve => setTimeout(resolve, 10000)); // Espera 10 segundos
+      const statusResponse = await axios.get(`https://graph.facebook.com/v21.0/${creationId}`, {
+        params: { fields: 'status_code', access_token: ACCESS_TOKEN }
+      });
+      const status = statusResponse.data.status_code;
+      console.log(`Status da mídia: ${status}`);
+      if (status === 'FINISHED') {
+        ready = true;
+      } else if (status === 'ERROR') {
+        throw new Error("Erro no processamento da mídia pelo Instagram.");
+      }
+      attempts++;
+    }
+
+    if (!ready) throw new Error("Tempo limite de processamento excedido.");
+
+    // 4. Publicar a mídia
     console.log(scheduledTime ? "🚀 Finalizando agendamento..." : "🚀 Publicando post oficial...");
     
     const publishResponse = await axios.post(
