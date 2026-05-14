@@ -1,6 +1,8 @@
 import axios from 'axios';
 import dotenv from 'dotenv';
 import { GoogleGenerativeAI } from "@google/generative-ai";
+import fs from 'fs';
+import path from 'path';
 
 dotenv.config({ path: '.env.local' });
 
@@ -9,6 +11,7 @@ const model = genAI.getGenerativeModel({ model: "gemini-2.5-flash" });
 
 const IG_USER_ID = process.env.IG_USER_ID;
 const ACCESS_TOKEN = process.env.FB_ACCESS_TOKEN;
+const COMMENT_HISTORY_PATH = path.join(process.cwd(), 'src', 'comment_history.json');
 
 /**
  * Busca comentários e decide se deve responder usando o Gemini
@@ -16,6 +19,14 @@ const ACCESS_TOKEN = process.env.FB_ACCESS_TOKEN;
 export async function handleCommentsEngagement() {
   try {
     console.log('💬 Iniciando monitoramento de comentários...');
+
+    // Carregar histórico de comentários
+    let commentHistory: string[] = [];
+    if (fs.existsSync(COMMENT_HISTORY_PATH)) {
+      try {
+        commentHistory = JSON.parse(fs.readFileSync(COMMENT_HISTORY_PATH, 'utf-8'));
+      } catch (e) { /* ignore */ }
+    }
 
     // 1. Pegar os posts mais recentes (últimos 10)
     const mediaResponse = await axios.get(`https://graph.facebook.com/v21.0/${IG_USER_ID}/media`, {
@@ -31,7 +42,8 @@ export async function handleCommentsEngagement() {
       });
 
       for (const comment of commentsResponse.data.data) {
-        if (comment.replies) continue;
+        // Pular se já estiver no histórico ou se já tiver replies detectados pela API
+        if (commentHistory.includes(comment.id) || comment.replies) continue;
 
         console.log(`🧐 Analisando comentário: "${comment.text}" no post: "${postContext.substring(0, 50)}..."`);
 
@@ -61,11 +73,21 @@ export async function handleCommentsEngagement() {
           await axios.post(`https://graph.facebook.com/v21.0/${comment.id}/replies`, null, {
             params: { message: replyText, access_token: ACCESS_TOKEN }
           });
+          
+          // Adicionar ao histórico
+          commentHistory.push(comment.id);
         } else {
           console.log('⏭️ Comentário ignorado (filtro de bobeira).');
+          // Também adicionamos ao histórico para não analisar a mesma bobeira de novo
+          commentHistory.push(comment.id);
         }
       }
     }
+
+    // Salvar histórico atualizado (manter os últimos 500 para não pesar)
+    if (commentHistory.length > 500) commentHistory = commentHistory.slice(-500);
+    fs.writeFileSync(COMMENT_HISTORY_PATH, JSON.stringify(commentHistory, null, 2));
+    
   } catch (error: any) {
     console.error('❌ Erro no engajamento:', error.response?.data || error.message);
   }
