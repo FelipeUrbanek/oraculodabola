@@ -87,3 +87,32 @@ export async function rankBestNews(candidates: NewsCandidate[]): Promise<number>
     return 0;
   }
 }
+
+export async function filterFootballOnly(candidates: NewsCandidate[]): Promise<number[]> {
+  if (candidates.length === 0) return [];
+
+  const prompt = `
+    Você é um editor de esportes. Analise os títulos abaixo e identifique quais são REALMENTE sobre futebol profissional (clubes, jogadores, campeonatos, mercado da bola).
+    Descarte TUDO o que for: Turismo, Prefeituras, Eventos de Cidade, Outros Esportes (Basquete, etc), ou notícias institucionais que apenas usem o nome de um time/cidade sem ser sobre o esporte.
+
+    Notícias:
+    ${candidates.map((c, i) => `${i}: ${c.title}`).join('\n')}
+
+    Retorne APENAS um array JSON com os índices das notícias válidas. Ex: [0, 2, 5]
+    Se nenhuma for sobre futebol, retorne [].
+  `;
+
+  try {
+    const result = await model.generateContent(prompt);
+    const text = result.response.text().trim();
+    const match = text.match(/\[.*\]/);
+    if (match) {
+      return JSON.parse(match[0]);
+    }
+    return [];
+  } catch (e) {
+    console.error('Erro ao filtrar com IA:', e);
+    // Em caso de erro, retorna tudo para não perdermos notícia (fallback)
+    return candidates.map((_, i) => i);
+  }
+}

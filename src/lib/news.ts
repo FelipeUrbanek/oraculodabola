@@ -14,6 +14,7 @@ export interface NewsItem {
 import axios from 'axios';
 import * as cheerio from 'cheerio';
 import puppeteer from 'puppeteer';
+import { filterFootballOnly } from './gemini.js';
 
 export async function resolveAndScrapeImage(googleUrl: string): Promise<{ finalUrl: string, imageUrl?: string }> {
   const browser = await puppeteer.launch({ headless: true, args: ['--no-sandbox'] });
@@ -128,8 +129,23 @@ export async function fetchFootballNews(trendTerms: string[] = []): Promise<News
       }
     }
     
+    // NOVO: Filtrar a lista bruta com IA antes do processamento pesado
+    let filteredList = uniqueNews;
+    if (uniqueNews.length > 0) {
+      console.log(`🤖 IA filtrando ${uniqueNews.length} candidatos para garantir contexto de futebol...`);
+      const validIndices = await filterFootballOnly(uniqueNews.map(n => ({ 
+        title: n.title || '', 
+        snippet: n.contentSnippet || n.title || ''
+      })));
+      
+      filteredList = validIndices.map(i => uniqueNews[i]);
+      console.log(`✅ IA aprovou ${filteredList.length} notícias relevantes.`);
+    }
+
+    if (filteredList.length === 0) return [];
+
     const processedItems = [];
-    for (const item of uniqueNews) {
+    for (const item of filteredList) {
       const { finalUrl, imageUrl } = await resolveAndScrapeImage(item.link || '');
       
       // Filtro rígido pós-resolução para redes sociais e GE
