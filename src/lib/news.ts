@@ -136,7 +136,8 @@ export async function fetchFootballNews(trendTerms: string[] = []): Promise<News
       console.log(`🤖 IA analisando ${uniqueNews.length} candidatos filtrados...`);
       const validIndices = await filterFootballOnly(uniqueNews.map(n => ({ 
         title: n.title || '', 
-        snippet: n.contentSnippet || n.title || ''
+        snippet: n.contentSnippet || n.title || '',
+        source: n.source || 'Portal de Notícias'
       })));
       
       if (validIndices.length > 0) {

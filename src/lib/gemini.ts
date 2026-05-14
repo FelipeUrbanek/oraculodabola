@@ -18,6 +18,7 @@ export interface ProcessedContent {
 export interface NewsCandidate {
   title: string;
   snippet: string;
+  source?: string;
 }
 
 export async function processNewsWithGemini(title: string, snippet: string): Promise<ProcessedContent> {
@@ -92,30 +93,29 @@ export async function filterFootballOnly(candidates: NewsCandidate[]): Promise<n
   if (candidates.length === 0) return [];
 
   const prompt = `
-    Você é o Editor-Chefe do "Oráculo da Bola". Sua missão é selecionar as notícias mais IMPACTANTES sobre futebol profissional para o Instagram.
+    Você é o Editor-Chefe do "Oráculo da Bola", focado em FUTEBOL MASCULINO PROFISSIONAL.
+    Sua missão é selecionar as notícias mais IMPACTANTES para o Instagram.
     
-    CRITÉRIOS DE OURO (ACEITE SEMPRE):
-    - Resultados de jogos decisivos (eliminatórias, clássicos, finais).
-    - Contratações OFICIAIS ou rumores fortes de times grandes (Flamengo, Palmeiras, Corinthians, etc).
-    - Fontes de alta credibilidade: Estadão, Folha de S.Paulo, O Globo, CNN Brasil, UOL, ESPN, Lance!.
-    - Escalações e desfalques importantes para jogos de hoje ou amanhã.
-    - Notícias de astros internacionais (Neymar, Vini Jr, Mbappe, Messi).
+    FONTES CONFIÁVEIS (VALORIZE): Estadão, UOL, CNN, Lance, ESPN, O Globo.
 
-    O QUE DESCARTAR (LIXO):
-    - Notícias de Prefeituras, Governo, Sesc ou editais públicos.
-    - Turismo, shows ou eventos de cidades.
-    - Venda de ingressos, serviço de jogo, sócio-torcedor ou bilheteria.
-    - Futebol FEMININO, categorias de base muito jovens (sub-15) ou outros esportes.
+    O QUE BUSCAMOS (PRIORIDADE):
+    - Resultados de jogos (quem ganhou, quem foi eliminado, quem avançou).
+    - Mercado da bola (quem chega, quem sai, rumores de craques).
+    - Notícias de times grandes do Brasil (Flamengo, Palmeiras, Corinthians, São Paulo, etc).
 
-    INSTRUÇÃO: Analise os títulos abaixo e selecione os índices das notícias que são REALMENTE sobre futebol e têm potencial de engajamento. 
-    Seja menos rígido: se o título cita um time grande e um contexto de jogo/mercado, É VÁLIDO.
+    O QUE PROIBIR (BANIR):
+    - Futebol FEMININO (totalmente proibido neste canal).
+    - Ingressos, bilheteria, sócio-torcedor.
+    - Prefeituras, editais, concursos, vacina, governo.
+
+    INSTRUÇÃO: Analise a lista e selecione os índices das notícias MAIS QUENTES sobre futebol masculino. 
+    Seja assertivo: se o título é de um grande portal e fala de um jogo ou clube grande, ACEITE.
 
     Notícias:
-    ${candidates.map((c, i) => `${i}: ${c.title}`).join('\n')}
+    ${candidates.map((c, i) => `${i}: [${c.source || 'Portal'}] ${c.title}`).join('\n')}
 
-    Retorne APENAS um array JSON com os índices em ordem de RELEVÂNCIA (do melhor para o pior). 
-    Ex: [5, 2, 0, 8]
-    Se absolutamente nada for futebol, retorne [].
+    Retorne APENAS um array JSON com os índices em ordem de RELEVÂNCIA. Ex: [5, 2, 0]
+    Se absolutamente nada for futebol masculino, retorne [].
   `;
 
   try {
