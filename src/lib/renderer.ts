@@ -12,18 +12,31 @@ export async function generateImages(content: ProcessedContent, newsImageUrl: st
   try {
     const page = await browser.newPage();
     
-    // Lógica de sorteio dos modelos escolhidos
+    // Lógica de sorteio com memória para evitar repetição consecutiva
+    const LAST_LAYOUT_PATH = path.join(process.cwd(), 'src', 'last_layout.json');
+    let lastLayouts = { feed: 0, story: 0 };
+    
+    if (fs.existsSync(LAST_LAYOUT_PATH)) {
+      try {
+        lastLayouts = JSON.parse(fs.readFileSync(LAST_LAYOUT_PATH, 'utf-8'));
+      } catch (e) { /* ignore error */ }
+    }
+
     let feedDiag = forceLayout;
     if (!feedDiag) {
-      const feedChoices = [1, 1, 2, 2, 3, 3, 5, 5, 4]; // O 4 aparece apenas 1 vez em 9 (menos vezes)
+      // Filtrar o último layout usado das opções
+      const feedChoices = [1, 1, 2, 2, 3, 3, 5, 5, 4].filter(l => l !== lastLayouts.feed);
       feedDiag = feedChoices[Math.floor(Math.random() * feedChoices.length)];
     }
 
     let storyDiag = forceLayout;
     if (!storyDiag) {
-      const storyChoices = [1, 1, 2, 2, 4]; // O 4 aparece apenas 1 vez em 5
+      const storyChoices = [1, 1, 2, 2, 4].filter(l => l !== lastLayouts.story);
       storyDiag = storyChoices[Math.floor(Math.random() * storyChoices.length)];
     }
+
+    // Salvar os novos layouts escolhidos na memória
+    fs.writeFileSync(LAST_LAYOUT_PATH, JSON.stringify({ feed: feedDiag, story: storyDiag }));
 
     const catColors: Record<string, string> = {
       'MERCADO': '#22c55e', 'URGENTE': '#ef4444', 'HOJE': '#3b82f6',
