@@ -104,17 +104,19 @@ export async function filterFootballOnly(candidates: NewsCandidate[]): Promise<n
     - Assuntos: Resultados, Gols, Mercado, Escalações, Polêmicas, Arbitragem.
     - Fontes: UOL, CNN, Estadão, ESPN, Lance, etc.
 
-    SÓ DESCARTE (LIXO REAL):
-    - Futebol Feminino (proibido neste canal).
-    - Notícias de prefeituras, editais, concursos ou vacinas.
-    - Outros esportes (vôlei, basquete, etc).
+    O QUE PROIBIR (BANIR):
+    - Futebol FEMININO (totalmente proibido).
+    - "Onde assistir", "Horário", "Escalações", "Provável time", "Transmissão".
+    - Ingressos, bilheteria, sócio-torcedor, serviços de jogo.
+    - Prefeituras, editais, concursos, vacina, governo.
 
-    TAREFA: Selecione os índices das notícias (pelo menos 5, se possível) em ordem de RELEVÂNCIA.
-    
+    INSTRUÇÃO: Selecione os índices das notícias MAIS QUENTES sobre futebol masculino. 
+    Ignore guias de TV e "serviço" de jogo. Seja assertivo: resultados e mercado são a prioridade.
+
     Notícias:
     ${candidates.map((c, i) => `${i}: [${c.source || 'Portal'}] ${c.title}`).join('\n')}
 
-    Responda APENAS com o array JSON. Ex: [0, 1, 4, 8, 12]
+    Responda APENAS com o array JSON. Ex: [0, 1, 4]
   `;
 
   try {
