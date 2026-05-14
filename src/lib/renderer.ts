@@ -39,19 +39,19 @@ export async function generateImages(content: ProcessedContent, newsImageUrl: st
     fs.writeFileSync(LAST_LAYOUT_PATH, JSON.stringify({ feed: feedDiag, story: storyDiag }));
 
     const catColors: Record<string, string> = {
-      'URGENTE': '#dc2626',   // Vermelho Forte
-      'PLANTÃO': '#ef4444',   // Vermelho Vibrante
-      'MERCADO': '#059669',   // Esmeralda (Dinheiro/Contratações)
-      'BASTIDORES': '#475569', // Slate (Informação interna)
-      'TÁTICA': '#2563eb',    // Azul (Mente/Estratégia)
-      'EXCLUSIVO': '#7c3aed', // Violeta (Raridade)
-      'ANÁLISE': '#0891b2',   // Ciano (Dados/Clareza)
-      'OPINIÃO': '#db2777',   // Rosa (Pessoal/Subjetivo)
-      'NÚMEROS': '#0d9488',   // Teal (Estatística)
-      'FATO': '#18181b',      // Preto (Direto/Factual)
-      'HISTÓRIA': '#b45309'   // Âmbar (Legado/Passado)
+      'URGENTE': '#ef4444',   // Vermelho vivo
+      'PLANTÃO': '#dc2626',   // Vermelho escuro
+      'MERCADO': '#059669',   // Verde esmeralda
+      'BASTIDORES': '#4f46e5', // Índigo vibrante
+      'TÁTICA': '#0ea5e9',    // Azul céu
+      'EXCLUSIVO': '#8b5cf6', // Violeta
+      'ANÁLISE': '#06b6d4',   // Ciano
+      'OPINIÃO': '#d946ef',   // Fuchsia
+      'NÚMEROS': '#14b8a6',   // Teal
+      'FATO': '#64748b',      // Slate (agora com box sólido)
+      'HISTÓRIA': '#f59e0b'   // Âmbar
     };
-    const badgeColor = catColors[content.category] || '#18181b';
+    const badgeColor = catColors[content.category] || '#475569';
     const bgUrl = (newsImageUrl && newsImageUrl.includes('http')) ? newsImageUrl : `https://images.unsplash.com/photo-1574629810360-7efbbe195018?auto=format&fit=crop&q=80&w=1080&h=1350`;
 
     const logoPath = path.resolve(process.cwd(), 'posts', 'logo', 'logo.svg');
@@ -59,7 +59,6 @@ export async function generateImages(content: ProcessedContent, newsImageUrl: st
     
     if (fs.existsSync(logoPath)) {
       const rawSvg = fs.readFileSync(logoPath, 'utf-8');
-      // Limpar width/height fixos do SVG para ele caber no container
       logoSvg = rawSvg
         .replace(/width=".*?"/, '')
         .replace(/height=".*?"/, '')
@@ -77,21 +76,21 @@ export async function generateImages(content: ProcessedContent, newsImageUrl: st
       1: `<div class="absolute inset-0 background-img z-0"></div>
           <div class="absolute inset-0 bg-gradient-to-t from-black via-black/80 to-transparent h-full z-10"></div>
           <div class="z-[500] flex flex-col justify-end h-full p-16 pt-32 pb-32 relative">
-            <div class="px-6 py-2 font-bebas text-5xl inline-block mb-8 w-fit uppercase backdrop-blur-md bg-white/10 border-l-8" style="border-color: ${badgeColor}; color: white;">${content.category}</div>
+            <div class="px-6 py-2 font-bebas text-5xl inline-block mb-8 w-fit uppercase text-white shadow-xl" style="background-color: ${badgeColor};">${content.category}</div>
             <h1 class="font-bebas text-[6.5rem] leading-[0.95] text-white uppercase mb-8 drop-shadow-2xl tracking-tight">${content.headline}</h1>
             <p class="text-3xl font-medium text-white/90 leading-snug mb-10 max-w-[90%]">${content.summary}</p>
           </div>`,
       2: `<div class="h-[60%] w-full relative background-img z-0"></div>
           <div class="h-[40%] w-full p-20 pt-16 pb-24 flex flex-col justify-center relative z-[500] bg-black">
-            <div class="absolute top-0 left-0 w-full h-1" style="background: linear-gradient(90deg, transparent, ${badgeColor}, transparent)"></div>
-            <div class="text-3xl font-bold tracking-[0.4em] mb-6 uppercase" style="color: ${badgeColor}">${content.category}</div>
+            <div class="absolute top-0 left-0 w-full h-2" style="background-color: ${badgeColor}"></div>
+            <div class="px-6 py-2 font-bebas text-4xl mb-6 uppercase text-white w-fit" style="background-color: ${badgeColor}">${content.category}</div>
             <h1 class="font-bebas text-[7.5rem] leading-[0.9] text-white uppercase mb-6">${content.headline}</h1>
             <p class="text-3xl font-medium text-white/70 leading-snug">${content.summary}</p>
           </div>`,
       3: `<div class="absolute inset-0 background-img z-0"></div>
           <div class="absolute inset-0 bg-gradient-to-r from-black via-black/60 to-transparent z-10"></div>
           <div class="z-[500] h-full flex flex-col justify-center p-20 relative max-w-[85%]">
-            <div class="font-bebas text-5xl text-white/50 mb-6 tracking-widest uppercase">${content.category}</div>
+            <div class="font-bebas text-6xl text-white px-8 py-2 mb-8 w-fit shadow-2xl" style="background-color: ${badgeColor}">${content.category}</div>
             <div class="border-l-[12px] pl-12 py-4" style="border-color: ${badgeColor}">
               <h1 class="font-bebas text-[8rem] leading-[1.0] text-white uppercase mb-10 drop-shadow-2xl">${content.headline}</h1>
               <p class="text-4xl font-bold text-white/90 leading-tight italic">${content.summary}</p>
@@ -100,18 +99,15 @@ export async function generateImages(content: ProcessedContent, newsImageUrl: st
       4: `<div class="absolute inset-0 background-img z-0"></div>
           <div class="absolute inset-0 bg-black/40 backdrop-blur-[2px] z-10"></div>
           <div class="z-[500] h-full flex flex-col justify-center items-center text-center p-24 relative">
-            <div class="px-8 py-2 font-bebas text-5xl uppercase mb-12 border-2" style="border-color: ${badgeColor}; color: ${badgeColor}">${content.category}</div>
-            <h1 class="font-bebas text-[8rem] leading-[0.9] text-white uppercase mb-12 drop-shadow-[0_10px_30px_rgba(0,0,0,0.5)]">${content.headline}</h1>
-            <div class="w-24 h-1 mb-12" style="background-color: ${badgeColor}"></div>
+            <div class="px-10 py-3 font-bebas text-6xl uppercase mb-12 text-white shadow-2xl" style="background-color: ${badgeColor}">${content.category}</div>
+            <h1 class="font-bebas text-[8.5rem] leading-[0.9] text-white uppercase mb-12 drop-shadow-[0_10px_30px_rgba(0,0,0,0.5)]">${content.headline}</h1>
+            <div class="w-32 h-2 mb-12" style="background-color: ${badgeColor}"></div>
             <p class="text-3xl font-black text-white italic leading-snug uppercase tracking-tight">${content.summary}</p>
           </div>`,
       5: `<div class="absolute inset-0 background-img z-0"></div>
           <div class="absolute inset-0 bg-gradient-to-b from-black/20 via-black/60 to-black z-10"></div>
           <div class="z-[500] h-full flex flex-col justify-end items-start p-20 pb-32 relative">
-            <div class="flex items-center gap-4 mb-10">
-               <div class="w-12 h-[2px]" style="background-color: ${badgeColor}"></div>
-               <div class="text-white/80 font-bebas text-5xl uppercase tracking-[0.2em]">${content.category}</div>
-            </div>
+            <div class="px-8 py-3 font-bebas text-6xl uppercase mb-10 text-white" style="background-color: ${badgeColor}">${content.category}</div>
             <h1 class="font-bebas text-[9rem] leading-[0.85] text-white uppercase mb-16 drop-shadow-2xl">${content.headline}</h1>
             <p class="text-4xl font-black text-white/90 leading-tight border-l-4 pl-10" style="border-color: ${badgeColor}">${content.summary}</p>
           </div>`,
