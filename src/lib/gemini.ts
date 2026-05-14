@@ -32,7 +32,7 @@ export interface ProcessedContent {
   summary: string;
   caption: string;
   hashtags: string[];
-  category: 'URGENTE' | 'PLANTÃO' | 'MERCADO' | 'HOJE' | 'EXCLUSIVO' | 'ANÁLISE' | 'OPINIÃO' | 'NÚMEROS' | 'ORÁCULO';
+  category: 'URGENTE' | 'PLANTÃO' | 'MERCADO' | 'BASTIDORES' | 'TÁTICA' | 'EXCLUSIVO' | 'ANÁLISE' | 'OPINIÃO' | 'NÚMEROS' | 'FATO' | 'HISTÓRIA';
   shouldCreateStory: boolean;
   imageKeywords: string;
 }
