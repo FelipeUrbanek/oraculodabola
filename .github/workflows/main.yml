@@ -20,7 +20,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: '22'
           cache: 'pnpm'
 
       - name: Install Dependencies
@@ -32,7 +32,7 @@ jobs:
       - name: Install RSSHub Dependencies
         run: |
           cd rsshub-local
-          pnpm install
+          pnpm install --no-frozen-lockfile
 
       - name: Start RSSHub Local
         run: |
