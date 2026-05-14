@@ -104,7 +104,7 @@ export async function filterFootballOnly(candidates: NewsCandidate[]): Promise<n
     - Notícias de Prefeituras, Governo, Sesc ou editais públicos.
     - Turismo, shows ou eventos de cidades.
     - Venda de ingressos, serviço de jogo, sócio-torcedor ou bilheteria.
-    - Outros esportes (Vôlei, Basquete) sem relação com o clube de futebol.
+    - Futebol FEMININO, categorias de base muito jovens (sub-15) ou outros esportes.
 
     INSTRUÇÃO: Analise os títulos abaixo e selecione os índices das notícias que são REALMENTE sobre futebol e têm potencial de engajamento. 
     Seja menos rígido: se o título cita um time grande e um contexto de jogo/mercado, É VÁLIDO.

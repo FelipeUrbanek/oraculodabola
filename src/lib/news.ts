@@ -99,7 +99,10 @@ export async function fetchFootballNews(trendTerms: string[] = []): Promise<News
     const uniqueNews: any[] = [];
     const seenWords = new Set();
     const biasedTerms = ['contra a gente', 'nosso time', 'contra nós', 'roubo', 'vergonha', 'fomos roubados', 'bora ganhar', 'vamos meu', 'nação', 'vários erros'];
-    const junkTerms = ['prefeitura', 'governo', 'bolsa', 'funarte', 'dia internacional', 'institucional', 'anpd', 'concurso', 'vacina', 'sesc', 'ingressos', 'bilheteria', 'venda de ingressos'];
+    const junkTerms = [
+      'prefeitura', 'governo', 'bolsa', 'funarte', 'dia internacional', 'institucional', 'anpd', 'concurso', 'vacina', 'sesc', 
+      'ingressos', 'bilheteria', 'venda de ingressos', 'sócio-torcedor', 'feminino', 'feminina', 'sub-17', 'sub-15'
+    ];
 
     for (const item of feed.items) {
       if (!item.link || !item.title) continue;
