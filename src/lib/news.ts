@@ -87,8 +87,8 @@ export async function fetchFootballNews(trendTerms: string[] = []): Promise<News
     );
 
     const trendQuery = filteredTrends.length > 0 ? `${filteredTrends.join(' OR ')} OR ` : '';
-    const mainTerms = 'Flamengo OR Palmeiras OR Corinthians OR "São Paulo" OR "Atlético-MG" OR Cruzeiro OR Grêmio OR Inter OR Vasco OR Santos OR "Mercado da Bola" OR Brasileirão OR Libertadores OR "Copa do Brasil" OR "Champions League" OR "Seleção Brasileira" OR "Pós-jogo" OR Oficial OR Reforço OR Escalação OR Tabela OR Sorteio';
-    const context = '(futebol OR soccer OR "mercado da bola" OR esporte)';
+    const mainTerms = '"Flamengo" OR "Palmeiras" OR "Corinthians" OR "São Paulo FC" OR "Atlético-MG" OR "Cruzeiro" OR "Grêmio" OR "Internacional" OR "Vasco" OR "Santos FC" OR "Mercado da Bola" OR Brasileirão OR Libertadores OR "Copa do Brasil" OR "Champions League" OR "Seleção Brasileira"';
+    const context = '(futebol OR soccer OR "futebol clube" OR "clube de regatas" OR "esporte clube")';
     
     // Permitir qualquer site, bloqueando apenas o ge.globo.com na query
     const query = encodeURIComponent(`(${trendQuery}${mainTerms}) ${context} -site:ge.globo.com when:4h`);

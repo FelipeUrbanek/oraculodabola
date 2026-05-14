@@ -92,14 +92,27 @@ export async function filterFootballOnly(candidates: NewsCandidate[]): Promise<n
   if (candidates.length === 0) return [];
 
   const prompt = `
-    Você é um editor de esportes. Analise os títulos abaixo e identifique quais são REALMENTE sobre futebol profissional (clubes, jogadores, campeonatos, mercado da bola).
-    Descarte TUDO o que for: Turismo, Prefeituras, Eventos de Cidade, Outros Esportes (Basquete, etc), ou notícias institucionais que apenas usem o nome de um time/cidade sem ser sobre o esporte.
+    Você é um editor-chefe de esportes experiente. Analise os títulos abaixo e identifique quais são sobre FUTEBOL PROFISSIONAL.
+    
+    O QUE ACEITAR (BONS):
+    - Resultados de jogos, tabelas, escalações e pós-jogo.
+    - Mercado da bola, contratações, rumores de transferências e demissões.
+    - Notícias sobre jogadores famosos (Neymar, Vini Jr, Messi, etc) no contexto esportivo.
+    - Decisões de tribunais esportivos (STJD), sorteios de copas e análises táticas.
+    
+    O QUE DESCARTAR (RUINS):
+    - Notícias de Prefeituras (vacinação, obras, editais, concursos).
+    - Turismo, eventos culturais de cidades, shows e eventos do SESC.
+    - Outros esportes (Basquete, Vôlei, Tênis, etc), a menos que envolvam um clube de futebol (ex: "Flamengo no Basquete").
+    - Notícias de torcidas organizadas sem contexto de jogo real.
+
+    Seja criterioso, mas não excessivo. Na dúvida se é futebol de elite, ACEITE.
 
     Notícias:
     ${candidates.map((c, i) => `${i}: ${c.title}`).join('\n')}
 
     Retorne APENAS um array JSON com os índices das notícias válidas. Ex: [0, 2, 5]
-    Se nenhuma for sobre futebol, retorne [].
+    Se absolutamente nenhuma for sobre futebol, retorne [].
   `;
 
   try {
