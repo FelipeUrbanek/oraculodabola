@@ -8,3 +8,5 @@ posts/
 !posts/logo/
 !src/history.json
 !src/milestones.json
+!src/last_category.txt
+!src/last_layout.json
