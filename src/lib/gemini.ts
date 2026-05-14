@@ -3,7 +3,8 @@ dotenv.config({ path: '.env.local' });
 import { GoogleGenerativeAI } from "@google/generative-ai";
 
 const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY || "");
-const model = genAI.getGenerativeModel({ model: "gemini-2.5-flash" });
+// Usando o modelo MAIS NOVO disponível no mundo (3.1 Flash!)
+const model = genAI.getGenerativeModel({ model: "gemini-3.1-flash-live-preview" });
 
 export interface ProcessedContent {
   headline: string;
@@ -19,122 +20,64 @@ export interface NewsCandidate {
   title: string;
   snippet: string;
   source?: string;
+  pubDate: string;
 }
 
 export async function processNewsWithGemini(title: string, snippet: string): Promise<ProcessedContent> {
   const prompt = `
-    Persona: Você é um jornalista esportivo brasileiro de elite. Seu tom é profissional, informativo e dinâmico. Você foca nos fatos, nomes e números de forma clara e objetiva.
+    Persona: Você é um jornalista esportivo brasileiro de elite. Seu tom é profissional, informativo e dinâmico.
     
     REGRAS CRÍTICAS:
-    - NUNCA use palavras que sugiram conteúdo externo ou vídeos, como "Veja", "Assista", "Confira no vídeo" ou "Onde assistir". 
-    - Como estamos no Instagram, não temos links clicáveis. Transforme notícias de "transmissão" ou "vídeo" em FATOS NARRATIVOS. (Ex: Em vez de "Veja o golaço", use "Bontempo marca golaço e Santos vence").
-    - NUNCA prometa links ou cliques. 
-    - PROIBIDO: Não use NENHUM emoji ou ícone nos campos "headline" e "summary". Eles devem ser apenas texto limpo para a arte. 
+    - PROIBIDO VAGUEZA: Nunca use frases como "mandou recado", "fez declaração forte" sem dizer O QUE foi dito.
+    - SEJA ESPECÍFICO: Extraia o fato real do título e snippet.
+    - Como estamos no Instagram, não temos links clicáveis. 
+    - PROIBIDO: Não use NENHUM emoji ou ícone nos campos "headline" e "summary".
     
-    Analise esta notícia: "${title}" - "${snippet}"
+    Analise: "${title}" - "${snippet}"
  
     Retorne um JSON estrito com:
-    - headline: Manchete Factual e Narrativa (max 45 caracteres). SEM EMOJIS.
-    - summary: Resumo informativo dos fatos para a arte (max 140 caracteres). SEM EMOJIS.
-    - caption: Legenda MAGNA e EXTENSA para o Instagram (Mínimo de 500 e MÁXIMO de 1000 caracteres). Estrutura: 1. Manchete impactante com emojis, 2. Parágrafo detalhado sobre o fato, 3. Parágrafo de ANÁLISE TÁTICA ou CONTEXTO HISTÓRICO, 4. Parágrafo sobre o que isso muda para o time/jogador no futuro, 5. Pergunta engajadora. Seja um jornalista de elite, imparcial e profundo.
-    - hashtags: 3 a 5 hashtags sobre o time ou assunto.
-    - category: Escolha APENAS UMA entre:
-      - 'URGENTE': Notícias quentes de última hora.
-      - 'PLANTÃO': Gravidade extrema, impacto nacional/global.
-      - 'MERCADO': Transferências, contratações e valores.
-      - 'HOJE': Notícias do dia a dia (treinos, escalações).
-      - 'EXCLUSIVO': Furos de reportagem únicos.
-      - 'ANÁLISE': Tática e desempenho profundo.
-      - 'OPINIÃO': Comentários e tom subjetivo.
-      - 'NÚMEROS': Estatísticas, recordes e probabilidades.
-      - 'ORÁCULO': Previsões e curiosidades históricas.
-    - shouldCreateStory: true se a notícia for importante, false se for secundária.
-    - imageKeywords: Uma string com 3 palavras-chave para busca de imagem.
-
-    Importante: Retorne APENAS o JSON.
-  `;
-
-  const result = await model.generateContent(prompt);
-  const response = await result.response;
-  const text = response.text().replace(/```json|```/g, "").trim();
-  let parsedResult = JSON.parse(text);
-
-  // Validação de segurança: Se a legenda for muito grande, tenta gerar de novo mais curta
-  if (parsedResult.caption.length > 1800) {
-    console.log(`⚠️ Legenda muito longa (${parsedResult.caption.length} chars). Tentando reduzir...`);
-    const retryPrompt = `${prompt}\n\nIMPORTANTE: A legenda anterior ficou muito longa. Gere uma versão mais concisa, com no máximo 1500 caracteres.`;
-    const retryResult = await model.generateContent(retryPrompt);
-    const retryText = retryResult.response.text().replace(/```json|```/g, '').trim();
-    parsedResult = JSON.parse(retryText);
-  }
-
-  // Corte final de segurança (Hard Limit para Instagram é 2200, deixamos margem para hashtags)
-  if (parsedResult.caption.length > 2000) {
-    parsedResult.caption = parsedResult.caption.substring(0, 1990) + "...";
-  }
-
-  return parsedResult;
-}
-
-export async function rankBestNews(candidates: NewsCandidate[]): Promise<number> {
-  if (candidates.length <= 1) return 0;
-
-  const prompt = `
-    Você é um editor-chefe de um portal de notícias esportivas. 
-    Analise as seguintes notícias e escolha APENAS UMA que tenha o maior potencial de engajamento, curtidas e comentários no Instagram.
-    Considere: Hype de jogadores, importância do clube, impacto do resultado e polêmica.
-
-    Notícias:
-    ${candidates.map((c, i) => `${i}: ${c.title}`).join('\n')}
-
-    Retorne APENAS o número do índice da melhor notícia. Ex: 0
+    - headline: Manchete Factual (max 40 caracteres).
+    - summary: Resumo com o FATO REAL (max 140 caracteres).
+    - caption: Legenda profunda para o Instagram (Mínimo de 500 e MÁXIMO de 1000 caracteres).
+    - hashtags: 3 a 5 hashtags.
+    - category: Uma entre 'URGENTE', 'PLANTÃO', 'MERCADO', 'HOJE', 'EXCLUSIVO', 'ANÁLISE', 'OPINIÃO', 'NÚMEROS', 'ORÁCULO'.
+    - shouldCreateStory: boolean.
+    - imageKeywords: 3 palavras-chave.
   `;
 
   try {
     const result = await model.generateContent(prompt);
-    const index = parseInt(result.response.text().trim());
-    return isNaN(index) ? 0 : index;
-  } catch (e) {
-    return 0;
-  }
-}
-
-export async function filterFootballOnly(candidates: NewsCandidate[]): Promise<number[]> {
-  if (candidates.length === 0) return [];
-
-  const prompt = `
-    Você é o Editor-Chefe do "Oráculo da Bola". Sua missão é ENCONTRAR as melhores notícias de FUTEBOL MASCULINO PROFISSIONAL.
-    
-    DIRETRIZ DE OURO: SEJA CRÍTICO. 
-    Se a notícia fala de um time grande, de um jogo real, de uma transferência ou de um resultado, ELA É EXCELENTE. 
-    
-    BANIR (REJEITAR TOTALMENTE):
-    - "Onde assistir", "Horário", "Guia de transmissão", "Tempo real", "Canal de TV".
-    - "Escalações", "Provável time", "Desfalques" (A menos que seja uma lesão grave de um craque).
-    - INTERATIVIDADE: "Convoque sua seleção", "Dê sua nota", "Participe da enquete", "Monte seu time", "Escolha os titulares".
-    - Futebol FEMININO.
-    - Notícias da CIDADE (prefeitura, trânsito, polícia) só porque citam o nome do time.
-
-    INSTRUÇÃO: Selecione os índices das notícias MAIS QUENTES sobre futebol masculino. 
-    Ignore guias de TV e "serviço" de jogo. Seja assertivo: resultados e mercado são a prioridade.
-
-    Notícias:
-    ${candidates.map((c, i) => `${i}: [${c.source || 'Portal'}] ${c.title}`).join('\n')}
-
-    Responda APENAS com o array JSON. Ex: [0, 1, 4]
-  `;
-
-  try {
-    const result = await model.generateContent(prompt);
-    const text = result.response.text().trim();
-    const match = text.match(/\[[\s\S]*\]/);
-    if (match) {
-      const indices = JSON.parse(match[0]);
-      return Array.isArray(indices) ? indices.filter((i: number) => i >= 0 && i < candidates.length) : [];
+    const text = result.response.text().replace(/```json|```/g, "").trim();
+    let parsedResult = JSON.parse(text);
+    if (parsedResult.caption.length > 2000) {
+      parsedResult.caption = parsedResult.caption.substring(0, 1990) + "...";
     }
-    return [];
+    return parsedResult;
   } catch (e) {
-    console.error('Erro ao filtrar com IA:', e);
-    return candidates.map((_, i) => i);
+    console.error("Erro Gemini 3.1:", e);
+    throw e;
   }
+}
+
+export async function filterFootballOnly(candidates: any[]): Promise<number[]> {
+  const prompt = `Selecione os índices das notícias MAIS QUENTES sobre futebol masculino. Ignore TV e enquetes. 
+  Notícias:\n${candidates.map((c, i) => `${i}: ${c.title}`).join('\n')}
+  Responda APENAS o array JSON. Ex: [0, 3]`;
+  try {
+    const result = await model.generateContent(prompt);
+    const match = result.response.text().match(/\[[\s\S]*\]/);
+    return match ? JSON.parse(match[0]) : [];
+  } catch (e) { return candidates.map((_, i) => i); }
+}
+
+export async function rankBestNews(newsList: any[]): Promise<any> {
+  if (newsList.length <= 1) return newsList[0] || null;
+  const newsContext = newsList.map((n, i) => `[${i}] ${n.category}: ${n.title}`).join('\n');
+  const prompt = `Escolha o índice da ÚNICA notícia com mais engajamento. Priorize o FRESCOR (mais novas).
+  Lista:\n${newsContext}\nResponda APENAS o número do índice.`;
+  try {
+    const result = await model.generateContent(prompt);
+    const index = parseInt(result.response.text().trim().replace(/[^0-9]/g, ''));
+    return newsList[index] || newsList[0];
+  } catch (e) { return newsList[0]; }
 }

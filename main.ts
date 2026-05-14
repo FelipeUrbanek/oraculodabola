@@ -1,7 +1,7 @@
 import dotenv from 'dotenv';
 dotenv.config({ path: '.env.local' });
 import { fetchFootballNews } from './src/lib/news';
-import { processNewsWithGemini } from './src/lib/gemini';
+import { processNewsWithGemini, rankBestNews } from './src/lib/gemini';
 import { generateImages } from './src/lib/renderer';
 import { archiveOldPosts } from './src/lib/archiver';
 import { getFollowersCount, postToInstagram } from './src/lib/instagram';
@@ -14,39 +14,25 @@ const HISTORY_FILE = path.join(process.cwd(), 'src', 'history.json');
 async function runOráculo() {
   console.log("🔮 O Oráculo está despertando...");
   
-  // 1. Carregar Histórico com Tipagem
   let history: string[] = [];
   if (fs.existsSync(HISTORY_FILE)) {
     try {
       history = JSON.parse(fs.readFileSync(HISTORY_FILE, 'utf-8'));
-    } catch (e) {
-      history = [];
-    }
+    } catch (e) { history = []; }
   }
 
-  // 2. Scrape News
   const newsList = await fetchFootballNews();
-  
-  // 2.0 Lógica de Rodízio: Ler última categoria postada
   const LAST_CATEGORY_FILE = path.join(process.cwd(), 'src', 'last_category.txt');
-  let lastCategory = '';
-  if (fs.existsSync(LAST_CATEGORY_FILE)) {
-    lastCategory = fs.readFileSync(LAST_CATEGORY_FILE, 'utf-8').trim();
-  }
+  let lastCategory = fs.existsSync(LAST_CATEGORY_FILE) ? fs.readFileSync(LAST_CATEGORY_FILE, 'utf-8').trim() : '';
 
-  // 2.1 Filtrar por link, similaridade e RODÍZIO
+  // Filtrar e ORDENAR POR FRESCOR (Mais novas primeiro)
   const processedTitlesInCurrentRun = new Set();
   const newItems = newsList.filter((item: any) => {
     const isNewLink = !history.includes(item.link);
-    
     const cleanTitle = item.title.split(' - ')[0].toLowerCase().trim();
     const isNewContent = !history.some(h => h === cleanTitle) && !processedTitlesInCurrentRun.has(cleanTitle);
     const hasImage = !!item.imageUrl;
-
-    // RODÍZIO: Ignorar se for a mesma categoria do último post
     const isDifferentCategory = item.category !== lastCategory;
-
-    // Filtro de utilidade (Ignorar onde assistir, ao vivo, etc)
     const forbidden = ["onde assistir", "ao vivo", "transmissão", "tempo real", "como assistir", "escalação", "palpite"];
     const isServiceNews = forbidden.some(word => cleanTitle.includes(word));
 
@@ -55,98 +41,81 @@ async function runOráculo() {
       return true;
     }
     return false;
-  }).slice(0, 1); // Apenas 1 post por hora para manter o limite de 25/dia do Instagram
+  }).sort((a, b) => new Date(b.pubDate).getTime() - new Date(a.pubDate).getTime())
+    .slice(0, 15);
 
   if (newItems.length === 0) {
-    console.log(`💤 Nenhuma novidade fresquinha (Pulando categoria repetida: ${lastCategory}).`);
+    console.log(`💤 Nenhuma novidade fresquinha (Categoria: ${lastCategory}).`);
     return;
   }
 
-  for (let i = 0; i < newItems.length; i++) {
-    const item = newItems[i];
-    console.log(`🧐 [${i+1}/${newItems.length}] Processando [${item.category}]: ${item.title}`);
+  // LÓGICA DE COMPENSAÇÃO: Se ficou muito tempo sem postar, postar até 3
+  const LAST_POST_FILE = path.join(process.cwd(), 'src', 'last_post.json');
+  let lastPostTime = Date.now() - (60 * 60 * 1000); 
+  if (fs.existsSync(LAST_POST_FILE)) {
+    try {
+      const data = JSON.parse(fs.readFileSync(LAST_POST_FILE, 'utf-8'));
+      lastPostTime = new Date(data.timestamp).getTime();
+    } catch (e) { /* ignore */ }
+  }
+
+  const hoursSinceLastPost = (Date.now() - lastPostTime) / (1000 * 60 * 60);
+  let postsToMake = 1;
+  if (hoursSinceLastPost > 4) postsToMake = 3;
+  else if (hoursSinceLastPost > 2) postsToMake = 2;
+
+  console.log(`⏱️ Último post há ${hoursSinceLastPost.toFixed(1)}h. Planejando ${postsToMake} post(s).`);
+
+  const finalItems: any[] = [];
+  let candidatesPool = [...newItems];
+
+  for (let p = 0; p < postsToMake; p++) {
+    if (candidatesPool.length === 0) break;
+    const bestItem = await rankBestNews(candidatesPool);
+    if (bestItem) {
+      finalItems.push(bestItem);
+      candidatesPool = candidatesPool.filter(c => c.link !== bestItem.link);
+    }
+  }
+
+  for (let i = 0; i < finalItems.length; i++) {
+    const item = finalItems[i];
+    console.log(`🧐 [${i+1}/${finalItems.length}] Processando [${item.category}]: ${item.title}`);
     
     try {
-      // 3. IA Process
       const processed = await processNewsWithGemini(item.title, item.contentSnippet);
-      
-      // 4. Render
-      console.log(`🎨 Gerando artes: ${processed.headline}`);
       const paths = await generateImages(processed, item.imageUrl || null);
-      
-      // 5. Postar no Instagram
       const scheduledTime = i === 0 ? undefined : Math.floor(Date.now() / 1000) + (i * 10 * 60);
       
-      console.log(`🚀 Iniciando postagem automática...`);
-      await postToInstagram(
-        paths.feedPath, 
-        `${processed.caption}\n\n${processed.hashtags.join(' ')}`,
-        scheduledTime
-      );
+      await postToInstagram(paths.feedPath, `${processed.caption}\n\n${processed.hashtags.join(' ')}`, scheduledTime);
       
-      // 6. Salvar Legenda e Metadados
-      const metadataPath = paths.feedPath.replace('_feed.jpg', '_meta.json');
-      fs.writeFileSync(metadataPath, JSON.stringify({
-        ...processed,
-        category: item.category,
-        originalLink: item.link,
-        timestamp: new Date().toISOString()
-      }, null, 2));
-
-      // 7. Atualizar Histórico e RODÍZIO
-      const cleanTitle = item.title.split(' - ')[0].toLowerCase().trim();
       history.push(item.link);
-      history.push(cleanTitle);
-      
+      history.push(item.title.split(' - ')[0].toLowerCase().trim());
       if (history.length > 1000) history = history.slice(-1000);
       
       fs.writeFileSync(HISTORY_FILE, JSON.stringify(history, null, 2));
-      fs.writeFileSync(LAST_CATEGORY_FILE, item.category); // Salva para o próximo rodízio
+      fs.writeFileSync(LAST_CATEGORY_FILE, item.category);
+      fs.writeFileSync(LAST_POST_FILE, JSON.stringify({ timestamp: new Date().toISOString() }));
       
       console.log(`✅ Postagem confirmada [${item.category}]: ${processed.headline}`);
-      
-    } catch (error) {
-      console.error(`❌ Falha ao processar ${item.title}:`, error);
-    }
+    } catch (error) { console.error(`❌ Erro em ${item.title}:`, error); }
   }
 
-  // 8. Arquivar pastas com mais de 20 dias
-  console.log("📂 Verificando pastas antigas para arquivamento...");
   await archiveOldPosts();
 
-  // 9. Verificar Marcos de Seguidores
   try {
-    console.log("📈 Verificando marcos de seguidores...");
     const followers = await getFollowersCount();
-    console.log(`👥 Seguidores atuais: ${followers}`);
-
     const MILESTONES_FILE = path.join(process.cwd(), 'src', 'milestones.json');
-    let milestoneHistory: string[] = [];
-    if (fs.existsSync(MILESTONES_FILE)) {
-      milestoneHistory = JSON.parse(fs.readFileSync(MILESTONES_FILE, 'utf-8'));
-    }
-
-    const currentMilestone = milestones.find(m => {
-      const val = parseInt(m.value.replace('.', ''));
-      return followers >= val && !milestoneHistory.includes(m.value);
-    });
-
+    let milestoneHistory: string[] = fs.existsSync(MILESTONES_FILE) ? JSON.parse(fs.readFileSync(MILESTONES_FILE, 'utf-8')) : [];
+    const currentMilestone = milestones.find(m => parseInt(m.value.replace('.', '')) <= followers && !milestoneHistory.includes(m.value));
     if (currentMilestone) {
-      console.log(`🎉 NOVO MARCO ALCANÇADO: ${currentMilestone.value}!`);
       const celebrationPath = await generateCelebrationImage(currentMilestone);
-      
-      const caption = `SOMOS ${currentMilestone.value}! ${currentMilestone.sub} Obrigado a cada um de vocês que faz parte do Oráculo da Bola. ⚽️❤️ #OraculoDaBola #Gratidão #Futebol`;
-      await postToInstagram(celebrationPath, caption);
-      
+      await postToInstagram(celebrationPath, `SOMOS ${currentMilestone.value}! ${currentMilestone.sub} #OraculoDaBola`);
       milestoneHistory.push(currentMilestone.value);
       fs.writeFileSync(MILESTONES_FILE, JSON.stringify(milestoneHistory, null, 2));
-      console.log(`✅ Celebração de ${currentMilestone.value} postada com sucesso!`);
     }
-  } catch (mError) {
-    console.error("❌ Erro no módulo de marcos:", mError);
-  }
+  } catch (mError) { console.error("Erro marcos:", mError); }
   
-  console.log("🔮 O Oráculo terminou sua jornada.");
   process.exit(0);
 }
 
