@@ -2,7 +2,7 @@ name: Oráculo da Bola - Automação Total
 
 on:
   schedule:
-    - cron: '20 * * * *' # Roda a cada 1 hora (24 posts por dia para segurança total) - no minuto 20
+    - cron: '43 * * * *' # Roda a cada 1 hora (minuto 43 tem menos concorrência no GitHub)
   workflow_dispatch: # Permite rodar manualmente
 
 jobs:
