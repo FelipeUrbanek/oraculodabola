@@ -26,6 +26,10 @@ async function santosTest() {
   console.log('\n--- JSON GERADO ---');
   console.log(JSON.stringify(processed, null, 2));
 
+  // Salvar para verificação
+  const fs = require('fs');
+  fs.writeFileSync('scratch/last_test_result.json', JSON.stringify(processed, null, 2));
+
   console.log('\n🎨 Gerando arte final...');
   const paths = await generateImages(processed, best.imageUrl || null);
   console.log(`✨ Arte concluída: ${paths.feedPath}`);
