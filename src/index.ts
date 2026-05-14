@@ -1,5 +1,5 @@
 import { fetchFootballNews } from './lib/news.js';
-import { processNewsWithGemini } from './lib/gemini.js';
+import { processNewsWithGemini, rankBestNews } from './lib/gemini.js';
 import { fetchCurrentTrends } from './lib/trends.js';
 import { handleCommentsEngagement } from './lib/engagement.js';
 import { generateImages } from './lib/renderer.js';
@@ -31,20 +31,19 @@ async function main() {
     return;
   }
 
-  // 4. Seleção da Notícia
-  const now = new Date();
-  const peaks = [12, 18, 21];
+  // 4. Seleção Inteligente da Notícia
   let newsToPost = newItems[0];
 
-  // Se for horário de pico, pedimos ao Gemini para escolher a melhor entre as disponíveis
-  if (peaks.includes(now.getHours()) && newItems.length > 1) {
-    console.log('🌟 Horário de Pico Detectado! Selecionando a melhor notícia do lote...');
-    // Aqui poderíamos adicionar uma função para o Gemini escolher, mas por simplificação, 
-    // como já estão ordenadas por relevância na busca, pegamos a primeira que é a 'Trend' do momento.
-    newsToPost = newItems[0];
+  if (newItems.length > 1) {
+    console.log(`🧠 Analisando ${newItems.length} notícias para escolher a melhor...`);
+    const bestIndex = await rankBestNews(newItems.map(item => ({
+      title: item.title,
+      snippet: item.contentSnippet
+    })));
+    newsToPost = newItems[bestIndex];
   }
 
-  console.log(`Nova notícia selecionada: ${newsToPost.title}`);
+  console.log(`🔥 Seleção do Oráculo: ${newsToPost.title}`);
 
   try {
     // 3. Processar com Gemini

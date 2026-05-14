@@ -15,6 +15,11 @@ export interface ProcessedContent {
   imageKeywords: string;
 }
 
+export interface NewsCandidate {
+  title: string;
+  snippet: string;
+}
+
 export async function processNewsWithGemini(title: string, snippet: string): Promise<ProcessedContent> {
   const prompt = `
     Persona: Você é um jornalista esportivo brasileiro de elite. Seu tom é profissional, informativo e dinâmico. Você foca nos fatos, nomes e números de forma clara e objetiva.
@@ -58,4 +63,27 @@ export async function processNewsWithGemini(title: string, snippet: string): Pro
   }
 
   return parsedResult;
+}
+
+export async function rankBestNews(candidates: NewsCandidate[]): Promise<number> {
+  if (candidates.length <= 1) return 0;
+
+  const prompt = `
+    Você é um editor-chefe de um portal de notícias esportivas. 
+    Analise as seguintes notícias e escolha APENAS UMA que tenha o maior potencial de engajamento, curtidas e comentários no Instagram.
+    Considere: Hype de jogadores, importância do clube, impacto do resultado e polêmica.
+
+    Notícias:
+    ${candidates.map((c, i) => `${i}: ${c.title}`).join('\n')}
+
+    Retorne APENAS o número do índice da melhor notícia. Ex: 0
+  `;
+
+  try {
+    const result = await model.generateContent(prompt);
+    const index = parseInt(result.response.text().trim());
+    return isNaN(index) ? 0 : index;
+  } catch (e) {
+    return 0;
+  }
 }
