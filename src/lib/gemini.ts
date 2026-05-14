@@ -92,27 +92,28 @@ export async function filterFootballOnly(candidates: NewsCandidate[]): Promise<n
   if (candidates.length === 0) return [];
 
   const prompt = `
-    Você é um editor-chefe de esportes experiente. Analise os títulos abaixo e identifique quais são sobre FUTEBOL PROFISSIONAL.
+    Você é o Editor-Chefe do "Oráculo da Bola". Sua missão é selecionar as notícias mais IMPACTANTES sobre futebol profissional para o Instagram.
     
-    O QUE ACEITAR (BONS):
-    - Resultados de jogos, tabelas, escalações e pós-jogo.
-    - Mercado da bola, contratações, rumores de transferências e demissões.
-    - Notícias sobre jogadores famosos (Neymar, Vini Jr, Messi, etc) no contexto esportivo.
-    - Decisões de tribunais esportivos (STJD), sorteios de copas e análises táticas.
-    
-    O QUE DESCARTAR (RUINS):
-    - Notícias de Prefeituras (vacinação, obras, editais, concursos).
-    - Turismo, eventos culturais de cidades, shows e eventos do SESC.
-    - Outros esportes (Basquete, Vôlei, Tênis, etc), a menos que envolvam um clube de futebol (ex: "Flamengo no Basquete").
-    - Notícias de torcidas organizadas sem contexto de jogo real.
+    CRITÉRIOS DE OURO (ACEITE SEMPRE):
+    - Resultados de jogos decisivos (eliminatórias, clássicos, finais).
+    - Contratações OFICIAIS ou rumores fortes de times grandes (Flamengo, Palmeiras, Corinthians, etc).
+    - Escalações e desfalques importantes para jogos de hoje ou amanhã.
+    - Notícias de astros internacionais (Neymar, Vini Jr, Mbappe, Messi).
 
-    Seja criterioso, mas não excessivo. Na dúvida se é futebol de elite, ACEITE.
+    O QUE DESCARTAR (LIXO):
+    - Notícias de Prefeituras, Governo, Sesc ou editais públicos.
+    - Turismo, shows ou eventos de cidades.
+    - Outros esportes (Vôlei, Basquete) sem relação com o clube de futebol.
+
+    INSTRUÇÃO: Analise os títulos abaixo e selecione os índices das notícias que são REALMENTE sobre futebol e têm potencial de engajamento. 
+    Seja menos rígido: se o título cita um time grande e um contexto de jogo/mercado, É VÁLIDO.
 
     Notícias:
     ${candidates.map((c, i) => `${i}: ${c.title}`).join('\n')}
 
-    Retorne APENAS um array JSON com os índices das notícias válidas. Ex: [0, 2, 5]
-    Se absolutamente nenhuma for sobre futebol, retorne [].
+    Retorne APENAS um array JSON com os índices em ordem de RELEVÂNCIA (do melhor para o pior). 
+    Ex: [5, 2, 0, 8]
+    Se absolutamente nada for futebol, retorne [].
   `;
 
   try {
@@ -120,12 +121,13 @@ export async function filterFootballOnly(candidates: NewsCandidate[]): Promise<n
     const text = result.response.text().trim();
     const match = text.match(/\[.*\]/);
     if (match) {
-      return JSON.parse(match[0]);
+      const indices = JSON.parse(match[0]);
+      // Garantir que os índices são válidos
+      return indices.filter((i: number) => i >= 0 && i < candidates.length);
     }
     return [];
   } catch (e) {
     console.error('Erro ao filtrar com IA:', e);
-    // Em caso de erro, retorna tudo para não perdermos notícia (fallback)
     return candidates.map((_, i) => i);
   }
 }
