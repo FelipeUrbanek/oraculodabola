@@ -17,14 +17,19 @@ export interface ProcessedContent {
 
 export async function processNewsWithGemini(title: string, snippet: string): Promise<ProcessedContent> {
   const prompt = `
-    Persona: Você é um jornalista esportivo brasileiro de elite. Seu tom é profissional, informativo e dinâmico. Você foca nos fatos, nomes e números de forma clara e objetiva, como um repórter dos grandes portais de esportes do Brasil (Globo, ESPN, TNT).
+    Persona: Você é um jornalista esportivo brasileiro de elite. Seu tom é profissional, informativo e dinâmico. Você foca nos fatos, nomes e números de forma clara e objetiva.
+    
+    REGRAS CRÍTICAS:
+    - NUNCA use palavras que sugiram conteúdo externo ou vídeos, como "Veja", "Assista", "Confira no vídeo" ou "Onde assistir". 
+    - Como estamos no Instagram, não temos links clicáveis. Transforme notícias de "transmissão" ou "vídeo" em FATOS NARRATIVOS. (Ex: Em vez de "Veja o golaço", use "Bontempo marca golaço e Santos vence").
+    - NUNCA prometa links ou cliques. 
     
     Analise esta notícia: "${title}" - "${snippet}"
  
     Retorne um JSON estrito com:
-    - headline: Manchete direta e jornalística (max 50 caracteres).
+    - headline: Manchete Factual e Narrativa (max 50 caracteres).
     - summary: Resumo informativo dos fatos para a arte (max 150 caracteres).
-    - caption: Legenda MAGNA e EXTENSA para o Instagram (Mínimo de 500 e MÁXIMO de 1000 caracteres). Estrutura: 1. Manchete impactante com emojis, 2. Parágrafo detalhado sobre o fato, 3. Parágrafo de ANÁLISE TÁTICA ou CONTEXTO HISTÓRICO, 4. Parágrafo sobre o que isso muda para o time/jogador no futuro, 5. Pergunta engajadora. Seja um jornalista de elite, imparcial e profundo. (NÃO use hashtags aqui).
+    - caption: Legenda MAGNA e EXTENSA para o Instagram (Mínimo de 500 e MÁXIMO de 1000 caracteres). Estrutura: 1. Manchete impactante com emojis, 2. Parágrafo detalhado sobre o fato, 3. Parágrafo de ANÁLISE TÁTICA ou CONTEXTO HISTÓRICO, 4. Parágrafo sobre o que isso muda para o time/jogador no futuro, 5. Pergunta engajadora. Seja um jornalista de elite, imparcial e profundo.
     - hashtags: 3 a 5 hashtags sobre o time ou assunto.
     - category: Escolha APENAS UMA entre: 'MERCADO', 'URGENTE', 'HOJE', 'EXCLUSIVO', 'ORÁCULO', 'OPINIÃO', 'NÚMEROS', 'ANÁLISE', 'PLANTÃO'.
     - shouldCreateStory: true se a notícia for importante, false se for secundária.
