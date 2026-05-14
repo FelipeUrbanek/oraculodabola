@@ -97,6 +97,7 @@ export async function filterFootballOnly(candidates: NewsCandidate[]): Promise<n
     CRITÉRIOS DE OURO (ACEITE SEMPRE):
     - Resultados de jogos decisivos (eliminatórias, clássicos, finais).
     - Contratações OFICIAIS ou rumores fortes de times grandes (Flamengo, Palmeiras, Corinthians, etc).
+    - Fontes de alta credibilidade: Estadão, Folha de S.Paulo, O Globo, CNN Brasil, UOL, ESPN, Lance!.
     - Escalações e desfalques importantes para jogos de hoje ou amanhã.
     - Notícias de astros internacionais (Neymar, Vini Jr, Mbappe, Messi).
 
