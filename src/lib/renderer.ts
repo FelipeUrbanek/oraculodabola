@@ -39,9 +39,9 @@ export async function generateImages(content: ProcessedContent, newsImageUrl: st
     fs.writeFileSync(LAST_LAYOUT_PATH, JSON.stringify({ feed: feedDiag, story: storyDiag }));
 
     const catColors: Record<string, string> = {
-      'MERCADO': '#22c55e', 'URGENTE': '#ef4444', 'HOJE': '#3b82f6',
-      'EXCLUSIVO': '#a855f7', 'ORÁCULO': '#eab308', 'OPINIÃO': '#ec4899',
-      'NÚMEROS': '#06b6d4', 'ANÁLISE': '#f97316', 'PLANTÃO': '#ff0000'
+      'URGENTE': '#ef4444', 'PLANTÃO': '#18181b', 'MERCADO': '#22c55e',
+      'HOJE': '#3b82f6', 'EXCLUSIVO': '#a855f7', 'ANÁLISE': '#f97316',
+      'OPINIÃO': '#ec4899', 'NÚMEROS': '#06b6d4', 'ORÁCULO': '#eab308'
     };
     const badgeColor = catColors[content.category] || '#ef4444';
     const bgUrl = (newsImageUrl && newsImageUrl.includes('http')) ? newsImageUrl : `https://images.unsplash.com/photo-1574629810360-7efbbe195018?auto=format&fit=crop&q=80&w=1080&h=1350`;
@@ -68,39 +68,39 @@ export async function generateImages(content: ProcessedContent, newsImageUrl: st
     const feedLayouts: Record<number, string> = {
       1: `<div class="absolute inset-0 background-img z-0"></div>
           <div class="absolute inset-0 bg-gradient-to-t from-black via-black/80 to-transparent h-full z-10"></div>
-          <div class="z-[500] flex flex-col justify-end h-full p-16 pb-24 relative">
+          <div class="z-[500] flex flex-col justify-end h-full p-16 pt-32 pb-32 relative">
             <div class="px-8 py-3 font-bebas text-6xl inline-block mb-10 w-fit uppercase" style="background-color: ${badgeColor}; color: white; font-weight: 900; border-left: 15px solid white;">${content.category}</div>
-            <h1 class="font-bebas text-[6.5rem] leading-[0.8] text-white uppercase mb-10 drop-shadow-[0_5px_15px_rgba(0,0,0,1)] tracking-normal">${content.headline}</h1>
-            <p class="text-3xl font-bold text-white leading-tight drop-shadow-lg">${content.summary}</p>
+            <h1 class="font-bebas text-[6rem] leading-[1.0] text-white uppercase mb-10 drop-shadow-[0_5px_15px_rgba(0,0,0,1)] tracking-[0.05em]">${content.headline}</h1>
+            <p class="text-3xl font-bold text-white leading-snug drop-shadow-lg mb-10">${content.summary}</p>
           </div>`,
       2: `<div class="h-[55%] w-full relative background-img z-0"></div>
-          <div class="h-[45%] w-full p-16 flex flex-col justify-center relative z-[500]" style="background-color: #000; border-top: 25px solid ${badgeColor}">
+          <div class="h-[45%] w-full p-20 pt-24 pb-32 flex flex-col justify-center relative z-[500]" style="background-color: #000; border-top: 25px solid ${badgeColor}">
             <div class="text-4xl font-black tracking-[0.6em] mb-8 text-white uppercase" style="color: ${badgeColor}">${content.category}</div>
-            <h1 class="font-bebas text-[7.5rem] leading-[0.8] text-white uppercase mb-8 tracking-tight">${content.headline}</h1>
-            <p class="text-3xl font-bold text-white opacity-80 leading-tight">${content.summary}</p>
+            <h1 class="font-bebas text-[7rem] leading-[0.95] text-white uppercase mb-8 tracking-[0.02em]">${content.headline}</h1>
+            <p class="text-3xl font-bold text-white opacity-80 leading-snug">${content.summary}</p>
           </div>`,
       3: `<div class="absolute inset-0 background-img z-0"></div>
           <div class="absolute inset-0 bg-gradient-to-t from-black via-black/85 to-transparent z-10"></div>
-          <div class="z-[500] h-full flex flex-col justify-between p-20 relative">
+          <div class="z-[500] h-full flex flex-col justify-between p-20 pt-32 pb-32 relative">
             <div class="font-bebas text-6xl text-white px-10 py-3 mt-20" style="background: ${badgeColor}; font-weight: 900;">${content.category}</div>
-            <div class="bg-black/95 p-12 border-l-[25px]" style="border-color: ${badgeColor}">
-              <h1 class="font-bebas text-[8.5rem] leading-[0.75] text-white uppercase mb-12 drop-shadow-2xl tracking-normal">${content.headline}</h1>
-              <p class="text-3xl font-bold text-white leading-tight italic drop-shadow-lg">${content.summary}</p>
+            <div class="bg-black/95 p-12 border-l-[25px] mb-10" style="border-color: ${badgeColor}">
+              <h1 class="font-bebas text-[8rem] leading-[1.0] text-white uppercase mb-12 drop-shadow-2xl tracking-[0.05em]">${content.headline}</h1>
+              <p class="text-3xl font-bold text-white leading-snug italic drop-shadow-lg">${content.summary}</p>
             </div>
           </div>`,
       4: `<div class="absolute inset-0 background-img z-0"></div>
           <div class="absolute inset-0 bg-black/50 z-10"></div>
-          <div class="z-[500] h-full flex flex-col justify-center items-center text-center p-20 relative">
+          <div class="z-[500] h-full flex flex-col justify-center items-center text-center p-20 pt-32 pb-32 relative">
             <div class="bg-white text-black px-12 py-4 font-bebas text-7xl uppercase mb-16 shadow-2xl" style="background-color: ${badgeColor}; color: white;">${content.category}</div>
-            <h1 class="font-bebas text-[8rem] leading-[0.85] text-white uppercase mb-16 drop-shadow-2xl tracking-tight">${content.headline}</h1>
-            <p class="text-3xl font-black text-white italic px-10">${content.summary}</p>
+            <h1 class="font-bebas text-[7.5rem] leading-[1.0] text-white uppercase mb-16 drop-shadow-2xl tracking-[0.02em]">${content.headline}</h1>
+            <p class="text-3xl font-black text-white italic px-10 leading-snug">${content.summary}</p>
           </div>`,
       5: `<div class="absolute inset-0 background-img z-0"></div>
           <div class="absolute inset-0 bg-gradient-to-b from-black/40 to-black/95 z-10"></div>
-          <div class="z-[500] h-full flex flex-col justify-center items-start p-16 relative">
+          <div class="z-[500] h-full flex flex-col justify-center items-start p-16 pt-32 pb-32 relative">
             <div class="text-white px-12 py-5 font-bebas text-8xl uppercase mb-16 shadow-2xl" style="background-color: ${badgeColor}; font-weight: 900;">${content.category}</div>
-            <h1 class="font-bebas text-[9rem] leading-[0.7] text-white uppercase mb-20 drop-shadow-2xl tracking-normal">${content.headline}</h1>
-            <p class="text-4xl font-black text-white leading-none tracking-tight border-l-8 pl-10" style="border-color: ${badgeColor}">${content.summary}</p>
+            <h1 class="font-bebas text-[8.5rem] leading-[0.95] text-white uppercase mb-20 drop-shadow-2xl tracking-[0.05em]">${content.headline}</h1>
+            <p class="text-4xl font-black text-white leading-snug tracking-tight border-l-8 pl-10" style="border-color: ${badgeColor}">${content.summary}</p>
           </div>`,
     };
 
@@ -133,9 +133,9 @@ export async function generateImages(content: ProcessedContent, newsImageUrl: st
     `;
 
     const storyLayouts: Record<number, string> = {
-      1: `<div class="mb-20"><div class="font-bebas text-5xl mb-10 p-5 text-white inline-block border-4 border-white" style="background:${badgeColor}; font-weight: 900;">${content.category}</div><h1 class="font-bebas text-[11rem] leading-none mb-12 drop-shadow-2xl">${content.headline}</h1><p class="text-[3.5rem] font-bold leading-tight px-10 text-white italic drop-shadow-lg">${content.summary}</p></div>`,
-      2: `<div class="mt-24 border-l-[35px] pl-10 text-left relative z-[500]" style="border-color:${badgeColor}"><h1 class="font-bebas text-[12rem] leading-[0.75] mb-12 text-white drop-shadow-2xl">${content.headline}</h1><div class="bg-white text-black p-4 inline-block font-bebas text-6xl" style="background:${badgeColor}; color:white">${content.category}</div></div><div class="mt-auto mb-48 text-left px-16 relative z-[500]"><p class="text-5xl font-black text-white italic bg-black/80 p-10 drop-shadow-2xl">${content.summary}</p></div>`,
-      4: `<div class="bg-black/95 border-[15px] p-16 w-full relative z-[500] shadow-2xl" style="border-color:${badgeColor}"><h1 class="font-bebas text-[11.5rem] leading-[0.8] mb-16 text-white">${content.headline}</h1><p class="text-5xl font-black text-white italic border-t-8 pt-12 border-white/10">${content.summary}</p></div>`
+      1: `<div class="mb-20"><div class="font-bebas text-5xl mb-10 p-5 text-white inline-block border-4 border-white" style="background:${badgeColor}; font-weight: 900;">${content.category}</div><h1 class="font-bebas text-[10rem] leading-[0.95] mb-12 drop-shadow-2xl">${content.headline}</h1><p class="text-[3.5rem] font-bold leading-tight px-10 text-white italic drop-shadow-lg">${content.summary}</p></div>`,
+      2: `<div class="mt-24 border-l-[35px] pl-10 text-left relative z-[500]" style="border-color:${badgeColor}"><h1 class="font-bebas text-[11rem] leading-[0.9] mb-12 text-white drop-shadow-2xl">${content.headline}</h1><div class="bg-white text-black p-4 inline-block font-bebas text-6xl" style="background:${badgeColor}; color:white">${content.category}</div></div><div class="mt-auto mb-48 text-left px-16 relative z-[500]"><p class="text-5xl font-black text-white italic bg-black/80 p-10 drop-shadow-2xl leading-snug">${content.summary}</p></div>`,
+      4: `<div class="bg-black/95 border-[15px] p-16 w-full relative z-[500] shadow-2xl" style="border-color:${badgeColor}"><h1 class="font-bebas text-[10.5rem] leading-[0.95] mb-16 text-white">${content.headline}</h1><p class="text-5xl font-black text-white italic border-t-8 pt-12 border-white/10 leading-snug">${content.summary}</p></div>`
     };
 
     // --- RENDER FEED ---

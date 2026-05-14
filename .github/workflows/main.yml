@@ -29,6 +29,20 @@ jobs:
       - name: Install Chrome (for Puppeteer)
         run: pnpm exec puppeteer browsers install chrome
 
+      - name: Install RSSHub Dependencies
+        run: |
+          cd rsshub-local
+          pnpm install
+
+      - name: Start RSSHub Local
+        run: |
+          cd rsshub-local
+          pnpm dev &
+          npx wait-on http://localhost:1200
+        env:
+          ALLOW_USER_SUPPLY_UNSAFE_DOMAIN: true
+          PORT: 1200
+
       - name: Run Oráculo Engine
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}

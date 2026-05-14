@@ -29,15 +29,25 @@ export async function processNewsWithGemini(title: string, snippet: string): Pro
     - NUNCA use palavras que sugiram conteúdo externo ou vídeos, como "Veja", "Assista", "Confira no vídeo" ou "Onde assistir". 
     - Como estamos no Instagram, não temos links clicáveis. Transforme notícias de "transmissão" ou "vídeo" em FATOS NARRATIVOS. (Ex: Em vez de "Veja o golaço", use "Bontempo marca golaço e Santos vence").
     - NUNCA prometa links ou cliques. 
+    - PROIBIDO: Não use NENHUM emoji ou ícone nos campos "headline" e "summary". Eles devem ser apenas texto limpo para a arte. 
     
     Analise esta notícia: "${title}" - "${snippet}"
  
     Retorne um JSON estrito com:
-    - headline: Manchete Factual e Narrativa (max 50 caracteres).
-    - summary: Resumo informativo dos fatos para a arte (max 150 caracteres).
+    - headline: Manchete Factual e Narrativa (max 45 caracteres). SEM EMOJIS.
+    - summary: Resumo informativo dos fatos para a arte (max 140 caracteres). SEM EMOJIS.
     - caption: Legenda MAGNA e EXTENSA para o Instagram (Mínimo de 500 e MÁXIMO de 1000 caracteres). Estrutura: 1. Manchete impactante com emojis, 2. Parágrafo detalhado sobre o fato, 3. Parágrafo de ANÁLISE TÁTICA ou CONTEXTO HISTÓRICO, 4. Parágrafo sobre o que isso muda para o time/jogador no futuro, 5. Pergunta engajadora. Seja um jornalista de elite, imparcial e profundo.
     - hashtags: 3 a 5 hashtags sobre o time ou assunto.
-    - category: Escolha APENAS UMA entre: 'MERCADO', 'URGENTE', 'HOJE', 'EXCLUSIVO', 'ORÁCULO', 'OPINIÃO', 'NÚMEROS', 'ANÁLISE', 'PLANTÃO'.
+    - category: Escolha APENAS UMA entre:
+      - 'URGENTE': Notícias quentes de última hora.
+      - 'PLANTÃO': Gravidade extrema, impacto nacional/global.
+      - 'MERCADO': Transferências, contratações e valores.
+      - 'HOJE': Notícias do dia a dia (treinos, escalações).
+      - 'EXCLUSIVO': Furos de reportagem únicos.
+      - 'ANÁLISE': Tática e desempenho profundo.
+      - 'OPINIÃO': Comentários e tom subjetivo.
+      - 'NÚMEROS': Estatísticas, recordes e probabilidades.
+      - 'ORÁCULO': Previsões e curiosidades históricas.
     - shouldCreateStory: true se a notícia for importante, false se for secundária.
     - imageKeywords: Uma string com 3 palavras-chave para busca de imagem.
 
@@ -95,20 +105,15 @@ export async function filterFootballOnly(candidates: NewsCandidate[]): Promise<n
   const prompt = `
     Você é o Editor-Chefe do "Oráculo da Bola". Sua missão é ENCONTRAR as melhores notícias de FUTEBOL MASCULINO PROFISSIONAL.
     
-    DIRETRIZ DE OURO: SEJA PERMISSIVO. 
-    Se a notícia fala de um time grande, de um jogo, de uma escalação ou de um resultado, ELA É BOA. 
-    Não descarte notícias de "Onde assistir" ou "Escalações", elas são ótimas para o Instagram!
-
-    VALORIZE:
-    - Times: Flamengo, Palmeiras, Corinthians, São Paulo, Vasco, Santos, Cruzeiro, Atlético-MG, Grêmio, Inter, etc.
-    - Assuntos: Resultados, Gols, Mercado, Escalações, Polêmicas, Arbitragem.
-    - Fontes: UOL, CNN, Estadão, ESPN, Lance, etc.
-
-    O QUE PROIBIR (BANIR):
-    - Futebol FEMININO (totalmente proibido).
-    - "Onde assistir", "Horário", "Escalações", "Provável time", "Transmissão".
-    - Ingressos, bilheteria, sócio-torcedor, serviços de jogo.
-    - Prefeituras, editais, concursos, vacina, governo.
+    DIRETRIZ DE OURO: SEJA CRÍTICO. 
+    Se a notícia fala de um time grande, de um jogo real, de uma transferência ou de um resultado, ELA É EXCELENTE. 
+    
+    BANIR (REJEITAR TOTALMENTE):
+    - "Onde assistir", "Horário", "Guia de transmissão", "Tempo real", "Canal de TV".
+    - "Escalações", "Provável time", "Desfalques" (A menos que seja uma lesão grave de um craque).
+    - INTERATIVIDADE: "Convoque sua seleção", "Dê sua nota", "Participe da enquete", "Monte seu time", "Escolha os titulares".
+    - Futebol FEMININO.
+    - Notícias da CIDADE (prefeitura, trânsito, polícia) só porque citam o nome do time.
 
     INSTRUÇÃO: Selecione os índices das notícias MAIS QUENTES sobre futebol masculino. 
     Ignore guias de TV e "serviço" de jogo. Seja assertivo: resultados e mercado são a prioridade.

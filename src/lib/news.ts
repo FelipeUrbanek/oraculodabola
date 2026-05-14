@@ -2,7 +2,6 @@ import Parser from 'rss-parser';
 import axios from 'axios';
 import * as cheerio from 'cheerio';
 import puppeteer from 'puppeteer';
-import { filterFootballOnly } from './gemini.js';
 
 const parser = new Parser();
 
@@ -13,13 +12,43 @@ export interface NewsItem {
   contentSnippet: string;
   id: string;
   imageUrl?: string;
+  category: string; // Adicionado para lógica de rodízio
 }
 
+const FOOTBALL_TARGETS = [
+  { name: 'Flamengo', terra: 'https://www.terra.com.br/esportes/flamengo/' },
+  { name: 'Palmeiras', terra: 'https://www.terra.com.br/esportes/palmeiras/' },
+  { name: 'Corinthians', terra: 'https://www.terra.com.br/esportes/corinthians/' },
+  { name: 'São Paulo', terra: 'https://www.terra.com.br/esportes/sao-paulo/' },
+  { name: 'Santos', terra: 'https://www.terra.com.br/esportes/santos/' },
+  { name: 'Atlético-MG', terra: 'https://www.terra.com.br/esportes/atletico-mg/' },
+  { name: 'Cruzeiro', terra: 'https://www.terra.com.br/esportes/cruzeiro/' },
+  { name: 'Grêmio', terra: 'https://www.terra.com.br/esportes/gremio/' },
+  { name: 'Internacional', terra: 'https://www.terra.com.br/esportes/internacional/' },
+  { name: 'Vasco', terra: 'https://www.terra.com.br/esportes/vasco/' },
+  { name: 'Botafogo', terra: 'https://www.terra.com.br/esportes/botafogo/' },
+  { name: 'Fluminense', terra: 'https://www.terra.com.br/esportes/fluminense/' },
+  { name: 'Bahia', terra: 'https://www.terra.com.br/esportes/bahia/' },
+  { name: 'Fortaleza', terra: 'https://www.terra.com.br/esportes/fortaleza/' },
+  { name: 'Mercado da Bola', terra: 'https://www.terra.com.br/esportes/futebol/mercado-da-bola/' },
+  { name: 'Brasileirão', terra: 'https://www.terra.com.br/esportes/futebol/brasileiro-serie-a/' },
+  { name: 'Libertadores', terra: 'https://www.terra.com.br/esportes/futebol/libertadores/' },
+  { name: 'Copa do Brasil', terra: 'https://www.terra.com.br/esportes/futebol/copa-do-brasil/' },
+  { name: 'Champions League', terra: 'https://www.terra.com.br/esportes/futebol/internacional/liga-dos-campeoes/' },
+  { name: 'Futebol Internacional', terra: 'https://www.terra.com.br/esportes/futebol/internacional/' },
+  { name: 'Copa 2026', terra: 'https://www.terra.com.br/esportes/futebol/copa-2026/' }
+];
+
 /**
- * Resolve o link final e captura a imagem apenas se for de alta qualidade
+ * Resolve o link final e captura a imagem
  */
-export async function resolveAndScrapeImage(googleUrl: string): Promise<{ finalUrl: string, imageUrl?: string }> {
-  const browser = await puppeteer.launch({ headless: true, args: ['--no-sandbox'] });
+export async function resolveAndScrapeImage(googleUrl: string, browser?: any): Promise<{ finalUrl: string, imageUrl?: string }> {
+  let internalBrowser = false;
+  if (!browser) {
+    browser = await puppeteer.launch({ headless: true, args: ['--no-sandbox'] });
+    internalBrowser = true;
+  }
+  
   const page = await browser.newPage();
   
   try {
@@ -29,110 +58,198 @@ export async function resolveAndScrapeImage(googleUrl: string): Promise<{ finalU
     }
     const finalUrl = page.url();
     
-    // Captura apenas se houver og:image (padrão de portais grandes)
     const imageUrl = await page.evaluate(() => {
       const og = document.querySelector('meta[property="og:image"]')?.getAttribute('content');
       const twitter = document.querySelector('meta[name="twitter:image"]')?.getAttribute('content');
       return og || twitter || null;
     });
 
-    await browser.close();
     return { finalUrl, imageUrl: imageUrl || undefined };
   } catch (error: any) {
-    await browser.close();
     return { finalUrl: googleUrl, imageUrl: undefined };
+  } finally {
+    await page.close();
+    if (internalBrowser) await browser.close();
   }
 }
 
-async function fetchSingleQuery(queryStr: string): Promise<any[]> {
+/**
+ * Busca notícias via RSSHub (Terra)
+ */
+async function fetchRSSHubTerra(target: { name: string, terra: string }): Promise<NewsItem[]> {
+  const rsshubBase = 'http://localhost:1200/rsshub/transform/html/';
+  const rules = 'item=.card-news&itemTitle=.card-news__text--title&itemLink=a';
+  const fullUrl = `${rsshubBase}${encodeURIComponent(target.terra)}/${encodeURIComponent(rules)}`;
+
   try {
-    // Filtro when:1h para garantir última hora
-    const query = encodeURIComponent(`${queryStr} -site:ge.globo.com when:4h`);
+    const feed = await parser.parseURL(fullUrl);
+    return feed.items.map(item => ({
+      title: item.title || '',
+      link: item.link || '',
+      pubDate: item.pubDate || new Date().toISOString(),
+      contentSnippet: item.contentSnippet || '',
+      id: item.guid || item.link || '',
+      category: target.name
+    }));
+  } catch (e) {
+    console.log(`⚠️ Falha ao buscar Terra para ${target.name}: ${e instanceof Error ? e.message : String(e)}`);
+    return [];
+  }
+}
+
+/**
+ * Scraper direto do Terra usando Puppeteer (Anti-Bloqueio 503)
+ */
+async function fetchTerraDirect(target: any): Promise<NewsItem[]> {
+  const browser = await puppeteer.launch({ headless: true, args: ['--no-sandbox'] });
+  try {
+    const page = await browser.newPage();
+    await page.setUserAgent('Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36');
+    await page.goto(target.terra, { waitUntil: 'domcontentloaded', timeout: 30000 });
+
+    const news = await page.evaluate((category) => {
+      const items: any[] = [];
+      const cards = document.querySelectorAll('.card-news, .card-news-horizontal');
+      
+      cards.forEach(card => {
+        const titleEl = card.querySelector('.card-news__text--title, .card-news-horizontal__text--title');
+        const linkEl = card.querySelector('a');
+        if (titleEl && linkEl) {
+          items.push({
+            title: titleEl.textContent?.trim() || '',
+            link: linkEl.href,
+            pubDate: new Date().toISOString(),
+            contentSnippet: '',
+            id: linkEl.href,
+            category: category
+          });
+        }
+      });
+      return items;
+    }, target.name);
+
+    await browser.close();
+    return news;
+  } catch (e) {
+    await browser.close();
+    return [];
+  }
+}
+
+/**
+ * Busca notícias via Google News
+ */
+async function fetchGoogleNews(queryStr: string, category: string): Promise<NewsItem[]> {
+  try {
+    // Janela de 24h para garantir cobertura total do dia em todos os temas
+    const query = encodeURIComponent(`${queryStr} futebol 2026 -site:ge.globo.com when:24h`);
     const searchUrl = `https://news.google.com/rss/search?q=${query}&hl=pt-BR&gl=BR&ceid=BR:pt-150`;
     const feed = await parser.parseURL(searchUrl);
-    return feed.items;
+    
+    // Filtro rigoroso para garantir que o título tenha palavras relacionadas a futebol
+    const footballKeywords = ['futebol', 'gol', 'clube', 'treinador', 'técnico', 'jogador', 'partida', 'jogo', 'campeonato', 'contratação', 'reforço', 'elenco', 'campo', 'estádio', 'torcida', 'venda', 'compra', 'mercado', 'bola', 'copa', 'seleção'];
+    
+    return feed.items
+      .filter(item => {
+        const title = (item.title || '').toLowerCase();
+        return footballKeywords.some(kw => title.includes(kw));
+      })
+      .map(item => ({
+        title: item.title || '',
+        link: item.link || '',
+        pubDate: item.pubDate || new Date().toISOString(),
+        contentSnippet: item.contentSnippet || '',
+        id: item.guid || item.link || '',
+        category: category
+      }));
   } catch (e) {
     return [];
   }
 }
 
-export async function fetchFootballNews(): Promise<NewsItem[]> {
+export async function fetchFootballNews(trends: string[] = []): Promise<NewsItem[]> {
   try {
-    const queries = [
-      'Flamengo futebol', 'Palmeiras futebol', 'Corinthians futebol', '"São Paulo FC" futebol',
-      '"Atlético-MG" futebol', 'Cruzeiro futebol', 'Grêmio futebol', 'Internacional futebol',
-      'Vasco futebol', 'Botafogo futebol', 'Fluminense futebol', 'Santos FC futebol',
-      'Bahia futebol', 'Fortaleza futebol', '"Mercado da Bola" futebol', 'Brasileirão', 
-      'Libertadores', '"Copa do Brasil"', '"Champions League"'
-    ];
-
-    // LISTA DE PORTAIS CONFIÁVEIS (Elite)
-    const elitePortals = [
-      'uol.com.br', 'terra.com.br', 'espn.com.br', 'cnnbrasil.com.br', 'estadao.com.br', 
-      'oglobo.globo.com', 'gazetaesportiva.com', 'metropoles.com', 'lance.com.br', 
-      'goal.com', 'itatiaia.com.br', 'tntsports.com.br', 'band.uol.com.br'
-    ];
-
-    console.log(`\n🚀 Buscando notícias da última hora em portais de elite...`);
-    const results = await Promise.all(queries.map(q => fetchSingleQuery(q)));
+    console.log(`\n🚀 Iniciando Agregador de Notícias (RSSHub + Google News)...`);
     
-    const allItems = results.flat();
-    const uniqueNews: any[] = [];
+    // Busca em paralelo, mas separando por tipo para priorizar o Terra
+    const terraTasks = FOOTBALL_TARGETS.map(target => fetchRSSHubTerra(target));
+    const googleTasks = FOOTBALL_TARGETS.map(target => fetchGoogleNews(target.name, target.name));
+    
+    const [terraResults, googleResults] = await Promise.all([
+      Promise.all(terraTasks),
+      Promise.all(googleTasks)
+    ]);
+
+    const allItems = [...terraResults.flat(), ...googleResults.flat()];
+    console.log(`📊 Total bruto de itens encontrados: ${allItems.length}`);
+
+    const uniqueNews: NewsItem[] = [];
     const seenLinks = new Set();
     const seenTitles = new Set();
+
+    const now = Date.now();
 
     for (const item of allItems) {
       if (!item.link || !item.title) continue;
       
-      const titleLower = item.title.toLowerCase();
+      // Limpeza de título (remove o nome do portal se houver)
       const cleanTitle = item.title.split(' - ')[0].trim();
-      const source = item.source?.toLowerCase() || '';
-
-      // 1. FILTRO DE PORTAIS: Apenas fontes conhecidas
-      const isElite = elitePortals.some(portal => item.link.toLowerCase().includes(portal) || source.includes(portal.split('.')[0]));
-      if (!isElite) continue;
-
-      // 2. FILTRO DE TEMPO RÍGIDO (Máximo 60 minutos)
-      if (item.pubDate) {
-        const diff = (new Date().getTime() - new Date(item.pubDate).getTime()) / (1000 * 60);
-        if (diff > 60) continue;
-      }
-
-      if (seenLinks.has(item.link) || seenTitles.has(cleanTitle)) continue;
-
-      uniqueNews.push(item);
-      seenLinks.add(item.link);
-      seenTitles.add(cleanTitle);
-    }
-    
-    // Ordenar por mais recente
-    const sortedNews = uniqueNews.sort((a, b) => new Date(b.pubDate).getTime() - new Date(a.pubDate).getTime());
-
-    const processedItems = [];
-    for (const item of sortedNews) {
-      if (processedItems.length >= 10) break; // Limite de processamento
-
-      const { finalUrl, imageUrl } = await resolveAndScrapeImage(item.link || '');
       
-      // 3. EXIGÊNCIA DE IMAGEM: Se não tem og:image, descarta (evita portais ruins)
-      if (!imageUrl) {
-        console.log(`🚫 Descartada por falta de imagem de qualidade: ${item.title}`);
-        continue;
-      }
+      // Filtro de frescor (4 horas)
+      const diff = (now - new Date(item.pubDate).getTime()) / (1000 * 60);
+      if (diff > 240) continue;
 
-      processedItems.push({
-        title: item.title || '',
-        link: finalUrl,
-        pubDate: item.pubDate || '',
-        contentSnippet: item.contentSnippet || '',
-        id: item.guid || item.link || '',
-        imageUrl: imageUrl
-      });
+      // Anti-duplicação
+      if (seenLinks.has(item.link) || seenTitles.has(cleanTitle.toLowerCase())) continue;
+
+      uniqueNews.push({ ...item, title: cleanTitle });
+      seenLinks.add(item.link);
+      seenTitles.add(cleanTitle.toLowerCase());
     }
 
-    return processedItems;
+    // Ordena por data (mais recentes primeiro)
+    const sortedNews = uniqueNews.sort((a, b) => new Date(b.pubDate).getTime() - new Date(a.pubDate).getTime());
+    
+    console.log(`🔎 Filtradas ${sortedNews.length} notícias relevantes. Capturando imagens...`);
+
+    // Garante variedade de categorias nas notícias processadas
+    const diverseNews: NewsItem[] = [];
+    const categoriesIncluded = new Set<string>();
+    
+    // Primeiro, pega a notícia mais recente de CADA categoria
+    for (const target of FOOTBALL_TARGETS) {
+      const latestForTarget = sortedNews.find(n => n.category === target.name);
+      if (latestForTarget) {
+        diverseNews.push(latestForTarget);
+        categoriesIncluded.add(target.name);
+      }
+    }
+
+    // Depois, preenche o resto com as mais recentes que ainda não foram incluídas, até chegar em 20
+    const remaining = sortedNews.filter(n => !diverseNews.some(dn => dn.link === n.link));
+    const toProcess = [...diverseNews, ...remaining].slice(0, 20);
+
+    const browser = await puppeteer.launch({ headless: true, args: ['--no-sandbox'] });
+    const finalItems: NewsItem[] = [];
+
+    try {
+      console.log(`📸 Processando imagens para ${toProcess.length} notícias variadas...`);
+      const scrapeResults = await Promise.all(toProcess.map(async (item) => {
+        const { finalUrl, imageUrl } = await resolveAndScrapeImage(item.link, browser);
+        if (!imageUrl) return null;
+        return { ...item, link: finalUrl, imageUrl };
+      }));
+
+      for (const res of scrapeResults) {
+        if (res) finalItems.push(res);
+      }
+    } finally {
+      await browser.close();
+    }
+
+    return finalItems;
   } catch (error: any) {
-    console.error('Erro ao buscar notícias:', error);
+    console.error('Erro fatal ao buscar notícias:', error);
     return [];
   }
 }

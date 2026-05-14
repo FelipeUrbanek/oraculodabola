@@ -27,7 +27,14 @@ async function runOráculo() {
   // 2. Scrape News
   const newsList = await fetchFootballNews();
   
-  // 2.1 Filtrar por link e também por similaridade de título
+  // 2.0 Lógica de Rodízio: Ler última categoria postada
+  const LAST_CATEGORY_FILE = path.join(process.cwd(), 'src', 'last_category.txt');
+  let lastCategory = '';
+  if (fs.existsSync(LAST_CATEGORY_FILE)) {
+    lastCategory = fs.readFileSync(LAST_CATEGORY_FILE, 'utf-8').trim();
+  }
+
+  // 2.1 Filtrar por link, similaridade e RODÍZIO
   const processedTitlesInCurrentRun = new Set();
   const newItems = newsList.filter((item: any) => {
     const isNewLink = !history.includes(item.link);
@@ -36,11 +43,14 @@ async function runOráculo() {
     const isNewContent = !history.some(h => h === cleanTitle) && !processedTitlesInCurrentRun.has(cleanTitle);
     const hasImage = !!item.imageUrl;
 
+    // RODÍZIO: Ignorar se for a mesma categoria do último post
+    const isDifferentCategory = item.category !== lastCategory;
+
     // Filtro de utilidade (Ignorar onde assistir, ao vivo, etc)
     const forbidden = ["onde assistir", "ao vivo", "transmissão", "tempo real", "como assistir", "escalação", "palpite"];
     const isServiceNews = forbidden.some(word => cleanTitle.includes(word));
 
-    if (isNewLink && isNewContent && hasImage && !isServiceNews) {
+    if (isNewLink && isNewContent && hasImage && !isServiceNews && isDifferentCategory) {
       processedTitlesInCurrentRun.add(cleanTitle);
       return true;
     }
@@ -48,13 +58,13 @@ async function runOráculo() {
   }).slice(0, 1); // Apenas 1 post por hora para manter o limite de 25/dia do Instagram
 
   if (newItems.length === 0) {
-    console.log("💤 Nenhuma novidade fresquinha na última hora.");
+    console.log(`💤 Nenhuma novidade fresquinha (Pulando categoria repetida: ${lastCategory}).`);
     return;
   }
 
   for (let i = 0; i < newItems.length; i++) {
     const item = newItems[i];
-    console.log(`🧐 [${i+1}/${newItems.length}] Processando: ${item.title}`);
+    console.log(`🧐 [${i+1}/${newItems.length}] Processando [${item.category}]: ${item.title}`);
     
     try {
       // 3. IA Process
@@ -64,9 +74,7 @@ async function runOráculo() {
       console.log(`🎨 Gerando artes: ${processed.headline}`);
       const paths = await generateImages(processed, item.imageUrl || null);
       
-      // 5. Postar no Instagram com Agendamento (0, 10, 20 minutos)
-      // O Instagram exige que agendamentos sejam feitos no mínimo 10 min no futuro.
-      // Então o primeiro vai na hora, os outros agendados.
+      // 5. Postar no Instagram
       const scheduledTime = i === 0 ? undefined : Math.floor(Date.now() / 1000) + (i * 10 * 60);
       
       console.log(`🚀 Iniciando postagem automática...`);
@@ -76,31 +84,26 @@ async function runOráculo() {
         scheduledTime
       );
       
-      if (processed.shouldCreateStory && paths.storyPath) {
-        console.log(`📱 Story detectado (Pendente aprovação manual/API p/ Stories).`);
-      }
-
       // 6. Salvar Legenda e Metadados
       const metadataPath = paths.feedPath.replace('_feed.jpg', '_meta.json');
       fs.writeFileSync(metadataPath, JSON.stringify({
         ...processed,
+        category: item.category,
         originalLink: item.link,
         timestamp: new Date().toISOString()
       }, null, 2));
 
-      // 7. Atualizar Histórico Imediatamente (Link + Título Limpo)
+      // 7. Atualizar Histórico e RODÍZIO
       const cleanTitle = item.title.split(' - ')[0].toLowerCase().trim();
       history.push(item.link);
       history.push(cleanTitle);
       
       if (history.length > 1000) history = history.slice(-1000);
       
-      if (!fs.existsSync(path.dirname(HISTORY_FILE))) {
-        fs.mkdirSync(path.dirname(HISTORY_FILE), { recursive: true });
-      }
       fs.writeFileSync(HISTORY_FILE, JSON.stringify(history, null, 2));
+      fs.writeFileSync(LAST_CATEGORY_FILE, item.category); // Salva para o próximo rodízio
       
-      console.log(`✅ Postagem confirmada e salva: ${processed.headline}`);
+      console.log(`✅ Postagem confirmada [${item.category}]: ${processed.headline}`);
       
     } catch (error) {
       console.error(`❌ Falha ao processar ${item.title}:`, error);
@@ -132,7 +135,6 @@ async function runOráculo() {
       console.log(`🎉 NOVO MARCO ALCANÇADO: ${currentMilestone.value}!`);
       const celebrationPath = await generateCelebrationImage(currentMilestone);
       
-      // Postar no Instagram
       const caption = `SOMOS ${currentMilestone.value}! ${currentMilestone.sub} Obrigado a cada um de vocês que faz parte do Oráculo da Bola. ⚽️❤️ #OraculoDaBola #Gratidão #Futebol`;
       await postToInstagram(celebrationPath, caption);
       
