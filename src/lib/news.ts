@@ -88,25 +88,25 @@ export async function fetchFootballNews(trendTerms: string[] = []): Promise<News
     const trendQuery = filteredTrends.length > 0 ? `${filteredTrends.join(' OR ')} OR ` : '';
     const mainTerms = 'Flamengo OR Palmeiras OR Corinthians OR "São Paulo" OR "Atlético-MG" OR Cruzeiro OR Grêmio OR Inter OR Vasco OR Santos OR "Mercado da Bola" OR Brasileirão OR Libertadores OR "Copa do Brasil" OR "Champions League" OR "Seleção Brasileira" OR "Pós-jogo" OR Oficial OR Reforço OR Escalação OR Tabela OR Sorteio';
     const context = '(futebol OR soccer OR "mercado da bola" OR esporte)';
-    const sites = '(site:uol.com.br OR site:espn.com.br OR site:tntsports.com.br OR site:lance.com.br OR site:terra.com.br OR site:goal.com)';
     
-    const query = encodeURIComponent(`(${trendQuery}${mainTerms}) ${context} -site:ge.globo.com ${sites} when:4h`);
+    // Permitir qualquer site, bloqueando apenas o ge.globo.com na query
+    const query = encodeURIComponent(`(${trendQuery}${mainTerms}) ${context} -site:ge.globo.com when:4h`);
     const searchUrl = `https://news.google.com/rss/search?q=${query}&hl=pt-BR&gl=BR&ceid=BR:pt-150`;
     console.log(`\n🔍 Consultando Google News: ${searchUrl}`);
     const feed = await parser.parseURL(searchUrl);
     
-    // Filtrar notícias com títulos muito parecidos (ex: SAF)
     const uniqueNews: any[] = [];
     const seenWords = new Set();
 
     for (const item of feed.items) {
-      const words = (item.title || '').split(' ').slice(0, 3).join(' ');
-      const pubDate = new Date(item.pubDate || '');
-      const now = new Date();
-      const diffHours = (now.getTime() - pubDate.getTime()) / (1000 * 60 * 60);
+      if (!item.link || !item.title) continue;
+      
+      // Filtrar redes sociais e GE que às vezes vaza
+      const link = item.link.toLowerCase();
+      if (link.includes('ge.globo.com') || link.includes('instagram.com') || link.includes('youtube.com') || link.includes('twitter.com') || link.includes('facebook.com')) continue;
 
-      // Só aceita se for nas últimas 24h e não for repetido
-      if (!seenWords.has(words) && diffHours < 24 && uniqueNews.length < 4) {
+      const words = item.title.split(' ').slice(0, 3).join(' ');
+      if (!seenWords.has(words) && uniqueNews.length < 15) {
         uniqueNews.push(item);
         seenWords.add(words);
       }
