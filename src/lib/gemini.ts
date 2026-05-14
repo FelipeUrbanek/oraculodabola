@@ -103,6 +103,7 @@ export async function filterFootballOnly(candidates: NewsCandidate[]): Promise<n
     O QUE DESCARTAR (LIXO):
     - Notícias de Prefeituras, Governo, Sesc ou editais públicos.
     - Turismo, shows ou eventos de cidades.
+    - Venda de ingressos, serviço de jogo, sócio-torcedor ou bilheteria.
     - Outros esportes (Vôlei, Basquete) sem relação com o clube de futebol.
 
     INSTRUÇÃO: Analise os títulos abaixo e selecione os índices das notícias que são REALMENTE sobre futebol e têm potencial de engajamento. 
