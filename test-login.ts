@@ -34,7 +34,7 @@ async function testLogin() {
         }));
 
         // Enviar o código
-        await ig.challenge.sendIt(code);
+        await (ig.challenge as any).sendIt(code);
         console.log("✅ Código enviado! Tentando finalizar login...");
         return await ig.account.login(username, password);
       }

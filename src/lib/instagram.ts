@@ -28,6 +28,29 @@ async function uploadToCloudinary(imagePath: string): Promise<string> {
 }
 
 /**
+ * Calcula o próximo horário de pico (12h, 18h, 21h BRT)
+ */
+export function calculateNextSchedule(): number {
+  const now = new Date();
+  const peaks = [12, 18, 21];
+  
+  let target = new Date(now);
+  target.setMinutes(0, 0, 0);
+
+  for (const hour of peaks) {
+    if (now.getHours() < hour) {
+      target.setHours(hour);
+      return Math.floor(target.getTime() / 1000);
+    }
+  }
+
+  // Se passou das 21h, agenda para as 12h do dia seguinte
+  target.setDate(target.getDate() + 1);
+  target.setHours(12);
+  return Math.floor(target.getTime() / 1000);
+}
+
+/**
  * Publica no Feed do Instagram usando a Graph API Oficial
  * Suporta agendamento via scheduledTime (Unix Timestamp)
  */
