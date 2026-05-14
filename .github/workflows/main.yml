@@ -2,39 +2,39 @@ name: Oráculo da Bola - Automação Total
 
 on:
   schedule:
-    - cron: '0 * * * *' # Roda a cada 1 hora (24 posts por dia para segurança total)
+    - cron: '20 * * * *' # Roda a cada 1 hora (24 posts por dia para segurança total) - no minuto 20
   workflow_dispatch: # Permite rodar manualmente
 
 jobs:
   run-oracle:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout Repository
+      - name: Checkout do Repositório
         uses: actions/checkout@v4
 
-      - name: Setup pnpm
+      - name: Configurar pnpm
         uses: pnpm/action-setup@v3
         with:
           version: 9
 
-      - name: Setup Node.js
+      - name: Configurar Node.js
         uses: actions/setup-node@v4
         with:
           node-version: '22'
           cache: 'pnpm'
 
-      - name: Install Dependencies
+      - name: Instalar Dependências
         run: pnpm install
 
-      - name: Install Chrome (for Puppeteer)
+      - name: Instalar Chrome (para Puppeteer)
         run: pnpm exec puppeteer browsers install chrome
 
-      - name: Install RSSHub Dependencies
+      - name: Instalar Dependências do RSSHub
         run: |
           cd rsshub-local
           pnpm install --no-frozen-lockfile
 
-      - name: Start RSSHub Local
+      - name: Iniciar RSSHub Local
         run: |
           cd rsshub-local
           pnpm dev &
@@ -43,7 +43,7 @@ jobs:
           ALLOW_USER_SUPPLY_UNSAFE_DOMAIN: true
           PORT: 1200
 
-      - name: Run Oráculo Engine
+      - name: Executar Engine do Oráculo
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           IG_USER_ID: ${{ secrets.IG_USER_ID }}
@@ -55,7 +55,7 @@ jobs:
           CLOUDINARY_API_SECRET: ${{ secrets.CLOUDINARY_API_SECRET }}
         run: npx tsx main.ts
 
-      - name: Commit and Push Changes
+      - name: Comitar e Enviar Alterações
         run: |
           git config --global user.name "Oráculo Bot"
           git config --global user.email "bot@ooraculodabola.com"

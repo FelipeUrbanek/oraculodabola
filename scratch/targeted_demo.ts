@@ -1,4 +1,4 @@
-import { fetchFootballNews } from '../src/lib/news';
+import { fetchFootballNews, NewsItem } from '../src/lib/news';
 import { processNewsWithGemini } from '../src/lib/gemini';
 import { generateImages } from '../src/lib/renderer';
 import fs from 'fs';
@@ -15,7 +15,7 @@ async function targetedDemo() {
   const newsList = await fetchFootballNews();
   
   // 2. Filtrar apenas os alvos
-  const targetNews = targets.map(t => newsList.find(n => n.category === t)).filter(Boolean);
+  const targetNews = targets.map(t => newsList.find(n => n.category === t)).filter((n): n is NewsItem => !!n);
 
   if (targetNews.length === 0) {
     console.log('⚠️ Nenhuma notícia recente encontrada para esses times nos filtros atuais.');
