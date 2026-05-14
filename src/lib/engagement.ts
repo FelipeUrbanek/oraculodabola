@@ -33,7 +33,11 @@ export async function handleCommentsEngagement() {
       params: { access_token: ACCESS_TOKEN, limit: 10, fields: 'id,caption' }
     });
 
+    let totalReplies = 0;
+    const MAX_REPLIES = 10;
+
     for (const media of mediaResponse.data.data) {
+      if (totalReplies >= MAX_REPLIES) break;
       const postContext = media.caption || "Conteúdo de futebol";
 
       // 2. Pegar comentários de cada post
@@ -42,6 +46,7 @@ export async function handleCommentsEngagement() {
       });
 
       for (const comment of commentsResponse.data.data) {
+        if (totalReplies >= MAX_REPLIES) break;
         // Pular se já estiver no histórico ou se já tiver replies detectados pela API
         if (commentHistory.includes(comment.id) || comment.replies) continue;
 
@@ -74,8 +79,9 @@ export async function handleCommentsEngagement() {
             params: { message: replyText, access_token: ACCESS_TOKEN }
           });
           
-          // Adicionar ao histórico
+          // Adicionar ao histórico e contar
           commentHistory.push(comment.id);
+          totalReplies++;
         } else {
           console.log('⏭️ Comentário ignorado (filtro de bobeira).');
           // Também adicionamos ao histórico para não analisar a mesma bobeira de novo
