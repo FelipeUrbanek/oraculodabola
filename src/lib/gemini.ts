@@ -93,39 +93,37 @@ export async function filterFootballOnly(candidates: NewsCandidate[]): Promise<n
   if (candidates.length === 0) return [];
 
   const prompt = `
-    Você é o Editor-Chefe do "Oráculo da Bola", focado em FUTEBOL MASCULINO PROFISSIONAL.
-    Sua missão é selecionar as notícias mais IMPACTANTES para o Instagram.
+    Você é o Editor-Chefe do "Oráculo da Bola". Sua missão é ENCONTRAR as melhores notícias de FUTEBOL MASCULINO PROFISSIONAL.
     
-    FONTES CONFIÁVEIS (VALORIZE): Estadão, UOL, CNN, Lance, ESPN, O Globo.
+    DIRETRIZ DE OURO: SEJA PERMISSIVO. 
+    Se a notícia fala de um time grande, de um jogo, de uma escalação ou de um resultado, ELA É BOA. 
+    Não descarte notícias de "Onde assistir" ou "Escalações", elas são ótimas para o Instagram!
 
-    O QUE BUSCAMOS (PRIORIDADE):
-    - Resultados de jogos (quem ganhou, quem foi eliminado, quem avançou).
-    - Mercado da bola (quem chega, quem sai, rumores de craques).
-    - Notícias de times grandes do Brasil (Flamengo, Palmeiras, Corinthians, São Paulo, etc).
+    VALORIZE:
+    - Times: Flamengo, Palmeiras, Corinthians, São Paulo, Vasco, Santos, Cruzeiro, Atlético-MG, Grêmio, Inter, etc.
+    - Assuntos: Resultados, Gols, Mercado, Escalações, Polêmicas, Arbitragem.
+    - Fontes: UOL, CNN, Estadão, ESPN, Lance, etc.
 
-    O QUE PROIBIR (BANIR):
-    - Futebol FEMININO (totalmente proibido neste canal).
-    - Ingressos, bilheteria, sócio-torcedor.
-    - Prefeituras, editais, concursos, vacina, governo.
+    SÓ DESCARTE (LIXO REAL):
+    - Futebol Feminino (proibido neste canal).
+    - Notícias de prefeituras, editais, concursos ou vacinas.
+    - Outros esportes (vôlei, basquete, etc).
 
-    INSTRUÇÃO: Analise a lista e selecione os índices das notícias MAIS QUENTES sobre futebol masculino. 
-    Seja assertivo: se o título é de um grande portal e fala de um jogo ou clube grande, ACEITE.
-
+    TAREFA: Selecione os índices das notícias (pelo menos 5, se possível) em ordem de RELEVÂNCIA.
+    
     Notícias:
     ${candidates.map((c, i) => `${i}: [${c.source || 'Portal'}] ${c.title}`).join('\n')}
 
-    Retorne APENAS um array JSON com os índices em ordem de RELEVÂNCIA. Ex: [5, 2, 0]
-    Se absolutamente nada for futebol masculino, retorne [].
+    Responda APENAS com o array JSON. Ex: [0, 1, 4, 8, 12]
   `;
 
   try {
     const result = await model.generateContent(prompt);
     const text = result.response.text().trim();
-    const match = text.match(/\[.*\]/);
+    const match = text.match(/\[[\s\S]*\]/);
     if (match) {
       const indices = JSON.parse(match[0]);
-      // Garantir que os índices são válidos
-      return indices.filter((i: number) => i >= 0 && i < candidates.length);
+      return Array.isArray(indices) ? indices.filter((i: number) => i >= 0 && i < candidates.length) : [];
     }
     return [];
   } catch (e) {
