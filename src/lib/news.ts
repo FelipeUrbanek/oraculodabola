@@ -97,13 +97,25 @@ export async function fetchFootballNews(trendTerms: string[] = []): Promise<News
     
     const uniqueNews: any[] = [];
     const seenWords = new Set();
-    const biasedTerms = ['contra a gente', 'nosso time', 'contra nós', 'roubo', 'vergonha', 'fomos roubados', 'bora ganhar', 'vamos meu', 'nação'];
+    const biasedTerms = ['contra a gente', 'nosso time', 'contra nós', 'roubo', 'vergonha', 'fomos roubados', 'bora ganhar', 'vamos meu', 'nação', 'vários erros'];
 
     for (const item of feed.items) {
       if (!item.link || !item.title) continue;
       
       const titleLower = item.title.toLowerCase();
-      // Bloquear opiniões e clubismo barato
+      const linkLower = item.link.toLowerCase();
+
+      // 1. Bloquear sites institucionais (Prefeituras, SESC) e Redes Sociais logo de cara
+      if (linkLower.includes('gov.br') || linkLower.includes('org.br') || linkLower.includes('instagram.com') || linkLower.includes('facebook.com') || linkLower.includes('twitter.com') || linkLower.includes('youtube.com')) continue;
+
+      // 2. Bloquear títulos gritantes (TUDO EM MAIÚSCULO - estilo fan page)
+      const upperCaseLetters = item.title.replace(/[^A-Z]/g, "").length;
+      if (upperCaseLetters > item.title.length * 0.5 && item.title.length > 20) {
+        console.log(`🚫 Título "gritante" (Fan Page) descartado: ${item.title}`);
+        continue;
+      }
+
+      // 3. Bloquear opiniões e clubismo
       if (biasedTerms.some(term => titleLower.includes(term))) {
         console.log(`🚫 Notícia clubista descartada: ${item.title}`);
         continue;
