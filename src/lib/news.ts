@@ -99,49 +99,50 @@ export async function fetchFootballNews(trendTerms: string[] = []): Promise<News
     const uniqueNews: any[] = [];
     const seenWords = new Set();
     const biasedTerms = ['contra a gente', 'nosso time', 'contra nós', 'roubo', 'vergonha', 'fomos roubados', 'bora ganhar', 'vamos meu', 'nação', 'vários erros'];
+    const junkTerms = ['prefeitura', 'governo', 'bolsa', 'funarte', 'dia internacional', 'institucional', 'anpd', 'concurso', 'vacina', 'sesc'];
 
     for (const item of feed.items) {
       if (!item.link || !item.title) continue;
       
       const titleLower = item.title.toLowerCase();
-      const linkLower = item.link.toLowerCase();
+      
+      // 1. Bloqueio Rápido de Lixo Institucional pelo Título
+      if (junkTerms.some(term => titleLower.includes(term))) continue;
 
-      // 1. Bloquear sites institucionais (Prefeituras, SESC) e Redes Sociais logo de cara
-      if (linkLower.includes('gov.br') || linkLower.includes('org.br') || linkLower.includes('instagram.com') || linkLower.includes('facebook.com') || linkLower.includes('twitter.com') || linkLower.includes('youtube.com')) continue;
-
-      // 2. Bloquear títulos gritantes (TUDO EM MAIÚSCULO - estilo fan page)
+      // 2. Bloquear títulos gritantes (TUDO EM MAIÚSCULO)
       const upperCaseLetters = item.title.replace(/[^A-Z]/g, "").length;
       if (upperCaseLetters > item.title.length * 0.5 && item.title.length > 20) {
-        console.log(`🚫 Título "gritante" (Fan Page) descartado: ${item.title}`);
         continue;
       }
 
       // 3. Bloquear opiniões e clubismo
       if (biasedTerms.some(term => titleLower.includes(term))) {
-        console.log(`🚫 Notícia clubista descartada: ${item.title}`);
         continue;
       }
 
       const words = item.title.split(' ').slice(0, 3).join(' ');
-      if (!seenWords.has(words) && uniqueNews.length < 15) {
+      if (!seenWords.has(words) && uniqueNews.length < 20) {
         uniqueNews.push(item);
         seenWords.add(words);
       }
     }
     
-    // NOVO: Filtrar a lista bruta com IA antes do processamento pesado
+    // NOVO: Filtrar a lista bruta com IA
     let filteredList = uniqueNews;
     if (uniqueNews.length > 0) {
-      console.log(`🤖 IA analisando ${uniqueNews.length} candidatos:`);
-      uniqueNews.forEach((n, i) => console.log(`   [${i}] ${n.title}`));
-
+      console.log(`🤖 IA analisando ${uniqueNews.length} candidatos filtrados...`);
       const validIndices = await filterFootballOnly(uniqueNews.map(n => ({ 
         title: n.title || '', 
         snippet: n.contentSnippet || n.title || ''
       })));
       
-      console.log(`✅ IA aprovou os índices: ${JSON.stringify(validIndices)}`);
-      filteredList = validIndices.map(i => uniqueNews[i]);
+      if (validIndices.length > 0) {
+        console.log(`✅ IA aprovou os índices: ${JSON.stringify(validIndices)}`);
+        filteredList = validIndices.map(i => uniqueNews[i]).filter(n => n !== undefined);
+      } else {
+        console.log('⚠️ IA foi muito rigorosa. Usando candidatos originais como fallback.');
+        filteredList = uniqueNews;
+      }
     }
 
     if (filteredList.length === 0) return [];
