@@ -42,7 +42,7 @@ const FOOTBALL_TARGETS = [
 /**
  * Resolve o link final e captura a imagem
  */
-export async function resolveAndScrapeImage(googleUrl: string, browser?: any): Promise<{ finalUrl: string, imageUrl?: string }> {
+export async function resolveAndScrapeImage(googleUrl: string, browser?: any): Promise<{ finalUrl: string, imageUrl?: string, fullSnippet?: string }> {
   let internalBrowser = false;
   if (!browser) {
     browser = await puppeteer.launch({ headless: true, args: ['--no-sandbox'] });
@@ -58,15 +58,28 @@ export async function resolveAndScrapeImage(googleUrl: string, browser?: any): P
     }
     const finalUrl = page.url();
     
-    const imageUrl = await page.evaluate(() => {
+    const { imageUrl, fullSnippet } = await page.evaluate(() => {
       const og = document.querySelector('meta[property="og:image"]')?.getAttribute('content');
       const twitter = document.querySelector('meta[name="twitter:image"]')?.getAttribute('content');
-      return og || twitter || null;
+      
+      // Tenta pegar o texto principal da notícia (p parágrafos iniciais)
+      const paragraphs = Array.from(document.querySelectorAll('article p, .article-content p, .content p'))
+        .slice(0, 3)
+        .map(p => p.textContent?.trim())
+        .filter(t => t && t.length > 20)
+        .join(' ');
+      
+      const metaDesc = document.querySelector('meta[name="description"]')?.getAttribute('content') || '';
+      
+      return { 
+        imageUrl: og || twitter || null,
+        fullSnippet: (paragraphs.length > 50 ? paragraphs : metaDesc).substring(0, 800)
+      };
     });
 
-    return { finalUrl, imageUrl: imageUrl || undefined };
+    return { finalUrl, imageUrl: imageUrl || undefined, fullSnippet };
   } catch (error: any) {
-    return { finalUrl: googleUrl, imageUrl: undefined };
+    return { finalUrl: googleUrl, imageUrl: undefined, fullSnippet: undefined };
   } finally {
     await page.close();
     if (internalBrowser) await browser.close();
@@ -235,9 +248,9 @@ export async function fetchFootballNews(trends: string[] = []): Promise<NewsItem
     try {
       console.log(`📸 Processando imagens para ${toProcess.length} notícias variadas...`);
       const scrapeResults = await Promise.all(toProcess.map(async (item) => {
-        const { finalUrl, imageUrl } = await resolveAndScrapeImage(item.link, browser);
+        const { finalUrl, imageUrl, fullSnippet } = await resolveAndScrapeImage(item.link, browser);
         if (!imageUrl) return null;
-        return { ...item, link: finalUrl, imageUrl };
+        return { ...item, link: finalUrl, imageUrl, contentSnippet: fullSnippet || item.contentSnippet };
       }));
 
       for (const res of scrapeResults) {

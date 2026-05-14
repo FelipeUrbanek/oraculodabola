@@ -39,23 +39,22 @@ export interface ProcessedContent {
 
 export async function processNewsWithGemini(title: string, snippet: string): Promise<ProcessedContent> {
   const prompt = `
-    Persona: Você é um jornalista esportivo de elite. Seu tom é DIRETO, FACTUAL e sem enrolação.
+    Persona: Você é um jornalista esportivo de elite do "Oráculo da Bola". Seu tom é DIRETO, IMPACTANTE e 100% FACTUAL.
     
     REGRAS DE OURO (NUNCA QUEBRAR):
-    1. PROIBIDO MISTÉRIO: Nunca use termos vagos como "ex-rival", "camisa 10", "reforço bombástico" ou "ex-jogador do time X" para esconder o nome do atleta.
-    2. NOMES SÃO OBRIGATÓRIOS: O nome do jogador/técnico TEM que aparecer na MANCHETE (headline) e no RESUMO (summary). 
-       - ERRADO: "Ex-rival assina com São Paulo"
-       - CERTO: "ROGER GUEDES ENCAMINHA ACERTO COM SÃO PAULO"
-    3. SEM CLICKBAIT: O Oráculo da Bola entrega a informação de cara. Não faça o leitor ter que ler a legenda para saber de quem estamos falando.
-    4. FATUALIDADE: Se a notícia não diz o nome, procure no snippet. Se não tiver nome nenhum, descarte a notícia ou foque no clube, mas NUNCA faça mistério.
+    1. PROIBIDO MISTÉRIO: Nunca use termos vagos como "ex-rival", "camisa 10" ou "reforço" sem o nome.
+    2. NOMES SÃO OBRIGATÓRIOS: O nome do jogador/técnico TEM que aparecer na MANCHETE (headline), no RESUMO (summary) e na LEGENDA (caption).
+    3. SEM "CORPORATIVÊS": Proibido usar clichês como "agressividade no mercado", "planejamento de médio/longo prazo", "estabilidade técnica", "equilibrar fluxo de caixa", "projeto estruturado". 
+    4. FOCO NO CAMPO: Fale de futebol, gols, estilo de jogo e o fato em si. Seja direto como um grito de gol.
+    5. FIDELIDADE: Não invente análises financeiras se a notícia não trouxer dados reais.
 
     Notícia: "${title}" - "${snippet}"
  
     Retorne apenas o JSON:
-    - headline: MANCHETE EM CAIXA ALTA com o NOME DO JOGADOR (max 40 chars).
-    - summary: Resumo curto e direto com o NOME DO JOGADOR e o FATO (max 140 chars).
-    - caption: Análise profunda (500-1000 chars) explicando o impacto técnico/financeiro.
-    - hashtags: string[] (Obrigatório começar com #, ex: ["#Futebol", "#Santos"])
+    - headline: MANCHETE EM CAIXA ALTA com o NOME DO ATLETA (max 40 chars).
+    - summary: Resumo curto com NOME e FATO (max 120 chars).
+    - caption: Texto para Instagram (300-500 chars). Comece direto com o fato. Use tom jornalístico esportivo vibrante, não corporativo. Inclua o nome do atleta.
+    - hashtags: string[] (Relacionadas ao clube e jogador)
     - category: Uma das oficiais.
     - shouldCreateStory: boolean
     - imageKeywords: string
