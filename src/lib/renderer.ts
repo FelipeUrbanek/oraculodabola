@@ -3,7 +3,7 @@ import { ProcessedContent } from './gemini';
 import fs from 'fs';
 import path from 'path';
 
-export async function generateImages(content: ProcessedContent, newsImageUrl: string | null, forceLayout?: number): Promise<{ feedPath: string; storyPath: string | null }> {
+export async function generateImages(content: ProcessedContent, newsImageUrl: string | null, teamName: string = '', forceLayout?: number): Promise<{ feedPath: string; storyPath: string | null }> {
   const browser = await puppeteer.launch({
     args: ['--no-sandbox', '--disable-setuid-sandbox'],
     headless: true
@@ -12,6 +12,18 @@ export async function generateImages(content: ProcessedContent, newsImageUrl: st
   try {
     const page = await browser.newPage();
     
+    // Carregar escudo do time se disponível
+    let teamShieldHtml = '';
+    const logoFileName = teamName.toLowerCase().replace(/ /g, '_') + '.png';
+    const logoPath = path.resolve(process.cwd(), 'assets', 'logos', logoFileName);
+    
+    if (fs.existsSync(logoPath)) {
+      const base64 = fs.readFileSync(logoPath, 'base64');
+      teamShieldHtml = `<div class="w-16 h-16 flex items-center justify-center bg-white p-2 border-r border-black/10">
+        <img src="data:image/png;base64,${base64}" class="w-full h-full object-contain">
+      </div>`;
+    }
+
     // Lógica de sorteio com memória para evitar repetição consecutiva
     const LAST_LAYOUT_PATH = path.join(process.cwd(), 'src', 'last_layout.json');
     let lastLayouts = { feed: 0, story: 0 };
@@ -54,11 +66,11 @@ export async function generateImages(content: ProcessedContent, newsImageUrl: st
     const badgeColor = catColors[content.category] || '#475569';
     const bgUrl = (newsImageUrl && newsImageUrl.includes('http')) ? newsImageUrl : `https://images.unsplash.com/photo-1574629810360-7efbbe195018?auto=format&fit=crop&q=80&w=1080&h=1350`;
 
-    const logoPath = path.resolve(process.cwd(), 'posts', 'logo', 'logo.svg');
+    const officialLogoPath = path.resolve(process.cwd(), 'posts', 'logo', 'logo.svg');
     let logoSvg = '<div class="w-10 h-10 border-2 border-white flex items-center justify-center font-black text-white text-xl bg-black">Ω</div>';
     
-    if (fs.existsSync(logoPath)) {
-      const rawSvg = fs.readFileSync(logoPath, 'utf-8');
+    if (fs.existsSync(officialLogoPath)) {
+      const rawSvg = fs.readFileSync(officialLogoPath, 'utf-8');
       logoSvg = rawSvg
         .replace(/width=".*?"/, '')
         .replace(/height=".*?"/, '')
@@ -66,10 +78,11 @@ export async function generateImages(content: ProcessedContent, newsImageUrl: st
     }
 
     const handleTag = `<div class="absolute top-12 left-12 z-[1000] flex items-center gap-0">
-      <div class="w-14 h-14 flex items-center justify-center bg-black border-r border-white/20">
+      ${teamShieldHtml}
+      <span class="font-bebas text-3xl tracking-[0.2em] text-white px-6 h-16 flex items-center bg-black/90 backdrop-blur-md">@OORACULODABOLA</span>
+      <div class="w-16 h-16 flex items-center justify-center bg-black border-l border-white/20">
         ${logoSvg}
       </div>
-      <span class="font-bebas text-3xl tracking-[0.2em] text-white px-6 h-14 flex items-center bg-black/90 backdrop-blur-md">@OORACULODABOLA</span>
     </div>`;
 
     const feedLayouts: Record<number, string> = {

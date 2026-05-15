@@ -103,7 +103,7 @@ async function main() {
       const content = await processNewsWithGemini(newsToPost.title, newsToPost.contentSnippet);
 
       // 6. Gerar Imagens Premium
-      const { feedPath, storyPath } = await generateImages(content, newsToPost.imageUrl || null);
+      const { feedPath, storyPath } = await generateImages(content, newsToPost.imageUrl || null, newsToPost.category);
 
       // 7. Postar no Instagram
       const finalCaption = `${content.caption}\n.\n.\n${content.hashtags.map(h => `#${h}`).join(' ')}`;
