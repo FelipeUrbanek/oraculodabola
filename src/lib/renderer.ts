@@ -19,7 +19,7 @@ export async function generateImages(content: ProcessedContent, newsImageUrl: st
     
     if (fs.existsSync(logoPath)) {
       const base64 = fs.readFileSync(logoPath, 'base64');
-      teamShieldHtml = `<div class="w-16 h-16 flex items-center justify-center bg-white p-2 border-r border-black/10">
+      teamShieldHtml = `<div class="w-16 h-16 flex items-center justify-center bg-black/90 backdrop-blur-md p-2 border-r border-white/10">
         <img src="data:image/png;base64,${base64}" class="w-full h-full object-contain">
       </div>`;
     }

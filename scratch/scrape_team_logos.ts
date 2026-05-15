@@ -3,6 +3,7 @@ import fs from 'fs';
 import path from 'path';
 import axios from 'axios';
 
+// Lista expandida para 20+ alvos
 const FOOTBALL_TARGETS = [
   { name: 'Flamengo', terra: 'https://www.terra.com.br/esportes/flamengo/' },
   { name: 'Palmeiras', terra: 'https://www.terra.com.br/esportes/palmeiras/' },
@@ -17,7 +18,16 @@ const FOOTBALL_TARGETS = [
   { name: 'Botafogo', terra: 'https://www.terra.com.br/esportes/botafogo/' },
   { name: 'Fluminense', terra: 'https://www.terra.com.br/esportes/fluminense/' },
   { name: 'Bahia', terra: 'https://www.terra.com.br/esportes/bahia/' },
-  { name: 'Fortaleza', terra: 'https://www.terra.com.br/esportes/fortaleza/' }
+  { name: 'Fortaleza', terra: 'https://www.terra.com.br/esportes/fortaleza/' },
+  { name: 'Athletico-PR', terra: 'https://www.terra.com.br/esportes/athletico-pr/' },
+  { name: 'Coritiba', terra: 'https://www.terra.com.br/esportes/coritiba/' },
+  { name: 'Vitória', terra: 'https://www.terra.com.br/esportes/vitoria/' },
+  { name: 'Sport', terra: 'https://www.terra.com.br/esportes/sport/' },
+  { name: 'Ceará', terra: 'https://www.terra.com.br/esportes/ceara/' },
+  { name: 'Bragantino', terra: 'https://www.terra.com.br/esportes/red-bull-bragantino/' },
+  { name: 'Cuiabá', terra: 'https://www.terra.com.br/esportes/cuiaba/' },
+  { name: 'Real Madrid', terra: 'https://www.terra.com.br/esportes/futebol/internacional/equipes/real-madrid/' },
+  { name: 'Barcelona', terra: 'https://www.terra.com.br/esportes/futebol/internacional/equipes/barcelona/' }
 ];
 
 async function downloadLogo(url: string, teamName: string) {
@@ -26,6 +36,9 @@ async function downloadLogo(url: string, teamName: string) {
   
   const filePath = path.join(logosDir, `${teamName.toLowerCase().replace(/ /g, '_')}.png`);
   
+  // Skip if already exists
+  if (fs.existsSync(filePath)) return;
+
   const response = await axios({
     url,
     method: 'GET',
@@ -42,10 +55,17 @@ async function downloadLogo(url: string, teamName: string) {
 
 async function scrapeLogos() {
   const browser = await puppeteer.launch({ headless: true, args: ['--no-sandbox'] });
-  console.log('🚀 Iniciando captura de escudos...');
+  console.log('🚀 Iniciando captura expandida de escudos...');
 
   for (const target of FOOTBALL_TARGETS) {
     try {
+      const fileName = `${target.name.toLowerCase().replace(/ /g, '_')}.png`;
+      const filePath = path.join(process.cwd(), 'assets', 'logos', fileName);
+      if (fs.existsSync(filePath)) {
+        console.log(`⏩ Pulando (já existe): ${target.name}`);
+        continue;
+      }
+
       const page = await browser.newPage();
       await page.goto(target.terra, { waitUntil: 'networkidle2', timeout: 30000 });
       

@@ -30,12 +30,21 @@ const FOOTBALL_TARGETS = [
   { name: 'Fluminense', terra: 'https://www.terra.com.br/esportes/fluminense/' },
   { name: 'Bahia', terra: 'https://www.terra.com.br/esportes/bahia/' },
   { name: 'Fortaleza', terra: 'https://www.terra.com.br/esportes/fortaleza/' },
+  { name: 'Athletico-PR', terra: 'https://www.terra.com.br/esportes/athletico-pr/' },
+  { name: 'Coritiba', terra: 'https://www.terra.com.br/esportes/coritiba/' },
+  { name: 'Vitória', terra: 'https://www.terra.com.br/esportes/vitoria/' },
+  { name: 'Sport', terra: 'https://www.terra.com.br/esportes/sport/' },
+  { name: 'Ceará', terra: 'https://www.terra.com.br/esportes/ceara/' },
+  { name: 'Bragantino', terra: 'https://www.terra.com.br/esportes/red-bull-bragantino/' },
+  { name: 'Cuiabá', terra: 'https://www.terra.com.br/esportes/cuiaba/' },
   { name: 'Mercado da Bola', terra: 'https://www.terra.com.br/esportes/futebol/mercado-da-bola/' },
   { name: 'Brasileirão', terra: 'https://www.terra.com.br/esportes/futebol/brasileiro-serie-a/' },
   { name: 'Libertadores', terra: 'https://www.terra.com.br/esportes/futebol/libertadores/' },
   { name: 'Copa do Brasil', terra: 'https://www.terra.com.br/esportes/futebol/copa-do-brasil/' },
   { name: 'Champions League', terra: 'https://www.terra.com.br/esportes/futebol/internacional/liga-dos-campeoes/' },
   { name: 'Futebol Internacional', terra: 'https://www.terra.com.br/esportes/futebol/internacional/' },
+  { name: 'Real Madrid', terra: 'https://www.terra.com.br/esportes/futebol/internacional/equipes/real-madrid/' },
+  { name: 'Barcelona', terra: 'https://www.terra.com.br/esportes/futebol/internacional/equipes/barcelona/' },
   { name: 'Copa 2026', terra: 'https://www.terra.com.br/esportes/futebol/copa-2026/' }
 ];
 
