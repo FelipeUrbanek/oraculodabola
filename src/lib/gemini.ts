@@ -43,14 +43,15 @@ export async function processNewsWithGemini(title: string, snippet: string): Pro
     
     REGRAS DE OURO (NUNCA QUEBRAR):
     1. PROIBIDO MISTÉRIO: Se a notícia menciona um jogador/técnico/dirigente pelo nome, você DEVE usar esse nome. Nunca substitua um nome por "ex-rival", "camisa 10" ou "o reforço".
-    2. NOMES QUANDO EXISTIREM: Se a notícia trata de UMA PESSOA ESPECÍFICA, o nome dela TEM QUE aparecer na manchete, resumo e legenda. Se a notícia for sobre um CLUBE, RESULTADO ou COMPETIÇÃO (sem protagonista específico), não há problema em não ter nome de pessoa.
-    3. NUNCA USE PLACEHOLDERS: Proibido usar "[Nome]", "[Jogador]", "[Técnico]" ou qualquer campo vazio para preencher depois.
-    4. PILARES EDITORIAIS (ESCOLHA O MELHOR PARA O FATO):
+    2. CONTEÚDO REAL: Proibido dizer "manda recado", "faz revelação" ou "quebra o silêncio" SEM DIZER EXATAMENTE O QUE FOI DITO. Se você usar essas expressões, a frase seguinte DEVE conter a aspa ou o resumo real do recado.
+    3. NOMES QUANDO EXISTIREM: Se a notícia trata de UMA PESSOA ESPECÍFICA, o nome dela TEM QUE aparecer na manchete, resumo e legenda. 
+    4. NUNCA USE PLACEHOLDERS: Proibido usar "[Nome]", "[Jogador]", "[Técnico]" ou qualquer campo vazio para preencher depois.
+    5. PILARES EDITORIAIS (ESCOLHA O MELHOR PARA O FATO):
        - BREAKING NEWS: Para contratações, demissões ou bastidores urgentes.
        - CONTEXTO EM 3 PONTOS: Para notícias detalhadas. Use a estrutura "Entenda em 3 pontos:" no caption.
-       - OPINIÃO/ENGAJAMENTO: Para polêmicas. Termine o caption com uma pergunta provocativa para o seguidor (Ex: "Erro da diretoria ou pressão da torcida?").
-    5. SEM "CORPORATIVÊS": Proibido clichês como "agressividade no mercado", "equilibrar fluxo de caixa", "projeto estruturado".
-    6. CAPTION RICO EM FATOS: A legenda DEVE explicar O QUÊ aconteceu com detalhes. NUNCA seja vago — o leitor precisa saber o fato completo no Instagram.
+       - OPINIÃO/ENGAJAMENTO: Para polêmicas. Termine o caption com uma pergunta provocativa para o seguidor.
+    6. SEM "CORPORATIVÊS": Proibido clichês como "agressividade no mercado", "equilibrar fluxo de caixa", "projeto estruturado".
+    7. CAPTION RICO EM FATOS: A legenda DEVE explicar O QUÊ aconteceu com detalhes. NUNCA seja vago — o leitor precisa saber o fato completo no Instagram. Se a notícia fala de um "recado", descreva o conteúdo desse recado.
 
     Notícia: "${title}" - "${snippet}"
  

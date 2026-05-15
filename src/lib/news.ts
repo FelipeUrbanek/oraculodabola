@@ -71,7 +71,7 @@ export async function resolveAndScrapeImage(googleUrl: string, browser?: any): P
       let paragraphs = '';
       for (const sel of selectors) {
         const found = Array.from(document.querySelectorAll(sel))
-          .slice(0, 5)
+          .slice(0, 10)
           .map(p => p.textContent?.trim())
           .filter(t => t && t.length > 20)
           .join(' ');
@@ -89,7 +89,7 @@ export async function resolveAndScrapeImage(googleUrl: string, browser?: any): P
       
       return { 
         imageUrl: og || twitter || null,
-        fullSnippet: `${paragraphs} | Tags: ${articleTags} | Keywords: ${metaKeywords} | Desc: ${metaDesc}`.substring(0, 1000)
+        fullSnippet: `${paragraphs} | Tags: ${articleTags} | Keywords: ${metaKeywords} | Desc: ${metaDesc}`.substring(0, 2000)
       };
     });
 
