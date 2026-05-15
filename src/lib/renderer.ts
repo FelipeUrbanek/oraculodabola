@@ -2,6 +2,10 @@ import puppeteer from 'puppeteer';
 import { ProcessedContent } from './gemini';
 import fs from 'fs';
 import path from 'path';
+import { fileURLToPath } from 'url';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 export async function generateImages(content: ProcessedContent, newsImageUrl: string | null, teamName: string = '', forceLayout?: number): Promise<{ feedPath: string; storyPath: string | null }> {
   const browser = await puppeteer.launch({
@@ -14,14 +18,29 @@ export async function generateImages(content: ProcessedContent, newsImageUrl: st
     
     // Carregar escudo do time se disponível
     let teamShieldHtml = '';
-    const logoFileName = teamName.toLowerCase().replace(/ /g, '_') + '.png';
-    const logoPath = path.resolve(process.cwd(), 'assets', 'logos', logoFileName);
+    const normalizedTeamName = teamName.toLowerCase()
+      .normalize("NFD").replace(/[\u0300-\u036f]/g, "") // Remove acentos
+      .replace(/ /g, '_');
+    
+    const logoFileName = `${normalizedTeamName}.png`;
+    const logosDir = path.resolve(__dirname, '..', '..', 'assets', 'logos');
+    const logoPath = path.join(logosDir, logoFileName);
     
     if (fs.existsSync(logoPath)) {
       const base64 = fs.readFileSync(logoPath, 'base64');
       teamShieldHtml = `<div class="w-16 h-16 flex items-center justify-center bg-black/90 backdrop-blur-md p-2 border-r border-white/10">
         <img src="data:image/png;base64,${base64}" class="w-full h-full object-contain">
       </div>`;
+    } else {
+      console.log(`⚠️ Escudo não encontrado para ${teamName} em ${logoPath}`);
+      // Tentar sem normalizar se falhou
+      const originalPath = path.join(logosDir, `${teamName.toLowerCase().replace(/ /g, '_')}.png`);
+      if (fs.existsSync(originalPath)) {
+        const base64 = fs.readFileSync(originalPath, 'base64');
+        teamShieldHtml = `<div class="w-16 h-16 flex items-center justify-center bg-black/90 backdrop-blur-md p-2 border-r border-white/10">
+          <img src="data:image/png;base64,${base64}" class="w-full h-full object-contain">
+        </div>`;
+      }
     }
 
     // Lógica de sorteio com memória para evitar repetição consecutiva
