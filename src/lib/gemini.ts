@@ -1,6 +1,13 @@
+import fs from 'fs';
+import path from 'path';
+import { fileURLToPath } from 'url';
 import dotenv from 'dotenv';
 dotenv.config({ path: '.env.local' });
 import { GoogleGenerativeAI } from "@google/generative-ai";
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+const WORLD_STATE_PATH = path.join(__dirname, '..', 'world_state.json');
 
 const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY || "");
 
@@ -37,44 +44,114 @@ export interface ProcessedContent {
   imageKeywords: string;
 }
 
+function loadWorldState() {
+  if (fs.existsSync(WORLD_STATE_PATH)) {
+    try { return JSON.parse(fs.readFileSync(WORLD_STATE_PATH, 'utf-8')); } catch (e) { return {}; }
+  }
+  return {};
+}
+
+function saveWorldState(state: any) {
+  try {
+    state.last_updated = new Date().toISOString();
+    fs.writeFileSync(WORLD_STATE_PATH, JSON.stringify(state, null, 2));
+  } catch (e) { console.error('Erro ao salvar World State:', e); }
+}
+
 export async function processNewsWithGemini(title: string, snippet: string): Promise<ProcessedContent> {
+  const worldState = loadWorldState();
+  const worldStateContext = JSON.stringify(worldState.teams || {}, null, 2);
+
   const prompt = `
-    Persona: Você é um jornalista esportivo de elite do "Oráculo da Bola". Seu tom é DIRETO, IMPACTANTE e 100% FACTUAL. Estamos em MAIO DE 2026 — tenha consciência de que o cenário do futebol (técnicos e elencos) mudou drasticamente desde seus dados de treinamento.
+    Persona: Você é um jornalista esportivo de elite do "Oráculo da Bola". Seu tom é DIRETO, IMPACTANTE e 100% FACTUAL. Estamos em MAIO DE 2026.
     
-    REGRAS DE OURO (NUNCA QUEBRAR):
-    1. PROIBIDO MISTÉRIO: Se a notícia menciona um jogador/técnico/dirigente pelo nome, você DEVE usar esse nome. Nunca substitua um nome por "ex-rival", "camisa 10" ou "o reforço".
-    2. LISTE OS NOMES: Se a notícia cita vários desfalques ou jogadores (ex: "Brítez e mais sete"), você DEVE procurar os nomes desses outros sete no texto e LISTÁ-LOS. Nunca esconda nomes atrás de números se eles estiverem disponíveis no texto fornecido.
-    3. CONTEÚDO REAL: Proibido dizer "manda recado", "faz revelação" ou "quebra o silêncio" SEM DIZER EXATAMENTE O QUE FOI DITO. Se você usar essas expressões, a frase seguinte DEVE conter a aspa ou o resumo real do recado.
-    4. VALORES EXATOS: Se a notícia fala de PREMIAÇÃO, SALÁRIO ou TRANSFERÊNCIA, você DEVE procurar o valor exato no texto e incluí-lo. Proibido usar termos vagos como "premiação milionária" ou "quantia astronômica" se o número (ex: R$ 3,5 milhões) estiver no texto. 
-    5. FIDELIDADE AO TEXTO (ANTI-ALUCINAÇÃO): Use APENAS os nomes de técnicos e jogadores que aparecem na notícia fornecida. NUNCA use seu conhecimento prévio para "adivinhar" quem é o técnico de um time.
-    6. NUNCA USE PLACEHOLDERS: Proibido usar "[Nome]", "[Jogador]", "[Técnico]" ou qualquer campo vazio para preencher depois.
-    7. VARIANT STYLES (DIVERSIFIQUE): Não use a estrutura "Entenda em 3 pontos" em todos os posts. Use-a apenas para notícias complexas. Para notícias simples, use uma narrativa corrida e impactante.
-    8. PILARES EDITORIAIS (ESCOLHA O MELHOR PARA O FATO):
-       - BREAKING NEWS: Para fatos urgentes. Use frases curtas e diretas.
-       - CONTEXTO DETALHADO: Use a estrutura "Entenda os detalhes:" ou "Os bastidores:".
-       - ENGAJAMENTO: Termine com uma pergunta que estimule o debate técnico ou passional.
-    9. CAPTION RICO EM FATOS: A legenda DEVE explicar O QUÊ aconteceu com detalhes. NUNCA seja vago — o leitor precisa saber o fato completo no Instagram.
+    MEMÓRIA DO MUNDO (Use isso para evitar erros sobre quem é o técnico ou em qual liga o time está):
+    ${worldStateContext}
+
+    REGRAS DE OURO:
+    1. PROIBIDO MISTÉRIO: Use nomes reais. Nunca substitua por apelidos ou descrições vagas.
+    2. LISTE OS NOMES: Se a notícia cita vários jogadores, liste-os individualmente no caption.
+    3. VALORES EXATOS: Procure e use valores monetários exatos (ex: R$ 5,4 milhões).
+    4. FIDELIDADE ABSOLUTA: Use APENAS os nomes que aparecem na notícia ou que estão na MEMÓRIA DO MUNDO. Se a memória diz que o técnico do Fortaleza é Carpini, não diga que é Vojvoda.
+    5. NUNCA USE PLACEHOLDERS.
+    6. VARIANT STYLES: Diversifique o estilo da legenda. Use "Entenda os detalhes:" em vez de sempre "3 pontos".
+    7. CAPTION RICO: Explique o fato com profundidade.
 
     Notícia: "${title}" - "${snippet}"
  
     Retorne apenas o JSON:
-    - headline: MANCHETE EM CAIXA ALTA. Deve ser IMPACTANTE, CRIATIVA e CURTA (max 40 chars). Evite apenas repetir o título da notícia; use palavras fortes e verbos de ação para criar um gancho visual.
-    - summary: Resumo curto com o FATO PRINCIPAL (max 120 chars).
-    - caption: Texto para Instagram (350-500 chars). Use um dos pilares (Urgência, Detalhes ou Pergunta). Seja vibrante e rico em detalhes.
-    - hashtags: string[] (Relacionadas ao clube, jogador/técnico, competição)
-    - category: Uma das oficiais: URGENTE, PLANTÃO, MERCADO, BASTIDORES, TÁTICA, EXCLUSIVO, ANÁLISE, OPINIÃO, NÚMEROS, FATO, HISTÓRIA.
+    - headline: MANCHETE EM CAIXA ALTA (max 40 chars). Impactante e criativa.
+    - summary: Fato principal (max 120 chars).
+    - caption: Texto para Instagram (350-500 chars).
+    - hashtags: string[]
+    - category: URGENTE, PLANTÃO, MERCADO, BASTIDORES, TÁTICA, EXCLUSIVO, ANÁLISE, OPINIÃO, NÚMEROS, FATO, HISTÓRIA.
     - shouldCreateStory: boolean
     - imageKeywords: string
   `;
 
-  const processed: ProcessedContent = await callGemini(prompt);
+  let processed: ProcessedContent = await callGemini(prompt);
+
+  // --- CAMADA DE REVISÃO (FACT-CHECK) ---
+  console.log(`🔍 Revisando fatos para: ${processed.headline}...`);
+  const revisionPrompt = `
+    Persona: Você é o Revisor-Chefe do "Oráculo da Bola". Sua missão é GARANTIR A PRECISÃO.
+    
+    FONTE DA VERDADE (Notícia Atual): ${snippet}
+    MEMÓRIA DO MUNDO (Contexto): ${worldStateContext}
+    
+    CONTEÚDO GERADO:
+    ${JSON.stringify(processed, null, 2)}
+    
+    HIERARQUIA DE VERDADE:
+    1. A Notícia Atual é a autoridade MÁXIMA. Se a notícia diz que o técnico mudou, IGNORE a Memória do Mundo.
+    2. A Memória do Mundo serve apenas para preencher lacunas (ex: se a notícia cita "o técnico" sem dar nome, use o nome da Memória).
+    3. Seu Conhecimento de Treinamento (IA) é a última prioridade e nunca deve contradizer os itens acima.
+    
+    TAREFA:
+    - Se a notícia atual menciona um NOVO NOME (técnico/jogador) que é diferente da Memória, MANTENHA o nome da notícia.
+    - Se a notícia não dá o nome mas a Memória tem, use o da Memória.
+    - Corrija qualquer "alucinação" de nomes famosos que não estão no texto (ex: não deixe passar 'Vojvoda' se o técnico atual for outro).
+    - Certifique-se de que todos os jogadores listados na notícia como desfalques apareçam no post.
+    
+    Retorne o JSON FINAL corrigido:
+  `;
   
-  // Validação Anti-Placeholder (Evita postagens com "[Nome]", "(Nome)", etc)
-  const placeholders = [
-    "[Nome]", "[NOME]", "[atleta]", "[jogador]", "[técnico]", "[dirigente]",
-    "(Nome)", "(NOME)", "{Nome}", "{NOME}", "[Nome do Jogador]", "[Nome do Atleta]",
-    "[Insira Nome]", "[Nome do Técnico]", "[Jogador]", "[Clube]", "ERRO:"
-  ];
+  try {
+    const revised = await callGemini(revisionPrompt);
+    processed = revised;
+  } catch (e) {
+    console.warn('⚠️ Falha na camada de revisão, usando original.');
+  }
+  
+  // --- ATUALIZAÇÃO DA MEMÓRIA DO MUNDO ---
+  const updatePrompt = `
+    Analise a notícia e atualize a Memória do Mundo.
+    Notícia: ${title} - ${snippet}
+    
+    Regras de Atualização:
+    - Identifique o técnico atual do time e a competição/liga que estão disputando.
+    - Se a notícia diz que alguém FOI DEMITIDO, remova o nome ou marque como vago.
+    - Se a notícia confirma uma CONTRATAÇÃO, adicione ao contexto do time.
+    
+    Retorne um JSON com a estrutura sugerida para 'teams':
+    {
+      "teams": {
+        "Nome do Time": { "coach": "Nome", "league": "Nome", "recent_changes": "Descrição curta" }
+      }
+    }
+    Retorne apenas as mudanças detectadas. Se nada mudou, retorne {}.
+  `;
+  try {
+    const updates = await callGemini(updatePrompt);
+    if (updates.teams && Object.keys(updates.teams).length > 0) {
+      const newState = { ...worldState, teams: { ...(worldState.teams || {}), ...updates.teams } };
+      saveWorldState(newState);
+      console.log('🧠 Memória do Mundo atualizada.');
+    }
+  } catch (e) {}
+
+  // Validação Anti-Placeholder
+  const placeholders = ["[Nome]", "[NOME]", "[atleta]", "[jogador]", "[técnico]", "[dirigente]", "ERRO:"];
   const contentStr = JSON.stringify(processed);
   if (placeholders.some(p => contentStr.includes(p))) {
     throw new Error(`❌ Erro de Placeholder detectado: ${processed.headline}`);
