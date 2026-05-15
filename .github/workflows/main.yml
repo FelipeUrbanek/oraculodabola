@@ -70,4 +70,5 @@ jobs:
           git config --global user.email "bot@ooraculodabola.com"
           git add .
           git commit -m "🔮 Oráculo: Novos posts gerados [$(date +'%Y-%m-%d %H:%M')]" || echo "Nenhuma mudança para comitar"
+          git pull --rebase origin main
           git push
