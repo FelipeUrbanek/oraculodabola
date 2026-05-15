@@ -1,7 +1,7 @@
 import dotenv from 'dotenv';
 dotenv.config({ path: '.env.local' });
 import { fetchFootballNews } from './src/lib/news';
-import { processNewsWithGemini, rankBestNews } from './src/lib/gemini';
+import { processNewsWithGemini, rankBestNews, filterDuplicateThemes } from './src/lib/gemini';
 import { generateImages } from './src/lib/renderer';
 import { archiveOldPosts } from './src/lib/archiver';
 import { getFollowersCount, postToInstagram } from './src/lib/instagram';
@@ -14,10 +14,12 @@ const HISTORY_FILE = path.join(process.cwd(), 'src', 'history.json');
 async function runOráculo() {
   console.log("🔮 O Oráculo está despertando...");
   
-  let history: string[] = [];
+  let history: { id: string, title?: string, date: string }[] = [];
   if (fs.existsSync(HISTORY_FILE)) {
     try {
-      history = JSON.parse(fs.readFileSync(HISTORY_FILE, 'utf-8'));
+      const raw = fs.readFileSync(HISTORY_FILE, 'utf-8');
+      const parsed = JSON.parse(raw);
+      history = parsed.map((item: any) => typeof item === 'string' ? { id: item, date: new Date(0).toISOString() } : item);
     } catch (e) { history = []; }
   }
 
@@ -25,31 +27,38 @@ async function runOráculo() {
   const LAST_CATEGORY_FILE = path.join(process.cwd(), 'src', 'last_category.txt');
   let lastCategory = fs.existsSync(LAST_CATEGORY_FILE) ? fs.readFileSync(LAST_CATEGORY_FILE, 'utf-8').trim() : '';
 
-  // Filtrar e ORDENAR POR FRESCOR (Mais novas primeiro)
-  const processedTitlesInCurrentRun = new Set();
-  const newItems = newsList.filter((item: any) => {
-    const isNewLink = !history.includes(item.link);
-    const cleanTitle = item.title.split(' - ')[0].toLowerCase().trim();
-    const isNewContent = !history.some(h => h === cleanTitle) && !processedTitlesInCurrentRun.has(cleanTitle);
+  // 1. Filtrar por ID (link) e categorias básicas
+  const postedIds = history.map(h => h.id);
+  const uniqueItems = newsList.filter((item: any) => {
+    const isNewLink = !postedIds.includes(item.link);
     const hasImage = !!item.imageUrl;
     const isDifferentCategory = item.category !== lastCategory;
     const forbidden = ["onde assistir", "ao vivo", "transmissão", "tempo real", "como assistir", "escalação", "palpite"];
-    const isServiceNews = forbidden.some(word => cleanTitle.includes(word));
+    const isServiceNews = forbidden.some(word => item.title.toLowerCase().includes(word));
 
-    if (isNewLink && isNewContent && hasImage && !isServiceNews && isDifferentCategory) {
-      processedTitlesInCurrentRun.add(cleanTitle);
-      return true;
-    }
-    return false;
-  }).sort((a, b) => new Date(b.pubDate).getTime() - new Date(a.pubDate).getTime())
-    .slice(0, 15);
+    return isNewLink && hasImage && !isServiceNews && isDifferentCategory;
+  });
 
-  if (newItems.length === 0) {
+  if (uniqueItems.length === 0) {
     console.log(`💤 Nenhuma novidade fresquinha (Categoria: ${lastCategory}).`);
     return;
   }
 
-  // LÓGICA DE COMPENSAÇÃO: Se ficou muito tempo sem postar, postar até 3
+  // 2. DE-DUPLICAÇÃO SEMÂNTICA (Evitar vários posts sobre o mesmo tema)
+  console.log('🧠 Verificando duplicidade de temas com Gemini...');
+  const recentHistoryTitles = history
+    .filter(h => h.title && (Date.now() - new Date(h.date).getTime()) < 48 * 60 * 60 * 1000)
+    .map(h => h.title!);
+  
+  const validIndices = await filterDuplicateThemes(uniqueItems, recentHistoryTitles);
+  const newItems = validIndices.map(i => uniqueItems[i]);
+
+  if (newItems.length === 0) {
+    console.log('♻️ Todas as novidades tratam de temas já postados recentemente.');
+    return;
+  }
+
+  // 3. Lógica de Compensação
   const LAST_POST_FILE = path.join(process.cwd(), 'src', 'last_post.json');
   let lastPostTime = Date.now() - (60 * 60 * 1000); 
   if (fs.existsSync(LAST_POST_FILE)) {
@@ -66,11 +75,11 @@ async function runOráculo() {
 
   console.log(`⏱️ Último post há ${hoursSinceLastPost.toFixed(1)}h. Planejando ${postsToMake} post(s).`);
 
+  // 4. Seleção dos Melhores Itens (Rankeados)
   const finalItems: any[] = [];
   let candidatesPool = [...newItems];
 
-  for (let p = 0; p < postsToMake; p++) {
-    if (candidatesPool.length === 0) break;
+  for (let p = 0; p < Math.min(postsToMake, newItems.length); p++) {
     const bestItem = await rankBestNews(candidatesPool);
     if (bestItem) {
       finalItems.push(bestItem);
@@ -78,36 +87,14 @@ async function runOráculo() {
     }
   }
 
+  // 5. Processamento e Postagem
   for (let i = 0; i < finalItems.length; i++) {
     const item = finalItems[i];
     console.log(`🧐 [${i+1}/${finalItems.length}] Processando [${item.category}]: ${item.title}`);
     
-    // Pool de fallback: itens não selecionados como principais
-    const fallbackPool = candidatesPool.filter(c => !finalItems.some(f => f.link === c.link));
-    
-    let processed = null;
-    let usedItem = item;
-    
-    // Tenta o item principal, depois fallbacks
-    const attempts = [item, ...fallbackPool.slice(0, 3)];
-    for (const attempt of attempts) {
-      try {
-        processed = await processNewsWithGemini(attempt.title, attempt.contentSnippet);
-        usedItem = attempt;
-        break;
-      } catch (err: any) {
-        console.warn(`⚠️ Falhou [${attempt.title.substring(0, 50)}...]: ${err.message}`);
-      }
-    }
-    
-    if (!processed) {
-      console.error(`❌ Sem conteúdo válido para o slot ${i+1}. Pulando.`);
-      continue;
-    }
-    
     try {
-      const paths = await generateImages(processed, usedItem.imageUrl || null);
-      const scheduledTime = undefined;
+      const processed = await processNewsWithGemini(item.title, item.contentSnippet);
+      const paths = await generateImages(processed, item.imageUrl || null);
       
       const formattedHashtags = processed.hashtags.map(h => h.startsWith('#') ? h : `#${h}`).join(' ');
       
@@ -116,21 +103,27 @@ async function runOráculo() {
         `${processed.caption}\n\n${formattedHashtags}`
       );
       
+      // Atualizar Histórico (NOVO FORMATO)
+      history.push({ 
+        id: item.id || item.link, 
+        title: item.title, 
+        date: new Date().toISOString() 
+      });
+      if (history.length > 500) history = history.slice(-500);
+      
+      fs.writeFileSync(HISTORY_FILE, JSON.stringify(history, null, 2));
+      fs.writeFileSync(LAST_CATEGORY_FILE, item.category);
+      fs.writeFileSync(LAST_POST_FILE, JSON.stringify({ timestamp: new Date().toISOString() }));
+      
+      console.log(`✅ Postagem confirmada [${item.category}]: ${processed.headline}`);
+
       if (i < finalItems.length - 1) {
         console.log("⏳ Aguardando 30 segundos para a próxima postagem...");
         await new Promise(resolve => setTimeout(resolve, 30000));
       }
-      
-      history.push(usedItem.link);
-      history.push(usedItem.title.split(' - ')[0].toLowerCase().trim());
-      if (history.length > 1000) history = history.slice(-1000);
-      
-      fs.writeFileSync(HISTORY_FILE, JSON.stringify(history, null, 2));
-      fs.writeFileSync(LAST_CATEGORY_FILE, usedItem.category);
-      fs.writeFileSync(LAST_POST_FILE, JSON.stringify({ timestamp: new Date().toISOString() }));
-      
-      console.log(`✅ Postagem confirmada [${usedItem.category}]: ${processed.headline}`);
-    } catch (error) { console.error(`❌ Erro fatal no slot ${i+1}:`, error); }
+    } catch (error: any) { 
+      console.error(`❌ Erro fatal no slot ${i+1}:`, error.message); 
+    }
   }
 
   await archiveOldPosts();
