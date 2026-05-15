@@ -43,16 +43,17 @@ export async function processNewsWithGemini(title: string, snippet: string): Pro
     
     REGRAS DE OURO (NUNCA QUEBRAR):
     1. PROIBIDO MISTÉRIO: Se a notícia menciona um jogador/técnico/dirigente pelo nome, você DEVE usar esse nome. Nunca substitua um nome por "ex-rival", "camisa 10" ou "o reforço".
-    2. CONTEÚDO REAL: Proibido dizer "manda recado", "faz revelação" ou "quebra o silêncio" SEM DIZER EXATAMENTE O QUE FOI DITO. Se você usar essas expressões, a frase seguinte DEVE conter a aspa ou o resumo real do recado.
-    3. VALORES EXATOS: Se a notícia fala de PREMIAÇÃO, SALÁRIO ou TRANSFERÊNCIA, você DEVE procurar o valor exato no texto e incluí-lo. Proibido usar termos vagos como "premiação milionária" ou "quantia astronômica" se o número (ex: R$ 3,5 milhões) estiver no texto. 
-    4. FIDELIDADE AO TEXTO (ANTI-ALUCINAÇÃO): Use APENAS os nomes de técnicos e jogadores que aparecem na notícia fornecida. NUNCA use seu conhecimento prévio para "adivinhar" quem é o técnico de um time (ex: não assuma que Vojvoda é o técnico do Fortaleza se o texto sugerir outro nome ou não citar ninguém).
-    5. NUNCA USE PLACEHOLDERS: Proibido usar "[Nome]", "[Jogador]", "[Técnico]" ou qualquer campo vazio para preencher depois.
-    6. VARIANT STYLES (DIVERSIFIQUE): Não use a estrutura "Entenda em 3 pontos" em todos os posts. Use-a apenas para notícias complexas. Para notícias simples, use uma narrativa corrida e impactante.
-    7. PILARES EDITORIAIS (ESCOLHA O MELHOR PARA O FATO):
+    2. LISTE OS NOMES: Se a notícia cita vários desfalques ou jogadores (ex: "Brítez e mais sete"), você DEVE procurar os nomes desses outros sete no texto e LISTÁ-LOS. Nunca esconda nomes atrás de números se eles estiverem disponíveis no texto fornecido.
+    3. CONTEÚDO REAL: Proibido dizer "manda recado", "faz revelação" ou "quebra o silêncio" SEM DIZER EXATAMENTE O QUE FOI DITO. Se você usar essas expressões, a frase seguinte DEVE conter a aspa ou o resumo real do recado.
+    4. VALORES EXATOS: Se a notícia fala de PREMIAÇÃO, SALÁRIO ou TRANSFERÊNCIA, você DEVE procurar o valor exato no texto e incluí-lo. Proibido usar termos vagos como "premiação milionária" ou "quantia astronômica" se o número (ex: R$ 3,5 milhões) estiver no texto. 
+    5. FIDELIDADE AO TEXTO (ANTI-ALUCINAÇÃO): Use APENAS os nomes de técnicos e jogadores que aparecem na notícia fornecida. NUNCA use seu conhecimento prévio para "adivinhar" quem é o técnico de um time.
+    6. NUNCA USE PLACEHOLDERS: Proibido usar "[Nome]", "[Jogador]", "[Técnico]" ou qualquer campo vazio para preencher depois.
+    7. VARIANT STYLES (DIVERSIFIQUE): Não use a estrutura "Entenda em 3 pontos" em todos os posts. Use-a apenas para notícias complexas. Para notícias simples, use uma narrativa corrida e impactante.
+    8. PILARES EDITORIAIS (ESCOLHA O MELHOR PARA O FATO):
        - BREAKING NEWS: Para fatos urgentes. Use frases curtas e diretas.
        - CONTEXTO DETALHADO: Use a estrutura "Entenda os detalhes:" ou "Os bastidores:".
        - ENGAJAMENTO: Termine com uma pergunta que estimule o debate técnico ou passional.
-    8. CAPTION RICO EM FATOS: A legenda DEVE explicar O QUÊ aconteceu com detalhes. NUNCA seja vago — o leitor precisa saber o fato completo no Instagram.
+    9. CAPTION RICO EM FATOS: A legenda DEVE explicar O QUÊ aconteceu com detalhes. NUNCA seja vago — o leitor precisa saber o fato completo no Instagram.
 
     Notícia: "${title}" - "${snippet}"
  
