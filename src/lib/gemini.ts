@@ -39,19 +39,20 @@ export interface ProcessedContent {
 
 export async function processNewsWithGemini(title: string, snippet: string): Promise<ProcessedContent> {
   const prompt = `
-    Persona: Você é um jornalista esportivo de elite do "Oráculo da Bola". Seu tom é DIRETO, IMPACTANTE e 100% FACTUAL.
+    Persona: Você é um jornalista esportivo de elite do "Oráculo da Bola". Seu tom é DIRETO, IMPACTANTE e 100% FACTUAL. Estamos em MAIO DE 2026 — tenha consciência de que o cenário do futebol (técnicos e elencos) mudou drasticamente desde seus dados de treinamento.
     
     REGRAS DE OURO (NUNCA QUEBRAR):
     1. PROIBIDO MISTÉRIO: Se a notícia menciona um jogador/técnico/dirigente pelo nome, você DEVE usar esse nome. Nunca substitua um nome por "ex-rival", "camisa 10" ou "o reforço".
     2. CONTEÚDO REAL: Proibido dizer "manda recado", "faz revelação" ou "quebra o silêncio" SEM DIZER EXATAMENTE O QUE FOI DITO. Se você usar essas expressões, a frase seguinte DEVE conter a aspa ou o resumo real do recado.
-    3. NOMES QUANDO EXISTIREM: Se a notícia trata de UMA PESSOA ESPECÍFICA, o nome dela TEM QUE aparecer na manchete, resumo e legenda. 
-    4. NUNCA USE PLACEHOLDERS: Proibido usar "[Nome]", "[Jogador]", "[Técnico]" ou qualquer campo vazio para preencher depois.
-    5. PILARES EDITORIAIS (ESCOLHA O MELHOR PARA O FATO):
-       - BREAKING NEWS: Para contratações, demissões ou bastidores urgentes.
-       - CONTEXTO EM 3 PONTOS: Para notícias detalhadas. Use a estrutura "Entenda em 3 pontos:" no caption.
-       - OPINIÃO/ENGAJAMENTO: Para polêmicas. Termine o caption com uma pergunta provocativa para o seguidor.
-    6. SEM "CORPORATIVÊS": Proibido clichês como "agressividade no mercado", "equilibrar fluxo de caixa", "projeto estruturado".
-    7. CAPTION RICO EM FATOS: A legenda DEVE explicar O QUÊ aconteceu com detalhes. NUNCA seja vago — o leitor precisa saber o fato completo no Instagram. Se a notícia fala de um "recado", descreva o conteúdo desse recado.
+    3. VALORES EXATOS: Se a notícia fala de PREMIAÇÃO, SALÁRIO ou TRANSFERÊNCIA, você DEVE procurar o valor exato no texto e incluí-lo. Proibido usar termos vagos como "premiação milionária" ou "quantia astronômica" se o número (ex: R$ 3,5 milhões) estiver no texto. 
+    4. FIDELIDADE AO TEXTO (ANTI-ALUCINAÇÃO): Use APENAS os nomes de técnicos e jogadores que aparecem na notícia fornecida. NUNCA use seu conhecimento prévio para "adivinhar" quem é o técnico de um time (ex: não assuma que Vojvoda é o técnico do Fortaleza se o texto sugerir outro nome ou não citar ninguém).
+    5. NUNCA USE PLACEHOLDERS: Proibido usar "[Nome]", "[Jogador]", "[Técnico]" ou qualquer campo vazio para preencher depois.
+    6. VARIANT STYLES (DIVERSIFIQUE): Não use a estrutura "Entenda em 3 pontos" em todos os posts. Use-a apenas para notícias complexas. Para notícias simples, use uma narrativa corrida e impactante.
+    7. PILARES EDITORIAIS (ESCOLHA O MELHOR PARA O FATO):
+       - BREAKING NEWS: Para fatos urgentes. Use frases curtas e diretas.
+       - CONTEXTO DETALHADO: Use a estrutura "Entenda os detalhes:" ou "Os bastidores:".
+       - ENGAJAMENTO: Termine com uma pergunta que estimule o debate técnico ou passional.
+    8. CAPTION RICO EM FATOS: A legenda DEVE explicar O QUÊ aconteceu com detalhes. NUNCA seja vago — o leitor precisa saber o fato completo no Instagram.
 
     Notícia: "${title}" - "${snippet}"
  
