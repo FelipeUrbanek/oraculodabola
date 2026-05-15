@@ -147,6 +147,14 @@ async function runOráculo() {
       fs.writeFileSync(MILESTONES_FILE, JSON.stringify(milestoneHistory, null, 2));
     }
   } catch (mError) { console.error("Erro marcos:", mError); }
+
+  // NOVO: Ciclo de Engajamento para Crescimento Orgânico
+  try {
+    const { growFollowers, engageHashtag } = await import('./src/lib/engagement');
+    console.log("\n🌱 Iniciando ciclo de crescimento orgânico...");
+    await growFollowers('ge.globo', 2);
+    await engageHashtag('brasileirao', 1);
+  } catch (engError) { console.error("Erro no engajamento:", engError); }
   
   process.exit(0);
 }

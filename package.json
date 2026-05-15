@@ -24,6 +24,7 @@
   },
   "devDependencies": {
     "@types/archiver": "^7.0.0",
+    "@types/better-sqlite3": "^7.6.13",
     "archiver": "^8.0.0",
     "tsx": "^4.21.0"
   }
