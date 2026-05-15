@@ -58,9 +58,9 @@ export async function processNewsWithGemini(title: string, snippet: string): Pro
     Notícia: "${title}" - "${snippet}"
  
     Retorne apenas o JSON:
-    - headline: MANCHETE EM CAIXA ALTA impactante (max 40 chars).
+    - headline: MANCHETE EM CAIXA ALTA. Deve ser IMPACTANTE, CRIATIVA e CURTA (max 40 chars). Evite apenas repetir o título da notícia; use palavras fortes e verbos de ação para criar um gancho visual.
     - summary: Resumo curto com o FATO PRINCIPAL (max 120 chars).
-    - caption: Texto para Instagram (350-500 chars). Use um dos pilares (Urgência, 3 Pontos ou Pergunta Final). Seja vibrante e rico em detalhes.
+    - caption: Texto para Instagram (350-500 chars). Use um dos pilares (Urgência, Detalhes ou Pergunta). Seja vibrante e rico em detalhes.
     - hashtags: string[] (Relacionadas ao clube, jogador/técnico, competição)
     - category: Uma das oficiais: URGENTE, PLANTÃO, MERCADO, BASTIDORES, TÁTICA, EXCLUSIVO, ANÁLISE, OPINIÃO, NÚMEROS, FATO, HISTÓRIA.
     - shouldCreateStory: boolean
