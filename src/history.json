@@ -1,47 +1,117 @@
 [
-  "https://www.uol.com.br/esporte/futebol/colunas/mauro-cezar-pereira/2026/05/13/quase-10-dos-jogos-do-brasileiro-so-tiveram-perto-de-45-minutos-de-futebol.htm",
-  "mauro cezar pereira: quase 10% dos jogos do brasileiro só tiveram perto de 45 minutos de futebol",
-  "https://www.uol.com.br/esporte/futebol/ultimas-noticias/2026/05/10/santos-rb-bragantino-brasileirao-serie-a.ghtm",
-  "neymar marca em 'despedida' da vila, santos vence bragantino e escapa do z4",
-  "https://www.instagram.com/reel/DYR55ELOKoo/",
-  "flamengo, corinthians e grêmio cogitam realizar um amistoso triangular durante a pausa para a copa do mundo!",
-  "https://www.cnnbrasil.com.br/esportes/futebol/copa-do-brasil/vasco-leva-susto-mas-elimina-paysandu-e-vai-as-oitavas-da-copa-do-brasil/",
-  "vasco leva susto, mas elimina paysandu e vai às oitavas da copa do brasil",
-  "https://rdmonline.com.br/palmeiras-goleia-jacuipense-e-avanca-as-oitavas-da-copa-do-brasil/",
-  "palmeiras goleia jacuipense e avança às oitavas da copa do brasil",
-  "https://nossopalmeiras.com.br/noticias-do-palmeiras/palmeiras-abel-14-05/?utm_source=terra_capa_esportes&utm_medium=referral",
-  "palmeiras: abel manda recado forte depois da goleada e declaração repercute no brasil inteiro",
-  "https://soutimao.com.br/noticias-do-corinthians/25mi-corinthians-sao-paulo/?utm_source=terra_capa_esportes&utm_medium=referral",
-  "ex-corinthians que recebia r$ 2,5 milhões por mês, encaminha acordo com o são paulo",
-  "https://nacaotricolor.com/noticias-do-sao-paulo/cobrado-calleri-sao-paulo/?utm_source=terra_capa_esportes&utm_medium=referral",
-  "\"tem que ser cobrado\": calleri não poupa palavras e detona jogador do são paulo",
-  "https://meubotafogo.com.br/noticias-do-botafogo/botafogo-franclim-hoje/?utm_source=terra_capa_esportes&utm_medium=referral",
-  "botafogo contrata goleador de seleção; vínculo de 4 temporadas",
-  "https://nacaotricolor.com/noticias-do-sao-paulo/acordo-sao-paulo-sccp-14-5/?utm_source=terra_capa_esportes&utm_medium=referral",
-  "recebia r$ 2,5 milhões por mês no corinthians e agora encaminha acordo com o são paulo",
-  "https://sougremio.com.br/noticias-do-gremio/folha-milionaria-14-maio/?utm_source=terra_capa_esportes&utm_medium=referral",
-  "\"conta pesada\" no grêmio vira desafio urgente para odorico roman",
-  "https://soufortaleza.com/noticias-do-fortaleza/carpini-fortaleza-saida/?utm_source=terra_capa_esportes&utm_medium=referral",
-  "sem espaço com carpini, atacante encaminha saída do fortaleza antes do fim da temporada",
-  "kayke de saída do fortaleza: thiago carpini libera atacante",
-  "https://www.itatiaia.com.br/esportes/futebol/futebol-internacional/copa-do-mundo/deschamps-justifica-corte-de-estrela-do-real-madrid-da-convocacao-da-franca-a-copa/",
-  "deschamps justifica corte de estrela do real madrid da convocação da frança à copa",
-  "https://santistas.net/noticias-do-santos/santos-fc-lucas-14-05/?utm_source=terra_capa_esportes&utm_medium=referral",
-  "lucas veríssimo quebra silêncio sobre atrasos no santos fc e manda recado após vitória",
-  "https://atleticomg.net/noticias-do-atletico-mineiro/eduardo-dominguez-23/?utm_source=terra_capa_esportes&utm_medium=referral",
-  "eduardo domínguez ganha 'sobrevida', mas pode ser demitido no final de semana; entenda",
-  "https://santistas.net/noticias-do-santos/santos-fc-neymar-14-05-2/?utm_source=terra_capa_esportes&utm_medium=referral",
-  "santos fc toma decisão inesperada após polêmica envolvendo neymar e robinho jr.",
-  "https://nossopalmeiras.com.br/noticias-do-palmeiras/palmeiras-liver-14-05/?utm_source=terra_capa_esportes&utm_medium=referral",
-  "liverpool acelera por allan e palmeiras toma decisão",
-  "https://www.terra.com.br/esportes/sao-paulo/bastidores-do-sao-paulo-fervem-com-possivel-saida-de-rui-costa,05509870051076bd6343fe416c39eab6glns6ttp.html",
-  "bastidores do são paulo fervem com possível saída de rui costa",
-  "https://www.espn.com.br/futebol/sao-paulo/artigo/_/id/16710508/sao-paulo-acerta-a-contratacao-de-dorival-junior-como-novo-tecnico",
-  "são paulo acerta a contratação de dorival júnior como novo técnico; clube prepara anúncio",
-  "https://www.terra.com.br/esportes/futebol/copa-do-brasil/eliminacao-precoce-na-copa-do-brasil-frustra-planos-do-flamengo,1f2e460f8e674730a654b5de577c13328ahh72ka.html",
-  "eliminação precoce na copa do brasil frustra planos do flamengo",
-  "https://www.band.com.br/esportes/torcida-do-botafogo-protesta-em-aeroporto-apos-eliminacao-na-copa-do-brasil-202605151038",
-  "torcida do botafogo protesta em aeroporto após eliminação na copa do brasil",
-  "https://nacaotricolor.com/noticias-do-sao-paulo/idolo-tecnico-sao-paulo-15/?utm_source=terra_capa_esportes&utm_medium=referral",
-  "\"já é conhecido da torcida\": são paulo anuncia novo treinador ídolo do clube para o lugar de roger machado"
+  {
+    "id": "https://www.uol.com.br/esporte/futebol/colunas/mauro-cezar-pereira/2026/05/13/quase-10-dos-jogos-do-brasileiro-so-tiveram-perto-de-45-minutos-de-futebol.htm",
+    "title": "mauro cezar pereira: quase 10% dos jogos do brasileiro só tiveram perto de 45 minutos de futebol",
+    "date": "2026-05-15T15:59:57.676Z"
+  },
+  {
+    "id": "https://www.uol.com.br/esporte/futebol/ultimas-noticias/2026/05/10/santos-rb-bragantino-brasileirao-serie-a.ghtm",
+    "title": "neymar marca em 'despedida' da vila, santos vence bragantino e escapa do z4",
+    "date": "2026-05-15T15:59:57.676Z"
+  },
+  {
+    "id": "https://www.instagram.com/reel/DYR55ELOKoo/",
+    "title": "flamengo, corinthians e grêmio cogitam realizar um amistoso triangular durante a pausa para a copa do mundo!",
+    "date": "2026-05-15T15:59:57.676Z"
+  },
+  {
+    "id": "https://www.cnnbrasil.com.br/esportes/futebol/copa-do-brasil/vasco-leva-susto-mas-elimina-paysandu-e-vai-as-oitavas-da-copa-do-brasil/",
+    "title": "vasco leva susto, mas elimina paysandu e vai às oitavas da copa do brasil",
+    "date": "2026-05-15T15:59:57.676Z"
+  },
+  {
+    "id": "https://rdmonline.com.br/palmeiras-goleia-jacuipense-e-avanca-as-oitavas-da-copa-do-brasil/",
+    "title": "palmeiras goleia jacuipense e avança às oitavas da copa do brasil",
+    "date": "2026-05-15T15:59:57.676Z"
+  },
+  {
+    "id": "https://nossopalmeiras.com.br/noticias-do-palmeiras/palmeiras-abel-14-05/?utm_source=terra_capa_esportes&utm_medium=referral",
+    "title": "palmeiras: abel manda recado forte depois da goleada e declaração repercute no brasil inteiro",
+    "date": "2026-05-15T15:59:57.676Z"
+  },
+  {
+    "id": "https://soutimao.com.br/noticias-do-corinthians/25mi-corinthians-sao-paulo/?utm_source=terra_capa_esportes&utm_medium=referral",
+    "title": "ex-corinthians que recebia r$ 2,5 milhões por mês, encaminha acordo com o são paulo",
+    "date": "2026-05-15T15:59:57.676Z"
+  },
+  {
+    "id": "https://nacaotricolor.com/noticias-do-sao-paulo/cobrado-calleri-sao-paulo/?utm_source=terra_capa_esportes&utm_medium=referral",
+    "title": "\"tem que ser cobrado\": calleri não poupa palavras e detona jogador do são paulo",
+    "date": "2026-05-15T15:59:57.676Z"
+  },
+  {
+    "id": "https://meubotafogo.com.br/noticias-do-botafogo/botafogo-franclim-hoje/?utm_source=terra_capa_esportes&utm_medium=referral",
+    "title": "botafogo contrata goleador de seleção; vínculo de 4 temporadas",
+    "date": "2026-05-15T15:59:57.676Z"
+  },
+  {
+    "id": "https://nacaotricolor.com/noticias-do-sao-paulo/acordo-sao-paulo-sccp-14-5/?utm_source=terra_capa_esportes&utm_medium=referral",
+    "title": "recebia r$ 2,5 milhões por mês no corinthians e agora encaminha acordo com o são paulo",
+    "date": "2026-05-15T15:59:57.676Z"
+  },
+  {
+    "id": "https://sougremio.com.br/noticias-do-gremio/folha-milionaria-14-maio/?utm_source=terra_capa_esportes&utm_medium=referral",
+    "title": "\"conta pesada\" no grêmio vira desafio urgente para odorico roman",
+    "date": "2026-05-15T15:59:57.676Z"
+  },
+  {
+    "id": "https://soufortaleza.com/noticias-do-fortaleza/carpini-fortaleza-saida/?utm_source=terra_capa_esportes&utm_medium=referral",
+    "title": "sem espaço com carpini, atacante encaminha saída do fortaleza antes do fim da temporada",
+    "date": "2026-05-15T15:59:57.676Z"
+  },
+  {
+    "id": "legacy-24",
+    "title": "kayke de saída do fortaleza: thiago carpini libera atacante",
+    "date": "2026-05-15T15:59:57.676Z"
+  },
+  {
+    "id": "https://www.itatiaia.com.br/esportes/futebol/futebol-internacional/copa-do-mundo/deschamps-justifica-corte-de-estrela-do-real-madrid-da-convocacao-da-franca-a-copa/",
+    "title": "deschamps justifica corte de estrela do real madrid da convocação da frança à copa",
+    "date": "2026-05-15T15:59:57.676Z"
+  },
+  {
+    "id": "https://santistas.net/noticias-do-santos/santos-fc-lucas-14-05/?utm_source=terra_capa_esportes&utm_medium=referral",
+    "title": "lucas veríssimo quebra silêncio sobre atrasos no santos fc e manda recado após vitória",
+    "date": "2026-05-15T15:59:57.676Z"
+  },
+  {
+    "id": "https://atleticomg.net/noticias-do-atletico-mineiro/eduardo-dominguez-23/?utm_source=terra_capa_esportes&utm_medium=referral",
+    "title": "eduardo domínguez ganha 'sobrevida', mas pode ser demitido no final de semana; entenda",
+    "date": "2026-05-15T15:59:57.676Z"
+  },
+  {
+    "id": "https://santistas.net/noticias-do-santos/santos-fc-neymar-14-05-2/?utm_source=terra_capa_esportes&utm_medium=referral",
+    "title": "santos fc toma decisão inesperada após polêmica envolvendo neymar e robinho jr.",
+    "date": "2026-05-15T15:59:57.676Z"
+  },
+  {
+    "id": "https://nossopalmeiras.com.br/noticias-do-palmeiras/palmeiras-liver-14-05/?utm_source=terra_capa_esportes&utm_medium=referral",
+    "title": "liverpool acelera por allan e palmeiras toma decisão",
+    "date": "2026-05-15T15:59:57.676Z"
+  },
+  {
+    "id": "https://www.terra.com.br/esportes/sao-paulo/bastidores-do-sao-paulo-fervem-com-possivel-saida-de-rui-costa,05509870051076bd6343fe416c39eab6glns6ttp.html",
+    "title": "bastidores do são paulo fervem com possível saída de rui costa",
+    "date": "2026-05-15T15:59:57.676Z"
+  },
+  {
+    "id": "https://www.espn.com.br/futebol/sao-paulo/artigo/_/id/16710508/sao-paulo-acerta-a-contratacao-de-dorival-junior-como-novo-tecnico",
+    "title": "são paulo acerta a contratação de dorival júnior como novo técnico; clube prepara anúncio",
+    "date": "2026-05-15T15:59:57.676Z"
+  },
+  {
+    "id": "https://www.terra.com.br/esportes/futebol/copa-do-brasil/eliminacao-precoce-na-copa-do-brasil-frustra-planos-do-flamengo,1f2e460f8e674730a654b5de577c13328ahh72ka.html",
+    "title": "eliminação precoce na copa do brasil frustra planos do flamengo",
+    "date": "2026-05-15T15:59:57.676Z"
+  },
+  {
+    "id": "https://www.band.com.br/esportes/torcida-do-botafogo-protesta-em-aeroporto-apos-eliminacao-na-copa-do-brasil-202605151038",
+    "title": "torcida do botafogo protesta em aeroporto após eliminação na copa do brasil",
+    "date": "2026-05-15T15:59:57.676Z"
+  },
+  {
+    "id": "https://nacaotricolor.com/noticias-do-sao-paulo/idolo-tecnico-sao-paulo-15/?utm_source=terra_capa_esportes&utm_medium=referral",
+    "title": "\"já é conhecido da torcida\": são paulo anuncia novo treinador ídolo do clube para o lugar de roger machado",
+    "date": "2026-05-15T15:59:57.676Z"
+  }
 ]

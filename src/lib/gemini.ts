@@ -98,3 +98,43 @@ export async function rankBestNews(newsList: any[]): Promise<any> {
     return newsList[index] || newsList[0];
   } catch (e) { return newsList[0]; }
 }
+
+/**
+ * Filtra notícias que possuem o mesmo tema de notícias já postadas recentemente.
+ */
+export async function filterDuplicateThemes(candidates: { title: string }[], historyTitles: string[]): Promise<number[]> {
+  if (candidates.length === 0) return [];
+  if (historyTitles.length === 0) return candidates.map((_, i) => i);
+
+  const prompt = `
+    Persona: Você é o Editor-Chefe do "Oráculo da Bola". Sua missão é evitar REPETIÇÃO.
+    
+    Abaixo estão os títulos das notícias que JÁ POSTAMOS recentemente:
+    ${historyTitles.slice(-20).map(t => `- ${t}`).join('\n')}
+
+    Abaixo estão as NOVAS candidatas:
+    ${candidates.map((c, i) => `[${i}] ${c.title}`).join('\n')}
+
+    TAREFA:
+    Analise se as novas candidatas tratam do MESMO FATO ou MESMO ASSUNTO que já foi postado.
+    Mesmo que o título seja diferente, se a NOTÍCIA CENTRAL (ex: contratação de X, demissão de Y, resultado do jogo Z) for a mesma, ela deve ser REPROVADA.
+    
+    CRITÉRIOS DE REPROVAÇÃO:
+    - Se já postamos que Dorival foi para o SPFC, qualquer nova notícia sobre "Dorival assume", "Dorival oficializado", "Dorival chega" deve ser REPROVADA.
+    - Se já postamos o resultado de um jogo, novas notícias com apenas o placar ou "vitoria do time X" devem ser REPROVADAS.
+    
+    CRITÉRIOS DE APROVAÇÃO:
+    - Somente fatos novos, temas inéditos ou desdobramentos significativos (ex: uma análise tática profunda de algo que antes era só notícia).
+
+    Retorne APENAS um JSON array com os índices das notícias APROVADAS.
+    Exemplo: [1, 3]
+  `;
+
+  try {
+    const res = await callGemini(prompt);
+    return Array.isArray(res) ? res : candidates.map((_, i) => i);
+  } catch (e) {
+    console.error('⚠️ Falha ao filtrar temas duplicados com Gemini:', e);
+    return candidates.map((_, i) => i);
+  }
+}

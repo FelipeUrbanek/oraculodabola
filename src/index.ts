@@ -1,5 +1,5 @@
 import { fetchFootballNews } from './lib/news.js';
-import { processNewsWithGemini, rankBestNews } from './lib/gemini.js';
+import { processNewsWithGemini, rankBestNews, filterDuplicateThemes } from './lib/gemini.js';
 import { fetchCurrentTrends } from './lib/trends.js';
 import { handleCommentsEngagement } from './lib/engagement.js';
 import { generateImages } from './lib/renderer.js';
@@ -20,12 +20,18 @@ async function main() {
     await handleCommentsEngagement();
 
     // 2. Carregar Histórico e Verificar Limite de 24 posts/dia
-    let history: { id: string, date: string }[] = [];
+    let history: { id: string, title?: string, date: string }[] = [];
     if (existsSync(HISTORY_PATH)) {
       try {
         const raw = readFileSync(HISTORY_PATH, 'utf-8');
         const parsed = JSON.parse(raw);
-        history = parsed.map((item: any) => typeof item === 'string' ? { id: item, date: new Date(0).toISOString() } : item);
+        history = parsed.map((item: any) => {
+          if (typeof item === 'string') {
+            // Tenta extrair um título se for o formato legado alternado [url, titulo, url, titulo]
+            return { id: item, date: new Date(0).toISOString() };
+          }
+          return item;
+        });
       } catch (e) { history = []; }
     }
 
@@ -43,10 +49,24 @@ async function main() {
     const trends = await fetchCurrentTrends();
     const news = await fetchFootballNews(trends);
     const postedIds = history.map(h => h.id);
-    const newItems = news.filter(item => !postedIds.includes(item.id));
+    const uniqueItems = news.filter(item => !postedIds.includes(item.id));
+
+    if (uniqueItems.length === 0) {
+      console.log('💤 Nenhuma novidade fresquinha na última hora.');
+      return;
+    }
+
+    // 3.1 De-duplicação Semântica (Evitar vários posts sobre o mesmo tema)
+    console.log('🧠 Verificando duplicidade de temas com Gemini...');
+    const recentHistoryTitles = history
+      .filter(h => h.title && (now.getTime() - new Date(h.date).getTime()) < 48 * 60 * 60 * 1000) // Últimas 48h
+      .map(h => h.title!);
+    
+    const validIndices = await filterDuplicateThemes(uniqueItems, recentHistoryTitles);
+    const newItems = validIndices.map(i => uniqueItems[i]);
 
     if (newItems.length === 0) {
-      console.log('💤 Nenhuma novidade fresquinha na última hora.');
+      console.log('♻️ Todas as novidades tratam de temas já postados recentemente.');
       return;
     }
 
@@ -85,7 +105,11 @@ async function main() {
         if (storyPath) await postStory(storyPath);
 
         // 8. Atualizar Histórico
-        history.push({ id: newsToPost.id, date: new Date().toISOString() });
+        history.push({ 
+          id: newsToPost.id, 
+          title: newsToPost.title, 
+          date: new Date().toISOString() 
+        });
         postsCount++;
         postsToday++;
 
