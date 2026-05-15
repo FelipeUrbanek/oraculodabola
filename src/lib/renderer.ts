@@ -1,107 +1,139 @@
-import puppeteer from 'puppeteer';
-import { ProcessedContent } from './gemini';
-import fs from 'fs';
-import path from 'path';
-import { fileURLToPath } from 'url';
+import puppeteer from "puppeteer";
+import { ProcessedContent } from "./gemini";
+import fs from "fs";
+import path from "path";
+import { fileURLToPath } from "url";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-export async function generateImages(content: ProcessedContent, newsImageUrl: string | null, teamName: string = '', forceLayout?: number): Promise<{ feedPath: string; storyPath: string | null }> {
+export async function generateImages(
+  content: ProcessedContent,
+  newsImageUrl: string | null,
+  teamName: string = "",
+  forceLayout?: number,
+): Promise<{ feedPath: string; storyPath: string | null }> {
   const browser = await puppeteer.launch({
-    args: ['--no-sandbox', '--disable-setuid-sandbox'],
-    headless: true
+    args: ["--no-sandbox", "--disable-setuid-sandbox"],
+    headless: true,
   });
-  
+
   try {
     const page = await browser.newPage();
-    
+
     // Carregar escudo do time se disponível
-    let teamShieldHtml = '';
-    const normalizedTeamName = teamName.toLowerCase()
-      .normalize("NFD").replace(/[\u0300-\u036f]/g, "") // Remove acentos
-      .replace(/ /g, '_');
-    
+    let teamShieldHtml = "";
+    const normalizedTeamName = teamName
+      .toLowerCase()
+      .normalize("NFD")
+      .replace(/[\u0300-\u036f]/g, "") // Remove acentos
+      .replace(/ /g, "_");
+
     const logoFileName = `${normalizedTeamName}.png`;
-    const logosDir = path.resolve(__dirname, '..', '..', 'assets', 'logos');
+    const logosDir = path.resolve(__dirname, "..", "..", "assets", "logos");
     const logoPath = path.join(logosDir, logoFileName);
-    
+
     if (fs.existsSync(logoPath)) {
-      const base64 = fs.readFileSync(logoPath, 'base64');
-      teamShieldHtml = `<div class="w-16 h-16 flex items-center justify-center bg-black/90 backdrop-blur-md p-2 border-r border-white/10">
+      const base64 = fs.readFileSync(logoPath, "base64");
+      teamShieldHtml = `<div class="w-16 h-16 flex items-center justify-center bg-black/90 backdrop-blur-md p-2 border-l border-white/10">
         <img src="data:image/png;base64,${base64}" class="w-full h-full object-contain">
       </div>`;
     } else {
       console.log(`⚠️ Escudo não encontrado para ${teamName} em ${logoPath}`);
       // Tentar sem normalizar se falhou
-      const originalPath = path.join(logosDir, `${teamName.toLowerCase().replace(/ /g, '_')}.png`);
+      const originalPath = path.join(
+        logosDir,
+        `${teamName.toLowerCase().replace(/ /g, "_")}.png`,
+      );
       if (fs.existsSync(originalPath)) {
-        const base64 = fs.readFileSync(originalPath, 'base64');
-        teamShieldHtml = `<div class="w-16 h-16 flex items-center justify-center bg-black/90 backdrop-blur-md p-2 border-r border-white/10">
+        const base64 = fs.readFileSync(originalPath, "base64");
+        teamShieldHtml = `<div class="w-16 h-16 flex items-center justify-center bg-black/90 backdrop-blur-md p-2 border-l border-white/10">
           <img src="data:image/png;base64,${base64}" class="w-full h-full object-contain">
         </div>`;
       }
     }
 
     // Lógica de sorteio com memória para evitar repetição consecutiva
-    const LAST_LAYOUT_PATH = path.join(process.cwd(), 'src', 'last_layout.json');
+    const LAST_LAYOUT_PATH = path.join(
+      process.cwd(),
+      "src",
+      "last_layout.json",
+    );
     let lastLayouts = { feed: 0, story: 0 };
-    
+
     if (fs.existsSync(LAST_LAYOUT_PATH)) {
       try {
-        lastLayouts = JSON.parse(fs.readFileSync(LAST_LAYOUT_PATH, 'utf-8'));
-      } catch (e) { /* ignore error */ }
+        lastLayouts = JSON.parse(fs.readFileSync(LAST_LAYOUT_PATH, "utf-8"));
+      } catch (e) {
+        /* ignore error */
+      }
     }
 
     let feedDiag = forceLayout;
     if (!feedDiag) {
       // Filtrar o último layout usado das opções
-      const feedChoices = [1, 1, 2, 2, 3, 3, 5, 5, 4].filter(l => l !== lastLayouts.feed);
+      const feedChoices = [1, 1, 2, 2, 3, 3, 5, 5, 4].filter(
+        (l) => l !== lastLayouts.feed,
+      );
       feedDiag = feedChoices[Math.floor(Math.random() * feedChoices.length)];
     }
 
     let storyDiag = forceLayout;
     if (!storyDiag) {
-      const storyChoices = [1, 1, 2, 2, 4].filter(l => l !== lastLayouts.story);
+      const storyChoices = [1, 1, 2, 2, 4].filter(
+        (l) => l !== lastLayouts.story,
+      );
       storyDiag = storyChoices[Math.floor(Math.random() * storyChoices.length)];
     }
 
     // Salvar os novos layouts escolhidos na memória
-    fs.writeFileSync(LAST_LAYOUT_PATH, JSON.stringify({ feed: feedDiag, story: storyDiag }));
+    fs.writeFileSync(
+      LAST_LAYOUT_PATH,
+      JSON.stringify({ feed: feedDiag, story: storyDiag }),
+    );
 
     const catColors: Record<string, string> = {
-      'URGENTE': '#ef4444',   // Vermelho vivo
-      'PLANTÃO': '#dc2626',   // Vermelho escuro
-      'MERCADO': '#059669',   // Verde esmeralda
-      'BASTIDORES': '#b45309', // Âmbar escuro / dourado
-      'TÁTICA': '#ea580c',    // Laranja intenso
-      'EXCLUSIVO': '#7c3aed', // Violeta escuro
-      'ANÁLISE': '#9333ea',   // Roxo
-      'OPINIÃO': '#db2777',   // Rosa choque
-      'NÚMEROS': '#0f766e',   // Teal escuro
-      'FATO': '#475569',      // Slate escuro
-      'HISTÓRIA': '#92400e'   // Marrom dourado
+      URGENTE: "#ef4444", // Vermelho vivo
+      PLANTÃO: "#dc2626", // Vermelho escuro
+      MERCADO: "#059669", // Verde esmeralda
+      BASTIDORES: "#b45309", // Âmbar escuro / dourado
+      TÁTICA: "#ea580c", // Laranja intenso
+      EXCLUSIVO: "#7c3aed", // Violeta escuro
+      ANÁLISE: "#9333ea", // Roxo
+      OPINIÃO: "#db2777", // Rosa choque
+      NÚMEROS: "#0f766e", // Teal escuro
+      FATO: "#475569", // Slate escuro
+      HISTÓRIA: "#92400e", // Marrom dourado
     };
-    const badgeColor = catColors[content.category] || '#475569';
-    const bgUrl = (newsImageUrl && newsImageUrl.includes('http')) ? newsImageUrl : `https://images.unsplash.com/photo-1574629810360-7efbbe195018?auto=format&fit=crop&q=80&w=1080&h=1350`;
+    const badgeColor = catColors[content.category] || "#475569";
+    const bgUrl =
+      newsImageUrl && newsImageUrl.includes("http")
+        ? newsImageUrl
+        : `https://images.unsplash.com/photo-1574629810360-7efbbe195018?auto=format&fit=crop&q=80&w=1080&h=1350`;
 
-    const officialLogoPath = path.resolve(process.cwd(), 'posts', 'logo', 'logo.svg');
-    let logoSvg = '<div class="w-10 h-10 border-2 border-white flex items-center justify-center font-black text-white text-xl bg-black">Ω</div>';
-    
+    const officialLogoPath = path.resolve(
+      process.cwd(),
+      "posts",
+      "logo",
+      "logo.svg",
+    );
+    let logoSvg =
+      '<div class="w-10 h-10 border-2 border-white flex items-center justify-center font-black text-white text-xl bg-black">Ω</div>';
+
     if (fs.existsSync(officialLogoPath)) {
-      const rawSvg = fs.readFileSync(officialLogoPath, 'utf-8');
+      const rawSvg = fs.readFileSync(officialLogoPath, "utf-8");
       logoSvg = rawSvg
-        .replace(/width=".*?"/, '')
-        .replace(/height=".*?"/, '')
+        .replace(/width=".*?"/, "")
+        .replace(/height=".*?"/, "")
         .replace(/<svg/, '<svg style="width:75%; height:75%;"');
     }
 
     const handleTag = `<div class="absolute top-12 left-12 z-[1000] flex items-center gap-0">
-      ${teamShieldHtml}
-      <span class="font-bebas text-3xl tracking-[0.2em] text-white px-6 h-16 flex items-center bg-black/90 backdrop-blur-md">@OORACULODABOLA</span>
-      <div class="w-16 h-16 flex items-center justify-center bg-black border-l border-white/20">
+      <div class="w-16 h-16 flex items-center justify-center bg-black border-r border-white/20">
         ${logoSvg}
       </div>
+      <span class="font-bebas text-3xl tracking-[0.2em] text-white px-6 h-16 flex items-center bg-black/90 backdrop-blur-md">@OORACULODABOLA</span>
+      ${teamShieldHtml}
     </div>`;
 
     const feedLayouts: Record<number, string> = {
@@ -179,23 +211,23 @@ export async function generateImages(content: ProcessedContent, newsImageUrl: st
     const storyLayouts: Record<number, string> = {
       1: `<div class="mb-20"><div class="font-bebas text-5xl mb-10 p-5 text-white inline-block border-4 border-white" style="background:${badgeColor}; font-weight: 900;">${content.category}</div><h1 class="font-bebas text-[10rem] leading-[0.95] mb-12 drop-shadow-2xl">${content.headline}</h1><p class="text-[3.5rem] font-bold leading-tight px-10 text-white italic drop-shadow-lg">${content.summary}</p></div>`,
       2: `<div class="mt-24 border-l-[35px] pl-10 text-left relative z-[500]" style="border-color:${badgeColor}"><h1 class="font-bebas text-[11rem] leading-[0.9] mb-12 text-white drop-shadow-2xl">${content.headline}</h1><div class="bg-white text-black p-4 inline-block font-bebas text-6xl" style="background:${badgeColor}; color:white">${content.category}</div></div><div class="mt-auto mb-48 text-left px-16 relative z-[500]"><p class="text-5xl font-black text-white italic bg-black/80 p-10 drop-shadow-2xl leading-snug">${content.summary}</p></div>`,
-      4: `<div class="bg-black/95 border-[15px] p-16 w-full relative z-[500] shadow-2xl" style="border-color:${badgeColor}"><h1 class="font-bebas text-[10.5rem] leading-[0.95] mb-16 text-white">${content.headline}</h1><p class="text-5xl font-black text-white italic border-t-8 pt-12 border-white/10 leading-snug">${content.summary}</p></div>`
+      4: `<div class="bg-black/95 border-[15px] p-16 w-full relative z-[500] shadow-2xl" style="border-color:${badgeColor}"><h1 class="font-bebas text-[10.5rem] leading-[0.95] mb-16 text-white">${content.headline}</h1><p class="text-5xl font-black text-white italic border-t-8 pt-12 border-white/10 leading-snug">${content.summary}</p></div>`,
     };
 
     // --- RENDER FEED ---
     await page.setViewport({ width: 1080, height: 1350 });
     const feedHtml = `<html><head><link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@400;700;900&display=swap" rel="stylesheet"><script src="https://cdn.tailwindcss.com"></script><style>body { font-family: 'Outfit', sans-serif; background: #000; margin: 0; overflow: hidden; color: white; }.font-bebas { font-family: 'Bebas Neue', cursive; }.background-img { background-image: url('${bgUrl}'); background-size: cover; background-position: center; } h1 { text-shadow: 0 2px 8px rgba(0,0,0,0.55); } p { text-shadow: 0 1px 4px rgba(0,0,0,0.45); } span { text-shadow: 0 1px 3px rgba(0,0,0,0.35); }</style></head><body><div style="width:1080px;height:1350px;" class="relative overflow-hidden background-img">${feedLayouts[feedDiag] || feedLayouts[1]}${handleTag}</div></body></html>`;
-    await page.setContent(feedHtml, { waitUntil: 'load', timeout: 60000 });
-    await page.evaluateHandle('document.fonts.ready');
-    
+    await page.setContent(feedHtml, { waitUntil: "load", timeout: 60000 });
+    await page.evaluateHandle("document.fonts.ready");
+
     const now = new Date();
-    const dateStr = now.toISOString().split('T')[0];
-    const timeStr = `${dateStr}-${now.getHours().toString().padStart(2, '0')}-${now.getMinutes().toString().padStart(2, '0')}-${now.getSeconds().toString().padStart(2, '0')}`;
-    const outputDir = path.join(process.cwd(), 'posts', dateStr);
+    const dateStr = now.toISOString().split("T")[0];
+    const timeStr = `${dateStr}-${now.getHours().toString().padStart(2, "0")}-${now.getMinutes().toString().padStart(2, "0")}-${now.getSeconds().toString().padStart(2, "0")}`;
+    const outputDir = path.join(process.cwd(), "posts", dateStr);
     if (!fs.existsSync(outputDir)) fs.mkdirSync(outputDir, { recursive: true });
 
     const feedPath = path.join(outputDir, `${timeStr}_feed.jpg`);
-    await page.screenshot({ path: feedPath, type: 'jpeg', quality: 100 });
+    await page.screenshot({ path: feedPath, type: "jpeg", quality: 100 });
 
     // --- RENDER STORY (SOMENTE SE A IA DECIDIR) ---
     let storyPath = null;
@@ -204,10 +236,10 @@ export async function generateImages(content: ProcessedContent, newsImageUrl: st
       await page.setViewport({ width: 1080, height: 1920 });
       // ... (restante da lógica de StoryHtml igual)
       const storyHtml = `<html><head><link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@400;700;900&display=swap" rel="stylesheet"><script src="https://cdn.tailwindcss.com"></script><style>body { font-family: 'Outfit', sans-serif; background: #000; margin: 0; overflow: hidden; color: white; }.font-bebas { font-family: 'Bebas Neue', cursive; }.background-img { position: absolute; inset: 0; background-image: url('${bgUrl}'); background-size: cover; background-position: center; filter: brightness(0.2) blur(10px); } h1 { text-shadow: 0 2px 8px rgba(0,0,0,0.55); } p { text-shadow: 0 1px 4px rgba(0,0,0,0.45); } span { text-shadow: 0 1px 3px rgba(0,0,0,0.35); }</style></head><body><div style="width:1080px;height:1920px;" class="relative overflow-hidden flex flex-col items-center justify-center text-center p-16"><div class="absolute inset-0 background-img"></div><div class="absolute inset-0 bg-gradient-to-b from-black/90 via-transparent to-black z-10"></div><div class="relative z-[500] flex flex-col items-center justify-center w-full h-full">${storyLayouts[storyDiag] || storyLayouts[1]}</div><div class="absolute bottom-24 flex flex-col items-center gap-10 z-[1000]"><span class="font-bebas text-5xl tracking-[0.5em] text-white opacity-80">@OORACULODABOLA</span></div></div></body></html>`;
-      await page.setContent(storyHtml, { waitUntil: 'load', timeout: 60000 });
-      await page.evaluateHandle('document.fonts.ready');
+      await page.setContent(storyHtml, { waitUntil: "load", timeout: 60000 });
+      await page.evaluateHandle("document.fonts.ready");
       storyPath = path.join(outputDir, `${timeStr}_story.jpg`);
-      await page.screenshot({ path: storyPath, type: 'jpeg', quality: 100 });
+      await page.screenshot({ path: storyPath, type: "jpeg", quality: 100 });
     }
 
     await browser.close();

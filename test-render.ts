@@ -22,7 +22,7 @@ async function test() {
     const content = await processNewsWithGemini(item.title, item.contentSnippet);
 
     console.log('🎨 Renderizando imagens premium...');
-    const { feedPath, storyPath } = await generateImages(content, item.imageUrl || null);
+    const { feedPath, storyPath } = await generateImages(content, item.imageUrl || null, item.category);
 
     console.log('\n✅ SUCESSO!');
     console.log(`📸 Imagem do Feed gerada: ${feedPath}`);

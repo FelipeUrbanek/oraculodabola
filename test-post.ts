@@ -20,7 +20,7 @@ async function testRealPost() {
     console.log(`📝 Legenda Gerada:\n${processed.caption}\n`);
 
     // 3. Gerar Imagem
-    const paths = await generateImages(processed, item.imageUrl || null);
+    const paths = await generateImages(processed, item.imageUrl || null, item.category);
     console.log(`🎨 Imagem gerada: ${paths.feedPath}`);
 
     // 4. POSTAR!
