@@ -1,5 +1,1 @@
-<<<<<<< HEAD
-São Paulo
-=======
 Botafogo
->>>>>>> 3a32ddc (chore: update history and state files)
