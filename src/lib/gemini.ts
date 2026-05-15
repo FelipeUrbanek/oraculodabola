@@ -44,19 +44,20 @@ export async function processNewsWithGemini(title: string, snippet: string): Pro
     REGRAS DE OURO (NUNCA QUEBRAR):
     1. PROIBIDO MISTÉRIO: Se a notícia menciona um jogador/técnico/dirigente pelo nome, você DEVE usar esse nome. Nunca substitua um nome por "ex-rival", "camisa 10" ou "o reforço".
     2. NOMES QUANDO EXISTIREM: Se a notícia trata de UMA PESSOA ESPECÍFICA, o nome dela TEM QUE aparecer na manchete, resumo e legenda. Se a notícia for sobre um CLUBE, RESULTADO ou COMPETIÇÃO (sem protagonista específico), não há problema em não ter nome de pessoa.
-    3. NUNCA USE PLACEHOLDERS: Proibido usar "[Nome]", "[Jogador]", "[Técnico]" ou qualquer campo vazio para preencher depois. Se não souber um nome que deveria estar, use o que foi fornecido na notícia.
-    4. SEM "CORPORATIVÊS": Proibido usar clichês como "agressividade no mercado", "planejamento de médio/longo prazo", "estabilidade técnica", "equilibrar fluxo de caixa", "projeto estruturado".
-    5. CAPTION RICO EM FATOS: A legenda DEVE explicar O QUÊ aconteceu com detalhes. Ex: se alguém reclamou, diga do quê reclamou. Se houve uma oferta, diga o valor e por quem. Se foi um gol, descreva o lance. NUNCA seja vago no caption — o leitor precisa saber o fato completo sem precisar clicar no link.
-    6. FIDELIDADE: Use apenas os fatos presentes na notícia. Não invente dados, valores ou declarações.
-    7. IDENTIFICAÇÃO CORRETA: Verifique se o sujeito é JOGADOR, TÉCNICO ou DIRIGENTE. Não chame um técnico de atleta/jogador e vice-versa.
-    8. SEMPRE POSTE: Nunca retorne um JSON indicando erro ou ausência. Sempre produza conteúdo com as informações disponíveis.
+    3. NUNCA USE PLACEHOLDERS: Proibido usar "[Nome]", "[Jogador]", "[Técnico]" ou qualquer campo vazio para preencher depois.
+    4. PILARES EDITORIAIS (ESCOLHA O MELHOR PARA O FATO):
+       - BREAKING NEWS: Para contratações, demissões ou bastidores urgentes.
+       - CONTEXTO EM 3 PONTOS: Para notícias detalhadas. Use a estrutura "Entenda em 3 pontos:" no caption.
+       - OPINIÃO/ENGAJAMENTO: Para polêmicas. Termine o caption com uma pergunta provocativa para o seguidor (Ex: "Erro da diretoria ou pressão da torcida?").
+    5. SEM "CORPORATIVÊS": Proibido clichês como "agressividade no mercado", "equilibrar fluxo de caixa", "projeto estruturado".
+    6. CAPTION RICO EM FATOS: A legenda DEVE explicar O QUÊ aconteceu com detalhes. NUNCA seja vago — o leitor precisa saber o fato completo no Instagram.
 
     Notícia: "${title}" - "${snippet}"
  
     Retorne apenas o JSON:
-    - headline: MANCHETE EM CAIXA ALTA impactante (max 40 chars). Se houver nome de pessoa relevante, inclua-o.
-    - summary: Resumo curto com o FATO PRINCIPAL (max 120 chars). Inclua nome se houver protagonista.
-    - caption: Texto para Instagram (350-500 chars). Comece DIRETO com o fato principal. Explique O QUÊ aconteceu, POR QUÊ é relevante, e QUAl é o contexto. Use tom jornalístico esportivo vibrante. NUNCA seja vago — inclua detalhes concretos da notícia.
+    - headline: MANCHETE EM CAIXA ALTA impactante (max 40 chars).
+    - summary: Resumo curto com o FATO PRINCIPAL (max 120 chars).
+    - caption: Texto para Instagram (350-500 chars). Use um dos pilares (Urgência, 3 Pontos ou Pergunta Final). Seja vibrante e rico em detalhes.
     - hashtags: string[] (Relacionadas ao clube, jogador/técnico, competição)
     - category: Uma das oficiais: URGENTE, PLANTÃO, MERCADO, BASTIDORES, TÁTICA, EXCLUSIVO, ANÁLISE, OPINIÃO, NÚMEROS, FATO, HISTÓRIA.
     - shouldCreateStory: boolean
