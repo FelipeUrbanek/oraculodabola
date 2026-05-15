@@ -74,8 +74,9 @@ export async function processNewsWithGemini(title: string, snippet: string): Pro
     3. VALORES EXATOS: Procure e use valores monetários exatos (ex: R$ 5,4 milhões).
     4. FIDELIDADE ABSOLUTA: Use APENAS os nomes que aparecem na notícia ou que estão na MEMÓRIA DO MUNDO. Se a memória diz que o técnico do Fortaleza é Carpini, não diga que é Vojvoda.
     5. NUNCA USE PLACEHOLDERS.
-    6. VARIANT STYLES: Diversifique o estilo da legenda. Use "Entenda os detalhes:" em vez de sempre "3 pontos".
-    7. CAPTION RICO: Explique o fato com profundidade.
+    6. TRAVA DE NOMES: Se a notícia for sobre contratação, saída ou lesão e o NOME PRÓPRIO não estiver disponível na notícia ou na memória, REJEITE o post. PROIBIDO usar "o principal jogador" ou similar sem o nome.
+    7. VARIANT STYLES: Diversifique o estilo da legenda. Use "Entenda os detalhes:" em vez de sempre "3 pontos".
+    8. CAPTION RICO: Explique o fato com profundidade.
 
     Notícia: "${title}" - "${snippet}"
  
@@ -150,11 +151,20 @@ export async function processNewsWithGemini(title: string, snippet: string): Pro
     }
   } catch (e) {}
 
-  // Validação Anti-Placeholder
-  const placeholders = ["[Nome]", "[NOME]", "[atleta]", "[jogador]", "[técnico]", "[dirigente]", "ERRO:"];
-  const contentStr = JSON.stringify(processed);
-  if (placeholders.some(p => contentStr.includes(p))) {
+  // Validação Anti-Placeholder e Termos Vagos Proibidos
+  const forbidden = ["[Nome]", "[NOME]", "[atleta]", "[jogador]", "[técnico]", "[dirigente]", "ERRO:"];
+  const contentStr = JSON.stringify(processed).toLowerCase();
+  
+  if (forbidden.some(p => contentStr.includes(p.toLowerCase()))) {
     throw new Error(`❌ Erro de Placeholder detectado: ${processed.headline}`);
+  }
+
+  // Se for notícia de baixa/reforço, exige pelo menos um nome próprio (letra maiúscula no meio da frase ou nome composto)
+  if (contentStr.includes("baixa") || contentStr.includes("reforço") || contentStr.includes("desfalque")) {
+    const names = processed.caption.match(/[A-Z][a-z]+ [A-Z][a-z]+/g);
+    if (!names || names.length === 0) {
+      throw new Error(`❌ Notícia vaga detectada (sem nome de jogador): ${processed.headline}`);
+    }
   }
 
   return processed;
