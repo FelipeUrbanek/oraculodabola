@@ -137,6 +137,9 @@ async function runOráculo() {
 
   try {
     const followers = await getFollowersCount();
+    const { autoReplyToComments } = await import('./src/lib/instagram');
+    
+    // Marcos de Seguidores
     const MILESTONES_FILE = path.join(process.cwd(), 'src', 'milestones.json');
     let milestoneHistory: string[] = fs.existsSync(MILESTONES_FILE) ? JSON.parse(fs.readFileSync(MILESTONES_FILE, 'utf-8')) : [];
     const currentMilestone = milestones.find(m => parseInt(m.value.replace('.', '')) <= followers && !milestoneHistory.includes(m.value));
@@ -146,15 +149,11 @@ async function runOráculo() {
       milestoneHistory.push(currentMilestone.value);
       fs.writeFileSync(MILESTONES_FILE, JSON.stringify(milestoneHistory, null, 2));
     }
-  } catch (mError) { console.error("Erro marcos:", mError); }
 
-  // NOVO: Ciclo de Engajamento para Crescimento Orgânico
-  try {
-    const { growFollowers, engageHashtag } = await import('./src/lib/engagement');
-    console.log("\n🌱 Iniciando ciclo de crescimento orgânico...");
-    await growFollowers('ge.globo', 2);
-    await engageHashtag('brasileirao', 1);
-  } catch (engError) { console.error("Erro no engajamento:", engError); }
+    // Engajamento: Responder Comentários (API Oficial)
+    await autoReplyToComments();
+
+  } catch (mError) { console.error("Erro no engajamento final:", mError); }
   
   process.exit(0);
 }

@@ -4,6 +4,15 @@ on:
   schedule:
     - cron: '43 * * * *' # Roda a cada 1 hora (minuto 43 tem menos concorrência no GitHub)
   workflow_dispatch: # Permite rodar manualmente
+  push:
+    branches: [ main ]
+    paths-ignore:
+      - 'src/history.json'
+      - 'src/last_category.txt'
+      - 'src/last_layout.json'
+      - 'src/last_post.json'
+      - 'src/replies.json'
+      - '**.md'
 
 jobs:
   run-oracle:

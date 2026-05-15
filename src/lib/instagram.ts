@@ -2,6 +2,7 @@ import axios from 'axios';
 import { v2 as cloudinary } from 'cloudinary';
 import dotenv from 'dotenv';
 import path from 'path';
+import fs from 'fs';
 
 dotenv.config({ path: '.env.local' });
 
@@ -151,5 +152,87 @@ export async function getFollowersCount(): Promise<number> {
   } catch (error) {
     console.error("❌ Erro ao buscar contador de seguidores:", error);
     return 0;
+  }
+}
+
+/**
+ * Responde automaticamente aos comentários dos seus posts (Engajamento Humanizado)
+ * Apenas usando a API Oficial.
+ */
+export async function autoReplyToComments() {
+  try {
+    console.log("💬 Verificando novos comentários para responder...");
+    
+    // 1. Pegar as mídias recentes
+    const mediaResponse = await axios.get(`https://graph.facebook.com/v22.0/${IG_USER_ID}/media`, {
+      params: { access_token: ACCESS_TOKEN, limit: 10 }
+    });
+    
+    const mediaList = mediaResponse.data.data;
+    const REPLIES_FILE = path.join(process.cwd(), 'src', 'replies.json');
+    let repliedIds: string[] = fs.existsSync(REPLIES_FILE) ? JSON.parse(fs.readFileSync(REPLIES_FILE, 'utf-8')) : [];
+
+    for (const media of mediaList) {
+      // 2. Pegar comentários de cada mídia
+      const commentsResponse = await axios.get(`https://graph.facebook.com/v22.0/${media.id}/comments`, {
+        params: { access_token: ACCESS_TOKEN, fields: 'id,text,from,timestamp' }
+      });
+
+      const comments = commentsResponse.data.data || [];
+      for (const comment of comments) {
+        // Ignora se for comentário do próprio Oráculo ou se já respondemos
+        if (comment.from?.id === IG_USER_ID || repliedIds.includes(comment.id)) continue;
+
+        console.log(`👤 Comentário de @${comment.from?.username || 'usuário'}: "${comment.text}"`);
+
+        // 3. Gerar resposta humanizada com Gemini
+        const replyText = await generateReplyWithGemini(comment.text);
+
+        // 4. Postar a resposta
+        try {
+          await axios.post(`https://graph.facebook.com/v22.0/${comment.id}/replies`, null, {
+            params: { message: replyText, access_token: ACCESS_TOKEN }
+          });
+          
+          console.log(`✅ Respondido: "${replyText}"`);
+          repliedIds.push(comment.id);
+          fs.writeFileSync(REPLIES_FILE, JSON.stringify(repliedIds.slice(-1000), null, 2));
+          
+          // Pequeno delay entre respostas
+          await new Promise(resolve => setTimeout(resolve, 5000));
+        } catch (e: any) {
+          console.error(`❌ Erro ao responder comentário ${comment.id}:`, e.response?.data?.error?.message || e.message);
+        }
+      }
+    }
+  } catch (error: any) {
+    console.error("❌ Erro no sistema de respostas automáticas:", error.response?.data?.error?.message || error.message);
+  }
+}
+
+async function generateReplyWithGemini(userComment: string): Promise<string> {
+  const { GoogleGenerativeAI } = await import("@google/generative-ai");
+  const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY || "");
+  const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
+  
+  const prompt = `
+    Persona: Você é o "Oráculo da Bola", um perfil de notícias de futebol vibrante e interativo.
+    Ação: Responda a este comentário de um seguidor de forma curta, simpática e humana.
+    Comentário: "${userComment}"
+    
+    REGRAS:
+    1. Máximo 15 palavras.
+    2. Pode usar 1 emoji.
+    3. Seja amigável e incentive a pessoa a continuar acompanhando.
+    4. Não use hashtags na resposta.
+    
+    Retorne APENAS o texto da resposta.
+  `;
+  
+  try {
+    const result = await model.generateContent(prompt);
+    return result.response.text().trim();
+  } catch (e) {
+    return "Valeu por acompanhar o Oráculo! Tmj ⚽";
   }
 }
