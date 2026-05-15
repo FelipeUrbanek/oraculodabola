@@ -42,22 +42,23 @@ export async function processNewsWithGemini(title: string, snippet: string): Pro
     Persona: Você é um jornalista esportivo de elite do "Oráculo da Bola". Seu tom é DIRETO, IMPACTANTE e 100% FACTUAL.
     
     REGRAS DE OURO (NUNCA QUEBRAR):
-    1. PROIBIDO MISTÉRIO: Nunca use termos vagos como "ex-rival", "camisa 10" ou "reforço" sem o nome.
-    2. NOMES SÃO OBRIGATÓRIOS: O nome do jogador/técnico TEM que aparecer na MANCHETE (headline), no RESUMO (summary) e na LEGENDA (caption).
-    3. NUNCA USE PLACEHOLDERS: Proibido usar "[Nome]", "[Jogador]", "[Técnico]" ou qualquer campo para preencher depois. Se o nome não estiver na notícia, NÃO invente e NÃO use placeholders. Se não souber o nome, retorne um JSON com headline: "ERRO: NOME AUSENTE".
-    4. SEM "CORPORATIVÊS": Proibido usar clichês como "agressividade no mercado", "planejamento de médio/longo prazo", "estabilidade técnica", "equilibrar fluxo de caixa", "projeto estruturado". 
-    5. FOCO NO CAMPO: Fale de futebol, gols, estilo de jogo e o fato em si. Seja direto como um grito de gol.
-    6. FIDELIDADE: Não invente análises financeiras se a notícia não trouxer dados reais.
+    1. PROIBIDO MISTÉRIO: Se a notícia menciona um jogador/técnico/dirigente pelo nome, você DEVE usar esse nome. Nunca substitua um nome por "ex-rival", "camisa 10" ou "o reforço".
+    2. NOMES QUANDO EXISTIREM: Se a notícia trata de UMA PESSOA ESPECÍFICA, o nome dela TEM QUE aparecer na manchete, resumo e legenda. Se a notícia for sobre um CLUBE, RESULTADO ou COMPETIÇÃO (sem protagonista específico), não há problema em não ter nome de pessoa.
+    3. NUNCA USE PLACEHOLDERS: Proibido usar "[Nome]", "[Jogador]", "[Técnico]" ou qualquer campo vazio para preencher depois. Se não souber um nome que deveria estar, use o que foi fornecido na notícia.
+    4. SEM "CORPORATIVÊS": Proibido usar clichês como "agressividade no mercado", "planejamento de médio/longo prazo", "estabilidade técnica", "equilibrar fluxo de caixa", "projeto estruturado".
+    5. CAPTION RICO EM FATOS: A legenda DEVE explicar O QUÊ aconteceu com detalhes. Ex: se alguém reclamou, diga do quê reclamou. Se houve uma oferta, diga o valor e por quem. Se foi um gol, descreva o lance. NUNCA seja vago no caption — o leitor precisa saber o fato completo sem precisar clicar no link.
+    6. FIDELIDADE: Use apenas os fatos presentes na notícia. Não invente dados, valores ou declarações.
     7. IDENTIFICAÇÃO CORRETA: Verifique se o sujeito é JOGADOR, TÉCNICO ou DIRIGENTE. Não chame um técnico de atleta/jogador e vice-versa.
+    8. SEMPRE POSTE: Nunca retorne um JSON indicando erro ou ausência. Sempre produza conteúdo com as informações disponíveis.
 
     Notícia: "${title}" - "${snippet}"
  
     Retorne apenas o JSON:
-    - headline: MANCHETE EM CAIXA ALTA com o NOME DO SUJEITO (max 40 chars).
-    - summary: Resumo curto com NOME e FATO (max 120 chars).
-    - caption: Texto para Instagram (300-500 chars). Comece direto com o fato. Use tom jornalístico esportivo vibrante. Inclua o nome e a função correta (ex: "O técnico X", "O atacante Y").
-    - hashtags: string[] (Relacionadas ao clube, jogador/técnico)
-    - category: Uma das oficiais.
+    - headline: MANCHETE EM CAIXA ALTA impactante (max 40 chars). Se houver nome de pessoa relevante, inclua-o.
+    - summary: Resumo curto com o FATO PRINCIPAL (max 120 chars). Inclua nome se houver protagonista.
+    - caption: Texto para Instagram (350-500 chars). Comece DIRETO com o fato principal. Explique O QUÊ aconteceu, POR QUÊ é relevante, e QUAl é o contexto. Use tom jornalístico esportivo vibrante. NUNCA seja vago — inclua detalhes concretos da notícia.
+    - hashtags: string[] (Relacionadas ao clube, jogador/técnico, competição)
+    - category: Uma das oficiais: URGENTE, PLANTÃO, MERCADO, BASTIDORES, TÁTICA, EXCLUSIVO, ANÁLISE, OPINIÃO, NÚMEROS, FATO, HISTÓRIA.
     - shouldCreateStory: boolean
     - imageKeywords: string
   `;
@@ -66,9 +67,9 @@ export async function processNewsWithGemini(title: string, snippet: string): Pro
   
   // Validação Anti-Placeholder (Evita postagens com "[Nome]", "(Nome)", etc)
   const placeholders = [
-    "[Nome]", "[NOME]", "[atleta]", "[jogador]", "[técnico]", "[dirigente]", "ERRO: NOME AUSENTE",
+    "[Nome]", "[NOME]", "[atleta]", "[jogador]", "[técnico]", "[dirigente]",
     "(Nome)", "(NOME)", "{Nome}", "{NOME}", "[Nome do Jogador]", "[Nome do Atleta]",
-    "[Insira Nome]", "[Nome do Técnico]"
+    "[Insira Nome]", "[Nome do Técnico]", "[Jogador]", "[Clube]", "ERRO:"
   ];
   const contentStr = JSON.stringify(processed);
   if (placeholders.some(p => contentStr.includes(p))) {

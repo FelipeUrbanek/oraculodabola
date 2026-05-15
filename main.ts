@@ -82,10 +82,31 @@ async function runOráculo() {
     const item = finalItems[i];
     console.log(`🧐 [${i+1}/${finalItems.length}] Processando [${item.category}]: ${item.title}`);
     
+    // Pool de fallback: itens não selecionados como principais
+    const fallbackPool = candidatesPool.filter(c => !finalItems.some(f => f.link === c.link));
+    
+    let processed = null;
+    let usedItem = item;
+    
+    // Tenta o item principal, depois fallbacks
+    const attempts = [item, ...fallbackPool.slice(0, 3)];
+    for (const attempt of attempts) {
+      try {
+        processed = await processNewsWithGemini(attempt.title, attempt.contentSnippet);
+        usedItem = attempt;
+        break;
+      } catch (err: any) {
+        console.warn(`⚠️ Falhou [${attempt.title.substring(0, 50)}...]: ${err.message}`);
+      }
+    }
+    
+    if (!processed) {
+      console.error(`❌ Sem conteúdo válido para o slot ${i+1}. Pulando.`);
+      continue;
+    }
+    
     try {
-      const processed = await processNewsWithGemini(item.title, item.contentSnippet);
-      const paths = await generateImages(processed, item.imageUrl || null);
-      // Removido agendamento via API para evitar erro de Whitelist
+      const paths = await generateImages(processed, usedItem.imageUrl || null);
       const scheduledTime = undefined;
       
       const formattedHashtags = processed.hashtags.map(h => h.startsWith('#') ? h : `#${h}`).join(' ');
@@ -95,22 +116,21 @@ async function runOráculo() {
         `${processed.caption}\n\n${formattedHashtags}`
       );
       
-      // Se houver mais de um post, espera 30 segundos entre eles para evitar block
       if (i < finalItems.length - 1) {
         console.log("⏳ Aguardando 30 segundos para a próxima postagem...");
         await new Promise(resolve => setTimeout(resolve, 30000));
       }
       
-      history.push(item.link);
-      history.push(item.title.split(' - ')[0].toLowerCase().trim());
+      history.push(usedItem.link);
+      history.push(usedItem.title.split(' - ')[0].toLowerCase().trim());
       if (history.length > 1000) history = history.slice(-1000);
       
       fs.writeFileSync(HISTORY_FILE, JSON.stringify(history, null, 2));
-      fs.writeFileSync(LAST_CATEGORY_FILE, item.category);
+      fs.writeFileSync(LAST_CATEGORY_FILE, usedItem.category);
       fs.writeFileSync(LAST_POST_FILE, JSON.stringify({ timestamp: new Date().toISOString() }));
       
-      console.log(`✅ Postagem confirmada [${item.category}]: ${processed.headline}`);
-    } catch (error) { console.error(`❌ Erro em ${item.title}:`, error); }
+      console.log(`✅ Postagem confirmada [${usedItem.category}]: ${processed.headline}`);
+    } catch (error) { console.error(`❌ Erro fatal no slot ${i+1}:`, error); }
   }
 
   await archiveOldPosts();

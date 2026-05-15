@@ -42,14 +42,14 @@ export async function generateImages(content: ProcessedContent, newsImageUrl: st
       'URGENTE': '#ef4444',   // Vermelho vivo
       'PLANTÃO': '#dc2626',   // Vermelho escuro
       'MERCADO': '#059669',   // Verde esmeralda
-      'BASTIDORES': '#4f46e5', // Índigo vibrante
-      'TÁTICA': '#0ea5e9',    // Azul céu
-      'EXCLUSIVO': '#8b5cf6', // Violeta
-      'ANÁLISE': '#06b6d4',   // Ciano
-      'OPINIÃO': '#d946ef',   // Fuchsia
-      'NÚMEROS': '#14b8a6',   // Teal
-      'FATO': '#64748b',      // Slate (agora com box sólido)
-      'HISTÓRIA': '#f59e0b'   // Âmbar
+      'BASTIDORES': '#b45309', // Âmbar escuro / dourado
+      'TÁTICA': '#ea580c',    // Laranja intenso
+      'EXCLUSIVO': '#7c3aed', // Violeta escuro
+      'ANÁLISE': '#9333ea',   // Roxo
+      'OPINIÃO': '#db2777',   // Rosa choque
+      'NÚMEROS': '#0f766e',   // Teal escuro
+      'FATO': '#475569',      // Slate escuro
+      'HISTÓRIA': '#92400e'   // Marrom dourado
     };
     const badgeColor = catColors[content.category] || '#475569';
     const bgUrl = (newsImageUrl && newsImageUrl.includes('http')) ? newsImageUrl : `https://images.unsplash.com/photo-1574629810360-7efbbe195018?auto=format&fit=crop&q=80&w=1080&h=1350`;
@@ -130,6 +130,9 @@ export async function generateImages(content: ProcessedContent, newsImageUrl: st
               z-index: 0;
               filter: brightness(0.8);
             }
+            h1 { text-shadow: 0 2px 8px rgba(0,0,0,0.55); }
+            p  { text-shadow: 0 1px 4px rgba(0,0,0,0.45); }
+            span { text-shadow: 0 1px 3px rgba(0,0,0,0.35); }
           </style>
         </head>
         <body>
@@ -149,7 +152,7 @@ export async function generateImages(content: ProcessedContent, newsImageUrl: st
 
     // --- RENDER FEED ---
     await page.setViewport({ width: 1080, height: 1350 });
-    const feedHtml = `<html><head><link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@400;700;900&display=swap" rel="stylesheet"><script src="https://cdn.tailwindcss.com"></script><style>body { font-family: 'Outfit', sans-serif; background: #000; margin: 0; overflow: hidden; color: white; }.font-bebas { font-family: 'Bebas Neue', cursive; }.background-img { background-image: url('${bgUrl}'); background-size: cover; background-position: center; }</style></head><body><div style="width:1080px;height:1350px;" class="relative overflow-hidden background-img">${feedLayouts[feedDiag] || feedLayouts[1]}${handleTag}</div></body></html>`;
+    const feedHtml = `<html><head><link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@400;700;900&display=swap" rel="stylesheet"><script src="https://cdn.tailwindcss.com"></script><style>body { font-family: 'Outfit', sans-serif; background: #000; margin: 0; overflow: hidden; color: white; }.font-bebas { font-family: 'Bebas Neue', cursive; }.background-img { background-image: url('${bgUrl}'); background-size: cover; background-position: center; } h1 { text-shadow: 0 2px 8px rgba(0,0,0,0.55); } p { text-shadow: 0 1px 4px rgba(0,0,0,0.45); } span { text-shadow: 0 1px 3px rgba(0,0,0,0.35); }</style></head><body><div style="width:1080px;height:1350px;" class="relative overflow-hidden background-img">${feedLayouts[feedDiag] || feedLayouts[1]}${handleTag}</div></body></html>`;
     await page.setContent(feedHtml, { waitUntil: 'load', timeout: 60000 });
     await page.evaluateHandle('document.fonts.ready');
     
@@ -168,7 +171,7 @@ export async function generateImages(content: ProcessedContent, newsImageUrl: st
       console.log("📱 Gerando arte para Story...");
       await page.setViewport({ width: 1080, height: 1920 });
       // ... (restante da lógica de StoryHtml igual)
-      const storyHtml = `<html><head><link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@400;700;900&display=swap" rel="stylesheet"><script src="https://cdn.tailwindcss.com"></script><style>body { font-family: 'Outfit', sans-serif; background: #000; margin: 0; overflow: hidden; color: white; }.font-bebas { font-family: 'Bebas Neue', cursive; }.background-img { position: absolute; inset: 0; background-image: url('${bgUrl}'); background-size: cover; background-position: center; filter: brightness(0.2) blur(10px); }</style></head><body><div style="width:1080px;height:1920px;" class="relative overflow-hidden flex flex-col items-center justify-center text-center p-16"><div class="absolute inset-0 background-img"></div><div class="absolute inset-0 bg-gradient-to-b from-black/90 via-transparent to-black z-10"></div><div class="relative z-[500] flex flex-col items-center justify-center w-full h-full">${storyLayouts[storyDiag] || storyLayouts[1]}</div><div class="absolute bottom-24 flex flex-col items-center gap-10 z-[1000]"><span class="font-bebas text-5xl tracking-[0.5em] text-white opacity-80">@OORACULODABOLA</span></div></div></body></html>`;
+      const storyHtml = `<html><head><link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@400;700;900&display=swap" rel="stylesheet"><script src="https://cdn.tailwindcss.com"></script><style>body { font-family: 'Outfit', sans-serif; background: #000; margin: 0; overflow: hidden; color: white; }.font-bebas { font-family: 'Bebas Neue', cursive; }.background-img { position: absolute; inset: 0; background-image: url('${bgUrl}'); background-size: cover; background-position: center; filter: brightness(0.2) blur(10px); } h1 { text-shadow: 0 2px 8px rgba(0,0,0,0.55); } p { text-shadow: 0 1px 4px rgba(0,0,0,0.45); } span { text-shadow: 0 1px 3px rgba(0,0,0,0.35); }</style></head><body><div style="width:1080px;height:1920px;" class="relative overflow-hidden flex flex-col items-center justify-center text-center p-16"><div class="absolute inset-0 background-img"></div><div class="absolute inset-0 bg-gradient-to-b from-black/90 via-transparent to-black z-10"></div><div class="relative z-[500] flex flex-col items-center justify-center w-full h-full">${storyLayouts[storyDiag] || storyLayouts[1]}</div><div class="absolute bottom-24 flex flex-col items-center gap-10 z-[1000]"><span class="font-bebas text-5xl tracking-[0.5em] text-white opacity-80">@OORACULODABOLA</span></div></div></body></html>`;
       await page.setContent(storyHtml, { waitUntil: 'load', timeout: 60000 });
       await page.evaluateHandle('document.fonts.ready');
       storyPath = path.join(outputDir, `${timeStr}_story.jpg`);
