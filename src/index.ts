@@ -80,7 +80,18 @@ async function main() {
 
     console.log(`📈 Modo Compensação: Gap de ${hoursSinceLastPost.toFixed(1)}h detectado. Permitindo até ${maxPostsThisRun} posts.`);
 
-    const toProcess = newItems.slice(0, maxPostsThisRun);
+    const sortedByRank: typeof newItems = [];
+    let remainingCandidates = [...newItems];
+    
+    for (let i = 0; i < Math.min(maxPostsThisRun, newItems.length); i++) {
+      const best = await rankBestNews(remainingCandidates);
+      if (best) {
+        sortedByRank.push(best);
+        remainingCandidates = remainingCandidates.filter(c => c.id !== best.id);
+      }
+    }
+
+    const toProcess = sortedByRank;
     let postsCount = 0;
 
     for (const newsToPost of toProcess) {
