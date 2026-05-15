@@ -197,14 +197,15 @@ export async function filterDuplicateThemes(candidates: { title: string }[], his
 
     TAREFA:
     Analise se as novas candidatas tratam do MESMO FATO ou MESMO ASSUNTO que já foi postado.
-    Mesmo que o título seja diferente, se a NOTÍCIA CENTRAL (ex: contratação de X, demissão de Y, resultado do jogo Z) for a mesma, ela deve ser REPROVADA.
+    POLÍTICA DE TOLERÂNCIA ZERO: Se a notícia trata da mesma pessoa fazendo a mesma coisa no mesmo clube, ela DEVE ser REPROVADA. Não importa se a manchete é diferente.
     
-    CRITÉRIOS DE REPROVAÇÃO:
-    - Se já postamos que Dorival foi para o SPFC, qualquer nova notícia sobre "Dorival assume", "Dorival oficializado", "Dorival chega" deve ser REPROVADA.
-    - Se já postamos o resultado de um jogo, novas notícias com apenas o placar ou "vitoria do time X" devem ser REPROVADAS.
+    EXEMPLOS DE REPROVAÇÃO OBRIGATÓRIA:
+    - Já postamos: "Renato fala sobre Thiago Mendes". Nova: "Renato detona Thiago após expulsão". -> REPROVAR (Mesma pessoa, mesmo tema).
+    - Já postamos: "Cruzeiro tem desfalques". Nova: "As baixas do Cruzeiro para o jogo". -> REPROVAR (Mesma lista de desfalques).
+    - Já postamos: "São Paulo contrata Dorival". Nova: "A era Dorival começa no Morumbi". -> REPROVAR (Mesmo fato central).
     
     CRITÉRIOS DE APROVAÇÃO:
-    - Somente fatos novos, temas inéditos ou desdobramentos significativos (ex: uma análise tática profunda de algo que antes era só notícia).
+    - Apenas fatos genuinamente inéditos ou desdobramentos com informações novas e cruciais (ex: um valor de multa que não sabíamos antes).
 
     Retorne APENAS um JSON array com os índices das notícias APROVADAS.
     Exemplo: [1, 3]
