@@ -1,26 +1,33 @@
-import { generateImages } from './src/lib/renderer';
+import { generateImages } from "./src/lib/renderer.js";
+import fs from "fs";
+import path from "path";
+
+const dummyContent = {
+    category: "ANÁLISE",
+    headline: "ORÁCULO 2025: TESTE DE ALTA FIDELIDADE",
+    summary: "Este é um post de teste para validar a renderização de todos os layouts disponíveis no Design System dinâmico.",
+    caption: "Teste de sistema.",
+    hashtags: ["#teste", "#oraculo"],
+    shouldCreateStory: false
+};
+
+const bgUrl = "https://images.unsplash.com/photo-1574629810360-7efbbe195018?auto=format&fit=crop&q=80&w=1080&h=1350";
 
 async function testAll() {
-  const content = {
-    headline: "ATOR DE TED LASSO VIRA JOGADOR PROFISSIONAL",
-    summary: "Desta vez é verdade! Phil Dunster assina seu primeiro contrato oficial e choca o mundo do futebol.",
-    caption: "A ficção virou realidade...",
-    hashtags: ["#TedLasso", "#Futebol", "#PremierLeague"],
-    category: "URGENTE" as const,
-    shouldCreateStory: false,
-    imageKeywords: "football match action"
-  };
+    console.log("🚀 Iniciando renderização de todos os layouts...");
+    const design = JSON.parse(fs.readFileSync("./src/lib/design-system.json", "utf-8"));
+    const layouts = Object.keys(design.feedLayouts);
 
-  const bgImage = "https://noticiasdatv.uol.com.br/media/_versions/noticias/ted-lasso-phil-dunster-jamie-tartt-apple-tv-reproducao_fixed_large.jpg";
-
-  console.log("🧪 Gerando vitrine de layouts com a notícia do Ted Lasso...");
-
-  for (let i = 1; i <= 5; i++) {
-    console.log(`🖼️ Gerando Layout #${i}...`);
-    await generateImages(content, bgImage, String(i));
-  }
-
-  console.log("\n✅ Todas as versões foram geradas na pasta 'posts'!");
+    for (const id of layouts) {
+        console.log(`📸 Renderizando Layout ${id}...`);
+        try {
+            const result = await generateImages(dummyContent, bgUrl, "Brasil", Number(id));
+            console.log(`✅ Layout ${id} concluído: ${result.feedPath}`);
+        } catch (e: any) {
+            console.error(`❌ Erro no Layout ${id}: ${e.message}`);
+        }
+    }
+    console.log("🏁 Todos os testes concluídos!");
 }
 
 testAll();

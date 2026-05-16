@@ -79,7 +79,7 @@ const FOOTBALL_TARGETS = [
   { name: "Ceará", terra: "https://www.terra.com.br/esportes/ceara/" },
   {
     name: "Bragantino",
-    terra: "hhttps://www.terra.com.br/esportes/bragantino/",
+    terra: "https://www.terra.com.br/esportes/bragantino/",
   },
   { name: "Cuiabá", terra: "https://www.terra.com.br/esportes/cuiaba/" },
   {

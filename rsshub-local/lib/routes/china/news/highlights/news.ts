@@ -39,7 +39,7 @@ export const route: Route = {
 | domestic   | international      | social      | news100       |`,
 };
 
-async function handler(ctx) {
+async function handler(ctx: any) {
     const baseUrl = 'https://news.china.com';
     const category = CATEGORY_MAP[ctx.req.param('category')] ?? CATEGORY_MAP.domestic;
     const websiteUrl = `${baseUrl}/${category}`;
@@ -52,14 +52,14 @@ async function handler(ctx) {
         title: `中华网-${categoryTitle}新闻`,
         link: websiteUrl,
         item: news.toArray().map((item) => {
-            item = $(item);
+            const $item = $(item);
             return {
-                title: item.find('.item_title a').text(),
-                author: item.find('.item_source').text(),
-                category: `${categoryTitle}新闻`,
-                pubDate: parseDate(item.find('.item_time').text()),
-                description: item.find('.item_title a').text(),
-                link: item.find('li a').attr('href'),
+                title: $item.find('.item_title a').text(),
+                author: $item.find('.item_source').text(),
+                category: [`${categoryTitle}新闻`],
+                pubDate: parseDate($item.find('.item_time').text()),
+                description: $item.find('.item_title a').text(),
+                link: $item.find('li a').attr('href'),
             };
         }),
     };

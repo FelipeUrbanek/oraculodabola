@@ -1,0 +1,32 @@
+{
+  "colors": {
+    "URGENTE": "#ef4444",
+    "PLANTÃO": "#dc2626",
+    "MERCADO": "#059669",
+    "BASTIDORES": "#b45309",
+    "TÁTICA": "#ea580c",
+    "EXCLUSIVO": "#7c3aed",
+    "ANÁLISE": "#9333ea",
+    "OPINIÃO": "#db2777",
+    "NÚMEROS": "#0f766e",
+    "FATO": "#475569",
+    "HISTÓRIA": "#92400e"
+  },
+  "branding": {
+    "handle": "@OORACULODABOLA",
+    "tagHtml": "<div class=\"absolute top-12 left-12 z-[1000] flex items-center gap-0\"><div class=\"w-16 h-16 flex items-center justify-center bg-black border-r border-white/20\">{{LOGO_SVG}}</div><span class=\"font-bebas text-3xl tracking-[0.2em] text-white px-6 h-16 flex items-center bg-black/90 backdrop-blur-md\">{{HANDLE}}</span>{{TEAM_SHIELD}}</div>"
+  },
+  "feedLayouts": {
+    "1": "<div class=\"absolute inset-0 bg-gradient-to-t from-black via-black/80 to-transparent h-full z-10\"></div><div class=\"z-[500] flex flex-col justify-end h-full p-16 pt-32 pb-32 relative\"><div class=\"px-6 py-2 font-bebas text-5xl inline-block mb-8 w-fit uppercase text-white\" style=\"background-color: {{BADGE_COLOR}};\">{{CATEGORY}}</div><h1 class=\"font-bebas text-[6.5rem] leading-[0.95] text-white uppercase mb-8 tracking-tight\">{{HEADLINE}}</h1><p class=\"text-3xl font-medium text-white leading-snug mb-10 max-w-[90%]\">{{SUMMARY}}</p></div>",
+    "2": "<div class=\"h-[60%] w-full relative background-img z-0\"></div><div class=\"h-[40%] w-full p-20 pt-16 pb-24 flex flex-col justify-center relative z-[500] bg-black\"><div class=\"absolute top-0 left-0 w-full h-2\" style=\"background-color: {{BADGE_COLOR}}\"></div><div class=\"px-6 py-2 font-bebas text-4xl mb-6 uppercase text-white w-fit\" style=\"background-color: {{BADGE_COLOR}}\">{{CATEGORY}}</div><h1 class=\"font-bebas text-[7.5rem] leading-[0.9] text-white uppercase mb-6\">{{HEADLINE}}</h1><p class=\"text-3xl font-medium text-white leading-snug\">{{SUMMARY}}</p></div>",
+    "3": "<div class=\"absolute inset-0 bg-gradient-to-r from-black via-black/60 to-transparent z-10\"></div><div class=\"z-[500] h-full flex flex-col justify-center p-20 relative max-w-[85%]\"><div class=\"font-bebas text-6xl text-white px-8 py-2 mb-8 w-fit shadow-2xl\" style=\"background-color: {{BADGE_COLOR}}\">{{CATEGORY}}</div><div class=\"border-l-[12px] pl-12 py-4\" style=\"border-color: {{BADGE_COLOR}}\"><h1 class=\"font-bebas text-[8rem] leading-[1.0] text-white uppercase mb-10\">{{HEADLINE}}</h1><p class=\"text-4xl font-bold text-white leading-tight italic\">{{SUMMARY}}</p></div></div>",
+    "4": "<div class=\"absolute inset-0 bg-black/40 backdrop-blur-[2px] z-10\"></div><div class=\"z-[500] h-full flex flex-col justify-center items-center text-center p-24 relative\"><div class=\"px-10 py-3 font-bebas text-6xl uppercase mb-12 text-white\" style=\"background-color: {{BADGE_COLOR}}\">{{CATEGORY}}</div><h1 class=\"font-bebas text-[8.5rem] leading-[0.9] text-white uppercase mb-12\">{{HEADLINE}}</h1><div class=\"w-32 h-2 mb-12\" style=\"background-color: {{BADGE_COLOR}}\"></div><p class=\"text-3xl font-black text-white italic leading-snug uppercase tracking-tight\">{{SUMMARY}}</p></div>",
+    "5": "<div class=\"absolute inset-0 bg-gradient-to-b from-black/20 via-black/60 to-black z-10\"></div><div class=\"z-[500] h-full flex flex-col justify-end items-start p-20 pb-32 relative\"><div class=\"px-8 py-3 font-bebas text-6xl uppercase mb-10 text-white\" style=\"background-color: {{BADGE_COLOR}}\">{{CATEGORY}}</div><h1 class=\"font-bebas text-[9rem] leading-[0.85] text-white uppercase mb-16\">{{HEADLINE}}</h1><p class=\"text-4xl font-black text-white leading-tight border-l-4 pl-10\" style=\"border-color: {{BADGE_COLOR}}\">{{SUMMARY}}</p></div>"
+  },
+  "storyLayouts": {
+    "1": "<div class=\"mb-20\"><div class=\"font-bebas text-5xl mb-10 p-5 text-white inline-block border-4 border-white\" style=\"background:{{BADGE_COLOR}}; font-weight: 900;\">{{CATEGORY}}</div><h1 class=\"font-bebas text-[10rem] leading-[0.95] mb-12\">{{HEADLINE}}</h1><p class=\"text-[3.5rem] font-bold leading-tight px-10 text-white italic\">{{SUMMARY}}</p></div>",
+    "2": "<div class=\"mt-24 border-l-[35px] pl-10 text-left relative z-[500]\" style=\"border-color:{{BADGE_COLOR}}\"><h1 class=\"font-bebas text-[11rem] leading-[0.9] mb-12 text-white\">{{HEADLINE}}</h1><div class=\"bg-white text-black p-4 inline-block font-bebas text-6xl\" style=\"background:{{BADGE_COLOR}}; color:white\">{{CATEGORY}}</div></div><div class=\"mt-auto mb-48 text-left px-16 relative z-[500]\"><p class=\"text-5xl font-black text-white italic bg-black/80 p-10 leading-snug\">{{SUMMARY}}</p></div>",
+    "4": "<div class=\"bg-black/95 border-[15px] p-16 w-full relative z-[500] shadow-2xl\" style=\"border-color:{{BADGE_COLOR}}\"><h1 class=\"font-bebas text-[10.5rem] leading-[0.95] mb-16 text-white\">{{HEADLINE}}</h1><p class=\"text-5xl font-black text-white italic border-t-8 pt-12 border-white/10 leading-snug\">{{SUMMARY}}</p></div>"
+  },
+  "globalStyles": "body { font-family: 'Outfit', sans-serif; background: #000; margin: 0; overflow: hidden; color: #FFFFFF !important; }.font-bebas { font-family: 'Bebas Neue', cursive; }.background-img { position: absolute; inset: 0; background-size: cover; background-position: center; z-index: 0; filter: brightness(0.85); } h1, p, span { color: #FFFFFF !important; text-shadow: 0 4px 15px rgba(0,0,0,0.9), 0 2px 5px rgba(0,0,0,0.8); }"
+}
