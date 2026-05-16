@@ -346,11 +346,19 @@ export async function fetchGoogleNews(
       "contrato",
       "renovação",
       "rescisão",
+      "brasileirão",
+      "série a",
+      "libertadores",
+      "copa do brasil",
     ];
 
     return feed.items
       .filter((item) => {
         const title = (item.title || "").toLowerCase();
+        // Bloqueia divisões inferiores e categorias irrelevantes
+        const lowerDivs = ["série b", "série c", "série d", "quarta divisão", "sub-17", "sub-15"];
+        if (lowerDivs.some(div => title.includes(div))) return false;
+        
         return footballKeywords.some((kw) => title.includes(kw));
       })
       .map((item) => ({
@@ -428,8 +436,9 @@ export async function fetchFootballNews(
       const cleanTitle = item.title.split(" - ")[0].trim();
 
       // Filtro de frescor (4 horas)
+      // Filtro de frescor (4 horas para temas quentes)
       const diff = (now - new Date(item.pubDate).getTime()) / (1000 * 60);
-      if (diff > 240) continue;
+      if (diff > 240 && item.category !== "Mercado da Bola") continue;
 
       // Anti-duplicação
       if (seenLinks.has(item.link) || seenTitles.has(cleanTitle.toLowerCase()))
@@ -468,7 +477,7 @@ export async function fetchFootballNews(
     const remaining = sortedNews.filter(
       (n) => !diverseNews.some((dn) => dn.link === n.link),
     );
-    const toProcess = [...diverseNews, ...remaining].slice(0, 20);
+    const toProcess = [...diverseNews, ...remaining].slice(0, 40);
 
     const browser = await puppeteer.launch({
       headless: true,

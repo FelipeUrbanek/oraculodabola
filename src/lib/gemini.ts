@@ -81,6 +81,7 @@ function saveWorldState(state: any) {
 export async function processNewsWithGemini(
   title: string,
   snippet: string,
+  teamName: string = "",
 ): Promise<ProcessedContent> {
   const worldState = loadWorldState();
   const worldStateContext = JSON.stringify(worldState.teams || {}, null, 2);
@@ -143,6 +144,15 @@ export async function processNewsWithGemini(
 
   try {
     const revised = await callGemini(revisionPrompt);
+    
+    // Verificação de Identidade na revisão
+    const revisedStr = JSON.stringify(revised).toLowerCase();
+    if (teamName && teamName !== "MERCADO DA BOLA" && teamName !== "TREND") {
+      if (!revisedStr.includes(teamName.toLowerCase())) {
+         throw new Error(`MISMATCH: Conteúdo revisado perdeu a identidade do time ${teamName}.`);
+      }
+    }
+
     processed = revised;
   } catch (e) {
     console.warn("⚠️ Falha na camada de revisão, usando original.");
@@ -211,11 +221,23 @@ export async function processNewsWithGemini(
   const contentStr = JSON.stringify(processed).toLowerCase();
   const contextStr = (title + " " + snippet).toLowerCase();
 
-  if (forbidden.some((p) => contentStr.includes(p.toLowerCase()))) {
-    throw new Error(
-      `❌ Erro de Rejeição/Placeholder detectado: ${processed.headline}`,
-    );
-  }
+    if (forbidden.some((p) => contentStr.includes(p.toLowerCase()))) {
+      throw new Error(
+        `❌ Erro de Rejeição/Placeholder detectado: ${processed.headline}`,
+      );
+    }
+
+    // --- VALIDAÇÃO DE IDENTIDADE DO TIME (ANTI-ALUCINAÇÃO) ---
+    if (teamName && teamName !== "MERCADO DA BOLA" && teamName !== "TREND") {
+      const normalizedTeam = teamName.toLowerCase();
+      const normalizedContent = (processed.headline + " " + processed.caption).toLowerCase();
+      
+      // Se o nome do time não aparece no post gerado, algo está errado
+      if (!normalizedContent.includes(normalizedTeam)) {
+        console.log(`⚠️ Identidade Mismatch: Esperado ${teamName}, mas o conteúdo gerado não menciona o time.`);
+        throw new Error(`MISMATCH: O conteúdo gerado não condiz com o time ${teamName}.`);
+      }
+    }
 
   // Se for notícia sobre PESSOAS (baixa, reforço, desfalque, contratação, saída, demissão), exige nome próprio
   const isAboutPerson =

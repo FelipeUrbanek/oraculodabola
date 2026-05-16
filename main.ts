@@ -158,6 +158,7 @@ async function runOráculo() {
       const processed = await processNewsWithGemini(
         item.title,
         item.contentSnippet,
+        item.category,
       );
       const paths = await generateImages(processed, item.imageUrl || null, item.category);
 
