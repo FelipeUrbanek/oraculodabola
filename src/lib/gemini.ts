@@ -242,36 +242,23 @@ export async function processNewsWithGemini(
     // Deixamos a IA livre para identificar o time correto da notícia, 
     // mesmo que o feed original tenha um rótulo diferente.
 
-  // Se for notícia sobre PESSOAS (baixa, reforço, desfalque, contratação, saída, demissão), exige nome próprio
-  const isAboutPerson =
-    contextStr.includes("jogador") ||
-    contextStr.includes("técnico") ||
-    contextStr.includes("treinador") ||
-    contextStr.includes("atleta") ||
-    contextStr.includes("dirigente") ||
-    contextStr.includes("ídolo") ||
-    contentStr.includes("jogador") ||
-    contentStr.includes("técnico") ||
-    contentStr.includes("treinador") ||
-    contentStr.includes("atleta") ||
-    contentStr.includes("dirigente") ||
-    contentStr.includes("ídolo");
+  // Se for notícia sobre PESSOAS INDIVIDUAIS (baixa, reforço, desfalque, contratação, saída, demissão), exige nome próprio.
+  // Notícias coletivas (escalação, horário, resultado, treino) NÃO precisam de nome individual.
+  const isAboutPerson = contextStr.includes("jogador") || contextStr.includes("técnico") || contextStr.includes("atleta") || 
+                        contentStr.includes("jogador") || contentStr.includes("técnico") || contentStr.includes("atleta");
 
-  const isCriticalAction =
-    contextStr.includes("baixa") ||
-    contextStr.includes("reforço") ||
-    contextStr.includes("desfalque") ||
-    contextStr.includes("contratação") ||
-    contextStr.includes("saída") ||
-    contextStr.includes("demissão") ||
-    contentStr.includes("baixa") ||
-    contentStr.includes("reforço") ||
-    contentStr.includes("desfalque") ||
-    contentStr.includes("contratação") ||
-    contentStr.includes("saída") ||
-    contentStr.includes("demissão");
+  const isIndividualFocus = 
+    isAboutPerson && (
+      contextStr.includes("reforço") || 
+      contextStr.includes("contratação") || 
+      contextStr.includes("demissão") || 
+      contextStr.includes("saída") ||
+      contextStr.includes("desfalque") ||
+      contextStr.includes("lesão") ||
+      contextStr.includes("baixa")
+    );
 
-  if (isAboutPerson && isCriticalAction) {
+  if (isIndividualFocus) {
     // Regex melhorada: Aceita nomes simples (Everson), compostos (Léo Ortiz) e com partículas (da, de, do)
     // Busca por sequências que começam com Maiúscula.
     const names = processed.caption.match(/[A-ZÀ-Ÿ][a-zà-ÿ]+( [a-z]{1,3})?( [A-ZÀ-Ÿ][a-zà-ÿ]+)*/g);
