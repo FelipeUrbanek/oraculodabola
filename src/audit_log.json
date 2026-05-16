@@ -6,5 +6,13 @@
     "source_domain": "www.instagram.com",
     "category": "Athletico-PR",
     "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-05-16T02:22:26.233Z",
+    "headline": "DÍVIDA DE AREZO LEVA GRÊMIO À FIFA",
+    "source_url": "https://www.terra.com.br/esportes/gremio/gremio-sofre-cobranca-de-clube-uruguaio-por-divida-e-caso-pode-parar-na-fifa,ddbe03d6f8e886a910fc08a5fd82e141lqrmd5wm.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Grêmio",
+    "status": "SUCCESS"
   }
 ]
