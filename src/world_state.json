@@ -89,7 +89,22 @@
       "coach": "Não mencionado",
       "league": "Não mencionada",
       "recent_changes": "Receberá o CRB no domingo, às 20h30, na Ilha do Retiro."
+    },
+    "Barcelona": {
+      "coach": "Não mencionado",
+      "league": "Campeonato Espanhol",
+      "recent_changes": "Robert Lewandowski anunciou sua saída do clube após quatro temporadas, 119 gols e sete títulos. O jogador será homenageado em sua última partida no Camp Nou, neste domingo, contra o Real Betis, pelo Campeonato Espanhol."
+    },
+    "Real Betis": {
+      "coach": "Não mencionado",
+      "league": "Campeonato Espanhol",
+      "recent_changes": "Enfrentará o Barcelona neste domingo, no Camp Nou, em partida válida pelo Campeonato Espanhol."
+    },
+    "Alto do Cruzeiro": {
+      "coach": "Não mencionado",
+      "league": "Campeonato Acauãnense",
+      "recent_changes": "O jogador Abnoan Ferreira Arcanjo, de 24 anos, morreu em um acidente de moto na BR-407. Pelo clube, ele havia conquistado o título do Campeonato Acauãnense em 2025."
     }
   },
-  "last_updated": "2026-05-16T14:20:23.770Z"
+  "last_updated": "2026-05-16T14:45:18.316Z"
 }
