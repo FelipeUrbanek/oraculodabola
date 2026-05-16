@@ -3,12 +3,12 @@
     "Fortaleza": {
       "coach": "Thiago Carpini",
       "league": "Campeonato Brasileiro / Copa do Brasil",
-      "recent_changes": "Avançou para as oitavas de final da Copa do Brasil após segurar um empate sem gols contra o CRB fora de casa. O próximo compromisso será o clássico contra o Ceará, no domingo."
+      "recent_changes": "Avançou para as oitavas de final da Copa do Brasil, acumulando R$ 9,59 milhões em premiações por participar da competição desde a 2ª fase. O próximo compromisso será o clássico contra o Ceará, no domingo."
     },
     "Vasco": {
       "coach": "Renato",
-      "league": "Não informada",
-      "recent_changes": "O técnico Renato repreendeu publicamente o jogador Thiago Mendes após sua expulsão."
+      "league": "Copa do Brasil",
+      "recent_changes": "Avançou para as oitavas de final da Copa do Brasil, garantindo R$ 5 milhões em premiações. O técnico Renato repreendeu publicamente o jogador Thiago Mendes após sua expulsão."
     },
     "Botafogo": {
       "coach": "Não mencionado",
@@ -17,8 +17,8 @@
     },
     "Grêmio": {
       "coach": "Luis Castro",
-      "league": "Campeonato Brasileiro",
-      "recent_changes": "Martin Braithwaite, artilheiro da equipe em 2025 com 15 gols, retornou de lesão no tendão de Aquiles e marcou dois gols na vitória sobre o Confiança, classificando o Grêmio para as oitavas de final da Copa do Brasil. Ele também marcou na Copa Sul-Americana e voltou a atuar no Brasileirão, oferecendo novas soluções ao técnico Luis Castro."
+      "league": "Campeonato Brasileiro / Copa do Brasil",
+      "recent_changes": "Avançou para as oitavas de final da Copa do Brasil com grande atuação de Braithwaite contra o Confiança, garantindo R$ 5 milhões em premiações. Braithwaite retornou de lesão oferecendo novas soluções ao técnico Luis Castro."
     },
     "São Paulo": {
       "coach": "Dorival Jr",
@@ -27,8 +27,8 @@
     },
     "Corinthians": {
       "coach": "Vago",
-      "league": "Brasileirão",
-      "recent_changes": "O Corinthians aceita negociar Hugo Souza (60% dos direitos por R$ 76,8 milhões), Yuri Alberto (50% dos direitos por mais de 20 milhões de euros), e admite negociar Memphis Depay, que pode sair sem apoio financeiro externo. Outros jogadores como André, Breno Bidon, Matheuzinho e Matheus Bidu também estão valorizados e podem receber ofertas."
+      "league": "Brasileirão / Copa do Brasil",
+      "recent_changes": "Avançou para as oitavas de final da Copa do Brasil, garantindo R$ 5 milhões em premiações. O clube aceita negociar Hugo Souza e Yuri Alberto, e admite negociar Memphis Depay."
     },
     "Seleção Brasileira": {
       "coach": "Carlo Ancelotti",
@@ -37,8 +37,8 @@
     },
     "Atlético-MG": {
       "coach": "Vago",
-      "league": "Futebol Brasileiro",
-      "recent_changes": "Jorge Sampaoli não é mais o técnico (demitido em fevereiro) e acionou o clube na CNRD por atraso no pagamento da multa rescisória."
+      "league": "Futebol Brasileiro / Copa do Brasil",
+      "recent_changes": "Avançou para as oitavas de final da Copa do Brasil, garantindo R$ 5 milhões em premiações. Jorge Sampaoli não é mais o técnico e acionou o clube na CNRD por atraso no pagamento da multa rescisória."
     },
     "Uberlândia": {
       "coach": "Não mencionado",
@@ -109,7 +109,62 @@
       "coach": "Não mencionado",
       "league": "Campeonato Paranaense (Segundona)",
       "recent_changes": "Foi goleado por 6x1 pelo Paraná Clube na Vila Capanema, no jogo de volta do mata-mata da Segundona."
+    },
+    "Juventude": {
+      "coach": "Não mencionado",
+      "league": "Copa do Brasil",
+      "recent_changes": "Avançou para as oitavas de final da Copa do Brasil, garantindo cerca de R$ 9,59 milhões em premiações acumuladas por estar no torneio desde a 2ª fase."
+    },
+    "Athletico-PR": {
+      "coach": "Não mencionado",
+      "league": "Copa do Brasil",
+      "recent_changes": "Avançou para as oitavas de final da Copa do Brasil, lucrando R$ 5 milhões em premiações."
+    },
+    "Chapecoense": {
+      "coach": "Não mencionado",
+      "league": "Copa do Brasil",
+      "recent_changes": "Avançou para as oitavas de final da Copa do Brasil, lucrando R$ 5 milhões em premiações."
+    },
+    "Cruzeiro": {
+      "coach": "Não mencionado",
+      "league": "Copa do Brasil",
+      "recent_changes": "Avançou para as oitavas de final da Copa do Brasil, lucrando R$ 5 milhões em premiações."
+    },
+    "Fluminense": {
+      "coach": "Não mencionado",
+      "league": "Copa do Brasil",
+      "recent_changes": "Avançou para as oitavas de final da Copa do Brasil, lucrando R$ 5 milhões em premiações."
+    },
+    "Internacional": {
+      "coach": "Não mencionado",
+      "league": "Copa do Brasil",
+      "recent_changes": "Avançou para as oitavas de final da Copa do Brasil, lucrando R$ 5 milhões em premiações."
+    },
+    "Mirassol": {
+      "coach": "Não mencionado",
+      "league": "Copa do Brasil",
+      "recent_changes": "Avançou para as oitavas de final da Copa do Brasil, lucrando R$ 5 milhões em premiações."
+    },
+    "Palmeiras": {
+      "coach": "Não mencionado",
+      "league": "Copa do Brasil",
+      "recent_changes": "Avançou para as oitavas de final da Copa do Brasil, lucrando R$ 5 milhões em premiações."
+    },
+    "Remo": {
+      "coach": "Não mencionado",
+      "league": "Copa do Brasil",
+      "recent_changes": "Avançou para as oitavas de final da Copa do Brasil, lucrando R$ 5 milhões em premiações."
+    },
+    "Santos": {
+      "coach": "Não mencionado",
+      "league": "Copa do Brasil",
+      "recent_changes": "Avançou para as oitavas de final da Copa do Brasil, lucrando R$ 5 milhões em premiações."
+    },
+    "Vitória": {
+      "coach": "Não mencionado",
+      "league": "Copa do Brasil",
+      "recent_changes": "Avançou para as oitavas de final da Copa do Brasil, lucrando R$ 5 milhões em premiações."
     }
   },
-  "last_updated": "2026-05-16T15:09:56.951Z"
+  "last_updated": "2026-05-16T16:40:11.128Z"
 }
