@@ -255,7 +255,7 @@ export async function fetchTerraDirect(target: { name: string; terra: string }, 
   try {
     const page = await browser.newPage();
     await page.setRequestInterception(true);
-    page.on('request', (req) => {
+    page.on('request', (req: any) => {
       const type = req.resourceType();
       if (['image', 'font', 'stylesheet', 'media'].includes(type)) {
         req.abort();
@@ -267,7 +267,7 @@ export async function fetchTerraDirect(target: { name: string; terra: string }, 
     await page.setUserAgent("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36");
     await page.goto(target.terra, { waitUntil: "domcontentloaded", timeout: 20000 });
 
-    const news = await page.evaluate((category) => {
+    const news = await page.evaluate((category: string) => {
       const items: any[] = [];
       const cards = document.querySelectorAll(".card-news, .card-news-horizontal");
 
