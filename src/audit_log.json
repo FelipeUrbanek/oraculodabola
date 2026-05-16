@@ -143,5 +143,22 @@
     "source_domain": "www.terra.com.br",
     "category": "Grêmio",
     "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-05-16T22:32:56.945Z",
+    "headline": "Santos supera Fortaleza e assume a terceira colocação no Brasileiro Sub-20",
+    "source_url": "https://www.terra.com.br/esportes/santos/santos-supera-fortaleza-e-assume-a-terceira-colocacao-no-brasileiro-sub-20,ac71632f92e1c5d7f28445bf5e75c31d72nbtyb7.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Notícia muito vaga: Sem nome de time ou de profissional no caption."
+  },
+  {
+    "timestamp": "2026-05-16T22:34:07.773Z",
+    "headline": "O PREJUÍZO MILIONÁRIO DO FLAMENGO",
+    "source_url": "https://www.terra.com.br/esportes/flamengo/veja-quanto-o-flamengo-ja-deixou-de-ganhar-em-premiacoes-em-26,fb88ab63d7c55a863f64312083968eedfqjf3geq.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Flamengo",
+    "status": "SUCCESS"
   }
 ]

@@ -2,13 +2,13 @@
   "teams": {
     "Fortaleza": {
       "coach": "Thiago Carpini",
-      "league": "Campeonato Brasileiro / Copa do Brasil",
-      "recent_changes": "Avançou para as oitavas de final da Copa do Brasil, acumulando R$ 9,59 milhões em premiações por participar da competição desde a 2ª fase. O próximo compromisso será o clássico contra o Ceará, no domingo."
+      "league": "Campeonato Brasileiro / Copa do Brasil / Campeonato Brasileiro Sub-20",
+      "recent_changes": "Avançou para as oitavas de final da Copa do Brasil, acumulando R$ 9,59 milhões em premiações por participar da competição desde a 2ª fase. O próximo compromisso será o clássico contra o Ceará, no domingo. Pelo Brasileiro Sub-20, perdeu em casa de virada para o Santos por 2 a 1, permanecendo em 13º lugar com 13 pontos, e enfrentará o Bahia na próxima rodada."
     },
     "Vasco": {
       "coach": "Renato",
-      "league": "Copa do Brasil",
-      "recent_changes": "Avançou para as oitavas de final da Copa do Brasil, garantindo R$ 5 milhões em premiações. O técnico Renato repreendeu publicamente o jogador Thiago Mendes após sua expulsão."
+      "league": "Copa do Brasil / Campeonato Brasileiro Sub-20",
+      "recent_changes": "Avançou para as oitavas de final da Copa do Brasil, garantindo R$ 5 milhões em premiações. O técnico Renato repreendeu publicamente o jogador Thiago Mendes após sua expulsão. A equipe Sub-20 lidera o Campeonato Brasileiro da categoria ao lado do Palmeiras."
     },
     "Botafogo": {
       "coach": "Não mencionado",
@@ -27,8 +27,8 @@
     },
     "Corinthians": {
       "coach": "Vago",
-      "league": "Brasileirão / Copa do Brasil",
-      "recent_changes": "Avançou para as oitavas de final da Copa do Brasil, garantindo R$ 5 milhões em premiações. O clube aceita negociar Hugo Souza e Yuri Alberto, e admite negociar Memphis Depay. Recentemente, voltou a vencer em estreias de camisas I e II depois de três anos."
+      "league": "Brasileirão / Copa do Brasil / Supercopa",
+      "recent_changes": "Sagrou-se campeão da Supercopa Rei do Brasil sobre o Flamengo, garantindo R$ 6,35 milhões da CBF e um bônus de US$ 1 milhão da Conmebol. Avançou para as oitavas de final da Copa do Brasil, garantindo R$ 5 milhões em premiações. O clube aceita negociar Hugo Souza e Yuri Alberto, e admite negociar Memphis Depay. Recentemente, voltou a vencer em estreias de camisas I e II depois de três anos."
     },
     "Seleção Brasileira": {
       "coach": "Carlo Ancelotti",
@@ -147,8 +147,8 @@
     },
     "Palmeiras": {
       "coach": "Não mencionado",
-      "league": "Copa do Brasil",
-      "recent_changes": "Avançou para as oitavas de final da Copa do Brasil, lucrando R$ 5 milhões em premiações. Tem um confronto marcado contra o Cruzeiro às 19h30."
+      "league": "Copa do Brasil / Campeonato Brasileiro Sub-20",
+      "recent_changes": "Avançou para as oitavas de final da Copa do Brasil, lucrando R$ 5 milhões em premiações. Tem um confronto marcado contra o Cruzeiro às 19h30. A equipe Sub-20 lidera o Campeonato Brasileiro da categoria ao lado do Vasco."
     },
     "Remo": {
       "coach": "Não mencionado",
@@ -157,13 +157,13 @@
     },
     "Santos": {
       "coach": "Não mencionado",
-      "league": "Copa do Brasil",
-      "recent_changes": "Avançou para as oitavas de final da Copa do Brasil, lucrando R$ 5 milhões em premiações."
+      "league": "Copa do Brasil / Campeonato Brasileiro Sub-20",
+      "recent_changes": "Avançou para as oitavas de final da Copa do Brasil, lucrando R$ 5 milhões em premiações. No Brasileiro Sub-20, venceu o Fortaleza de virada por 2 a 1 fora de casa com gols de Mateus Xavier e Vinicius Fabri, assumindo a 3ª colocação (23 pontos), e enfrentará o Flamengo na próxima rodada."
     },
     "Vitória": {
       "coach": "Não mencionado",
       "league": "Copa do Brasil",
-      "recent_changes": "Avançou para as oitavas de final da Copa do Brasil, lucrando R$ 5 milhões em premiações."
+      "recent_changes": "Eliminou o Flamengo na quinta fase e avançou para as oitavas de final da Copa do Brasil, garantindo R$ 3 milhões pela classificação (lucrando R$ 5 milhões em premiações no total da competição)."
     },
     "Coreia do Sul": {
       "coach": "Não mencionado",
@@ -187,8 +187,8 @@
     },
     "Bahia": {
       "coach": "Não mencionado",
-      "league": "Brasileirão",
-      "recent_changes": "Venceu o Red Bull Bragantino em casa e entrou no G4 do Brasileirão."
+      "league": "Brasileirão / Campeonato Brasileiro Sub-20",
+      "recent_changes": "Venceu o Red Bull Bragantino em casa e entrou no G4 do Brasileirão. Na 13ª rodada do Brasileiro Sub-20, receberá o Fortaleza no CT Evaristo de Macedo."
     },
     "Red Bull Bragantino": {
       "coach": "Não mencionado",
@@ -197,9 +197,14 @@
     },
     "Flamengo": {
       "coach": "Não mencionado",
-      "league": "Não mencionada",
-      "recent_changes": "Tem um confronto marcado contra o Athletico-PR."
+      "league": "Campeonato Brasileiro Sub-20 / Copa do Brasil / Recopa Sul-Americana / Supercopa",
+      "recent_changes": "Foi eliminado na quinta fase da Copa do Brasil para o Vitória, perdendo a chance de arrecadar altas quantias em premiações e bilheteria. No início do ano, foi vice-campeão da Recopa Sul-Americana (perdendo para o Lanús na prorrogação) e da Supercopa Rei do Brasil (para o Corinthians). Tem um confronto marcado contra o Athletico-PR. Pelo Brasileiro Sub-20, enfrentará o Santos na próxima rodada no Estádio Luso Brasileiro."
+    },
+    "Lanús": {
+      "coach": "Não mencionado",
+      "league": "Recopa Sul-Americana",
+      "recent_changes": "Sagrou-se campeão da Recopa Sul-Americana ao vencer o Flamengo na prorrogação, ficando com a premiação de US$ 1,8 milhão (cerca de R$ 9,2 milhões)."
     }
   },
-  "last_updated": "2026-05-16T22:27:35.608Z"
+  "last_updated": "2026-05-16T22:33:50.252Z"
 }
