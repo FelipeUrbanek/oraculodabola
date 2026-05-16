@@ -133,7 +133,7 @@ const FOOTBALL_TARGETS = [
 export async function resolveAndScrapeImage(
   googleUrl: string,
   browser?: any,
-): Promise<{ finalUrl: string; imageUrl?: string; fullSnippet?: string }> {
+): Promise<{ finalUrl: string; imageUrl?: string; fullSnippet?: string; exactDate?: string }> {
   let internalBrowser = false;
   if (!browser) {
     browser = await puppeteer.launch({
@@ -196,9 +196,12 @@ export async function resolveAndScrapeImage(
         .map((m) => m.getAttribute("content"))
         .join(", ");
 
+      const exactDate = getMeta("datePublished") || getMeta("article:published_time") || null;
+
       return {
         imageUrl: img || articleImg || null,
         fullSnippet: `${paragraphs} | Tags: ${articleTags} | Keywords: ${metaKeywords} | Desc: ${metaDesc}`.substring(0, 2000),
+        exactDate: exactDate
       };
     });
 
@@ -206,7 +209,7 @@ export async function resolveAndScrapeImage(
       // console.log(`⚠️ Nenhuma imagem encontrada para ${finalUrl}`);
     }
 
-    return { finalUrl, imageUrl: imageUrl || undefined, fullSnippet };
+    return { finalUrl, imageUrl: imageUrl || undefined, fullSnippet, exactDate: exactDate || undefined };
   } catch (error: any) {
     return { finalUrl: googleUrl, imageUrl: undefined, fullSnippet: undefined };
   } finally {
@@ -417,13 +420,13 @@ export async function fetchFootballNews(
         const batch = toProcess.slice(i, i + 10);
         const batchResults = await Promise.all(
           batch.map(async (item) => {
-            const { finalUrl, imageUrl, fullSnippet } = await resolveAndScrapeImage(item.link, browser);
-            // Se não tem imagem, ainda incluímos o item MAS sem o campo imageUrl. 
-            // A lógica do main.ts decidirá se aceita ou não (preferencialmente não, mas se não tiver nada, ele aceita).
+            const { finalUrl, imageUrl, fullSnippet, exactDate } = await resolveAndScrapeImage(item.link, browser);
+            // Se encontramos uma data exata no artigo, usamos ela.
             return {
               ...item,
               link: finalUrl,
               imageUrl: imageUrl || undefined,
+              pubDate: exactDate || item.pubDate,
               contentSnippet: fullSnippet || item.contentSnippet,
             };
           })
