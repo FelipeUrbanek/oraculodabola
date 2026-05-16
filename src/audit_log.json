@@ -143,5 +143,13 @@
     "source_domain": "www.terra.com.br",
     "category": "Grêmio",
     "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-05-16T23:15:01.732Z",
+    "headline": "VAZOU A NOVA CAMISA 3 DO FLAMENGO!",
+    "source_url": "https://www.terra.com.br/esportes/flamengo/vaza-nova-camisa-do-flamengo,ac3c2e6f3268aaf1ec38386dc7779569c67htn49.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Flamengo",
+    "status": "SUCCESS"
   }
 ]
