@@ -119,5 +119,13 @@
     "source_domain": "www.terra.com.br",
     "category": "Flamengo",
     "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-05-16T21:59:28.489Z",
+    "headline": "REJEITADO",
+    "source_url": "https://www.terra.com.br/esportes/gremio/clube-frances-entra-na-disputa-por-joia-do-gremio-e-prepara-proposta-milionaria,aabc8a594e6abaa9fe189240ea3fb6c32hyqp736.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Grêmio",
+    "status": "SUCCESS"
   }
 ]
