@@ -223,7 +223,7 @@ async function fetchRSSHubTerra(target: {
   name: string;
   terra: string;
 }): Promise<NewsItem[]> {
-  const rsshubBase = "http://localhost:1200/transform/html/";
+  const rsshubBase = "http://localhost:1200/rsshub/transform/html/";
   const rules = "item=.card-news&itemTitle=.card-news__text--title&itemLink=a";
   const fullUrl = `${rsshubBase}${encodeURIComponent(target.terra)}/${encodeURIComponent(rules)}`;
 
