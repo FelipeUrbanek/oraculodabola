@@ -14,5 +14,13 @@
     "source_domain": "www.terra.com.br",
     "category": "Grêmio",
     "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-05-16T02:28:04.365Z",
+    "headline": "RAIO-X 2025: RECEITA X DESEMPENHO",
+    "source_url": "https://www.itatiaia.com.br/esportes/futebol/futebol-nacional/raio-x-veja-comparativo-entre-receitas-e-posicoes-no-brasileirao-2025/",
+    "source_domain": "www.itatiaia.com.br",
+    "category": "Bragantino",
+    "status": "SUCCESS"
   }
 ]
