@@ -39,7 +39,32 @@
       "coach": "Vago",
       "league": "Futebol Brasileiro",
       "recent_changes": "Jorge Sampaoli não é mais o técnico (demitido em fevereiro) e acionou o clube na CNRD por atraso no pagamento da multa rescisória."
+    },
+    "Uberlândia": {
+      "coach": "Não mencionado",
+      "league": "Série D do Campeonato Brasileiro 2026",
+      "recent_changes": "Único clube mineiro já matematicamente classificado ao mata-mata da Série D."
+    },
+    "Tombense": {
+      "coach": "Não mencionado",
+      "league": "Série D do Campeonato Brasileiro 2026",
+      "recent_changes": "Terá dois duelos na Série D: contra Uberlândia e Democrata-GV."
+    },
+    "Democrata-GV": {
+      "coach": "Não mencionado",
+      "league": "Série D do Campeonato Brasileiro 2026",
+      "recent_changes": "Enfrentará o Tombense na Série D."
+    },
+    "Pouso Alegre": {
+      "coach": "Não mencionado",
+      "league": "Série D do Campeonato Brasileiro 2026",
+      "recent_changes": "Buscará sua segunda vitória consecutiva na Quarta Divisão contra a Portuguesa-RJ."
+    },
+    "Portuguesa-RJ": {
+      "coach": "Não mencionado",
+      "league": "Série D do Campeonato Brasileiro 2026",
+      "recent_changes": "Enfrentará o Pouso Alegre na Série D."
     }
   },
-  "last_updated": "2026-05-16T02:27:44.040Z"
+  "last_updated": "2026-05-16T10:51:28.113Z"
 }
