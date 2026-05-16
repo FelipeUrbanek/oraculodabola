@@ -73,7 +73,7 @@
     "Paraná Clube": {
       "coach": "Tcheco",
       "league": "Campeonato Paranaense (Segundona)",
-      "recent_changes": "Goleou o Toledo por 6x1 e está a dois jogos do acesso à primeira divisão do Campeonato Paranaense. O técnico Tcheco ajusta a tática para os confrontos decisivos, focando na observação do elenco e na estratégia de substituições."
+      "recent_changes": "Goleou o Toledo por 6x1 na Vila Capanema e avançou para a semifinal, ficando a dois jogos do acesso à primeira divisão. O zagueiro Thiago Dombroski foi desfalque por dores e Thiaguinho marcou um golaço. O técnico Tcheco destacou o uso de diferentes esquemas para observar o elenco e o time aguarda a definição de seu adversário no confronto decisivo."
     },
     "CRB": {
       "coach": "Não mencionado",
@@ -104,7 +104,12 @@
       "coach": "Não mencionado",
       "league": "Campeonato Acauãnense",
       "recent_changes": "O jogador Abnoan Ferreira Arcanjo, de 24 anos, morreu em um acidente de moto na BR-407. Pelo clube, ele havia conquistado o título do Campeonato Acauãnense em 2025."
+    },
+    "Toledo": {
+      "coach": "Não mencionado",
+      "league": "Campeonato Paranaense (Segundona)",
+      "recent_changes": "Foi goleado por 6x1 pelo Paraná Clube na Vila Capanema, no jogo de volta do mata-mata da Segundona."
     }
   },
-  "last_updated": "2026-05-16T14:45:18.316Z"
+  "last_updated": "2026-05-16T15:09:56.951Z"
 }

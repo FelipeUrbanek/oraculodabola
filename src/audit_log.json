@@ -54,5 +54,13 @@
     "source_domain": "g1.globo.com",
     "category": "Athletico-PR",
     "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-05-16T15:10:17.511Z",
+    "headline": "PARANÁ ATROPELA E FOCA NO ACESSO",
+    "source_url": "https://www.bandab.com.br/esporte/times/parana-clube/tcheco-abre-jogo-mudancas-parana-clube-segundona/",
+    "source_domain": "www.bandab.com.br",
+    "category": "Athletico-PR",
+    "status": "SUCCESS"
   }
 ]
