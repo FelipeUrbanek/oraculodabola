@@ -43,7 +43,7 @@ export interface NewsItem {
   contentSnippet: string;
   id: string;
   imageUrl?: string;
-  category: string; // Adicionado para lógica de rodízio
+  category: string;
 }
 
 const FOOTBALL_TARGETS = [
@@ -127,9 +127,6 @@ const FOOTBALL_TARGETS = [
   },
 ];
 
-/**
- * Resolve o link final e captura a imagem
- */
 export async function resolveAndScrapeImage(
   googleUrl: string,
   browser?: any,
@@ -153,7 +150,6 @@ export async function resolveAndScrapeImage(
         .catch(() => {});
     }
     const finalUrl = page.url();
-    // console.log(`🌐 Scrapeando: ${finalUrl}`);
 
     const { imageUrl, fullSnippet, exactDate } = await page.evaluate(() => {
       const getMeta = (name: string) => 
@@ -162,7 +158,6 @@ export async function resolveAndScrapeImage(
 
       const img = getMeta("og:image") || getMeta("twitter:image") || getMeta("image");
       
-      // Se não tem meta image, tenta a primeira imagem grande do artigo
       let articleImg = null;
       if (!img) {
         const firstImg = document.querySelector('article img, .content img, .post-content img, .main-image img');
@@ -205,10 +200,6 @@ export async function resolveAndScrapeImage(
       };
     });
 
-    if (!imageUrl) {
-      // console.log(`⚠️ Nenhuma imagem encontrada para ${finalUrl}`);
-    }
-
     return { finalUrl, imageUrl: imageUrl || undefined, fullSnippet, exactDate: exactDate || undefined };
   } catch (error: any) {
     return { finalUrl: googleUrl, imageUrl: undefined, fullSnippet: undefined };
@@ -218,13 +209,10 @@ export async function resolveAndScrapeImage(
   }
 }
 
-/**
- * Busca notícias via RSSHub (Terra)
- */
 export async function fetchRSSHubTerra(target: {
   name: string;
   terra: string;
-}): Promise<NewsItem[]> {
+}, browser?: any): Promise<NewsItem[]> {
   const rsshubBase = "http://localhost:1200/rsshub/transform/html/";
   const rules = "item=.card-news&itemTitle=.card-news__text--title&itemLink=a&itemImage=img";
   const fullUrl = `${rsshubBase}${encodeURIComponent(target.terra)}/${encodeURIComponent(rules)}`;
@@ -232,12 +220,10 @@ export async function fetchRSSHubTerra(target: {
   try {
     const feed = await parser.parseURL(fullUrl);
     return feed.items.map((item, index) => {
-      // O usuário confirmou que as notícias mais acima são as mais novas.
-      // Se a data for inválida ou ausente, usamos o timestamp atual menos alguns segundos para manter a ordem.
       let pubDate = item.pubDate;
       if (!pubDate || pubDate === "Invalid Date" || isNaN(Date.parse(pubDate))) {
         const date = new Date();
-        date.setSeconds(date.getSeconds() - index); // Mantém a ordem decrescente
+        date.setSeconds(date.getSeconds() - index);
         pubDate = date.toISOString();
       }
 
@@ -251,48 +237,48 @@ export async function fetchRSSHubTerra(target: {
       };
     });
   } catch (e) {
-    console.log(
-      `⚠️ RSSHub falhou para ${target.name}. Tentando Scraper Direto...`,
-    );
-    return fetchTerraDirect(target);
+    console.log(`⚠️ RSSHub falhou para ${target.name}. Tentando Scraper Direto...`);
+    return fetchTerraDirect(target, browser);
   }
 }
 
-/**
- * Scraper direto do Terra usando Puppeteer (Anti-Bloqueio 503)
- */
-export async function fetchTerraDirect(target: any): Promise<NewsItem[]> {
-  const browser = await puppeteer.launch({
-    headless: true,
-    args: ["--no-sandbox"],
-  });
+export async function fetchTerraDirect(target: { name: string; terra: string }, browser?: any): Promise<NewsItem[]> {
+  let internalBrowser = false;
+  if (!browser) {
+    browser = await puppeteer.launch({
+      headless: true,
+      args: ["--no-sandbox"],
+    });
+    internalBrowser = true;
+  }
+
   try {
     const page = await browser.newPage();
-    await page.setUserAgent(
-      "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-    );
-    await page.goto(target.terra, {
-      waitUntil: "domcontentloaded",
-      timeout: 30000,
+    await page.setRequestInterception(true);
+    page.on('request', (req) => {
+      const type = req.resourceType();
+      if (['image', 'font', 'stylesheet', 'media'].includes(type)) {
+        req.abort();
+      } else {
+        req.continue();
+      }
     });
+
+    await page.setUserAgent("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36");
+    await page.goto(target.terra, { waitUntil: "domcontentloaded", timeout: 20000 });
 
     const news = await page.evaluate((category) => {
       const items: any[] = [];
-      const cards = document.querySelectorAll(
-        ".card-news, .card-news-horizontal",
-      );
+      const cards = document.querySelectorAll(".card-news, .card-news-horizontal");
 
       cards.forEach((card, index) => {
-        const titleEl = card.querySelector(
-          ".card-news__text--title, .card-news-horizontal__text--title",
-        );
+        const titleEl = card.querySelector(".card-news__text--title, .card-news-horizontal__text--title");
         const linkEl = card.querySelector("a");
         const imgEl = card.querySelector("img");
         
         if (titleEl && linkEl) {
           const date = new Date();
           date.setSeconds(date.getSeconds() - index);
-
           items.push({
             title: titleEl.textContent?.trim() || "",
             link: linkEl.href,
@@ -307,36 +293,33 @@ export async function fetchTerraDirect(target: any): Promise<NewsItem[]> {
       return items;
     }, target.name);
 
-    await browser.close();
+    await page.close();
     return news;
   } catch (e) {
-    await browser.close();
     return [];
+  } finally {
+    if (internalBrowser) await browser.close();
   }
 }
 
 export function isTrustedSource(url: string): boolean {
   try {
     const domain = new URL(url).hostname.replace("www.", "");
-    return TRUSTED_DOMAINS.some(
-      (trusted) => domain === trusted || domain.endsWith("." + trusted),
-    );
+    return TRUSTED_DOMAINS.some((trusted) => domain === trusted || domain.endsWith("." + trusted));
   } catch (e) {
     return false;
   }
 }
 
-export async function fetchFootballNews(
-  trends: string[] = [],
-  excludeIds: string[] = [],
-): Promise<NewsItem[]> {
-  try {
-    console.log(
-      `\n🚀 Iniciando Agregador de Notícias (RSSHub + Terra Scraper)...`,
-    );
+export async function fetchFootballNews(trends: string[] = [], excludeIds: string[] = []): Promise<NewsItem[]> {
+  const scraperBrowser = await puppeteer.launch({
+    headless: true,
+    args: ["--no-sandbox", "--disable-setuid-sandbox", "--disable-dev-shm-usage"],
+  });
 
-    // EXCLUSIVO RSSHUB/TERRA: Conforme solicitado pelo usuário.
-    const terraTasks = FOOTBALL_TARGETS.map((target) => fetchRSSHubTerra(target));
+  try {
+    console.log(`\n🚀 Iniciando Agregador de Notícias (RSSHub + Terra Scraper)...`);
+    const terraTasks = FOOTBALL_TARGETS.map((target) => fetchRSSHubTerra(target, scraperBrowser));
     const terraResults = await Promise.all(terraTasks);
     const allItems = terraResults.flat();
     
@@ -345,83 +328,51 @@ export async function fetchFootballNews(
     const uniqueNews: NewsItem[] = [];
     const seenLinks = new Set();
     const seenTitles = new Set();
-
     const now = Date.now();
     let blockedSourcesCount = 0;
 
     for (const item of allItems) {
       if (!item.link || !item.title) continue;
-
-      // Validação de Fonte Confiável e se já foi postada
       const itemIdentifier = item.id || item.link;
       if (!isTrustedSource(item.link) || excludeIds.includes(itemIdentifier)) {
         if (!isTrustedSource(item.link)) blockedSourcesCount++;
-        // console.log(`⏩ Ignorando ${item.title} (Já postado ou fonte não confiável)`);
         continue;
       }
 
-      // Limpeza de título (remove o nome do portal se houver)
       const cleanTitle = item.title.split(" - ")[0].trim();
-
-      // Filtro de frescor: 4 horas para geral (restaurado), 24h para Mercado da Bola
       const diff = (now - new Date(item.pubDate).getTime()) / (1000 * 60);
-      const limitMinutes = item.category === "Mercado da Bola" ? 1440 : 240; // 24h vs 4h
+      const limitMinutes = item.category === "Mercado da Bola" ? 1440 : 240;
       if (diff > limitMinutes) continue;
 
-      // Anti-duplicação
-      if (seenLinks.has(item.link) || seenTitles.has(cleanTitle.toLowerCase()))
-        continue;
+      if (seenLinks.has(item.link) || seenTitles.has(cleanTitle.toLowerCase())) continue;
 
       uniqueNews.push({ ...item, title: cleanTitle });
       seenLinks.add(item.link);
       seenTitles.add(cleanTitle.toLowerCase());
     }
 
-    // Ordena por data (mais recentes primeiro)
-    const sortedNews = uniqueNews.sort(
-      (a, b) => new Date(b.pubDate).getTime() - new Date(a.pubDate).getTime(),
-    );
-
+    const sortedNews = uniqueNews.sort((a, b) => new Date(b.pubDate).getTime() - new Date(a.pubDate).getTime());
     console.log(`🔎 Filtradas ${sortedNews.length} notícias relevantes. (🚫 ${blockedSourcesCount} fontes não confiáveis ocultadas)`);
-    console.log(`📸 Capturando imagens para as melhores candidatas...`);
-
-    // Garante variedade de categorias nas notícias processadas
+    
     const diverseNews: NewsItem[] = [];
-    const categoriesIncluded = new Set<string>();
-
-    // Primeiro, pega a notícia mais recente de CADA categoria
     for (const target of FOOTBALL_TARGETS) {
-      const latestForTarget = sortedNews.find(
-        (n) => n.category === target.name,
-      );
-      if (latestForTarget) {
-        diverseNews.push(latestForTarget);
-        categoriesIncluded.add(target.name);
-      }
+      const latestForTarget = sortedNews.find((n) => n.category === target.name);
+      if (latestForTarget) diverseNews.push(latestForTarget);
     }
 
-    // Depois, preenche o resto com as mais recentes que ainda não foram incluídas, até chegar em 20
-    const remaining = sortedNews.filter(
-      (n) => !diverseNews.some((dn) => dn.link === n.link),
-    );
+    const remaining = sortedNews.filter((n) => !diverseNews.some((dn) => dn.link === n.link));
     const toProcess = [...diverseNews, ...remaining].slice(0, 40);
 
-    const browser = await puppeteer.launch({
-      headless: true,
-      args: ["--no-sandbox"],
-    });
+    const imageBrowser = await puppeteer.launch({ headless: true, args: ["--no-sandbox"] });
     const finalItems: NewsItem[] = [];
 
     try {
       console.log(`📸 Processando imagens para as top ${toProcess.length} notícias selecionadas...`);
-      
-      // Processa em lotes de 10 para não sobrecarregar mas garantir que achamos algo
-      for (let i = 0; i < toProcess.length && finalItems.length < 15; i += 10) {
-        const batch = toProcess.slice(i, i + 10);
+      for (let i = 0; i < toProcess.length && finalItems.length < 15; i += 3) {
+        const batch = toProcess.slice(i, i + 3);
         const batchResults = await Promise.all(
           batch.map(async (item) => {
-            const { finalUrl, imageUrl, fullSnippet, exactDate } = await resolveAndScrapeImage(item.link, browser);
-            // Se encontramos uma data exata no artigo, usamos ela.
+            const { finalUrl, imageUrl, fullSnippet, exactDate } = await resolveAndScrapeImage(item.link, imageBrowser);
             return {
               ...item,
               link: finalUrl,
@@ -431,22 +382,19 @@ export async function fetchFootballNews(
             };
           })
         );
-        
-        for (const res of batchResults) {
-          if (res) finalItems.push(res);
-        }
-        
-        // Se já temos 10 com imagem, podemos parar
+        for (const res of batchResults) if (res) finalItems.push(res);
         if (finalItems.filter(f => f.imageUrl).length >= 10) break;
       }
     } finally {
-      await browser.close();
+      await imageBrowser.close();
     }
 
     console.log(`✅ Agregação concluída: ${finalItems.length} itens prontos para processamento (Com imagem: ${finalItems.filter(f => f.imageUrl).length}).`);
     return finalItems;
   } catch (error: any) {
-    console.error("Erro fatal ao buscar notícias:", error);
+    console.error("❌ Erro fatal na agregação:", error.message);
     return [];
+  } finally {
+    await scraperBrowser.close();
   }
 }

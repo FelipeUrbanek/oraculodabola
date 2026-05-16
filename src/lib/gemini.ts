@@ -345,18 +345,20 @@ export async function filterDuplicateThemes(
     ${candidates.map((c, i) => `[${i}] ${c.title}`).join("\n")}
 
     TAREFA:
-    Analise se as novas candidatas tratam do MESMO FATO ou MESMO ASSUNTO que já foi postado.
-    POLÍTICA DE TOLERÂNCIA ZERO: Se a notícia trata da mesma pessoa fazendo a mesma coisa no mesmo clube, ela DEVE ser REPROVADA. Não importa se a manchete é diferente.
+    1. Analise se as novas candidatas tratam do MESMO FATO ou MESMO ASSUNTO que já foi postado (Histórico).
+    2. Analise se entre as PRÓPRIAS candidatas existem notícias repetidas (mesmo fato com manchetes diferentes).
+    
+    POLÍTICA DE TOLERÂNCIA ZERO: Se a notícia trata da mesma pessoa fazendo a mesma coisa no mesmo clube, ela DEVE ser REPROVADA. Não importa se a manchete é diferente. Se houver duas candidatas sobre o mesmo tema, escolha apenas UMA (a melhor) e reprove a outra.
     
     EXEMPLOS DE REPROVAÇÃO OBRIGATÓRIA:
     - Já postamos: "Renato fala sobre Thiago Mendes". Nova: "Renato detona Thiago após expulsão". -> REPROVAR (Mesma pessoa, mesmo tema).
+    - Entre Candidatas: "[0] Muralha Everson salva o Galo" e "[1] Everson brilha e garante vitória". -> REPROVAR uma delas (Mesmo fato).
     - Já postamos: "Cruzeiro tem desfalques". Nova: "As baixas do Cruzeiro para o jogo". -> REPROVAR (Mesma lista de desfalques).
-    - Já postamos: "São Paulo contrata Dorival". Nova: "A era Dorival começa no Morumbi". -> REPROVAR (Mesmo fato central).
     
     CRITÉRIOS DE APROVAÇÃO:
-    - Apenas fatos genuinamente inéditos ou desdobramentos com informações novas e cruciais (ex: um valor de multa que não sabíamos antes).
+    - Apenas fatos genuinamente inéditos ou desdobramentos com informações novas e cruciais.
 
-    Retorne APENAS um JSON array com os índices das notícias APROVADAS.
+    Retorne APENAS um JSON array com os índices das notícias APROVADAS e ÚNICAS.
     Exemplo: [1, 3]
   `;
 
