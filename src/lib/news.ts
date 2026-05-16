@@ -7,33 +7,6 @@ const parser = new Parser();
 
 const TRUSTED_DOMAINS = [
   "terra.com.br",
-  "globo.com",
-  "uol.com.br",
-  "espn.com.br",
-  "gazetaesportiva.com",
-  "lance.com.br",
-  "goal.com",
-  "itatiaia.com.br",
-  "cnnbrasil.com.br",
-  "estadao.com.br",
-  "folha.uol.com.br",
-  "google.com",
-  "meutimao.com.br",
-  "netvasco.com.br",
-  "netflu.com.br",
-  "futebolinterior.com.br",
-  "diariodepernambuco.com.br",
-  "opovo.com.br",
-  "gauchazh.clicrbs.com.br",
-  "jmonline.com.br",
-  "bandab.com.br",
-  "msn.com",
-  "ogol.com.br",
-  "instagram.com",
-  "metropoles.com",
-  "portalpopline.com.br",
-  "band.uol.com.br",
-  "r7.com",
 ];
 
 export interface NewsItem {
@@ -333,6 +306,12 @@ export async function fetchTerraDirect(target: { name: string; terra: string }, 
 
 export function isTrustedSource(url: string): boolean {
   try {
+    const urlLower = url.toLowerCase();
+    // Bloqueia parceiros conhecidos mesmo que estejam dentro do domínio terra
+    if (urlLower.includes("meutimao") || urlLower.includes("nossofla") || urlLower.includes("jogada10") || urlLower.includes("gazetaesportiva")) {
+      return false;
+    }
+
     const domain = new URL(url).hostname.replace("www.", "");
     return TRUSTED_DOMAINS.some((trusted) => domain === trusted || domain.endsWith("." + trusted));
   } catch (e) {
