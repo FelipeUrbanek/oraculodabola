@@ -43,7 +43,8 @@ async function runOráculo() {
     }
   }
 
-  const newsList = await fetchFootballNews();
+  const postedIds = history.map((h) => h.id);
+  const newsList = await fetchFootballNews([], postedIds);
   const LAST_CATEGORY_FILE = path.join(
     process.cwd(),
     "src",
@@ -53,27 +54,24 @@ async function runOráculo() {
     ? fs.readFileSync(LAST_CATEGORY_FILE, "utf-8").trim()
     : "";
 
-  // 1. Filtrar por ID (link) e categorias básicas
-  const postedIds = history.map((h) => h.id);
+  // 1. Filtrar por categorias básicas e rodízio
   let candidates = newsList.filter((item: any) => {
-    const isNewLink = !postedIds.includes(item.link);
     const hasImage = !!item.imageUrl;
     const isDifferentCategory = item.category !== lastCategory;
     const forbidden = ["onde assistir", "ao vivo", "transmissão", "tempo real", "como assistir", "escalação", "palpite"];
     const isServiceNews = forbidden.some((word) => item.title.toLowerCase().includes(word));
 
-    return isNewLink && hasImage && !isServiceNews && isDifferentCategory;
+    return hasImage && !isServiceNews && isDifferentCategory;
   });
 
   // Se o rodízio falhar (ex: só tem notícia do mesmo time), aceita a melhor nova disponível
   if (candidates.length === 0) {
     console.log("🔄 Rodízio de categorias sem opções novas. Relaxando filtro para garantir postagem...");
     candidates = newsList.filter((item: any) => {
-      const isNewLink = !postedIds.includes(item.link);
       const hasImage = !!item.imageUrl;
       const forbidden = ["onde assistir", "ao vivo", "transmissão", "tempo real", "como assistir", "escalação", "palpite"];
       const isServiceNews = forbidden.some((word) => item.title.toLowerCase().includes(word));
-      return isNewLink && hasImage && !isServiceNews;
+      return hasImage && !isServiceNews;
     });
   }
 
@@ -98,12 +96,17 @@ async function runOráculo() {
     uniqueItems,
     recentHistoryTitles,
   );
-  const newItems = validIndices.map((i) => uniqueItems[i]);
+  let newItems = validIndices.map((i) => uniqueItems[i]);
+
+  if (newItems.length === 0 && uniqueItems.length > 0) {
+    console.log(
+      "♻️ Todas as novidades eram temas repetidos. Usando a melhor disponível para garantir postagem.",
+    );
+    newItems = [uniqueItems[0]];
+  }
 
   if (newItems.length === 0) {
-    console.log(
-      "♻️ Todas as novidades tratam de temas já postados recentemente.",
-    );
+    console.log("💤 Nenhuma notícia disponível após todos os filtros.");
     return;
   }
 

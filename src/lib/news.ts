@@ -387,6 +387,7 @@ export function isTrustedSource(url: string): boolean {
 
 export async function fetchFootballNews(
   trends: string[] = [],
+  excludeIds: string[] = [],
 ): Promise<NewsItem[]> {
   try {
     console.log(
@@ -427,16 +428,16 @@ export async function fetchFootballNews(
     for (const item of allItems) {
       if (!item.link || !item.title) continue;
 
-      // Validação de Fonte Confiável
-      if (!isTrustedSource(item.link)) {
-        blockedSourcesCount++;
+      // Validação de Fonte Confiável e se já foi postada
+      const itemIdentifier = item.id || item.link;
+      if (!isTrustedSource(item.link) || excludeIds.includes(itemIdentifier)) {
+        if (!isTrustedSource(item.link)) blockedSourcesCount++;
         continue;
       }
 
       // Limpeza de título (remove o nome do portal se houver)
       const cleanTitle = item.title.split(" - ")[0].trim();
 
-      // Filtro de frescor (4 horas)
       // Filtro de frescor (4 horas para temas quentes)
       const diff = (now - new Date(item.pubDate).getTime()) / (1000 * 60);
       if (diff > 1440 && item.category !== "Mercado da Bola") continue;
@@ -486,9 +487,9 @@ export async function fetchFootballNews(
     const finalItems: NewsItem[] = [];
 
     try {
-      console.log(`📸 Processando imagens para as top 15 notícias selecionadas...`);
+      console.log(`📸 Processando imagens para as top 25 notícias selecionadas...`);
       const scrapeResults = await Promise.all(
-        toProcess.slice(0, 15).map(async (item) => {
+        toProcess.slice(0, 25).map(async (item) => {
           const { finalUrl, imageUrl, fullSnippet } =
             await resolveAndScrapeImage(item.link, browser);
 
