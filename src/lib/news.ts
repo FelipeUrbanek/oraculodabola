@@ -188,17 +188,17 @@ export async function resolveAndScrapeImage(
       const paragraphsSelectors = [
         "article p", ".article__content p", ".article-content p", ".content p", ".post-content p",
         ".entry-content p", ".news-content p", ".texto-noticia p", ".m-news-body p",
-        ".main-text p", "#article-body p"
+        ".main-text p", "#article-body p", ".story-content p", ".body-copy p"
       ];
 
       let paragraphs = "";
       for (const sel of paragraphsSelectors) {
         const found = Array.from(document.querySelectorAll(sel))
-          .slice(0, 10)
+          .slice(0, 20)
           .map((p) => p.textContent.trim())
           .filter((t) => t && t.length > 20)
           .join(" ");
-        if (found.length > 50) {
+        if (found.length > 100) {
           paragraphs = found;
           break;
         }

@@ -145,8 +145,10 @@ export async function processNewsWithGemini(
     TAREFA:
     - Se a notícia atual menciona um NOVO NOME (técnico/jogador) que é diferente da Memória, MANTENHA o nome da notícia.
     - Se a notícia não dá o nome mas a Memória tem, use o da Memória.
-    - Corrija qualquer "alucinação" de nomes famosos que não estão no texto (ex: não deixe passar 'Vojvoda' se o técnico atual for outro).
-    - Certifique-se de que todos os jogadores listados na notícia como desfalques apareçam no post.
+    - Corrija qualquer "alucinação" de nomes famosos que não estão no texto.
+    - NUNCA use nomes genéricos como "[jogador]", "[atleta]" ou "joia" se o nome estiver no texto. 
+    - Se a notícia cita um jogador, técnico ou dirigente, o nome DEVE aparecer na legenda.
+    - Se você não encontrar o nome de jeito nenhum no texto e a notícia for sobre uma contratação/reforço, retorne Headline: "REJEITADO" e a justificativa no campo caption.
     
     Retorne o JSON FINAL corrigido:
   `;
@@ -270,8 +272,14 @@ export async function processNewsWithGemini(
     contentStr.includes("demissão");
 
   if (isAboutPerson && isCriticalAction) {
-    const names = processed.caption.match(/[A-Z][a-z]+ [A-Z][a-z]+/g);
-    if (!names || names.length === 0) {
+    // Regex melhorada: Aceita nomes simples (Everson), compostos (Léo Ortiz) e com partículas (da, de, do)
+    // Busca por sequências que começam com Maiúscula.
+    const names = processed.caption.match(/[A-ZÀ-Ÿ][a-zà-ÿ]+( [a-z]{1,3})?( [A-ZÀ-Ÿ][a-zà-ÿ]+)*/g);
+    
+    // Filtro para remover palavras comuns que o regex pode pegar por engano no início de frases
+    const validNames = names?.filter(n => !["Notícia", "O", "A", "Os", "As", "Neste", "Nesta", "Segundo", "Após", "Com", "Em"].includes(n)) || [];
+
+    if (validNames.length === 0) {
       throw new Error(
         `❌ Notícia retida por falta de identificação exata do profissional: ${processed.headline}`,
       );
