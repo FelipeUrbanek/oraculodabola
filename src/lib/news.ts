@@ -143,40 +143,59 @@ export async function resolveAndScrapeImage(
   const page = await browser.newPage();
 
   try {
-    await page.goto(googleUrl, { waitUntil: "networkidle2", timeout: 20000 });
+    await page.goto(googleUrl, { waitUntil: "domcontentloaded", timeout: 20000 });
+    
+    // Espera um pouco para o JS renderizar as meta tags se necessário
+    await new Promise(r => setTimeout(r, 2000));
+
     if (page.url().includes("news.google.com")) {
       await page
-        .waitForNavigation({ waitUntil: "networkidle2", timeout: 10000 })
+        .waitForNavigation({ waitUntil: "domcontentloaded", timeout: 10000 })
         .catch(() => {});
     }
     const finalUrl = page.url();
 
-    const { imageUrl, fullSnippet, exactDate } = await page.evaluate(() => {
-      const getMeta = (name: string) => 
-        document.querySelector(`meta[property="${name}"]`)?.getAttribute("content") ||
-        document.querySelector(`meta[name="${name}"]`)?.getAttribute("content");
+    const results = await page.evaluate(`(() => {
+      const getMeta = (name) => {
+        const el = document.querySelector('meta[property="' + name + '"]') ||
+                   document.querySelector('meta[name="' + name + '"]') ||
+                   document.querySelector('[itemprop="' + name + '"]');
+        return el ? el.getAttribute("content") : null;
+      };
 
-      const img = getMeta("og:image") || getMeta("twitter:image") || getMeta("image");
+      const img = getMeta("og:image") || getMeta("twitter:image") || getMeta("image") || getMeta("thumb") || getMeta("thumbnail");
       
       let articleImg = null;
       if (!img) {
-        const firstImg = document.querySelector('article img, .content img, .post-content img, .main-image img');
-        if (firstImg && firstImg instanceof HTMLImageElement && firstImg.src.startsWith('http')) {
-          articleImg = firstImg.src;
+        const imgSelectors = [
+          '.article__image img',
+          'article img',
+          '.content img',
+          '.post-content img',
+          '.main-image img',
+          '#article-body img',
+          'picture img'
+        ];
+        for (const sel of imgSelectors) {
+          const found = document.querySelector(sel);
+          if (found && found instanceof HTMLImageElement && found.src && found.src.startsWith('http') && !found.src.includes('logo')) {
+            articleImg = found.src;
+            break;
+          }
         }
       }
 
-      const selectors = [
-        "article p", ".article-content p", ".content p", ".post-content p",
+      const paragraphsSelectors = [
+        "article p", ".article__content p", ".article-content p", ".content p", ".post-content p",
         ".entry-content p", ".news-content p", ".texto-noticia p", ".m-news-body p",
         ".main-text p", "#article-body p"
       ];
 
       let paragraphs = "";
-      for (const sel of selectors) {
+      for (const sel of paragraphsSelectors) {
         const found = Array.from(document.querySelectorAll(sel))
           .slice(0, 10)
-          .map((p) => p.textContent?.trim())
+          .map((p) => p.textContent.trim())
           .filter((t) => t && t.length > 20)
           .join(" ");
         if (found.length > 50) {
@@ -191,18 +210,28 @@ export async function resolveAndScrapeImage(
         .map((m) => m.getAttribute("content"))
         .join(", ");
 
-      const exactDate = getMeta("datePublished") || getMeta("article:published_time") || null;
+      const exactDate = getMeta("datePublished") || 
+                        getMeta("article:published_time") || 
+                        getMeta("publish-date") || 
+                        getMeta("publishdate") || 
+                        null;
 
       return {
         imageUrl: img || articleImg || null,
-        fullSnippet: `${paragraphs} | Tags: ${articleTags} | Keywords: ${metaKeywords} | Desc: ${metaDesc}`.substring(0, 2000),
+        fullSnippet: (paragraphs + " | Tags: " + articleTags + " | Keywords: " + metaKeywords + " | Desc: " + metaDesc).substring(0, 2000),
         exactDate: exactDate
       };
-    });
+    })()`);
+
+    const { imageUrl, fullSnippet, exactDate } = results as any;
+    if (imageUrl || exactDate) {
+       console.log(`[SCRAPER SUCCESS] ${finalUrl} -> img: ${imageUrl ? 'SIM' : 'NÃO'}, date: ${exactDate}`);
+    }
 
     return { finalUrl, imageUrl: imageUrl || undefined, fullSnippet, exactDate: exactDate || undefined };
   } catch (error: any) {
-    return { finalUrl: googleUrl, imageUrl: undefined, fullSnippet: undefined };
+    console.error(`❌ Erro no Scrape de Imagem/Data para ${googleUrl}:`, error.message);
+    return { finalUrl: googleUrl, imageUrl: undefined, fullSnippet: undefined, exactDate: undefined };
   } finally {
     await page.close();
     if (internalBrowser) await browser.close();
