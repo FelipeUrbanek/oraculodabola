@@ -46,5 +46,13 @@
     "source_domain": "www.gazetaesportiva.com",
     "category": "Athletico-PR",
     "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-05-16T14:45:39.499Z",
+    "headline": "LUTO NO PIAUÍ: MORRE ABNOAN ARCANJO",
+    "source_url": "https://g1.globo.com/pi/piaui/noticia/2026/05/16/jogador-de-futebol-morre-acidente-piaui.ghtml",
+    "source_domain": "g1.globo.com",
+    "category": "Athletico-PR",
+    "status": "SUCCESS"
   }
 ]
