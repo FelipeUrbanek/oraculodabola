@@ -22,8 +22,8 @@
     },
     "São Paulo": {
       "coach": "Dorival Jr",
-      "league": "Não informada",
-      "recent_changes": "Contratação confirmada: Dorival Jr foi anunciado como o novo treinador do clube."
+      "league": "Brasileirão",
+      "recent_changes": "Tem confronto marcado contra o Fluminense em partida válida pelo Brasileirão. Anteriormente, teve a contratação confirmada de Dorival Jr como o novo treinador do clube."
     },
     "Corinthians": {
       "coach": "Vago",
@@ -131,9 +131,9 @@
       "recent_changes": "Avançou para as oitavas de final da Copa do Brasil, lucrando R$ 5 milhões em premiações."
     },
     "Fluminense": {
-      "coach": "Não mencionado",
-      "league": "Copa do Brasil",
-      "recent_changes": "Avançou para as oitavas de final da Copa do Brasil, lucrando R$ 5 milhões em premiações."
+      "coach": "Zubeldía",
+      "league": "Brasileirão / Libertadores / Copa do Brasil",
+      "recent_changes": "Apresentou o atacante Hulk, de 39 anos, como novo reforço para a sequência da temporada. O jogador já iniciou contato com o elenco e com o técnico Zubeldía. O time segue confiante na classificação na Libertadores e também avançou para as oitavas de final da Copa do Brasil, lucrando R$ 5 milhões em premiações."
     },
     "Internacional": {
       "coach": "Não mencionado",
@@ -201,5 +201,5 @@
       "recent_changes": "Tem um confronto marcado contra o Athletico-PR."
     }
   },
-  "last_updated": "2026-05-16T21:54:43.917Z"
+  "last_updated": "2026-05-16T22:13:18.834Z"
 }

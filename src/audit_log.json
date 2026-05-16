@@ -127,5 +127,13 @@
     "source_domain": "www.terra.com.br",
     "category": "Grêmio",
     "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-05-16T22:13:38.874Z",
+    "headline": "HULK É APRESENTADO NO FLUMINENSE",
+    "source_url": "https://www.terra.com.br/esportes/fluminense/hulk-diz-que-ja-se-sente-em-casa-no-fluminense-e-promete-vontade-e-determinacao,c9568288ac80b6c2ea3cb4c8286ebef57goaejbw.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Fluminense",
+    "status": "SUCCESS"
   }
 ]
