@@ -2,13 +2,13 @@
   "teams": {
     "Fortaleza": {
       "coach": "Thiago Carpini",
-      "league": "Campeonato Brasileiro / Copa do Brasil",
-      "recent_changes": "Avançou para as oitavas de final da Copa do Brasil, acumulando R$ 9,59 milhões em premiações por participar da competição desde a 2ª fase. O próximo compromisso será o clássico contra o Ceará, no domingo."
+      "league": "Campeonato Brasileiro / Copa do Brasil / Campeonato Brasileiro Sub-20",
+      "recent_changes": "Avançou para as oitavas de final da Copa do Brasil e terá um clássico contra o Ceará no domingo. Pelo Campeonato Brasileiro Sub-20, sofreu uma derrota de virada para o Santos por 2 a 1 (gol de Peterson), permanecendo em 13º lugar com 13 pontos, e enfrentará o Bahia fora de casa, no CT Evaristo de Macedo, na quarta-feira (20), às 15h."
     },
     "Vasco": {
       "coach": "Renato",
-      "league": "Copa do Brasil",
-      "recent_changes": "Avançou para as oitavas de final da Copa do Brasil, garantindo R$ 5 milhões em premiações. O técnico Renato repreendeu publicamente o jogador Thiago Mendes após sua expulsão."
+      "league": "Copa do Brasil / Campeonato Brasileiro Sub-20",
+      "recent_changes": "Avançou para as oitavas de final da Copa do Brasil, garantindo R$ 5 milhões. O técnico Renato repreendeu Thiago Mendes após sua expulsão. Atualmente, a equipe lidera o Campeonato Brasileiro Sub-20 ao lado do Palmeiras."
     },
     "Botafogo": {
       "coach": "Não mencionado",
@@ -17,8 +17,8 @@
     },
     "Grêmio": {
       "coach": "Luis Castro",
-      "league": "Campeonato Brasileiro / Copa do Brasil",
-      "recent_changes": "O vice-presidente de futebol, Antônio Dutra Júnior, admitiu carências no elenco e reforçou a confiança no técnico Luís Castro em meio à pressão por resultados no Brasileirão. O clube busca a contratação de um meia articulador com características semelhantes às de Arrascaeta, mas enfrenta dificuldades financeiras e forte concorrência no mercado nacional."
+      "league": "Campeonato Brasileiro / Copa do Brasil / Brasileirão Feminino",
+      "recent_changes": "O vice-presidente de futebol, Antônio Dutra Júnior, admitiu carências no elenco e reforçou a confiança no técnico Luís Castro em meio à pressão por resultados no Brasileirão. O clube busca a contratação de um meia articulador com características semelhantes às de Arrascaeta, mas enfrenta dificuldades financeiras e forte concorrência no mercado nacional. Pelo Brasileirão Feminino, conquistou uma vitória por 3 a 0 sobre o Red Bull Bragantino na última rodada."
     },
     "São Paulo": {
       "coach": "Dorival Jr",
@@ -132,8 +132,8 @@
     },
     "Fluminense": {
       "coach": "Zubeldía",
-      "league": "Brasileirão / Libertadores / Copa do Brasil",
-      "recent_changes": "Apresentou o atacante Hulk, de 39 anos, como novo reforço para a sequência da temporada. O jogador já iniciou contato com o elenco e com o técnico Zubeldía. O time segue confiante na classificação na Libertadores e também avançou para as oitavas de final da Copa do Brasil, lucrando R$ 5 milhões em premiações."
+      "league": "Brasileirão / Libertadores / Copa do Brasil / Brasileirão Feminino",
+      "recent_changes": "Apresentou o atacante Hulk, de 39 anos, como novo reforço para a sequência da temporada. O jogador já iniciou contato com o elenco e com o técnico Zubeldía. O time segue confiante na classificação na Libertadores e também avançou para as oitavas de final da Copa do Brasil, lucrando R$ 5 milhões em premiações. Pelo Brasileirão Feminino, sofreu uma derrota em casa (Estádio Luso Brasileiro) por 2 a 0 para o Santos."
     },
     "Internacional": {
       "coach": "Não mencionado",
@@ -147,8 +147,8 @@
     },
     "Palmeiras": {
       "coach": "Não mencionado",
-      "league": "Copa do Brasil",
-      "recent_changes": "Avançou para as oitavas de final da Copa do Brasil, lucrando R$ 5 milhões em premiações. Tem um confronto marcado contra o Cruzeiro às 19h30."
+      "league": "Copa do Brasil / Campeonato Brasileiro Sub-20",
+      "recent_changes": "Avançou para as oitavas de final da Copa do Brasil e tem um confronto marcado contra o Cruzeiro. Atualmente, a equipe lidera o Campeonato Brasileiro Sub-20 ao lado do Vasco."
     },
     "Remo": {
       "coach": "Não mencionado",
@@ -157,8 +157,8 @@
     },
     "Santos": {
       "coach": "Não mencionado",
-      "league": "Copa do Brasil",
-      "recent_changes": "Avançou para as oitavas de final da Copa do Brasil, lucrando R$ 5 milhões em premiações."
+      "league": "Copa do Brasil / Campeonato Brasileiro Sub-20 / Brasileirão / Brasileirão Feminino",
+      "recent_changes": "Avançou para as oitavas de final da Copa do Brasil, lucrando R$ 5 milhões em premiações. Pelo Campeonato Brasileiro Sub-20, venceu o Fortaleza de virada por 2 a 1 com gols de Mateus Xavier e Vinicius Fabri, assumindo a 3ª posição na tabela com 23 pontos, a cinco pontos dos líderes Vasco e Palmeiras. Terá pela frente o Flamengo na próxima quinta-feira (21), às 21h30. Divulgou a lista de relacionados, com desfalques, para o confronto diante do Coritiba, válido pela 16ª rodada do Brasileirão. Pelo Brasileirão Feminino, venceu o Fluminense por 2 a 0 no Rio de Janeiro, assumindo a 11ª posição, e enfrentará o Red Bull Bragantino na Vila Belmiro."
     },
     "Vitória": {
       "coach": "Não mencionado",
@@ -187,19 +187,24 @@
     },
     "Bahia": {
       "coach": "Não mencionado",
-      "league": "Brasileirão",
-      "recent_changes": "Venceu o Red Bull Bragantino em casa e entrou no G4 do Brasileirão."
+      "league": "Brasileirão / Campeonato Brasileiro Sub-20",
+      "recent_changes": "Venceu o Red Bull Bragantino em casa e entrou no G4 do Brasileirão. Pelo Campeonato Brasileiro Sub-20, receberá o Fortaleza pela 13ª rodada no CT Evaristo de Macedo, na quarta-feira (20), às 15h."
     },
     "Red Bull Bragantino": {
-      "coach": "Não mencionado",
-      "league": "Brasileirão",
-      "recent_changes": "Foi derrotado pelo Bahia fora de casa em partida válida pelo Brasileirão."
+      "coach": "Humberto Simão",
+      "league": "Brasileirão / Brasileirão Feminino",
+      "recent_changes": "Foi derrotado pelo Bahia fora de casa em partida válida pelo Brasileirão. Pelo Brasileirão Feminino, perdeu por 3 a 0 para o Grêmio na última rodada, permanecendo na 10ª colocação com 14 pontos. O próximo desafio será contra o Santos, na Vila Belmiro."
     },
     "Flamengo": {
       "coach": "Não mencionado",
-      "league": "Não mencionada",
-      "recent_changes": "Tem um confronto marcado contra o Athletico-PR."
+      "league": "Campeonato Brasileiro Sub-20",
+      "recent_changes": "Tem um confronto marcado contra o Athletico-PR. Pelo Campeonato Brasileiro Sub-20, receberá o Santos no Estádio Luso Brasileiro na quinta-feira (21), às 21h30."
+    },
+    "Coritiba": {
+      "coach": "Não mencionado",
+      "league": "Brasileirão",
+      "recent_changes": "Enfrentará o Santos em partida válida pela 16ª rodada do Campeonato Brasileiro."
     }
   },
-  "last_updated": "2026-05-16T22:27:35.608Z"
+  "last_updated": "2026-05-16T23:00:07.820Z"
 }

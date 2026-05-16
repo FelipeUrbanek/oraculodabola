@@ -113,20 +113,51 @@ export async function generateImages(
     await page.setContent(feedHtml, { waitUntil: "load", timeout: 60000 });
     await page.evaluateHandle("document.fonts.ready");
     
-    // Proteção contra estouro de texto (Auto-resize headline)
-    await page.evaluate(() => {
+    // Proteção contra estouro de texto (Auto-resize balanceado v2)
+    await page.evaluate(`(() => {
       const headline = document.querySelector('h1');
       const container = headline?.parentElement;
+      const summary = container?.querySelector('p');
+      
       if (headline && container) {
-        let fontSize = parseFloat(window.getComputedStyle(headline).fontSize);
-        // Se o headline sozinho estoura OU o container de texto estoura a altura total
-        while ((headline.scrollHeight > headline.offsetHeight || container.scrollHeight > container.offsetHeight) && fontSize > 35) {
-          fontSize -= 2;
-          headline.style.fontSize = fontSize + 'px';
-          headline.style.lineHeight = '0.9';
+        let hFontSize = parseFloat(window.getComputedStyle(headline).fontSize);
+        let sFontSize = summary ? parseFloat(window.getComputedStyle(summary).fontSize) : 0;
+        
+        const hasOverflow = () => {
+          return container.scrollHeight > container.offsetHeight || 
+                 headline.scrollHeight > headline.offsetHeight;
+        };
+
+        let attempts = 0;
+        while (hasOverflow() && attempts < 40) {
+          attempts++;
+          // Prioriza manter o título GIGANTE (acima de 110px)
+          if (hFontSize > 120) {
+            hFontSize -= 2;
+            headline.style.fontSize = hFontSize + 'px';
+          } 
+          // Tenta diminuir o resumo primeiro se o título já estiver num patamar aceitável
+          else if (summary && sFontSize > 30) {
+            sFontSize -= 1;
+            summary.style.fontSize = sFontSize + 'px';
+          }
+          // Diminui o título até o novo mínimo de 100px (impacto total)
+          else if (hFontSize > 100) {
+            hFontSize -= 2;
+            headline.style.fontSize = hFontSize + 'px';
+          }
+          // Último recurso: diminui o resumo até o mínimo absoluto
+          else if (summary && sFontSize > 22) {
+            sFontSize -= 1;
+            summary.style.fontSize = sFontSize + 'px';
+          }
+          else {
+            break;
+          }
         }
+        headline.style.lineHeight = '0.85';
       }
-    });
+    })()`);
 
     const now = new Date();
     const dateStr = now.toISOString().split("T")[0];
@@ -169,7 +200,7 @@ export async function generateImages(
       await page.evaluateHandle("document.fonts.ready");
       
       // Proteção contra estouro de texto em Stories
-      await page.evaluate(() => {
+      await page.evaluate(`(() => {
         const headline = document.querySelector('h1');
         if (headline) {
           let fontSize = parseFloat(window.getComputedStyle(headline).fontSize);
@@ -178,7 +209,7 @@ export async function generateImages(
             headline.style.fontSize = fontSize + 'px';
           }
         }
-      });
+      })()`);
       storyPath = path.join(outputDir, `${timeStr}_story.jpg`);
       await page.screenshot({ path: storyPath, type: "jpeg", quality: 100 });
     }
