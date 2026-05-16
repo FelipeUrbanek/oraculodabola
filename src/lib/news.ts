@@ -223,7 +223,7 @@ async function fetchRSSHubTerra(target: {
   name: string;
   terra: string;
 }): Promise<NewsItem[]> {
-  const rsshubBase = "http://localhost:1200/rsshub/transform/html/";
+  const rsshubBase = "http://localhost:1200/transform/html/";
   const rules = "item=.card-news&itemTitle=.card-news__text--title&itemLink=a";
   const fullUrl = `${rsshubBase}${encodeURIComponent(target.terra)}/${encodeURIComponent(rules)}`;
 
@@ -239,16 +239,16 @@ async function fetchRSSHubTerra(target: {
     }));
   } catch (e) {
     console.log(
-      `⚠️ Falha ao buscar Terra para ${target.name}: ${e instanceof Error ? e.message : String(e)}`,
+      `⚠️ RSSHub falhou para ${target.name}. Tentando Scraper Direto...`,
     );
-    return [];
+    return fetchTerraDirect(target);
   }
 }
 
 /**
  * Scraper direto do Terra usando Puppeteer (Anti-Bloqueio 503)
  */
-async function fetchTerraDirect(target: any): Promise<NewsItem[]> {
+export async function fetchTerraDirect(target: any): Promise<NewsItem[]> {
   const browser = await puppeteer.launch({
     headless: true,
     args: ["--no-sandbox"],

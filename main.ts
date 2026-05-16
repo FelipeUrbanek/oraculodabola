@@ -20,7 +20,7 @@ async function runOráculo() {
   console.log("🚀 Iniciando Validação de Ambiente...");
   try {
     const { execSync } = await import("child_process");
-    execSync("pnpx tsx validate-setup.ts", { stdio: "inherit" });
+    execSync("pnpx tsx validate-setup.ts", { stdio: "inherit", cwd: process.cwd() });
   } catch (e) {
     console.error("🛑 Abortando: Ambiente inválido ou instável.");
     process.exit(1);

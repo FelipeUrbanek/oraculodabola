@@ -7,28 +7,29 @@ console.log("🚀 Iniciando Validação de Ambiente (Senior Mode)...");
 
 const requiredEnvVars = [
   'GEMINI_API_KEY',
-  'INSTAGRAM_USERNAME',
-  'INSTAGRAM_PASSWORD'
+  'FB_ACCESS_TOKEN',
+  'IG_USER_ID',
+  'FB_APP_ID',
+  'FB_APP_SECRET'
 ];
 
 let errors = 0;
 
-// 1. Verificar .env.local
-console.log("\n📁 Verificando .env.local...");
+// 1. Verificar Variáveis de Ambiente
+console.log("\n📁 Verificando Configurações...");
+// Tenta carregar o .env.local se ele existir, mas não obriga
 if (fs.existsSync('.env.local')) {
-  const envConfig = dotenv.parse(fs.readFileSync('.env.local'));
-  requiredEnvVars.forEach(v => {
-    if (!envConfig[v]) {
-      console.error(`❌ Variável ausente: ${v}`);
-      errors++;
-    } else {
-      console.log(`✅ ${v} presente.`);
-    }
-  });
-} else {
-  console.error("❌ Arquivo .env.local não encontrado!");
-  errors++;
+  dotenv.config({ path: '.env.local' });
 }
+
+requiredEnvVars.forEach(v => {
+  if (!process.env[v]) {
+    console.error(`❌ Variável ausente: ${v}`);
+    errors++;
+  } else {
+    console.log(`✅ ${v} presente.`);
+  }
+});
 
 // 2. Verificar Git Status
 console.log("\n🌿 Verificando Estado do Git...");
