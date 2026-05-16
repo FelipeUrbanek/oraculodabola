@@ -38,5 +38,13 @@
     "source_domain": "www.futebolinterior.com.br",
     "category": "Bragantino",
     "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-05-16T14:23:21.216Z",
+    "headline": "FIM DE CICLO: LEWANDOWSKI SAI DO BARÇA",
+    "source_url": "https://www.gazetaesportiva.com/times/barcelona/robert-lewandowski-saida-barcelona/",
+    "source_domain": "www.gazetaesportiva.com",
+    "category": "Athletico-PR",
+    "status": "SUCCESS"
   }
 ]
