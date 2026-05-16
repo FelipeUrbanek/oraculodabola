@@ -155,7 +155,7 @@ export async function resolveAndScrapeImage(
     const finalUrl = page.url();
     // console.log(`🌐 Scrapeando: ${finalUrl}`);
 
-    const { imageUrl, fullSnippet } = await page.evaluate(() => {
+    const { imageUrl, fullSnippet, exactDate } = await page.evaluate(() => {
       const getMeta = (name: string) => 
         document.querySelector(`meta[property="${name}"]`)?.getAttribute("content") ||
         document.querySelector(`meta[name="${name}"]`)?.getAttribute("content");
@@ -221,7 +221,7 @@ export async function resolveAndScrapeImage(
 /**
  * Busca notícias via RSSHub (Terra)
  */
-async function fetchRSSHubTerra(target: {
+export async function fetchRSSHubTerra(target: {
   name: string;
   terra: string;
 }): Promise<NewsItem[]> {
