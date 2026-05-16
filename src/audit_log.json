@@ -102,5 +102,22 @@
     "source_domain": "www.terra.com.br",
     "category": "Ceará",
     "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-05-16T21:53:51.972Z",
+    "headline": "Clube francês entra na disputa por joia do Grêmio e prepara proposta milionária",
+    "source_url": "https://www.terra.com.br/esportes/gremio/clube-frances-entra-na-disputa-por-joia-do-gremio-e-prepara-proposta-milionaria,aabc8a594e6abaa9fe189240ea3fb6c32hyqp736.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Grêmio",
+    "status": "REJECTED",
+    "reason": "❌ Notícia muito vaga: Sem nome de time ou de profissional no caption."
+  },
+  {
+    "timestamp": "2026-05-16T21:55:08.050Z",
+    "headline": "GUERRA DE GIGANTES: ATHLETICO X FLAMENGO",
+    "source_url": "https://www.terra.com.br/esportes/flamengo/athletico-x-flamengo-onde-assistir-escalacoes-e-arbitragem,a34a85cb6d6939247526a1cadbcdd054yv80ofaa.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Flamengo",
+    "status": "SUCCESS"
   }
 ]

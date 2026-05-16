@@ -18,7 +18,7 @@
     "Grêmio": {
       "coach": "Luis Castro",
       "league": "Campeonato Brasileiro / Copa do Brasil",
-      "recent_changes": "Avançou para as oitavas de final da Copa do Brasil com grande atuação de Braithwaite contra o Confiança, garantindo R$ 5 milhões em premiações. Braithwaite retornou de lesão oferecendo novas soluções ao técnico Luis Castro."
+      "recent_changes": "Um clube francês entrou na disputa e prepara uma proposta milionária por uma joia da equipe. Além disso, o time avançou para as oitavas de final da Copa do Brasil com grande atuação de Braithwaite contra o Confiança, garantindo R$ 5 milhões em premiações. Braithwaite retornou de lesão oferecendo novas soluções ao técnico Luis Castro."
     },
     "São Paulo": {
       "coach": "Dorival Jr",
@@ -118,7 +118,7 @@
     "Athletico-PR": {
       "coach": "Não mencionado",
       "league": "Copa do Brasil",
-      "recent_changes": "Avançou para as oitavas de final da Copa do Brasil, lucrando R$ 5 milhões em premiações."
+      "recent_changes": "Avançou para as oitavas de final da Copa do Brasil, lucrando R$ 5 milhões em premiações. Tem um confronto marcado contra o Flamengo."
     },
     "Chapecoense": {
       "coach": "Não mencionado",
@@ -194,7 +194,12 @@
       "coach": "Não mencionado",
       "league": "Brasileirão",
       "recent_changes": "Foi derrotado pelo Bahia fora de casa em partida válida pelo Brasileirão."
+    },
+    "Flamengo": {
+      "coach": "Não mencionado",
+      "league": "Não mencionada",
+      "recent_changes": "Tem um confronto marcado contra o Athletico-PR."
     }
   },
-  "last_updated": "2026-05-16T21:44:04.786Z"
+  "last_updated": "2026-05-16T21:54:43.917Z"
 }
