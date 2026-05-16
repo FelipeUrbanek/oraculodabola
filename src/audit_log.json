@@ -135,5 +135,13 @@
     "source_domain": "www.terra.com.br",
     "category": "Fluminense",
     "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-05-16T22:28:13.702Z",
+    "headline": "GRÊMIO RESPALDA CASTRO E BUSCA MEIA",
+    "source_url": "https://www.terra.com.br/esportes/gremio/vice-presidente-do-gremio-expoe-carencias-banca-luis-castro-e-mira-reforcos,8bb99e844a1c2338de4ff2d534fabefauof5gg5g.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Grêmio",
+    "status": "SUCCESS"
   }
 ]
