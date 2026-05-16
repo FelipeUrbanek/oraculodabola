@@ -100,7 +100,7 @@ export async function generateImages(
         <body>
           <div style="width:1080px;height:1350px;" class="relative overflow-hidden bg-black">
             <div class="absolute inset-0 background-img"></div>
-            <div class="relative z-10 w-full h-full">
+            <div class="relative z-10 w-full h-full flex flex-col">
               ${feedContentHtml}
               ${handleTag}
             </div>
@@ -112,6 +112,21 @@ export async function generateImages(
     await page.setViewport({ width: 1080, height: 1350 });
     await page.setContent(feedHtml, { waitUntil: "load", timeout: 60000 });
     await page.evaluateHandle("document.fonts.ready");
+    
+    // Proteção contra estouro de texto (Auto-resize headline)
+    await page.evaluate(() => {
+      const headline = document.querySelector('h1');
+      const container = headline?.parentElement;
+      if (headline && container) {
+        let fontSize = parseFloat(window.getComputedStyle(headline).fontSize);
+        // Se o headline sozinho estoura OU o container de texto estoura a altura total
+        while ((headline.scrollHeight > headline.offsetHeight || container.scrollHeight > container.offsetHeight) && fontSize > 35) {
+          fontSize -= 2;
+          headline.style.fontSize = fontSize + 'px';
+          headline.style.lineHeight = '0.9';
+        }
+      }
+    });
 
     const now = new Date();
     const dateStr = now.toISOString().split("T")[0];
@@ -152,6 +167,18 @@ export async function generateImages(
         </html>`;
       await page.setContent(storyHtml, { waitUntil: "load", timeout: 60000 });
       await page.evaluateHandle("document.fonts.ready");
+      
+      // Proteção contra estouro de texto em Stories
+      await page.evaluate(() => {
+        const headline = document.querySelector('h1');
+        if (headline) {
+          let fontSize = parseFloat(window.getComputedStyle(headline).fontSize);
+          while (headline.scrollHeight > headline.offsetHeight && fontSize > 40) {
+            fontSize -= 5;
+            headline.style.fontSize = fontSize + 'px';
+          }
+        }
+      });
       storyPath = path.join(outputDir, `${timeStr}_story.jpg`);
       await page.screenshot({ path: storyPath, type: "jpeg", quality: 100 });
     }
