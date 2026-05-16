@@ -184,7 +184,17 @@
       "coach": "Não mencionado",
       "league": "Campeonato Alemão / Taça da Alemanha",
       "recent_changes": "Na temporada 23/24, o clube conquistou o Campeonato Alemão e a Taça da Alemanha sob o comando de Xabi Alonso, alcançando uma marca de 51 jogos invictos."
+    },
+    "Bahia": {
+      "coach": "Não mencionado",
+      "league": "Brasileirão",
+      "recent_changes": "Venceu o Red Bull Bragantino em casa e entrou no G4 do Brasileirão."
+    },
+    "Red Bull Bragantino": {
+      "coach": "Não mencionado",
+      "league": "Brasileirão",
+      "recent_changes": "Foi derrotado pelo Bahia fora de casa em partida válida pelo Brasileirão."
     }
   },
-  "last_updated": "2026-05-16T18:44:47.276Z"
+  "last_updated": "2026-05-16T21:30:51.573Z"
 }

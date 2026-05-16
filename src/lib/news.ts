@@ -30,6 +30,10 @@ const TRUSTED_DOMAINS = [
   "msn.com",
   "ogol.com.br",
   "instagram.com",
+  "metropoles.com",
+  "portalpopline.com.br",
+  "band.uol.com.br",
+  "r7.com",
 ];
 
 export interface NewsItem {
@@ -149,25 +153,28 @@ export async function resolveAndScrapeImage(
         .catch(() => {});
     }
     const finalUrl = page.url();
+    // console.log(`🌐 Scrapeando: ${finalUrl}`);
 
     const { imageUrl, fullSnippet } = await page.evaluate(() => {
-      const og = document
-        .querySelector('meta[property="og:image"]')
-        ?.getAttribute("content");
-      const twitter = document
-        .querySelector('meta[name="twitter:image"]')
-        ?.getAttribute("content");
+      const getMeta = (name: string) => 
+        document.querySelector(`meta[property="${name}"]`)?.getAttribute("content") ||
+        document.querySelector(`meta[name="${name}"]`)?.getAttribute("content");
 
-      // Tenta pegar o texto principal da notícia em vários seletores comuns
+      const img = getMeta("og:image") || getMeta("twitter:image") || getMeta("image");
+      
+      // Se não tem meta image, tenta a primeira imagem grande do artigo
+      let articleImg = null;
+      if (!img) {
+        const firstImg = document.querySelector('article img, .content img, .post-content img, .main-image img');
+        if (firstImg && firstImg instanceof HTMLImageElement && firstImg.src.startsWith('http')) {
+          articleImg = firstImg.src;
+        }
+      }
+
       const selectors = [
-        "article p",
-        ".article-content p",
-        ".content p",
-        ".post-content p",
-        ".entry-content p",
-        ".news-content p",
-        ".texto-noticia p",
-        ".m-news-body p",
+        "article p", ".article-content p", ".content p", ".post-content p",
+        ".entry-content p", ".news-content p", ".texto-noticia p", ".m-news-body p",
+        ".main-text p", "#article-body p"
       ];
 
       let paragraphs = "";
@@ -183,29 +190,21 @@ export async function resolveAndScrapeImage(
         }
       }
 
-      const metaDesc =
-        document
-          .querySelector('meta[name="description"]')
-          ?.getAttribute("content") || "";
-      const metaKeywords =
-        document
-          .querySelector('meta[name="keywords"]')
-          ?.getAttribute("content") || "";
-      const articleTags = Array.from(
-        document.querySelectorAll('meta[property="article:tag"]'),
-      )
+      const metaDesc = getMeta("description") || "";
+      const metaKeywords = getMeta("keywords") || "";
+      const articleTags = Array.from(document.querySelectorAll('meta[property="article:tag"]'))
         .map((m) => m.getAttribute("content"))
         .join(", ");
 
       return {
-        imageUrl: og || twitter || null,
-        fullSnippet:
-          `${paragraphs} | Tags: ${articleTags} | Keywords: ${metaKeywords} | Desc: ${metaDesc}`.substring(
-            0,
-            2000,
-          ),
+        imageUrl: img || articleImg || null,
+        fullSnippet: `${paragraphs} | Tags: ${articleTags} | Keywords: ${metaKeywords} | Desc: ${metaDesc}`.substring(0, 2000),
       };
     });
+
+    if (!imageUrl) {
+      // console.log(`⚠️ Nenhuma imagem encontrada para ${finalUrl}`);
+    }
 
     return { finalUrl, imageUrl: imageUrl || undefined, fullSnippet };
   } catch (error: any) {
@@ -224,19 +223,30 @@ async function fetchRSSHubTerra(target: {
   terra: string;
 }): Promise<NewsItem[]> {
   const rsshubBase = "http://localhost:1200/rsshub/transform/html/";
-  const rules = "item=.card-news&itemTitle=.card-news__text--title&itemLink=a";
+  const rules = "item=.card-news&itemTitle=.card-news__text--title&itemLink=a&itemImage=img";
   const fullUrl = `${rsshubBase}${encodeURIComponent(target.terra)}/${encodeURIComponent(rules)}`;
 
   try {
     const feed = await parser.parseURL(fullUrl);
-    return feed.items.map((item) => ({
-      title: item.title || "",
-      link: item.link || "",
-      pubDate: item.pubDate || new Date().toISOString(),
-      contentSnippet: item.contentSnippet || "",
-      id: item.guid || item.link || "",
-      category: target.name,
-    }));
+    return feed.items.map((item, index) => {
+      // O usuário confirmou que as notícias mais acima são as mais novas.
+      // Se a data for inválida ou ausente, usamos o timestamp atual menos alguns segundos para manter a ordem.
+      let pubDate = item.pubDate;
+      if (!pubDate || pubDate === "Invalid Date" || isNaN(Date.parse(pubDate))) {
+        const date = new Date();
+        date.setSeconds(date.getSeconds() - index); // Mantém a ordem decrescente
+        pubDate = date.toISOString();
+      }
+
+      return {
+        title: item.title || "",
+        link: item.link || "",
+        pubDate: pubDate,
+        contentSnippet: item.contentSnippet || "",
+        id: item.guid || item.link || "",
+        category: target.name,
+      };
+    });
   } catch (e) {
     console.log(
       `⚠️ RSSHub falhou para ${target.name}. Tentando Scraper Direto...`,
@@ -269,18 +279,24 @@ export async function fetchTerraDirect(target: any): Promise<NewsItem[]> {
         ".card-news, .card-news-horizontal",
       );
 
-      cards.forEach((card) => {
+      cards.forEach((card, index) => {
         const titleEl = card.querySelector(
           ".card-news__text--title, .card-news-horizontal__text--title",
         );
         const linkEl = card.querySelector("a");
+        const imgEl = card.querySelector("img");
+        
         if (titleEl && linkEl) {
+          const date = new Date();
+          date.setSeconds(date.getSeconds() - index);
+
           items.push({
             title: titleEl.textContent?.trim() || "",
             link: linkEl.href,
-            pubDate: new Date().toISOString(),
+            pubDate: date.toISOString(),
             contentSnippet: "",
             id: linkEl.href,
+            imageUrl: imgEl?.src || imgEl?.getAttribute('data-src') || undefined,
             category: category,
           });
         }
@@ -292,84 +308,6 @@ export async function fetchTerraDirect(target: any): Promise<NewsItem[]> {
     return news;
   } catch (e) {
     await browser.close();
-    return [];
-  }
-}
-
-/**
- * Busca notícias via Google News
- */
-export async function fetchGoogleNews(
-  queryStr: string,
-  category: string,
-): Promise<NewsItem[]> {
-  try {
-    // Janela de 24h para garantir cobertura total do dia em todos os temas
-    const query = encodeURIComponent(
-      `${queryStr} futebol 2026 -site:ge.globo.com when:24h`,
-    );
-    const searchUrl = `https://news.google.com/rss/search?q=${query}&hl=pt-BR&gl=BR&ceid=BR:pt-150`;
-    const feed = await parser.parseURL(searchUrl);
-
-    // Filtro rigoroso para garantir que o título tenha palavras relacionadas a futebol
-    const footballKeywords = [
-      "futebol",
-      "gol",
-      "clube",
-      "treinador",
-      "técnico",
-      "jogador",
-      "atleta",
-      "atacante",
-      "zagueiro",
-      "goleiro",
-      "meia",
-      "volante",
-      "lateral",
-      "partida",
-      "jogo",
-      "campeonato",
-      "contratação",
-      "reforço",
-      "elenco",
-      "campo",
-      "estádio",
-      "torcida",
-      "venda",
-      "compra",
-      "mercado",
-      "bola",
-      "copa",
-      "seleção",
-      "saída",
-      "chegada",
-      "contrato",
-      "renovação",
-      "rescisão",
-      "brasileirão",
-      "série a",
-      "libertadores",
-      "copa do brasil",
-    ];
-
-    return feed.items
-      .filter((item) => {
-        const title = (item.title || "").toLowerCase();
-        // Bloqueia divisões inferiores e categorias irrelevantes
-        const lowerDivs = ["série b", "série c", "série d", "quarta divisão", "sub-17", "sub-15"];
-        if (lowerDivs.some(div => title.includes(div))) return false;
-        
-        return footballKeywords.some((kw) => title.includes(kw));
-      })
-      .map((item) => ({
-        title: item.title || "",
-        link: item.link || "",
-        pubDate: item.pubDate || new Date().toISOString(),
-        contentSnippet: item.contentSnippet || "",
-        id: item.guid || item.link || "",
-        category: category,
-      }));
-  } catch (e) {
     return [];
   }
 }
@@ -391,32 +329,15 @@ export async function fetchFootballNews(
 ): Promise<NewsItem[]> {
   try {
     console.log(
-      `\n🚀 Iniciando Agregador de Notícias (RSSHub + Google News)...`,
+      `\n🚀 Iniciando Agregador de Notícias (RSSHub + Terra Scraper)...`,
     );
 
-    // Busca em paralelo, mas separando por tipo para priorizar o Terra
-    const terraTasks = FOOTBALL_TARGETS.map((target) =>
-      fetchRSSHubTerra(target),
-    );
-    const googleTasks = FOOTBALL_TARGETS.map((target) =>
-      fetchGoogleNews(target.name, target.name),
-    );
-
-    // Inclui tendências específicas se fornecidas
-    const trendsTasks = trends.map((t) => fetchGoogleNews(t, "TREND"));
-
-    const [terraResults, googleResults, trendsResults] = await Promise.all([
-      Promise.all(terraTasks),
-      Promise.all(googleTasks),
-      Promise.all(trendsTasks),
-    ]);
-
-    // PRIORIDADE: RSSHub (Terra) é a fonte principal.
-    // Só usamos Google News/Trends se o Terra não retornar nada ou para complementar temas muito específicos.
-    const terraFlat = terraResults.flat();
-    const allItems = terraFlat.length > 0 ? terraFlat : [...googleResults.flat(), ...trendsResults.flat()];
+    // EXCLUSIVO RSSHUB/TERRA: Conforme solicitado pelo usuário.
+    const terraTasks = FOOTBALL_TARGETS.map((target) => fetchRSSHubTerra(target));
+    const terraResults = await Promise.all(terraTasks);
+    const allItems = terraResults.flat();
     
-    console.log(`📊 Total bruto de itens encontrados: ${allItems.length} (Fonte Principal: ${terraFlat.length > 0 ? 'RSSHub/Terra' : 'Google/Trends'})`);
+    console.log(`📊 Total bruto de itens encontrados: ${allItems.length} (Fonte: RSSHub/Terra)`);
 
     const uniqueNews: NewsItem[] = [];
     const seenLinks = new Set();
@@ -432,13 +353,14 @@ export async function fetchFootballNews(
       const itemIdentifier = item.id || item.link;
       if (!isTrustedSource(item.link) || excludeIds.includes(itemIdentifier)) {
         if (!isTrustedSource(item.link)) blockedSourcesCount++;
+        // console.log(`⏩ Ignorando ${item.title} (Já postado ou fonte não confiável)`);
         continue;
       }
 
       // Limpeza de título (remove o nome do portal se houver)
       const cleanTitle = item.title.split(" - ")[0].trim();
 
-      // Filtro de frescor rigoroso: 4 horas para geral, 24h para Mercado da Bola
+      // Filtro de frescor: 4 horas para geral (restaurado), 24h para Mercado da Bola
       const diff = (now - new Date(item.pubDate).getTime()) / (1000 * 60);
       const limitMinutes = item.category === "Mercado da Bola" ? 1440 : 240; // 24h vs 4h
       if (diff > limitMinutes) continue;
@@ -488,29 +410,37 @@ export async function fetchFootballNews(
     const finalItems: NewsItem[] = [];
 
     try {
-      console.log(`📸 Processando imagens para as top 25 notícias selecionadas...`);
-      const scrapeResults = await Promise.all(
-        toProcess.slice(0, 25).map(async (item) => {
-          const { finalUrl, imageUrl, fullSnippet } =
-            await resolveAndScrapeImage(item.link, browser);
-
-          if (!imageUrl) return null;
-          return {
-            ...item,
-            link: finalUrl,
-            imageUrl,
-            contentSnippet: fullSnippet || item.contentSnippet,
-          };
-        }),
-      );
-
-      for (const res of scrapeResults) {
-        if (res) finalItems.push(res);
+      console.log(`📸 Processando imagens para as top ${toProcess.length} notícias selecionadas...`);
+      
+      // Processa em lotes de 10 para não sobrecarregar mas garantir que achamos algo
+      for (let i = 0; i < toProcess.length && finalItems.length < 15; i += 10) {
+        const batch = toProcess.slice(i, i + 10);
+        const batchResults = await Promise.all(
+          batch.map(async (item) => {
+            const { finalUrl, imageUrl, fullSnippet } = await resolveAndScrapeImage(item.link, browser);
+            // Se não tem imagem, ainda incluímos o item MAS sem o campo imageUrl. 
+            // A lógica do main.ts decidirá se aceita ou não (preferencialmente não, mas se não tiver nada, ele aceita).
+            return {
+              ...item,
+              link: finalUrl,
+              imageUrl: imageUrl || undefined,
+              contentSnippet: fullSnippet || item.contentSnippet,
+            };
+          })
+        );
+        
+        for (const res of batchResults) {
+          if (res) finalItems.push(res);
+        }
+        
+        // Se já temos 10 com imagem, podemos parar
+        if (finalItems.filter(f => f.imageUrl).length >= 10) break;
       }
     } finally {
       await browser.close();
     }
 
+    console.log(`✅ Agregação concluída: ${finalItems.length} itens prontos para processamento (Com imagem: ${finalItems.filter(f => f.imageUrl).length}).`);
     return finalItems;
   } catch (error: any) {
     console.error("Erro fatal ao buscar notícias:", error);

@@ -86,5 +86,13 @@
     "source_domain": "www.gazetaesportiva.com",
     "category": "Athletico-PR",
     "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-05-16T21:31:18.130Z",
+    "headline": "BAHIA VENCE E INVADE O G4",
+    "source_url": "https://www.terra.com.br/esportes/bahia/em-casa-bahia-vence-o-red-bull-bragantino-e-entra-no-g4-do-brasileirao,cf8b0566fe00bf25366ebfab5c1dd1578tei6xxr.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Bahia",
+    "status": "SUCCESS"
   }
 ]

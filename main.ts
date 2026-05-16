@@ -75,6 +75,13 @@ async function runOráculo() {
     });
   }
 
+  // Se ainda assim não houver nada (ex: todas as notícias estão sem imagem ou são de serviço), 
+  // aceita QUALQUER coisa da lista original que ainda não foi postada.
+  if (candidates.length === 0) {
+    console.log("⚠️ Filtros muito restritos. Aceitando qualquer novidade disponível para evitar silêncio.");
+    candidates = newsList;
+  }
+
   if (candidates.length === 0) {
     console.log(`💤 Nenhuma novidade real encontrada após filtrar ${newsList.length} itens.`);
     return;
