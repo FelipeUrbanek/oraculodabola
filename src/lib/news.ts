@@ -304,6 +304,20 @@ export async function fetchTerraDirect(target: { name: string; terra: string }, 
   }
 }
 
+const FORBIDDEN_KEYWORDS = [
+  "sub-20", "sub 20", "sub20",
+  "sub-17", "sub 17", "sub17",
+  "sub-15", "sub 15", "sub15",
+  "feminino", "feminina",
+  "aspirantes", "categorias de base",
+  "copinha", "copa são paulo"
+];
+
+export function isAllowedTopic(title: string): boolean {
+  const titleLower = title.toLowerCase();
+  return !FORBIDDEN_KEYWORDS.some(keyword => titleLower.includes(keyword));
+}
+
 export function isTrustedSource(url: string): boolean {
   try {
     const urlLower = url.toLowerCase();
@@ -342,8 +356,8 @@ export async function fetchFootballNews(trends: string[] = [], excludeIds: strin
     for (const item of allItems) {
       if (!item.link || !item.title) continue;
       const itemIdentifier = item.id || item.link;
-      if (!isTrustedSource(item.link) || excludeIds.includes(itemIdentifier)) {
-        if (!isTrustedSource(item.link)) blockedSourcesCount++;
+      if (!isTrustedSource(item.link) || !isAllowedTopic(item.title) || excludeIds.includes(itemIdentifier)) {
+        if (!isTrustedSource(item.link) || !isAllowedTopic(item.title)) blockedSourcesCount++;
         continue;
       }
 

@@ -174,6 +174,11 @@ async function runOráculo() {
         item.contentSnippet,
         item.category,
       );
+
+      if (processed.headline.toUpperCase().includes("REJEITADO")) {
+        throw new Error(processed.caption || "Conteúdo rejeitado pelo filtro editorial.");
+      }
+
       const paths = await generateImages(processed, item.imageUrl || null, processed.mainTeam || item.category);
 
       const formattedHashtags = processed.hashtags

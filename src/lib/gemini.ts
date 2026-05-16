@@ -108,7 +108,7 @@ export async function processNewsWithGemini(
     8. CAPTION RICO: Explique o fato com profundidade, mencionando explicitamente todos os nomes envolvidos, datas, locais e contextos principais.
     9. LIMITE DE CARACTERES: O caption deve ter entre 350 e 2000 caracteres. NUNCA exceda 2200 caracteres.
     10. LÓGICA DE ESCUDO: Se a notícia mencionar mais de um time (ex: clássico, negociação entre clubes, comparação), defina isFocusedOnSingleTeam como false. Se for sobre um fato interno de um clube apenas, defina como true.
-    11. FILTRO DE ELITE: REJEITE (retorne JSON com headline "REJEITADO") se a notícia for sobre divisões inferiores (Série B, C, D), categorias de base, ou times pequenos sem relevância nacional imediata. O foco é ELITE (Série A) e Grandes Clubes.
+    11. FILTRO DE ELITE: REJEITE (retorne JSON com headline "REJEITADO") se a notícia for sobre: Categorias de Base (Sub-20, Sub-17, etc.), Futebol Feminino, divisões inferiores (Série B, C, D), ou times pequenos sem relevância nacional imediata. O foco ÚNICO é ELITE (Série A Masculina) e Grandes Clubes.
 
     Notícia: "${title}" - "${snippet}"
  
@@ -291,7 +291,8 @@ export async function processNewsWithGemini(
 }
 
 export async function filterFootballOnly(candidates: any[]): Promise<number[]> {
-  const prompt = `Selecione índices de notícias REAIS de futebol masculino. Ignore enquetes e guias de TV. 
+  const prompt = `Selecione índices de notícias REAIS de futebol MASCULINO PROFISSIONAL (Série A). 
+  REJEITE EXPRESSAMENTE: Categorias de Base (Sub-20, Sub-17, etc.), Futebol Feminino, enquetes, scouts de apostas e guias de TV. 
   Notícias:\n${candidates.map((c, i) => `${i}: ${c.title}`).join("\n")}
   Retorne JSON [index, index]`;
   try {
