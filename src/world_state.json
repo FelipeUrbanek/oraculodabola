@@ -2,8 +2,8 @@
   "teams": {
     "Fortaleza": {
       "coach": "Thiago Carpini",
-      "league": "Campeonato Brasileiro",
-      "recent_changes": "Thiago Carpini segue no comando para a temporada 2026."
+      "league": "Campeonato Brasileiro / Copa do Brasil",
+      "recent_changes": "Avançou para as oitavas de final da Copa do Brasil após segurar um empate sem gols contra o CRB fora de casa. O próximo compromisso será o clássico contra o Ceará, no domingo."
     },
     "Vasco": {
       "coach": "Renato",
@@ -16,9 +16,9 @@
       "recent_changes": "A Justiça acatou o pedido de recuperação judicial da SAF. John Textor (ex-controlador) foi afastado da gestão por decisão do Tribunal Arbitral da FGV."
     },
     "Grêmio": {
-      "coach": "Renato Portaluppi",
+      "coach": "Luis Castro",
       "league": "Campeonato Brasileiro",
-      "recent_changes": "Grêmio enfrenta nova disputa financeira com o River Plate-URU por dívida de Matías Arezo e pode sofrer novo transfer ban da Fifa."
+      "recent_changes": "Martin Braithwaite, artilheiro da equipe em 2025 com 15 gols, retornou de lesão no tendão de Aquiles e marcou dois gols na vitória sobre o Confiança, classificando o Grêmio para as oitavas de final da Copa do Brasil. Ele também marcou na Copa Sul-Americana e voltou a atuar no Brasileirão, oferecendo novas soluções ao técnico Luis Castro."
     },
     "São Paulo": {
       "coach": "Dorival Jr",
@@ -28,12 +28,12 @@
     "Corinthians": {
       "coach": "Vago",
       "league": "Brasileirão",
-      "recent_changes": "Dorival Jr foi demitido após 9 jogos sem vitória."
+      "recent_changes": "O Corinthians aceita negociar Hugo Souza (60% dos direitos por R$ 76,8 milhões), Yuri Alberto (50% dos direitos por mais de 20 milhões de euros), e admite negociar Memphis Depay, que pode sair sem apoio financeiro externo. Outros jogadores como André, Breno Bidon, Matheuzinho e Matheus Bidu também estão valorizados e podem receber ofertas."
     },
     "Seleção Brasileira": {
       "coach": "Carlo Ancelotti",
       "league": "Copa do Mundo",
-      "recent_changes": "A CBF confirmou a renovação de contrato do técnico Carlo Ancelotti e de sua comissão técnica por mais quatro anos, até a Copa do Mundo de 2030."
+      "recent_changes": "O goleiro Hugo Souza aparece na pré-lista de Carlo Ancelotti para a Copa do Mundo."
     },
     "Atlético-MG": {
       "coach": "Vago",
@@ -69,7 +69,27 @@
       "coach": "Não mencionado",
       "league": "Série B do Brasileirão",
       "recent_changes": "O lateral-direito Júlio Oliveira teve seu contrato renovado até 2029 após um acordo judicial que encerrou uma disputa trabalhista por salários atrasados. O clube enfrenta problemas financeiros e está na zona de rebaixamento da Série B."
+    },
+    "Paraná Clube": {
+      "coach": "Tcheco",
+      "league": "Campeonato Paranaense (Segundona)",
+      "recent_changes": "Goleou o Toledo por 6x1 e está a dois jogos do acesso à primeira divisão do Campeonato Paranaense. O técnico Tcheco ajusta a tática para os confrontos decisivos, focando na observação do elenco e na estratégia de substituições."
+    },
+    "CRB": {
+      "coach": "Não mencionado",
+      "league": "Série B",
+      "recent_changes": "Foi eliminado da Copa do Brasil pelo Fortaleza e agora volta suas atenções exclusivamente para a Série B. No domingo, visitará o Sport Recife na Ilha do Retiro."
+    },
+    "Ceará": {
+      "coach": "Não mencionado",
+      "league": "Não mencionada",
+      "recent_changes": "Enfrentará o Fortaleza em clássico no domingo, às 18h30, na Arena Castelão."
+    },
+    "Sport Recife": {
+      "coach": "Não mencionado",
+      "league": "Não mencionada",
+      "recent_changes": "Receberá o CRB no domingo, às 20h30, na Ilha do Retiro."
     }
   },
-  "last_updated": "2026-05-16T12:47:00.793Z"
+  "last_updated": "2026-05-16T14:20:23.770Z"
 }

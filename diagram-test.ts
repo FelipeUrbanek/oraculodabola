@@ -19,7 +19,7 @@ async function runMegaLab() {
   for (let i = 1; i <= 10; i++) {
     console.log(`🎨 Renderizando Variação #${i}...`);
     try {
-      await generateImages(mockNews, imageUrl, i);
+      await generateImages(mockNews, imageUrl, String(i));
       console.log(`✅ Variação #${i} concluída.`);
     } catch (error) {
       console.error(`❌ Erro na Variação #${i}:`, error);

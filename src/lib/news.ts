@@ -71,7 +71,7 @@ const FOOTBALL_TARGETS = [
   { name: "Fortaleza", terra: "https://www.terra.com.br/esportes/fortaleza/" },
   {
     name: "Athletico-PR",
-    terra: "https://www.terra.com.br/esportes/athletico-pr/",
+    terra: "https://www.terra.com.br/esportes/atletico-pr/",
   },
   { name: "Coritiba", terra: "https://www.terra.com.br/esportes/coritiba/" },
   { name: "Vitória", terra: "https://www.terra.com.br/esportes/vitoria/" },
@@ -79,7 +79,7 @@ const FOOTBALL_TARGETS = [
   { name: "Ceará", terra: "https://www.terra.com.br/esportes/ceara/" },
   {
     name: "Bragantino",
-    terra: "https://www.terra.com.br/esportes/red-bull-bragantino/",
+    terra: "hhttps://www.terra.com.br/esportes/bragantino/",
   },
   { name: "Cuiabá", terra: "https://www.terra.com.br/esportes/cuiaba/" },
   {
@@ -422,13 +422,14 @@ export async function fetchFootballNews(
     const seenTitles = new Set();
 
     const now = Date.now();
+    let blockedSourcesCount = 0;
 
     for (const item of allItems) {
       if (!item.link || !item.title) continue;
 
       // Validação de Fonte Confiável
       if (!isTrustedSource(item.link)) {
-        console.log(`🚫 Fonte não confiável bloqueada: ${item.link}`);
+        blockedSourcesCount++;
         continue;
       }
 
@@ -438,7 +439,7 @@ export async function fetchFootballNews(
       // Filtro de frescor (4 horas)
       // Filtro de frescor (4 horas para temas quentes)
       const diff = (now - new Date(item.pubDate).getTime()) / (1000 * 60);
-      if (diff > 240 && item.category !== "Mercado da Bola") continue;
+      if (diff > 1440 && item.category !== "Mercado da Bola") continue;
 
       // Anti-duplicação
       if (seenLinks.has(item.link) || seenTitles.has(cleanTitle.toLowerCase()))
@@ -454,9 +455,8 @@ export async function fetchFootballNews(
       (a, b) => new Date(b.pubDate).getTime() - new Date(a.pubDate).getTime(),
     );
 
-    console.log(
-      `🔎 Filtradas ${sortedNews.length} notícias relevantes. Capturando imagens...`,
-    );
+    console.log(`🔎 Filtradas ${sortedNews.length} notícias relevantes. (🚫 ${blockedSourcesCount} fontes não confiáveis ocultadas)`);
+    console.log(`📸 Capturando imagens para as melhores candidatas...`);
 
     // Garante variedade de categorias nas notícias processadas
     const diverseNews: NewsItem[] = [];
@@ -486,19 +486,11 @@ export async function fetchFootballNews(
     const finalItems: NewsItem[] = [];
 
     try {
-      console.log(
-        `📸 Processando imagens para ${toProcess.length} notícias variadas...`,
-      );
+      console.log(`📸 Processando imagens para as top 15 notícias selecionadas...`);
       const scrapeResults = await Promise.all(
-        toProcess.map(async (item) => {
+        toProcess.slice(0, 15).map(async (item) => {
           const { finalUrl, imageUrl, fullSnippet } =
             await resolveAndScrapeImage(item.link, browser);
-
-          // Validação final da fonte após resolução do link
-          if (!isTrustedSource(finalUrl)) {
-            console.log(`🚫 Fonte final não confiável bloqueada: ${finalUrl}`);
-            return null;
-          }
 
           if (!imageUrl) return null;
           return {

@@ -55,30 +55,34 @@ async function runOráculo() {
 
   // 1. Filtrar por ID (link) e categorias básicas
   const postedIds = history.map((h) => h.id);
-  const uniqueItems = newsList.filter((item: any) => {
+  let candidates = newsList.filter((item: any) => {
     const isNewLink = !postedIds.includes(item.link);
     const hasImage = !!item.imageUrl;
     const isDifferentCategory = item.category !== lastCategory;
-    const forbidden = [
-      "onde assistir",
-      "ao vivo",
-      "transmissão",
-      "tempo real",
-      "como assistir",
-      "escalação",
-      "palpite",
-    ];
-    const isServiceNews = forbidden.some((word) =>
-      item.title.toLowerCase().includes(word),
-    );
+    const forbidden = ["onde assistir", "ao vivo", "transmissão", "tempo real", "como assistir", "escalação", "palpite"];
+    const isServiceNews = forbidden.some((word) => item.title.toLowerCase().includes(word));
 
     return isNewLink && hasImage && !isServiceNews && isDifferentCategory;
   });
 
-  if (uniqueItems.length === 0) {
-    console.log(`💤 Nenhuma novidade fresquinha (Categoria: ${lastCategory}).`);
+  // Se o rodízio falhar (ex: só tem notícia do mesmo time), aceita a melhor nova disponível
+  if (candidates.length === 0) {
+    console.log("🔄 Rodízio de categorias sem opções novas. Relaxando filtro para garantir postagem...");
+    candidates = newsList.filter((item: any) => {
+      const isNewLink = !postedIds.includes(item.link);
+      const hasImage = !!item.imageUrl;
+      const forbidden = ["onde assistir", "ao vivo", "transmissão", "tempo real", "como assistir", "escalação", "palpite"];
+      const isServiceNews = forbidden.some((word) => item.title.toLowerCase().includes(word));
+      return isNewLink && hasImage && !isServiceNews;
+    });
+  }
+
+  if (candidates.length === 0) {
+    console.log(`💤 Nenhuma novidade real encontrada após filtrar ${newsList.length} itens.`);
     return;
   }
+
+  const uniqueItems = candidates;
 
   // 2. DE-DUPLICAÇÃO SEMÂNTICA (Evitar vários posts sobre o mesmo tema)
   console.log("🧠 Verificando duplicidade de temas com Gemini...");
@@ -160,7 +164,7 @@ async function runOráculo() {
         item.contentSnippet,
         item.category,
       );
-      const paths = await generateImages(processed, item.imageUrl || null, item.category);
+      const paths = await generateImages(processed, item.imageUrl || null, processed.mainTeam || item.category);
 
       const formattedHashtags = processed.hashtags
         .map((h) => (h.startsWith("#") ? h : `#${h}`))

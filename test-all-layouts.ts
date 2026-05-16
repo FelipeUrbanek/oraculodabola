@@ -17,7 +17,7 @@ async function testAll() {
 
   for (let i = 1; i <= 5; i++) {
     console.log(`🖼️ Gerando Layout #${i}...`);
-    await generateImages(content, bgImage, i);
+    await generateImages(content, bgImage, String(i));
   }
 
   console.log("\n✅ Todas as versões foram geradas na pasta 'posts'!");

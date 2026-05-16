@@ -16,9 +16,12 @@ const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY || "");
  */
 async function callGemini(prompt: string, isJson: boolean = true) {
   const models = [
-    "gemini-2.5-flash",
+    "gemini-3.1-pro-preview",
+    "gemini-3-pro-preview",
     "gemini-2.5-pro",
-    "gemini-2.0-flash",
+    "gemini-pro-latest",
+    "gemini-3.1-flash-lite",
+    "gemini-2.5-flash",
   ];
 
   for (const modelName of models) {
@@ -31,10 +34,10 @@ async function callGemini(prompt: string, isJson: boolean = true) {
         .trim();
       return isJson ? JSON.parse(text) : text;
     } catch (e: any) {
-      console.log(`⚠️ Modelo ${modelName} falhou.`);
+      console.log(`⚠️ Modelo ${modelName} falhou. Erro: ${e.message}`);
     }
   }
-  throw new Error("❌ Falha crítica: Nenhum modelo respondeu.");
+  throw new Error("❌ Falha crítica: Nenhum modelo respondeu. Verifique sua GEMINI_API_KEY ou sua cota.");
 }
 
 export interface ProcessedContent {
@@ -54,6 +57,7 @@ export interface ProcessedContent {
     | "NÚMEROS"
     | "FATO"
     | "HISTÓRIA";
+  mainTeam: string;
   shouldCreateStory: boolean;
   imageKeywords: string;
 }
@@ -111,6 +115,7 @@ export async function processNewsWithGemini(
     - caption: Texto para Instagram (350-500 chars).
     - hashtags: string[]
     - category: URGENTE, PLANTÃO, MERCADO, BASTIDORES, TÁTICA, EXCLUSIVO, ANÁLISE, OPINIÃO, NÚMEROS, FATO, HISTÓRIA.
+    - mainTeam: O nome do time principal da notícia (Ex: "Flamengo", "Paraná Clube", "Real Madrid").
     - shouldCreateStory: boolean
     - imageKeywords: string
   `;
@@ -227,17 +232,9 @@ export async function processNewsWithGemini(
       );
     }
 
-    // --- VALIDAÇÃO DE IDENTIDADE DO TIME (ANTI-ALUCINAÇÃO) ---
-    if (teamName && teamName !== "MERCADO DA BOLA" && teamName !== "TREND") {
-      const normalizedTeam = teamName.toLowerCase();
-      const normalizedContent = (processed.headline + " " + processed.caption).toLowerCase();
-      
-      // Se o nome do time não aparece no post gerado, algo está errado
-      if (!normalizedContent.includes(normalizedTeam)) {
-        console.log(`⚠️ Identidade Mismatch: Esperado ${teamName}, mas o conteúdo gerado não menciona o time.`);
-        throw new Error(`MISMATCH: O conteúdo gerado não condiz com o time ${teamName}.`);
-      }
-    }
+    // --- VALIDAÇÃO DE IDENTIDADE (RELAXADA) ---
+    // Deixamos a IA livre para identificar o time correto da notícia, 
+    // mesmo que o feed original tenha um rótulo diferente.
 
   // Se for notícia sobre PESSOAS (baixa, reforço, desfalque, contratação, saída, demissão), exige nome próprio
   const isAboutPerson =
