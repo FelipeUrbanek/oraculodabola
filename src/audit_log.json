@@ -151,5 +151,13 @@
     "source_domain": "www.terra.com.br",
     "category": "Flamengo",
     "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-05-16T23:38:39.966Z",
+    "headline": "DORIVAL JR ASSUME O SÃO PAULO",
+    "source_url": "https://www.terra.com.br/esportes/sao-paulo/razao-ou-emocao-torcedores-do-sao-paulo-dividem-opinioes-sobre-novo-tecnico,380eb1898ba81713db3bf29443f5b3c93h5obswe.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Bahia",
+    "status": "SUCCESS"
   }
 ]

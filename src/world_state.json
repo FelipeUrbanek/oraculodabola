@@ -21,9 +21,9 @@
       "recent_changes": "O vice-presidente de futebol, Antônio Dutra Júnior, admitiu carências no elenco e reforçou a confiança no técnico Luís Castro em meio à pressão por resultados no Brasileirão. O clube busca a contratação de um meia articulador com características semelhantes às de Arrascaeta, mas enfrenta dificuldades financeiras e forte concorrência no mercado nacional. Pelo Brasileirão Feminino, conquistou uma vitória por 3 a 0 sobre o Red Bull Bragantino na última rodada."
     },
     "São Paulo": {
-      "coach": "Dorival Jr",
-      "league": "Brasileirão",
-      "recent_changes": "Tem confronto marcado contra o Fluminense em partida válida pelo Brasileirão. Anteriormente, teve a contratação confirmada de Dorival Jr como o novo treinador do clube."
+      "coach": "Vago",
+      "league": "Brasileirão / Copa do Brasil",
+      "recent_changes": "Foi eliminado da Copa do Brasil após derrota por 3 a 1 para o Juventude no Alfredo Jaconi, o que resultou na demissão do técnico Roger Machado. A diretoria iniciou a busca por um novo treinador, com Dorival Jr. aparecendo como prioridade, além de nomes como Rogério Ceni e Vojvoda no radar, em meio a debates da torcida sobre restrições financeiras. Tem confronto marcado contra o Fluminense em partida válida pelo Brasileirão."
     },
     "Corinthians": {
       "coach": "Vago",
@@ -113,7 +113,7 @@
     "Juventude": {
       "coach": "Não mencionado",
       "league": "Copa do Brasil",
-      "recent_changes": "Avançou para as oitavas de final da Copa do Brasil, garantindo cerca de R$ 9,59 milhões em premiações acumuladas por estar no torneio desde a 2ª fase."
+      "recent_changes": "Avançou para as oitavas de final da Copa do Brasil, garantindo cerca de R$ 9,59 milhões em premiações acumuladas por estar no torneio desde a 2ª fase. Recentemente, eliminou o São Paulo do torneio com uma vitória por 3 a 1 no estádio Alfredo Jaconi."
     },
     "Athletico-PR": {
       "coach": "Não mencionado",
@@ -206,5 +206,5 @@
       "recent_changes": "Enfrentará o Santos em partida válida pela 16ª rodada do Campeonato Brasileiro."
     }
   },
-  "last_updated": "2026-05-16T23:14:40.774Z"
+  "last_updated": "2026-05-16T23:38:20.038Z"
 }
