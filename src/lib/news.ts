@@ -411,12 +411,12 @@ export async function fetchFootballNews(
       Promise.all(trendsTasks),
     ]);
 
-    const allItems = [
-      ...terraResults.flat(),
-      ...googleResults.flat(),
-      ...trendsResults.flat(),
-    ];
-    console.log(`📊 Total bruto de itens encontrados: ${allItems.length}`);
+    // PRIORIDADE: RSSHub (Terra) é a fonte principal.
+    // Só usamos Google News/Trends se o Terra não retornar nada ou para complementar temas muito específicos.
+    const terraFlat = terraResults.flat();
+    const allItems = terraFlat.length > 0 ? terraFlat : [...googleResults.flat(), ...trendsResults.flat()];
+    
+    console.log(`📊 Total bruto de itens encontrados: ${allItems.length} (Fonte Principal: ${terraFlat.length > 0 ? 'RSSHub/Terra' : 'Google/Trends'})`);
 
     const uniqueNews: NewsItem[] = [];
     const seenLinks = new Set();
@@ -438,9 +438,10 @@ export async function fetchFootballNews(
       // Limpeza de título (remove o nome do portal se houver)
       const cleanTitle = item.title.split(" - ")[0].trim();
 
-      // Filtro de frescor (4 horas para temas quentes)
+      // Filtro de frescor rigoroso: 4 horas para geral, 24h para Mercado da Bola
       const diff = (now - new Date(item.pubDate).getTime()) / (1000 * 60);
-      if (diff > 1440 && item.category !== "Mercado da Bola") continue;
+      const limitMinutes = item.category === "Mercado da Bola" ? 1440 : 240; // 24h vs 4h
+      if (diff > limitMinutes) continue;
 
       // Anti-duplicação
       if (seenLinks.has(item.link) || seenTitles.has(cleanTitle.toLowerCase()))

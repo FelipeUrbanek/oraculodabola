@@ -186,7 +186,7 @@ export async function autoReplyToComments() {
         console.log(`👤 Comentário de @${comment.from?.username || 'usuário'}: "${comment.text}"`);
 
         // 3. Gerar resposta humanizada com Gemini
-        const replyText = await generateReplyWithGemini(comment.text);
+        const replyText = await generateReplyWithGemini(comment.text, comment.from?.username);
 
         // 4. Postar a resposta
         try {
@@ -210,21 +210,22 @@ export async function autoReplyToComments() {
   }
 }
 
-async function generateReplyWithGemini(userComment: string): Promise<string> {
+async function generateReplyWithGemini(userComment: string, username?: string): Promise<string> {
   const { GoogleGenerativeAI } = await import("@google/generative-ai");
   const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY || "");
   const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
   
   const prompt = `
     Persona: Você é o "Oráculo da Bola", um perfil de notícias de futebol vibrante e interativo.
-    Ação: Responda a este comentário de um seguidor de forma curta, simpática e humana.
+    Ação: Responda a este comentário de um seguidor chamado ${username || 'Fiel Seguidor'} de forma curta, simpática e humana.
     Comentário: "${userComment}"
     
     REGRAS:
     1. Máximo 15 palavras.
     2. Pode usar 1 emoji.
     3. Seja amigável e incentive a pessoa a continuar acompanhando.
-    4. Não use hashtags na resposta.
+    4. Use o nome/username da pessoa se parecer natural.
+    5. Não use hashtags na resposta.
     
     Retorne APENAS o texto da resposta.
   `;
@@ -234,5 +235,29 @@ async function generateReplyWithGemini(userComment: string): Promise<string> {
     return result.response.text().trim();
   } catch (e) {
     return "Valeu por acompanhar o Oráculo! Tmj ⚽";
+  }
+}
+
+/**
+ * Faz um comentário em uma mídia específica (usado para o "Oracle Comment")
+ */
+export async function postComment(mediaId: string, message: string) {
+  try {
+    console.log(`💬 Postando comentário automático no post ${mediaId}...`);
+    const response = await axios.post(
+      `https://graph.facebook.com/v22.0/${mediaId}/comments`,
+      null,
+      {
+        params: {
+          message: message,
+          access_token: ACCESS_TOKEN
+        }
+      }
+    );
+    console.log(`✅ Comentário postado! ID: ${response.data.id}`);
+    return response.data.id;
+  } catch (error: any) {
+    console.error("❌ Erro ao postar comentário:", error.response?.data?.error?.message || error.message);
+    return null;
   }
 }

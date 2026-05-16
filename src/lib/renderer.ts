@@ -26,23 +26,25 @@ export async function generateImages(
     const designPath = path.join(__dirname, "design-system.json");
     const design = JSON.parse(fs.readFileSync(designPath, "utf-8"));
 
-    // 1. Carregar escudo do time se disponível
+    // 1. Carregar escudo do time se disponível E se for focado em um único time
     let teamShieldHtml = "";
-    const normalizedTeamName = teamName
-      .toLowerCase()
-      .normalize("NFD")
-      .replace(/[\u0300-\u036f]/g, "") // Remove acentos
-      .replace(/ /g, "_");
+    if (content.isFocusedOnSingleTeam) {
+      const normalizedTeamName = teamName
+        .toLowerCase()
+        .normalize("NFD")
+        .replace(/[\u0300-\u036f]/g, "") // Remove acentos
+        .replace(/ /g, "_");
 
-    const logoFileName = `${normalizedTeamName}.png`;
-    const logosDir = path.resolve(__dirname, "..", "..", "assets", "logos");
-    const logoPath = path.join(logosDir, logoFileName);
+      const logoFileName = `${normalizedTeamName}.png`;
+      const logosDir = path.resolve(__dirname, "..", "..", "assets", "logos");
+      const logoPath = path.join(logosDir, logoFileName);
 
-    if (fs.existsSync(logoPath)) {
-      const base64 = fs.readFileSync(logoPath, "base64");
-      teamShieldHtml = `<div class="w-16 h-16 flex items-center justify-center bg-black/90 backdrop-blur-md p-2 border-l border-white/10">
-        <img src="data:image/png;base64,${base64}" class="w-full h-full object-contain">
-      </div>`;
+      if (fs.existsSync(logoPath)) {
+        const base64 = fs.readFileSync(logoPath, "base64");
+        teamShieldHtml = `<div class="w-16 h-16 flex items-center justify-center bg-black/90 backdrop-blur-md p-2 border-l border-white/10">
+          <img src="data:image/png;base64,${base64}" class="w-full h-full object-contain">
+        </div>`;
+      }
     }
 
     // 2. Lógica de sorteio de Layout

@@ -58,6 +58,7 @@ export interface ProcessedContent {
     | "FATO"
     | "HISTÓRIA";
   mainTeam: string;
+  isFocusedOnSingleTeam: boolean; // TRUE se a notícia for focada apenas em UM time principal. FALSE se citar rivais, vários times ou for um fato geral.
   shouldCreateStory: boolean;
   imageKeywords: string;
 }
@@ -106,6 +107,8 @@ export async function processNewsWithGemini(
     7. VARIANT STYLES: Diversifique o estilo da legenda. Use "Entenda os detalhes:" em vez de sempre "3 pontos".
     8. CAPTION RICO: Explique o fato com profundidade, mencionando explicitamente todos os nomes envolvidos, datas, locais e contextos principais.
     9. LIMITE DE CARACTERES: O caption deve ter entre 350 e 2000 caracteres. NUNCA exceda 2200 caracteres.
+    10. LÓGICA DE ESCUDO: Se a notícia mencionar mais de um time (ex: clássico, negociação entre clubes, comparação), defina isFocusedOnSingleTeam como false. Se for sobre um fato interno de um clube apenas, defina como true.
+    11. FILTRO DE ELITE: REJEITE (retorne JSON com headline "REJEITADO") se a notícia for sobre divisões inferiores (Série B, C, D), categorias de base, ou times pequenos sem relevância nacional imediata. O foco é ELITE (Série A) e Grandes Clubes.
 
     Notícia: "${title}" - "${snippet}"
  
@@ -116,6 +119,7 @@ export async function processNewsWithGemini(
     - hashtags: string[]
     - category: URGENTE, PLANTÃO, MERCADO, BASTIDORES, TÁTICA, EXCLUSIVO, ANÁLISE, OPINIÃO, NÚMEROS, FATO, HISTÓRIA.
     - mainTeam: O nome do time principal da notícia (Ex: "Flamengo", "Paraná Clube", "Real Madrid").
+    - isFocusedOnSingleTeam: boolean (true se apenas um time é o foco, false se citar vários).
     - shouldCreateStory: boolean
     - imageKeywords: string
   `;
