@@ -159,5 +159,13 @@
     "source_domain": "www.terra.com.br",
     "category": "Bahia",
     "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-05-17T01:34:16.791Z",
+    "headline": "INTER ATROPELA VASCO NO BEIRA-RIO",
+    "source_url": "https://www.terra.com.br/esportes/futebol/internacional-domina-o-vasco-aplica-goleada-e-embala-no-campeonato-brasileiro,d55ad75d70dc690e26127e4bec2f51790v5giud5.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Internacional",
+    "status": "SUCCESS"
   }
 ]

@@ -7,8 +7,8 @@
     },
     "Vasco": {
       "coach": "Renato",
-      "league": "Copa do Brasil / Campeonato Brasileiro Sub-20",
-      "recent_changes": "Avançou para as oitavas de final da Copa do Brasil, garantindo R$ 5 milhões. O técnico Renato repreendeu Thiago Mendes após sua expulsão. Atualmente, a equipe lidera o Campeonato Brasileiro Sub-20 ao lado do Palmeiras."
+      "league": "Copa do Brasil / Campeonato Brasileiro Sub-20 / Campeonato Brasileiro / Copa Sul-Americana",
+      "recent_changes": "Avançou para as oitavas de final da Copa do Brasil, garantindo R$ 5 milhões. O técnico Renato repreendeu Thiago Mendes após sua expulsão. Lidera o Campeonato Brasileiro Sub-20 ao lado do Palmeiras. Pelo Campeonato Brasileiro, sofreu uma goleada de 4 a 1 do Internacional. Os próximos confrontos serão contra o Olímpia no Paraguai, pela Copa Sul-Americana, e contra o Bragantino, em São Januário, pelo torneio nacional."
     },
     "Botafogo": {
       "coach": "Não mencionado",
@@ -137,8 +137,8 @@
     },
     "Internacional": {
       "coach": "Não mencionado",
-      "league": "Copa do Brasil",
-      "recent_changes": "Avançou para as oitavas de final da Copa do Brasil, lucrando R$ 5 milhões em premiações."
+      "league": "Copa do Brasil / Campeonato Brasileiro",
+      "recent_changes": "Avançou para as oitavas de final da Copa do Brasil, lucrando R$ 5 milhões em premiações. Pelo Campeonato Brasileiro, goleou o Vasco por 4 a 1 no Beira-Rio, com gols de Carbonero (duas vezes), Alerrandro e Bernabei, saltando para o oitavo lugar com 21 pontos e ampliando sua invencibilidade para sete jogos na temporada. O próximo compromisso será contra o Vitória no Barradão, pela 17ª rodada."
     },
     "Mirassol": {
       "coach": "Não mencionado",
@@ -162,8 +162,8 @@
     },
     "Vitória": {
       "coach": "Não mencionado",
-      "league": "Copa do Brasil",
-      "recent_changes": "Avançou para as oitavas de final da Copa do Brasil, lucrando R$ 5 milhões em premiações."
+      "league": "Copa do Brasil / Campeonato Brasileiro",
+      "recent_changes": "Avançou para as oitavas de final da Copa do Brasil, lucrando R$ 5 milhões em premiações. Receberá o Internacional no Barradão, em partida válida pela 17ª rodada do Brasileirão."
     },
     "Coreia do Sul": {
       "coach": "Não mencionado",
@@ -193,7 +193,7 @@
     "Red Bull Bragantino": {
       "coach": "Humberto Simão",
       "league": "Brasileirão / Brasileirão Feminino",
-      "recent_changes": "Foi derrotado pelo Bahia fora de casa em partida válida pelo Brasileirão. Pelo Brasileirão Feminino, perdeu por 3 a 0 para o Grêmio na última rodada, permanecendo na 10ª colocação com 14 pontos. O próximo desafio será contra o Santos, na Vila Belmiro."
+      "recent_changes": "Foi derrotado pelo Bahia fora de casa em partida válida pelo Brasileirão, e enfrentará o Vasco no próximo domingo, em São Januário. Pelo Brasileirão Feminino, perdeu por 3 a 0 para o Grêmio na última rodada, permanecendo na 10ª colocação com 14 pontos. O próximo desafio feminino será contra o Santos, na Vila Belmiro."
     },
     "Flamengo": {
       "coach": "Não mencionado",
@@ -204,7 +204,12 @@
       "coach": "Não mencionado",
       "league": "Brasileirão",
       "recent_changes": "Enfrentará o Santos em partida válida pela 16ª rodada do Campeonato Brasileiro."
+    },
+    "Olímpia": {
+      "coach": "Não mencionado",
+      "league": "Copa Sul-Americana",
+      "recent_changes": "Receberá o Vasco no Paraguai, em partida válida pela Copa Sul-Americana."
     }
   },
-  "last_updated": "2026-05-16T23:38:20.038Z"
+  "last_updated": "2026-05-17T01:33:55.221Z"
 }
