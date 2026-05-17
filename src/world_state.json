@@ -128,7 +128,7 @@
     "Cruzeiro": {
       "coach": "Artur Jorge",
       "league": "Copa do Brasil / Campeonato Brasileiro / Libertadores",
-      "recent_changes": "Avançou para as oitavas de final da Copa do Brasil, lucrando R$ 5 milhões em premiações. Pelo Campeonato Brasileiro, o técnico Artur Jorge elogiou a postura e a competitividade da equipe no empate em 1 a 1 com o Palmeiras na Arena Barueri, resultado que deixou o clube provisoriamente na 12ª colocação. O próximo desafio será contra o Boca Juniors na terça-feira, em La Bombonera, pela quinta rodada da Libertadores."
+      "recent_changes": "Avançou para as oitavas de final da Copa do Brasil (lucrando R$ 5 milhões). Pelo Campeonato Brasileiro, tenta reação e está em 12º lugar com 20 pontos após empate em 1 a 1 com o Palmeiras na Arena Barueri, com destaque para o goleiro Otávio, que assumiu a vaga de Matheus Cunha. O próximo desafio é pela Libertadores contra o Boca Juniors, terça-feira, em La Bombonera. A Raposa é vice-líder do Grupo D com 7 pontos e, se vencer, garante classificação antecipada, tendo já vencido o confronto do turno por 1 a 0."
     },
     "Fluminense": {
       "coach": "Luis Zubeldía",
@@ -148,7 +148,7 @@
     "Palmeiras": {
       "coach": "Abel Ferreira",
       "league": "Copa do Brasil / Campeonato Brasileiro Sub-20 / Campeonato Brasileiro / Libertadores",
-      "recent_changes": "Avançou para as oitavas de final da Copa do Brasil e lidera o Campeonato Brasileiro Sub-20 ao lado do Vasco. Pelo Campeonato Brasileiro, empatou em 1 a 1 com o Cruzeiro na Arena Barueri (gols de Keny Arroyo e Felipe Anderson), somando seu terceiro empate consecutivo pelo mesmo placar na competição, mas mantendo a liderança isolada com cinco pontos de vantagem para o segundo colocado. O próximo compromisso será contra o Cerro Porteño na quarta-feira, no Allianz Parque, pela quinta rodada da Libertadores."
+      "recent_changes": "Avançou para as oitavas de final da Copa do Brasil e lidera o Campeonato Brasileiro Sub-20 ao lado do Vasco. Pelo Campeonato Brasileiro, é o atual líder isolado e vem de um empate em 1 a 1 com o Cruzeiro na Arena Barueri, partida em que Gustavo Gómez teve uma chance clara em meia bicicleta, defendida pelo goleiro rival. O próximo compromisso será contra o Cerro Porteño na quarta-feira, no Allianz Parque, pela quinta rodada da Libertadores."
     },
     "Remo": {
       "coach": "Não mencionado",
@@ -243,7 +243,7 @@
     "Boca Juniors": {
       "coach": "Não mencionado",
       "league": "Libertadores",
-      "recent_changes": "Enfrentará o Cruzeiro em La Bombonera na terça-feira, às 21h30, em partida válida pela quinta rodada da Copa Libertadores."
+      "recent_changes": "Soma 6 pontos no Grupo D da Copa Libertadores e enfrentará o Cruzeiro em La Bombonera na terça-feira, às 21h30, em partida válida pela quinta rodada. No confronto do primeiro turno, a equipe argentina foi derrotada pelos mineiros por 1 a 0."
     },
     "Cerro Porteño": {
       "coach": "Não mencionado",
@@ -251,5 +251,5 @@
       "recent_changes": "Enfrentará o Palmeiras no Allianz Parque na quarta-feira, às 21h30, em partida válida pela quinta rodada da Copa Libertadores."
     }
   },
-  "last_updated": "2026-05-17T14:16:37.554Z"
+  "last_updated": "2026-05-17T15:46:25.598Z"
 }

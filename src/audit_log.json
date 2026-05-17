@@ -247,5 +247,13 @@
     "source_domain": "www.terra.com.br",
     "category": "Atlético-MG",
     "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-05-17T15:46:47.458Z",
+    "headline": "A NOVA MURALHA CELESTE",
+    "source_url": "https://www.terra.com.br/esportes/cruzeiro/otavio-um-goleiro-cada-vez-mais-decisivo-para-o-cruzeiro,f106401438c6067574f8033753f96035wxbr66wo.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Cruzeiro",
+    "status": "SUCCESS"
   }
 ]
