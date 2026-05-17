@@ -22,8 +22,8 @@
     },
     "São Paulo": {
       "coach": "Vago",
-      "league": "Brasileirão / Copa do Brasil",
-      "recent_changes": "Foi eliminado da Copa do Brasil após derrota por 3 a 1 para o Juventude no Alfredo Jaconi, o que resultou na demissão do técnico Roger Machado. A diretoria iniciou a busca por um novo treinador, com Dorival Jr. aparecendo como prioridade, além de nomes como Rogério Ceni e Vojvoda no radar, em meio a debates da torcida sobre restrições financeiras. Tem confronto marcado contra o Fluminense em partida válida pelo Brasileirão."
+      "league": "Brasileirão / Copa do Brasil / Copa Sul-Americana",
+      "recent_changes": "Sofreu uma derrota por 2 a 1 para o Fluminense pela 16ª rodada do Brasileirão (gol de Dória na reta final), mas segue na parte de cima da tabela. O próximo compromisso é contra o Millonarios FC pela Copa Sul-Americana. Anteriormente: foi eliminado da Copa do Brasil pelo Juventude, resultando na demissão de Roger Machado; a diretoria segue em busca de um novo treinador."
     },
     "Corinthians": {
       "coach": "Vago",
@@ -127,13 +127,13 @@
     },
     "Cruzeiro": {
       "coach": "Não mencionado",
-      "league": "Copa do Brasil",
-      "recent_changes": "Avançou para as oitavas de final da Copa do Brasil, lucrando R$ 5 milhões em premiações. Tem um confronto marcado contra o Palmeiras às 19h30."
+      "league": "Copa do Brasil / Campeonato Brasileiro",
+      "recent_changes": "Avançou para as oitavas de final da Copa do Brasil, lucrando R$ 5 milhões em premiações. Pelo Campeonato Brasileiro, empatou em 1 a 1 contra o Palmeiras na Arena Barueri, em partida válida pela 16ª rodada."
     },
     "Fluminense": {
-      "coach": "Zubeldía",
+      "coach": "Luis Zubeldía",
       "league": "Brasileirão / Libertadores / Copa do Brasil / Brasileirão Feminino",
-      "recent_changes": "Apresentou o atacante Hulk, de 39 anos, como novo reforço para a sequência da temporada. O jogador já iniciou contato com o elenco e com o técnico Zubeldía. O time segue confiante na classificação na Libertadores e também avançou para as oitavas de final da Copa do Brasil, lucrando R$ 5 milhões em premiações. Pelo Brasileirão Feminino, sofreu uma derrota em casa (Estádio Luso Brasileiro) por 2 a 0 para o Santos."
+      "recent_changes": "Venceu o São Paulo por 2 a 1 no Maracanã pela 16ª rodada do Brasileirão, com gols de John Kennedy e Canobbio, partida em que o técnico destacou a retomada de identidade da equipe. Na terça-feira enfrentará o Club Bolívar pela Copa Libertadores. Anteriormente: apresentou o atacante Hulk, avançou para as oitavas de final da Copa do Brasil e, pelo Brasileirão Feminino, sofreu uma derrota para o Santos por 2 a 0."
     },
     "Internacional": {
       "coach": "Não mencionado",
@@ -146,9 +146,9 @@
       "recent_changes": "Avançou para as oitavas de final da Copa do Brasil, lucrando R$ 5 milhões em premiações."
     },
     "Palmeiras": {
-      "coach": "Não mencionado",
-      "league": "Copa do Brasil / Campeonato Brasileiro Sub-20",
-      "recent_changes": "Avançou para as oitavas de final da Copa do Brasil e tem um confronto marcado contra o Cruzeiro. Atualmente, a equipe lidera o Campeonato Brasileiro Sub-20 ao lado do Vasco."
+      "coach": "Abel Ferreira",
+      "league": "Copa do Brasil / Campeonato Brasileiro Sub-20 / Campeonato Brasileiro",
+      "recent_changes": "Avançou para as oitavas de final da Copa do Brasil e lidera o Campeonato Brasileiro Sub-20 ao lado do Vasco. Pelo Campeonato Brasileiro, empatou em 1 a 1 com o Cruzeiro na Arena Barueri pela 16ª rodada, com gols de Keny Arroyo e Felipe Anderson. O técnico Abel Ferreira reclamou do calendário, apontou desgaste físico provocado pela sequência de jogos e lesões, e destacou que o atacante Paulinho precisa de minutagem controlada por não estar 100% fisicamente."
     },
     "Remo": {
       "coach": "Não mencionado",
@@ -212,8 +212,8 @@
     },
     "Bolívar": {
       "coach": "Não mencionado",
-      "league": "Não mencionada",
-      "recent_changes": "Tem o empresário boliviano-americano Marcelo Claure como atual presidente."
+      "league": "Copa Libertadores",
+      "recent_changes": "Enfrentará o Fluminense no Maracanã, pela quinta rodada do Grupo C da Copa Libertadores. Tem o empresário boliviano-americano Marcelo Claure como atual presidente."
     },
     "New York City": {
       "coach": "Não mencionado",
@@ -234,7 +234,12 @@
       "coach": "Não mencionado",
       "league": "Recopa Sul-Americana",
       "recent_changes": "Sagrou-se campeão da Recopa Sul-Americana ao vencer o Flamengo na prorrogação, garantindo uma premiação de US$ 1,8 milhão."
+    },
+    "Millonarios FC": {
+      "coach": "Não mencionado",
+      "league": "Copa Sul-Americana",
+      "recent_changes": "Enfrentará o São Paulo, às 21h, em partida válida pela Copa Sul-Americana."
     }
   },
-  "last_updated": "2026-05-17T05:41:40.405Z"
+  "last_updated": "2026-05-17T08:06:24.955Z"
 }

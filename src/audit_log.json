@@ -191,5 +191,21 @@
     "source_domain": "www.terra.com.br",
     "category": "Flamengo",
     "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-05-17T08:04:54.463Z",
+    "headline": "ABEL DETONA CALENDÁRIO APÓS EMPATE",
+    "source_url": "https://www.terra.com.br/esportes/palmeiras/abel-ferreira-reclama-do-calendario-do-futebol-brasileiro-vou-ter-que-voltar-a-falar,b4d394626758bd97e9531aabbfeeaa740wj73jeo.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Palmeiras",
+    "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-05-17T08:07:08.409Z",
+    "headline": "FLU VENCE SÃO PAULO NO MARACANÃ",
+    "source_url": "https://www.terra.com.br/esportes/fluminense/zubeldia-valoriza-vitoria-do-fluminense-sobre-o-sao-paulo-e-destaca-retomada-de-identidade-da-equipe,270b120f140b1448af4e13a05133c60f57pvixfl.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Fluminense",
+    "status": "SUCCESS"
   }
 ]
