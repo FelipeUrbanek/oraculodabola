@@ -255,5 +255,13 @@
     "source_domain": "www.terra.com.br",
     "category": "Cruzeiro",
     "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-05-17T17:45:06.724Z",
+    "headline": "ERRO BIZARRO TIRA NEYMAR DE CAMPO",
+    "source_url": "https://www.terra.com.br/esportes/santos/pc-oliveira-esclarece-substituicao-polemica-de-neymar-a-arbitragem-acerta,c1e561e01f830f1536377f690c8da0aapbyfi9ak.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "SUCCESS"
   }
 ]

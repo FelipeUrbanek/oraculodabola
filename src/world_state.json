@@ -158,7 +158,7 @@
     "Santos": {
       "coach": "Não mencionado",
       "league": "Copa do Brasil / Campeonato Brasileiro Sub-20 / Brasileirão / Brasileirão Feminino",
-      "recent_changes": "Receberá o Coritiba na Neo Química Arena na manhã de domingo, em uma estratégia da diretoria para maior arrecadação financeira e de marketing, visando uma possível convocação de Neymar para a Copa do Mundo. Avançou para as oitavas de final da Copa do Brasil (lucrando R$ 5 milhões). Pelo Campeonato Brasileiro Sub-20, venceu o Fortaleza de virada por 2 a 1, assumiu a 3ª posição e enfrentará o Flamengo. Pelo Brasileirão Feminino, venceu o Fluminense por 2 a 0 e enfrentará o Red Bull Bragantino."
+      "recent_changes": "Sofreu uma derrota por 3 a 0 para o Coritiba na Neo Química Arena pelo Campeonato Brasileiro, em partida marcada por um erro do quarto árbitro que resultou na substituição polêmica de Neymar por Robinho Júnior, no lugar de Escobar. A partida marcou a despedida de Neymar antes da convocação para a Copa do Mundo. Anteriormente: avançou para as oitavas de final da Copa do Brasil. Pelo Sub-20, venceu o Fortaleza e enfrentará o Flamengo. Pelo Feminino, venceu o Fluminense e enfrentará o Red Bull Bragantino."
     },
     "Vitória": {
       "coach": "Não mencionado",
@@ -203,7 +203,7 @@
     "Coritiba": {
       "coach": "Não mencionado",
       "league": "Brasileirão",
-      "recent_changes": "Enfrentará o Santos na Neo Química Arena na manhã deste domingo, em partida válida pela 16ª rodada do Campeonato Brasileiro."
+      "recent_changes": "Venceu o Santos por 3 a 0 na Neo Química Arena, em partida válida pelo Campeonato Brasileiro."
     },
     "Olímpia": {
       "coach": "Não mencionado",
@@ -251,5 +251,5 @@
       "recent_changes": "Enfrentará o Palmeiras no Allianz Parque na quarta-feira, às 21h30, em partida válida pela quinta rodada da Copa Libertadores."
     }
   },
-  "last_updated": "2026-05-17T15:46:25.598Z"
+  "last_updated": "2026-05-17T17:44:45.952Z"
 }
