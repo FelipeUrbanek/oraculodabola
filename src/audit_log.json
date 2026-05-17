@@ -223,5 +223,13 @@
     "source_domain": "www.terra.com.br",
     "category": "São Paulo",
     "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-05-17T11:47:51.525Z",
+    "headline": "BOTAFOGO BUSCA REAÇÃO CONTRA O TIMÃO",
+    "source_url": "https://www.terra.com.br/esportes/botafogo/botafogo-x-corinthians-glorioso-busca-reacao-no-brasileirao,9ef135e0dbbc7187a28cf0e7a6b15d2479sj6epx.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Botafogo",
+    "status": "SUCCESS"
   }
 ]

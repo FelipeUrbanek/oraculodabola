@@ -12,8 +12,8 @@
     },
     "Botafogo": {
       "coach": "Não mencionado",
-      "league": "Campeonato Brasileiro",
-      "recent_changes": "A Justiça acatou o pedido de recuperação judicial da SAF. John Textor (ex-controlador) foi afastado da gestão por decisão do Tribunal Arbitral da FGV. A empresa GDA Luma, que realizou um empréstimo emergencial de US$ 22,8 milhões (R$ 115 milhões) ao clube, tem negociações avançadas para assumir 90% das ações da SAF, conforme confirmado por um de seus sócios, Marcelo Claure. Pelo Campeonato Brasileiro, enfrentará o São Paulo no próximo sábado, no Morumbis."
+      "league": "Campeonato Brasileiro / Copa do Brasil",
+      "recent_changes": "A Justiça acatou o pedido de recuperação judicial da SAF. John Textor (ex-controlador) foi afastado da gestão. A empresa GDA Luma tem negociações avançadas para assumir 90% das ações da SAF. Recentemente, foi eliminado da Copa do Brasil após derrota por 2 a 0 para a Chapecoense. Pelo Campeonato Brasileiro, a equipe está sem vencer há três rodadas, vindo de um empate por 1 a 1 com o Atlético-MG fora de casa (gol de Arthur Cabral), e receberá o Corinthians no Estádio Nilton Santos pela 16ª rodada."
     },
     "Grêmio": {
       "coach": "Luis Castro",
@@ -28,7 +28,7 @@
     "Corinthians": {
       "coach": "Vago",
       "league": "Brasileirão / Copa do Brasil / Supercopa Rei do Brasil",
-      "recent_changes": "Avançou para as oitavas de final da Copa do Brasil, garantindo R$ 5 milhões em premiações. Sagrou-se campeão da Supercopa Rei do Brasil ao superar o Flamengo, faturando R$ 6,35 milhões da CBF e um bônus de US$ 1 milhão da Conmebol. O clube aceita negociar Hugo Souza e Yuri Alberto, e admite negociar Memphis Depay. Recentemente, voltou a vencer em estreias de camisas I e II depois de três anos."
+      "recent_changes": "Avançou para as oitavas de final da Copa do Brasil, garantindo R$ 5 milhões em premiações. Sagrou-se campeão da Supercopa Rei do Brasil ao superar o Flamengo. O clube aceita negociar Hugo Souza e Yuri Alberto, e admite negociar Memphis Depay. Recentemente, voltou a vencer em estreias de camisas I e II depois de três anos. Pelo Campeonato Brasileiro, enfrentará o Botafogo fora de casa, no Estádio Nilton Santos, pela 16ª rodada, buscando recuperação."
     },
     "Seleção Brasileira": {
       "coach": "Carlo Ancelotti",
@@ -38,7 +38,7 @@
     "Atlético-MG": {
       "coach": "Vago",
       "league": "Futebol Brasileiro / Copa do Brasil",
-      "recent_changes": "Garantiu classificação na Copa do Brasil nos pênaltis, com atuação de destaque do goleiro Everson. O ex-técnico Jorge Sampaoli acionou o clube na CNRD por atraso no pagamento da multa rescisória."
+      "recent_changes": "Garantiu classificação na Copa do Brasil nos pênaltis, com atuação de destaque do goleiro Everson. O ex-técnico Jorge Sampaoli acionou o clube na CNRD por atraso no pagamento da multa rescisória. Pelo Campeonato Brasileiro, empatou em 1 a 1 jogando em casa contra o Botafogo na última rodada."
     },
     "Uberlândia": {
       "coach": "Não mencionado",
@@ -123,7 +123,7 @@
     "Chapecoense": {
       "coach": "Não mencionado",
       "league": "Copa do Brasil",
-      "recent_changes": "Avançou para as oitavas de final da Copa do Brasil, lucrando R$ 5 milhões em premiações."
+      "recent_changes": "Avançou para as oitavas de final da Copa do Brasil, lucrando R$ 5 milhões em premiações, após eliminar o Botafogo com uma vitória por 2 a 0."
     },
     "Cruzeiro": {
       "coach": "Artur Jorge",
@@ -251,5 +251,5 @@
       "recent_changes": "Enfrentará o Palmeiras no Allianz Parque na quarta-feira, às 21h30, em partida válida pela quinta rodada da Copa Libertadores."
     }
   },
-  "last_updated": "2026-05-17T10:17:54.925Z"
+  "last_updated": "2026-05-17T11:47:30.059Z"
 }
