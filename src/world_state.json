@@ -12,8 +12,8 @@
     },
     "Botafogo": {
       "coach": "Não mencionado",
-      "league": "Campeonato Brasileiro / Copa do Brasil",
-      "recent_changes": "A Justiça acatou o pedido de recuperação judicial da SAF. John Textor (ex-controlador) foi afastado da gestão. A empresa GDA Luma tem negociações avançadas para assumir 90% das ações da SAF. Recentemente, foi eliminado da Copa do Brasil após derrota por 2 a 0 para a Chapecoense. Pelo Campeonato Brasileiro, a equipe está sem vencer há três rodadas, vindo de um empate por 1 a 1 com o Atlético-MG fora de casa, e receberá o Corinthians no Estádio Nilton Santos pela 16ª rodada. Para este duelo, o volante titular absoluto Danilo será desfalque por problemas pessoais, em um momento onde negociações de transferência para o Palmeiras na próxima janela estariam avançando nos bastidores."
+      "league": "Campeonato Brasileiro / Copa do Brasil / Copa Sul-Americana",
+      "recent_changes": "A Justiça acatou o pedido de recuperação judicial da SAF. John Textor (ex-controlador) foi afastado da gestão. A empresa GDA Luma tem negociações avançadas para assumir 90% das ações da SAF. Pelo Campeonato Brasileiro, venceu o Corinthians por 3 a 1 no Estádio Nilton Santos. O clube selou a venda do zagueiro Alexsander Barboza para o Palmeiras por 4 milhões de dólares, com transferência marcada para o segundo semestre de 2026. Barboza atingiu o limite de 12 jogos no Brasileirão e não joga contra São Paulo e Bahia, mas segue à disposição antes da Copa do Mundo para a Sul-Americana, onde o time encara o Independiente Petrolero (20 de maio) e o Caracas (27 de maio). O volante Danilo negocia sua transferência para o Palmeiras nos bastidores."
     },
     "Grêmio": {
       "coach": "Luis Castro",
@@ -28,7 +28,7 @@
     "Corinthians": {
       "coach": "Vago",
       "league": "Brasileirão / Copa do Brasil / Supercopa Rei do Brasil",
-      "recent_changes": "Avançou para as oitavas de final da Copa do Brasil, garantindo R$ 5 milhões em premiações. Sagrou-se campeão da Supercopa Rei do Brasil ao superar o Flamengo. O clube aceita negociar Hugo Souza e Yuri Alberto, e admite negociar Memphis Depay. Recentemente, voltou a vencer em estreias de camisas I e II depois de três anos. Pelo Campeonato Brasileiro, enfrentará o Botafogo fora de casa, no Estádio Nilton Santos, pela 16ª rodada, buscando recuperação, e também receberá o Atlético-MG em casa em rodada futura."
+      "recent_changes": "Avançou para as oitavas de final da Copa do Brasil, garantindo R$ 5 milhões em premiações. Sagrou-se campeão da Supercopa Rei do Brasil ao superar o Flamengo. O clube aceita negociar Hugo Souza e Yuri Alberto, e admite negociar Memphis Depay. Recentemente, voltou a vencer em estreias de camisas I e II depois de três anos. Pelo Campeonato Brasileiro, foi derrotado pelo Botafogo por 3 a 1 no Estádio Nilton Santos, e buscará recuperação recebendo o Atlético-MG em casa em rodada futura."
     },
     "Seleção Brasileira": {
       "coach": "Carlo Ancelotti",
@@ -148,7 +148,7 @@
     "Palmeiras": {
       "coach": "Abel Ferreira",
       "league": "Copa do Brasil / Campeonato Brasileiro Sub-20 / Campeonato Brasileiro / Libertadores",
-      "recent_changes": "Avançou para as oitavas de final da Copa do Brasil e lidera o Campeonato Brasileiro Sub-20 ao lado do Vasco. Pelo Campeonato Brasileiro, é o atual líder isolado e vem de um empate em 1 a 1 com o Cruzeiro na Arena Barueri. O próximo compromisso será contra o Cerro Porteño na quarta-feira, no Allianz Parque, pela quinta rodada da Libertadores. Nos bastidores, o clube apontou o volante Danilo, do Botafogo, como alvo para a próxima janela de transferências e as negociações estariam avançando."
+      "recent_changes": "Avançou para as oitavas de final da Copa do Brasil e lidera o Campeonato Brasileiro Sub-20 ao lado do Vasco. Pelo Campeonato Brasileiro, é o atual líder isolado e vem de um empate em 1 a 1 com o Cruzeiro na Arena Barueri. O próximo compromisso será contra o Cerro Porteño na quarta-feira, no Allianz Parque, pela quinta rodada da Libertadores. Confirmou a contratação do zagueiro Alexsander Barboza junto ao Botafogo por 4 milhões de dólares (R$ 20 milhões), com pagamento parcelado. O atleta defenderá o clube a partir do segundo semestre de 2026 e já realizou os exames médicos. Devido ao investimento, a diretoria segurou as tratativas com o zagueiro Nino, do Zenit. Nos bastidores, também negocia com o volante Danilo, do Botafogo."
     },
     "Remo": {
       "coach": "Não mencionado",
@@ -249,7 +249,22 @@
       "coach": "Não mencionado",
       "league": "Libertadores",
       "recent_changes": "Enfrentará o Palmeiras no Allianz Parque na quarta-feira, às 21h30, em partida válida pela quinta rodada da Copa Libertadores."
+    },
+    "Zenit": {
+      "coach": "Não mencionado",
+      "league": "Liga Russa",
+      "recent_changes": "Sagrou-se campeão da Liga Russa no domingo. O clube teve as tratativas de venda do zagueiro Nino pausadas pelo Palmeiras, que priorizou outro investimento no mercado."
+    },
+    "Independiente Petrolero": {
+      "coach": "Não mencionado",
+      "league": "Copa Sul-Americana",
+      "recent_changes": "Enfrentará o Botafogo no dia 20 de maio, em partida válida pela Copa Sul-Americana."
+    },
+    "Caracas": {
+      "coach": "Não mencionado",
+      "league": "Copa Sul-Americana",
+      "recent_changes": "Enfrentará o Botafogo no dia 27 de maio, em partida válida pela Copa Sul-Americana."
     }
   },
-  "last_updated": "2026-05-17T20:35:06.559Z"
+  "last_updated": "2026-05-17T21:42:01.630Z"
 }

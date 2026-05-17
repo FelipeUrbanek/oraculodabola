@@ -279,5 +279,13 @@
     "source_domain": "www.terra.com.br",
     "category": "São Paulo",
     "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-05-17T21:42:23.552Z",
+    "headline": "BARBOZA FECHA COM O PALMEIRAS",
+    "source_url": "https://www.terra.com.br/esportes/botafogo/barboza-assina-contrato-com-palmeiras-e-se-despede-do-botafogo-no-brasileirao,9bbdecf0496123dcaab393b13d9adde3qsap1be7.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Palmeiras",
+    "status": "SUCCESS"
   }
 ]
