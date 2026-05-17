@@ -13,7 +13,7 @@
     "Botafogo": {
       "coach": "Não mencionado",
       "league": "Não mencionada",
-      "recent_changes": "A Justiça acatou o pedido de recuperação judicial da SAF. John Textor (ex-controlador) foi afastado da gestão por decisão do Tribunal Arbitral da FGV."
+      "recent_changes": "A Justiça acatou o pedido de recuperação judicial da SAF. John Textor (ex-controlador) foi afastado da gestão por decisão do Tribunal Arbitral da FGV. A empresa GDA Luma, que realizou um empréstimo emergencial de US$ 22,8 milhões (R$ 115 milhões) ao clube, tem negociações avançadas para assumir 90% das ações da SAF, conforme confirmado por um de seus sócios, Marcelo Claure."
     },
     "Grêmio": {
       "coach": "Luis Castro",
@@ -27,8 +27,8 @@
     },
     "Corinthians": {
       "coach": "Vago",
-      "league": "Brasileirão / Copa do Brasil",
-      "recent_changes": "Avançou para as oitavas de final da Copa do Brasil, garantindo R$ 5 milhões em premiações. O clube aceita negociar Hugo Souza e Yuri Alberto, e admite negociar Memphis Depay. Recentemente, voltou a vencer em estreias de camisas I e II depois de três anos."
+      "league": "Brasileirão / Copa do Brasil / Supercopa Rei do Brasil",
+      "recent_changes": "Avançou para as oitavas de final da Copa do Brasil, garantindo R$ 5 milhões em premiações. Sagrou-se campeão da Supercopa Rei do Brasil ao superar o Flamengo, faturando R$ 6,35 milhões da CBF e um bônus de US$ 1 milhão da Conmebol. O clube aceita negociar Hugo Souza e Yuri Alberto, e admite negociar Memphis Depay. Recentemente, voltou a vencer em estreias de camisas I e II depois de três anos."
     },
     "Seleção Brasileira": {
       "coach": "Carlo Ancelotti",
@@ -152,8 +152,8 @@
     },
     "Remo": {
       "coach": "Não mencionado",
-      "league": "Copa do Brasil",
-      "recent_changes": "Avançou para as oitavas de final da Copa do Brasil, lucrando R$ 5 milhões em premiações."
+      "league": "Copa do Brasil / Campeonato Brasileiro",
+      "recent_changes": "Avançou para as oitavas de final da Copa do Brasil, lucrando R$ 5 milhões em premiações, após eliminar o Bahia com vitórias por 3 a 1 na ida e 2 a 1 na volta no Mangueirão. A equipe também superou o time baiano no Campeonato Brasileiro com uma vitória por 4 a 1 nesta temporada."
     },
     "Santos": {
       "coach": "Não mencionado",
@@ -163,7 +163,7 @@
     "Vitória": {
       "coach": "Não mencionado",
       "league": "Copa do Brasil / Campeonato Brasileiro",
-      "recent_changes": "Avançou para as oitavas de final da Copa do Brasil, lucrando R$ 5 milhões em premiações. Receberá o Internacional no Barradão, em partida válida pela 17ª rodada do Brasileirão."
+      "recent_changes": "Avançou para as oitavas de final da Copa do Brasil, lucrando R$ 5 milhões em premiações, após eliminar o Flamengo na quinta fase. Receberá o Internacional no Barradão, em partida válida pela 17ª rodada do Brasileirão."
     },
     "Coreia do Sul": {
       "coach": "Não mencionado",
@@ -186,9 +186,9 @@
       "recent_changes": "Na temporada 23/24, o clube conquistou o Campeonato Alemão e a Taça da Alemanha sob o comando de Xabi Alonso, alcançando uma marca de 51 jogos invictos."
     },
     "Bahia": {
-      "coach": "Não mencionado",
-      "league": "Brasileirão / Campeonato Brasileiro Sub-20",
-      "recent_changes": "Venceu o Red Bull Bragantino em casa e entrou no G4 do Brasileirão. Pelo Campeonato Brasileiro Sub-20, receberá o Fortaleza pela 13ª rodada no CT Evaristo de Macedo, na quarta-feira (20), às 15h."
+      "coach": "Rogério Ceni",
+      "league": "Brasileirão / Campeonato Brasileiro Sub-20 / Copa do Brasil",
+      "recent_changes": "Foi eliminado na quinta fase da Copa do Brasil após ser derrotado nos jogos de ida e volta pelo Remo (3 a 1 e 2 a 1, respectivamente). Também sofreu um revés por 4 a 1 para a equipe paraense pelo Campeonato Brasileiro. Anteriormente, entrou no G4 do Brasileirão ao vencer o Red Bull Bragantino em casa. Pelo Campeonato Brasileiro Sub-20, receberá o Fortaleza pela 13ª rodada no CT Evaristo de Macedo, na quarta-feira (20), às 15h."
     },
     "Red Bull Bragantino": {
       "coach": "Humberto Simão",
@@ -197,8 +197,8 @@
     },
     "Flamengo": {
       "coach": "Não mencionado",
-      "league": "Campeonato Brasileiro Sub-20",
-      "recent_changes": "Tem um confronto marcado contra o Athletico-PR. Pelo Campeonato Brasileiro Sub-20, receberá o Santos no Estádio Luso Brasileiro na quinta-feira (21), às 21h30. O design de sua nova terceira camisa para a temporada de 2026 vazou nesta semana; o uniforme será predominantemente vermelho com detalhes em preto e branco e manterá o escudo do remo no peito."
+      "league": "Campeonato Brasileiro Sub-20 / Copa do Brasil / Recopa Sul-Americana / Supercopa Rei do Brasil",
+      "recent_changes": "Tem um confronto marcado contra o Athletico-PR. Pelo Campeonato Brasileiro Sub-20, receberá o Santos no Estádio Luso Brasileiro na quinta-feira (21), às 21h30. O design de sua nova terceira camisa para a temporada de 2026 vazou nesta semana. Recentemente, foi eliminado na quinta fase da Copa do Brasil pelo Vitória (apesar de ter vencido o jogo de ida por 2 a 1 no Maracanã), deixando de arrecadar quantias milionárias em premiações e renda. Além disso, foi vice-campeão da Recopa Sul-Americana (derrotado pelo Lanús na prorrogação) e da Supercopa Rei do Brasil (derrotado pelo Corinthians)."
     },
     "Coritiba": {
       "coach": "Não mencionado",
@@ -209,7 +209,32 @@
       "coach": "Não mencionado",
       "league": "Copa Sul-Americana",
       "recent_changes": "Receberá o Vasco no Paraguai, em partida válida pela Copa Sul-Americana."
+    },
+    "Bolívar": {
+      "coach": "Não mencionado",
+      "league": "Não mencionada",
+      "recent_changes": "Tem o empresário boliviano-americano Marcelo Claure como atual presidente."
+    },
+    "New York City": {
+      "coach": "Não mencionado",
+      "league": "Não mencionada",
+      "recent_changes": "Tem o empresário Marcelo Claure como vice-presidente e acionista."
+    },
+    "Girona": {
+      "coach": "Não mencionado",
+      "league": "Não mencionada",
+      "recent_changes": "Tem o empresário Marcelo Claure como acionista."
+    },
+    "Inter Miami": {
+      "coach": "Não mencionado",
+      "league": "Não mencionada",
+      "recent_changes": "Teve o empresário Marcelo Claure como um de seus fundadores, até que suas ações minoritárias foram compradas por David Beckham e os irmãos Mas."
+    },
+    "Lanús": {
+      "coach": "Não mencionado",
+      "league": "Recopa Sul-Americana",
+      "recent_changes": "Sagrou-se campeão da Recopa Sul-Americana ao vencer o Flamengo na prorrogação, garantindo uma premiação de US$ 1,8 milhão."
     }
   },
-  "last_updated": "2026-05-17T01:33:55.221Z"
+  "last_updated": "2026-05-17T05:41:40.405Z"
 }
