@@ -8,7 +8,7 @@
     "Vasco": {
       "coach": "Renato",
       "league": "Copa do Brasil / Campeonato Brasileiro Sub-20 / Campeonato Brasileiro / Copa Sul-Americana",
-      "recent_changes": "Avançou para as oitavas de final da Copa do Brasil, garantindo R$ 5 milhões. O técnico Renato repreendeu Thiago Mendes após sua expulsão. Lidera o Campeonato Brasileiro Sub-20 ao lado do Palmeiras. Pelo Campeonato Brasileiro, sofreu uma goleada de 4 a 1 do Internacional. Os próximos confrontos serão contra o Olímpia no Paraguai, pela Copa Sul-Americana, e contra o Bragantino, em São Januário, pelo torneio nacional."
+      "recent_changes": "Avançou para as oitavas de final da Copa do Brasil, garantindo R$ 5 milhões. O técnico Renato repreendeu Thiago Mendes após sua expulsão. Lidera o Campeonato Brasileiro Sub-20 ao lado do Palmeiras. Pelo Campeonato Brasileiro, sofreu uma goleada de 4 a 1 do Internacional e será mandante em confronto futuro contra o Atlético-MG. Os próximos confrontos serão contra o Olímpia no Paraguai, pela Copa Sul-Americana, e contra o Bragantino, em São Januário, pelo torneio nacional."
     },
     "Botafogo": {
       "coach": "Não mencionado",
@@ -28,17 +28,17 @@
     "Corinthians": {
       "coach": "Vago",
       "league": "Brasileirão / Copa do Brasil / Supercopa Rei do Brasil",
-      "recent_changes": "Avançou para as oitavas de final da Copa do Brasil, garantindo R$ 5 milhões em premiações. Sagrou-se campeão da Supercopa Rei do Brasil ao superar o Flamengo. O clube aceita negociar Hugo Souza e Yuri Alberto, e admite negociar Memphis Depay. Recentemente, voltou a vencer em estreias de camisas I e II depois de três anos. Pelo Campeonato Brasileiro, enfrentará o Botafogo fora de casa, no Estádio Nilton Santos, pela 16ª rodada, buscando recuperação."
+      "recent_changes": "Avançou para as oitavas de final da Copa do Brasil, garantindo R$ 5 milhões em premiações. Sagrou-se campeão da Supercopa Rei do Brasil ao superar o Flamengo. O clube aceita negociar Hugo Souza e Yuri Alberto, e admite negociar Memphis Depay. Recentemente, voltou a vencer em estreias de camisas I e II depois de três anos. Pelo Campeonato Brasileiro, enfrentará o Botafogo fora de casa, no Estádio Nilton Santos, pela 16ª rodada, buscando recuperação, e também receberá o Atlético-MG em casa em rodada futura."
     },
     "Seleção Brasileira": {
       "coach": "Carlo Ancelotti",
       "league": "Copa do Mundo",
-      "recent_changes": "O goleiro Hugo Souza aparece na pré-lista de Carlo Ancelotti para a Copa do Mundo."
+      "recent_changes": "Carlo Ancelotti fará a convocação final para a Copa do Mundo nesta segunda-feira (18), no Museu do Amanhã, no Rio de Janeiro, havendo a possibilidade de convocação de Neymar. O treinador e o coordenador Rodrigo Caetano estarão na Arena da Baixada acompanhando Athletico-PR e Flamengo. Anteriormente, o goleiro Hugo Souza apareceu na pré-lista."
     },
     "Atlético-MG": {
-      "coach": "Vago",
-      "league": "Futebol Brasileiro / Copa do Brasil",
-      "recent_changes": "Garantiu classificação na Copa do Brasil nos pênaltis, com atuação de destaque do goleiro Everson. O ex-técnico Jorge Sampaoli acionou o clube na CNRD por atraso no pagamento da multa rescisória. Pelo Campeonato Brasileiro, empatou em 1 a 1 jogando em casa contra o Botafogo na última rodada."
+      "coach": "Eduardo \"Barba\" Domínguez",
+      "league": "Campeonato Brasileiro / Copa do Brasil",
+      "recent_changes": "Venceu o Mirassol por 3 a 1 na Arena MRV pela 16ª rodada do Campeonato Brasileiro, alcançando a 7ª colocação com 21 pontos. O técnico Eduardo Domínguez elogiou a velocidade do ataque, agora formado por Bernard, Cuello e Minda, devido à saída de Hulk. Os próximos compromissos serão fora de casa contra Corinthians e Vasco antes da parada para a Copa do Mundo. Anteriormente: avançou na Copa do Brasil nos pênaltis com destaque de Everson e o ex-técnico Sampaoli acionou o clube na CNRD."
     },
     "Uberlândia": {
       "coach": "Não mencionado",
@@ -118,7 +118,7 @@
     "Athletico-PR": {
       "coach": "Não mencionado",
       "league": "Copa do Brasil",
-      "recent_changes": "Avançou para as oitavas de final da Copa do Brasil, lucrando R$ 5 milhões em premiações. Tem um confronto marcado contra o Flamengo."
+      "recent_changes": "Enfrentará o Flamengo na Arena da Baixada, em Curitiba, em partida que será acompanhada pelo técnico da Seleção Brasileira, Carlo Ancelotti, e pelo coordenador Rodrigo Caetano. Avançou para as oitavas de final da Copa do Brasil, lucrando R$ 5 milhões em premiações."
     },
     "Chapecoense": {
       "coach": "Não mencionado",
@@ -142,8 +142,8 @@
     },
     "Mirassol": {
       "coach": "Não mencionado",
-      "league": "Copa do Brasil",
-      "recent_changes": "Avançou para as oitavas de final da Copa do Brasil, lucrando R$ 5 milhões em premiações."
+      "league": "Campeonato Brasileiro / Copa do Brasil",
+      "recent_changes": "Pelo Campeonato Brasileiro, foi derrotado pelo Atlético-MG por 3 a 1 na Arena MRV. Anteriormente, avançou para as oitavas de final da Copa do Brasil, lucrando R$ 5 milhões em premiações."
     },
     "Palmeiras": {
       "coach": "Abel Ferreira",
@@ -158,7 +158,7 @@
     "Santos": {
       "coach": "Não mencionado",
       "league": "Copa do Brasil / Campeonato Brasileiro Sub-20 / Brasileirão / Brasileirão Feminino",
-      "recent_changes": "Avançou para as oitavas de final da Copa do Brasil, lucrando R$ 5 milhões em premiações. Pelo Campeonato Brasileiro Sub-20, venceu o Fortaleza de virada por 2 a 1 com gols de Mateus Xavier e Vinicius Fabri, assumindo a 3ª posição na tabela com 23 pontos, a cinco pontos dos líderes Vasco e Palmeiras. Terá pela frente o Flamengo na próxima quinta-feira (21), às 21h30. Divulgou a lista de relacionados, com desfalques, para o confronto diante do Coritiba, válido pela 16ª rodada do Brasileirão. Pelo Brasileirão Feminino, venceu o Fluminense por 2 a 0 no Rio de Janeiro, assumindo a 11ª posição, e enfrentará o Red Bull Bragantino na Vila Belmiro."
+      "recent_changes": "Receberá o Coritiba na Neo Química Arena na manhã de domingo, em uma estratégia da diretoria para maior arrecadação financeira e de marketing, visando uma possível convocação de Neymar para a Copa do Mundo. Avançou para as oitavas de final da Copa do Brasil (lucrando R$ 5 milhões). Pelo Campeonato Brasileiro Sub-20, venceu o Fortaleza de virada por 2 a 1, assumiu a 3ª posição e enfrentará o Flamengo. Pelo Brasileirão Feminino, venceu o Fluminense por 2 a 0 e enfrentará o Red Bull Bragantino."
     },
     "Vitória": {
       "coach": "Não mencionado",
@@ -198,12 +198,12 @@
     "Flamengo": {
       "coach": "Não mencionado",
       "league": "Campeonato Brasileiro Sub-20 / Copa do Brasil / Recopa Sul-Americana / Supercopa Rei do Brasil",
-      "recent_changes": "Tem um confronto marcado contra o Athletico-PR. Pelo Campeonato Brasileiro Sub-20, receberá o Santos no Estádio Luso Brasileiro na quinta-feira (21), às 21h30. O design de sua nova terceira camisa para a temporada de 2026 vazou nesta semana. Recentemente, foi eliminado na quinta fase da Copa do Brasil pelo Vitória (apesar de ter vencido o jogo de ida por 2 a 1 no Maracanã), deixando de arrecadar quantias milionárias em premiações e renda. Além disso, foi vice-campeão da Recopa Sul-Americana (derrotado pelo Lanús na prorrogação) e da Supercopa Rei do Brasil (derrotado pelo Corinthians)."
+      "recent_changes": "Enfrentará o Athletico-PR na Arena da Baixada, em duelo que será acompanhado pelo técnico da Seleção Brasileira, Carlo Ancelotti. Pelo Campeonato Brasileiro Sub-20, receberá o Santos no Estádio Luso Brasileiro na quinta-feira (21). O design de sua nova terceira camisa para a temporada de 2026 vazou recentemente. Na temporada, foi eliminado na quinta fase da Copa do Brasil pelo Vitória e foi vice-campeão da Recopa Sul-Americana e da Supercopa Rei do Brasil."
     },
     "Coritiba": {
       "coach": "Não mencionado",
       "league": "Brasileirão",
-      "recent_changes": "Enfrentará o Santos em partida válida pela 16ª rodada do Campeonato Brasileiro."
+      "recent_changes": "Enfrentará o Santos na Neo Química Arena na manhã deste domingo, em partida válida pela 16ª rodada do Campeonato Brasileiro."
     },
     "Olímpia": {
       "coach": "Não mencionado",
@@ -251,5 +251,5 @@
       "recent_changes": "Enfrentará o Palmeiras no Allianz Parque na quarta-feira, às 21h30, em partida válida pela quinta rodada da Copa Libertadores."
     }
   },
-  "last_updated": "2026-05-17T11:47:30.059Z"
+  "last_updated": "2026-05-17T14:16:37.554Z"
 }

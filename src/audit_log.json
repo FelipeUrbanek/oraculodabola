@@ -231,5 +231,21 @@
     "source_domain": "www.terra.com.br",
     "category": "Botafogo",
     "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-05-17T14:15:06.572Z",
+    "headline": "ESTRATÉGIA POR NEYMAR ANTES DA COPA",
+    "source_url": "https://www.terra.com.br/esportes/santos/santos-enfrenta-coritiba-visando-possivel-convocacao-de-neymar,9ac0f2f9af30cce0aebac5972defccf3bfuto80h.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-05-17T14:16:58.142Z",
+    "headline": "ATAQUE EXPLOSIVO NO GALO",
+    "source_url": "https://www.terra.com.br/esportes/atletico-mg/barba-exalta-jogadores-explosivos-do-ataque-do-atletico,6e0a376f9a75773a8282a936e9432e89tkl7cc31.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Atlético-MG",
+    "status": "SUCCESS"
   }
 ]
