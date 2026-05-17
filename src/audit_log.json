@@ -295,5 +295,13 @@
     "source_domain": "www.terra.com.br",
     "category": "Corinthians",
     "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-05-17T23:46:07.903Z",
+    "headline": "FRANGO DE ROSSI NA ARENA!",
+    "source_url": "https://www.terra.com.br/esportes/flamengo/rossi-vira-alvo-de-torcedores-do-flamengo-apos-falha-na-arena-da-baixada-veja,215f3cbcbac445e876e9d2d9513e0d08qpk9a1mm.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Flamengo",
+    "status": "SUCCESS"
   }
 ]

@@ -117,8 +117,8 @@
     },
     "Athletico-PR": {
       "coach": "Não mencionado",
-      "league": "Copa do Brasil",
-      "recent_changes": "Enfrentará o Flamengo na Arena da Baixada, em Curitiba, em partida que será acompanhada pelo técnico da Seleção Brasileira, Carlo Ancelotti, e pelo coordenador Rodrigo Caetano. Avançou para as oitavas de final da Copa do Brasil, lucrando R$ 5 milhões em premiações."
+      "league": "Campeonato Brasileiro / Copa do Brasil",
+      "recent_changes": "Vence momentaneamente o Flamengo na Arena da Baixada pela 16ª rodada do Campeonato Brasileiro, após gol em jogada de Zapelli e Mendoza que contou com falha do goleiro adversário. A vitória parcial coloca a equipe no G4 da competição. A partida é acompanhada pelo técnico da Seleção Brasileira, Carlo Ancelotti, e pelo coordenador Rodrigo Caetano. Anteriormente, avançou para as oitavas de final da Copa do Brasil, lucrando R$ 5 milhões em premiações."
     },
     "Chapecoense": {
       "coach": "Não mencionado",
@@ -197,8 +197,8 @@
     },
     "Flamengo": {
       "coach": "Não mencionado",
-      "league": "Campeonato Brasileiro Sub-20 / Copa do Brasil / Recopa Sul-Americana / Supercopa Rei do Brasil",
-      "recent_changes": "Enfrentará o Athletico-PR na Arena da Baixada, em duelo que será acompanhado pelo técnico da Seleção Brasileira, Carlo Ancelotti. Pelo Campeonato Brasileiro Sub-20, receberá o Santos no Estádio Luso Brasileiro na quinta-feira (21). O design de sua nova terceira camisa para a temporada de 2026 vazou recentemente. Na temporada, foi eliminado na quinta fase da Copa do Brasil pelo Vitória e foi vice-campeão da Recopa Sul-Americana e da Supercopa Rei do Brasil."
+      "league": "Campeonato Brasileiro / Campeonato Brasileiro Sub-20 / Copa do Brasil / Recopa Sul-Americana / Supercopa Rei do Brasil",
+      "recent_changes": "Pela 16ª rodada do Campeonato Brasileiro, perde momentaneamente para o Athletico-PR na Arena da Baixada após o goleiro Rossi falhar em um chute de Mendoza (com passe de Zapelli e desvio em Léo Ortiz). A falha gerou críticas da torcida, que também aponta falta de confiança no goleiro reserva, Andrew. A equipe precisa virar o jogo para encurtar a diferença para o líder Palmeiras de cinco para dois pontos. O duelo é acompanhado pelo técnico Carlo Ancelotti. Pelo Sub-20, receberá o Santos no Estádio Luso Brasileiro na quinta-feira (21). O design de sua nova terceira camisa para a temporada de 2026 vazou recentemente. Na temporada, foi eliminado na quinta fase da Copa do Brasil pelo Vitória e foi vice-campeão da Recopa Sul-Americana e da Supercopa Rei do Brasil."
     },
     "Coritiba": {
       "coach": "Não mencionado",
@@ -266,5 +266,5 @@
       "recent_changes": "Enfrentará o Botafogo no dia 27 de maio, em partida válida pela Copa Sul-Americana."
     }
   },
-  "last_updated": "2026-05-17T22:41:23.287Z"
+  "last_updated": "2026-05-17T23:45:45.901Z"
 }
