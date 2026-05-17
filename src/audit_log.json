@@ -271,5 +271,13 @@
     "source_domain": "www.terra.com.br",
     "category": "Palmeiras",
     "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-05-17T20:35:26.942Z",
+    "headline": "ARBOLEDA ENTRE SPFC E VASCO",
+    "source_url": "https://www.terra.com.br/esportes/futebol/sao-paulo-cogita-reintegracao-de-arboleda-vasco-avalia-investida,9715e206b60508899376b68b2f7a91b7c85s3owk.html",
+    "source_domain": "www.terra.com.br",
+    "category": "São Paulo",
+    "status": "SUCCESS"
   }
 ]
