@@ -207,5 +207,21 @@
     "source_domain": "www.terra.com.br",
     "category": "Fluminense",
     "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-05-17T10:16:25.080Z",
+    "headline": "ARTUR JORGE EXALTA RAPOSA",
+    "source_url": "https://www.terra.com.br/esportes/cruzeiro/artur-jorge-avalia-desempenho-do-cruzeiro-contra-o-palmeiras,921d28de7e6fe5f22967ea5436a4411bbz64ly7u.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Cruzeiro",
+    "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-05-17T10:18:14.276Z",
+    "headline": "DORIVAL TEM MISSÃO NO SPFC",
+    "source_url": "https://www.terra.com.br/esportes/sao-paulo/milton-cruz-diz-que-dorival-tem-que-dar-confianca-ao-sao-paulo-organizar-o-time,96da24ff4045f7918dbbcea53ccca2cdbqljvcey.html",
+    "source_domain": "www.terra.com.br",
+    "category": "São Paulo",
+    "status": "SUCCESS"
   }
 ]

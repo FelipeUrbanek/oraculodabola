@@ -12,8 +12,8 @@
     },
     "Botafogo": {
       "coach": "Não mencionado",
-      "league": "Não mencionada",
-      "recent_changes": "A Justiça acatou o pedido de recuperação judicial da SAF. John Textor (ex-controlador) foi afastado da gestão por decisão do Tribunal Arbitral da FGV. A empresa GDA Luma, que realizou um empréstimo emergencial de US$ 22,8 milhões (R$ 115 milhões) ao clube, tem negociações avançadas para assumir 90% das ações da SAF, conforme confirmado por um de seus sócios, Marcelo Claure."
+      "league": "Campeonato Brasileiro",
+      "recent_changes": "A Justiça acatou o pedido de recuperação judicial da SAF. John Textor (ex-controlador) foi afastado da gestão por decisão do Tribunal Arbitral da FGV. A empresa GDA Luma, que realizou um empréstimo emergencial de US$ 22,8 milhões (R$ 115 milhões) ao clube, tem negociações avançadas para assumir 90% das ações da SAF, conforme confirmado por um de seus sócios, Marcelo Claure. Pelo Campeonato Brasileiro, enfrentará o São Paulo no próximo sábado, no Morumbis."
     },
     "Grêmio": {
       "coach": "Luis Castro",
@@ -21,9 +21,9 @@
       "recent_changes": "O vice-presidente de futebol, Antônio Dutra Júnior, admitiu carências no elenco e reforçou a confiança no técnico Luís Castro em meio à pressão por resultados no Brasileirão. O clube busca a contratação de um meia articulador com características semelhantes às de Arrascaeta, mas enfrenta dificuldades financeiras e forte concorrência no mercado nacional. Pelo Brasileirão Feminino, conquistou uma vitória por 3 a 0 sobre o Red Bull Bragantino na última rodada."
     },
     "São Paulo": {
-      "coach": "Vago",
+      "coach": "Dorival Júnior",
       "league": "Brasileirão / Copa do Brasil / Copa Sul-Americana",
-      "recent_changes": "Sofreu uma derrota por 2 a 1 para o Fluminense pela 16ª rodada do Brasileirão (gol de Dória na reta final), mas segue na parte de cima da tabela. O próximo compromisso é contra o Millonarios FC pela Copa Sul-Americana. Anteriormente: foi eliminado da Copa do Brasil pelo Juventude, resultando na demissão de Roger Machado; a diretoria segue em busca de um novo treinador."
+      "recent_changes": "Sofreu uma derrota por 2 a 1 para o Fluminense no Maracanã, sob o comando do interino Milton Cruz, estacionando no 4º lugar do Brasileirão com 24 pontos. Dorival Júnior foi confirmado como o novo treinador e assume a equipe na segunda-feira. Os próximos compromissos são contra o Millonarios, no Morumbis, pela Copa Sul-Americana, e contra o Botafogo pelo Campeonato Brasileiro. Anteriormente: foi eliminado da Copa do Brasil pelo Juventude, resultando na demissão de Roger Machado."
     },
     "Corinthians": {
       "coach": "Vago",
@@ -126,9 +126,9 @@
       "recent_changes": "Avançou para as oitavas de final da Copa do Brasil, lucrando R$ 5 milhões em premiações."
     },
     "Cruzeiro": {
-      "coach": "Não mencionado",
-      "league": "Copa do Brasil / Campeonato Brasileiro",
-      "recent_changes": "Avançou para as oitavas de final da Copa do Brasil, lucrando R$ 5 milhões em premiações. Pelo Campeonato Brasileiro, empatou em 1 a 1 contra o Palmeiras na Arena Barueri, em partida válida pela 16ª rodada."
+      "coach": "Artur Jorge",
+      "league": "Copa do Brasil / Campeonato Brasileiro / Libertadores",
+      "recent_changes": "Avançou para as oitavas de final da Copa do Brasil, lucrando R$ 5 milhões em premiações. Pelo Campeonato Brasileiro, o técnico Artur Jorge elogiou a postura e a competitividade da equipe no empate em 1 a 1 com o Palmeiras na Arena Barueri, resultado que deixou o clube provisoriamente na 12ª colocação. O próximo desafio será contra o Boca Juniors na terça-feira, em La Bombonera, pela quinta rodada da Libertadores."
     },
     "Fluminense": {
       "coach": "Luis Zubeldía",
@@ -147,8 +147,8 @@
     },
     "Palmeiras": {
       "coach": "Abel Ferreira",
-      "league": "Copa do Brasil / Campeonato Brasileiro Sub-20 / Campeonato Brasileiro",
-      "recent_changes": "Avançou para as oitavas de final da Copa do Brasil e lidera o Campeonato Brasileiro Sub-20 ao lado do Vasco. Pelo Campeonato Brasileiro, empatou em 1 a 1 com o Cruzeiro na Arena Barueri pela 16ª rodada, com gols de Keny Arroyo e Felipe Anderson. O técnico Abel Ferreira reclamou do calendário, apontou desgaste físico provocado pela sequência de jogos e lesões, e destacou que o atacante Paulinho precisa de minutagem controlada por não estar 100% fisicamente."
+      "league": "Copa do Brasil / Campeonato Brasileiro Sub-20 / Campeonato Brasileiro / Libertadores",
+      "recent_changes": "Avançou para as oitavas de final da Copa do Brasil e lidera o Campeonato Brasileiro Sub-20 ao lado do Vasco. Pelo Campeonato Brasileiro, empatou em 1 a 1 com o Cruzeiro na Arena Barueri (gols de Keny Arroyo e Felipe Anderson), somando seu terceiro empate consecutivo pelo mesmo placar na competição, mas mantendo a liderança isolada com cinco pontos de vantagem para o segundo colocado. O próximo compromisso será contra o Cerro Porteño na quarta-feira, no Allianz Parque, pela quinta rodada da Libertadores."
     },
     "Remo": {
       "coach": "Não mencionado",
@@ -238,8 +238,18 @@
     "Millonarios FC": {
       "coach": "Não mencionado",
       "league": "Copa Sul-Americana",
-      "recent_changes": "Enfrentará o São Paulo, às 21h, em partida válida pela Copa Sul-Americana."
+      "recent_changes": "Enfrentará o São Paulo na terça-feira (19), às 21h30 (de Brasília), no Morumbis, em partida válida pela Copa Sul-Americana."
+    },
+    "Boca Juniors": {
+      "coach": "Não mencionado",
+      "league": "Libertadores",
+      "recent_changes": "Enfrentará o Cruzeiro em La Bombonera na terça-feira, às 21h30, em partida válida pela quinta rodada da Copa Libertadores."
+    },
+    "Cerro Porteño": {
+      "coach": "Não mencionado",
+      "league": "Libertadores",
+      "recent_changes": "Enfrentará o Palmeiras no Allianz Parque na quarta-feira, às 21h30, em partida válida pela quinta rodada da Copa Libertadores."
     }
   },
-  "last_updated": "2026-05-17T08:06:24.955Z"
+  "last_updated": "2026-05-17T10:17:54.925Z"
 }
