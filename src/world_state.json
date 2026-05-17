@@ -13,7 +13,7 @@
     "Botafogo": {
       "coach": "Não mencionado",
       "league": "Campeonato Brasileiro / Copa do Brasil",
-      "recent_changes": "A Justiça acatou o pedido de recuperação judicial da SAF. John Textor (ex-controlador) foi afastado da gestão. A empresa GDA Luma tem negociações avançadas para assumir 90% das ações da SAF. Recentemente, foi eliminado da Copa do Brasil após derrota por 2 a 0 para a Chapecoense. Pelo Campeonato Brasileiro, a equipe está sem vencer há três rodadas, vindo de um empate por 1 a 1 com o Atlético-MG fora de casa (gol de Arthur Cabral), e receberá o Corinthians no Estádio Nilton Santos pela 16ª rodada."
+      "recent_changes": "A Justiça acatou o pedido de recuperação judicial da SAF. John Textor (ex-controlador) foi afastado da gestão. A empresa GDA Luma tem negociações avançadas para assumir 90% das ações da SAF. Recentemente, foi eliminado da Copa do Brasil após derrota por 2 a 0 para a Chapecoense. Pelo Campeonato Brasileiro, a equipe está sem vencer há três rodadas, vindo de um empate por 1 a 1 com o Atlético-MG fora de casa, e receberá o Corinthians no Estádio Nilton Santos pela 16ª rodada. Para este duelo, o volante titular absoluto Danilo será desfalque por problemas pessoais, em um momento onde negociações de transferência para o Palmeiras na próxima janela estariam avançando nos bastidores."
     },
     "Grêmio": {
       "coach": "Luis Castro",
@@ -33,7 +33,7 @@
     "Seleção Brasileira": {
       "coach": "Carlo Ancelotti",
       "league": "Copa do Mundo",
-      "recent_changes": "Carlo Ancelotti fará a convocação final para a Copa do Mundo nesta segunda-feira (18), no Museu do Amanhã, no Rio de Janeiro, havendo a possibilidade de convocação de Neymar. O treinador e o coordenador Rodrigo Caetano estarão na Arena da Baixada acompanhando Athletico-PR e Flamengo. Anteriormente, o goleiro Hugo Souza apareceu na pré-lista."
+      "recent_changes": "Carlo Ancelotti fará a convocação final oficial dos 26 jogadores para a Copa do Mundo nesta segunda-feira (18), no Museu do Amanhã, no Rio de Janeiro. O volante Danilo, do Botafogo, ganhou espaço na reta final do ciclo e aparece entre os principais candidatos para ocupar uma vaga no meio de campo. Anteriormente, houve a possibilidade de convocação de Neymar, o goleiro Hugo Souza apareceu na pré-lista e a comissão técnica acompanhou o duelo entre Athletico-PR e Flamengo."
     },
     "Atlético-MG": {
       "coach": "Eduardo \"Barba\" Domínguez",
@@ -148,7 +148,7 @@
     "Palmeiras": {
       "coach": "Abel Ferreira",
       "league": "Copa do Brasil / Campeonato Brasileiro Sub-20 / Campeonato Brasileiro / Libertadores",
-      "recent_changes": "Avançou para as oitavas de final da Copa do Brasil e lidera o Campeonato Brasileiro Sub-20 ao lado do Vasco. Pelo Campeonato Brasileiro, é o atual líder isolado e vem de um empate em 1 a 1 com o Cruzeiro na Arena Barueri, partida em que Gustavo Gómez teve uma chance clara em meia bicicleta, defendida pelo goleiro rival. O próximo compromisso será contra o Cerro Porteño na quarta-feira, no Allianz Parque, pela quinta rodada da Libertadores."
+      "recent_changes": "Avançou para as oitavas de final da Copa do Brasil e lidera o Campeonato Brasileiro Sub-20 ao lado do Vasco. Pelo Campeonato Brasileiro, é o atual líder isolado e vem de um empate em 1 a 1 com o Cruzeiro na Arena Barueri. O próximo compromisso será contra o Cerro Porteño na quarta-feira, no Allianz Parque, pela quinta rodada da Libertadores. Nos bastidores, o clube apontou o volante Danilo, do Botafogo, como alvo para a próxima janela de transferências e as negociações estariam avançando."
     },
     "Remo": {
       "coach": "Não mencionado",
@@ -251,5 +251,5 @@
       "recent_changes": "Enfrentará o Palmeiras no Allianz Parque na quarta-feira, às 21h30, em partida válida pela quinta rodada da Copa Libertadores."
     }
   },
-  "last_updated": "2026-05-17T17:44:45.952Z"
+  "last_updated": "2026-05-17T18:47:55.900Z"
 }
