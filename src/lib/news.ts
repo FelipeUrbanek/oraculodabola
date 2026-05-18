@@ -108,7 +108,7 @@ export async function resolveAndScrapeImage(
   if (!browser) {
     browser = await puppeteer.launch({
       headless: true,
-      args: ["--no-sandbox"],
+      args: ["--no-sandbox", "--disable-setuid-sandbox", "--disable-dev-shm-usage"],
     });
     internalBrowser = true;
   }
@@ -116,10 +116,21 @@ export async function resolveAndScrapeImage(
   const page = await browser.newPage();
 
   try {
-    await page.goto(googleUrl, { waitUntil: "domcontentloaded", timeout: 20000 });
+    // Intercepta e bloqueia assets desnecessários para acelerar o scrape em 10x
+    await page.setRequestInterception(true);
+    page.on('request', (req: any) => {
+      const type = req.resourceType();
+      if (['image', 'font', 'stylesheet', 'media'].includes(type)) {
+        req.abort();
+      } else {
+        req.continue();
+      }
+    });
+
+    await page.goto(googleUrl, { waitUntil: "domcontentloaded", timeout: 15000 });
     
     // Espera um pouco para o JS renderizar as meta tags se necessário
-    await new Promise(r => setTimeout(r, 2000));
+    await new Promise(r => setTimeout(r, 1000));
 
     if (page.url().includes("news.google.com")) {
       await page
@@ -249,7 +260,7 @@ export async function fetchTerraDirect(target: { name: string; terra: string }, 
   if (!browser) {
     browser = await puppeteer.launch({
       headless: true,
-      args: ["--no-sandbox"],
+      args: ["--no-sandbox", "--disable-setuid-sandbox", "--disable-dev-shm-usage"],
     });
     internalBrowser = true;
   }
@@ -385,7 +396,10 @@ export async function fetchFootballNews(trends: string[] = [], excludeIds: strin
     const remaining = sortedNews.filter((n) => !diverseNews.some((dn) => dn.link === n.link));
     const toProcess = [...diverseNews, ...remaining].slice(0, 40);
 
-    const imageBrowser = await puppeteer.launch({ headless: true, args: ["--no-sandbox"] });
+    const imageBrowser = await puppeteer.launch({
+      headless: true,
+      args: ["--no-sandbox", "--disable-setuid-sandbox", "--disable-dev-shm-usage"],
+    });
     const finalItems: NewsItem[] = [];
 
     try {
