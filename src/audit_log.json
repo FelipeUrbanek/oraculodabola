@@ -883,5 +883,13 @@
     "source_domain": "www.terra.com.br",
     "category": "Copa 2026",
     "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-05-18T23:49:54.042Z",
+    "headline": "DANILO NA COPA: BOTAFOGO DE VOLTA!",
+    "source_url": "https://www.terra.com.br/esportes/brasil/convocado-por-ancelotti-danilo-encerra-jejum-do-botafogo-em-copas-do-mundo,cd8e895e5c112f121481904eb0dea2f1nvqv6xss.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Botafogo",
+    "status": "SUCCESS"
   }
 ]
