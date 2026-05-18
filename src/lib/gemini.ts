@@ -63,12 +63,15 @@ async function callGroq(prompt: string, isJson: boolean = true) {
  */
 async function callGemini(prompt: string, isJson: boolean = true, retryCount: number = 0): Promise<any> {
   const models = [
+    "gemini-2.5-flash",
+    "gemini-pro-latest",
+    "gemini-2.0-flash",
+    "gemini-1.5-pro",
+    "gemini-1.5-flash",
     "gemini-3.1-pro-preview",
     "gemini-3-pro-preview",
     "gemini-2.5-pro",
-    "gemini-pro-latest",
     "gemini-3.1-flash-lite",
-    "gemini-2.5-flash",
   ];
 
   // Se esgotamos as chaves, usamos o Groq como última opção
@@ -104,9 +107,9 @@ async function callGemini(prompt: string, isJson: boolean = true, retryCount: nu
       return text;
     } catch (e: any) {
       console.log(`⚠️ Modelo ${modelName} com a chave ${currentKeyIndex + 1} falhou. Erro: ${e.message}`);
-      // Verifica se o erro foi de rate limit ou cota excedida (429)
-      if (e.message && e.message.includes("429")) {
-         console.warn(`[AVISO] Chave ${currentKeyIndex + 1} exaurida. Rotacionando chave...`);
+      // Verifica se o erro foi de rate limit/cota (429) ou acesso negado/billing (403)
+      if (e.message && (e.message.includes("429") || e.message.includes("403"))) {
+         console.warn(`[AVISO] Chave ${currentKeyIndex + 1} indisponível (Erro: ${e.message.includes("429") ? "429 Quota" : "403 Acesso"}). Rotacionando chave...`);
          currentKeyIndex = (currentKeyIndex + 1) % API_KEYS.length;
          return callGemini(prompt, isJson, retryCount + 1);
       }
@@ -236,15 +239,27 @@ export async function processNewsWithGemini(
     
     // Verificação de Identidade na revisão
     const revisedStr = JSON.stringify(revised).toLowerCase();
-    if (teamName && teamName !== "MERCADO DA BOLA" && teamName !== "TREND") {
+    const generalCategories = [
+      "mercado da bola",
+      "trend",
+      "futebol internacional",
+      "copa 2026",
+      "brasileirão",
+      "libertadores",
+      "copa do brasil",
+      "champions league",
+      "futebol"
+    ];
+    if (teamName && !generalCategories.includes(teamName.toLowerCase())) {
       if (!revisedStr.includes(teamName.toLowerCase())) {
          throw new Error(`MISMATCH: Conteúdo revisado perdeu a identidade do time ${teamName}.`);
       }
     }
 
     processed = revised;
-  } catch (e) {
-    console.warn("⚠️ Falha na camada de revisão, usando original.");
+  } catch (e: any) {
+    console.warn(`⚠️ Falha na camada de revisão: ${e.message}. Rejeitando para evitar post sem revisão.`);
+    throw e;
   }
 
   // Validação de Limite de Caracteres (Instagram: 2200)
@@ -386,6 +401,7 @@ export async function rankBestNews(newsList: any[]): Promise<any> {
     .map((n, i) => `[${i}] ${n.category}: ${n.title}`)
     .join("\n");
   const prompt = `Escolha a notícia de MAIOR impacto. Priorize o que é NOVO. 
+  Dê preferência especial a notícias sobre a 'Copa 2026' ou 'Seleção Brasileira' se forem relevantes e de alto impacto.
   Responda APENAS o índice.\n${newsContext}`;
   try {
     const res = await callGemini(prompt, false);

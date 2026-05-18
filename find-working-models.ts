@@ -3,17 +3,21 @@ import dotenv from 'dotenv';
 
 dotenv.config({ path: '.env.local' });
 
-async function findWorkingModels() {
-  const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY || '');
+async function testKey(keyName: string, keyVal: string) {
+  if (!keyVal) {
+    console.log(`\n⚠️ ${keyName} não está configurada.`);
+    return;
+  }
   
-  console.log('🔍 Iniciando Varredura de Modelos Disponíveis...');
+  console.log(`\n🔍 Testando ${keyName}...`);
+  const genAI = new GoogleGenerativeAI(keyVal);
   
   try {
-    const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models?key=${process.env.GEMINI_API_KEY}`);
+    const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models?key=${keyVal}`);
     const data = await response.json();
     
     if (data.error) {
-      console.error('❌ Erro da API:', data.error);
+      console.error(`❌ Erro da API para ${keyName}:`, data.error.message || data.error);
       return;
     }
 
@@ -21,43 +25,67 @@ async function findWorkingModels() {
       .filter((m: any) => m.supportedGenerationMethods.includes('generateContent'))
       .map((m: any) => m.name.replace('models/', ''));
 
-    console.log(`📊 Encontrados ${candidates.length} candidatos que suportam texto. Testando...`);
+    console.log(`📊 ${keyName}: Encontrados ${candidates.length} candidatos. Testando alguns principais...`);
+    const testModels = ['gemini-2.5-flash', 'gemini-2.0-flash', 'gemini-1.5-flash', 'gemini-1.5-pro', 'gemini-pro-latest'];
 
-    const workingModels = [];
-
-    for (const modelName of candidates) {
-      process.stdout.write(`Testing ${modelName}... `);
+    for (const modelName of testModels) {
+      if (!candidates.includes(modelName)) continue;
+      process.stdout.write(`Testing ${modelName} with ${keyName}... `);
       try {
         const model = genAI.getGenerativeModel({ model: modelName });
         const result = await model.generateContent("Hi, respond with only the word 'OK' if you are working.");
         const text = result.response.text().trim();
         if (text.includes('OK')) {
           console.log('✅ FUNCIONAL');
-          workingModels.push(modelName);
         } else {
-          console.log('❓ Resposta inesperada');
+          console.log(`❓ Resposta inesperada: ${text}`);
         }
       } catch (e: any) {
-        console.log(`❌ FALHOU (${e.message.split('\n')[0]})`);
+        console.log(`❌ FALHOU (${e.message.split('\n')[0].substring(0, 120)})`);
       }
     }
-
-    console.log('\n🏆 LISTA FINAL DE MODELOS FUNCIONAIS:');
-    console.log(JSON.stringify(workingModels, null, 2));
-
-    // Priorização: Pro > Flash > O resto
-    const prioritized = [
-      ...workingModels.filter(m => m.includes('pro')).sort().reverse(),
-      ...workingModels.filter(m => m.includes('flash')).sort().reverse(),
-      ...workingModels.filter(m => !m.includes('pro') && !m.includes('flash')).sort().reverse()
-    ];
-
-    console.log('\n🔝 ORDEM DE PRIORIDADE SUGERIDA:');
-    console.log(JSON.stringify(prioritized, null, 2));
-
-  } catch (error) {
-    console.error('❌ Falha na varredura:', error);
+  } catch (e: any) {
+    console.log(`❌ Erro crítico ao testar ${keyName}: ${e.message}`);
   }
 }
 
-findWorkingModels();
+async function testGroq() {
+  const keyVal = process.env.GROQ_API_KEY || '';
+  if (!keyVal) {
+    console.log('\n⚠️ GROQ_API_KEY não está configurada.');
+    return;
+  }
+  console.log('\n🔍 Testando GROQ...');
+  try {
+    const response = await fetch("https://api.groq.com/openai/v1/chat/completions", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        "Authorization": `Bearer ${keyVal}`
+      },
+      body: JSON.stringify({
+        model: "llama-3.3-70b-versatile",
+        messages: [{ role: "user", content: "Hi, respond with only the word 'OK' if you are working." }],
+        max_tokens: 10
+      })
+    });
+
+    if (response.ok) {
+      const data: any = await response.json();
+      console.log(`✅ GROQ FUNCIONAL: ${data.choices[0].message.content.trim()}`);
+    } else {
+      console.log(`❌ GROQ FALHOU: ${response.statusText} (${response.status})`);
+    }
+  } catch (e: any) {
+    console.log(`❌ GROQ FALHOU: ${e.message}`);
+  }
+}
+
+async function run() {
+  await testKey('GEMINI_API_KEY', process.env.GEMINI_API_KEY || '');
+  await testKey('GEMINI_API_KEY_BACKUP', process.env.GEMINI_API_KEY_BACKUP || '');
+  await testGroq();
+}
+
+run();
+

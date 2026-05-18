@@ -39,7 +39,7 @@ async function runOráculo() {
 
   console.log("🔮 O Oráculo está despertando...");
 
-  let history: { id: string; title?: string; date: string }[] = [];
+  let history: { id: string; title?: string; date: string; category?: string }[] = [];
   if (fs.existsSync(HISTORY_FILE)) {
     try {
       const raw = fs.readFileSync(HISTORY_FILE, "utf-8");
@@ -55,7 +55,34 @@ async function runOráculo() {
   }
 
   const postedIds = history.map((h) => h.id);
-  const newsList = await fetchFootballNews([], postedIds);
+  let newsList = await fetchFootballNews([], postedIds);
+
+  // Regra da Copa 2026:
+  // - A Copa do Mundo de 2026 começa em 11 de Junho de 2026.
+  // - Período de alta prioridade começa 3 dias antes (8 de Junho de 2026).
+  // - Antes de 8 de Junho de 2026, limitamos a no máximo 1 notícia de Copa por dia.
+  const priorityStart = new Date("2026-06-08T00:00:00Z").getTime();
+  const isPriorityPeriod = Date.now() >= priorityStart;
+  
+  if (!isPriorityPeriod) {
+    const hasPostedCopaInLast24h = history.some(h => {
+      const diffHours = (Date.now() - new Date(h.date).getTime()) / (1000 * 60 * 60);
+      if (diffHours > 24) return false;
+      const isCopaCat = h.category === "Copa 2026";
+      const isCopaUrl = typeof h.id === "string" && (h.id.includes("copa-2026") || h.id.includes("copa-do-mundo"));
+      return isCopaCat || isCopaUrl;
+    });
+
+    if (hasPostedCopaInLast24h) {
+      const rawCount = newsList.length;
+      newsList = newsList.filter((item: any) => item.category !== "Copa 2026");
+      const filteredCount = rawCount - newsList.length;
+      if (filteredCount > 0) {
+        console.log(`⏳ [REGRA DA COPA] Filtradas ${filteredCount} notícias de 'Copa 2026' (Limite de 1 por dia ativo antes de 08/06/2026).`);
+      }
+    }
+  }
+
   runReport.candidatesFound = newsList.length;
   const LAST_CATEGORY_FILE = path.join(
     process.cwd(),
@@ -208,6 +235,7 @@ async function runOráculo() {
         id: item.id || item.link,
         title: item.title,
         date: new Date().toISOString(),
+        category: item.category,
       });
       if (history.length > 500) history = history.slice(-500);
 

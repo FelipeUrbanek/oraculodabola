@@ -20,6 +20,10 @@ export interface NewsItem {
 }
 
 const FOOTBALL_TARGETS = [
+  {
+    name: "Copa 2026",
+    terra: "https://www.terra.com.br/esportes/futebol/copa-2026/",
+  },
   { name: "Flamengo", terra: "https://www.terra.com.br/esportes/flamengo/" },
   { name: "Palmeiras", terra: "https://www.terra.com.br/esportes/palmeiras/" },
   {
@@ -93,10 +97,6 @@ const FOOTBALL_TARGETS = [
     name: "Barcelona",
     terra:
       "https://www.terra.com.br/esportes/futebol/internacional/equipes/barcelona/",
-  },
-  {
-    name: "Copa 2026",
-    terra: "https://www.terra.com.br/esportes/futebol/copa-2026/",
   },
 ];
 
