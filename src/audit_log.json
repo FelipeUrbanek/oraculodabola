@@ -819,5 +819,13 @@
     "source_domain": "www.terra.com.br",
     "category": "Atlético-MG",
     "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-05-18T20:22:24.894Z",
+    "headline": "VERDÃO FIXA VALOR PARA VENDER RÔMULO",
+    "source_url": "https://www.terra.com.br/esportes/palmeiras/palmeiras-define-valor-para-negociar-romulo-atualmente-no-novorizontino,b5f6ea5955bc5d0ef97013cea568138dvz179ypo.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Palmeiras",
+    "status": "SUCCESS"
   }
 ]

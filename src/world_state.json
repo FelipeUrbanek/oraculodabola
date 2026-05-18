@@ -83,7 +83,7 @@
     "Ceará": {
       "coach": "Não mencionado",
       "league": "Não mencionada",
-      "recent_changes": "Enfrentará o Fortaleza em clássico no domingo, às 18h30, na Arena Castelão."
+      "recent_changes": "Enfrentará o Fortaleza em clássico no domingo, às 18h30, na Arena Castelão. Teve passagem recente do meia-atacante Rômulo (pertencente ao Palmeiras e atualmente no Novorizontino), que jogou pelo clube por empréstimo."
     },
     "Sport Recife": {
       "coach": "Não mencionado",
@@ -148,7 +148,7 @@
     "Palmeiras": {
       "coach": "Abel Ferreira",
       "league": "Copa do Brasil / Campeonato Brasileiro Sub-20 / Campeonato Brasileiro / Libertadores",
-      "recent_changes": "Avançou para as oitavas de final da Copa do Brasil e lidera o Campeonato Brasileiro Sub-20 ao lado do Vasco. Pelo Campeonato Brasileiro, é o atual líder isolado e vem de um empate em 1 a 1 com o Cruzeiro na Arena Barueri. O próximo compromisso será contra o Cerro Porteño na quarta-feira, no Allianz Parque, pela quinta rodada da Libertadores. Confirmou a contratação do zagueiro Alexsander Barboza junto ao Botafogo por 4 milhões de dólares (R$ 20 milhões), com pagamento parcelado. O atleta defenderá o clube a partir do segundo semestre de 2026 e já realizou os exames médicos. Devido ao investimento, a diretoria segurou as tratativas com o zagueiro Nino, do Zenit. Nos bastidores, também negocia com o volante Danilo, do Botafogo. Na Justiça, a presidente Leila Pereira venceu um processo por danos morais contra o ex-jogador do clube, Dudu. O atleta foi condenado a pagar uma indenização de R$ 50 mil devido a ofensas publicadas nas redes sociais após sua saída em janeiro de 2025."
+      "recent_changes": "Avançou para as oitavas de final da Copa do Brasil e lidera o Campeonato Brasileiro Sub-20 ao lado do Vasco. Pelo Campeonato Brasileiro, é o atual líder isolado e vem de um empate em 1 a 1 com o Cruzeiro na Arena Barueri. O próximo compromisso será contra o Cerro Porteño na quarta-feira, no Allianz Parque, pela quinta rodada da Libertadores. Confirmou a contratação do zagueiro Alexsander Barboza junto ao Botafogo por 4 milhões de dólares (R$ 20 milhões), com pagamento parcelado. O atleta defenderá o clube a partir do segundo semestre de 2026 e já realizou os exames médicos. Devido ao investimento, a diretoria segurou as tratativas com o zagueiro Nino, do Zenit. Nos bastidores, também negocia com o volante Danilo, do Botafogo. Na Justiça, a presidente Leila Pereira venceu um processo por danos morais contra o ex-jogador do clube, Dudu. O atleta foi condenado a pagar uma indenização de R$ 50 mil devido a ofensas publicadas nas redes sociais após sua saída em janeiro de 2025. A diretoria decidiu negociar o meia-atacante Rômulo na próxima janela e definiu o valor de venda em US$ 4 milhões (cerca de R$ 20 milhões). O atleta chegou ao clube em 2024 por R$ 7,4 milhões e encontra-se emprestado ao Novorizontino."
     },
     "Remo": {
       "coach": "Não mencionado",
@@ -324,7 +324,12 @@
       "coach": "Não mencionado",
       "league": "Futebol Ucraniano",
       "recent_changes": "Admite discutir a possível saída do atacante brasileiro Lucas Ferreira nesta janela de transferências, sendo o Atlético-MG um dos maiores interessados. O jogador foi contratado pelo clube em agosto do ano passado por 10 milhões de euros junto ao São Paulo, mas teve poucas oportunidades e não se firmou como titular."
+    },
+    "Novorizontino": {
+      "coach": "Não mencionado",
+      "league": "Paulistão",
+      "recent_changes": "A equipe chegou à decisão do Paulistão nesta temporada, justamente contra o Palmeiras. Atualmente, conta com o meia-atacante Rômulo no elenco (emprestado pelo Palmeiras), que contribuiu decisivamente para a campanha, acumulando sete gols e seis assistências em 21 jogos. Na final estadual, o jogador ficou de fora do jogo de ida devido a uma cláusula de multa de R$ 1 milhão."
     }
   },
-  "last_updated": "2026-05-18T19:39:59.487Z"
+  "last_updated": "2026-05-18T20:22:04.076Z"
 }
