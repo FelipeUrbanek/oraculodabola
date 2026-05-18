@@ -1,0 +1,19 @@
+{
+  "timestamp": "2026-05-18T17:37:05.536Z",
+  "status": "COMPLETED",
+  "postsPlanned": 2,
+  "candidatesFound": 11,
+  "successfulPosts": [
+    {
+      "category": "Mercado da Bola",
+      "headline": "MOURINHO DE VOLTA AO REAL",
+      "source_url": "https://www.terra.com.br/esportes/futebol/internacional/equipes/real-madrid/jose-mourinho-acerta-retorno-ao-real-madrid-diz-jornalista,60fd2afa4b5966e3b6d298ddd9187a20u8bxdowf.html"
+    },
+    {
+      "category": "Palmeiras",
+      "headline": "DUDU CONDENADO A INDENIZAR LEILA",
+      "source_url": "https://www.terra.com.br/esportes/cruzeiro/tj-sp-condena-dudu-a-pagar-r-50-mil-por-danos-morais-contra-leila-pereira,4d969d587ce8e76bc7d7f04e5845dd10n9gtuph6.html"
+    }
+  ],
+  "failedPosts": []
+}

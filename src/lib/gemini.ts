@@ -90,11 +90,18 @@ async function callGemini(prompt: string, isJson: boolean = true, retryCount: nu
     try {
       const model = genAI.getGenerativeModel({ model: modelName });
       const result = await model.generateContent(prompt);
-      const text = result.response
-        .text()
-        .replace(/```json|```/g, "")
-        .trim();
-      return isJson ? JSON.parse(text) : text;
+      let text = result.response.text().trim();
+      
+      if (isJson) {
+        const jsonMatch = text.match(/\{[\s\S]*\}|\[[\s\S]*\]/);
+        if (jsonMatch) {
+          text = jsonMatch[0];
+        } else {
+          text = text.replace(/```json|```/g, "").trim();
+        }
+        return JSON.parse(text);
+      }
+      return text;
     } catch (e: any) {
       console.log(`⚠️ Modelo ${modelName} com a chave ${currentKeyIndex + 1} falhou. Erro: ${e.message}`);
       // Verifica se o erro foi de rate limit ou cota excedida (429)
@@ -389,6 +396,51 @@ export async function rankBestNews(newsList: any[]): Promise<any> {
   }
 }
 
+function getCleanWords(title: string): Set<string> {
+  const stopWords = new Set([
+    "a", "o", "de", "para", "por", "com", "em", "um", "uma", "os", "as", 
+    "contra", "apos", "após", "para", "sobre", "entre", "sem", "sob", 
+    "e", "do", "da", "dos", "das", "no", "na", "nos", "nas", 
+    "pelo", "pela", "pelos", "pelas", "ao", "aos", "que", 
+    "se", "um", "uma", "uns", "umas", "ele", "ela", "eles", "elas"
+  ]);
+  
+  const normalized = title
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "") // Remove acentos
+    .replace(/[^a-z0-9\s-]/g, " ")   // Mantém apenas letras, números e espaços
+    .split(/\s+/);
+    
+  const cleanWords = new Set<string>();
+  for (const word of normalized) {
+    if (word.length > 2 && !stopWords.has(word)) {
+      cleanWords.add(word);
+    }
+  }
+  return cleanWords;
+}
+
+function areTitlesDuplicate(title1: string, title2: string): boolean {
+  const words1 = getCleanWords(title1);
+  const words2 = getCleanWords(title2);
+  
+  if (words1.size === 0 || words2.size === 0) return false;
+  
+  let intersectionCount = 0;
+  for (const word of words1) {
+    if (words2.has(word)) {
+      intersectionCount++;
+    }
+  }
+  
+  const minSize = Math.min(words1.size, words2.size);
+  const similarity = intersectionCount / minSize;
+  
+  // Duplicados se compartilharem mais de 40% das palavras chave significativas
+  return similarity >= 0.40;
+}
+
 /**
  * Filtra notícias que possuem o mesmo tema de notícias já postadas recentemente.
  */
@@ -397,7 +449,51 @@ export async function filterDuplicateThemes(
   historyTitles: string[],
 ): Promise<number[]> {
   if (candidates.length === 0) return [];
-  if (historyTitles.length === 0) return candidates.map((_, i) => i);
+
+  // 1. Filtragem Programática Local (Segurança Determinística)
+  const approvedIndices: number[] = [];
+  const approvedTitles: string[] = [];
+
+  for (let i = 0; i < candidates.length; i++) {
+    const candidate = candidates[i];
+    
+    // Compara com o histórico de títulos recentes
+    let isDupWithHistory = false;
+    for (const histTitle of historyTitles.slice(-30)) { // Compara com as últimas 30 postagens
+      if (areTitlesDuplicate(candidate.title, histTitle)) {
+        console.log(`[LOCAL FILTER] Reprovado por duplicidade com histórico: "${candidate.title}" vs "${histTitle}"`);
+        isDupWithHistory = true;
+        break;
+      }
+    }
+    if (isDupWithHistory) continue;
+
+    // Compara com os aprovados no lote atual
+    let isDupWithCurrentBatch = false;
+    for (const appTitle of approvedTitles) {
+      if (areTitlesDuplicate(candidate.title, appTitle)) {
+        console.log(`[LOCAL FILTER] Reprovado por duplicidade no lote atual: "${candidate.title}" vs "${appTitle}"`);
+        isDupWithCurrentBatch = true;
+        break;
+      }
+    }
+    if (isDupWithCurrentBatch) continue;
+
+    approvedIndices.push(i);
+    approvedTitles.push(candidate.title);
+  }
+
+  if (approvedIndices.length === 0) {
+    console.log("⚠️ Filtragem programática local removeu todos os itens por duplicidade.");
+    return [];
+  }
+
+  const localCandidates = approvedIndices.map(idx => candidates[idx]);
+
+  // Se sobrou apenas 1 notícia aprovada localmente, não precisamos chamar a API para de-duplicar
+  if (localCandidates.length === 1) {
+    return approvedIndices;
+  }
 
   const prompt = `
     Persona: Você é o Editor-Chefe do "Oráculo da Bola". Sua missão é evitar REPETIÇÃO.
@@ -409,7 +505,7 @@ export async function filterDuplicateThemes(
       .join("\n")}
 
     Abaixo estão as NOVAS candidatas:
-    ${candidates.map((c, i) => `[${i}] ${c.title}`).join("\n")}
+    ${localCandidates.map((c, i) => `[${i}] ${c.title}`).join("\n")}
 
     TAREFA:
     1. Analise se as novas candidatas tratam do MESMO FATO ou MESMO ASSUNTO que já foi postado (Histórico).
@@ -431,9 +527,12 @@ export async function filterDuplicateThemes(
 
   try {
     const res = await callGemini(prompt);
-    return Array.isArray(res) ? res : candidates.map((_, i) => i);
+    if (Array.isArray(res)) {
+      return res.map(localIdx => approvedIndices[localIdx]).filter(idx => idx !== undefined);
+    }
+    return approvedIndices;
   } catch (e) {
-    console.error("⚠️ Falha ao filtrar temas duplicados com Gemini:", e);
-    return candidates.map((_, i) => i);
+    console.error("⚠️ Falha ao filtrar temas duplicados com Gemini. Usando fallback local:", e);
+    return approvedIndices;
   }
 }
