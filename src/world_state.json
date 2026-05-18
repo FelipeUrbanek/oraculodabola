@@ -198,7 +198,7 @@
     "Flamengo": {
       "coach": "Léo Jardim",
       "league": "Campeonato Brasileiro / Campeonato Brasileiro Sub-20 / Copa do Brasil / Recopa Sul-Americana / Supercopa Rei do Brasil",
-      "recent_changes": "Pelo Campeonato Brasileiro, empatou em 1 a 1 com o Athletico-PR na Arena da Baixada. A equipe saiu perdendo aos 11 minutos após falha grotesca do goleiro Rossi em chute de Mendoza, mas conseguiu igualar o placar no fim do jogo. O técnico Léo Jardim foi criticado pela lentidão para fazer substituições táticas. O duelo foi acompanhado pelo técnico da Seleção Brasileira, Carlo Ancelotti. Pelo Sub-20, receberá o Santos no Estádio Luso Brasileiro na quinta-feira (21). Na temporada, foi eliminado na quinta fase da Copa do Brasil pelo Vitória e foi vice-campeão da Recopa Sul-Americana e da Supercopa Rei do Brasil."
+      "recent_changes": "Pelo Campeonato Brasileiro, empatou em 1 a 1 com o Athletico-PR na Arena da Baixada. A equipe saiu perdendo aos 11 minutos após falha grotesca do goleiro Rossi em chute de Mendoza, mas conseguiu igualar o placar no fim do jogo. O técnico Léo Jardim foi criticado pela lentidão para fazer substituições táticas. O duelo foi acompanhado pelo técnico da Seleção Brasileira, Carlo Ancelotti. Pelo Sub-20, receberá o Santos no Estádio Luso Brasileiro na quinta-feira (21). Na temporada, foi eliminado na quinta fase da Copa do Brasil pelo Vitória e foi vice-campeão da Recopa Sul-Americana e da Supercopa Rei do Brasil. Recentemente, liberou o meia Giorgian de Arrascaeta para dar continuidade ao tratamento de uma fratura na clavícula direita no Uruguai, visando a Copa do Mundo. A lesão foi sofrida no dia 29 de abril, num empate por 1 a 1 com o Estudiantes, na Argentina."
     },
     "Coritiba": {
       "coach": "Não mencionado",
@@ -329,7 +329,17 @@
       "coach": "Não mencionado",
       "league": "Paulistão",
       "recent_changes": "A equipe chegou à decisão do Paulistão nesta temporada, justamente contra o Palmeiras. Atualmente, conta com o meia-atacante Rômulo no elenco (emprestado pelo Palmeiras), que contribuiu decisivamente para a campanha, acumulando sete gols e seis assistências em 21 jogos. Na final estadual, o jogador ficou de fora do jogo de ida devido a uma cláusula de multa de R$ 1 milhão."
+    },
+    "Seleção do Uruguai": {
+      "coach": "Marcelo Bielsa",
+      "league": "Copa do Mundo",
+      "recent_changes": "O técnico Marcelo Bielsa incluiu o meia Giorgian de Arrascaeta em sua pré-lista para a disputa da Copa do Mundo. Profissionais da seleção acompanharão a recuperação da fratura na clavícula direita do jogador, que foi liberado pelo Flamengo para dar continuidade ao tratamento no Uruguai."
+    },
+    "Estudiantes": {
+      "coach": "Não mencionado",
+      "league": "Não mencionada",
+      "recent_changes": "Empatou em 1 a 1 com o Flamengo no dia 29 de abril, na Argentina. Logo no início desta partida, o meia adversário Giorgian de Arrascaeta caiu de mau jeito e sofreu uma fratura na clavícula direita."
     }
   },
-  "last_updated": "2026-05-18T20:22:04.076Z"
+  "last_updated": "2026-05-18T21:13:40.056Z"
 }

@@ -827,5 +827,13 @@
     "source_domain": "www.terra.com.br",
     "category": "Palmeiras",
     "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-05-18T21:13:57.411Z",
+    "headline": "FLA LIBERA ARRASCAETA!",
+    "source_url": "https://www.terra.com.br/esportes/flamengo/flamengo-libera-de-arrascaeta-para-tratamento-no-uruguai,ec1f63671edf0d4021187eec10a38bdfvw6e3pwq.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Flamengo",
+    "status": "SUCCESS"
   }
 ]
