@@ -23,12 +23,12 @@
     "São Paulo": {
       "coach": "Dorival Júnior",
       "league": "Brasileirão / Copa do Brasil / Copa Sul-Americana",
-      "recent_changes": "Sofreu uma derrota por 2 a 1 para o Fluminense no sábado, 16, pelo Brasileirão. Sob o comando do interino Milton Cruz, a equipe viu o adversário marcar duas vezes no primeiro tempo, mas descontou com Dória na segunda etapa, estacionando no 4º lugar do Brasileirão com 24 pontos. Dorival Júnior foi confirmado como o novo treinador, inicia os trabalhos na segunda-feira (18) e avaliará a reintegração do zagueiro Arboleda. O jogador equatoriano havia sido multado e afastado, mas o clube evita liberá-lo sem custos. Os próximos compromissos são contra o Millonarios, no Morumbis, pela Copa Sul-Americana, e contra o Botafogo pelo Campeonato Brasileiro, no sábado (23), às 17h, no Morumbis. Anteriormente: foi eliminado da Copa do Brasil pelo Juventude, resultando na demissão de Roger Machado."
+      "recent_changes": "Foi o clube revelador de Lucas Ferreira, atacante negociado com o Shakhtar Donetsk em agosto do ano passado por 10 milhões de euros. No Brasileirão, sofreu uma derrota por 2 a 1 para o Fluminense. Dorival Júnior foi confirmado como o novo treinador e avaliará a reintegração do zagueiro Arboleda. Os próximos compromissos são contra o Millonarios (Sul-Americana) e Botafogo (Brasileirão)."
     },
     "Corinthians": {
       "coach": "Fernando Diniz",
       "league": "Campeonato Brasileiro / Copa do Brasil / Libertadores / Supercopa Rei do Brasil",
-      "recent_changes": "O clube trabalha com a expectativa do retorno de Memphis Depay (afastado há quase dois meses por lesão muscular) nesta quinta-feira (21) contra o Peñarol, pela Libertadores. O técnico Fernando Diniz mantém cautela sobre a situação física do camisa 10. O jogador poderá disputar no máximo três jogos (Peñarol, Atlético-MG e Platense) antes de se apresentar à seleção da Holanda para a Copa do Mundo, virando desfalque contra o Grêmio no dia 30. O contrato de Depay se encerra no dia 20 de junho e a renovação está indefinida; o clube busca parceiros comerciais, e o holandês já sinalizou que aceita reduzir o salário para permanecer. Anteriormente: foi derrotado pelo Botafogo por 3 a 1 no Brasileirão."
+      "recent_changes": "A diretoria chegou a consultar a situação do atacante Lucas Ferreira (atualmente no Shakhtar Donetsk) no início do ano, mas não avançou nas conversas. O clube também vive a expectativa do retorno de Memphis Depay nesta quinta-feira contra o Peñarol, pela Libertadores. A renovação do holandês segue indefinida. Anteriormente: foi derrotado pelo Botafogo por 3 a 1."
     },
     "Seleção Brasileira": {
       "coach": "Carlo Ancelotti",
@@ -36,9 +36,9 @@
       "recent_changes": "O técnico Carlo Ancelotti fará a convocação final oficial dos 26 jogadores para a Copa do Mundo nesta segunda-feira (18), no Museu do Amanhã, no Rio de Janeiro. A pedido da CBF, Neymar realizou exames de imagem preventivos para avaliação de suas condições físicas antes da lista, com tendência de ser convocado e retornar à equipe nacional após quase três anos de ausência. Anteriormente: Ancelotti esteve na Arena da Baixada, Danilo e Hugo Souza apareceram no radar recentemente; o ex-jogador Geovani Silva faleceu aos 62 anos."
     },
     "Atlético-MG": {
-      "coach": "Eduardo \"Barba\" Domínguez",
+      "coach": "Eduardo Domínguez",
       "league": "Campeonato Brasileiro / Copa do Brasil",
-      "recent_changes": "Venceu o Mirassol por 3 a 1 na Arena MRV pela 16ª rodada do Campeonato Brasileiro, alcançando a 7ª colocação com 21 pontos. Nos bastidores, o ídolo histórico Guilherme Alves retornou ao clube como novo coordenador de futebol. Ele já acompanhou a vitória no vestiário e atuará diariamente junto ao elenco profissional na Cidade do Galo, com apresentação oficial marcada para segunda-feira (18). O técnico Eduardo Domínguez elogiou a velocidade do ataque, agora formado por Bernard, Cuello e Minda, devido à saída de Hulk. Os próximos compromissos serão fora de casa contra o Corinthians (na Neo Química Arena, domingo, 24 de maio, às 18h30) e Vasco antes da parada para a Copa do Mundo. O atual atacante da equipe, Dudu, foi condenado pela Justiça de São Paulo a pagar R$ 50 mil de indenização por danos morais à presidente do Palmeiras, Leila Pereira, devido a ofensas nas redes sociais; o pedido de reconvenção movido pelo jogador foi indeferido. Anteriormente: avançou na Copa do Brasil nos pênaltis com destaque de Everson e o ex-técnico Sampaoli acionou o clube na CNRD."
+      "recent_changes": "O clube busca a contratação por empréstimo do atacante Lucas Ferreira, do Shakhtar Donetsk. A diretoria trabalha na reformulação do elenco e na redução da folha salarial: Dudu e Gustavo Scarpa estão com o futuro indefinido nos bastidores, enquanto a saída de Hulk (que ingressou no Fluminense) foi confirmada. Anteriormente: venceu o Mirassol por 3 a 1 na Arena MRV pela 16ª rodada do Campeonato Brasileiro, com o ataque formado por Bernard, Cuello e Minda. O ídolo Guilherme Alves retornou como coordenador de futebol."
     },
     "Uberlândia": {
       "coach": "Não mencionado",
@@ -319,7 +319,12 @@
       "coach": "Não mencionado",
       "league": "Não mencionada",
       "recent_changes": "Será um dos próximos adversários do Corinthians e pode marcar uma das últimas partidas do atacante Memphis Depay pelo clube brasileiro antes da ida para a Copa do Mundo."
+    },
+    "Shakhtar Donetsk": {
+      "coach": "Não mencionado",
+      "league": "Futebol Ucraniano",
+      "recent_changes": "Admite discutir a possível saída do atacante brasileiro Lucas Ferreira nesta janela de transferências, sendo o Atlético-MG um dos maiores interessados. O jogador foi contratado pelo clube em agosto do ano passado por 10 milhões de euros junto ao São Paulo, mas teve poucas oportunidades e não se firmou como titular."
     }
   },
-  "last_updated": "2026-05-18T18:53:41.309Z"
+  "last_updated": "2026-05-18T19:39:59.487Z"
 }

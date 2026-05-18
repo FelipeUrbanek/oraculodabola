@@ -811,5 +811,13 @@
     "source_domain": "www.terra.com.br",
     "category": "Mercado da Bola",
     "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-05-18T19:40:22.617Z",
+    "headline": "GALO MIRA LUCAS FERREIRA DO SHAKHTAR",
+    "source_url": "https://www.terra.com.br/esportes/atletico-mg/atletico-faz-sondagem-por-lucas-ferreira-do-shakhtar-donetsk,353c25472ffd63b02348d108852c7ea85cufjkcv.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Atlético-MG",
+    "status": "SUCCESS"
   }
 ]
