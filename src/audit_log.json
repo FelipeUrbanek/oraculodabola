@@ -771,5 +771,21 @@
     "category": "Mercado da Bola",
     "status": "REJECTED",
     "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-05-18T18:02:36.477Z",
+    "headline": "MOURINHO DE VOLTA AO REAL MADRID!",
+    "source_url": "https://www.terra.com.br/esportes/futebol/internacional/equipes/real-madrid/jose-mourinho-acerta-retorno-ao-real-madrid-diz-jornalista,60fd2afa4b5966e3b6d298ddd9187a20u8bxdowf.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Mercado da Bola",
+    "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-05-18T18:05:35.539Z",
+    "headline": "NOVO COORDENADOR: GUILHERME VOLTA AO GALO",
+    "source_url": "https://www.terra.com.br/esportes/atletico-mg/idolo-historico-guilherme-alves-retorna-ao-atletico-e-manda-recado-nos-bastidores,638feedc1dd8609bc8e1821061958a76lttzyvbn.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Atlético-MG",
+    "status": "SUCCESS"
   }
 ]
