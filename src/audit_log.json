@@ -851,5 +851,13 @@
     "source_domain": "www.terra.com.br",
     "category": "Mercado da Bola",
     "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-05-18T22:02:18.418Z",
+    "headline": "DORIVAL EXPÕE CASO MARTÍNEZ",
+    "source_url": "https://www.terra.com.br/esportes/corinthians/dorival-fala-da-rescisao-de-martinez-com-o-corinthians-problema-foi-com-ele-proprio,babde7e238a1af128d6c48f515403429gsttw34u.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Corinthians",
+    "status": "SUCCESS"
   }
 ]
