@@ -378,5 +378,21 @@
     "source_domain": "www.terra.com.br",
     "category": "Grêmio",
     "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-05-18T14:42:51.002Z",
+    "headline": "LUTO: ADEUS AO LENDÁRIO GEOVANI SILVA",
+    "source_url": "https://www.terra.com.br/esportes/brasil/ex-jogador-da-selecao-e-idolo-do-vasco-morre-aos-62-anos,50646eb372fbb02fd34088c2f2d15817h5ha2ev6.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Vasco",
+    "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-05-18T14:44:52.361Z",
+    "headline": "MEMPHIS: RETA FINAL NO TIMÃO",
+    "source_url": "https://www.terra.com.br/esportes/corinthians/quantos-jogos-depay-podera-disputar-pelo-corinthians-entenda-cenario-antes-da-copa,d3ff6d350efe2d6ef2bb629c7273ba8ag0gxbk50.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Corinthians",
+    "status": "SUCCESS"
   }
 ]
