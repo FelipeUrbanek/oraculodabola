@@ -501,5 +501,104 @@
     "category": "Fluminense",
     "status": "REJECTED",
     "reason": "❌ Falha crítica: Nenhum modelo respondeu. Verifique sua GEMINI_API_KEY ou sua cota."
+  },
+  {
+    "timestamp": "2026-05-18T16:39:12.517Z",
+    "headline": "Flamengo mostra corte na perna de Paquetá após falta dura",
+    "source_url": "https://www.terra.com.br/esportes/flamengo/flamengo-mostra-corte-na-perna-de-paqueta-apos-falta-dura,2ca8d1dd4679adb6228de7e82c8b1c704firk3f3.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Flamengo",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo respondeu. Verifique sua GEMINI_API_KEY ou sua cota."
+  },
+  {
+    "timestamp": "2026-05-18T16:39:13.311Z",
+    "headline": "TJ-SP condena Dudu a pagar R$ 50 mil por danos morais contra Leila Pereira",
+    "source_url": "https://www.terra.com.br/esportes/cruzeiro/tj-sp-condena-dudu-a-pagar-r-50-mil-por-danos-morais-contra-leila-pereira,4d969d587ce8e76bc7d7f04e5845dd10n9gtuph6.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Palmeiras",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo respondeu. Verifique sua GEMINI_API_KEY ou sua cota."
+  },
+  {
+    "timestamp": "2026-05-18T16:39:14.193Z",
+    "headline": "Diniz pede permanência de Yuri Alberto e alerta sobre vendas: 'Não podemos perder jogadores agora'",
+    "source_url": "https://www.terra.com.br/esportes/corinthians/",
+    "source_domain": "www.terra.com.br",
+    "category": "Corinthians",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo respondeu. Verifique sua GEMINI_API_KEY ou sua cota."
+  },
+  {
+    "timestamp": "2026-05-18T16:39:15.090Z",
+    "headline": "César Sampaio rebate arbitragem após erro em substituição de Neymar",
+    "source_url": "https://www.terra.com.br/esportes/santos/cesar-sampaio-rebate-arbitragem-apos-erro-em-substituicao-de-neymar,e6ca0f0e6f2166d5df3123f4841e8635yq3qli7o.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo respondeu. Verifique sua GEMINI_API_KEY ou sua cota."
+  },
+  {
+    "timestamp": "2026-05-18T16:39:16.037Z",
+    "headline": "Brasileiro do Shakhtar Donetsk entra na mira do Atlético-MG",
+    "source_url": "https://www.terra.com.br/esportes/atletico-mg/brasileiro-do-shakhtar-donetsk-entra-na-mira-do-atletico-mg,90235b606e65a4ec94616473648fb542dmhtketv.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Atlético-MG",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo respondeu. Verifique sua GEMINI_API_KEY ou sua cota."
+  },
+  {
+    "timestamp": "2026-05-18T16:39:17.055Z",
+    "headline": "Palmeiras e Cruzeiro ficam no empate em jogo movimentado na Arena Barueri pelo Brasileirão",
+    "source_url": "https://www.terra.com.br/esportes/futebol/palmeiras-e-cruzeiro-ficam-no-empate-em-jogo-movimentado-na-arena-barueri-pelo-brasileirao,5cf1f040e2c532c36ca96190c1d374a59aaq5h3u.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Cruzeiro",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo respondeu. Verifique sua GEMINI_API_KEY ou sua cota."
+  },
+  {
+    "timestamp": "2026-05-18T16:39:18.223Z",
+    "headline": "Goleiro se destaca em partida do Brasileirão antes da convocação da Seleção",
+    "source_url": "https://www.terra.com.br/esportes/brasil/goleiro-se-destaca-em-partida-do-brasileirao-antes-da-convocacao-da-selecao,116a49b2d2693dc4a0b4bb2ceb23e575a02jq5v6.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Grêmio",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo respondeu. Verifique sua GEMINI_API_KEY ou sua cota."
+  },
+  {
+    "timestamp": "2026-05-18T16:39:19.214Z",
+    "headline": "Pezzolano elogia atual momento de Bernabei no Internacional: \"Não tem como dar errado\"",
+    "source_url": "https://www.terra.com.br/esportes/internacional/pezzolano-elogia-atual-momento-de-bernabei-no-internacional-nao-tem-como-dar-errado,8898dcbea2186a0e7b1eae0e2ce0a7c4lgv7xjq9.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Internacional",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo respondeu. Verifique sua GEMINI_API_KEY ou sua cota."
+  },
+  {
+    "timestamp": "2026-05-18T16:39:20.232Z",
+    "headline": "Ídolo do Vasco, Geovani, o \"Pequeno Príncipe\", morre aos 62 anos",
+    "source_url": "https://www.terra.com.br/esportes/brasil/idolo-do-vasco-geovani-o-pequeno-principe-morre-aos-62-anos,ebf38f54df17546fd1d4d7bd8eff17afh9awhix8.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Vasco",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo respondeu. Verifique sua GEMINI_API_KEY ou sua cota."
+  },
+  {
+    "timestamp": "2026-05-18T16:39:21.354Z",
+    "headline": "Joias do Bairro terão mais espaço no Botafogo de Franclim Carvalho?",
+    "source_url": "https://www.terra.com.br/esportes/botafogo/joias-do-bairro-terao-mais-espaco-no-botafogo-de-franclim-carvalho,a780b30fa3fc0d333fb1cf9d9b43076bonlnn7r2.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Botafogo",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo respondeu. Verifique sua GEMINI_API_KEY ou sua cota."
+  },
+  {
+    "timestamp": "2026-05-18T16:39:22.258Z",
+    "headline": "Fluminense recupera confiança antes de decisão na Libertadores",
+    "source_url": "https://www.terra.com.br/esportes/fluminense/fluminense-recupera-confianca-antes-de-decisao-na-libertadores,54b2f17f3ab7b5301bcf0d74ae13de47lcuyilm3.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Fluminense",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo respondeu. Verifique sua GEMINI_API_KEY ou sua cota."
   }
 ]
