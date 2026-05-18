@@ -354,5 +354,29 @@
     "source_domain": "www.terra.com.br",
     "category": "Vasco",
     "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-05-18T10:53:43.708Z",
+    "headline": "DINIZ EXIGE FICO DE ESTRELAS",
+    "source_url": "https://www.terra.com.br/esportes/futebol/diniz-abre-o-jogo-sobre-possiveis-saidas-no-meio-da-temporada-veja,2766c65a39bec25635ed220b1bea3144zzvq8q9i.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Corinthians",
+    "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-05-18T10:55:58.127Z",
+    "headline": "FLA EMPATA SOB OLHAR DE ANCELOTTI",
+    "source_url": "https://www.terra.com.br/esportes/flamengo/flamengo-consegue-empate-em-ambiente-hostil,95863198203429b7da24a44cb43971037a07xu2x.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Flamengo",
+    "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-05-18T10:57:43.397Z",
+    "headline": "LUÍS CASTRO LAMENTA EMPATE DO GRÊMIO",
+    "source_url": "https://www.terra.com.br/esportes/gremio/luis-castro-lamenta-empate-do-gremio-com-o-bahia-poderiamos-ter-vencido,13e5aa88a5a694e74578087ca73dcbefkuh5y93n.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Grêmio",
+    "status": "SUCCESS"
   }
 ]

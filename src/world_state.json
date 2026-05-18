@@ -18,7 +18,7 @@
     "Grêmio": {
       "coach": "Luís Castro",
       "league": "Campeonato Brasileiro / Copa do Brasil / Brasileirão Feminino",
-      "recent_changes": "Pelo Campeonato Brasileiro, empatou em 1 a 1 com o Bahia fora de casa, em Salvador, figurando na 15ª colocação com 18 pontos. O técnico Luís Castro justificou a ausência de titulares como Gabriel Mec no time principal devido ao desgaste do calendário, mencionando também o duelo anterior contra o Confiança. Anteriormente: o vice-presidente de futebol admitiu carências no elenco em meio à pressão por resultados. O clube busca a contratação de um meia articulador, mas enfrenta dificuldades financeiras e forte concorrência. Pelo Brasileirão Feminino, venceu o Red Bull Bragantino por 3 a 0."
+      "recent_changes": "Pelo Campeonato Brasileiro, empatou em 1 a 1 com o Bahia fora de casa, em Salvador, figurando na 15ª colocação com 18 pontos. O Tricolor saiu em vantagem no placar, mas acabou cedendo o empate e sofreu forte pressão nos minutos finais, com direito a bola na trave do adversário. O técnico Luís Castro avaliou que a equipe deixou de vencer pela ansiedade de segurar o resultado após o 1 a 0, influenciada pela posição na parte de baixo da tabela, e justificou a ausência de titulares como Gabriel Mec no time principal devido ao desgaste do calendário, ressaltando a importância do jogo anterior contra o Confiança. Anteriormente: o vice-presidente de futebol admitiu carências no elenco. O clube busca a contratação de um meia articulador, enfrentando dificuldades financeiras. Pelo Brasileirão Feminino, venceu o Red Bull Bragantino por 3 a 0."
     },
     "São Paulo": {
       "coach": "Dorival Júnior",
@@ -28,12 +28,12 @@
     "Corinthians": {
       "coach": "Fernando Diniz",
       "league": "Campeonato Brasileiro / Copa do Brasil / Libertadores / Supercopa Rei do Brasil",
-      "recent_changes": "Sob o comando do técnico Fernando Diniz, a equipe foi derrotada pelo Botafogo por 3 a 1 (com gol de Garro) no Estádio Nilton Santos, estacionando nos 18 pontos e permanecendo na zona de rebaixamento do Campeonato Brasileiro. O treinador destacou a importância de manter jogadores como André, Hugo Souza e principalmente Yuri Alberto no elenco para o restante da temporada. O próximo desafio será contra o Peñarol no Uruguai, na quinta-feira (21), pela 5ª rodada da Libertadores, onde o clube é líder do Grupo E e briga pela melhor campanha geral. Anteriormente: avançou para as oitavas de final da Copa do Brasil, sagrou-se campeão da Supercopa Rei do Brasil, admite negociar Memphis Depay e tem confronto futuro previsto contra o Atlético-MG na Neo Química Arena."
+      "recent_changes": "Sob o comando do técnico Fernando Diniz, a equipe foi derrotada pelo Botafogo por 3 a 1 (com gol de Garro) no Estádio Nilton Santos, permanecendo na zona de rebaixamento do Campeonato Brasileiro. O treinador analisou que o time ficou exposto e descompactado após o terceiro gol e admitiu surpresa com as mudanças táticas do adversário. Diniz também ressaltou a importância de manter no elenco jogadores como André, Hugo Souza e principalmente Yuri Alberto, que recentemente declarou o desejo de atuar na Europa após a Copa do Mundo. O próximo desafio será contra o Peñarol no Uruguai, na quinta-feira (21), pela 5ª rodada da Libertadores, onde o clube é líder do Grupo E e briga pela melhor campanha geral. Anteriormente: avançou para as oitavas de final da Copa do Brasil, sagrou-se campeão da Supercopa Rei do Brasil e admitiu negociar Memphis Depay."
     },
     "Seleção Brasileira": {
       "coach": "Carlo Ancelotti",
       "league": "Copa do Mundo",
-      "recent_changes": "Carlo Ancelotti fará a convocação final oficial dos 26 jogadores para a Copa do Mundo nesta segunda-feira (18), no Museu do Amanhã, no Rio de Janeiro. O volante Danilo, do Botafogo, ganhou espaço na reta final do ciclo e aparece entre os principais candidatos para ocupar uma vaga no meio de campo. Anteriormente, houve a possibilidade de convocação de Neymar, o goleiro Hugo Souza apareceu na pré-lista e a comissão técnica acompanhou o duelo entre Athletico-PR e Flamengo."
+      "recent_changes": "O técnico Carlo Ancelotti esteve na Arena da Baixada acompanhando o jogo entre Athletico-PR e Flamengo, havendo a expectativa de que leve jogadores da equipe carioca para a Copa do Mundo. Ele fará a convocação final oficial dos 26 jogadores nesta segunda-feira (18), no Museu do Amanhã, no Rio de Janeiro. O volante Danilo, do Botafogo, e o goleiro Hugo Souza também apareceram no radar recentemente."
     },
     "Atlético-MG": {
       "coach": "Eduardo \"Barba\" Domínguez",
@@ -118,7 +118,7 @@
     "Athletico-PR": {
       "coach": "Não mencionado",
       "league": "Campeonato Brasileiro / Copa do Brasil",
-      "recent_changes": "Vence momentaneamente o Flamengo na Arena da Baixada pela 16ª rodada do Campeonato Brasileiro, após gol em jogada de Zapelli e Mendoza que contou com falha do goleiro adversário. A vitória parcial coloca a equipe no G4 da competição. A partida é acompanhada pelo técnico da Seleção Brasileira, Carlo Ancelotti, e pelo coordenador Rodrigo Caetano. Anteriormente, avançou para as oitavas de final da Copa do Brasil, lucrando R$ 5 milhões em premiações."
+      "recent_changes": "Pelo Campeonato Brasileiro, empatou em 1 a 1 com o Flamengo na Arena da Baixada. A equipe abriu o placar aos 11 minutos com Mendoza e adotou uma postura tática defensiva visando os contra-ataques, chegando a acertar o travessão em lance isolado com Carrascal. A partida foi acompanhada pelo técnico da Seleção Brasileira, Carlo Ancelotti, e pelo coordenador Rodrigo Caetano. Anteriormente, avançou para as oitavas de final da Copa do Brasil, lucrando R$ 5 milhões em premiações."
     },
     "Chapecoense": {
       "coach": "Não mencionado",
@@ -188,7 +188,7 @@
     "Bahia": {
       "coach": "Rogério Ceni",
       "league": "Brasileirão / Campeonato Brasileiro Sub-20 / Copa do Brasil",
-      "recent_changes": "Pelo Campeonato Brasileiro, empatou em 1 a 1 com o Grêmio jogando em casa, em Salvador. Anteriormente: encontrava-se na 6ª colocação, mas vinha de revés de 4 a 1 para o Remo no torneio e de eliminação para a equipe paraense na quinta fase da Copa do Brasil (derrotas por 3 a 1 e 2 a 1). Pelo Campeonato Brasileiro Sub-20, receberá o Fortaleza pela 13ª rodada no CT Evaristo de Macedo, na quarta-feira (20), às 15h."
+      "recent_changes": "Pelo Campeonato Brasileiro, empatou em 1 a 1 com o Grêmio jogando em casa, em Salvador. A equipe saiu perdendo, mas buscou o empate logo depois e impôs forte pressão nos minutos finais, chegando a acertar uma bola na trave nos acréscimos. Anteriormente: encontrava-se na 6ª colocação, mas vinha de revés de 4 a 1 para o Remo no torneio e de eliminação para a equipe paraense na quinta fase da Copa do Brasil (derrotas por 3 a 1 e 2 a 1). Pelo Campeonato Brasileiro Sub-20, receberá o Fortaleza pela 13ª rodada no CT Evaristo de Macedo, na quarta-feira (20), às 15h."
     },
     "Red Bull Bragantino": {
       "coach": "Humberto Simão",
@@ -196,9 +196,9 @@
       "recent_changes": "Foi derrotado pelo Bahia fora de casa em partida válida pelo Brasileirão, e enfrentará o Vasco no próximo domingo, em São Januário. Pelo Brasileirão Feminino, perdeu por 3 a 0 para o Grêmio na última rodada, permanecendo na 10ª colocação com 14 pontos. O próximo desafio feminino será contra o Santos, na Vila Belmiro."
     },
     "Flamengo": {
-      "coach": "Não mencionado",
+      "coach": "Léo Jardim",
       "league": "Campeonato Brasileiro / Campeonato Brasileiro Sub-20 / Copa do Brasil / Recopa Sul-Americana / Supercopa Rei do Brasil",
-      "recent_changes": "Pela 16ª rodada do Campeonato Brasileiro, perde momentaneamente para o Athletico-PR na Arena da Baixada após o goleiro Rossi falhar em um chute de Mendoza (com passe de Zapelli e desvio em Léo Ortiz). A falha gerou críticas da torcida, que também aponta falta de confiança no goleiro reserva, Andrew. A equipe precisa virar o jogo para encurtar a diferença para o líder Palmeiras de cinco para dois pontos. O duelo é acompanhado pelo técnico Carlo Ancelotti. Pelo Sub-20, receberá o Santos no Estádio Luso Brasileiro na quinta-feira (21). O design de sua nova terceira camisa para a temporada de 2026 vazou recentemente. Na temporada, foi eliminado na quinta fase da Copa do Brasil pelo Vitória e foi vice-campeão da Recopa Sul-Americana e da Supercopa Rei do Brasil."
+      "recent_changes": "Pelo Campeonato Brasileiro, empatou em 1 a 1 com o Athletico-PR na Arena da Baixada. A equipe saiu perdendo aos 11 minutos após falha grotesca do goleiro Rossi em chute de Mendoza, mas conseguiu igualar o placar no fim do jogo. O técnico Léo Jardim foi criticado pela lentidão para fazer substituições táticas. O duelo foi acompanhado pelo técnico da Seleção Brasileira, Carlo Ancelotti. Pelo Sub-20, receberá o Santos no Estádio Luso Brasileiro na quinta-feira (21). Na temporada, foi eliminado na quinta fase da Copa do Brasil pelo Vitória e foi vice-campeão da Recopa Sul-Americana e da Supercopa Rei do Brasil."
     },
     "Coritiba": {
       "coach": "Não mencionado",
@@ -291,5 +291,5 @@
       "recent_changes": "Enfrentou o Vasco recentemente, em duelo onde o lateral-direito adversário, Paulo Henrique, sofreu uma entorse no tornozelo direito após uma pancada."
     }
   },
-  "last_updated": "2026-05-18T06:47:58.191Z"
+  "last_updated": "2026-05-18T10:57:23.251Z"
 }
