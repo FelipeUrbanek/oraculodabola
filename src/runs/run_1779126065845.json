@@ -1,0 +1,54 @@
+{
+  "timestamp": "2026-05-18T17:40:19.208Z",
+  "status": "COMPLETED",
+  "postsPlanned": 2,
+  "candidatesFound": 10,
+  "successfulPosts": [],
+  "failedPosts": [
+    {
+      "category": "Flamengo",
+      "title": "Flamengo mostra corte na perna de Paquetá após falta dura",
+      "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+    },
+    {
+      "category": "Palmeiras",
+      "title": "Palmeiras mantém cautela com Paulinho em meio à dura crise no ataque",
+      "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+    },
+    {
+      "category": "Corinthians",
+      "title": "Diniz pede permanência de Yuri Alberto e alerta sobre vendas: 'Não podemos perder jogadores agora'",
+      "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+    },
+    {
+      "category": "Santos",
+      "title": "Vai ser convocado? Neymar faz exame a pedido da CBF",
+      "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+    },
+    {
+      "category": "Atlético-MG",
+      "title": "Ídolo histórico, Guilherme Alves retorna ao Atlético e manda recado nos bastidores",
+      "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+    },
+    {
+      "category": "Cruzeiro",
+      "title": "Ídolo do Cruzeiro, Lucas Romero receberá homenagem histórica em Belo Horizonte",
+      "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+    },
+    {
+      "category": "Fluminense",
+      "title": "Canobbio revela confiança do elenco do Fluminense em Zubeldía",
+      "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+    },
+    {
+      "category": "Coritiba",
+      "title": "Substituição caótica de Neymar: coordenador técnico do Santos se defende",
+      "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+    },
+    {
+      "category": "Mercado da Bola",
+      "title": "José Mourinho acerta retorno ao Real Madrid, diz jornalista",
+      "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+    }
+  ]
+}

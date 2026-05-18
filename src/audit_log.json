@@ -690,5 +690,86 @@
     "category": "Futebol Internacional",
     "status": "REJECTED",
     "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-05-18T17:41:00.367Z",
+    "headline": "Flamengo mostra corte na perna de Paquetá após falta dura",
+    "source_url": "https://www.terra.com.br/esportes/flamengo/flamengo-mostra-corte-na-perna-de-paqueta-apos-falta-dura,2ca8d1dd4679adb6228de7e82c8b1c704firk3f3.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Flamengo",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-05-18T17:41:00.570Z",
+    "headline": "Palmeiras mantém cautela com Paulinho em meio à dura crise no ataque",
+    "source_url": "https://www.terra.com.br/esportes/palmeiras/palmeiras-mantem-cautela-com-paulinho-em-meio-a-dura-crise-no-ataque,ed24894ea6657614f0313190ccd43f769xf483j0.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Palmeiras",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-05-18T17:41:00.711Z",
+    "headline": "Diniz pede permanência de Yuri Alberto e alerta sobre vendas: 'Não podemos perder jogadores agora'",
+    "source_url": "https://www.terra.com.br/esportes/corinthians/",
+    "source_domain": "www.terra.com.br",
+    "category": "Corinthians",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-05-18T17:41:00.856Z",
+    "headline": "Vai ser convocado? Neymar faz exame a pedido da CBF",
+    "source_url": "https://www.terra.com.br/esportes/brasil/vai-ser-convocado-neymar-faz-exame-a-pedido-da-cbf,0b49d3633a3988e78668ea3170e98b91ialsc073.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-05-18T17:41:01.024Z",
+    "headline": "Ídolo histórico, Guilherme Alves retorna ao Atlético e manda recado nos bastidores",
+    "source_url": "https://www.terra.com.br/esportes/atletico-mg/idolo-historico-guilherme-alves-retorna-ao-atletico-e-manda-recado-nos-bastidores,638feedc1dd8609bc8e1821061958a76lttzyvbn.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Atlético-MG",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-05-18T17:41:01.206Z",
+    "headline": "Ídolo do Cruzeiro, Lucas Romero receberá homenagem histórica em Belo Horizonte",
+    "source_url": "https://www.terra.com.br/esportes/cruzeiro/idolo-do-cruzeiro-lucas-romero-recebera-homenagem-historica-em-belo-horizonte,e441ed05801158de0afa001a5804a034gme5kn6e.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Cruzeiro",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-05-18T17:41:01.329Z",
+    "headline": "Canobbio revela confiança do elenco do Fluminense em Zubeldía",
+    "source_url": "https://www.terra.com.br/esportes/fluminense/canobbio-revela-confianca-do-elenco-do-fluminense-em-zubeldia,ce550b0e987637ab0b491cc3d9cc7654m4hrbea6.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Fluminense",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-05-18T17:41:01.597Z",
+    "headline": "Substituição caótica de Neymar: coordenador técnico do Santos se defende",
+    "source_url": "https://www.terra.com.br/esportes/coritiba/substituicao-caotica-de-neymar-coordenador-tecnico-do-santos-se-defende,73c5bf9a2154edfc534e1cb6b0caa4918r2l7eqk.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Coritiba",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-05-18T17:41:01.730Z",
+    "headline": "José Mourinho acerta retorno ao Real Madrid, diz jornalista",
+    "source_url": "https://www.terra.com.br/esportes/futebol/internacional/equipes/real-madrid/jose-mourinho-acerta-retorno-ao-real-madrid-diz-jornalista,60fd2afa4b5966e3b6d298ddd9187a20u8bxdowf.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Mercado da Bola",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
   }
 ]
