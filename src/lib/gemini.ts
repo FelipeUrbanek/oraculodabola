@@ -43,9 +43,13 @@ async function callGroq(prompt: string, isJson: boolean = true) {
     }
 
     const data: any = await response.json();
-    const text = data.choices[0].message.content
-        .replace(/```json|```/g, "")
-        .trim();
+    let text = data.choices[0].message.content.trim();
+    const jsonMatch = text.match(/\{[\s\S]*\}|\[[\s\S]*\]/);
+    if (isJson && jsonMatch) {
+      text = jsonMatch[0];
+    } else {
+      text = text.replace(/```json|```/g, "").trim();
+    }
     
     return isJson ? JSON.parse(text) : text;
   } catch (error: any) {
