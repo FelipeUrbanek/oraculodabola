@@ -843,5 +843,13 @@
     "source_domain": "www.terra.com.br",
     "category": "Santos",
     "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-05-18T21:57:27.564Z",
+    "headline": "BARCELONA RENOVA COM HANSI FLICK",
+    "source_url": "https://www.terra.com.br/esportes/futebol/internacional/equipes/barcelona/barcelona-renova-contrato-de-hansi-flick-ate-2028,7a557eba14f9576579ff57a82391d0d9d2wce1un.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Mercado da Bola",
+    "status": "SUCCESS"
   }
 ]

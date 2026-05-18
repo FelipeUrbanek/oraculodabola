@@ -91,9 +91,9 @@
       "recent_changes": "Receberá o CRB no domingo, às 20h30, na Ilha do Retiro."
     },
     "Barcelona": {
-      "coach": "Não mencionado",
-      "league": "Campeonato Espanhol",
-      "recent_changes": "Robert Lewandowski anunciou sua saída do clube após quatro temporadas, 119 gols e sete títulos. O jogador será homenageado em sua última partida no Camp Nou, neste domingo, contra o Real Betis, pelo Campeonato Espanhol."
+      "coach": "Hansi Flick",
+      "league": "Campeonato Espanhol (LaLiga) / Copa do Rei / Supercopa da Espanha",
+      "recent_changes": "O técnico Hansi Flick teve seu contrato renovado oficialmente até junho de 2028 (com possibilidade de extensão até 2029). Desde que assumiu a equipe em julho de 2024, o treinador alemão já conquistou cinco títulos: duas edições de LaLiga, uma Copa do Rei e duas Supercopas da Espanha. Anteriormente: Robert Lewandowski anunciou sua saída do clube após quatro temporadas, 119 gols e sete títulos, e será homenageado em sua última partida no Camp Nou, neste domingo, contra o Real Betis."
     },
     "Real Betis": {
       "coach": "Não mencionado",
@@ -356,5 +356,5 @@
       "recent_changes": "Enfrentará a Seleção Brasileira em um amistoso preparatório para a Copa do Mundo no dia 6 de junho, em Cleveland (EUA)."
     }
   },
-  "last_updated": "2026-05-18T21:54:16.635Z"
+  "last_updated": "2026-05-18T21:57:05.312Z"
 }
