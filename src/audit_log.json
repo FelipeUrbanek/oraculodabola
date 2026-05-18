@@ -795,5 +795,13 @@
     "source_domain": "www.terra.com.br",
     "category": "Palmeiras",
     "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-05-18T18:33:10.227Z",
+    "headline": "EXAME MÉDICO DEFINE VAGA DE NEYMAR",
+    "source_url": "https://www.terra.com.br/esportes/brasil/vai-ser-convocado-neymar-faz-exame-a-pedido-da-cbf,0b49d3633a3988e78668ea3170e98b91ialsc073.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "SUCCESS"
   }
 ]
