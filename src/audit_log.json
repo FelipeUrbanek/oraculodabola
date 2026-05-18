@@ -303,5 +303,32 @@
     "source_domain": "www.terra.com.br",
     "category": "Flamengo",
     "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-05-18T01:55:00.480Z",
+    "headline": "Cruzeiro envia proposta por zagueiro e aguarda resposta do Brighton",
+    "source_url": "https://www.terra.com.br/esportes/cruzeiro/cruzeiro-envia-proposta-por-zagueiro-e-aguarda-resposta-do-brighton,46bd5371922d7ae5d18dffa233173943s3sq7w37.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Cruzeiro",
+    "status": "REJECTED",
+    "reason": "Request failed with status code 403"
+  },
+  {
+    "timestamp": "2026-05-18T01:56:28.265Z",
+    "headline": "Diniz abre o jogo sobre possíveis saídas no meio da temporada; veja",
+    "source_url": "https://www.terra.com.br/esportes/futebol/diniz-abre-o-jogo-sobre-possiveis-saidas-no-meio-da-temporada-veja,2766c65a39bec25635ed220b1bea3144zzvq8q9i.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Corinthians",
+    "status": "REJECTED",
+    "reason": "Request failed with status code 403"
+  },
+  {
+    "timestamp": "2026-05-18T01:57:44.781Z",
+    "headline": "Luís Castro lamenta empate do Grêmio com o Bahia: \"Poderíamos ter vencido\"",
+    "source_url": "https://www.terra.com.br/esportes/gremio/luis-castro-lamenta-empate-do-gremio-com-o-bahia-poderiamos-ter-vencido,13e5aa88a5a694e74578087ca73dcbefkuh5y93n.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Grêmio",
+    "status": "REJECTED",
+    "reason": "Request failed with status code 403"
   }
 ]

@@ -16,9 +16,9 @@
       "recent_changes": "A Justiça acatou o pedido de recuperação judicial da SAF. John Textor (ex-controlador) foi afastado da gestão. A empresa GDA Luma tem negociações avançadas para assumir 90% das ações da SAF. Pelo Campeonato Brasileiro, venceu o Corinthians por 3 a 1 no Estádio Nilton Santos com um hat-trick de Arthur Cabral, saltando para a 8ª colocação com 21 pontos. O atacante chegou a 7 gols, mesma marca de Danilo, dividindo a artilharia da equipe e alcançando a vice-artilharia do torneio. O próximo jogo será contra o São Paulo no sábado (23), às 17h, no Morumbis. O clube selou a venda do zagueiro Alexsander Barboza para o Palmeiras por 4 milhões de dólares, com transferência para o segundo semestre de 2026. Barboza atingiu 12 jogos no Brasileirão e não joga contra São Paulo e Bahia, mas segue à disposição para a Sul-Americana, onde o time encara Independiente Petrolero (20 de maio) e Caracas (27 de maio). O volante Danilo negocia transferência para o Palmeiras nos bastidores."
     },
     "Grêmio": {
-      "coach": "Luis Castro",
+      "coach": "Luís Castro",
       "league": "Campeonato Brasileiro / Copa do Brasil / Brasileirão Feminino",
-      "recent_changes": "O vice-presidente de futebol, Antônio Dutra Júnior, admitiu carências no elenco e reforçou a confiança no técnico Luís Castro em meio à pressão por resultados no Brasileirão. O clube busca a contratação de um meia articulador com características semelhantes às de Arrascaeta, mas enfrenta dificuldades financeiras e forte concorrência no mercado nacional. Pelo Brasileirão Feminino, conquistou uma vitória por 3 a 0 sobre o Red Bull Bragantino na última rodada."
+      "recent_changes": "Pelo Campeonato Brasileiro, empatou em 1 a 1 com o Bahia fora de casa, em Salvador, figurando na 15ª colocação com 18 pontos. O técnico Luís Castro justificou a ausência de titulares como Gabriel Mec no time principal devido ao desgaste do calendário, mencionando também o duelo anterior contra o Confiança. Anteriormente: o vice-presidente de futebol admitiu carências no elenco em meio à pressão por resultados. O clube busca a contratação de um meia articulador, mas enfrenta dificuldades financeiras e forte concorrência. Pelo Brasileirão Feminino, venceu o Red Bull Bragantino por 3 a 0."
     },
     "São Paulo": {
       "coach": "Dorival Júnior",
@@ -26,9 +26,9 @@
       "recent_changes": "Sofreu uma derrota por 2 a 1 para o Fluminense no Maracanã, sob o comando do interino Milton Cruz, estacionando no 4º lugar do Brasileirão com 24 pontos. Dorival Júnior foi confirmado como o novo treinador, inicia os trabalhos na segunda-feira (18) e avaliará a reintegração do zagueiro Arboleda. O jogador equatoriano havia sido multado e afastado, mas o clube evita liberá-lo sem custos. Os próximos compromissos são contra o Millonarios, no Morumbis, pela Copa Sul-Americana, e contra o Botafogo pelo Campeonato Brasileiro, no sábado (23), às 17h, no Morumbis. Anteriormente: foi eliminado da Copa do Brasil pelo Juventude, resultando na demissão de Roger Machado."
     },
     "Corinthians": {
-      "coach": "Vago",
-      "league": "Brasileirão / Copa do Brasil / Supercopa Rei do Brasil",
-      "recent_changes": "Avançou para as oitavas de final da Copa do Brasil, garantindo R$ 5 milhões em premiações. Sagrou-se campeão da Supercopa Rei do Brasil ao superar o Flamengo. O clube aceita negociar Hugo Souza e Yuri Alberto, e admite negociar Memphis Depay. Pelo Campeonato Brasileiro, foi derrotado pelo Botafogo por 3 a 1 (com gol de Bidon) no Estádio Nilton Santos, estacionando nos 18 pontos e abrindo a zona de rebaixamento. Buscará recuperação recebendo o Atlético-MG na Neo Química Arena no domingo, dia 24 de maio, às 18h30."
+      "coach": "Fernando Diniz",
+      "league": "Campeonato Brasileiro / Copa do Brasil / Libertadores / Supercopa Rei do Brasil",
+      "recent_changes": "Sob o comando do técnico Fernando Diniz, a equipe foi derrotada pelo Botafogo por 3 a 1 (com gol de Garro) no Estádio Nilton Santos, estacionando nos 18 pontos e permanecendo na zona de rebaixamento do Campeonato Brasileiro. O treinador destacou a importância de manter jogadores como André, Hugo Souza e principalmente Yuri Alberto no elenco para o restante da temporada. O próximo desafio será contra o Peñarol no Uruguai, na quinta-feira (21), pela 5ª rodada da Libertadores, onde o clube é líder do Grupo E e briga pela melhor campanha geral. Anteriormente: avançou para as oitavas de final da Copa do Brasil, sagrou-se campeão da Supercopa Rei do Brasil, admite negociar Memphis Depay e tem confronto futuro previsto contra o Atlético-MG na Neo Química Arena."
     },
     "Seleção Brasileira": {
       "coach": "Carlo Ancelotti",
@@ -128,7 +128,7 @@
     "Cruzeiro": {
       "coach": "Artur Jorge",
       "league": "Copa do Brasil / Campeonato Brasileiro / Libertadores",
-      "recent_changes": "Avançou para as oitavas de final da Copa do Brasil (lucrando R$ 5 milhões). Pelo Campeonato Brasileiro, tenta reação e está em 12º lugar com 20 pontos após empate em 1 a 1 com o Palmeiras na Arena Barueri, com destaque para o goleiro Otávio, que assumiu a vaga de Matheus Cunha. O próximo desafio é pela Libertadores contra o Boca Juniors, terça-feira, em La Bombonera. A Raposa é vice-líder do Grupo D com 7 pontos e, se vencer, garante classificação antecipada, tendo já vencido o confronto do turno por 1 a 0."
+      "recent_changes": "Avançou para as oitavas de final da Copa do Brasil (lucrando R$ 5 milhões). Pelo Campeonato Brasileiro, tenta reação e está em 12º lugar com 20 pontos após empate em 1 a 1 com o Palmeiras na Arena Barueri, com destaque para o goleiro Otávio, que assumiu a vaga de Matheus Cunha. O próximo desafio é pela Libertadores contra o Boca Juniors, terça-feira, em La Bombonera. A Raposa é vice-líder do Grupo D com 7 pontos e, se vencer, garante classificação antecipada, tendo já vencido o confronto do turno por 1 a 0. Nos bastidores, enviou uma proposta pelo zagueiro Igor Júlio, com valores abaixo de 6 milhões de euros, e aguarda resposta do Brighton."
     },
     "Fluminense": {
       "coach": "Luis Zubeldía",
@@ -188,7 +188,7 @@
     "Bahia": {
       "coach": "Rogério Ceni",
       "league": "Brasileirão / Campeonato Brasileiro Sub-20 / Copa do Brasil",
-      "recent_changes": "No Brasileirão, encontra-se na 6ª colocação. Foi eliminado na quinta fase da Copa do Brasil após ser derrotado nos jogos de ida e volta pelo Remo (3 a 1 e 2 a 1). Também sofreu um revés por 4 a 1 para a equipe paraense pelo Campeonato Brasileiro. Anteriormente, havia entrado no G4 do Brasileirão ao vencer o Red Bull Bragantino. Pelo Campeonato Brasileiro Sub-20, receberá o Fortaleza pela 13ª rodada no CT Evaristo de Macedo, na quarta-feira (20), às 15h."
+      "recent_changes": "Pelo Campeonato Brasileiro, empatou em 1 a 1 com o Grêmio jogando em casa, em Salvador. Anteriormente: encontrava-se na 6ª colocação, mas vinha de revés de 4 a 1 para o Remo no torneio e de eliminação para a equipe paraense na quinta fase da Copa do Brasil (derrotas por 3 a 1 e 2 a 1). Pelo Campeonato Brasileiro Sub-20, receberá o Fortaleza pela 13ª rodada no CT Evaristo de Macedo, na quarta-feira (20), às 15h."
     },
     "Red Bull Bragantino": {
       "coach": "Humberto Simão",
@@ -264,7 +264,27 @@
       "coach": "Não mencionado",
       "league": "Copa Sul-Americana",
       "recent_changes": "Enfrentará o Botafogo no dia 27 de maio, em partida válida pela Copa Sul-Americana."
+    },
+    "Brighton": {
+      "coach": "Não mencionado",
+      "league": "Premier League",
+      "recent_changes": "Ocupa a 7ª colocação na Premier League, garantindo provisoriamente lugar na Conference League, mas segue na briga por vaga na Europa League na última rodada (a dois pontos do Bournemouth). O clube avalia uma proposta do Cruzeiro pelo zagueiro Igor Júlio, que não faz parte dos planos, e tem a expectativa de receber cifras próximas a 6 milhões de euros."
+    },
+    "Bournemouth": {
+      "coach": "Não mencionado",
+      "league": "Premier League",
+      "recent_changes": "Encontra-se a dois pontos de vantagem sobre o Brighton na briga por uma vaga na Europa League, na última rodada da Premier League."
+    },
+    "West Ham": {
+      "coach": "Não mencionado",
+      "league": "Premier League",
+      "recent_changes": "Nesta temporada, contou com o zagueiro Igor Júlio por empréstimo, mas o jogador pouco foi utilizado e disputou apenas quatro partidas."
+    },
+    "Peñarol": {
+      "coach": "Não mencionado",
+      "league": "Copa Libertadores",
+      "recent_changes": "Enfrentará o Corinthians em casa, no Uruguai, nesta quinta-feira (21), em partida válida pela 5ª rodada do Grupo E da Copa Libertadores. O adversário lidera a chave, enquanto a equipe joga suas últimas fichas na competição."
     }
   },
-  "last_updated": "2026-05-17T23:45:45.901Z"
+  "last_updated": "2026-05-18T01:57:25.393Z"
 }
