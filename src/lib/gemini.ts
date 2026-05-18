@@ -28,8 +28,11 @@ async function callGroq(prompt: string, isJson: boolean = true) {
         "Authorization": `Bearer ${GROQ_API_KEY}`
       },
       body: JSON.stringify({
-        model: "llama3-70b-8192", // Modelo poderoso e rápido no Groq
-        messages: [{ role: "user", content: prompt }],
+        model: "llama-3.3-70b-versatile", // Modelo atualizado e poderoso no Groq
+        messages: [
+          { role: "system", content: "Você deve sempre responder em Português do Brasil (pt-BR)." },
+          { role: "user", content: prompt }
+        ],
         temperature: 0.7,
         max_tokens: 8192
       })

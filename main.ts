@@ -17,6 +17,17 @@ import path from "path";
 const HISTORY_FILE = path.join(process.cwd(), "src", "history.json");
 
 async function runOráculo() {
+  const runReport: any = {
+    timestamp: new Date().toISOString(),
+    status: "STARTED",
+    postsPlanned: 0,
+    candidatesFound: 0,
+    successfulPosts: [],
+    failedPosts: []
+  };
+  const RUNS_DIR = path.join(process.cwd(), "src", "runs");
+  if (!fs.existsSync(RUNS_DIR)) fs.mkdirSync(RUNS_DIR, { recursive: true });
+
   console.log("🚀 Iniciando Validação de Ambiente...");
   try {
     const { execSync } = await import("child_process");
@@ -45,6 +56,7 @@ async function runOráculo() {
 
   const postedIds = history.map((h) => h.id);
   const newsList = await fetchFootballNews([], postedIds);
+  runReport.candidatesFound = newsList.length;
   const LAST_CATEGORY_FILE = path.join(
     process.cwd(),
     "src",
@@ -137,6 +149,7 @@ async function runOráculo() {
   console.log(
     `⏱️ Último post há ${hoursSinceLastPost.toFixed(1)}h. Planejando ${postsToMake} post(s).`,
   );
+  runReport.postsPlanned = postsToMake;
 
   // 4. Seleção dos Melhores Itens (Rankeados)
   const finalItems: any[] = [];
@@ -217,6 +230,11 @@ async function runOráculo() {
         `✅ Postagem confirmada [${item.category}]: ${processed.headline}`,
       );
       successfulPosts++;
+      runReport.successfulPosts.push({
+        category: item.category,
+        headline: processed.headline,
+        source_url: item.link
+      });
 
       if (successfulPosts < postsToMake) {
         console.log("⏳ Aguardando 30 segundos para a próxima postagem...");
@@ -224,6 +242,11 @@ async function runOráculo() {
       }
     } catch (error: any) {
       console.error(`❌ Erro no processamento:`, error.message);
+      runReport.failedPosts.push({
+        category: item.category,
+        title: item.title,
+        error: error.message
+      });
       logAudit({
         headline: item.title,
         source_url: item.link,
@@ -270,6 +293,11 @@ async function runOráculo() {
   } catch (mError) {
     console.error("Erro no engajamento final:", mError);
   }
+
+  runReport.status = "COMPLETED";
+  const runFile = path.join(RUNS_DIR, `run_${new Date().getTime()}.json`);
+  fs.writeFileSync(runFile, JSON.stringify(runReport, null, 2));
+  fs.writeFileSync(path.join(RUNS_DIR, "latest_run.json"), JSON.stringify(runReport, null, 2));
 
   process.exit(0);
 }
