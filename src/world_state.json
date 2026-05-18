@@ -18,7 +18,7 @@
     "Grêmio": {
       "coach": "Luís Castro",
       "league": "Campeonato Brasileiro / Copa do Brasil / Brasileirão Feminino",
-      "recent_changes": "Pelo Campeonato Brasileiro, empatou em 1 a 1 com o Bahia fora de casa, figurando na 15ª colocação com 18 pontos. O técnico Luís Castro avaliou que a equipe cedeu o empate pela ansiedade. A equipe enfrentará o Corinthians no dia 30, confronto no qual o adversário não poderá contar com o atacante Memphis Depay, que estará cedido à seleção holandesa para a Copa do Mundo. Pelo Brasileirão Feminino, venceu o Red Bull Bragantino por 3 a 0."
+      "recent_changes": "O goleiro Weverton recuperou sua melhor forma técnica no clube, com atuações de destaque que lhe renderam uma convocação surpresa para a Seleção Brasileira na Copa do Mundo de 2026. Pelo Campeonato Brasileiro, o time empatou em 1 a 1 com o Bahia fora de casa, figurando na 15ª colocação com 18 pontos. O técnico Luís Castro avaliou que a equipe cedeu o empate pela ansiedade. A equipe enfrentará o Corinthians no dia 30, confronto no qual o adversário não poderá contar com o atacante Memphis Depay, que estará cedido à seleção holandesa para a Copa do Mundo. Pelo Brasileirão Feminino, venceu o Red Bull Bragantino por 3 a 0."
     },
     "São Paulo": {
       "coach": "Dorival Júnior",
@@ -32,8 +32,8 @@
     },
     "Seleção Brasileira": {
       "coach": "Carlo Ancelotti",
-      "league": "Copa do Mundo",
-      "recent_changes": "O técnico Carlo Ancelotti anunciou a lista oficial dos 26 convocados para a Copa do Mundo de 2026, com destaque para o retorno do atacante Neymar após quase três anos de ausência devido a lesão. A equipe estreia na Copa no dia 13 de junho contra o Marrocos, em Nova Jersey (EUA). Antes do torneio, fará amistosos contra o Panamá (31 de maio, no Maracanã) e Egito (6 de junho, em Cleveland). Anteriormente: Ancelotti esteve na Arena da Baixada, Danilo e Hugo Souza apareceram no radar recentemente; o ex-jogador Geovani Silva faleceu aos 62 anos."
+      "league": "Copa do Mundo de 2026",
+      "recent_changes": "O técnico Carlo Ancelotti anunciou a lista oficial dos 26 convocados para a Copa do Mundo de 2026. A grande surpresa foi a presença do experiente goleiro Weverton (Grêmio), convocado sem ter sido testado anteriormente no ciclo, que se junta a Alisson (Liverpool) e Ederson (Fenerbahçe) no trio de goleiros. A lista também destaca o retorno do atacante Neymar após quase três anos de ausência devido a lesão. A equipe estreia na Copa no dia 13 de junho contra o Marrocos, em Nova Jersey (EUA). Antes do torneio, fará amistosos contra o Panamá (31 de maio, no Maracanã) e Egito (6 de junho, em Cleveland). Anteriormente: Ancelotti esteve na Arena da Baixada, Danilo e Hugo Souza apareceram no radar recentemente; o ex-jogador Geovani Silva faleceu aos 62 anos."
     },
     "Atlético-MG": {
       "coach": "Eduardo Domínguez",
@@ -356,5 +356,5 @@
       "recent_changes": "Enfrentará a Seleção Brasileira em um amistoso preparatório para a Copa do Mundo no dia 6 de junho, em Cleveland (EUA)."
     }
   },
-  "last_updated": "2026-05-18T22:01:55.344Z"
+  "last_updated": "2026-05-18T22:09:48.617Z"
 }

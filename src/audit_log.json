@@ -859,5 +859,13 @@
     "source_domain": "www.terra.com.br",
     "category": "Corinthians",
     "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-05-18T22:10:09.526Z",
+    "headline": "WEVERTON NA COPA DE 2026!",
+    "source_url": "https://www.terra.com.br/esportes/brasil/o-paredao-voltou-weverton-e-a-grande-surpresa-de-ancelotti-para-a-copa-de-2026,969d10dca1cb26f9aa85a37ed5afb3d9xwr1b21i.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Grêmio",
+    "status": "SUCCESS"
   }
 ]
