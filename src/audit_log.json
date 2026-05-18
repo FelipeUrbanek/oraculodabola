@@ -600,5 +600,95 @@
     "category": "Fluminense",
     "status": "REJECTED",
     "reason": "❌ Falha crítica: Nenhum modelo respondeu. Verifique sua GEMINI_API_KEY ou sua cota."
+  },
+  {
+    "timestamp": "2026-05-18T17:25:56.474Z",
+    "headline": "Flamengo mostra corte na perna de Paquetá após falta dura",
+    "source_url": "https://www.terra.com.br/esportes/flamengo/flamengo-mostra-corte-na-perna-de-paqueta-apos-falta-dura,2ca8d1dd4679adb6228de7e82c8b1c704firk3f3.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Flamengo",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-05-18T17:25:56.631Z",
+    "headline": "TJ-SP condena Dudu a pagar R$ 50 mil por danos morais contra Leila Pereira",
+    "source_url": "https://www.terra.com.br/esportes/cruzeiro/tj-sp-condena-dudu-a-pagar-r-50-mil-por-danos-morais-contra-leila-pereira,4d969d587ce8e76bc7d7f04e5845dd10n9gtuph6.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Palmeiras",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-05-18T17:25:56.972Z",
+    "headline": "Diniz pede permanência de Yuri Alberto e alerta sobre vendas: 'Não podemos perder jogadores agora'",
+    "source_url": "https://www.terra.com.br/esportes/corinthians/",
+    "source_domain": "www.terra.com.br",
+    "category": "Corinthians",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-05-18T17:25:57.128Z",
+    "headline": "Vai ser convocado? Neymar faz exame a pedido da CBF",
+    "source_url": "https://www.terra.com.br/esportes/brasil/vai-ser-convocado-neymar-faz-exame-a-pedido-da-cbf,0b49d3633a3988e78668ea3170e98b91ialsc073.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-05-18T17:25:57.464Z",
+    "headline": "Ídolo histórico, Guilherme Alves retorna ao Atlético e manda recado nos bastidores",
+    "source_url": "https://www.terra.com.br/esportes/atletico-mg/idolo-historico-guilherme-alves-retorna-ao-atletico-e-manda-recado-nos-bastidores,638feedc1dd8609bc8e1821061958a76lttzyvbn.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Atlético-MG",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-05-18T17:25:57.691Z",
+    "headline": "Ídolo do Cruzeiro, Lucas Romero receberá homenagem histórica em Belo Horizonte",
+    "source_url": "https://www.terra.com.br/esportes/cruzeiro/idolo-do-cruzeiro-lucas-romero-recebera-homenagem-historica-em-belo-horizonte,e441ed05801158de0afa001a5804a034gme5kn6e.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Cruzeiro",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-05-18T17:25:57.818Z",
+    "headline": "Fluminense recupera confiança antes de decisão na Libertadores",
+    "source_url": "https://www.terra.com.br/esportes/fluminense/fluminense-recupera-confianca-antes-de-decisao-na-libertadores,54b2f17f3ab7b5301bcf0d74ae13de47lcuyilm3.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Fluminense",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-05-18T17:25:57.971Z",
+    "headline": "Substituição caótica de Neymar: coordenador técnico do Santos se defende",
+    "source_url": "https://www.terra.com.br/esportes/coritiba/substituicao-caotica-de-neymar-coordenador-tecnico-do-santos-se-defende,73c5bf9a2154edfc534e1cb6b0caa4918r2l7eqk.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Coritiba",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-05-18T17:25:58.171Z",
+    "headline": "José Mourinho acerta retorno ao Real Madrid, diz jornalista",
+    "source_url": "https://www.terra.com.br/esportes/futebol/internacional/equipes/real-madrid/jose-mourinho-acerta-retorno-ao-real-madrid-diz-jornalista,60fd2afa4b5966e3b6d298ddd9187a20u8bxdowf.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Mercado da Bola",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-05-18T17:25:58.334Z",
+    "headline": "Lesionado, joia do Barcelona sofre lesão e está fora da Espanha na Copa do Mundo",
+    "source_url": "https://www.terra.com.br/esportes/futebol/internacional/espanha/lesionado-joia-do-barcelona-sofre-lesao-e-esta-fora-da-espanha-na-copa-do-mundo,a868255a73eaa2ca4681fc3660e83935qyrn05kb.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Futebol Internacional",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
   }
 ]
