@@ -330,5 +330,29 @@
     "category": "Grêmio",
     "status": "REJECTED",
     "reason": "Request failed with status code 403"
+  },
+  {
+    "timestamp": "2026-05-18T06:43:51.630Z",
+    "headline": "OFERTA NA MESA POR IGOR JÚLIO",
+    "source_url": "https://www.terra.com.br/esportes/cruzeiro/cruzeiro-envia-proposta-por-zagueiro-e-aguarda-resposta-do-brighton,46bd5371922d7ae5d18dffa233173943s3sq7w37.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Cruzeiro",
+    "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-05-18T06:45:47.414Z",
+    "headline": "JOHN KENNEDY IGUALA MELHOR ANO NO FLUMINENSE",
+    "source_url": "https://www.terra.com.br/esportes/fluminense/john-kennedy-iguala-temporada-com-mais-gols-pelo-fluminense,dc4599aae48d8bca2f64d674d7c961d518ftytkv.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Fluminense",
+    "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-05-18T06:48:19.944Z",
+    "headline": "PAULO HENRIQUE FORA ATÉ A COPA",
+    "source_url": "https://www.terra.com.br/esportes/vasco/paulo-henrique-nao-deve-voltar-ao-vasco-antes-da-copa-diz-renato-gaucho,d515110fd249c8637dbce037f3754ab1fo7bdnel.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Vasco",
+    "status": "SUCCESS"
   }
 ]
