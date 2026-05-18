@@ -867,5 +867,13 @@
     "source_domain": "www.terra.com.br",
     "category": "Grêmio",
     "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-05-18T23:27:31.857Z",
+    "headline": "ARSENAL A UM PASSO DA TAÇA",
+    "source_url": "https://www.terra.com.br/esportes/futebol/internacional/equipes/arsenal/arsenal-vence-o-burnley-e-fica-muito-perto-do-titulo-da-premier-league,25d9ec8ac80d4e2a691083d826dafbe311r364m8.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Futebol Internacional",
+    "status": "SUCCESS"
   }
 ]

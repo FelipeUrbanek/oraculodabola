@@ -273,7 +273,7 @@
     "Bournemouth": {
       "coach": "Não mencionado",
       "league": "Premier League",
-      "recent_changes": "Encontra-se a dois pontos de vantagem sobre o Brighton na briga por uma vaga na Europa League, na última rodada da Premier League."
+      "recent_changes": "Encontra-se a dois pontos de vantagem sobre o Brighton na briga por uma vaga na Europa League, na última rodada da Premier League. Enfrentará o Manchester City no próximo jogo, partida em que um tropeço do adversário pode garantir o título inglês ao Arsenal."
     },
     "West Ham": {
       "coach": "Não mencionado",
@@ -354,7 +354,22 @@
       "coach": "Não mencionado",
       "league": "Amistoso",
       "recent_changes": "Enfrentará a Seleção Brasileira em um amistoso preparatório para a Copa do Mundo no dia 6 de junho, em Cleveland (EUA)."
+    },
+    "Arsenal": {
+      "coach": "Mikel Arteta",
+      "league": "Premier League",
+      "recent_changes": "Venceu o Burnley por 1 a 0 no Emirates Stadium com gol de Kai Havertz, dando um passo importante rumo ao título da Premier League, que não conquista há 22 anos (desde 2003/04). A equipe possui a melhor defesa do torneio e pode garantir a taça caso o Manchester City tropece contra o Bournemouth na próxima rodada."
+    },
+    "Burnley": {
+      "coach": "Não mencionado",
+      "league": "Premier League",
+      "recent_changes": "Já rebaixado na Premier League e sem grandes objetivos na competição, foi derrotado pelo Arsenal por 1 a 0 no Emirates Stadium."
+    },
+    "Manchester City": {
+      "coach": "Não mencionado",
+      "league": "Premier League",
+      "recent_changes": "Disputa o título da Premier League. Na próxima rodada, enfrentará o Bournemouth; um eventual tropeço garantirá o título para o Arsenal."
     }
   },
-  "last_updated": "2026-05-18T22:09:48.617Z"
+  "last_updated": "2026-05-18T23:27:11.337Z"
 }
