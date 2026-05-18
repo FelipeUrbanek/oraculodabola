@@ -395,11 +395,21 @@ export async function fetchFootballNews(trends: string[] = [], excludeIds: strin
         const batchResults = await Promise.all(
           batch.map(async (item) => {
             const { finalUrl, imageUrl, fullSnippet, exactDate } = await resolveAndScrapeImage(item.link, imageBrowser);
+            const finalPubDate = exactDate || item.pubDate;
+            
+            // Re-verifica a data após extrair a real do HTML
+            const diffFinal = (Date.now() - new Date(finalPubDate).getTime()) / (1000 * 60);
+            const limitMinutesFinal = item.category === "Mercado da Bola" ? 1440 : 240;
+            if (diffFinal > limitMinutesFinal) {
+                console.log(`[REJEITADO] Notícia antiga detectada no scraper de imagem: ${item.title} (${diffFinal.toFixed(0)} mins atrás)`);
+                return null;
+            }
+
             return {
               ...item,
               link: finalUrl,
               imageUrl: imageUrl || undefined,
-              pubDate: exactDate || item.pubDate,
+              pubDate: finalPubDate,
               contentSnippet: fullSnippet || item.contentSnippet,
             };
           })

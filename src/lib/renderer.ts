@@ -55,10 +55,12 @@ export async function generateImages(
     }
 
     const availableFeedLayouts = Object.keys(design.feedLayouts).map(Number);
-    let feedDiag = forceLayout || availableFeedLayouts.filter(l => l !== lastLayouts.feed)[0] || availableFeedLayouts[0];
+    const validFeedLayouts = availableFeedLayouts.filter(l => l !== lastLayouts.feed);
+    let feedDiag = forceLayout || validFeedLayouts[Math.floor(Math.random() * validFeedLayouts.length)] || availableFeedLayouts[0];
     
     const availableStoryLayouts = Object.keys(design.storyLayouts).map(Number);
-    let storyDiag = forceLayout || availableStoryLayouts.filter(l => l !== lastLayouts.story)[0] || availableStoryLayouts[0];
+    const validStoryLayouts = availableStoryLayouts.filter(l => l !== lastLayouts.story);
+    let storyDiag = forceLayout || validStoryLayouts[Math.floor(Math.random() * validStoryLayouts.length)] || availableStoryLayouts[0];
 
     fs.writeFileSync(LAST_LAYOUT_PATH, JSON.stringify({ feed: feedDiag, story: storyDiag }));
 

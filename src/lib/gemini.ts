@@ -9,12 +9,52 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const WORLD_STATE_PATH = path.join(__dirname, "..", "world_state.json");
 
-const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY || "");
+// Define API keys and current index for rotation
+const API_KEYS = [
+  process.env.GEMINI_API_KEY || "", // Chave principal do .env
+  process.env.GEMINI_API_KEY_BACKUP || "", // Chave de backup do .env
+].filter(k => k !== "");
+let currentKeyIndex = 0;
+
+// Configuração da API do Groq
+const GROQ_API_KEY = process.env.GROQ_API_KEY || "";
+
+async function callGroq(prompt: string, isJson: boolean = true) {
+  try {
+    const response = await fetch("https://api.groq.com/openai/v1/chat/completions", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        "Authorization": `Bearer ${GROQ_API_KEY}`
+      },
+      body: JSON.stringify({
+        model: "llama3-70b-8192", // Modelo poderoso e rápido no Groq
+        messages: [{ role: "user", content: prompt }],
+        temperature: 0.7,
+        max_tokens: 8192
+      })
+    });
+
+    if (!response.ok) {
+        throw new Error(`Groq API Error: ${response.statusText}`);
+    }
+
+    const data: any = await response.json();
+    const text = data.choices[0].message.content
+        .replace(/```json|```/g, "")
+        .trim();
+    
+    return isJson ? JSON.parse(text) : text;
+  } catch (error: any) {
+    console.log(`⚠️ Fallback para Groq falhou: ${error.message}`);
+    throw new Error("❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu.");
+  }
+}
 
 /**
- * Sistema de Modelos de Elite (Baseado na lista oficial v1beta)
+ * Sistema de Modelos de Elite com Fallback
  */
-async function callGemini(prompt: string, isJson: boolean = true) {
+async function callGemini(prompt: string, isJson: boolean = true, retryCount: number = 0): Promise<any> {
   const models = [
     "gemini-3.1-pro-preview",
     "gemini-3-pro-preview",
@@ -23,6 +63,21 @@ async function callGemini(prompt: string, isJson: boolean = true) {
     "gemini-3.1-flash-lite",
     "gemini-2.5-flash",
   ];
+
+  // Se esgotamos as chaves, usamos o Groq como última opção
+  if (retryCount >= API_KEYS.length) {
+      console.warn(`\n[AVISO] Todas as chaves do Gemini falharam ou esgotaram a cota. Usando GROQ como fallback final...`);
+      return await callGroq(prompt, isJson);
+  }
+
+  const currentKey = API_KEYS[currentKeyIndex];
+  // Ignora chave vazia caso a principal do env nao esteja setada
+  if(!currentKey) {
+     currentKeyIndex++;
+     return callGemini(prompt, isJson, retryCount + 1);
+  }
+
+  const genAI = new GoogleGenerativeAI(currentKey);
 
   for (const modelName of models) {
     try {
@@ -34,10 +89,19 @@ async function callGemini(prompt: string, isJson: boolean = true) {
         .trim();
       return isJson ? JSON.parse(text) : text;
     } catch (e: any) {
-      console.log(`⚠️ Modelo ${modelName} falhou. Erro: ${e.message}`);
+      console.log(`⚠️ Modelo ${modelName} com a chave ${currentKeyIndex + 1} falhou. Erro: ${e.message}`);
+      // Verifica se o erro foi de rate limit ou cota excedida (429)
+      if (e.message && e.message.includes("429")) {
+         console.warn(`[AVISO] Chave ${currentKeyIndex + 1} exaurida. Rotacionando chave...`);
+         currentKeyIndex = (currentKeyIndex + 1) % API_KEYS.length;
+         return callGemini(prompt, isJson, retryCount + 1);
+      }
     }
   }
-  throw new Error("❌ Falha crítica: Nenhum modelo respondeu. Verifique sua GEMINI_API_KEY ou sua cota.");
+
+  // Se passou por todos os modelos e não deu 429 mas todos falharam, roda chave de backup
+  currentKeyIndex = (currentKeyIndex + 1) % API_KEYS.length;
+  return callGemini(prompt, isJson, retryCount + 1);
 }
 
 export interface ProcessedContent {
