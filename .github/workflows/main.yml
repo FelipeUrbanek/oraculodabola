@@ -55,6 +55,8 @@ jobs:
       - name: Executar Engine do Oráculo
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_API_KEY_BACKUP: ${{ secrets.GEMINI_API_KEY_BACKUP }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
           IG_USER_ID: ${{ secrets.IG_USER_ID }}
           FB_ACCESS_TOKEN: ${{ secrets.FB_ACCESS_TOKEN }}
           FB_APP_ID: ${{ secrets.FB_APP_ID }}
