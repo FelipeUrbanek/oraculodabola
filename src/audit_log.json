@@ -394,5 +394,13 @@
     "source_domain": "www.terra.com.br",
     "category": "Corinthians",
     "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-05-18T14:49:25.513Z",
+    "headline": "FLU SUPERA SÃO PAULO NO MARACANÃ",
+    "source_url": "https://www.terra.com.br/esportes/videos/veja-os-gols-da-vitoria-do-fluminense-sobre-o-sao-paulo-pelo-brasileirao,2b9cec7b0f9672920948b6b1210e66b4wu98a8qq.html",
+    "source_domain": "www.terra.com.br",
+    "category": "São Paulo",
+    "status": "SUCCESS"
   }
 ]
