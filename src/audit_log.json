@@ -875,5 +875,13 @@
     "source_domain": "www.terra.com.br",
     "category": "Futebol Internacional",
     "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-05-18T23:38:15.153Z",
+    "headline": "ANCELOTTI FECHA CONVOCADOS ÀS 12H",
+    "source_url": "https://www.terra.com.br/esportes/brasil/ancelotti-afirma-que-fechou-lista-de-convocados-as-12h-desta-segunda,a9f1120169f1c3b0874e694dbddc5287xvvz0lug.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Copa 2026",
+    "status": "SUCCESS"
   }
 ]

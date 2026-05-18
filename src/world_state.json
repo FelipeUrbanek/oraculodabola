@@ -33,7 +33,7 @@
     "Seleção Brasileira": {
       "coach": "Carlo Ancelotti",
       "league": "Copa do Mundo de 2026",
-      "recent_changes": "O técnico Carlo Ancelotti anunciou a lista oficial dos 26 convocados para a Copa do Mundo de 2026. A grande surpresa foi a presença do experiente goleiro Weverton (Grêmio), convocado sem ter sido testado anteriormente no ciclo, que se junta a Alisson (Liverpool) e Ederson (Fenerbahçe) no trio de goleiros. A lista também destaca o retorno do atacante Neymar após quase três anos de ausência devido a lesão. A equipe estreia na Copa no dia 13 de junho contra o Marrocos, em Nova Jersey (EUA). Antes do torneio, fará amistosos contra o Panamá (31 de maio, no Maracanã) e Egito (6 de junho, em Cleveland). Anteriormente: Ancelotti esteve na Arena da Baixada, Danilo e Hugo Souza apareceram no radar recentemente; o ex-jogador Geovani Silva faleceu aos 62 anos."
+      "recent_changes": "O técnico Carlo Ancelotti finalizou a lista dos 26 convocados para a Copa do Mundo de 2026 às 12h desta segunda-feira, após aguardar os jogos do final de semana para verificar a condição dos atletas. O atacante Neymar foi observado de perto e, após exames solicitados pela CBF ao Santos na manhã desta segunda-feira, não teve problemas diagnosticados, confirmando sua presença na lista. A grande surpresa foi a presença do experiente goleiro Weverton (Grêmio), convocado sem ter sido testado anteriormente no ciclo, que se junta a Alisson (Liverpool) e Ederson (Fenerbahçe) no trio de goleiros. A equipe estreia na Copa no dia 13 de junho contra o Marrocos, em Nova Jersey (EUA). Antes do torneio, fará amistosos contra o Panamá (31 de maio, no Maracanã) e Egito (6 de junho, em Cleveland)."
     },
     "Atlético-MG": {
       "coach": "Eduardo Domínguez",
@@ -158,7 +158,7 @@
     "Santos": {
       "coach": "Não mencionado",
       "league": "Copa do Brasil / Campeonato Brasileiro Sub-20 / Brasileirão / Brasileirão Feminino",
-      "recent_changes": "O atacante Neymar foi oficialmente convocado pela Seleção Brasileira para a Copa do Mundo de 2026. Anteriormente: Pelo Campeonato Brasileiro, sofreu uma derrota para o Coritiba, em jogo marcado por dores na panturrilha de Neymar, que passou por exames da CBF e foi liberado. Desde seu retorno ao clube em janeiro de 2025, Neymar soma 44 partidas, 18 gols e nove assistências. A equipe avançou para as oitavas de final da Copa do Brasil. Pelo Sub-20, enfrentará o Flamengo. Pelo Feminino, enfrentará o Red Bull Bragantino."
+      "recent_changes": "O atacante Neymar foi oficialmente convocado pela Seleção Brasileira para a Copa do Mundo de 2026, após exames solicitados pela CBF ao clube na manhã desta segunda-feira não diagnosticarem problemas na panturrilha. Pelo Campeonato Brasileiro, sofreu uma derrota para o Coritiba, em jogo marcado por dores na panturrilha de Neymar. Desde seu retorno ao clube em janeiro de 2025, Neymar soma 44 partidas, 18 gols e nove assistências. A equipe avançou para as oitavas de final da Copa do Brasil. Pelo Sub-20, enfrentará o Flamengo. Pelo Feminino, enfrentará o Red Bull Bragantino."
     },
     "Vitória": {
       "coach": "Não mencionado",
@@ -371,5 +371,5 @@
       "recent_changes": "Disputa o título da Premier League. Na próxima rodada, enfrentará o Bournemouth; um eventual tropeço garantirá o título para o Arsenal."
     }
   },
-  "last_updated": "2026-05-18T23:27:11.337Z"
+  "last_updated": "2026-05-18T23:37:52.475Z"
 }
