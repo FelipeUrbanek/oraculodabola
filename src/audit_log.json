@@ -835,5 +835,13 @@
     "source_domain": "www.terra.com.br",
     "category": "Flamengo",
     "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-05-18T21:54:41.934Z",
+    "headline": "NEYMAR NA COPA DO MUNDO DE 2026!",
+    "source_url": "https://www.terra.com.br/esportes/brasil/vai-ser-convocado-neymar-faz-exame-a-pedido-da-cbf,0b49d3633a3988e78668ea3170e98b91ialsc073.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "SUCCESS"
   }
 ]

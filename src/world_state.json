@@ -33,7 +33,7 @@
     "Seleção Brasileira": {
       "coach": "Carlo Ancelotti",
       "league": "Copa do Mundo",
-      "recent_changes": "O técnico Carlo Ancelotti fará a convocação final oficial dos 26 jogadores para a Copa do Mundo nesta segunda-feira (18), no Museu do Amanhã, no Rio de Janeiro. A pedido da CBF, Neymar realizou exames de imagem preventivos para avaliação de suas condições físicas antes da lista, com tendência de ser convocado e retornar à equipe nacional após quase três anos de ausência. Anteriormente: Ancelotti esteve na Arena da Baixada, Danilo e Hugo Souza apareceram no radar recentemente; o ex-jogador Geovani Silva faleceu aos 62 anos."
+      "recent_changes": "O técnico Carlo Ancelotti anunciou a lista oficial dos 26 convocados para a Copa do Mundo de 2026, com destaque para o retorno do atacante Neymar após quase três anos de ausência devido a lesão. A equipe estreia na Copa no dia 13 de junho contra o Marrocos, em Nova Jersey (EUA). Antes do torneio, fará amistosos contra o Panamá (31 de maio, no Maracanã) e Egito (6 de junho, em Cleveland). Anteriormente: Ancelotti esteve na Arena da Baixada, Danilo e Hugo Souza apareceram no radar recentemente; o ex-jogador Geovani Silva faleceu aos 62 anos."
     },
     "Atlético-MG": {
       "coach": "Eduardo Domínguez",
@@ -158,7 +158,7 @@
     "Santos": {
       "coach": "Não mencionado",
       "league": "Copa do Brasil / Campeonato Brasileiro Sub-20 / Brasileirão / Brasileirão Feminino",
-      "recent_changes": "Pelo Campeonato Brasileiro, sofreu uma derrota para o Coritiba, em jogo marcado por uma confusão na substituição de Neymar. O jogador reclamou de dores na panturrilha direita e recebeu atendimento médico em campo. O clube informou internamente que foi apenas uma pancada sem preocupação clínica, mas o atleta passou por exames a pedido da CBF visando a Copa do Mundo. Desde seu retorno ao clube em janeiro de 2025, Neymar soma 44 partidas, 18 gols e nove assistências. Anteriormente: avançou para as oitavas de final da Copa do Brasil. Pelo Sub-20, enfrentará o Flamengo. Pelo Feminino, enfrentará o Red Bull Bragantino."
+      "recent_changes": "O atacante Neymar foi oficialmente convocado pela Seleção Brasileira para a Copa do Mundo de 2026. Anteriormente: Pelo Campeonato Brasileiro, sofreu uma derrota para o Coritiba, em jogo marcado por dores na panturrilha de Neymar, que passou por exames da CBF e foi liberado. Desde seu retorno ao clube em janeiro de 2025, Neymar soma 44 partidas, 18 gols e nove assistências. A equipe avançou para as oitavas de final da Copa do Brasil. Pelo Sub-20, enfrentará o Flamengo. Pelo Feminino, enfrentará o Red Bull Bragantino."
     },
     "Vitória": {
       "coach": "Não mencionado",
@@ -339,7 +339,22 @@
       "coach": "Não mencionado",
       "league": "Não mencionada",
       "recent_changes": "Empatou em 1 a 1 com o Flamengo no dia 29 de abril, na Argentina. Logo no início desta partida, o meia adversário Giorgian de Arrascaeta caiu de mau jeito e sofreu uma fratura na clavícula direita."
+    },
+    "Marrocos": {
+      "coach": "Não mencionado",
+      "league": "Copa do Mundo de 2026",
+      "recent_changes": "Será o adversário da Seleção Brasileira na estreia da Copa do Mundo de 2026, em partida que acontecerá no dia 13 de junho, em Nova Jersey (EUA)."
+    },
+    "Panamá": {
+      "coach": "Não mencionado",
+      "league": "Amistoso",
+      "recent_changes": "Enfrentará a Seleção Brasileira em um amistoso preparatório para a Copa do Mundo no dia 31 de maio, no Maracanã."
+    },
+    "Egito": {
+      "coach": "Não mencionado",
+      "league": "Amistoso",
+      "recent_changes": "Enfrentará a Seleção Brasileira em um amistoso preparatório para a Copa do Mundo no dia 6 de junho, em Cleveland (EUA)."
     }
   },
-  "last_updated": "2026-05-18T21:13:40.056Z"
+  "last_updated": "2026-05-18T21:54:16.635Z"
 }
