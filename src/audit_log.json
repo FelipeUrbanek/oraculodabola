@@ -803,5 +803,13 @@
     "source_domain": "www.terra.com.br",
     "category": "Santos",
     "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-05-18T18:54:08.891Z",
+    "headline": "RÜDIGER RENOVA COM O REAL MADRID",
+    "source_url": "https://www.terra.com.br/esportes/futebol/internacional/equipes/real-madrid/real-madrid-encaminha-renovacao-de-rudiger-para-a-proxima-temporada,03ff9c74fb0e40dc4b787124aaf7713efh4m7er0.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Mercado da Bola",
+    "status": "SUCCESS"
   }
 ]
