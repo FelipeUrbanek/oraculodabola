@@ -966,5 +966,21 @@
     "source_domain": "backup_news",
     "category": "Séries",
     "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-05-19T15:51:09.856Z",
+    "headline": "ADEUS ANTECIPADO! NEYMAR FORA DO PEIXE",
+    "source_url": "https://www.terra.com.br/esportes/santos/convocado-neymar-nao-deve-mais-jogar-pelo-santos-ate-a-copa,80c5ca64547652c94c094a05c0526ee3f0c9hyt9.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-05-19T15:52:15.483Z",
+    "headline": "GLADIADOR II: RETORNO TRIUNFAL DE SCOTT!",
+    "source_url": "backup_cinema_1779205905394",
+    "source_domain": "backup_news",
+    "category": "Crítica",
+    "status": "SUCCESS"
   }
 ]

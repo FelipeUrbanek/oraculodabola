@@ -1,16 +1,16 @@
 {
-  "timestamp": "2026-05-19T14:00:22.519Z",
+  "timestamp": "2026-05-19T15:51:15.929Z",
   "status": "SUCCESS",
   "postsPlanned": 1,
   "candidatesFound": 1,
   "successfulPosts": [
     {
-      "title": "House of the Dragon: Terceira temporada inicia gravações no Reino Unido",
-      "headline": "A CASA DO DRAGÃO 3 EM PRODUÇÃO!",
-      "category": "Séries",
-      "instagramId": "18091841660597891",
-      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-05-19/2026-05-19-14-01-39_feed.jpg",
-      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-05-19/2026-05-19-14-01-39_story.jpg"
+      "title": "Gladiador II: Ridley Scott entrega sequência histórica e avassaladora",
+      "headline": "GLADIADOR II: RETORNO TRIUNFAL DE SCOTT!",
+      "category": "Crítica",
+      "instagramId": "18081309884146532",
+      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-05-19/2026-05-19-15-51-56_feed.jpg",
+      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-05-19/2026-05-19-15-51-56_story.jpg"
     }
   ],
   "failedPosts": []
