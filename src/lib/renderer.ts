@@ -148,8 +148,9 @@ export async function generateImages(
                             headRect.left < 50 || 
                             headline.scrollWidth > (container.clientWidth + 5);
                             
-          // Estouro vertical: o container do card ultrapassa a altura de segurança (1300px)
-          const overflowY = rect.bottom > 1300;
+          // Estouro vertical: o container não pode subir acima de 220px (evita colidir com o logotipo/marca no topo)
+          // nem descer abaixo de 1300px (respeita margem inferior)
+          const overflowY = rect.top < 220 || rect.bottom > 1300;
           
           return overflowX || overflowY || container.scrollHeight > container.clientHeight;
         };
