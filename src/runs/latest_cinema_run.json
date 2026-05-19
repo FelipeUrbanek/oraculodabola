@@ -1,0 +1,17 @@
+{
+  "timestamp": "2026-05-19T03:06:54.346Z",
+  "status": "SUCCESS",
+  "postsPlanned": 1,
+  "candidatesFound": 4,
+  "successfulPosts": [
+    {
+      "title": "Ticket to Heaven ganha trailer e data de estreia",
+      "headline": "TICKET TO HEAVEN: TRAILER E DATA!",
+      "category": "Séries",
+      "instagramId": "18062638202463270",
+      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-05-19/2026-05-19-03-08-06_feed.jpg",
+      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-05-19/2026-05-19-03-08-06_story.jpg"
+    }
+  ],
+  "failedPosts": []
+}

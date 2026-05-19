@@ -891,5 +891,21 @@
     "source_domain": "www.terra.com.br",
     "category": "Botafogo",
     "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-05-19T03:06:48.589Z",
+    "headline": "TORCIDA CERCA A VILA CONTRA A SAF!",
+    "source_url": "https://www.terra.com.br/esportes/santos/torcida-do-santos-faz-protesto-na-vila-belmiro-e-chama-conselheiros-de-omissos,58449960b43e6f865ff1d71a8b82212epwobpu8s.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-05-19T03:08:25.428Z",
+    "headline": "TICKET TO HEAVEN: TRAILER E DATA!",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/series/ticket-to-heaven-ganha-trailer-e-data-de-estreia,10f3bbef40d4da21768a2d75636891953yifr2py.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Séries",
+    "status": "SUCCESS"
   }
 ]
