@@ -1,90 +1,60 @@
 import dotenv from "dotenv";
 dotenv.config({ path: ".env.local" });
 
-import { fetchCinemaNews } from "../src/lib/news";
 import { processCinemaNewsWithGemini } from "../src/lib/gemini";
 import { generateImages } from "../src/lib/renderer";
 import fs from "fs";
 import path from "path";
 
-async function testCinemaLayouts() {
-  console.log("🎬 [TEST SUITE] Iniciando Teste de Layouts de Cinema...");
+async function runLocalCinemaDesignTest() {
+  console.log("🎬 Iniciando renderizador de teste local de Cinema...");
 
-  // 1. Tentar coletar notícias reais de cinema
-  let newsItem = {
-    title: "Vingadores: Apocalipse ganha primeiro trailer espetacular com Robert Downey Jr",
-    contentSnippet: "A Marvel Studios surpreendeu o mundo hoje ao lançar o primeiro trailer oficial de Vingadores: Apocalipse. Robert Downey Jr retorna triunfante como Doutor Destino, liderando um elenco estelar. O filme estreia oficialmente em maio de 2026 nos cinemas de todo o mundo, com orçamento estimado em $250 milhões.",
-    imageUrl: "https://images.unsplash.com/photo-1536440136628-849c177e76a1?auto=format&fit=crop&q=80&w=1080&h=1350",
-    category: "Filmes"
+  const testNews = {
+    title: "O Diabo Veste Prada 2: Sequência com Meryl Streep é aclamada e surpreende crítica em bilheterias",
+    snippet: "A tão aguardada sequência de 'O Diabo Veste Prada' surpreendeu o público e críticos mundiais. Com o retorno da icônica Miranda Priestly interpretada por Meryl Streep, e das estrelas Emily Blunt e Anne Hathaway, o filme dirigido por David Frankel e roteirizado por Aline Brosh McKenna atinge números impressionantes e traz uma crítica moderna sobre o declínio do jornalismo de moda clássico na era das redes sociais e do fast fashion. Orçamento oficial avaliado em $150 milhões com bilheteria inicial de $120 milhões no primeiro final de semana."
   };
 
+  console.log("🧠 1. Enviando notícia para a IA (Gemini) processar com os novos prompts de parágrafo...");
   try {
-    const news = await fetchCinemaNews();
-    if (news && news.length > 0) {
-      const bestReal = news.find(n => n.imageUrl);
-      if (bestReal) {
-        newsItem = {
-          title: bestReal.title,
-          contentSnippet: bestReal.contentSnippet,
-          imageUrl: bestReal.imageUrl || newsItem.imageUrl,
-          category: bestReal.category
-        };
-        console.log(`✅ Usando notícia real encontrada: "${newsItem.title}"`);
-      }
-    }
-  } catch (e) {
-    console.log("⚠️ Falha ao raspar notícias reais. Usando mock altamente realista do Vingadores...");
-  }
+    const result = await processCinemaNewsWithGemini(testNews.title, testNews.snippet);
+    
+    console.log("\n==================================================");
+    console.log("✍️ CAPTION GERADO PELA IA COM OS NOVOS PARÁGRAFOS:");
+    console.log("==================================================");
+    console.log(result.caption);
+    console.log("==================================================\n");
 
-  // 2. Processar com a persona do Gemini
-  console.log("🧠 Processando conteúdo com a Persona de Cinema do Gemini...");
-  let processed;
-  try {
-    processed = await processCinemaNewsWithGemini(newsItem.title, newsItem.contentSnippet);
-    // Garantir que a categoria seja uma das válidas de cinema
-    processed.category = newsItem.category as any;
-    processed.shouldCreateStory = true;
-    console.log("✅ Conteúdo gerado com sucesso!");
-    console.log(`   - Headline: "${processed.headline}"`);
-    console.log(`   - Summary: "${processed.summary}"`);
-    console.log(`   - Categoria: "${processed.category}"`);
+    const newsImageUrl = "https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?auto=format&fit=crop&q=80&w=1080&h=1350"; // Imagem de cinema clássica no Unsplash
+
+    console.log("🎨 2. Renderizando arte local do Feed usando o Layout 3 (Glassmorphism + Roxo Crítica)...");
+    const feedPaths3 = await generateImages(result, newsImageUrl, "Cinema", 3, true);
+
+    console.log("🎨 3. Renderizando arte local do Feed usando o Layout 6 (Glassmorphism + Roxo Crítica)...");
+    const feedPaths6 = await generateImages(result, newsImageUrl, "Cinema", 6, true);
+
+    // Destino final nos artefatos da conversa para o usuário ver
+    const artifactDir = "C:\\Users\\Felipe Urbanek\\.gemini\\antigravity\\brain\\23a8f762-4cf2-4692-8cce-f4da0bf71660";
+    if (!fs.existsSync(artifactDir)) {
+      fs.mkdirSync(artifactDir, { recursive: true });
+    }
+
+    if (feedPaths3.feedPath && fs.existsSync(feedPaths3.feedPath)) {
+      const dest3 = path.join(artifactDir, "feed_layout_glass_3.jpg");
+      fs.copyFileSync(feedPaths3.feedPath, dest3);
+      console.log(`✅ Arte do Layout 3 copiada para Artefatos: ${dest3}`);
+    }
+
+    if (feedPaths6.feedPath && fs.existsSync(feedPaths6.feedPath)) {
+      const dest6 = path.join(artifactDir, "feed_layout_glass_6.jpg");
+      fs.copyFileSync(feedPaths6.feedPath, dest6);
+      console.log(`✅ Arte do Layout 6 copiada para Artefatos: ${dest6}`);
+    }
+
+    console.log("\n🏁 Renderização local bem-sucedida! Veja as imagens geradas nos artefatos.");
+
   } catch (e: any) {
-    console.error("❌ Falha no Gemini:", e.message);
-    return;
+    console.error("❌ Falha no teste:", e.message);
   }
-
-  // 3. Renderizar todos os 10 layouts
-  const testOutputDir = path.join(process.cwd(), "posts", "test_cinema");
-  if (!fs.existsSync(testOutputDir)) fs.mkdirSync(testOutputDir, { recursive: true });
-
-  console.log("\n🎨 Renderizando as artes para os 10 Estilos Cinematográficos...");
-  
-  for (let layout = 1; layout <= 10; layout++) {
-    console.log(`📸 [Layout ${layout}/10] Renderizando...`);
-    try {
-      const { feedPath, storyPath } = await generateImages(
-        processed,
-        newsItem.imageUrl,
-        "",
-        layout
-      );
-
-      // Copiar para a pasta de testes com o número do layout
-      const finalFeedDest = path.join(testOutputDir, `feed_layout_${layout}.jpg`);
-      fs.copyFileSync(feedPath, finalFeedDest);
-      console.log(`   ✅ Feed Salvo em: ${finalFeedDest}`);
-
-      if (storyPath && layout === 1) {
-        const finalStoryDest = path.join(testOutputDir, `story_layout_1.jpg`);
-        fs.copyFileSync(storyPath, finalStoryDest);
-        console.log(`   ✅ Story Salvo em: ${finalStoryDest}`);
-      }
-    } catch (e: any) {
-      console.error(`   ❌ Falha ao renderizar Layout ${layout}:`, e.message);
-    }
-  }
-
-  console.log(`\n🏁 [SUCESSO] Teste de layouts concluído! Todas as 10 artes de feed estão disponíveis em: ${testOutputDir}`);
 }
 
-testCinemaLayouts();
+runLocalCinemaDesignTest();
