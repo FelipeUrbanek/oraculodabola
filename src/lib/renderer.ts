@@ -128,7 +128,7 @@ export async function generateImages(
     await page.setContent(feedHtml, { waitUntil: "load", timeout: 60000 });
     await page.evaluateHandle("document.fonts.ready");
     
-    // Proteção contra estouro de texto (Auto-resize balanceado v2)
+    // Proteção contra estouro de texto (Auto-resize balanceado v3 com getBoundingClientRect)
     await page.evaluate(`(() => {
       const headline = document.querySelector('h1');
       const container = headline?.parentElement;
@@ -138,32 +138,53 @@ export async function generateImages(
         let hFontSize = parseFloat(window.getComputedStyle(headline).fontSize);
         let sFontSize = summary ? parseFloat(window.getComputedStyle(summary).fontSize) : 0;
         
+        // Verifica se há estouro físico nos limites da imagem (1080x1350px)
         const hasOverflow = () => {
-          return container.scrollHeight > container.offsetHeight || 
-                 headline.scrollHeight > headline.offsetHeight ||
-                 headline.scrollWidth > (container.offsetWidth - 128);
+          const rect = container.getBoundingClientRect();
+          const headRect = headline.getBoundingClientRect();
+          
+          // Estouro horizontal: o título ou container ultrapassa a largura visível segura (1030px)
+          const overflowX = headRect.right > 1030 || 
+                            headRect.left < 50 || 
+                            headline.scrollWidth > (container.clientWidth + 5);
+                            
+          // Estouro vertical: o container do card ultrapassa a altura de segurança (1300px)
+          const overflowY = rect.bottom > 1300;
+          
+          return overflowX || overflowY || container.scrollHeight > container.clientHeight;
         };
 
         let attempts = 0;
-        while (hasOverflow() && attempts < 40) {
+        while (hasOverflow() && attempts < 80) {
           attempts++;
-          // Prioriza manter o título GIGANTE (acima de 110px)
-          if (hFontSize > 120) {
-            hFontSize -= 2;
+          
+          // Se o título for extremamente gigante, diminui ele agressivamente primeiro
+          if (hFontSize > 130) {
+            hFontSize -= 3;
             headline.style.fontSize = hFontSize + 'px';
           } 
-          // Tenta diminuir o resumo primeiro se o título já estiver num patamar aceitável
-          else if (summary && sFontSize > 30) {
+          // Se o resumo ainda estiver muito grande, diminui ele para equilibrar a composição
+          else if (summary && sFontSize > 44) {
             sFontSize -= 1;
             summary.style.fontSize = sFontSize + 'px';
           }
-          // Diminui o título até o novo mínimo de 100px (impacto total)
-          else if (hFontSize > 100) {
+          // Diminui o título até o patamar de 80px (ainda muito impactante e grande)
+          else if (hFontSize > 80) {
             hFontSize -= 2;
             headline.style.fontSize = hFontSize + 'px';
           }
-          // Último recurso: diminui o resumo até o mínimo absoluto
-          else if (summary && sFontSize > 22) {
+          // Diminui o resumo até o mínimo legível de 36px (equivalente a text-3xl/4xl)
+          else if (summary && sFontSize > 36) {
+            sFontSize -= 1;
+            summary.style.fontSize = sFontSize + 'px';
+          }
+          // Se ainda estourar, diminui o título até o mínimo absoluto de 65px
+          else if (hFontSize > 65) {
+            hFontSize -= 2;
+            headline.style.fontSize = hFontSize + 'px';
+          }
+          // Último recurso: diminui o resumo até 28px
+          else if (summary && sFontSize > 28) {
             sFontSize -= 1;
             summary.style.fontSize = sFontSize + 'px';
           }
@@ -224,20 +245,25 @@ export async function generateImages(
       await page.setContent(storyHtml, { waitUntil: "load", timeout: 60000 });
       await page.evaluateHandle("document.fonts.ready");
       
-      // Proteção contra estouro de texto em Stories
+      // Proteção contra estouro de texto em Stories (Auto-resize balanceado v3)
       await page.evaluate(`(() => {
         const headline = document.querySelector('h1');
         const container = headline?.parentElement;
         if (headline && container) {
           let fontSize = parseFloat(window.getComputedStyle(headline).fontSize);
           const hasOverflow = () => {
-            return container.scrollHeight > container.offsetHeight || 
-                   headline.scrollWidth > (container.offsetWidth - 120);
+            const rect = container.getBoundingClientRect();
+            const headRect = headline.getBoundingClientRect();
+            
+            const overflowX = headRect.right > 1030 || headRect.left < 50;
+            const overflowY = rect.bottom > 1850; // altura do story é 1920
+            
+            return overflowX || overflowY || container.scrollHeight > container.clientHeight;
           };
           let safety = 0;
-          while (hasOverflow() && fontSize > 45 && safety < 50) {
+          while (hasOverflow() && fontSize > 45 && safety < 80) {
             safety++;
-            fontSize -= 3;
+            fontSize -= 2;
             headline.style.fontSize = fontSize + 'px';
           }
         }
