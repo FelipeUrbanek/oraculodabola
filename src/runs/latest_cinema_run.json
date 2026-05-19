@@ -1,16 +1,16 @@
 {
-  "timestamp": "2026-05-19T03:16:55.599Z",
+  "timestamp": "2026-05-19T03:14:42.049Z",
   "status": "SUCCESS",
   "postsPlanned": 1,
   "candidatesFound": 3,
   "successfulPosts": [
     {
       "title": "O Diabo Veste Prada 2 crítica",
-      "headline": "SEQUÊNCIA DE PRADA É ACLAMADA PELA CRÍTICA!",
+      "headline": "O DIABO VESTE PRADA 2 CHOCA CRÍTICA!",
       "category": "Crítica",
-      "instagramId": "18094605392189269",
-      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-05-19/2026-05-19-03-17-42_feed.jpg",
-      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-05-19/2026-05-19-03-17-42_story.jpg"
+      "instagramId": "18084999392567634",
+      "feedPath": "E:\\Instagram Automatic\\posts\\2026-05-19\\2026-05-19-00-17-11_feed.jpg",
+      "storyPath": "E:\\Instagram Automatic\\posts\\2026-05-19\\2026-05-19-00-17-11_story.jpg"
     }
   ],
   "failedPosts": []
