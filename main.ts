@@ -124,7 +124,8 @@ async function runOráculo() {
       .filter(word => word.length >= 4 && !stopWords.has(word));
   };
 
-  const recentHistoryForRepetition = history.slice(-4);
+  const recentHistoryForRepetition = history.slice(-6); // Aumentado para 6 posts para evitar repetição geral de assuntos
+  const recentHistoryForNeymar = history.slice(-10);     // Aumentado para 10 posts para garantir espaçamento estrito para o Neymar
 
   let candidates = newsList.filter((item: any) => {
     const hasImage = !!item.imageUrl && item.imageUrl.startsWith("http");
@@ -140,9 +141,9 @@ async function runOráculo() {
       return itemKeywords.some(keyword => historyKeywords.includes(keyword));
     });
 
-    // Bloqueio estrito de Neymar se já falamos dele nos últimos 4 posts
+    // Bloqueio estrito de Neymar se já falamos dele nos últimos 10 posts
     const isNeymarNews = item.title.toLowerCase().includes("neymar");
-    const hasRecentNeymar = recentHistoryForRepetition.some(h => h.title && h.title.toLowerCase().includes("neymar"));
+    const hasRecentNeymar = recentHistoryForNeymar.some(h => h.title && h.title.toLowerCase().includes("neymar"));
     const isBlockedNeymar = isNeymarNews && hasRecentNeymar;
 
     return hasImage && !isServiceNews && isDifferentCategory && !isRepeatedSubject && !isBlockedNeymar;
@@ -158,21 +159,27 @@ async function runOráculo() {
 
       // Mantém apenas o bloqueio estrito do Neymar recente
       const isNeymarNews = item.title.toLowerCase().includes("neymar");
-      const hasRecentNeymar = recentHistoryForRepetition.some(h => h.title && h.title.toLowerCase().includes("neymar"));
+      const hasRecentNeymar = recentHistoryForNeymar.some(h => h.title && h.title.toLowerCase().includes("neymar"));
       const isBlockedNeymar = isNeymarNews && hasRecentNeymar;
 
       return hasImage && !isServiceNews && !isBlockedNeymar;
     });
   }
 
-  // Se ainda for 0 (caso extremo), relaxamos tudo para garantir postagem
+  // Se ainda for 0 (caso extremo), relaxamos tudo para garantir postagem, mas NUNCA postamos Neymar repetido
   if (candidates.length === 0) {
-    console.log("🔄 Rodízio de categorias e filtros totalmente relaxados para garantir postagem...");
+    console.log("🔄 Rodízio de categorias e filtros totalmente relaxados para garantir postagem (Mantendo trava estrita do Neymar)...");
     candidates = newsList.filter((item: any) => {
       const hasImage = !!item.imageUrl && item.imageUrl.startsWith("http");
       const forbidden = ["onde assistir", "ao vivo", "transmissão", "tempo real", "como assistir", "escalação", "palpite"];
       const isServiceNews = forbidden.some((word) => item.title.toLowerCase().includes(word));
-      return hasImage && !isServiceNews;
+
+      // Mantém apenas o bloqueio estrito do Neymar recente
+      const isNeymarNews = item.title.toLowerCase().includes("neymar");
+      const hasRecentNeymar = recentHistoryForNeymar.some(h => h.title && h.title.toLowerCase().includes("neymar"));
+      const isBlockedNeymar = isNeymarNews && hasRecentNeymar;
+
+      return hasImage && !isServiceNews && !isBlockedNeymar;
     });
   }
 
@@ -199,15 +206,8 @@ async function runOráculo() {
   );
   let newItems = validIndices.map((i) => uniqueItems[i]);
 
-  if (newItems.length === 0 && uniqueItems.length > 0) {
-    console.log(
-      "♻️ Todas as novidades eram temas repetidos. Usando a melhor disponível para garantir postagem.",
-    );
-    newItems = [uniqueItems[0]];
-  }
-
   if (newItems.length === 0) {
-    console.log("💤 Nenhuma notícia disponível após todos os filtros.");
+    console.log("💤 Nenhuma notícia inédita disponível após todos os filtros. Encerrando execução para evitar posts repetidos.");
     return;
   }
 

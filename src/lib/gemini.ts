@@ -488,6 +488,34 @@ export async function rankBestNews(newsList: any[]): Promise<any> {
   }
 }
 
+function stemPortuguese(word: string): string {
+  // Remove plural suffix 's'
+  if (word.endsWith("s") && word.length > 3) {
+    word = word.slice(0, -1);
+  }
+  // Remove gender/variation suffixes 'o', 'a', 'e' if the word is long enough
+  if ((word.endsWith("o") || word.endsWith("a") || word.endsWith("e")) && word.length > 4) {
+    word = word.slice(0, -1);
+  }
+  // Normalise common football-related word stems
+  if (word.startsWith("lesiona") || word.startsWith("lesao")) {
+    return "les";
+  }
+  if (word.startsWith("convoca")) {
+    return "convoc";
+  }
+  if (word.startsWith("saida") || word.startsWith("sair")) {
+    return "sa";
+  }
+  if (word.startsWith("contrata")) {
+    return "contrat";
+  }
+  if (word.startsWith("demit") || word.startsWith("demiss")) {
+    return "demit";
+  }
+  return word;
+}
+
 function getCleanWords(title: string): Set<string> {
   const stopWords = new Set([
     "a", "o", "de", "para", "por", "com", "em", "um", "uma", "os", "as", 
@@ -507,7 +535,7 @@ function getCleanWords(title: string): Set<string> {
   const cleanWords = new Set<string>();
   for (const word of normalized) {
     if (word.length > 2 && !stopWords.has(word)) {
-      cleanWords.add(word);
+      cleanWords.add(stemPortuguese(word));
     }
   }
   return cleanWords;
@@ -529,7 +557,7 @@ function areTitlesDuplicate(title1: string, title2: string): boolean {
   const minSize = Math.min(words1.size, words2.size);
   const similarity = intersectionCount / minSize;
   
-  // Duplicados se compartilharem mais de 40% das palavras chave significativas
+  // Duplicados se compartilharem mais de 40% das palavras chave significativas normalizadas
   return similarity >= 0.40;
 }
 
