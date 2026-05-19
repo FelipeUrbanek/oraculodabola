@@ -1,16 +1,16 @@
 {
-  "timestamp": "2026-05-19T15:51:15.929Z",
+  "timestamp": "2026-05-19T17:32:16.378Z",
   "status": "SUCCESS",
   "postsPlanned": 1,
-  "candidatesFound": 1,
+  "candidatesFound": 9,
   "successfulPosts": [
     {
-      "title": "Gladiador II: Ridley Scott entrega sequência histórica e avassaladora",
-      "headline": "GLADIADOR II: RETORNO TRIUNFAL DE SCOTT!",
-      "category": "Crítica",
-      "instagramId": "18081309884146532",
-      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-05-19/2026-05-19-15-51-56_feed.jpg",
-      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-05-19/2026-05-19-15-51-56_story.jpg"
+      "title": "Aliados de Lula pedem ao TSE que proíba exibição do filme sobre Bolsonaro no período eleitoral",
+      "headline": "FILME DE BOLSONARO NA MIRA DO TSE",
+      "category": "Breaking",
+      "instagramId": "18100814444085644",
+      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-05-19/2026-05-19-17-33-41_feed.jpg",
+      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-05-19/2026-05-19-17-33-41_story.jpg"
     }
   ],
   "failedPosts": []

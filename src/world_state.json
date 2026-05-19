@@ -33,7 +33,7 @@
     "Seleção Brasileira": {
       "coach": "Carlo Ancelotti",
       "league": "Copa do Mundo de 2026",
-      "recent_changes": "Neymar, já convocado para a Copa do Mundo de 2026, se apresentará à equipe em 27 de maio para o Mundial. Sua recuperação de um edema na panturrilha direita não preocupa para a Copa e está sendo acompanhada em conjunto com o Santos. O técnico Carlo Ancelotti anunciou a lista oficial dos 26 convocados para a Copa do Mundo de 2026 (Estados Unidos, México e Canadá). O grupo possui uma particularidade: é o elenco com mais nomes 'caseiros' (atuantes no futebol brasileiro) desde 2002, totalizando sete atletas: Danilo, Alex Santos, Léo Pereira e Paquetá (Flamengo), Danilo (Botafogo), Weverton (Grêmio) e Neymar (Santos). A equipe estreia na Copa no dia 13 de junho, contra o Marrocos, pelo Grupo C, e enfrentará ainda Haiti e Escócia na fase de grupos. Antes do torneio, fará amistosos contra o Panamá e Egito. A convocação de Neymar (que vem de lesões e fase conturbada no Santos) foi muito celebrada. Anteriormente: o ex-jogador Geovani Silva faleceu aos 62 anos."
+      "recent_changes": "O técnico Carlo Ancelotti anunciou a lista oficial para a Copa do Mundo de 2026 e justificou a convocação de Neymar (que vem de lesões e fase conturbada no Santos) destacando a qualidade e o que o jogador pode agregar coletivamente. O italiano enfatizou que a convocação não é garantia de escalação e a minutagem dependerá do desempenho nos treinos. Neymar se apresentará à equipe em 27 de maio e sua lesão na panturrilha não preocupa. O elenco possui sete atletas 'caseiros': Danilo, Alex Santos, Léo Pereira e Paquetá (Flamengo), Danilo (Botafogo), Weverton (Grêmio) e Neymar (Santos). A Seleção está no Grupo C (com Marrocos, Haiti e Escócia) e estreia contra os marroquinos no dia 13 de junho, às 19h (de Brasília). Antes, fará amistosos contra Panamá e Egito. Anteriormente: o ex-jogador Geovani Silva faleceu aos 62 anos."
     },
     "Atlético-MG": {
       "coach": "Eduardo Domínguez",
@@ -158,7 +158,7 @@
     "Santos": {
       "coach": "Cuca",
       "league": "Copa do Brasil / Campeonato Brasileiro Sub-20 / Brasileirão / Brasileirão Feminino",
-      "recent_changes": "Convocado para a Copa do Mundo de 2026, Neymar permanecerá à disposição do clube apenas até 26 de maio e não deve mais jogar pelo Santos antes do Mundial, em recuperação de um edema na panturrilha direita. Ele desfalcará o time nos próximos jogos contra San Lorenzo, Grêmio e Deportivo Cuenca, com o tratamento acompanhado por Santos e Seleção. Com contrato até o fim de 2026, Neymar deve retornar após a Copa, mas seu futuro para 2027 é incerto. O atacante Rony vive má fase, com apenas um gol e uma assistência em 19 jogos, e não recebe sequência no time sob o comando de Cuca; ele tem um salário elevado que onera o clube em sua delicada situação financeira e pode ser negociado na próxima janela de transferências. A campanha no Campeonato Brasileiro preocupa. Torcedores realizaram protestos na Vila Belmiro contra a diretoria e o Conselho Deliberativo devido à reunião para votar a reforma do estatuto, que inclui a possível venda de até 90% da SAF, exigindo votação individual de 89 emendas. O presidente Marcelo Teixeira foi criticado por se ausentar para acompanhar a convocação de Neymar à Seleção Brasileira no Rio de Janeiro. Em partida pelo Campeonato Brasileiro, Neymar sofreu uma substituição polêmica devido a um erro de arbitragem e teve uma atuação abaixo do esperado na derrota por 3 a 0 para o Coritiba, levando-o a postar uma mensagem melancólica em suas redes sociais sobre o episódio. A equipe avançou para as oitavas de final da Copa do Brasil. Pelo Sub-20, enfrentará o Flamengo. Pelo Feminino, enfrentará o Red Bull Bragantino."
+      "recent_changes": "Convocado para a Copa do Mundo de 2026, Neymar teve expectativas positivas mantidas pela imprensa e comissão técnica apesar do baixo desempenho e lesões, com um planejamento direcionado desde abril para integrá-lo em praticamente todos os jogos até o Mundial. No último domingo (17), contra o Coritiba pelo Brasileirão, ele foi substituído por engano (partida em que o time perdeu por 3 a 0 e ele teve atuação abaixo do esperado). Ele permanecerá à disposição apenas até 26 de maio para tratar um edema na panturrilha. Com contrato até o fim de 2026, seu futuro para 2027 é incerto. O atacante Rony vive má fase e pode ser negociado. A campanha no Brasileirão preocupa e gerou protestos da torcida na Vila Belmiro contra a diretoria e o estatuto da SAF. O presidente Marcelo Teixeira foi criticado por viajar para a convocação de Neymar. A equipe avançou às oitavas da Copa do Brasil; pelo Sub-20 enfrentará o Flamengo; e pelo Feminino, o Red Bull Bragantino."
     },
     "Vitória": {
       "coach": "Não mencionado",
@@ -203,7 +203,7 @@
     "Coritiba": {
       "coach": "Não mencionado",
       "league": "Brasileirão",
-      "recent_changes": "Venceu o Santos por 3 a 0 na Neo Química Arena, em partida válida pelo Campeonato Brasileiro, em um jogo marcado pela polêmica substituição de Neymar."
+      "recent_changes": "Venceu o Santos por 3 a 0 na Neo Química Arena, em partida válida pelo Campeonato Brasileiro no último domingo (17), em um jogo marcado pela polêmica substituição por engano de Neymar."
     },
     "Olímpia": {
       "coach": "Não mencionado",
@@ -343,7 +343,7 @@
     "Marrocos": {
       "coach": "Não mencionado",
       "league": "Copa do Mundo de 2026",
-      "recent_changes": "Será o adversário da Seleção Brasileira na estreia da Copa do Mundo de 2026, em partida que acontecerá no dia 13 de junho, em Nova Jersey (EUA)."
+      "recent_changes": "Está no Grupo C da Copa do Mundo de 2026 e será o adversário da Seleção Brasileira na estreia da competição, em partida que acontecerá no dia 13 de junho, às 19h (de Brasília), em Nova Jersey (EUA)."
     },
     "Panamá": {
       "coach": "Não mencionado",
@@ -369,7 +369,17 @@
       "coach": "Não mencionado",
       "league": "Premier League",
       "recent_changes": "Disputa o título da Premier League. Na próxima rodada, enfrentará o Bournemouth; um eventual tropeço garantirá o título para o Arsenal."
+    },
+    "Haiti": {
+      "coach": "Não mencionado",
+      "league": "Copa do Mundo de 2026",
+      "recent_changes": "A seleção está no Grupo C da Copa do Mundo de 2026, dividindo chave com Brasil, Marrocos e Escócia."
+    },
+    "Escócia": {
+      "coach": "Não mencionado",
+      "league": "Copa do Mundo de 2026",
+      "recent_changes": "A seleção está no Grupo C da Copa do Mundo de 2026, dividindo chave com Brasil, Marrocos e Haiti."
     }
   },
-  "last_updated": "2026-05-19T15:50:46.348Z"
+  "last_updated": "2026-05-19T17:31:49.991Z"
 }

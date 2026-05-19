@@ -982,5 +982,21 @@
     "source_domain": "backup_news",
     "category": "Crítica",
     "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-05-19T17:32:10.307Z",
+    "headline": "PEIXE NA COPA: NEYMAR CONVOCADO!",
+    "source_url": "https://www.terra.com.br/esportes/santos/neymar-supera-dificuldades-e-e-convocado-para-copa-do-mundo-2026,0ed1f9e9a82689ba860cd4923a16edad16cu8fji.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-05-19T17:33:59.948Z",
+    "headline": "FILME DE BOLSONARO NA MIRA DO TSE",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/filmes/aliados-de-lula-pedem-ao-tse-que-proiba-exibicao-do-filme-sobre-bolsonaro-no-periodo-eleitoral,215f2231996c640938587bda154470180pm7rsvn.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Breaking",
+    "status": "SUCCESS"
   }
 ]
