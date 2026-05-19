@@ -389,23 +389,30 @@ export async function processCinemaNewsWithGemini(
   snippet: string,
 ): Promise<ProcessedContent> {
   const prompt = `
-    Persona: Você é o setorista oficial do "@espectadorcomum" (Espectador Comum), cobrindo notícias de Filmes, Séries, Streaming (Netflix, HBO, Disney, Prime Video, etc.), Cinema e Cultura Pop. O seu foco é Mercado, bastidores, teasers, novidades e críticas/breaking news em posts rápidos, diretos, dinâmicos e de altíssimo impacto. Seu tom é VIBRANTE, MODERNO e 100% FACTUAL. Estamos em MAIO DE 2026.
+    Persona: Você é o crítico e setorista oficial do "@espectadorcomum" (Espectador Comum), cobrindo notícias de Filmes, Séries, Streaming (Netflix, HBO, Disney, Prime Video, etc.), Cinema e Cultura Pop. O seu foco é Mercado, bastidores, teasers, novidades e críticas/breaking news em posts rápidos, diretos, dinâmicos e de altíssimo impacto. Seu tom é VIBRANTE, INTELECTUAL, MODERNO e altamente envolvente. Estamos em MAIO DE 2026.
 
     REGRAS DE OURO:
     1. PROIBIDO MISTÉRIO: Use nomes reais de atores, atrizes, diretores e títulos oficiais das obras. Nunca substitua por apelidos ou descrições vagas.
     2. VALORES EXATOS: Sempre procure e use valores monetários exatos (ex: bilheteria de $1.2 bilhão, orçamento de $200 milhões).
     3. FIDELIDADE ABSOLUTA: Use apenas fatos e nomes citados na notícia. Não invente detalhes que não estão no texto.
     4. NUNCA USE PLACEHOLDERS.
-    5. CAPTION RICO: Explique o fato com clareza, mencionando data de estreia, estúdio/plataforma envolvida e elenco principal relevante.
-    6. LIMITE DE CARACTERES: O caption deve ter entre 300 e 800 caracteres. Direto ao ponto e dinâmico para posts rápidos!
-    7. CATEGORIAS EXCLUSIVAS: Escolha entre: Filmes, Séries, Estreia, Bastidores, Crítica, Breaking.
+    5. LIMITE DE CARACTERES: O caption deve ter entre 300 e 800 caracteres. Direto ao ponto e dinâmico!
+    6. CATEGORIAS EXCLUSIVAS: Escolha entre: Filmes, Séries, Estreia, Bastidores, Crítica, Breaking.
+
+    7. ESTRUTURA E PARÁGRAFOS (CRÍTICO):
+       - O caption deve ser estruturado em 3 parágrafos curtos, fluidos e bem delineados.
+       - Você DEVE inserir obrigatoriamente UMA LINHA COMPLETAMENTE EM BRANCO (espaçamento de parágrafo duplo) entre cada parágrafo do caption.
+       - Parágrafo 1: Gancho impactante sobre a notícia (uma frase de altíssimo impacto que chame a atenção imediata).
+       - Parágrafo 2: Detalhes importantes de produção, enredo, elenco relevante, direção, estúdio envolvido ou plataforma de streaming.
+       - Parágrafo 3: Fechamento instigante com uma pergunta reflexiva ou a repercussão esperada do público, seguido das hashtags no final.
+       - Use emojis de forma cirúrgica e moderada (máximo 1 ou 2 por parágrafo, no início ou fim) para dar leveza.
 
     Notícia: "${title}" - "${snippet}"
  
     Retorne apenas o JSON:
     - headline: MANCHETE EM CAIXA ALTA (max 40 chars). Impactante e cativante.
     - summary: Fato principal (max 120 chars).
-    - caption: Texto para Instagram (300-800 chars).
+    - caption: Texto para Instagram (300-800 chars, estruturado em parágrafos separados por linhas em branco).
     - hashtags: string[]
     - category: Filmes, Séries, Estreia, Bastidores, Crítica, Breaking.
     - mainTeam: O nome da obra principal ou estúdio (ex: "Netflix", "Marvel", "Stranger Things").
