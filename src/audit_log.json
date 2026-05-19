@@ -950,5 +950,21 @@
     "category": "Séries",
     "status": "FAILED",
     "reason": "Request failed with status code 400"
+  },
+  {
+    "timestamp": "2026-05-19T14:00:18.257Z",
+    "headline": "NEYMAR CONVOCADO PARA A COPA DO MUNDO!",
+    "source_url": "https://www.terra.com.br/esportes/craques/neymar/brasil-tem-o-maior-numero-de-convocados-caseiros-desde-2002,c1fd834a872856e590ba5cca14185029b3ocxbq6.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-05-19T14:01:57.962Z",
+    "headline": "A CASA DO DRAGÃO 3 EM PRODUÇÃO!",
+    "source_url": "backup_cinema_1779199252087",
+    "source_domain": "backup_news",
+    "category": "Séries",
+    "status": "SUCCESS"
   }
 ]

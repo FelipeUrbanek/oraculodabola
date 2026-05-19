@@ -1,13 +1,17 @@
 {
-  "timestamp": "2026-05-19T03:58:06.202Z",
-  "status": "COMPLETED_WITHOUT_POSTS",
+  "timestamp": "2026-05-19T14:00:22.519Z",
+  "status": "SUCCESS",
   "postsPlanned": 1,
   "candidatesFound": 1,
-  "successfulPosts": [],
-  "failedPosts": [
+  "successfulPosts": [
     {
       "title": "House of the Dragon: Terceira temporada inicia gravações no Reino Unido",
-      "error": "Request failed with status code 400"
+      "headline": "A CASA DO DRAGÃO 3 EM PRODUÇÃO!",
+      "category": "Séries",
+      "instagramId": "18091841660597891",
+      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-05-19/2026-05-19-14-01-39_feed.jpg",
+      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-05-19/2026-05-19-14-01-39_story.jpg"
     }
-  ]
+  ],
+  "failedPosts": []
 }
