@@ -1,16 +1,16 @@
 {
-  "timestamp": "2026-05-19T03:14:42.049Z",
+  "timestamp": "2026-05-19T03:37:54.283Z",
   "status": "SUCCESS",
   "postsPlanned": 1,
-  "candidatesFound": 3,
+  "candidatesFound": 2,
   "successfulPosts": [
     {
-      "title": "O Diabo Veste Prada 2 crítica",
-      "headline": "O DIABO VESTE PRADA 2 CHOCA CRÍTICA!",
-      "category": "Crítica",
-      "instagramId": "18084999392567634",
-      "feedPath": "E:\\Instagram Automatic\\posts\\2026-05-19\\2026-05-19-00-17-11_feed.jpg",
-      "storyPath": "E:\\Instagram Automatic\\posts\\2026-05-19\\2026-05-19-00-17-11_story.jpg"
+      "title": "'Pico dos Marins': 40 anos depois, documentário traz novidades sobre caso do escoteiro Marco Aurélio",
+      "headline": "PICO DOS MARINS: NOVAS REVELAÇÕES!",
+      "category": "Filmes",
+      "instagramId": "17888427987484060",
+      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-05-19/2026-05-19-03-38-35_feed.jpg",
+      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-05-19/2026-05-19-03-38-35_story.jpg"
     }
   ],
   "failedPosts": []

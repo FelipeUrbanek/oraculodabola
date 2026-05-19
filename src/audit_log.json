@@ -915,5 +915,13 @@
     "source_domain": "www.terra.com.br",
     "category": "Crítica",
     "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-05-19T03:39:01.967Z",
+    "headline": "PICO DOS MARINS: NOVAS REVELAÇÕES!",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/series/",
+    "source_domain": "www.terra.com.br",
+    "category": "Filmes",
+    "status": "SUCCESS"
   }
 ]
