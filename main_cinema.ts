@@ -78,6 +78,13 @@ async function runOráculoCinema() {
     if (seriesCount < 2 || moviesCount < 2) {
       console.log(`⚠️ Ainda insuficiente nas últimas 24 horas. Expandindo busca para as últimas 48 horas...`);
       newsList = await fetchCinemaNews(postedIds, 48);
+      seriesCount = newsList.filter(n => n.category === "Séries" && n.imageUrl).length;
+      moviesCount = newsList.filter(n => n.category !== "Séries" && n.imageUrl).length;
+      
+      if (seriesCount === 0 && moviesCount === 0) {
+        console.log(`⚠️ Ainda insuficiente nas últimas 48 horas. Expandindo busca para as últimas 120 horas (5 dias)...`);
+        newsList = await fetchCinemaNews(postedIds, 120);
+      }
     }
   }
 
@@ -99,10 +106,7 @@ async function runOráculoCinema() {
     return hasImage && !isServiceNews;
   });
 
-  if (candidates.length === 0) {
-    console.log("⚠️ Nenhuma notícia com imagem de background válida (OG Image) encontrada para postar. Encerrando execução.");
-    return;
-  }
+
 
   // 2. DE-DUPLICAÇÃO SEMÂNTICA (Verificação estendida para 4 dias)
   console.log("🧠 Verificando duplicidade de temas com Gemini...");
@@ -283,7 +287,7 @@ async function runOráculoCinema() {
     logAudit({
       headline: processed.headline,
       source_url: selectedItem.link || "backup_news",
-      source_domain: selectedItem.link ? new URL(selectedItem.link).hostname : "backup_news",
+      source_domain: (selectedItem.link && selectedItem.link.startsWith("http")) ? new URL(selectedItem.link).hostname : "backup_news",
       category: processed.category,
       status: "SUCCESS",
     });
@@ -299,7 +303,7 @@ async function runOráculoCinema() {
     logAudit({
       headline: selectedItem.title,
       source_url: selectedItem.link || "backup_news",
-      source_domain: selectedItem.link ? new URL(selectedItem.link).hostname : "backup_news",
+      source_domain: (selectedItem.link && selectedItem.link.startsWith("http")) ? new URL(selectedItem.link).hostname : "backup_news",
       category: selectedItem.category,
       status: "FAILED",
       reason: e.message,

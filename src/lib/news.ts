@@ -291,7 +291,7 @@ export function isTrustedSource(url: string): boolean {
   }
 }
 
-export async function fetchFootballNews(trends: string[] = [], excludeIds: string[] = []): Promise<NewsItem[]> {
+export async function fetchFootballNews(trends: string[] = [], excludeIds: string[] = [], limitHours: number = 4): Promise<NewsItem[]> {
   const scraperBrowser = await puppeteer.launch({
     headless: true,
     args: ["--no-sandbox", "--disable-setuid-sandbox", "--disable-dev-shm-usage"],
@@ -321,7 +321,7 @@ export async function fetchFootballNews(trends: string[] = [], excludeIds: strin
 
       const cleanTitle = item.title.split(" - ")[0].trim();
       const diff = (now - new Date(item.pubDate).getTime()) / (1000 * 60);
-      const limitMinutes = item.category === "Mercado da Bola" ? 1440 : 240;
+      const limitMinutes = item.category === "Mercado da Bola" ? 1440 : (limitHours * 60);
       if (diff > limitMinutes) continue;
 
       if (seenLinks.has(item.link) || seenTitles.has(cleanTitle.toLowerCase())) continue;
@@ -360,7 +360,7 @@ export async function fetchFootballNews(trends: string[] = [], excludeIds: strin
             
             // Re-verifica a data após extrair a real do HTML
             const diffFinal = (Date.now() - new Date(finalPubDate).getTime()) / (1000 * 60);
-            const limitMinutesFinal = item.category === "Mercado da Bola" ? 1440 : 240;
+            const limitMinutesFinal = item.category === "Mercado da Bola" ? 1440 : (limitHours * 60);
             if (diffFinal > limitMinutesFinal) {
                 console.log(`[REJEITADO] Notícia antiga detectada no scraper de imagem: ${item.title} (${diffFinal.toFixed(0)} mins atrás)`);
                 return null;

@@ -923,5 +923,32 @@
     "source_domain": "www.terra.com.br",
     "category": "Filmes",
     "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-05-19T03:52:35.700Z",
+    "headline": "Sem espaço no Santos, atacante entra na mira do Athletico",
+    "source_url": "https://www.terra.com.br/esportes/santos/sem-espaco-no-santos-atacante-entra-na-mira-do-athletico,748d36e4e17c731beae41d10f8e057dey3oj10s7.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "Request failed with status code 403"
+  },
+  {
+    "timestamp": "2026-05-19T03:53:41.450Z",
+    "headline": "Neymar posta mensagem melancólica após confusão em campo: 'Longe de ser o que sonhávamos'",
+    "source_url": "https://www.terra.com.br/esportes/craques/neymar/neymar-posta-mensagem-melancolica-apos-confusao-em-campo-longe-de-ser-o-que-sonhavamos,86ecdd00c276a040000c418930c180e9d7gedmxs.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "Request failed with status code 400"
+  },
+  {
+    "timestamp": "2026-05-19T04:01:58.142Z",
+    "headline": "House of the Dragon: Terceira temporada inicia gravações no Reino Unido",
+    "source_url": "backup_cinema_1779163279496",
+    "source_domain": "backup_news",
+    "category": "Séries",
+    "status": "FAILED",
+    "reason": "Request failed with status code 400"
   }
 ]

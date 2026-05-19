@@ -1,14 +1,19 @@
 {
-  "timestamp": "2026-05-19T03:15:31.473Z",
+  "timestamp": "2026-05-19T03:49:41.767Z",
   "status": "COMPLETED",
   "postsPlanned": 1,
-  "candidatesFound": 1,
-  "successfulPosts": [
+  "candidatesFound": 9,
+  "successfulPosts": [],
+  "failedPosts": [
     {
       "category": "Santos",
-      "headline": "PEIXE NO MUNDO! NEYMAR NA COPA 2026!",
-      "source_url": "https://www.terra.com.br/esportes/craques/neymar/pai-de-neymar-celebra-trabalhou-por-este-momento,5ca137bde9baafae8c79db89ca6e530aiq5huqva.html"
+      "title": "Sem espaço no Santos, atacante entra na mira do Athletico",
+      "error": "Request failed with status code 403"
+    },
+    {
+      "category": "Santos",
+      "title": "Neymar posta mensagem melancólica após confusão em campo: 'Longe de ser o que sonhávamos'",
+      "error": "Request failed with status code 400"
     }
-  ],
-  "failedPosts": []
+  ]
 }

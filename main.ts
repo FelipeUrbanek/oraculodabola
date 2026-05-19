@@ -55,7 +55,20 @@ async function runOráculo() {
   }
 
   const postedIds = history.map((h) => h.id);
-  let newsList = await fetchFootballNews([], postedIds);
+  console.log("⏱️ Buscando notícias estritamente das últimas 4 horas...");
+  let newsList = await fetchFootballNews([], postedIds, 4);
+
+  let hasValidImage = newsList.some((item: any) => item.imageUrl && item.imageUrl.startsWith("http"));
+  if (!hasValidImage) {
+    console.log("⚠️ Nenhuma notícia de futebol com imagem válida nas últimas 4 horas. Buscando últimas 24 horas...");
+    newsList = await fetchFootballNews([], postedIds, 24);
+    hasValidImage = newsList.some((item: any) => item.imageUrl && item.imageUrl.startsWith("http"));
+
+    if (!hasValidImage) {
+      console.log("⚠️ Nenhuma notícia de futebol com imagem válida nas últimas 24 horas. Expandindo busca para as últimas 48 horas...");
+      newsList = await fetchFootballNews([], postedIds, 48);
+    }
+  }
 
   // Regra da Copa 2026:
   // - A Copa do Mundo de 2026 começa em 11 de Junho de 2026.
@@ -243,7 +256,7 @@ async function runOráculo() {
       logAudit({
         headline: processed.headline,
         source_url: item.link,
-        source_domain: new URL(item.link).hostname,
+        source_domain: (item.link && item.link.startsWith("http")) ? new URL(item.link).hostname : "backup_news",
         category: item.category,
         status: "SUCCESS",
       });
@@ -272,7 +285,7 @@ async function runOráculo() {
       logAudit({
         headline: item.title,
         source_url: item.link,
-        source_domain: new URL(item.link).hostname,
+        source_domain: (item.link && item.link.startsWith("http")) ? new URL(item.link).hostname : "backup_news",
         category: item.category,
         status: "REJECTED",
         reason: error.message,

@@ -1,17 +1,13 @@
 {
-  "timestamp": "2026-05-19T03:37:54.283Z",
-  "status": "SUCCESS",
+  "timestamp": "2026-05-19T03:58:06.202Z",
+  "status": "COMPLETED_WITHOUT_POSTS",
   "postsPlanned": 1,
-  "candidatesFound": 2,
-  "successfulPosts": [
+  "candidatesFound": 1,
+  "successfulPosts": [],
+  "failedPosts": [
     {
-      "title": "'Pico dos Marins': 40 anos depois, documentário traz novidades sobre caso do escoteiro Marco Aurélio",
-      "headline": "PICO DOS MARINS: NOVAS REVELAÇÕES!",
-      "category": "Filmes",
-      "instagramId": "17888427987484060",
-      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-05-19/2026-05-19-03-38-35_feed.jpg",
-      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-05-19/2026-05-19-03-38-35_story.jpg"
+      "title": "House of the Dragon: Terceira temporada inicia gravações no Reino Unido",
+      "error": "Request failed with status code 400"
     }
-  ],
-  "failedPosts": []
+  ]
 }
