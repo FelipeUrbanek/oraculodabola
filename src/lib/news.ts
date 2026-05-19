@@ -144,7 +144,12 @@ export async function resolveAndScrapeImage(
                            lowerImg.includes("/fe/zaz-") || 
                            lowerImg.includes("placeholder") ||
                            lowerImg.includes("default") ||
-                           lowerImg.includes("avatar") ||
+                           lowerImg.includes("default-avatar") ||
+                           lowerImg.includes("user-avatar") ||
+                           lowerImg.includes("profile-avatar") ||
+                           lowerImg.endsWith("/avatar.png") ||
+                           lowerImg.endsWith("/avatar.jpg") ||
+                           lowerImg.endsWith("/avatar.gif") ||
                            lowerImg.endsWith("/logo-terra.png") ||
                            lowerImg.endsWith(".ico") ||
                            lowerImg.includes("branding");
@@ -174,7 +179,7 @@ export async function fetchRSSHubTerra(target: {
   terra: string;
 }, browser?: any): Promise<NewsItem[]> {
   const rsshubBase = "http://localhost:1200/rsshub/transform/html/";
-  const rules = "item=.card-news&itemTitle=.card-news__text--title&itemLink=a&itemImage=img";
+  const rules = "item=.card-news&itemTitle=.card-news__text--title&itemLink=a.card-news__url&itemImage=img";
   const fullUrl = `${rsshubBase}${encodeURIComponent(target.terra)}/${encodeURIComponent(rules)}`;
 
   try {
@@ -233,7 +238,11 @@ export async function fetchTerraDirect(target: { name: string; terra: string }, 
 
       cards.forEach((card, index) => {
         const titleEl = card.querySelector(".card-news__text--title, .card-news-horizontal__text--title");
-        const linkEl = card.querySelector("a");
+        let linkEl = card.querySelector("a.card-news__url, a.card-news-horizontal__url, a.main-url") as HTMLAnchorElement | null;
+        if (!linkEl) {
+          const anchors = Array.from(card.querySelectorAll("a"));
+          linkEl = (anchors.find(a => !a.className.includes("hat") && !a.className.includes("category")) || anchors[0]) as HTMLAnchorElement | null;
+        }
         const imgEl = card.querySelector("img");
         
         if (titleEl && linkEl) {

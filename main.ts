@@ -110,18 +110,64 @@ async function runOráculo() {
   const uniqueCategories = new Set(newsList.map((item: any) => item.category));
   const isRodízioEnabled = uniqueCategories.size > 1;
 
+  // Extrator de palavras-chave de assunto para evitar posts repetidos sobre a mesma pessoa/tema
+  const getSubjectKeywords = (title: string): string[] => {
+    const stopWords = new Set([
+      "santos", "peixe", "alvinegro", "vila", "belmiro", "brasileirão", "série", "copa", "libertadores",
+      "futebol", "jogo", "partida", "treino", "contratação", "reforço", "venda", "mercado", "bola",
+      "escalação", "lesão", "desfalque", "vitória", "derrota", "empate", "clássico", "torcida", "estádio"
+    ]);
+    return title
+      .toLowerCase()
+      .replace(/[.,\/#!$%\^&\*;:{}=\-_`~()?]/g, "")
+      .split(/\s+/)
+      .filter(word => word.length >= 4 && !stopWords.has(word));
+  };
+
+  const recentHistoryForRepetition = history.slice(-4);
+
   let candidates = newsList.filter((item: any) => {
     const hasImage = !!item.imageUrl && item.imageUrl.startsWith("http");
     const isDifferentCategory = !isRodízioEnabled || item.category !== lastCategory;
     const forbidden = ["onde assistir", "ao vivo", "transmissão", "tempo real", "como assistir", "escalação", "palpite"];
     const isServiceNews = forbidden.some((word) => item.title.toLowerCase().includes(word));
 
-    return hasImage && !isServiceNews && isDifferentCategory;
+    // Bloqueio de repetição consecutiva de assunto/pessoa (ex: "Carille", "Teixeira", etc.)
+    const itemKeywords = getSubjectKeywords(item.title);
+    const isRepeatedSubject = recentHistoryForRepetition.some(h => {
+      if (!h.title) return false;
+      const historyKeywords = getSubjectKeywords(h.title);
+      return itemKeywords.some(keyword => historyKeywords.includes(keyword));
+    });
+
+    // Bloqueio estrito de Neymar se já falamos dele nos últimos 4 posts
+    const isNeymarNews = item.title.toLowerCase().includes("neymar");
+    const hasRecentNeymar = recentHistoryForRepetition.some(h => h.title && h.title.toLowerCase().includes("neymar"));
+    const isBlockedNeymar = isNeymarNews && hasRecentNeymar;
+
+    return hasImage && !isServiceNews && isDifferentCategory && !isRepeatedSubject && !isBlockedNeymar;
   });
 
-  // Se o rodízio falhar (ex: só tem notícia do mesmo time), aceita a melhor nova com imagem disponível
+  // Se o filtro estrito de assunto resultar em 0 candidatos, relaxamos a de-duplicação de assunto
   if (candidates.length === 0) {
-    console.log("🔄 Rodízio de categorias sem opções novas. Relaxando filtro para garantir postagem...");
+    console.log("🔄 Poucos candidatos após filtro de assunto/categoria. Relaxando de-duplicação de temas recentes...");
+    candidates = newsList.filter((item: any) => {
+      const hasImage = !!item.imageUrl && item.imageUrl.startsWith("http");
+      const forbidden = ["onde assistir", "ao vivo", "transmissão", "tempo real", "como assistir", "escalação", "palpite"];
+      const isServiceNews = forbidden.some((word) => item.title.toLowerCase().includes(word));
+
+      // Mantém apenas o bloqueio estrito do Neymar recente
+      const isNeymarNews = item.title.toLowerCase().includes("neymar");
+      const hasRecentNeymar = recentHistoryForRepetition.some(h => h.title && h.title.toLowerCase().includes("neymar"));
+      const isBlockedNeymar = isNeymarNews && hasRecentNeymar;
+
+      return hasImage && !isServiceNews && !isBlockedNeymar;
+    });
+  }
+
+  // Se ainda for 0 (caso extremo), relaxamos tudo para garantir postagem
+  if (candidates.length === 0) {
+    console.log("🔄 Rodízio de categorias e filtros totalmente relaxados para garantir postagem...");
     candidates = newsList.filter((item: any) => {
       const hasImage = !!item.imageUrl && item.imageUrl.startsWith("http");
       const forbidden = ["onde assistir", "ao vivo", "transmissão", "tempo real", "como assistir", "escalação", "palpite"];

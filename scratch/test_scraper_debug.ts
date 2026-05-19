@@ -12,7 +12,7 @@ async function testScraper() {
     await page.goto(url, { waitUntil: "domcontentloaded" });
     await new Promise(r => setTimeout(r, 2000));
 
-    const result = await page.evaluate(() => {
+    const result = await page.evaluate(`(() => {
       const getMeta = (name) => {
         const el = document.querySelector('meta[property="' + name + '"]') ||
                    document.querySelector('meta[name="' + name + '"]') ||
@@ -25,7 +25,7 @@ async function testScraper() {
         publishDate: getMeta("publish-date"),
         datePublished: getMeta("datePublished")
       };
-    });
+    })()`);
 
     console.log("✅ Resultado Direto no Teste:", JSON.stringify(result, null, 2));
     

@@ -66,22 +66,19 @@ async function runOráculoCinema() {
 
   console.log("⏱️ Buscando notícias estritamente das últimas 4 horas...");
   let newsList = await fetchCinemaNews(postedIds, 4);
-  let seriesCount = newsList.filter(n => n.category === "Séries" && n.imageUrl).length;
-  let moviesCount = newsList.filter(n => n.category !== "Séries" && n.imageUrl).length;
+  let candidatesCount = newsList.filter(n => n.imageUrl).length;
   
-  if (seriesCount < 2 || moviesCount < 2) {
-    console.log(`⚠️ Poucas notícias nas últimas 4 horas (Séries: ${seriesCount}, Filmes: ${moviesCount}). Buscando últimas 24 horas...`);
+  if (candidatesCount < 3) {
+    console.log(`⚠️ Poucas notícias nas últimas 4 horas (${candidatesCount} com imagem). Buscando últimas 24 horas...`);
     newsList = await fetchCinemaNews(postedIds, 24);
-    seriesCount = newsList.filter(n => n.category === "Séries" && n.imageUrl).length;
-    moviesCount = newsList.filter(n => n.category !== "Séries" && n.imageUrl).length;
+    candidatesCount = newsList.filter(n => n.imageUrl).length;
     
-    if (seriesCount < 2 || moviesCount < 2) {
-      console.log(`⚠️ Ainda insuficiente nas últimas 24 horas. Expandindo busca para as últimas 48 horas...`);
+    if (candidatesCount < 3) {
+      console.log(`⚠️ Ainda insuficiente nas últimas 24 horas (${candidatesCount} com imagem). Expandindo busca para as últimas 48 horas...`);
       newsList = await fetchCinemaNews(postedIds, 48);
-      seriesCount = newsList.filter(n => n.category === "Séries" && n.imageUrl).length;
-      moviesCount = newsList.filter(n => n.category !== "Séries" && n.imageUrl).length;
+      candidatesCount = newsList.filter(n => n.imageUrl).length;
       
-      if (seriesCount === 0 && moviesCount === 0) {
+      if (candidatesCount === 0) {
         console.log(`⚠️ Ainda insuficiente nas últimas 48 horas. Expandindo busca para as últimas 120 horas (5 dias)...`);
         newsList = await fetchCinemaNews(postedIds, 120);
       }
@@ -105,8 +102,6 @@ async function runOráculoCinema() {
     const isServiceNews = forbidden.some((word) => item.title.toLowerCase().includes(word));
     return hasImage && !isServiceNews;
   });
-
-
 
   // 2. DE-DUPLICAÇÃO SEMÂNTICA (Verificação estendida para 4 dias)
   console.log("🧠 Verificando duplicidade de temas com Gemini...");
@@ -137,32 +132,16 @@ async function runOráculoCinema() {
     newItems = candidates;
   }
 
-  // 3. Separar candidatos em pools para intercalação (Séries vs Outros)
-  const seriesCandidates = newItems.filter((c) => c.category === "Séries");
-  const moviesCandidates = newItems.filter((c) => c.category !== "Séries");
+  // Ordena para garantir que pegamos sempre a notícia mais jovem (recente) com imagem
+  newItems.sort((a, b) => new Date(b.pubDate).getTime() - new Date(a.pubDate).getTime());
 
-  let selectedItem: any = null;
-  const nextIsSeries = lastCategory !== "Séries";
-
-  if (nextIsSeries) {
-    if (seriesCandidates.length > 0) {
-      selectedItem = seriesCandidates[0];
-    } else if (moviesCandidates.length > 0) {
-      console.log("🔄 Sem candidatos de Séries. Usando Filme para evitar silêncio...");
-      selectedItem = moviesCandidates[0];
-    }
-  } else {
-    if (moviesCandidates.length > 0) {
-      selectedItem = moviesCandidates[0];
-    } else if (seriesCandidates.length > 0) {
-      console.log("🔄 Sem candidatos de Filmes. Usando Série para evitar silêncio...");
-      selectedItem = seriesCandidates[0];
-    }
-  }
+  // Seleciona a notícia mais jovem disponível (de séries ou filmes misturados)
+  let selectedItem: any = newItems[0] || null;
 
   // Se não houver nenhum candidato em newItems, mesclar com backup de cinema correspondente à categoria desejada
   if (!selectedItem) {
     console.log("⚠️ Nenhuma novidade disponível nos canais de notícia. Usando backup cinemático qualificado...");
+    const nextIsSeries = lastCategory !== "Séries";
     const BACKUP_TRENDING_NEWS = [
       {
         title: "Gladiador II: Ridley Scott entrega sequência histórica e avassaladora",
