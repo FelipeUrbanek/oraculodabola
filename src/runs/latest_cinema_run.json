@@ -1,16 +1,16 @@
 {
-  "timestamp": "2026-05-19T22:11:19.910Z",
+  "timestamp": "2026-05-19T22:39:06.378Z",
   "status": "SUCCESS",
   "postsPlanned": 1,
-  "candidatesFound": 12,
+  "candidatesFound": 11,
   "successfulPosts": [
     {
-      "title": "Elenco de Friends estaria irritado com Lisa Kudrow após ela revelar quanto eles ganham por ano com a série",
-      "headline": "FRIENDS: KUDROW REVELA OURO, CRIA RACHA!",
-      "category": "Breaking",
-      "instagramId": "17873628228669607",
-      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-05-19/2026-05-19-22-12-17_feed.jpg",
-      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-05-19/2026-05-19-22-12-17_story.jpg"
+      "title": "Marina Ruy Barbosa revela bastidores das gravações de 'Tremembé 2'; veja",
+      "headline": "TREMEMBÉ 2: BASTIDORES SENSACIONAIS!",
+      "category": "Bastidores",
+      "instagramId": "18075084359392298",
+      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-05-19/2026-05-19-22-40-21_feed.jpg",
+      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-05-19/2026-05-19-22-40-21_story.jpg"
     }
   ],
   "failedPosts": []

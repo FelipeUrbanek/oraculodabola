@@ -1006,5 +1006,13 @@
     "source_domain": "www.terra.com.br",
     "category": "Breaking",
     "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-05-19T22:40:47.351Z",
+    "headline": "TREMEMBÉ 2: BASTIDORES SENSACIONAIS!",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/series/marina-ruy-barbosa-revela-bastidores-das-gravacoes-de-tremembe-2-veja,0e3cd10dc54ac48e63518db76311acf2ze47ff76.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Bastidores",
+    "status": "SUCCESS"
   }
 ]
