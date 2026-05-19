@@ -907,5 +907,21 @@
     "source_domain": "www.terra.com.br",
     "category": "Séries",
     "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-05-19T03:16:51.936Z",
+    "headline": "PEIXE NO MUNDO! NEYMAR NA COPA 2026!",
+    "source_url": "https://www.terra.com.br/esportes/craques/neymar/pai-de-neymar-celebra-trabalhou-por-este-momento,5ca137bde9baafae8c79db89ca6e530aiq5huqva.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-05-19T03:18:02.914Z",
+    "headline": "SEQUÊNCIA DE PRADA É ACLAMADA PELA CRÍTICA!",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/filmes/o-diabo-veste-prada-2-critica,5a27ec9a935c8cd4b25c620039b3d34ad27ibrqw.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Crítica",
+    "status": "SUCCESS"
   }
 ]

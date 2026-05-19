@@ -1,16 +1,16 @@
 {
-  "timestamp": "2026-05-19T03:06:54.346Z",
+  "timestamp": "2026-05-19T03:16:55.599Z",
   "status": "SUCCESS",
   "postsPlanned": 1,
-  "candidatesFound": 4,
+  "candidatesFound": 3,
   "successfulPosts": [
     {
-      "title": "Ticket to Heaven ganha trailer e data de estreia",
-      "headline": "TICKET TO HEAVEN: TRAILER E DATA!",
-      "category": "Séries",
-      "instagramId": "18062638202463270",
-      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-05-19/2026-05-19-03-08-06_feed.jpg",
-      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-05-19/2026-05-19-03-08-06_story.jpg"
+      "title": "O Diabo Veste Prada 2 crítica",
+      "headline": "SEQUÊNCIA DE PRADA É ACLAMADA PELA CRÍTICA!",
+      "category": "Crítica",
+      "instagramId": "18094605392189269",
+      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-05-19/2026-05-19-03-17-42_feed.jpg",
+      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-05-19/2026-05-19-03-17-42_story.jpg"
     }
   ],
   "failedPosts": []
