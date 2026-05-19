@@ -98,7 +98,7 @@ async function runOráculo() {
   const isRodízioEnabled = uniqueCategories.size > 1;
 
   let candidates = newsList.filter((item: any) => {
-    const hasImage = !!item.imageUrl;
+    const hasImage = !!item.imageUrl && item.imageUrl.startsWith("http");
     const isDifferentCategory = !isRodízioEnabled || item.category !== lastCategory;
     const forbidden = ["onde assistir", "ao vivo", "transmissão", "tempo real", "como assistir", "escalação", "palpite"];
     const isServiceNews = forbidden.some((word) => item.title.toLowerCase().includes(word));
@@ -106,26 +106,19 @@ async function runOráculo() {
     return hasImage && !isServiceNews && isDifferentCategory;
   });
 
-  // Se o rodízio falhar (ex: só tem notícia do mesmo time), aceita a melhor nova disponível
+  // Se o rodízio falhar (ex: só tem notícia do mesmo time), aceita a melhor nova com imagem disponível
   if (candidates.length === 0) {
     console.log("🔄 Rodízio de categorias sem opções novas. Relaxando filtro para garantir postagem...");
     candidates = newsList.filter((item: any) => {
-      const hasImage = !!item.imageUrl;
+      const hasImage = !!item.imageUrl && item.imageUrl.startsWith("http");
       const forbidden = ["onde assistir", "ao vivo", "transmissão", "tempo real", "como assistir", "escalação", "palpite"];
       const isServiceNews = forbidden.some((word) => item.title.toLowerCase().includes(word));
       return hasImage && !isServiceNews;
     });
   }
 
-  // Se ainda assim não houver nada (ex: todas as notícias estão sem imagem ou são de serviço), 
-  // aceita QUALQUER coisa da lista original que ainda não foi postada.
   if (candidates.length === 0) {
-    console.log("⚠️ Filtros muito restritos. Aceitando qualquer novidade disponível para evitar silêncio.");
-    candidates = newsList;
-  }
-
-  if (candidates.length === 0) {
-    console.log(`💤 Nenhuma novidade real encontrada após filtrar ${newsList.length} itens.`);
+    console.log(`⚠️ Nenhuma notícia com imagem de background válida (OG Image) encontrada para postar. Encerrando execução.`);
     return;
   }
 

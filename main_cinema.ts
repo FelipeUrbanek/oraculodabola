@@ -93,15 +93,15 @@ async function runOráculoCinema() {
 
   // 1. Filtrar candidatos com imagens válidas e sem termos de serviço
   let candidates = newsList.filter((item: any) => {
-    const hasImage = !!item.imageUrl;
+    const hasImage = !!item.imageUrl && item.imageUrl.startsWith("http");
     const forbidden = ["onde assistir", "ao vivo", "transmissão", "tempo real", "como assistir", "escalação", "palpite"];
     const isServiceNews = forbidden.some((word) => item.title.toLowerCase().includes(word));
     return hasImage && !isServiceNews;
   });
 
   if (candidates.length === 0) {
-    console.log("⚠️ Filtros de imagem e serviço muito restritos. Flexibilizando para evitar silêncio...");
-    candidates = newsList;
+    console.log("⚠️ Nenhuma notícia com imagem de background válida (OG Image) encontrada para postar. Encerrando execução.");
+    return;
   }
 
   // 2. DE-DUPLICAÇÃO SEMÂNTICA (Verificação estendida para 4 dias)

@@ -71,7 +71,12 @@ export async function generateImages(
 
     // 3. Preparar Variáveis
     const badgeColor = design.colors[content.category] || "#475569";
-    const bgUrl = newsImageUrl && newsImageUrl.includes("http") ? newsImageUrl : `https://images.unsplash.com/photo-1574629810360-7efbbe195018?auto=format&fit=crop&q=80&w=1080&h=1350`;
+    const bgUrl = newsImageUrl && newsImageUrl.includes("http") 
+      ? newsImageUrl 
+      : (isCinema 
+          ? "https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?auto=format&fit=crop&q=80&w=1080&h=1350"
+          : "https://images.unsplash.com/photo-1574629810360-7efbbe195018?auto=format&fit=crop&q=80&w=1080&h=1350"
+        );
 
     const officialLogoPngPath = isCinema
       ? path.resolve(process.cwd(), "posts", "logo", "logo_cinema.png")
