@@ -13,8 +13,8 @@ cloudinary.config({
   api_secret: process.env.CLOUDINARY_API_SECRET
 });
 
-const IG_USER_ID = process.env.IG_USER_ID;
-const ACCESS_TOKEN = process.env.FB_ACCESS_TOKEN;
+const getIGUserId = () => process.env.IG_USER_ID || "";
+const getAccessToken = () => process.env.FB_ACCESS_TOKEN || "";
 
 /**
  * Sobe a imagem local para o Cloudinary para obter um link público
@@ -58,6 +58,9 @@ export function calculateNextSchedule(): number {
  */
 export async function postToInstagram(imagePath: string, caption: string, scheduledTime?: number) {
   try {
+    const IG_USER_ID = getIGUserId();
+    const ACCESS_TOKEN = getAccessToken();
+
     if (!IG_USER_ID || !ACCESS_TOKEN) {
       throw new Error("IG_USER_ID ou FB_ACCESS_TOKEN não configurados!");
     }
@@ -162,6 +165,9 @@ export async function getFollowersCount(): Promise<number> {
  */
 export async function autoReplyToComments() {
   try {
+    const IG_USER_ID = getIGUserId();
+    const ACCESS_TOKEN = getAccessToken();
+
     console.log("💬 Verificando novos comentários para responder...");
     
     // 1. Pegar as mídias recentes
@@ -258,6 +264,7 @@ async function generateReplyWithGemini(userComment: string, username?: string): 
  */
 export async function postComment(mediaId: string, message: string) {
   try {
+    const ACCESS_TOKEN = getAccessToken();
     console.log(`💬 Postando comentário automático no post ${mediaId}...`);
     const response = await axios.post(
       `https://graph.facebook.com/v22.0/${mediaId}/comments`,
