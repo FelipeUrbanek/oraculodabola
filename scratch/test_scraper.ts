@@ -1,16 +1,7 @@
 import puppeteer from "puppeteer";
 
 const FOOTBALL_TARGETS = [
-  { name: "Flamengo", terra: "https://www.terra.com.br/esportes/flamengo/" },
-  { name: "Palmeiras", terra: "https://www.terra.com.br/esportes/palmeiras/" },
-  {
-    name: "Mercado da Bola",
-    terra: "https://www.terra.com.br/esportes/futebol/mercado-da-bola/",
-  },
-  {
-    name: "Brasileirão",
-    terra: "https://www.terra.com.br/esportes/futebol/brasileiro-serie-a/",
-  }
+  { name: "Santos", terra: "https://www.terra.com.br/esportes/santos/" }
 ];
 
 export async function fetchTerraDirect(target: any): Promise<any[]> {

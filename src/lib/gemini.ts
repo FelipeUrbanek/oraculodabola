@@ -173,23 +173,24 @@ export async function processNewsWithGemini(
   const worldStateContext = JSON.stringify(worldState.teams || {}, null, 2);
 
   const prompt = `
-    Persona: Você é um jornalista esportivo de elite do "Oráculo da Bola". Seu tom é DIRETO, IMPACTANTE e 100% FACTUAL. Estamos em MAIO DE 2026.
+    Persona: Você é o setorista oficial do "Oráculo da Bola", cobrindo exclusivamente o Santos Futebol Clube (o Peixe). O seu foco é Mercado da Bola, bastidores e breaking news do Santos FC e do futebol brasileiro (quando houver relevância direta para o Peixe) em posts rápidos, diretos, dinâmicos e de altíssimo impacto. Seu tom é DIRETO, IMPACTANTE e 100% FACTUAL. Estamos em MAIO DE 2026.
     
     MEMÓRIA DO MUNDO (Use isso para evitar erros sobre quem é o técnico ou em qual liga o time está):
     ${worldStateContext}
 
     REGRAS DE OURO:
-    1. PROIBIDO MISTÉRIO: Use nomes reais. Nunca substitua por apelidos ou descrições vagas.
-    2. LISTE OS NOMES: Se a notícia cita vários jogadores, liste-os individualmente no caption.
-    3. VALORES EXATOS: Procure e use valores monetários exatos (ex: R$ 5,4 milhões).
-    4. FIDELIDADE ABSOLUTA: Use APENAS os nomes que aparecem na notícia ou que estão na MEMÓRIA DO MUNDO. Se a memória diz que o técnico do Fortaleza é Carpini, não diga que é Vojvoda.
-    5. NUNCA USE PLACEHOLDERS.
-    6. TRAVA DE NOMES: Se a notícia for sobre um PROFISSIONAL (jogador, técnico, dirigente) e o NOME PRÓPRIO não estiver disponível, REJEITE o post. Se a notícia for INSTITUCIONAL (multas, patrocínios, estádio, dívidas do clube), o nome do clube é suficiente.
-    7. VARIANT STYLES: Diversifique o estilo da legenda. Use "Entenda os detalhes:" em vez de sempre "3 pontos".
-    8. CAPTION RICO: Explique o fato com profundidade, mencionando explicitamente todos os nomes envolvidos, datas, locais e contextos principais.
-    9. LIMITE DE CARACTERES: O caption deve ter entre 350 e 2000 caracteres. NUNCA exceda 2200 caracteres.
-    10. LÓGICA DE ESCUDO: Se a notícia mencionar mais de um time (ex: clássico, negociação entre clubes, comparação), defina isFocusedOnSingleTeam como false. Se for sobre um fato interno de um clube apenas, defina como true.
-    11. FILTRO DE ELITE: REJEITE (retorne JSON com headline "REJEITADO") se a notícia for sobre: Categorias de Base (Sub-20, Sub-17, etc.), Futebol Feminino, divisões inferiores (Série B, C, D), ou times pequenos sem relevância nacional imediata. O foco ÚNICO é ELITE (Série A Masculina) e Grandes Clubes.
+    1. COBERTURA EXCLUSIVA: Foco absoluto e único no Santos Futebol Clube. Toda notícia deve destacar fatos relativos ao Santos, seus jogadores, técnico, diretoria e confrontos.
+    2. PROIBIDO MISTÉRIO: Use nomes reais. Nunca substitua por apelidos ou descrições vagas.
+    3. LISTE OS NOMES: Se a notícia cita vários jogadores, liste-os individualmente no caption.
+    4. VALORES EXATOS: Procure e use valores monetários exatos (ex: R$ 5,4 milhões).
+    5. FIDELIDADE ABSOLUTA: Use APENAS os nomes que aparecem na notícia ou que estão na MEMÓRIA DO MUNDO. Se a memória diz que o técnico do Santos é Carpini, não diga que é outro.
+    6. NUNCA USE PLACEHOLDERS.
+    7. TRAVA DE NOMES: Se a notícia for sobre um PROFISSIONAL (jogador, técnico, dirigente) e o NOME PRÓPRIO não estiver disponível, REJEITE o post. Se a notícia for INSTITUCIONAL (multas, patrocínios, estádio, dívidas do clube), o nome do Santos é suficiente.
+    8. VARIANT STYLES: Diversifique o estilo da legenda. Use "Entenda os detalhes:" em vez de sempre "3 pontos".
+    9. CAPTION RICO: Explique o fato com profundidade, mencionando explicitamente todos os nomes envolvidos, datas, locais e contextos principais do Santos FC.
+    10. LIMITE DE CARACTERES: O caption deve ter entre 350 e 2000 caracteres. NUNCA exceda 2200 caracteres.
+    11. LÓGICA DE ESCUDO: Como o foco é 100% no Santos FC, isFocusedOnSingleTeam deve ser true se for um fato interno do Santos. Se for sobre um jogo contra outro time, defina como false para ocultar o escudo do rival.
+    12. FILTRO DE ELITE: REJEITE (retorne JSON com headline "REJEITADO") se a notícia for sobre outro time que não tenha ligação ou relevância direta para o Santos Futebol Clube. Rejeite também futebol feminino e categorias de base, exceto se muito relevante para o time profissional do Santos.
 
     Notícia: "${title}" - "${snippet}"
  
@@ -199,8 +200,8 @@ export async function processNewsWithGemini(
     - caption: Texto para Instagram (350-500 chars).
     - hashtags: string[]
     - category: URGENTE, PLANTÃO, MERCADO, BASTIDORES, TÁTICA, EXCLUSIVO, ANÁLISE, OPINIÃO, NÚMEROS, FATO, HISTÓRIA.
-    - mainTeam: O nome do time principal da notícia (Ex: "Flamengo", "Paraná Clube", "Real Madrid").
-    - isFocusedOnSingleTeam: boolean (true se apenas um time é o foco, false se citar vários).
+    - mainTeam: O nome do time principal da notícia (deve ser "Santos").
+    - isFocusedOnSingleTeam: boolean (true se apenas o Santos é o foco interno, false se citar confrontos/rivais).
     - shouldCreateStory: boolean
     - imageKeywords: string
   `;
@@ -383,6 +384,75 @@ export async function processNewsWithGemini(
   return processed;
 }
 
+export async function processCinemaNewsWithGemini(
+  title: string,
+  snippet: string,
+): Promise<ProcessedContent> {
+  const prompt = `
+    Persona: Você é o setorista oficial do "@espectadorcomum" (Espectador Comum), cobrindo notícias de Filmes, Séries, Streaming (Netflix, HBO, Disney, Prime Video, etc.), Cinema e Cultura Pop. O seu foco é Mercado, bastidores, teasers, novidades e críticas/breaking news em posts rápidos, diretos, dinâmicos e de altíssimo impacto. Seu tom é VIBRANTE, MODERNO e 100% FACTUAL. Estamos em MAIO DE 2026.
+
+    REGRAS DE OURO:
+    1. PROIBIDO MISTÉRIO: Use nomes reais de atores, atrizes, diretores e títulos oficiais das obras. Nunca substitua por apelidos ou descrições vagas.
+    2. VALORES EXATOS: Sempre procure e use valores monetários exatos (ex: bilheteria de $1.2 bilhão, orçamento de $200 milhões).
+    3. FIDELIDADE ABSOLUTA: Use apenas fatos e nomes citados na notícia. Não invente detalhes que não estão no texto.
+    4. NUNCA USE PLACEHOLDERS.
+    5. CAPTION RICO: Explique o fato com clareza, mencionando data de estreia, estúdio/plataforma envolvida e elenco principal relevante.
+    6. LIMITE DE CARACTERES: O caption deve ter entre 300 e 800 caracteres. Direto ao ponto e dinâmico para posts rápidos!
+    7. CATEGORIAS EXCLUSIVAS: Escolha entre: Filmes, Séries, Estreia, Bastidores, Crítica, Breaking.
+
+    Notícia: "${title}" - "${snippet}"
+ 
+    Retorne apenas o JSON:
+    - headline: MANCHETE EM CAIXA ALTA (max 40 chars). Impactante e cativante.
+    - summary: Fato principal (max 120 chars).
+    - caption: Texto para Instagram (300-800 chars).
+    - hashtags: string[]
+    - category: Filmes, Séries, Estreia, Bastidores, Crítica, Breaking.
+    - mainTeam: O nome da obra principal ou estúdio (ex: "Netflix", "Marvel", "Stranger Things").
+    - isFocusedOnSingleTeam: boolean (true sempre para cinema).
+    - shouldCreateStory: boolean (true se for um lançamento gigante, crítica importante ou teaser muito esperado).
+    - imageKeywords: string (termos de busca no Unsplash em inglês para cartaz ou cena do filme. Ex: "star wars movie poster cinematic")
+  `;
+
+  let processed: ProcessedContent = await callGemini(prompt);
+
+  // Validação Anti-Placeholder e Termos Vagos Proibidos
+  const forbidden = [
+    "[Nome]",
+    "[NOME]",
+    "[ator]",
+    "[atriz]",
+    "[filme]",
+    "ERRO:",
+    "POST REJEITADO",
+  ];
+  const contentStr = JSON.stringify(processed).toLowerCase();
+  if (forbidden.some((p) => contentStr.includes(p.toLowerCase()))) {
+    throw new Error(
+      `❌ Erro de Rejeição/Placeholder detectado em Cinema: ${processed.headline}`,
+    );
+  }
+
+  return processed;
+}
+
+export async function rankBestCinemaNews(newsList: any[]): Promise<any> {
+  if (newsList.length <= 1) return newsList[0] || null;
+  const newsContext = newsList
+    .map((n, i) => `[${i}] ${n.category}: ${n.title}`)
+    .join("\n");
+  const prompt = `Escolha a notícia de MAIOR impacto e apelo para o público geral sobre Filmes e Séries. Priorize anúncios de elenco, teasers de franquias gigantes (Marvel, DC, Star Wars, Netflix), estreias de peso ou bastidores chocantes.
+  Responda APENAS o índice.\n${newsContext}`;
+  try {
+    const res = await callGemini(prompt, false);
+    const idx = parseInt(res.trim().replace(/[^\d]/g, ""));
+    if (!isNaN(idx) && newsList[idx]) {
+      return newsList[idx];
+    }
+  } catch (e) {}
+  return newsList[0];
+}
+
 export async function filterFootballOnly(candidates: any[]): Promise<number[]> {
   const prompt = `Selecione índices de notícias REAIS de futebol MASCULINO PROFISSIONAL (Série A). 
   REJEITE EXPRESSAMENTE: Categorias de Base (Sub-20, Sub-17, etc.), Futebol Feminino, enquetes, scouts de apostas e guias de TV. 
@@ -400,8 +470,7 @@ export async function rankBestNews(newsList: any[]): Promise<any> {
   const newsContext = newsList
     .map((n, i) => `[${i}] ${n.category}: ${n.title}`)
     .join("\n");
-  const prompt = `Escolha a notícia de MAIOR impacto. Priorize o que é NOVO. 
-  Dê preferência especial a notícias sobre a 'Copa 2026' ou 'Seleção Brasileira' se forem relevantes e de alto impacto.
+  const prompt = `Escolha a notícia de MAIOR impacto sobre o Santos FC. Priorize o que é NOVO e de relevância imediata (contratações, lesões importantes, resultados de clássicos ou bastidores).
   Responda APENAS o índice.\n${newsContext}`;
   try {
     const res = await callGemini(prompt, false);
@@ -475,7 +544,7 @@ export async function filterDuplicateThemes(
     
     // Compara com o histórico de títulos recentes
     let isDupWithHistory = false;
-    for (const histTitle of historyTitles.slice(-30)) { // Compara com as últimas 30 postagens
+    for (const histTitle of historyTitles.slice(-50)) { // Compara com as últimas 50 postagens
       if (areTitlesDuplicate(candidate.title, histTitle)) {
         console.log(`[LOCAL FILTER] Reprovado por duplicidade com histórico: "${candidate.title}" vs "${histTitle}"`);
         isDupWithHistory = true;

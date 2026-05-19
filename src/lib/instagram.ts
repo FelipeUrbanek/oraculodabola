@@ -21,8 +21,9 @@ const ACCESS_TOKEN = process.env.FB_ACCESS_TOKEN;
  */
 async function uploadToCloudinary(imagePath: string): Promise<string> {
   console.log(`☁️ Subindo imagem para o Cloudinary: ${path.basename(imagePath)}`);
+  const folder = process.env.IG_USER_ID === process.env.IG_USER_ID_CINEMA ? 'oraculo_cinema' : 'oraculo_bola';
   const result = await cloudinary.uploader.upload(imagePath, {
-    folder: 'oraculo_bola',
+    folder: folder,
     public_id: `post_${Date.now()}`
   });
   return result.secure_url;
@@ -215,9 +216,23 @@ async function generateReplyWithGemini(userComment: string, username?: string): 
   const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY || "");
   const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
   
-  const prompt = `
-    Persona: Você é o "Oráculo da Bola", um perfil de notícias de futebol vibrante e interativo.
-    Ação: Responda a este comentário de um seguidor chamado ${username || 'Fiel Seguidor'} de forma curta, simpática e humana.
+  const isCinema = process.env.IG_USER_ID === process.env.IG_USER_ID_CINEMA;
+  const prompt = isCinema ? `
+    Persona: Você é o "Espectador Comum", um perfil de cinema vibrante, dinâmico e apaixonado por filmes, séries e streaming (@espectadorcomum).
+    Ação: Responda a este comentário de um seguidor chamado ${username || 'Cinefilo'} de forma curta, simpática e humana (como um crítico/cinéfilo inteligente e entusiasmado).
+    Comentário: "${userComment}"
+    
+    REGRAS:
+    1. Máximo 15 palavras.
+    2. Pode usar 1 emoji.
+    3. Seja amigável e incentive a pessoa a continuar acompanhando as estreias e discussões.
+    4. Use o nome/username da pessoa se parecer natural.
+    5. Não use hashtags na resposta.
+    
+    Retorne APENAS o texto da resposta.
+  ` : `
+    Persona: Você é o "Oráculo da Bola", um perfil de notícias vibrante focado 100% no Santos Futebol Clube (o Peixe).
+    Ação: Responda a este comentário de um seguidor chamado ${username || 'Fiel Seguidor'} de forma curta, simpática e humana (como um torcedor/setorista apaixonado do Santos).
     Comentário: "${userComment}"
     
     REGRAS:

@@ -12,6 +12,7 @@ export async function generateImages(
   newsImageUrl: string | null,
   teamName: string = "",
   forceLayout?: number,
+  isCinemaOverride?: boolean,
 ): Promise<{ feedPath: string; storyPath: string | null }> {
   const browser = await puppeteer.launch({
     args: ["--no-sandbox", "--disable-setuid-sandbox"],
@@ -22,8 +23,12 @@ export async function generateImages(
     const page = await browser.newPage();
 
 
-    // 0. Carregar Design System
-    const designPath = path.join(__dirname, "design-system.json");
+    // 0. Carregar Design System (Dinâmico para Cinema)
+    const isCinema = isCinemaOverride !== undefined 
+      ? isCinemaOverride 
+      : ["Filmes", "Séries", "Bastidores", "Crítica", "Estreia", "Breaking", "Cinema"].includes(content.category);
+    const designFile = isCinema ? "design-system-cinema.json" : "design-system.json";
+    const designPath = path.join(__dirname, designFile);
     const design = JSON.parse(fs.readFileSync(designPath, "utf-8"));
 
     // 1. Carregar escudo do time se disponível E se for focado em um único time
@@ -68,10 +73,18 @@ export async function generateImages(
     const badgeColor = design.colors[content.category] || "#475569";
     const bgUrl = newsImageUrl && newsImageUrl.includes("http") ? newsImageUrl : `https://images.unsplash.com/photo-1574629810360-7efbbe195018?auto=format&fit=crop&q=80&w=1080&h=1350`;
 
-    const officialLogoPath = path.resolve(process.cwd(), "posts", "logo", "logo.svg");
+    const officialLogoPngPath = isCinema
+      ? path.resolve(process.cwd(), "posts", "logo", "logo_cinema.png")
+      : path.resolve(process.cwd(), "posts", "logo", "logo.png");
+    const officialLogoSvgPath = isCinema
+      ? path.resolve(process.cwd(), "posts", "logo", "logo_cinema.svg")
+      : path.resolve(process.cwd(), "posts", "logo", "logo.svg");
     let logoSvg = '<div class="w-10 h-10 border-2 border-white flex items-center justify-center font-black text-white text-xl bg-black">Ω</div>';
-    if (fs.existsSync(officialLogoPath)) {
-      logoSvg = fs.readFileSync(officialLogoPath, "utf-8").replace(/width=".*?"/, "").replace(/height=".*?"/, "").replace(/<svg/, '<svg style="width:75%; height:75%;"');
+    if (fs.existsSync(officialLogoPngPath)) {
+      const base64 = fs.readFileSync(officialLogoPngPath, "base64");
+      logoSvg = `<img src="data:image/png;base64,${base64}" class="w-[75%] h-[75%] object-contain rounded-full">`;
+    } else if (fs.existsSync(officialLogoSvgPath)) {
+      logoSvg = fs.readFileSync(officialLogoSvgPath, "utf-8").replace(/width=".*?"/, "").replace(/height=".*?"/, "").replace(/<svg/, '<svg style="width:75%; height:75%;"');
     }
 
     // 4. Montar Layouts com Substituições
@@ -95,7 +108,7 @@ export async function generateImages(
     const feedHtml = `
       <html>
         <head>
-          <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@400;700;900&display=swap" rel="stylesheet">
+          <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@400;700;900&family=Cinzel:wght@700;900&family=Montserrat:wght@400;700;900&family=Playfair+Display:ital,wght@1,700;1,900&family=Space+Grotesk:wght@500;700&family=Syne:wght@700;800&display=swap" rel="stylesheet">
           <script src="https://cdn.tailwindcss.com"></script>
           <style>${design.globalStyles} .background-img { background-image: url('${bgUrl}'); }</style>
         </head>
@@ -127,7 +140,8 @@ export async function generateImages(
         
         const hasOverflow = () => {
           return container.scrollHeight > container.offsetHeight || 
-                 headline.scrollHeight > headline.offsetHeight;
+                 headline.scrollHeight > headline.offsetHeight ||
+                 headline.scrollWidth > (container.offsetWidth - 128);
         };
 
         let attempts = 0;
@@ -178,7 +192,7 @@ export async function generateImages(
       const storyHtml = `
         <html>
           <head>
-            <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@400;700;900&display=swap" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@400;700;900&family=Cinzel:wght@700;900&family=Montserrat:wght@400;700;900&family=Playfair+Display:ital,wght@1,700;1,900&family=Space+Grotesk:wght@500;700&family=Syne:wght@700;800&display=swap" rel="stylesheet">
             <script src="https://cdn.tailwindcss.com"></script>
             <style>
               ${design.globalStyles}
@@ -192,9 +206,18 @@ export async function generateImages(
               <div class="relative z-[500] flex flex-col items-center justify-center w-full h-full">
                 ${storyContentHtml}
               </div>
+              ${isCinema ? `
+              <div class="absolute top-24 left-0 right-0 z-[1000] flex justify-center">
+                <div class="flex items-center gap-0">
+                  <div class="w-16 h-16 flex items-center justify-center font-montserrat text-3.5xl font-black text-black shadow-lg" style="background-color: ${badgeColor};">EC</div>
+                  <span class="font-montserrat text-2.5xl tracking-[0.2em] font-black text-white px-6 h-16 flex items-center bg-black/90 backdrop-blur-md">${design.branding.handle}</span>
+                </div>
+              </div>
+              ` : `
               <div class="absolute bottom-24 flex flex-col items-center gap-10 z-[1000]">
                 <span class="font-bebas text-5xl tracking-[0.5em] text-white opacity-80">${design.branding.handle}</span>
               </div>
+              `}
             </div>
           </body>
         </html>`;
@@ -204,10 +227,17 @@ export async function generateImages(
       // Proteção contra estouro de texto em Stories
       await page.evaluate(`(() => {
         const headline = document.querySelector('h1');
-        if (headline) {
+        const container = headline?.parentElement;
+        if (headline && container) {
           let fontSize = parseFloat(window.getComputedStyle(headline).fontSize);
-          while (headline.scrollHeight > headline.offsetHeight && fontSize > 40) {
-            fontSize -= 5;
+          const hasOverflow = () => {
+            return container.scrollHeight > container.offsetHeight || 
+                   headline.scrollWidth > (container.offsetWidth - 120);
+          };
+          let safety = 0;
+          while (hasOverflow() && fontSize > 45 && safety < 50) {
+            safety++;
+            fontSize -= 3;
             headline.style.fontSize = fontSize + 'px';
           }
         }

@@ -20,84 +20,12 @@ export interface NewsItem {
 }
 
 const FOOTBALL_TARGETS = [
-  {
-    name: "Copa 2026",
-    terra: "https://www.terra.com.br/esportes/futebol/copa-2026/",
-  },
-  { name: "Flamengo", terra: "https://www.terra.com.br/esportes/flamengo/" },
-  { name: "Palmeiras", terra: "https://www.terra.com.br/esportes/palmeiras/" },
-  {
-    name: "Corinthians",
-    terra: "https://www.terra.com.br/esportes/corinthians/",
-  },
-  { name: "São Paulo", terra: "https://www.terra.com.br/esportes/sao-paulo/" },
   { name: "Santos", terra: "https://www.terra.com.br/esportes/santos/" },
-  {
-    name: "Atlético-MG",
-    terra: "https://www.terra.com.br/esportes/atletico-mg/",
-  },
-  { name: "Cruzeiro", terra: "https://www.terra.com.br/esportes/cruzeiro/" },
-  { name: "Grêmio", terra: "https://www.terra.com.br/esportes/gremio/" },
-  {
-    name: "Internacional",
-    terra: "https://www.terra.com.br/esportes/internacional/",
-  },
-  { name: "Vasco", terra: "https://www.terra.com.br/esportes/vasco/" },
-  { name: "Botafogo", terra: "https://www.terra.com.br/esportes/botafogo/" },
-  {
-    name: "Fluminense",
-    terra: "https://www.terra.com.br/esportes/fluminense/",
-  },
-  { name: "Bahia", terra: "https://www.terra.com.br/esportes/bahia/" },
-  { name: "Fortaleza", terra: "https://www.terra.com.br/esportes/fortaleza/" },
-  {
-    name: "Athletico-PR",
-    terra: "https://www.terra.com.br/esportes/atletico-pr/",
-  },
-  { name: "Coritiba", terra: "https://www.terra.com.br/esportes/coritiba/" },
-  { name: "Vitória", terra: "https://www.terra.com.br/esportes/vitoria/" },
-  { name: "Sport", terra: "https://www.terra.com.br/esportes/sport/" },
-  { name: "Ceará", terra: "https://www.terra.com.br/esportes/ceara/" },
-  {
-    name: "Bragantino",
-    terra: "https://www.terra.com.br/esportes/bragantino/",
-  },
-  { name: "Cuiabá", terra: "https://www.terra.com.br/esportes/cuiaba/" },
-  {
-    name: "Mercado da Bola",
-    terra: "https://www.terra.com.br/esportes/futebol/mercado-da-bola/",
-  },
-  {
-    name: "Brasileirão",
-    terra: "https://www.terra.com.br/esportes/futebol/brasileiro-serie-a/",
-  },
-  {
-    name: "Libertadores",
-    terra: "https://www.terra.com.br/esportes/futebol/libertadores/",
-  },
-  {
-    name: "Copa do Brasil",
-    terra: "https://www.terra.com.br/esportes/futebol/copa-do-brasil/",
-  },
-  {
-    name: "Champions League",
-    terra:
-      "https://www.terra.com.br/esportes/futebol/internacional/liga-dos-campeoes/",
-  },
-  {
-    name: "Futebol Internacional",
-    terra: "https://www.terra.com.br/esportes/futebol/internacional/",
-  },
-  {
-    name: "Real Madrid",
-    terra:
-      "https://www.terra.com.br/esportes/futebol/internacional/equipes/real-madrid/",
-  },
-  {
-    name: "Barcelona",
-    terra:
-      "https://www.terra.com.br/esportes/futebol/internacional/equipes/barcelona/",
-  },
+];
+
+export const CINEMA_TARGETS = [
+  { name: "Filmes", terra: "https://www.terra.com.br/diversao/entre-telas/filmes/" },
+  { name: "Séries", terra: "https://www.terra.com.br/diversao/entre-telas/series/" }
 ];
 
 export async function resolveAndScrapeImage(
@@ -207,9 +135,27 @@ export async function resolveAndScrapeImage(
       };
     })()`);
 
-    const { imageUrl, fullSnippet, exactDate } = results as any;
+    let { imageUrl, fullSnippet, exactDate } = results as any;
+    if (imageUrl) {
+      const lowerImg = imageUrl.toLowerCase();
+      const isTerraBrand = lowerImg.includes("logo") || 
+                           lowerImg.includes("favicon") || 
+                           lowerImg.includes("/fe/zaz-") || 
+                           lowerImg.includes("placeholder") ||
+                           lowerImg.includes("default") ||
+                           lowerImg.includes("avatar") ||
+                           lowerImg.endsWith("/logo-terra.png") ||
+                           lowerImg.endsWith(".ico") ||
+                           lowerImg.includes("branding");
+
+      if (isTerraBrand) {
+        console.log(`[SCRAPER FILTER] Rejeitando imagem padrão/logo da Terra: ${imageUrl}`);
+        imageUrl = undefined;
+      }
+    }
+
     if (imageUrl || exactDate) {
-       console.log(`[SCRAPER SUCCESS] ${finalUrl} -> img: ${imageUrl ? 'SIM' : 'NÃO'}, date: ${exactDate}`);
+        console.log(`[SCRAPER SUCCESS] ${finalUrl} -> img: ${imageUrl ? 'SIM' : 'NÃO'}, date: ${exactDate}`);
     }
 
     return { finalUrl, imageUrl: imageUrl || undefined, fullSnippet, exactDate: exactDate || undefined };
@@ -439,6 +385,105 @@ export async function fetchFootballNews(trends: string[] = [], excludeIds: strin
     return finalItems;
   } catch (error: any) {
     console.error("❌ Erro fatal na agregação:", error.message);
+    return [];
+  } finally {
+    await scraperBrowser.close();
+  }
+}
+
+export async function fetchCinemaNews(excludeIds: string[] = [], limitHours: number = 48): Promise<NewsItem[]> {
+  const scraperBrowser = await puppeteer.launch({
+    headless: true,
+    args: ["--no-sandbox", "--disable-setuid-sandbox", "--disable-dev-shm-usage"],
+  });
+
+  try {
+    console.log(`\n🎬 Iniciando Agregador de Notícias de Cinema (RSSHub + Terra Scraper)...`);
+    const terraTasks = CINEMA_TARGETS.map((target) => fetchRSSHubTerra(target, scraperBrowser));
+    const terraResults = await Promise.all(terraTasks);
+    const allItems = terraResults.flat();
+    
+    console.log(`📊 Total bruto de itens de cinema encontrados: ${allItems.length} (Fonte: RSSHub/Terra)`);
+
+    const uniqueNews: NewsItem[] = [];
+    const seenLinks = new Set();
+    const seenTitles = new Set();
+    const now = Date.now();
+    let blockedSourcesCount = 0;
+
+    for (const item of allItems) {
+      if (!item.link || !item.title) continue;
+      const itemIdentifier = item.id || item.link;
+      if (!isTrustedSource(item.link) || !isAllowedTopic(item.title) || excludeIds.includes(itemIdentifier)) {
+        if (!isTrustedSource(item.link) || !isAllowedTopic(item.title)) blockedSourcesCount++;
+        continue;
+      }
+
+      const cleanTitle = item.title.split(" - ")[0].trim();
+      const diff = (now - new Date(item.pubDate).getTime()) / (1000 * 60);
+      const limitMinutes = limitHours * 60;
+      if (diff > limitMinutes) continue;
+
+      if (seenLinks.has(item.link) || seenTitles.has(cleanTitle.toLowerCase())) continue;
+
+      uniqueNews.push({ ...item, title: cleanTitle });
+      seenLinks.add(item.link);
+      seenTitles.add(cleanTitle.toLowerCase());
+    }
+
+    const sortedNews = uniqueNews.sort((a, b) => new Date(b.pubDate).getTime() - new Date(a.pubDate).getTime());
+    console.log(`🔎 Filtradas ${sortedNews.length} notícias de cinema relevantes. (🚫 ${blockedSourcesCount} descartadas)`);
+    
+    const diverseNews: NewsItem[] = [];
+    for (const target of CINEMA_TARGETS) {
+      const latestForTarget = sortedNews.find((n) => n.category === target.name);
+      if (latestForTarget) diverseNews.push(latestForTarget);
+    }
+
+    const remaining = sortedNews.filter((n) => !diverseNews.some((dn) => dn.link === n.link));
+    const toProcess = [...diverseNews, ...remaining].slice(0, 40);
+
+    const imageBrowser = await puppeteer.launch({
+      headless: true,
+      args: ["--no-sandbox", "--disable-setuid-sandbox", "--disable-dev-shm-usage"],
+    });
+    const finalItems: NewsItem[] = [];
+
+    try {
+      console.log(`📸 Processando imagens para as top ${toProcess.length} notícias de cinema...`);
+      for (let i = 0; i < toProcess.length && finalItems.length < 15; i += 3) {
+        const batch = toProcess.slice(i, i + 3);
+        const batchResults = await Promise.all(
+          batch.map(async (item) => {
+            const { finalUrl, imageUrl, fullSnippet, exactDate } = await resolveAndScrapeImage(item.link, imageBrowser);
+            const finalPubDate = exactDate || item.pubDate;
+            
+            const diffFinal = (Date.now() - new Date(finalPubDate).getTime()) / (1000 * 60);
+            if (diffFinal > 2880) {
+                console.log(`[REJEITADO] Notícia antiga detectada no scraper de imagem: ${item.title}`);
+                return null;
+            }
+
+            return {
+              ...item,
+              link: finalUrl,
+              imageUrl: imageUrl || undefined,
+              pubDate: finalPubDate,
+              contentSnippet: fullSnippet || item.contentSnippet,
+            };
+          })
+        );
+        for (const res of batchResults) if (res) finalItems.push(res);
+        if (finalItems.filter(f => f.imageUrl).length >= 10) break;
+      }
+    } finally {
+      await imageBrowser.close();
+    }
+
+    console.log(`✅ Agregação de Cinema concluída: ${finalItems.length} itens prontos.`);
+    return finalItems;
+  } catch (error: any) {
+    console.error("❌ Erro fatal na agregação de cinema:", error.message);
     return [];
   } finally {
     await scraperBrowser.close();

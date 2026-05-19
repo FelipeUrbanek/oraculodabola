@@ -93,10 +93,13 @@ async function runOráculo() {
     ? fs.readFileSync(LAST_CATEGORY_FILE, "utf-8").trim()
     : "";
 
-  // 1. Filtrar por categorias básicas e rodízio
+  // 1. Filtrar por categorias básicas e rodízio de forma inteligente
+  const uniqueCategories = new Set(newsList.map((item: any) => item.category));
+  const isRodízioEnabled = uniqueCategories.size > 1;
+
   let candidates = newsList.filter((item: any) => {
     const hasImage = !!item.imageUrl;
-    const isDifferentCategory = item.category !== lastCategory;
+    const isDifferentCategory = !isRodízioEnabled || item.category !== lastCategory;
     const forbidden = ["onde assistir", "ao vivo", "transmissão", "tempo real", "como assistir", "escalação", "palpite"];
     const isServiceNews = forbidden.some((word) => item.title.toLowerCase().includes(word));
 
@@ -134,7 +137,7 @@ async function runOráculo() {
     .filter(
       (h) =>
         h.title &&
-        Date.now() - new Date(h.date).getTime() < 48 * 60 * 60 * 1000,
+        Date.now() - new Date(h.date).getTime() < 96 * 60 * 60 * 1000,
     )
     .map((h) => h.title!);
 
@@ -169,9 +172,7 @@ async function runOráculo() {
   }
 
   const hoursSinceLastPost = (Date.now() - lastPostTime) / (1000 * 60 * 60);
-  let postsToMake = 1;
-  if (hoursSinceLastPost > 4) postsToMake = 3;
-  else if (hoursSinceLastPost > 2) postsToMake = 2;
+  let postsToMake = 1; // Sempre limitar a exatamente 1 post por rodada para comportamento 100% orgânico e evitar shadowban
 
   console.log(
     `⏱️ Último post há ${hoursSinceLastPost.toFixed(1)}h. Planejando ${postsToMake} post(s).`,

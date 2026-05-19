@@ -22,8 +22,8 @@ async function runTestSantos() {
       return;
     }
 
-    const itemsToProcess = news.slice(0, 5);
-    console.log(`✅ Encontradas ${news.length} notícias. Processando as top 5...`);
+    const itemsToProcess = news.slice(0, 1);
+    console.log(`✅ Encontradas ${news.length} notícias. Processando top 1...`);
 
     for (let i = 0; i < itemsToProcess.length; i++) {
       const item = itemsToProcess[i];
