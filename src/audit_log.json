@@ -1038,5 +1038,21 @@
     "source_domain": "www.terra.com.br",
     "category": "Séries",
     "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-05-20T21:03:32.125Z",
+    "headline": "SANTOS DESAFIA JEJUM EM DECISÃO NA VILA!",
+    "source_url": "https://www.terra.com.br/esportes/santos/santos-tenta-quebrar-jejum-incomodo-na-vila-contra-o-san-lorenzo,1500a14143548860737c371d4130fc3byho3zxrm.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-05-20T21:04:44.867Z",
+    "headline": "ONZE: FIM EM ABERTO POR MAIS 20 ANOS!",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/series/stranger-things-apos-final-polemico-criadores-dizem-que-revelarao-destino-de-onze-em-20-anos,24c314ddaf633d1d2d1d3e6d55f93d473yi5kc4v.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Breaking",
+    "status": "SUCCESS"
   }
 ]

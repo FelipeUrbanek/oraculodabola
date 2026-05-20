@@ -1,16 +1,16 @@
 {
-  "timestamp": "2026-05-20T16:10:28.640Z",
+  "timestamp": "2026-05-20T21:03:37.266Z",
   "status": "SUCCESS",
   "postsPlanned": 1,
   "candidatesFound": 12,
   "successfulPosts": [
     {
-      "title": "'Grey's Anatomy' ganhará novo spin-off ambientado no Texas",
-      "headline": "GREY'S ANATOMY VAI PARA O TEXAS!",
-      "category": "Séries",
-      "instagramId": "18175718407367667",
-      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-05-20/2026-05-20-16-12-02_feed.jpg",
-      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-05-20/2026-05-20-16-12-02_story.jpg"
+      "title": "'Stranger Things': Após final polêmico, criadores dizem que revelarão destino de Onze em 20 anos",
+      "headline": "ONZE: FIM EM ABERTO POR MAIS 20 ANOS!",
+      "category": "Breaking",
+      "instagramId": "17925744723339398",
+      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-05-20/2026-05-20-21-04-22_feed.jpg",
+      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-05-20/2026-05-20-21-04-22_story.jpg"
     }
   ],
   "failedPosts": []
