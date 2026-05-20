@@ -2,7 +2,7 @@ name: Oráculo da Bola - Automação Total
 
 on:
   schedule:
-    - cron: '15 0,12,15,21 * * *' # 09:15, 12:15, 18:15, 21:15 BRT (Brasília Time, UTC-3)
+    - cron: '*/30 * * * *' # Roda a cada 30 minutos para garantir execução precisa via janelas de tempo
   workflow_dispatch: # Permite rodar manualmente
 
 jobs:
@@ -56,6 +56,7 @@ jobs:
           CLOUDINARY_CLOUD_NAME: ${{ secrets.CLOUDINARY_CLOUD_NAME }}
           CLOUDINARY_API_KEY: ${{ secrets.CLOUDINARY_API_KEY }}
           CLOUDINARY_API_SECRET: ${{ secrets.CLOUDINARY_API_SECRET }}
+          IS_SCHEDULED: ${{ github.event_name == 'schedule' }}
         run: |
           npx tsx main.ts
           npx tsx main_cinema.ts

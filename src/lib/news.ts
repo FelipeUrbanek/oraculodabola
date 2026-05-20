@@ -7,6 +7,16 @@ const parser = new Parser();
 
 const TRUSTED_DOMAINS = [
   "terra.com.br",
+  "globo.com",
+  "uol.com.br",
+  "espn.com.br",
+  "gazetaesportiva.com",
+  "lance.com.br",
+  "goal.com",
+  "itatiaia.com.br",
+  "cnnbrasil.com.br",
+  "estadao.com.br",
+  "folha.uol.com.br"
 ];
 
 export interface NewsItem {
@@ -21,6 +31,8 @@ export interface NewsItem {
 
 const FOOTBALL_TARGETS = [
   { name: "Santos", terra: "https://www.terra.com.br/esportes/santos/" },
+  { name: "Futebol", terra: "https://www.terra.com.br/esportes/futebol/" },
+  { name: "Mercado da Bola", terra: "https://www.terra.com.br/esportes/futebol/mercado-da-bola/" }
 ];
 
 export const CINEMA_TARGETS = [
@@ -322,6 +334,16 @@ export async function fetchFootballNews(trends: string[] = [], excludeIds: strin
 
     for (const item of allItems) {
       if (!item.link || !item.title) continue;
+
+      // Se for de outra categoria que não seja Santos, deve ter obrigatoriamente relação com o Santos FC
+      if (item.category !== "Santos") {
+        const titleLower = item.title.toLowerCase();
+        const snippetLower = item.contentSnippet.toLowerCase();
+        const santosKeywords = ["santos", "peixe", "vila belmiro", "alvinegro", "sfc", "carille", "marcelo teixeira", "neymar"];
+        const isSantosRelated = santosKeywords.some(keyword => titleLower.includes(keyword) || snippetLower.includes(keyword));
+        if (!isSantosRelated) continue;
+      }
+
       const itemIdentifier = item.id || item.link;
       if (!isTrustedSource(item.link) || !isAllowedTopic(item.title) || excludeIds.includes(itemIdentifier)) {
         if (!isTrustedSource(item.link) || !isAllowedTopic(item.title)) blockedSourcesCount++;

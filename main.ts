@@ -17,6 +17,51 @@ import path from "path";
 const HISTORY_FILE = path.join(process.cwd(), "src", "history.json");
 
 async function runOráculo() {
+  const isScheduled = process.env.IS_SCHEDULED === "true";
+  let currentWindow: "morning" | "midday" | "evening" | "night" | null = null;
+  let brtDayString = "";
+
+  if (isScheduled) {
+    const now = new Date();
+    // Converter para Hora de Brasília (UTC-3)
+    const brtDate = new Date(now.getTime() - (3 * 60 * 60 * 1000));
+    const brtHour = brtDate.getUTCHours();
+    const brtMinute = brtDate.getUTCMinutes();
+    brtDayString = brtDate.toISOString().slice(0, 10); // "YYYY-MM-DD"
+
+    if (brtHour === 9 || (brtHour === 10 && brtMinute <= 30)) {
+      currentWindow = "morning";
+    } else if (brtHour === 12 || (brtHour === 13 && brtMinute <= 30)) {
+      currentWindow = "midday";
+    } else if (brtHour === 18 || (brtHour === 19 && brtMinute <= 30)) {
+      currentWindow = "evening";
+    } else if (brtHour === 21 || (brtHour === 22 && brtMinute <= 30)) {
+      currentWindow = "night";
+    }
+
+    if (!currentWindow) {
+      console.log(`⏱️ Fora das janelas de postagem do Brasil (Hora BRT atual: ${brtHour.toString().padStart(2, '0')}:${brtMinute.toString().padStart(2, '0')}). Encerrando.`);
+      process.exit(0);
+    }
+
+    const WINDOWS_STATE_FILE = path.join(process.cwd(), "src", "last_posted_windows.json");
+    let postedWindows: Record<string, Record<string, boolean>> = {};
+    if (fs.existsSync(WINDOWS_STATE_FILE)) {
+      try {
+        postedWindows = JSON.parse(fs.readFileSync(WINDOWS_STATE_FILE, "utf-8"));
+      } catch (e) {
+        postedWindows = {};
+      }
+    }
+
+    if (postedWindows[brtDayString]?.[currentWindow]) {
+      console.log(`✅ Já foi feita uma postagem para a janela '${currentWindow}' no dia ${brtDayString}. Encerrando.`);
+      process.exit(0);
+    }
+
+    console.log(`⏱️ Executando postagem para a janela '${currentWindow}' (Hora BRT atual: ${brtHour.toString().padStart(2, '0')}:${brtMinute.toString().padStart(2, '0')}).`);
+  }
+
   const runReport: any = {
     timestamp: new Date().toISOString(),
     status: "STARTED",
@@ -311,6 +356,31 @@ async function runOráculo() {
         `✅ Postagem confirmada [${item.category}]: ${processed.headline}`,
       );
       successfulPosts++;
+
+      // Se postou com sucesso, marcar a janela como postada se for agendado
+      if (isScheduled && currentWindow) {
+        const WINDOWS_STATE_FILE = path.join(process.cwd(), "src", "last_posted_windows.json");
+        let postedWindows: Record<string, Record<string, boolean>> = {};
+        if (fs.existsSync(WINDOWS_STATE_FILE)) {
+          try {
+            postedWindows = JSON.parse(fs.readFileSync(WINDOWS_STATE_FILE, "utf-8"));
+          } catch (e) {}
+        }
+        if (!postedWindows[brtDayString]) postedWindows[brtDayString] = {};
+        postedWindows[brtDayString][currentWindow] = true;
+        
+        // Limpar chaves antigas (> 7 dias) do state file para manter limpo
+        const keys = Object.keys(postedWindows);
+        if (keys.length > 7) {
+          keys.sort();
+          while (keys.length > 7) {
+            const oldKey = keys.shift();
+            if (oldKey) delete postedWindows[oldKey];
+          }
+        }
+        fs.writeFileSync(WINDOWS_STATE_FILE, JSON.stringify(postedWindows, null, 2));
+        console.log(`💾 Janela '${currentWindow}' marcada como postada no dia ${brtDayString}.`);
+      }
       runReport.successfulPosts.push({
         category: item.category,
         headline: processed.headline,
