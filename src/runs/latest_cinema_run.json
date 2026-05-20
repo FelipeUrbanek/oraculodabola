@@ -1,16 +1,16 @@
 {
-  "timestamp": "2026-05-19T22:39:06.378Z",
+  "timestamp": "2026-05-20T01:55:51.333Z",
   "status": "SUCCESS",
   "postsPlanned": 1,
-  "candidatesFound": 11,
+  "candidatesFound": 10,
   "successfulPosts": [
     {
-      "title": "Marina Ruy Barbosa revela bastidores das gravações de 'Tremembé 2'; veja",
-      "headline": "TREMEMBÉ 2: BASTIDORES SENSACIONAIS!",
-      "category": "Bastidores",
-      "instagramId": "18075084359392298",
-      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-05-19/2026-05-19-22-40-21_feed.jpg",
-      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-05-19/2026-05-19-22-40-21_story.jpg"
+      "title": "'Spider-Noir': Confira trailer e novas imagens da série com Nicolas Cage",
+      "headline": "NICHOLAS CAGE É SPIDER-NOIR! TRAILER!",
+      "category": "Estreia",
+      "instagramId": "18122367937650810",
+      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-05-20/2026-05-20-01-57-11_feed.jpg",
+      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-05-20/2026-05-20-01-57-11_story.jpg"
     }
   ],
   "failedPosts": []
