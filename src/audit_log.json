@@ -1022,5 +1022,13 @@
     "source_domain": "www.terra.com.br",
     "category": "Estreia",
     "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-05-20T12:31:29.722Z",
+    "headline": "KIT HARINGTON DEFENDE FINAL DE GOT!",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/series/game-of-thrones-tem-final-defendido-por-ator,7e555eaa174581786a970d5ec3a9db24njl0pglq.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Séries",
+    "status": "SUCCESS"
   }
 ]
