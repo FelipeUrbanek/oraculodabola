@@ -1,16 +1,16 @@
 {
-  "timestamp": "2026-05-20T12:29:41.563Z",
+  "timestamp": "2026-05-20T16:10:28.640Z",
   "status": "SUCCESS",
   "postsPlanned": 1,
-  "candidatesFound": 10,
+  "candidatesFound": 12,
   "successfulPosts": [
     {
-      "title": "Game of Thrones tem final defendido por ator",
-      "headline": "KIT HARINGTON DEFENDE FINAL DE GOT!",
+      "title": "'Grey's Anatomy' ganhará novo spin-off ambientado no Texas",
+      "headline": "GREY'S ANATOMY VAI PARA O TEXAS!",
       "category": "Séries",
-      "instagramId": "18320078872261060",
-      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-05-20/2026-05-20-12-31-08_feed.jpg",
-      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-05-20/2026-05-20-12-31-08_story.jpg"
+      "instagramId": "18175718407367667",
+      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-05-20/2026-05-20-16-12-02_feed.jpg",
+      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-05-20/2026-05-20-16-12-02_story.jpg"
     }
   ],
   "failedPosts": []
