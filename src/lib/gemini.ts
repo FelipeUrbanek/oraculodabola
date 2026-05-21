@@ -9,6 +9,37 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const WORLD_STATE_PATH = path.join(__dirname, "..", "world_state.json");
 
+function extractJSON(text: string): string {
+  const firstBrace = text.indexOf("{");
+  const firstBracket = text.indexOf("[");
+  
+  if (firstBrace === -1 && firstBracket === -1) {
+    return text.replace(/```json|```/g, "").trim();
+  }
+  
+  const startIdx = (firstBrace !== -1 && (firstBracket === -1 || firstBrace < firstBracket)) 
+    ? firstBrace 
+    : firstBracket;
+    
+  const charStart = text[startIdx];
+  const charEnd = charStart === "{" ? "}" : "]";
+  
+  let lastIdx = text.lastIndexOf(charEnd);
+  
+  while (lastIdx > startIdx) {
+    const candidate = text.substring(startIdx, lastIdx + 1);
+    try {
+      JSON.parse(candidate);
+      return candidate;
+    } catch (e) {
+      lastIdx = text.substring(0, lastIdx).lastIndexOf(charEnd);
+    }
+  }
+  
+  const greedyMatch = text.match(/\{[\s\S]*\}|\[[\s\S]*\]/);
+  return greedyMatch ? greedyMatch[0] : text;
+}
+
 // Define API keys and current index for rotation
 const API_KEYS = [
   process.env.GEMINI_API_KEY || "", // Chave principal do .env
@@ -47,11 +78,8 @@ async function callGroq(prompt: string, isJson: boolean = true, fallbackModel: b
 
     const data: any = await response.json();
     let text = data.choices[0].message.content.trim();
-    const jsonMatch = text.match(/\{[\s\S]*\}|\[[\s\S]*\]/);
-    if (isJson && jsonMatch) {
-      text = jsonMatch[0];
-    } else {
-      text = text.replace(/```json|```/g, "").trim();
+    if (isJson) {
+      text = extractJSON(text);
     }
     
     return isJson ? JSON.parse(text) : text;
@@ -121,12 +149,7 @@ async function callGemini(prompt: string, isJson: boolean = true, retryCount: nu
       let text = result.response.text().trim();
       
       if (isJson) {
-        const jsonMatch = text.match(/\{[\s\S]*\}|\[[\s\S]*\]/);
-        if (jsonMatch) {
-          text = jsonMatch[0];
-        } else {
-          text = text.replace(/```json|```/g, "").trim();
-        }
+        text = extractJSON(text);
         return JSON.parse(text);
       }
       return text;
