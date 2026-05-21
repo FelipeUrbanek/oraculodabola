@@ -1054,5 +1054,13 @@
     "source_domain": "www.terra.com.br",
     "category": "Breaking",
     "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-05-21T00:14:15.734Z",
+    "headline": "DARK HORSE: PL EXIGE CONTAS DE FLÁVIO!",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/filmes/ala-do-pl-ve-prestacao-de-contas-de-flavio-como-fator-decisivo-para-apoia-lo-leia-bastidores,5b47be0c076a33966366eef22732de46s1hb7afx.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Bastidores",
+    "status": "SUCCESS"
   }
 ]
