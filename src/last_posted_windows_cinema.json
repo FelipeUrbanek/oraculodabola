@@ -4,5 +4,8 @@
     "midday": true,
     "evening": true,
     "night": true
+  },
+  "2026-05-21": {
+    "morning": true
   }
 }
