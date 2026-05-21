@@ -1,12 +1,12 @@
 {
-  "timestamp": "2026-05-21T15:59:09.345Z",
+  "timestamp": "2026-05-21T19:28:52.636Z",
   "status": "COMPLETED_WITHOUT_POSTS",
   "postsPlanned": 1,
   "candidatesFound": 6,
   "successfulPosts": [],
   "failedPosts": [
     {
-      "title": "'O Mandaloriano e Grogu' não é perfeito, mas traz frescor e tom 'família' ao universo 'Star Wars'",
+      "title": "'Emily em Paris' chegará ao fim na 6ª temporada na Netflix e Lily Collins promete final fantástico",
       "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
     }
   ]

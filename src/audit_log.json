@@ -1079,5 +1079,50 @@
     "category": "Filmes",
     "status": "FAILED",
     "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-05-21T19:28:43.568Z",
+    "headline": "Santos prepara limpa no elenco após reunião da diretoria",
+    "source_url": "https://www.terra.com.br/esportes/santos/santos-prepara-limpa-no-elenco-apos-reuniao-da-diretoria,2643741f5fe0df1336dc536f1c1ec86but441kiz.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-05-21T19:28:45.355Z",
+    "headline": "Cuca rebate críticas após empate do Santos e desabafa: \"Acham que sou burro?\"",
+    "source_url": "https://www.terra.com.br/esportes/santos/cuca-rebate-criticas-apos-empate-do-santos-e-desabafa-acham-que-sou-burro,13c4666016ac57322a9388043681811dooxlvre2.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-05-21T19:28:45.703Z",
+    "headline": "Lucas Veríssimo está suspenso e desfalca o Santos em decisão na Sul-Americana",
+    "source_url": "https://www.terra.com.br/esportes/santos/lucas-verissimo-esta-suspenso-e-desfalca-o-santos-em-decisao-na-sul-americana,dc462c314e9115986a850a9229156f0cxm87sjw3.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-05-21T19:28:46.041Z",
+    "headline": "Torcedores cospem em direção a Gabigol após empate do Santos",
+    "source_url": "https://www.terra.com.br/esportes/santos/torcedores-cospem-em-direcao-a-gabigol-apos-empate-do-santos,efa79d283fac06439ce7b089bafb7197pdop84xu.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-05-21T19:29:40.109Z",
+    "headline": "'Emily em Paris' chegará ao fim na 6ª temporada na Netflix e Lily Collins promete final fantástico",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/series/emily-em-paris-chegara-ao-fim-na-6-temporada-na-netflix-e-lily-collins-promete-final-fantastico,9c08eb7932958d1eff8edb4b05b40758ye0ic3q5.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Séries",
+    "status": "FAILED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
   }
 ]
