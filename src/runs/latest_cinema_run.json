@@ -1,17 +1,13 @@
 {
-  "timestamp": "2026-05-21T12:20:36.170Z",
-  "status": "SUCCESS",
+  "timestamp": "2026-05-21T15:59:09.345Z",
+  "status": "COMPLETED_WITHOUT_POSTS",
   "postsPlanned": 1,
-  "candidatesFound": 8,
-  "successfulPosts": [
+  "candidatesFound": 6,
+  "successfulPosts": [],
+  "failedPosts": [
     {
-      "title": "'The Boys': saiba o destino dos personagens principais ao fim da série",
-      "headline": "IMPACTO FINAL: THE BOYS DETONA!",
-      "category": "Séries",
-      "instagramId": "17883869553411274",
-      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-05-21/2026-05-21-12-21-44_feed.jpg",
-      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-05-21/2026-05-21-12-21-44_story.jpg"
+      "title": "'O Mandaloriano e Grogu' não é perfeito, mas traz frescor e tom 'família' ao universo 'Star Wars'",
+      "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
     }
-  ],
-  "failedPosts": []
+  ]
 }

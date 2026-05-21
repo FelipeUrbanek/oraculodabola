@@ -1070,5 +1070,14 @@
     "source_domain": "www.terra.com.br",
     "category": "Séries",
     "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-05-21T16:00:09.001Z",
+    "headline": "'O Mandaloriano e Grogu' não é perfeito, mas traz frescor e tom 'família' ao universo 'Star Wars'",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/filmes/o-mandaloriano-e-grogu-nao-e-perfeito-mas-traz-frescor-e-tom-familia-ao-universo-star-wars,00cac32b9957015512dce9df4aa95a49r38tvxyo.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Filmes",
+    "status": "FAILED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
   }
 ]
