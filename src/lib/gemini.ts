@@ -19,7 +19,9 @@ let currentKeyIndex = 0;
 // Configuração da API do Groq
 const GROQ_API_KEY = process.env.GROQ_API_KEY || "";
 
-async function callGroq(prompt: string, isJson: boolean = true) {
+async function callGroq(prompt: string, isJson: boolean = true, fallbackModel: boolean = false): Promise<any> {
+  const modelToUse = fallbackModel ? "llama-3.1-8b-instant" : "llama-3.3-70b-versatile";
+  console.log(`[Groq] Chamando ${modelToUse} com prompt de tamanho: ${prompt.length} caracteres.`);
   try {
     const response = await fetch("https://api.groq.com/openai/v1/chat/completions", {
       method: "POST",
@@ -28,18 +30,19 @@ async function callGroq(prompt: string, isJson: boolean = true) {
         "Authorization": `Bearer ${GROQ_API_KEY}`
       },
       body: JSON.stringify({
-        model: "llama-3.3-70b-versatile", // Modelo atualizado e poderoso no Groq
+        model: modelToUse,
         messages: [
           { role: "system", content: "Você deve sempre responder em Português do Brasil (pt-BR)." },
           { role: "user", content: prompt }
         ],
         temperature: 0.7,
-        max_tokens: 8192
+        max_tokens: 2000
       })
     });
 
     if (!response.ok) {
-        throw new Error(`Groq API Error: ${response.statusText}`);
+        const errText = await response.text();
+        throw new Error(`Groq API Error (${response.status}): ${errText.substring(0, 150)}`);
     }
 
     const data: any = await response.json();
@@ -53,9 +56,31 @@ async function callGroq(prompt: string, isJson: boolean = true) {
     
     return isJson ? JSON.parse(text) : text;
   } catch (error: any) {
-    console.log(`⚠️ Fallback para Groq falhou: ${error.message}`);
+    console.log(`⚠️ Fallback para Groq (${modelToUse}) falhou: ${error.message}`);
+    if (!fallbackModel) {
+      console.log(`🔄 Tentando modelo mais leve da Groq: llama-3.1-8b-instant...`);
+      return await callGroq(prompt, isJson, true);
+    }
     throw new Error("❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu.");
   }
+}
+
+function cleanErrorMessage(msg: string): string {
+  if (!msg) return "Erro desconhecido";
+  const httpCodeMatch = msg.match(/\[(429|403|500|503|400)\]\s*([A-Za-z\s_-]+)/);
+  if (httpCodeMatch) {
+    return `HTTP ${httpCodeMatch[1]} - ${httpCodeMatch[2].trim()}`;
+  }
+  if (msg.toLowerCase().includes("quota") || msg.toLowerCase().includes("rate limit") || msg.includes("429")) {
+    return "Cota de requisições excedida (429)";
+  }
+  if (msg.toLowerCase().includes("forbidden") || msg.includes("403")) {
+    return "Acesso negado/Não autorizado (403)";
+  }
+  if (msg.length > 150) {
+    return msg.substring(0, 150) + "...";
+  }
+  return msg;
 }
 
 /**
@@ -106,10 +131,11 @@ async function callGemini(prompt: string, isJson: boolean = true, retryCount: nu
       }
       return text;
     } catch (e: any) {
-      console.log(`⚠️ Modelo ${modelName} com a chave ${currentKeyIndex + 1} falhou. Erro: ${e.message}`);
+      const cleanErr = cleanErrorMessage(e.message);
+      console.log(`⚠️ Modelo ${modelName} com a chave ${currentKeyIndex + 1} falhou. Erro: ${cleanErr}`);
       // Verifica se o erro foi de rate limit/cota (429) ou acesso negado/billing (403)
       if (e.message && (e.message.includes("429") || e.message.includes("403"))) {
-         console.warn(`[AVISO] Chave ${currentKeyIndex + 1} indisponível (Erro: ${e.message.includes("429") ? "429 Quota" : "403 Acesso"}). Rotacionando chave...`);
+         console.warn(`[AVISO] Chave ${currentKeyIndex + 1} indisponível (Erro: ${e.message.includes("429") ? "429 (Cota)" : "403 (Acesso)"}). Rotacionando chave...`);
          currentKeyIndex = (currentKeyIndex + 1) % API_KEYS.length;
          return callGemini(prompt, isJson, retryCount + 1);
       }
@@ -163,6 +189,37 @@ function saveWorldState(state: any) {
     console.error("Erro ao salvar World State:", e);
   }
 }
+function filterWorldState(teams: any, title: string, snippet: string): any {
+  if (!teams) return {};
+  const filtered: any = {};
+  const combinedText = `${title} ${snippet}`.toLowerCase();
+
+  // Sempre inclui o Santos e a Seleção Brasileira
+  const alwaysInclude = ["Santos", "Seleção Brasileira"];
+
+  for (const teamName of Object.keys(teams)) {
+    const isAlwaysIncluded = alwaysInclude.some(
+      t => t.toLowerCase() === teamName.toLowerCase()
+    );
+
+    const normalizedTeam = teamName
+      .normalize("NFD")
+      .replace(/[\u0300-\u036f]/g, "")
+      .toLowerCase();
+
+    const normalizedText = combinedText
+      .normalize("NFD")
+      .replace(/[\u0300-\u036f]/g, "");
+
+    const isMentioned = normalizedText.includes(normalizedTeam);
+
+    if (isAlwaysIncluded || isMentioned) {
+      filtered[teamName] = teams[teamName];
+    }
+  }
+
+  return filtered;
+}
 
 export async function processNewsWithGemini(
   title: string,
@@ -170,7 +227,8 @@ export async function processNewsWithGemini(
   teamName: string = "",
 ): Promise<ProcessedContent> {
   const worldState = loadWorldState();
-  const worldStateContext = JSON.stringify(worldState.teams || {}, null, 2);
+  const filteredTeams = filterWorldState(worldState.teams || {}, title, snippet);
+  const worldStateContext = JSON.stringify(filteredTeams, null, 2);
 
   const prompt = `
     Persona: Você é o setorista oficial do "Oráculo da Bola", cobrindo exclusivamente o Santos Futebol Clube (o Peixe). O seu foco é Mercado da Bola, bastidores e breaking news do Santos FC e do futebol brasileiro (quando houver relevância direta para o Peixe) em posts rápidos, diretos, dinâmicos e de altíssimo impacto. Seu tom é DIRETO, IMPACTANTE e 100% FACTUAL. Estamos em MAIO DE 2026.
@@ -312,6 +370,13 @@ export async function processNewsWithGemini(
     console.error("❌ Erro ao atualizar Memória do Mundo:", e);
   }
 
+  // Verifica explicitamente se a notícia foi rejeitada
+  if (processed.headline.toUpperCase().includes("REJEITADO")) {
+    throw new Error(
+      `❌ Erro de Rejeição/Placeholder detectado: ${processed.caption || "Conteúdo rejeitado pelo filtro editorial."}`
+    );
+  }
+
   // Validação Anti-Placeholder e Termos Vagos Proibidos
   const forbidden = [
     "[Nome]",
@@ -357,8 +422,26 @@ export async function processNewsWithGemini(
     // Busca por sequências que começam com Maiúscula.
     const names = processed.caption.match(/[A-ZÀ-Ÿ][a-zà-ÿ]+( [a-z]{1,3})?( [A-ZÀ-Ÿ][a-zà-ÿ]+)*/g);
     
-    // Filtro para remover palavras comuns que o regex pode pegar por engano no início de frases
-    const validNames = names?.filter(n => !["Notícia", "O", "A", "Os", "As", "Neste", "Nesta", "Segundo", "Após", "Com", "Em"].includes(n)) || [];
+    // Filtro avançado para remover palavras comuns, termos do ecossistema e nomes de times
+    const teamNamesList = Object.keys(worldState.teams || {}).map(t => t.toLowerCase());
+    const commonWords = new Set([
+      "notícia", "o", "a", "os", "as", "neste", "nesta", "segundo", "após", "com", "em",
+      "infelizmente", "mas", "porém", "contudo", "entretanto", "todavia", "não", "sim",
+      "hoje", "ontem", "amanhã", "nas", "nos", "de", "do", "da", "para", "por", "sem",
+      "mais", "menos", "muito", "pouco", "ele", "ela", "eles", "elas", "se", "como",
+      "quem", "que", "quando", "onde", "porque", "porquê", "santos", "peixe", "alvinegro",
+      "vila", "belmiro", "clube", "time", "diretoria", "presidente", "técnico", "treinador",
+      "jogador", "atleta", "volante", "meio", "meia", "zagueiro", "lateral", "goleiro",
+      "atacante", "ponta", "centroavante", "reforço", "contratação", "copa", "mundo",
+      "campeonato", "brasileiro", "paulista", "libertadores", "sul-americana", "brasil",
+      "seleção", "arena", "estádio", "rodada", "fc", "futebol"
+    ]);
+
+    const validNames = names?.filter(n => {
+      const parts = n.toLowerCase().trim().split(/\s+/);
+      // Um nome próprio válido deve ter pelo menos uma palavra que não seja palavra comum nem time
+      return parts.some(part => !commonWords.has(part) && !teamNamesList.includes(part));
+    }) || [];
 
     if (validNames.length === 0) {
       throw new Error(

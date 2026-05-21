@@ -174,7 +174,7 @@ async function runOráculo() {
 
   let candidates = newsList.filter((item: any) => {
     const hasImage = !!item.imageUrl && item.imageUrl.startsWith("http");
-    const isDifferentCategory = !isRodízioEnabled || item.category !== lastCategory;
+    const isDifferentCategory = !isRodízioEnabled || item.category === "Santos" || item.category !== lastCategory;
     const forbidden = ["onde assistir", "ao vivo", "transmissão", "tempo real", "como assistir", "escalação", "palpite"];
     const isServiceNews = forbidden.some((word) => item.title.toLowerCase().includes(word));
 
@@ -279,6 +279,16 @@ async function runOráculo() {
   // 4. Seleção dos Melhores Itens (Rankeados)
   const finalItems: any[] = [];
   let candidatesPool = [...newItems];
+
+  // Prioridade total para a categoria "Santos": se houver candidatos dela, usa apenas eles.
+  // Categorias "Futebol" e "Mercado da Bola" só entram se a categoria principal "Santos" estiver vazia.
+  const santosCandidates = candidatesPool.filter(c => c.category === "Santos");
+  if (santosCandidates.length > 0) {
+    console.log(`📌 Encontradas ${santosCandidates.length} notícias da categoria 'Santos'. Usando apenas elas para priorizar o time.`);
+    candidatesPool = santosCandidates;
+  } else {
+    console.log(`⚠️ Nenhuma notícia da categoria 'Santos' disponível no pool. Usando outras categorias como fallback.`);
+  }
 
   for (let p = 0; p < Math.min(postsToMake, newItems.length); p++) {
     const bestItem = await rankBestNews(candidatesPool);

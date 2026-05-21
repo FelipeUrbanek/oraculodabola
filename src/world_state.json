@@ -18,7 +18,7 @@
     "Grêmio": {
       "coach": "Luís Castro",
       "league": "Campeonato Brasileiro / Copa do Brasil / Brasileirão Feminino",
-      "recent_changes": "Neymar, do Santos, desfalcará o Grêmio em confronto futuro, pois não jogará mais pelo clube paulista antes da Copa do Mundo devido a lesão. O goleiro Weverton recuperou sua melhor forma técnica no clube, com atuações de destaque que lhe renderam uma convocação surpresa para a Seleção Brasileira na Copa do Mundo de 2026. Pelo Campeonato Brasileiro, o time empatou em 1 a 1 com o Bahia fora de casa, figurando na 15ª colocação com 18 pontos. O técnico Luís Castro avaliou que a equipe cedeu o empate pela ansiedade. A equipe enfrentará o Corinthians no dia 30, confronto no qual o adversário não poderá contar com o atacante Memphis Depay, que estará cedido à seleção holandesa para a Copa do Mundo. Pelo Brasileirão Feminino, venceu o Red Bull Bragantino por 3 a 0."
+      "recent_changes": "Neymar, do Santos, desfalcará o Grêmio em confronto futuro, pois não jogará mais pelo clube paulista antes da Copa do Mundo devido a lesão. O goleiro Weverton recuperou sua melhor forma técnica no clube, com atuações de destaque que lhe renderam uma convocação surpresa para a Seleção Brasileira na Copa do Mundo de 2026."
     },
     "São Paulo": {
       "coach": "Dorival Júnior",
@@ -33,7 +33,7 @@
     "Seleção Brasileira": {
       "coach": "Carlo Ancelotti",
       "league": "Copa do Mundo de 2026",
-      "recent_changes": "O técnico Carlo Ancelotti anunciou a lista oficial para a Copa do Mundo de 2026 e justificou a convocação de Neymar (que vem de lesões e fase conturbada no Santos) destacando a qualidade e o que o jogador pode agregar coletivamente. O italiano enfatizou que a convocação não é garantia de escalação e a minutagem dependerá do desempenho nos treinos. Neymar se apresentará à equipe em 27 de maio e sua lesão na panturrilha não preocupa. O elenco possui sete atletas 'caseiros': Danilo, Alex Santos, Léo Pereira e Paquetá (Flamengo), Danilo (Botafogo), Weverton (Grêmio) e Neymar (Santos). A Seleção está no Grupo C (com Marrocos, Haiti e Escócia) e estreia contra os marroquinos no dia 13 de junho, às 19h (de Brasília). Antes, fará amistosos contra Panamá e Egito. Anteriormente: o ex-jogador Geovani Silva faleceu aos 62 anos."
+      "recent_changes": "O técnico Carlo Ancelotti anunciou a lista oficial para a Copa do Mundo de 2026 e justificou a convocação de Neymar (que vem de lesões e fase conturbada no Santos) destacando a qualidade e o que o jogador pode agregar coletivamente."
     },
     "Atlético-MG": {
       "coach": "Eduardo Domínguez",
@@ -118,7 +118,7 @@
     "Athletico-PR": {
       "coach": "Não mencionado",
       "league": "Campeonato Brasileiro / Copa do Brasil",
-      "recent_changes": "O Athletico-PR está interessado no atacante Rony, do Santos, e buscará uma forma de viabilizar o retorno do jogador, com quem conquistou o título da Sul-Americana de 2019, quando o mercado da bola abrir em 20 de julho; a contratação pode ser difícil devido ao salário elevado e longo contrato de Rony. Pelo Campeonato Brasileiro, empatou em 1 a 1 com o Flamengo na Arena da Baixada. A equipe abriu o placar aos 11 minutos com Mendoza e adotou uma postura tática defensiva visando os contra-ataques, chegando a acertar o travessão em lance isolado com Carrascal. A partida foi acompanhada pelo técnico da Seleção Brasileira, Carlo Ancelotti, e pelo coordenador Rodrigo Caetano. Anteriormente, avançou para as oitavas de final da Copa do Brasil, lucrando R$ 5 milhões em premiações."
+      "recent_changes": "O Athletico-PR sondou o atacante Rony, do Santos, para uma possível contratação."
     },
     "Chapecoense": {
       "coach": "Não mencionado",
@@ -157,8 +157,8 @@
     },
     "Santos": {
       "coach": "Cuca",
-      "league": "Copa do Brasil / Campeonato Brasileiro Sub-20 / Brasileirão / Brasileirão Feminino / Copa Sul-Americana",
-      "recent_changes": "Nesta quarta-feira (21), o time enfrenta o San Lorenzo pela quinta rodada do Grupo D da Copa Sul-Americana, em jogo decisivo para seguir na luta pela liderança e vaga direta nas oitavas de final. O clube busca quebrar um jejum de seis partidas sem vitória como mandante na competição (cinco empates e uma derrota), com a última vitória em casa sendo em 2022. Nesta temporada, o time também tropeçou na Vila ao empatar por 1 a 1 com o Recoleta. Convocado para a Copa do Mundo de 2026, Neymar, que fez tratamento na panturrilha direita, será desfalque neste confronto e a tendência é que não dispute mais partidas oficiais pelo clube antes do Mundial (permanecendo à disposição até 26 de maio). A campanha no Brasileirão segue preocupante com protestos da torcida na Vila Belmiro. A equipe avançou às oitavas da Copa do Brasil; pelo Sub-20 enfrentará o Flamengo; e pelo Feminino, o Red Bull Bragantino."
+      "league": "Campeonato Brasileiro / Brasileirão Feminino / Copa Sul-Americana",
+      "recent_changes": "O Santos prepara limpa no elenco, com pelo menos quatro saídas previstas nas próximas semanas, visando aliviar a folha salarial e abrir espaço para novas contratações. Mayke, Zé Rafael, Zé Ivaldo e Tomás Rincón estão entre os nomes mais cotados para sair. Rony também foi sondado pelo Athletico-PR, mas permanece nos planos do técnico Cuca."
     },
     "Vitória": {
       "coach": "Não mencionado",
@@ -391,5 +391,5 @@
       "recent_changes": "Nesta temporada, empatou por 1 a 1 com o Santos na Vila Belmiro em duelo pela Copa Sul-Americana, jogo que foi marcado por discussão entre Neymar e um torcedor."
     }
   },
-  "last_updated": "2026-05-20T21:03:10.851Z"
+  "last_updated": "2026-05-21T19:24:46.895Z"
 }

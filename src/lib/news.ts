@@ -289,7 +289,8 @@ const FORBIDDEN_KEYWORDS = [
   "sub-15", "sub 15", "sub15",
   "feminino", "feminina",
   "aspirantes", "categorias de base",
-  "copinha", "copa são paulo"
+  "copinha", "copa são paulo",
+  "futsal"
 ];
 
 export function isAllowedTopic(title: string): boolean {
@@ -339,6 +340,13 @@ export async function fetchFootballNews(trends: string[] = [], excludeIds: strin
       if (item.category !== "Santos") {
         const titleLower = item.title.toLowerCase();
         const snippetLower = item.contentSnippet.toLowerCase();
+        
+        // Evita falsos positivos como aeroporto Santos Dumont ou time Santos Laguna
+        if (titleLower.includes("santos dumont") || snippetLower.includes("santos dumont") ||
+            titleLower.includes("santos laguna") || snippetLower.includes("santos laguna")) {
+          continue;
+        }
+
         const santosKeywords = ["santos", "peixe", "vila belmiro", "alvinegro", "sfc", "carille", "marcelo teixeira", "neymar"];
         const isSantosRelated = santosKeywords.some(keyword => titleLower.includes(keyword) || snippetLower.includes(keyword));
         if (!isSantosRelated) continue;
@@ -352,7 +360,8 @@ export async function fetchFootballNews(trends: string[] = [], excludeIds: strin
 
       const cleanTitle = item.title.split(" - ")[0].trim();
       const diff = (now - new Date(item.pubDate).getTime()) / (1000 * 60);
-      const limitMinutes = item.category === "Mercado da Bola" ? 1440 : (limitHours * 60);
+      // Santos e Mercado da Bola têm limite de 24h (1440 minutos), demais categorias usam o limitHours
+      const limitMinutes = (item.category === "Mercado da Bola" || item.category === "Santos") ? 1440 : (limitHours * 60);
       if (diff > limitMinutes) continue;
 
       if (seenLinks.has(item.link) || seenTitles.has(cleanTitle.toLowerCase())) continue;
@@ -391,7 +400,7 @@ export async function fetchFootballNews(trends: string[] = [], excludeIds: strin
             
             // Re-verifica a data após extrair a real do HTML
             const diffFinal = (Date.now() - new Date(finalPubDate).getTime()) / (1000 * 60);
-            const limitMinutesFinal = item.category === "Mercado da Bola" ? 1440 : (limitHours * 60);
+            const limitMinutesFinal = (item.category === "Mercado da Bola" || item.category === "Santos") ? 1440 : (limitHours * 60);
             if (diffFinal > limitMinutesFinal) {
                 console.log(`[REJEITADO] Notícia antiga detectada no scraper de imagem: ${item.title} (${diffFinal.toFixed(0)} mins atrás)`);
                 return null;
