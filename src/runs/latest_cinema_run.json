@@ -1,12 +1,12 @@
 {
-  "timestamp": "2026-05-21T19:35:56.613Z",
+  "timestamp": "2026-05-21T22:21:52.630Z",
   "status": "COMPLETED_WITHOUT_POSTS",
   "postsPlanned": 1,
-  "candidatesFound": 6,
+  "candidatesFound": 10,
   "successfulPosts": [],
   "failedPosts": [
     {
-      "title": "'Emily em Paris' chegará ao fim na 6ª temporada na Netflix e Lily Collins promete final fantástico",
+      "title": "Único brasileiro em categoria, 'Laser-Gato' é premiado no Festival de Cannes 2026",
       "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
     }
   ]

@@ -1141,5 +1141,22 @@
     "category": "Séries",
     "status": "FAILED",
     "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-05-21T22:21:46.746Z",
+    "headline": "LUCAS VERÍSSIMO SUSPENSO!",
+    "source_url": "https://www.terra.com.br/esportes/santos/lucas-verissimo-esta-suspenso-e-desfalca-o-santos-em-decisao-na-sul-americana,dc462c314e9115986a850a9229156f0cxm87sjw3.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-05-21T22:22:30.724Z",
+    "headline": "Único brasileiro em categoria, 'Laser-Gato' é premiado no Festival de Cannes 2026",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/filmes/unico-brasileiro-em-categoria-laser-gato-e-premiado-no-festival-de-cannes-2026,a7c2c4493f19bddd67600294ea91c527ou814gy1.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Filmes",
+    "status": "FAILED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
   }
 ]
