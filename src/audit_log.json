@@ -1209,5 +1209,14 @@
     "category": "Filmes",
     "status": "FAILED",
     "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-05-23T21:57:55.886Z",
+    "headline": "'Mambembe' borra linhas entre documentário e ficção para retratar artistas circenses",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/filmes/mambembe-borra-linhas-entre-documentario-e-ficcao-para-retratar-artistas-circenses,828f638cc7ec7f6adb0348640e12724cq2kkfg3f.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Filmes",
+    "status": "FAILED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
   }
 ]

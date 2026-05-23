@@ -1,12 +1,12 @@
 {
-  "timestamp": "2026-05-23T16:04:22.278Z",
+  "timestamp": "2026-05-23T21:57:34.709Z",
   "status": "COMPLETED_WITHOUT_POSTS",
   "postsPlanned": 1,
-  "candidatesFound": 12,
+  "candidatesFound": 11,
   "successfulPosts": [],
   "failedPosts": [
     {
-      "title": "Com produção brasileira, 'Elefantes na Névoa' é premiado em Cannes",
+      "title": "'Mambembe' borra linhas entre documentário e ficção para retratar artistas circenses",
       "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
     }
   ]
