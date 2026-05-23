@@ -1192,5 +1192,22 @@
     "category": "Filmes",
     "status": "FAILED",
     "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-05-23T16:04:17.051Z",
+    "headline": "SANTOS X GRÊMIO",
+    "source_url": "https://www.terra.com.br/esportes/santos/gustavo-henrique-ve-duelo-com-o-gremio-como-jogo-da-vida-do-santos,b0f32a3a5e7bfe20c889d43221056d5afkl3n91k.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-05-23T16:04:45.093Z",
+    "headline": "Com produção brasileira, 'Elefantes na Névoa' é premiado em Cannes",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/filmes/com-producao-brasileira-elefantes-na-nevoa-e-premiado-em-cannes,be0f85837bc7a0f86fbf8900c55f8e1d1gypmzk5.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Filmes",
+    "status": "FAILED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
   }
 ]
