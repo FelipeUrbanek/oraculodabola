@@ -158,7 +158,7 @@
     "Santos": {
       "coach": "Cuca",
       "league": "Campeonato Brasileiro / Brasileirão Feminino / Copa Sul-Americana",
-      "recent_changes": "O Santos prepara limpa no elenco, com pelo menos quatro saídas previstas nas próximas semanas, visando aliviar a folha salarial e abrir espaço para novas contratações. Mayke, Zé Rafael, Zé Ivaldo e Tomás Rincón estão entre os nomes mais cotados para sair. Rony também foi sondado pelo Athletico-PR, mas permanece nos planos do técnico Cuca."
+      "recent_changes": "O STJD negou o pedido do Santos para anular a partida contra o Coritiba, válida pela 16ª rodada do Campeonato Brasileiro, devido à substituição equivocada de Neymar no segundo tempo."
     },
     "Vitória": {
       "coach": "Não mencionado",
@@ -203,7 +203,7 @@
     "Coritiba": {
       "coach": "Não mencionado",
       "league": "Brasileirão",
-      "recent_changes": "Venceu o Santos por 3 a 0 na Neo Química Arena, em partida válida pelo Campeonato Brasileiro no último domingo (17), em um jogo marcado pela polêmica substituição por engano de Neymar."
+      "recent_changes": "O STJD manteve o resultado da partida contra o Santos, que o Coritiba venceu por 3 a 0, após negar o pedido de anulação do Santos devido à substituição equivocada de Neymar."
     },
     "Olímpia": {
       "coach": "Não mencionado",
@@ -391,5 +391,5 @@
       "recent_changes": "Nesta temporada, empatou por 1 a 1 com o Santos na Vila Belmiro em duelo pela Copa Sul-Americana, jogo que foi marcado por discussão entre Neymar e um torcedor."
     }
   },
-  "last_updated": "2026-05-21T19:24:46.895Z"
+  "last_updated": "2026-05-23T13:29:34.640Z"
 }
