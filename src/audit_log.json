@@ -1235,5 +1235,22 @@
     "category": "Filmes",
     "status": "FAILED",
     "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-05-24T21:59:03.633Z",
+    "headline": "SANTOS PERDE",
+    "source_url": "https://www.terra.com.br/esportes/futebol/em-noite-inspirada-de-carlos-vinicius-gremio-vence-o-santos-pelo-brasileirao,0948afbae4d0a27e920b0ebe9484c0d0ekiwevxe.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-05-24T21:59:59.224Z",
+    "headline": "10 atrações imperdíveis para ver na Virada Cultural neste sábado",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/filmes/10-atracoes-imperdiveis-para-ver-na-virada-cultural-neste-sabado,29c49170147717fb4f207508dcd1828fb85dlyup.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Filmes",
+    "status": "FAILED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
   }
 ]

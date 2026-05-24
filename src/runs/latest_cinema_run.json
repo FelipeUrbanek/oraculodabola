@@ -1,12 +1,12 @@
 {
-  "timestamp": "2026-05-24T16:03:54.188Z",
+  "timestamp": "2026-05-24T21:59:12.922Z",
   "status": "COMPLETED_WITHOUT_POSTS",
   "postsPlanned": 1,
-  "candidatesFound": 11,
+  "candidatesFound": 6,
   "successfulPosts": [],
   "failedPosts": [
     {
-      "title": "'Mambembe' borra linhas entre documentário e ficção para retratar artistas circenses",
+      "title": "10 atrações imperdíveis para ver na Virada Cultural neste sábado",
       "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
     }
   ]

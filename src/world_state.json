@@ -17,8 +17,8 @@
     },
     "Grêmio": {
       "coach": "Luís Castro",
-      "league": "Campeonato Brasileiro / Copa do Brasil / Brasileirão Feminino",
-      "recent_changes": "Neymar, do Santos, desfalcará o Grêmio em confronto futuro, pois não jogará mais pelo clube paulista antes da Copa do Mundo devido a lesão. O goleiro Weverton recuperou sua melhor forma técnica no clube, com atuações de destaque que lhe renderam uma convocação surpresa para a Seleção Brasileira na Copa do Mundo de 2026."
+      "league": "Campeonato Brasileiro / Brasileirão",
+      "recent_changes": "Com a vitória sobre o Santos, o Grêmio ganha fôlego na competição e afasta o fantasma da instabilidade, chegando aos 21 pontos na 13ª colocação."
     },
     "São Paulo": {
       "coach": "Dorival Júnior",
@@ -157,8 +157,8 @@
     },
     "Santos": {
       "coach": "Cuca",
-      "league": "Campeonato Brasileiro / Brasileirão Feminino / Copa Sul-Americana",
-      "recent_changes": "O técnico Cuca demonstrou confiança na reviravolta do time no segundo semestre, apesar da pressão e da derrota para o Grêmio, e garantiu não pedir demissão."
+      "league": "Campeonato Brasileiro / Copa Sul-Americana",
+      "recent_changes": "Com a derrota para o Grêmio, o Santos entra na zona de rebaixamento, ocupando a 17ª posição."
     },
     "Vitória": {
       "coach": "Não mencionado",
@@ -391,5 +391,5 @@
       "recent_changes": "Nesta temporada, empatou por 1 a 1 com o Santos na Vila Belmiro em duelo pela Copa Sul-Americana, jogo que foi marcado por discussão entre Neymar e um torcedor."
     }
   },
-  "last_updated": "2026-05-24T16:03:29.117Z"
+  "last_updated": "2026-05-24T21:58:41.423Z"
 }

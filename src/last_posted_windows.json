@@ -13,6 +13,7 @@
     "midday": true
   },
   "2026-05-24": {
-    "midday": true
+    "midday": true,
+    "evening": true
   }
 }
