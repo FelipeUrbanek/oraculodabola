@@ -1302,5 +1302,41 @@
     "category": "Séries",
     "status": "FAILED",
     "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-05-26T22:34:12.570Z",
+    "headline": "Copa do Brasil terá clássico carioca e Corinthians x Inter nas oitavas de final; confira todos os duelos",
+    "source_url": "https://www.terra.com.br/esportes/futebol/copa-do-brasil/copa-do-brasil-tera-classico-carioca-e-corinthians-x-inter-nas-oitavas-de-final-confira-todos-os-duelos,59aa166e21bd63a5abeb581896757ae8cldod3er.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-05-26T22:34:13.567Z",
+    "headline": "CBF fará duas rodadas de teste antes da estreia do impedimento semiautomático",
+    "source_url": "https://www.terra.com.br/esportes/corinthians/cbf-fara-duas-rodadas-de-teste-antes-da-estreia-do-impedimento-semiautomatico,b84aaf48f62705d6252ce6d9934b91f8thfmkm9b.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-05-26T22:34:13.645Z",
+    "headline": "CBF propõe reformulação de horários no Brasileirão",
+    "source_url": "https://www.terra.com.br/esportes/corinthians/cbf-propoe-reformulacao-de-horarios-no-brasileirao,278dbbbff4d61c7b89edbab0ca4aae615qm5e1u4.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-05-26T22:35:05.196Z",
+    "headline": "'The Boroughs': conheça a nova série dos criadores de 'Stranger Things', que está na Netflix",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/series/the-boroughs-conheca-a-nova-serie-dos-criadores-de-stranger-things-que-esta-na-netflix,b39c8be6d976ec1090f6e2613cd031f1qxyshm3e.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Séries",
+    "status": "FAILED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
   }
 ]
