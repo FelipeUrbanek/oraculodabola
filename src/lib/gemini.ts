@@ -40,11 +40,7 @@ function extractJSON(text: string): string {
   return greedyMatch ? greedyMatch[0] : text;
 }
 
-// Define API keys and current index for rotation
-const API_KEYS = [
-  process.env.GEMINI_API_KEY || "", // Chave principal do .env
-  process.env.GEMINI_API_KEY_BACKUP || "", // Chave de backup do .env
-].filter(k => k !== "");
+const API_KEYS = process.env.GEMINI_API_KEYS ? process.env.GEMINI_API_KEYS.split(',').map(k => k.trim()).filter(Boolean) : [];
 let currentKeyIndex = 0;
 
 // Configuração da API do Groq
@@ -115,16 +111,14 @@ function cleanErrorMessage(msg: string): string {
  * Sistema de Modelos de Elite com Fallback
  */
 async function callGemini(prompt: string, isJson: boolean = true, retryCount: number = 0): Promise<any> {
-  const models = [
+  const models = process.env.GEMINI_MODELS ? process.env.GEMINI_MODELS.split(',').map(m => m.trim()).filter(Boolean) : [
     "gemini-2.5-flash",
-    "gemini-pro-latest",
-    "gemini-2.0-flash",
-    "gemini-1.5-pro",
-    "gemini-1.5-flash",
-    "gemini-3.1-pro-preview",
-    "gemini-3-pro-preview",
     "gemini-2.5-pro",
-    "gemini-3.1-flash-lite",
+    "gemini-2.0-flash",
+    "gemini-2.0-pro-exp",
+    "gemini-2.0-flash-lite",
+    "gemini-1.5-pro",
+    "gemini-1.5-flash"
   ];
 
   // Se esgotamos as chaves, usamos o Groq como última opção

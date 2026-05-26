@@ -281,8 +281,10 @@ async function generateReplyWithGemini(
   username?: string,
 ): Promise<string> {
   const { GoogleGenerativeAI } = await import("@google/generative-ai");
-  const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY || "");
-  const model = genAI.getGenerativeModel({ model: "gemini-2.5-flash" });
+  const keys = process.env.GEMINI_API_KEYS ? process.env.GEMINI_API_KEYS.split(',') : [""];
+  const genAI = new GoogleGenerativeAI(keys[0]);
+  const models = process.env.GEMINI_MODELS ? process.env.GEMINI_MODELS.split(',') : ["gemini-2.5-flash"];
+  const model = genAI.getGenerativeModel({ model: models[0] });
 
   const isCinema = process.env.IG_USER_ID === process.env.IG_USER_ID_CINEMA;
   const prompt = isCinema
