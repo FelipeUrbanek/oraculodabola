@@ -1268,5 +1268,21 @@
     "source_domain": "www.terra.com.br",
     "category": "Breaking",
     "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-05-26T15:36:34.614Z",
+    "headline": "DECISÃO NA SULA: SANTOS COM DESFALQUES!",
+    "source_url": "https://www.terra.com.br/esportes/santos/santos-deve-ter-desfalque-importante-em-jogo-decisivo-pela-sul-americana,c76ed76d7e9e1a41befc742e1e29b6ec20q4a6t7.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-05-26T15:38:03.760Z",
+    "headline": "STREAMING EXPLODE: MARATONA DE PREMIADOS AGORA!",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/series/7-filmes-recentes-e-premiados-para-maratonar-no-streaming-e-desligar-do-mundo-la-fora,a55fb0f31171549394807e0623b06bb3ps9rsyxl.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Filmes",
+    "status": "SUCCESS"
   }
 ]
