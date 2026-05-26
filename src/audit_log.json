@@ -1284,5 +1284,23 @@
     "source_domain": "www.terra.com.br",
     "category": "Filmes",
     "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-05-26T22:21:55.864Z",
+    "headline": "CBF fará duas rodadas de teste antes da estreia do impedimento semiautomático",
+    "source_url": "https://www.terra.com.br/esportes/corinthians/cbf-fara-duas-rodadas-de-teste-antes-da-estreia-do-impedimento-semiautomatico,b84aaf48f62705d6252ce6d9934b91f8thfmkm9b.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "MISMATCH: Conteúdo revisado perdeu a identidade do time Santos."
+  },
+  {
+    "timestamp": "2026-05-26T22:22:47.506Z",
+    "headline": "'The Boroughs': conheça a nova série dos criadores de 'Stranger Things', que está na Netflix",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/series/the-boroughs-conheca-a-nova-serie-dos-criadores-de-stranger-things-que-esta-na-netflix,b39c8be6d976ec1090f6e2613cd031f1qxyshm3e.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Séries",
+    "status": "FAILED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
   }
 ]

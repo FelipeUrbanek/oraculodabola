@@ -1,17 +1,13 @@
 {
-  "timestamp": "2026-05-26T15:36:40.429Z",
-  "status": "SUCCESS",
+  "timestamp": "2026-05-26T22:22:00.974Z",
+  "status": "COMPLETED_WITHOUT_POSTS",
   "postsPlanned": 1,
-  "candidatesFound": 7,
-  "successfulPosts": [
+  "candidatesFound": 5,
+  "successfulPosts": [],
+  "failedPosts": [
     {
-      "title": "7 filmes recentes e premiados para maratonar no streaming e desligar do mundo lá fora",
-      "headline": "STREAMING EXPLODE: MARATONA DE PREMIADOS AGORA!",
-      "category": "Filmes",
-      "instagramId": "18112037353677091",
-      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-05-26/2026-05-26-15-37-41_feed.jpg",
-      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-05-26/2026-05-26-15-37-41_story.jpg"
+      "title": "'The Boroughs': conheça a nova série dos criadores de 'Stranger Things', que está na Netflix",
+      "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
     }
-  ],
-  "failedPosts": []
+  ]
 }
