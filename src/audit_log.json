@@ -1389,5 +1389,21 @@
     "source_domain": "www.terra.com.br",
     "category": "Bastidores",
     "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-05-27T18:13:43.794Z",
+    "headline": "GABIGOL DESTACA",
+    "source_url": "https://www.terra.com.br/esportes/santos/gabigol-elogia-desempenho-da-equipe-em-vitoria-santista-somos-um-conjunto,6240d5b66fb8d0545334ef011ac1c2deqq8qsw8d.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-05-27T18:15:24.360Z",
+    "headline": "BOLSONARO NO CINEMA",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/filmes/eduardo-bolsonaro-tratou-sobre-filme-com-vorcaro-e-pediu-para-enviar-maximo-de-recursos-aos-eua,b8ff4f4181b8fec17ca5e59fcd9e2e229eoolusf.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Filmes",
+    "status": "SUCCESS"
   }
 ]

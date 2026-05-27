@@ -1,16 +1,16 @@
 {
-  "timestamp": "2026-05-27T18:06:45.424Z",
+  "timestamp": "2026-05-27T18:13:51.658Z",
   "status": "SUCCESS",
   "postsPlanned": 1,
   "candidatesFound": 3,
   "successfulPosts": [
     {
-      "title": "Livro com storyboards dos filmes de Alfred Hitchcock chega ao Brasil em outubro; veja detalhes",
-      "headline": "HITCHCOCK CHEGA",
-      "category": "Bastidores",
-      "instagramId": "18088673930573361",
-      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-05-27/2026-05-27-18-07-35_feed.jpg",
-      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-05-27/2026-05-27-18-07-35_story.jpg"
+      "title": "Eduardo Bolsonaro tratou sobre filme com Vorcaro e pediu para enviar 'máximo' de recursos aos EUA",
+      "headline": "BOLSONARO NO CINEMA",
+      "category": "Filmes",
+      "instagramId": "18136925164556169",
+      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-05-27/2026-05-27-18-15-04_feed.jpg",
+      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-05-27/2026-05-27-18-15-04_story.jpg"
     }
   ],
   "failedPosts": []
