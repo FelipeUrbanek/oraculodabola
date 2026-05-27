@@ -1405,5 +1405,21 @@
     "source_domain": "www.terra.com.br",
     "category": "Filmes",
     "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-05-27T21:41:54.788Z",
+    "headline": "SANTOS NO MUNDO",
+    "source_url": "https://www.terra.com.br/esportes/santos/santos-agenda-excursao-internacional-e-disputara-amistosos-na-europa,1511ca0c1e934ddd5312dd17be80acbabn28p2te.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-05-27T21:44:30.166Z",
+    "headline": "MAFALDA CHEGA",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/series/serie-mafalda-da-netflix-vai-manter-tom-politico-de-outra-forma-nao-seria-ela-diz-produtor,14b53dc69c332d04b78fa1acb6da2289ng7h623n.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Séries",
+    "status": "SUCCESS"
   }
 ]

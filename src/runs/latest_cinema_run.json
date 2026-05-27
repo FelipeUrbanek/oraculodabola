@@ -1,16 +1,16 @@
 {
-  "timestamp": "2026-05-27T18:13:51.658Z",
+  "timestamp": "2026-05-27T21:42:02.344Z",
   "status": "SUCCESS",
   "postsPlanned": 1,
-  "candidatesFound": 3,
+  "candidatesFound": 2,
   "successfulPosts": [
     {
-      "title": "Eduardo Bolsonaro tratou sobre filme com Vorcaro e pediu para enviar 'máximo' de recursos aos EUA",
-      "headline": "BOLSONARO NO CINEMA",
-      "category": "Filmes",
-      "instagramId": "18136925164556169",
-      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-05-27/2026-05-27-18-15-04_feed.jpg",
-      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-05-27/2026-05-27-18-15-04_story.jpg"
+      "title": "Série 'Mafalda', da Netflix, vai manter tom político: 'De outra forma, não seria ela', diz produtor",
+      "headline": "MAFALDA CHEGA",
+      "category": "Séries",
+      "instagramId": "17865959784626996",
+      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-05-27/2026-05-27-21-44-08_feed.jpg",
+      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-05-27/2026-05-27-21-44-08_story.jpg"
     }
   ],
   "failedPosts": []

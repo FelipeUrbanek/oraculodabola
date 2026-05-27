@@ -156,8 +156,9 @@
       "recent_changes": "Avançou para as oitavas de final da Copa do Brasil, lucrando R$ 5 milhões em premiações, após eliminar o Bahia. A equipe também superou o time baiano no Campeonato Brasileiro com uma vitória por 4 a 1 nesta temporada, porém encontra-se atualmente na zona de rebaixamento da competição."
     },
     "Santos": {
+      "coach": "Cuca",
       "league": "Campeonato Brasileiro / Brasileirão Feminino / Copa Sul-Americana",
-      "recent_changes": "O Santos derrotou o Deportivo Cuenca e avançou para os playoffs da Copa Sul-Americana. A equipe encara o Vitória no próximo sábado, na Vila Belmiro, em jogo válido pela Rodada 18 do Campeonato Brasileiro."
+      "recent_changes": "O Santos confirmou uma excursão internacional em Portugal entre os dias 7 e 17 de julho de 2026, incluindo amistosos contra o Vitória SC e outros adversários a serem divulgados."
     },
     "Vitória": {
       "league": "Copa do Brasil / Campeonato Brasileiro",
@@ -389,5 +390,5 @@
       "recent_changes": "Nesta temporada, empatou por 1 a 1 com o Santos na Vila Belmiro em duelo pela Copa Sul-Americana, jogo que foi marcado por discussão entre Neymar e um torcedor."
     }
   },
-  "last_updated": "2026-05-27T18:13:23.392Z"
+  "last_updated": "2026-05-27T21:41:28.305Z"
 }
