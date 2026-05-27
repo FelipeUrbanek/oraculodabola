@@ -1363,5 +1363,31 @@
     "source_domain": "www.terra.com.br",
     "category": "Santos",
     "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-05-27T18:06:37.993Z",
+    "headline": "Gabigol elogia desempenho da equipe em vitória santista: 'Somos um conjunto'",
+    "source_url": "https://www.terra.com.br/esportes/santos/gabigol-elogia-desempenho-da-equipe-em-vitoria-santista-somos-um-conjunto,6240d5b66fb8d0545334ef011ac1c2deqq8qsw8d.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "processed.hashtags.map is not a function"
+  },
+  {
+    "timestamp": "2026-05-27T18:06:39.129Z",
+    "headline": "Gabigol exalta classificação do Santos, elogia Brazão e projeta sequência",
+    "source_url": "https://www.terra.com.br/esportes/santos/gabigol-exalta-classificacao-do-santos-elogia-brazao-e-projeta-sequencia,d4a53e86a5587dbdc77aac6036f632abdrj4zk0x.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-05-27T18:07:57.649Z",
+    "headline": "HITCHCOCK CHEGA",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/filmes/livro-com-storyboards-dos-filmes-de-alfred-hitchcock-chega-ao-brasil-em-outubro-veja-detalhes,891648e54ba23d1f3256350d00b1f432du1ijja4.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Bastidores",
+    "status": "SUCCESS"
   }
 ]

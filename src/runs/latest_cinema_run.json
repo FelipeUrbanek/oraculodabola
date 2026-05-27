@@ -1,13 +1,17 @@
 {
-  "timestamp": "2026-05-27T15:49:12.221Z",
-  "status": "COMPLETED_WITHOUT_POSTS",
+  "timestamp": "2026-05-27T18:06:45.424Z",
+  "status": "SUCCESS",
   "postsPlanned": 1,
-  "candidatesFound": 4,
-  "successfulPosts": [],
-  "failedPosts": [
+  "candidatesFound": 3,
+  "successfulPosts": [
     {
       "title": "Livro com storyboards dos filmes de Alfred Hitchcock chega ao Brasil em outubro; veja detalhes",
-      "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+      "headline": "HITCHCOCK CHEGA",
+      "category": "Bastidores",
+      "instagramId": "18088673930573361",
+      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-05-27/2026-05-27-18-07-35_feed.jpg",
+      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-05-27/2026-05-27-18-07-35_story.jpg"
     }
-  ]
+  ],
+  "failedPosts": []
 }
