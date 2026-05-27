@@ -5,6 +5,7 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
+    "start": "tsx main.ts && tsx main_cinema.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
