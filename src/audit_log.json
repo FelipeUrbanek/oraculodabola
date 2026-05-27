@@ -1338,5 +1338,22 @@
     "category": "Séries",
     "status": "FAILED",
     "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-05-27T15:49:04.873Z",
+    "headline": "NEYMAR COM CABELO AZUL!",
+    "source_url": "https://www.terra.com.br/esportes/santos/neymar-de-cabelo-azul-entenda-a-foto-do-craque-que-tomou-as-redes,304c4fc6c039b6c01eda196cb3c23732pq23v14g.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-05-27T15:50:04.521Z",
+    "headline": "Livro com storyboards dos filmes de Alfred Hitchcock chega ao Brasil em outubro; veja detalhes",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/filmes/livro-com-storyboards-dos-filmes-de-alfred-hitchcock-chega-ao-brasil-em-outubro-veja-detalhes,891648e54ba23d1f3256350d00b1f432du1ijja4.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Filmes",
+    "status": "FAILED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
   }
 ]
