@@ -17,8 +17,8 @@
     },
     "Grêmio": {
       "coach": "Luís Castro",
-      "league": "Campeonato Brasileiro / Brasileirão",
-      "recent_changes": "Com a vitória sobre o Santos, o Grêmio ganha fôlego na competição e afasta o fantasma da instabilidade, chegando aos 21 pontos na 13ª colocação."
+      "league": "Campeonato Brasileiro / Copa do Brasil / Brasileirão Feminino",
+      "recent_changes": "Neymar, do Santos, desfalcará o Grêmio em confronto futuro, pois não jogará mais pelo clube paulista antes da Copa do Mundo devido a lesão. O goleiro Weverton recuperou sua melhor forma técnica no clube, com atuações de destaque que lhe renderam uma convocação surpresa para a Seleção Brasileira na Copa do Mundo de 2026."
     },
     "São Paulo": {
       "coach": "Dorival Júnior",
@@ -157,8 +157,8 @@
     },
     "Santos": {
       "coach": "Cuca",
-      "league": "Campeonato Brasileiro / Copa Sul-Americana",
-      "recent_changes": "O Santos se prepara para enfrentar o Deportivo Cuenca pela Copa Sul-Americana, com desfalques importantes, incluindo o goleiro Gabriel Brazão, e busca uma vitória para avançar nos playoffs do torneio."
+      "league": "Campeonato Brasileiro / Brasileirão Feminino / Copa Sul-Americana",
+      "recent_changes": "O Santos prepara limpa no elenco, com pelo menos quatro saídas previstas nas próximas semanas, visando aliviar a folha salarial e abrir espaço para novas contratações. Mayke, Zé Rafael, Zé Ivaldo e Tomás Rincón estão entre os nomes mais cotados para sair. Rony também foi sondado pelo Athletico-PR, mas permanece nos planos do técnico Cuca."
     },
     "Vitória": {
       "coach": "Não mencionado",
@@ -203,7 +203,7 @@
     "Coritiba": {
       "coach": "Não mencionado",
       "league": "Brasileirão",
-      "recent_changes": "O STJD manteve o resultado da partida contra o Santos, que o Coritiba venceu por 3 a 0, após negar o pedido de anulação do Santos devido à substituição equivocada de Neymar."
+      "recent_changes": "Venceu o Santos por 3 a 0 na Neo Química Arena, em partida válida pelo Campeonato Brasileiro no último domingo (17), em um jogo marcado pela polêmica substituição por engano de Neymar."
     },
     "Olímpia": {
       "coach": "Não mencionado",
@@ -391,5 +391,5 @@
       "recent_changes": "Nesta temporada, empatou por 1 a 1 com o Santos na Vila Belmiro em duelo pela Copa Sul-Americana, jogo que foi marcado por discussão entre Neymar e um torcedor."
     }
   },
-  "last_updated": "2026-05-26T15:36:09.466Z"
+  "last_updated": "2026-05-21T19:31:44.719Z"
 }

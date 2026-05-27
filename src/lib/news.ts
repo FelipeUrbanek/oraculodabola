@@ -173,7 +173,8 @@ export async function resolveAndScrapeImage(
     }
 
     if (imageUrl || exactDate) {
-        console.log(`[SCRAPER SUCCESS] ${finalUrl} -> img: ${imageUrl ? 'SIM' : 'NÃO'}, date: ${exactDate}`);
+        // Log verboso desativado para limpar o console
+        // console.log(`[SCRAPER SUCCESS] ${finalUrl} -> img: ${imageUrl ? 'SIM' : 'NÃO'}, date: ${exactDate}`);
     }
 
     return { finalUrl, imageUrl: imageUrl || undefined, fullSnippet, exactDate: exactDate || undefined };

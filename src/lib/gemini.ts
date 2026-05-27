@@ -48,23 +48,29 @@ const GROQ_API_KEY = process.env.GROQ_API_KEY || "";
 
 async function callGroq(prompt: string, isJson: boolean = true, fallbackModel: boolean = false): Promise<any> {
   const modelToUse = fallbackModel ? "llama-3.1-8b-instant" : "llama-3.3-70b-versatile";
-  console.log(`[Groq] Chamando ${modelToUse} com prompt de tamanho: ${prompt.length} caracteres.`);
+  // console.log(`[Groq] Chamando ${modelToUse} com prompt de tamanho: ${prompt.length} caracteres.`);
   try {
+    const body: any = {
+      model: modelToUse,
+      messages: [
+        { role: "system", content: "Você deve sempre responder em Português do Brasil (pt-BR)." + (isJson ? " Você deve retornar APENAS um JSON válido. Não inclua comentários nem formatação Markdown extra." : "") },
+        { role: "user", content: prompt }
+      ],
+      temperature: 0.7,
+      max_tokens: 2000
+    };
+
+    if (isJson) {
+      body.response_format = { type: "json_object" };
+    }
+
     const response = await fetch("https://api.groq.com/openai/v1/chat/completions", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
         "Authorization": `Bearer ${GROQ_API_KEY}`
       },
-      body: JSON.stringify({
-        model: modelToUse,
-        messages: [
-          { role: "system", content: "Você deve sempre responder em Português do Brasil (pt-BR)." },
-          { role: "user", content: prompt }
-        ],
-        temperature: 0.7,
-        max_tokens: 2000
-      })
+      body: JSON.stringify(body)
     });
 
     if (!response.ok) {
@@ -76,6 +82,9 @@ async function callGroq(prompt: string, isJson: boolean = true, fallbackModel: b
     let text = data.choices[0].message.content.trim();
     if (isJson) {
       text = extractJSON(text);
+      // Remove possible unescaped control characters inside string literals that break JSON.parse
+      // We keep newlines (\n) and carriage returns (\r) and tabs (\t), but remove other controls.
+      text = text.replace(/[\u0000-\u0008\u000B\u000C\u000E-\u001F]+/g, "");
     }
     
     return isJson ? JSON.parse(text) : text;
@@ -123,7 +132,7 @@ async function callGemini(prompt: string, isJson: boolean = true, retryCount: nu
 
   // Se esgotamos as chaves, usamos o Groq como última opção
   if (retryCount >= API_KEYS.length) {
-      console.warn(`\n[AVISO] Todas as chaves do Gemini falharam ou esgotaram a cota. Usando GROQ como fallback final...`);
+      if (retryCount === API_KEYS.length) console.warn(`⚠️ Usando Groq (Fallback)...`);
       return await callGroq(prompt, isJson);
   }
 
@@ -148,11 +157,13 @@ async function callGemini(prompt: string, isJson: boolean = true, retryCount: nu
       }
       return text;
     } catch (e: any) {
-      const cleanErr = cleanErrorMessage(e.message);
-      console.log(`⚠️ Modelo ${modelName} com a chave ${currentKeyIndex + 1} falhou. Erro: ${cleanErr}`);
+      // const cleanErr = cleanErrorMessage(e.message);
+      // Ocultando log verboso de falha individual por modelo/chave para limpar o terminal
+      // console.log(`⚠️ Modelo ${modelName} com a chave ${currentKeyIndex + 1} falhou. Erro: ${cleanErr}`);
+      
       // Verifica se o erro foi de rate limit/cota (429) ou acesso negado/billing (403)
       if (e.message && (e.message.includes("429") || e.message.includes("403"))) {
-         console.warn(`[AVISO] Chave ${currentKeyIndex + 1} indisponível (Erro: ${e.message.includes("429") ? "429 (Cota)" : "403 (Acesso)"}). Rotacionando chave...`);
+         // console.warn(`[AVISO] Chave ${currentKeyIndex + 1} indisponível (Erro: ${e.message.includes("429") ? "429 (Cota)" : "403 (Acesso)"}). Rotacionando chave...`);
          currentKeyIndex = (currentKeyIndex + 1) % API_KEYS.length;
          return callGemini(prompt, isJson, retryCount + 1);
       }

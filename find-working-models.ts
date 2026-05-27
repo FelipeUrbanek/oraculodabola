@@ -26,7 +26,7 @@ async function testKey(keyName: string, keyVal: string) {
       .map((m: any) => m.name.replace('models/', ''));
 
     console.log(`📊 ${keyName}: Encontrados ${candidates.length} candidatos. Testando alguns principais...`);
-    const testModels = ['gemini-2.5-flash', 'gemini-2.0-flash', 'gemini-1.5-flash', 'gemini-1.5-pro', 'gemini-pro-latest'];
+    const testModels = ['gemini-2.5-flash', 'gemini-2.5-pro', 'gemini-2.0-flash', 'gemini-2.0-pro-exp', 'gemini-1.5-pro', 'gemini-1.5-flash'];
 
     for (const modelName of testModels) {
       if (!candidates.includes(modelName)) continue;
@@ -82,8 +82,15 @@ async function testGroq() {
 }
 
 async function run() {
-  await testKey('GEMINI_API_KEY', process.env.GEMINI_API_KEY || '');
-  await testKey('GEMINI_API_KEY_BACKUP', process.env.GEMINI_API_KEY_BACKUP || '');
+  const keys = process.env.GEMINI_API_KEYS ? process.env.GEMINI_API_KEYS.split(',').map(k => k.trim()) : [];
+  if (keys.length === 0) {
+    console.log('\n⚠️ Nenhuma chave GEMINI_API_KEYS configurada.');
+  } else {
+    for (let i = 0; i < keys.length; i++) {
+      await testKey(`GEMINI_API_KEYS[${i}]`, keys[i]);
+    }
+  }
+  
   await testGroq();
 }
 

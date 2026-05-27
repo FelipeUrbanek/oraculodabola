@@ -4,7 +4,10 @@ import dotenv from 'dotenv';
 dotenv.config({ path: '.env.local' });
 
 async function listModels() {
-  const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY || '');
+  const keys = process.env.GEMINI_API_KEYS ? process.env.GEMINI_API_KEYS.split(',').map(k => k.trim()) : [];
+  const keyToUse = process.env.GEMINI_API_KEY || keys[0] || '';
+  
+  const genAI = new GoogleGenerativeAI(keyToUse);
   
   try {
     // No SDK v1.x do Gemini, usamos o método listModels do objeto genAI
@@ -12,7 +15,7 @@ async function listModels() {
     console.log('🔍 Buscando modelos disponíveis com sua chave...');
     
     // Tentativa via REST API para ser mais preciso no erro
-    const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models?key=${process.env.GEMINI_API_KEY}`);
+    const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models?key=${keyToUse}`);
     const data = await response.json();
     
     if (data.error) {
