@@ -492,6 +492,12 @@ export async function processNewsWithGemini(
     );
   }
 
+  if (!Array.isArray(processed.hashtags)) {
+    processed.hashtags = typeof processed.hashtags === "string" 
+      ? (processed.hashtags as string).split(/[ ,]+/).map((h: string) => h.trim().replace(/^#/, "")).filter(Boolean)
+      : [];
+  }
+
   return processed;
 }
 
@@ -549,6 +555,12 @@ export async function processCinemaNewsWithGemini(
     throw new Error(
       `❌ Erro de Rejeição/Placeholder detectado em Cinema: ${processed.headline}`,
     );
+  }
+
+  if (!Array.isArray(processed.hashtags)) {
+    processed.hashtags = typeof processed.hashtags === "string" 
+      ? (processed.hashtags as string).split(/[ ,]+/).map((h: string) => h.trim().replace(/^#/, "")).filter(Boolean)
+      : [];
   }
 
   return processed;
