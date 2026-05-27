@@ -1355,5 +1355,13 @@
     "category": "Filmes",
     "status": "FAILED",
     "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-05-27T17:57:59.460Z",
+    "headline": "SANTOS RUMO A PORTUGAL: VIAGEM E BAIXAS!",
+    "source_url": "https://www.terra.com.br/esportes/santos/santos-fara-intertemporada-em-portugal-e-ja-tem-primeiro-amistoso-definido,ee9669ef072e932ce56f95c4d5940237hgadh0uy.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "SUCCESS"
   }
 ]
