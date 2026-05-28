@@ -156,9 +156,9 @@
       "recent_changes": "Avançou para as oitavas de final da Copa do Brasil, lucrando R$ 5 milhões em premiações, após eliminar o Bahia. A equipe também superou o time baiano no Campeonato Brasileiro com uma vitória por 4 a 1 nesta temporada, porém encontra-se atualmente na zona de rebaixamento da competição."
     },
     "Santos": {
-      "coach": "Cuca",
-      "league": "Campeonato Brasileiro / Brasileirão Feminino / Copa Sul-Americana",
-      "recent_changes": "O Santos confirmou uma excursão internacional em Portugal entre os dias 7 e 17 de julho de 2026, incluindo amistosos contra o Vitória SC e outros adversários a serem divulgados."
+      "coach": "Marcelo Frigerio",
+      "league": "Copa do Brasil",
+      "recent_changes": "Buscando adaptação ao clima e às condições locais para o duelo inédito contra o Atlético Piauiense."
     },
     "Vitória": {
       "league": "Copa do Brasil / Campeonato Brasileiro",
@@ -388,7 +388,12 @@
       "coach": "Não mencionado",
       "league": "Copa Sul-Americana",
       "recent_changes": "Nesta temporada, empatou por 1 a 1 com o Santos na Vila Belmiro em duelo pela Copa Sul-Americana, jogo que foi marcado por discussão entre Neymar e um torcedor."
+    },
+    "Atlético Piauiense": {
+      "coach": "Não mencionado",
+      "league": "Copa do Brasil",
+      "recent_changes": "Conquistou o Campeonato Brasileiro A3 e agora enfrenta o Santos na Copa do Brasil."
     }
   },
-  "last_updated": "2026-05-27T21:41:28.305Z"
+  "last_updated": "2026-05-28T16:02:44.559Z"
 }

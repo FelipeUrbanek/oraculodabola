@@ -1,16 +1,16 @@
 {
-  "timestamp": "2026-05-28T15:50:36.058Z",
+  "timestamp": "2026-05-28T16:03:15.797Z",
   "status": "SUCCESS",
   "postsPlanned": 1,
-  "candidatesFound": 5,
+  "candidatesFound": 4,
   "successfulPosts": [
     {
-      "title": "Em 'Brasil 70', Adnet divide cena com Santoro e exalta papel do ator como João Saldanha: 'Gênio'",
-      "headline": "BRASIL 70",
-      "category": "Séries",
-      "instagramId": "17864100603629906",
-      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-05-28/2026-05-28-15-51-22_feed.jpg",
-      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-05-28/2026-05-28-15-51-22_story.jpg"
+      "title": "Bad Bunny em 'Toy Story 5': Ator vai dublar brinquedo em formato de pizza",
+      "headline": "BAD BUNNY EM TOY STORY 5",
+      "category": "Filmes",
+      "instagramId": "18101486150015895",
+      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-05-28/2026-05-28-16-04-03_feed.jpg",
+      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-05-28/2026-05-28-16-04-03_story.jpg"
     }
   ],
   "failedPosts": []

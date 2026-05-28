@@ -1437,5 +1437,21 @@
     "source_domain": "www.terra.com.br",
     "category": "Séries",
     "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-05-28T16:03:04.987Z",
+    "headline": "SANTOS NA COPA DO BRASIL",
+    "source_url": "https://www.terra.com.br/esportes/santos/duelo-inedito-no-calor-de-teresina-decide-quem-segue-viva-na-copa-do-brasil,32bb0be5f3578ec6c04e44bb3f33c5217s961nya.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-05-28T16:04:22.495Z",
+    "headline": "BAD BUNNY EM TOY STORY 5",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/filmes/bad-bunny-em-toy-story-5-ator-vai-dublar-brinquedo-em-formato-de-pizza,251048da78225747db3a1aac60d00cf5plhhfkz7.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Filmes",
+    "status": "SUCCESS"
   }
 ]
