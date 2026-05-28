@@ -1421,5 +1421,21 @@
     "source_domain": "www.terra.com.br",
     "category": "Séries",
     "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-05-28T15:50:30.793Z",
+    "headline": "SANTOS MIRA GANSO",
+    "source_url": "https://www.terra.com.br/esportes/fluminense/afastado-pelo-fluminense-ganso-entra-na-mira-de-clubes-da-serie-a-diz-jonalista,3319619a7044aadf8f6f65f7588c965c1j0cs99u.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-05-28T15:51:45.177Z",
+    "headline": "BRASIL 70",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/series/em-brasil-70-adnet-divide-cena-com-santoro-e-exalta-papel-do-ator-como-joao-saldanha-genio,c9d5412107dab1e0262c675acf4a8ea5g4gze3em.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Séries",
+    "status": "SUCCESS"
   }
 ]

@@ -1,16 +1,16 @@
 {
-  "timestamp": "2026-05-27T21:42:02.344Z",
+  "timestamp": "2026-05-28T15:50:36.058Z",
   "status": "SUCCESS",
   "postsPlanned": 1,
-  "candidatesFound": 2,
+  "candidatesFound": 5,
   "successfulPosts": [
     {
-      "title": "Série 'Mafalda', da Netflix, vai manter tom político: 'De outra forma, não seria ela', diz produtor",
-      "headline": "MAFALDA CHEGA",
+      "title": "Em 'Brasil 70', Adnet divide cena com Santoro e exalta papel do ator como João Saldanha: 'Gênio'",
+      "headline": "BRASIL 70",
       "category": "Séries",
-      "instagramId": "17865959784626996",
-      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-05-27/2026-05-27-21-44-08_feed.jpg",
-      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-05-27/2026-05-27-21-44-08_story.jpg"
+      "instagramId": "17864100603629906",
+      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-05-28/2026-05-28-15-51-22_feed.jpg",
+      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-05-28/2026-05-28-15-51-22_story.jpg"
     }
   ],
   "failedPosts": []
