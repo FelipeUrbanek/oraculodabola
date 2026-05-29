@@ -1453,5 +1453,21 @@
     "source_domain": "www.terra.com.br",
     "category": "Filmes",
     "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-05-29T15:39:27.998Z",
+    "headline": "SANTOS NA SUL-AMERICANA",
+    "source_url": "https://www.terra.com.br/esportes/botafogo/saiba-como-ficou-o-chaveamento-das-oitavas-de-final-da-sul-americana,e8d8519378b3aa9465246ad3313ac13d2bn0kl1e.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-05-29T15:40:52.137Z",
+    "headline": "X-MEN '97",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/series/x-men-97-ganha-trailer-epico-para-a-2-temporada,a8654796a41d36a484a0c6f271afb13ej99q6uqm.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Séries",
+    "status": "SUCCESS"
   }
 ]

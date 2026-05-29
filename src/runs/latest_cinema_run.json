@@ -1,16 +1,16 @@
 {
-  "timestamp": "2026-05-28T16:03:15.797Z",
+  "timestamp": "2026-05-29T15:39:33.506Z",
   "status": "SUCCESS",
   "postsPlanned": 1,
   "candidatesFound": 4,
   "successfulPosts": [
     {
-      "title": "Bad Bunny em 'Toy Story 5': Ator vai dublar brinquedo em formato de pizza",
-      "headline": "BAD BUNNY EM TOY STORY 5",
-      "category": "Filmes",
-      "instagramId": "18101486150015895",
-      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-05-28/2026-05-28-16-04-03_feed.jpg",
-      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-05-28/2026-05-28-16-04-03_story.jpg"
+      "title": "X-Men '97 ganha trailer épico para a 2ª temporada;",
+      "headline": "X-MEN '97",
+      "category": "Séries",
+      "instagramId": "18590944096034201",
+      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-05-29/2026-05-29-15-40-32_feed.jpg",
+      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-05-29/2026-05-29-15-40-32_story.jpg"
     }
   ],
   "failedPosts": []
