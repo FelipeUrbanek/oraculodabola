@@ -1469,5 +1469,13 @@
     "source_domain": "www.terra.com.br",
     "category": "Séries",
     "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-05-30T16:08:17.876Z",
+    "headline": "FRIENDS SEM IA",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/series/nunca-vi-a-ia-escrever-uma-piada-que-eu-achasse-engracada-diz-roteirista-de-friends,b7b69767bc2180048fc0a09196057ac0neyvr3or.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Séries",
+    "status": "SUCCESS"
   }
 ]
