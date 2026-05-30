@@ -1,16 +1,16 @@
 {
-  "timestamp": "2026-05-30T16:07:04.545Z",
+  "timestamp": "2026-05-30T22:03:10.810Z",
   "status": "SUCCESS",
   "postsPlanned": 1,
-  "candidatesFound": 4,
+  "candidatesFound": 5,
   "successfulPosts": [
     {
-      "title": "'Nunca vi a IA escrever uma piada que eu achasse engraçada', diz roteirista de 'Friends'",
-      "headline": "FRIENDS SEM IA",
+      "title": "'Os Testamentos': Chase Infiniti quer que sequência de 'O Conto da Aia' continue chocando o público",
+      "headline": "OS TESTAMENTOS",
       "category": "Séries",
-      "instagramId": "18074563928306569",
-      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-05-30/2026-05-30-16-07-56_feed.jpg",
-      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-05-30/2026-05-30-16-07-56_story.jpg"
+      "instagramId": "18034975091651551",
+      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-05-30/2026-05-30-22-04-09_feed.jpg",
+      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-05-30/2026-05-30-22-04-09_story.jpg"
     }
   ],
   "failedPosts": []
