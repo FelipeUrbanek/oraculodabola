@@ -1,16 +1,16 @@
 {
-  "timestamp": "2026-05-31T16:12:11.212Z",
+  "timestamp": "2026-05-31T22:02:45.990Z",
   "status": "SUCCESS",
   "postsPlanned": 1,
-  "candidatesFound": 8,
+  "candidatesFound": 7,
   "successfulPosts": [
     {
-      "title": "7 filmes no streaming para quem precisa reaprender a sentir prazer nas coisas cotidianas",
-      "headline": "FILMES PARA REFLETIR",
-      "category": "Filmes",
-      "instagramId": "17967672786073988",
-      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-05-31/2026-05-31-16-12-54_feed.jpg",
-      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-05-31/2026-05-31-16-12-54_story.jpg"
+      "title": "Filme de 'The Legend of Zelda' tem estreia antecipada",
+      "headline": "ZELDA CHEGA CEDO!",
+      "category": "Estreia",
+      "instagramId": "18115171834647334",
+      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-05-31/2026-05-31-22-03-30_feed.jpg",
+      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-05-31/2026-05-31-22-03-30_story.jpg"
     }
   ],
   "failedPosts": []
