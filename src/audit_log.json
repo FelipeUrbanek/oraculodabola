@@ -1485,5 +1485,21 @@
     "source_domain": "www.terra.com.br",
     "category": "Séries",
     "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-05-31T16:12:01.478Z",
+    "headline": "SANTOS PRECISA DE REFORÇOS",
+    "source_url": "https://www.terra.com.br/esportes/santos/cuca-valoriza-base-do-santos-mas-pede-reforcos,6b0e621c9344f83646064fc5edf23167ts8y49hp.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-05-31T16:13:12.559Z",
+    "headline": "FILMES PARA REFLETIR",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/filmes/7-filmes-no-streaming-para-quem-precisa-reaprender-a-sentir-prazer-nas-coisas-cotidianas,2b6ed5d6f3f003357622e287174877d2za81hm0q.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Filmes",
+    "status": "SUCCESS"
   }
 ]

@@ -156,9 +156,9 @@
       "recent_changes": "Avançou para as oitavas de final da Copa do Brasil, lucrando R$ 5 milhões em premiações, após eliminar o Bahia. A equipe também superou o time baiano no Campeonato Brasileiro com uma vitória por 4 a 1 nesta temporada, porém encontra-se atualmente na zona de rebaixamento da competição."
     },
     "Santos": {
-      "coach": "Marcelo Frigerio",
-      "league": "Copa do Brasil",
-      "recent_changes": "Buscando adaptação ao clima e às condições locais para o duelo inédito contra o Atlético Piauiense."
+      "coach": "Cuca",
+      "league": "Campeonato Brasileiro",
+      "recent_changes": "O técnico Cuca valorizou o triunfo por 3 a 1 sobre o Vitória e destacou a importância de reforços para a sequência da temporada."
     },
     "Vitória": {
       "league": "Copa do Brasil / Campeonato Brasileiro",
@@ -400,5 +400,5 @@
       "recent_changes": "Vai enfrentar o Vasco no Maracanã, pela quinta rodada do Grupo C da Copa Libertadores."
     }
   },
-  "last_updated": "2026-05-29T15:39:05.873Z"
+  "last_updated": "2026-05-31T16:11:37.146Z"
 }

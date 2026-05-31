@@ -1,16 +1,16 @@
 {
-  "timestamp": "2026-05-30T22:03:10.810Z",
+  "timestamp": "2026-05-31T16:12:11.212Z",
   "status": "SUCCESS",
   "postsPlanned": 1,
-  "candidatesFound": 5,
+  "candidatesFound": 8,
   "successfulPosts": [
     {
-      "title": "'Os Testamentos': Chase Infiniti quer que sequência de 'O Conto da Aia' continue chocando o público",
-      "headline": "OS TESTAMENTOS",
-      "category": "Séries",
-      "instagramId": "18034975091651551",
-      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-05-30/2026-05-30-22-04-09_feed.jpg",
-      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-05-30/2026-05-30-22-04-09_story.jpg"
+      "title": "7 filmes no streaming para quem precisa reaprender a sentir prazer nas coisas cotidianas",
+      "headline": "FILMES PARA REFLETIR",
+      "category": "Filmes",
+      "instagramId": "17967672786073988",
+      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-05-31/2026-05-31-16-12-54_feed.jpg",
+      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-05-31/2026-05-31-16-12-54_story.jpg"
     }
   ],
   "failedPosts": []
