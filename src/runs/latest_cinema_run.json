@@ -1,16 +1,16 @@
 {
-  "timestamp": "2026-05-31T22:02:45.990Z",
+  "timestamp": "2026-06-02T16:29:39.099Z",
   "status": "SUCCESS",
   "postsPlanned": 1,
-  "candidatesFound": 7,
+  "candidatesFound": 11,
   "successfulPosts": [
     {
-      "title": "Filme de 'The Legend of Zelda' tem estreia antecipada",
-      "headline": "ZELDA CHEGA CEDO!",
-      "category": "Estreia",
-      "instagramId": "18115171834647334",
-      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-05-31/2026-05-31-22-03-30_feed.jpg",
-      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-05-31/2026-05-31-22-03-30_story.jpg"
+      "title": "Morre Owain Rhys Davies, de 'Twin Peaks', aos 44 anos",
+      "headline": "MORRE OWAIN RHYS DAVIES",
+      "category": "Séries",
+      "instagramId": "17941076910229022",
+      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-06-02/2026-06-02-16-30-24_feed.jpg",
+      "storyPath": null
     }
   ],
   "failedPosts": []

@@ -1517,5 +1517,21 @@
     "source_domain": "www.terra.com.br",
     "category": "Estreia",
     "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-06-02T16:29:31.632Z",
+    "headline": "SANDRY AFASTADO",
+    "source_url": "https://www.terra.com.br/esportes/futebol/mercado-da-bola/sandry-segue-afastado-e-criciuma-aguarda-decisao-do-santos,ea629ecaf66e659a5810ba4ed791a721ae4l6l8c.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-06-02T16:30:45.015Z",
+    "headline": "MORRE OWAIN RHYS DAVIES",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/series/morre-owain-rhys-davies-de-twin-peaks-aos-44-anos,db54ebd73346924dd14621e1f1ecd92df0eujju9.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Séries",
+    "status": "SUCCESS"
   }
 ]
