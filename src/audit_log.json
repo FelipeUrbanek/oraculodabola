@@ -1533,5 +1533,21 @@
     "source_domain": "www.terra.com.br",
     "category": "Séries",
     "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-06-04T15:20:31.960Z",
+    "headline": "GABIGOL SUSPENSO!",
+    "source_url": "https://www.terra.com.br/esportes/santos/santos-gabigol-e-suspenso-por-uma-partida-por-gesto-obsceno,881a2aa9df1764ba9cece0b00a98da64mtu6dcqi.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-06-04T15:21:45.964Z",
+    "headline": "TODO MUNDO EM PÂNICO 6",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/filmes/sai-de-todo-mundo-em-panico-6-querendo-mais-encontrei-esses-5-filmes-no-streaming-na-mesma-pegada-que-me-fizeram-rir-sem-parar,46d0c4c27fffa86442bdccb5b0094056om9n03j5.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Filmes",
+    "status": "SUCCESS"
   }
 ]

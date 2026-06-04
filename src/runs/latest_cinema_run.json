@@ -1,16 +1,16 @@
 {
-  "timestamp": "2026-06-02T16:29:39.099Z",
+  "timestamp": "2026-06-04T15:20:36.170Z",
   "status": "SUCCESS",
   "postsPlanned": 1,
-  "candidatesFound": 11,
+  "candidatesFound": 9,
   "successfulPosts": [
     {
-      "title": "Morre Owain Rhys Davies, de 'Twin Peaks', aos 44 anos",
-      "headline": "MORRE OWAIN RHYS DAVIES",
-      "category": "Séries",
-      "instagramId": "17941076910229022",
-      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-06-02/2026-06-02-16-30-24_feed.jpg",
-      "storyPath": null
+      "title": "Saí de 'Todo Mundo em Pânico 6' querendo mais: encontrei esses 5 filmes no streaming na mesma pegada que me fizeram rir sem parar",
+      "headline": "TODO MUNDO EM PÂNICO 6",
+      "category": "Filmes",
+      "instagramId": "17976406146031467",
+      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-06-04/2026-06-04-15-21-26_feed.jpg",
+      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-06-04/2026-06-04-15-21-26_story.jpg"
     }
   ],
   "failedPosts": []
