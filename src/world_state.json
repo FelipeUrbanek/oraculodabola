@@ -31,7 +31,6 @@
       "recent_changes": "A diretoria rescindiu o contrato do meio-campista José Martínez após o jogador se reapresentar com 35 dias de atraso e diagnosticado com ruptura do ligamento cruzado anterior (LCA). O clube arcará com a cirurgia no joelho e pagará 30% dos salários de fevereiro a dezembro de 2026 (exceto janeiro). A diretoria também chegou a consultar a situação do atacante Lucas Ferreira no início do ano e vive a expectativa do retorno de Memphis Depay contra o Peñarol, pela Libertadores. A renovação do holandês segue indefinida. Anteriormente: foi derrotado pelo Botafogo por 3 a 1."
     },
     "Seleção Brasileira": {
-      "coach": "Carlo Ancelotti",
       "league": "Copa do Mundo de 2026",
       "recent_changes": "O técnico Carlo Ancelotti anunciou a lista oficial para a Copa do Mundo de 2026 e justificou a convocação de Neymar (que vem de lesões e fase conturbada no Santos) destacando a qualidade e o que o jogador pode agregar coletivamente."
     },
@@ -156,9 +155,8 @@
       "recent_changes": "Avançou para as oitavas de final da Copa do Brasil, lucrando R$ 5 milhões em premiações, após eliminar o Bahia. A equipe também superou o time baiano no Campeonato Brasileiro com uma vitória por 4 a 1 nesta temporada, porém encontra-se atualmente na zona de rebaixamento da competição."
     },
     "Santos": {
-      "coach": "Cuca",
       "league": "Campeonato Brasileiro",
-      "recent_changes": "Gabigol foi suspenso por uma partida devido a um gesto obsceno durante a vitória sobre o Vitória."
+      "recent_changes": "O Santos foi condenado pela Corte Arbitral do Esporte (CAS) a pagar 12 milhões de reais ao Monaco, da França, pela contratação do meio-campista Jean Lucas. O Peixe precisa quitar a pendência para evitar sofrer um transfer ban."
     },
     "Vitória": {
       "league": "Copa do Brasil / Campeonato Brasileiro",
@@ -410,5 +408,5 @@
       "recent_changes": "Hiroki Ito foi convocado para a Copa do Mundo e tem raízes com o Santos, pois iniciou sua carreira em uma academia ligada ao clube paulista em Shizuoka."
     }
   },
-  "last_updated": "2026-06-04T22:23:19.058Z"
+  "last_updated": "2026-06-05T22:16:26.052Z"
 }

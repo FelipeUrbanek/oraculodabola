@@ -1565,5 +1565,21 @@
     "source_domain": "www.terra.com.br",
     "category": "Breaking",
     "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-06-05T22:16:47.904Z",
+    "headline": "SANTOS CONDENADO",
+    "source_url": "https://www.terra.com.br/esportes/santos/santos-e-condenado-a-pagar-r-12-milhoes-ao-monaco-e-pode-sofrer-transfer-ban,f58c82272bb4d6f60fc261ffd1be5acfjntys8h5.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-06-05T22:18:00.671Z",
+    "headline": "ATOR MORTO",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/filmes/james-handy-ator-de-top-gun-maverick-e-jumanji-e-morto-a-facadas-filho-de-namorada-e-suspeito,c47be4ea5a9f0796df2e8c6424d14bd03o79lb33.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Breaking",
+    "status": "SUCCESS"
   }
 ]
