@@ -1,16 +1,16 @@
 {
-  "timestamp": "2026-06-06T16:07:43.525Z",
+  "timestamp": "2026-06-06T22:05:01.694Z",
   "status": "SUCCESS",
   "postsPlanned": 1,
-  "candidatesFound": 4,
+  "candidatesFound": 6,
   "successfulPosts": [
     {
-      "title": "Namorada de James Handy diz que filho parou tratamento para esquizofrenia pouco antes do crime",
-      "headline": "ATORES EM CRIME",
-      "category": "Breaking",
-      "instagramId": "18116585767884570",
-      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-06-06/2026-06-06-16-08-30_feed.jpg",
-      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-06-06/2026-06-06-16-08-30_story.jpg"
+      "title": "'Cabo do Medo', doc do Tetra, true crime britânico e mais estreias da semana no streaming",
+      "headline": "NOVAS ESTREIAS",
+      "category": "Estreia",
+      "instagramId": "17997966320778988",
+      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-06-06/2026-06-06-22-06-01_feed.jpg",
+      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-06-06/2026-06-06-22-06-01_story.jpg"
     }
   ],
   "failedPosts": []
