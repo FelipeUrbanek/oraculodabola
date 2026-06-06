@@ -1581,5 +1581,21 @@
     "source_domain": "www.terra.com.br",
     "category": "Breaking",
     "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-06-06T16:07:36.380Z",
+    "headline": "ARBOLEDa NO SANTOS?",
+    "source_url": "https://www.terra.com.br/esportes/futebol/mercado-da-bola/arboleda-e-oferecido-ao-santos-e-agita-bastidores-do-mercado,dea979fd30e937a5fef5066df9346105dxer1i36.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-06-06T16:08:52.586Z",
+    "headline": "ATORES EM CRIME",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/filmes/namorada-de-james-handy-diz-que-filho-parou-tratamento-para-esquizofrenia-pouco-antes-do-crime,d2e0879b7ae0663aaec2650fad60038769iqflw6.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Breaking",
+    "status": "SUCCESS"
   }
 ]

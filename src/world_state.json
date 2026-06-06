@@ -21,9 +21,7 @@
       "recent_changes": "Neymar, do Santos, desfalcará o Grêmio em confronto futuro, pois não jogará mais pelo clube paulista antes da Copa do Mundo devido a lesão. O goleiro Weverton recuperou sua melhor forma técnica no clube, com atuações de destaque que lhe renderam uma convocação surpresa para a Seleção Brasileira na Copa do Mundo de 2026."
     },
     "São Paulo": {
-      "coach": "Dorival Júnior",
-      "league": "Brasileirão / Copa do Brasil / Copa Sul-Americana",
-      "recent_changes": "Foi o clube revelador de Lucas Ferreira, atacante negociado com o Shakhtar Donetsk. No Brasileirão, sofreu uma derrota por 2 a 1 para o Fluminense. Dorival Júnior foi oficialmente apresentado como o novo treinador nesta segunda-feira (18). O zagueiro Arboleda foi afastado pela diretoria após ficar 30 dias sem aparecer no clube. Os próximos compromissos são contra o Millonarios (Sul-Americana) e Botafogo (Brasileirão)."
+      "recent_changes": "O zagueiro Arboleda foi oferecido ao Santos, aumentando as dúvidas sobre o seu futuro no clube."
     },
     "Corinthians": {
       "coach": "Fernando Diniz",
@@ -155,8 +153,7 @@
       "recent_changes": "Avançou para as oitavas de final da Copa do Brasil, lucrando R$ 5 milhões em premiações, após eliminar o Bahia. A equipe também superou o time baiano no Campeonato Brasileiro com uma vitória por 4 a 1 nesta temporada, porém encontra-se atualmente na zona de rebaixamento da competição."
     },
     "Santos": {
-      "league": "Campeonato Brasileiro",
-      "recent_changes": "O Santos foi condenado pela Corte Arbitral do Esporte (CAS) a pagar 12 milhões de reais ao Monaco, da França, pela contratação do meio-campista Jean Lucas. O Peixe precisa quitar a pendência para evitar sofrer um transfer ban."
+      "recent_changes": "O nome de Arboleda foi oferecido ao time para a próxima janela de transferências, e a diretoria está avaliando a possibilidade de contratação."
     },
     "Vitória": {
       "league": "Copa do Brasil / Campeonato Brasileiro",
@@ -408,5 +405,5 @@
       "recent_changes": "Hiroki Ito foi convocado para a Copa do Mundo e tem raízes com o Santos, pois iniciou sua carreira em uma academia ligada ao clube paulista em Shizuoka."
     }
   },
-  "last_updated": "2026-06-05T22:16:26.052Z"
+  "last_updated": "2026-06-06T16:07:14.725Z"
 }
