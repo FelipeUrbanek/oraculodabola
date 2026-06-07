@@ -30,7 +30,7 @@
     },
     "Seleção Brasileira": {
       "league": "Copa do Mundo de 2026",
-      "recent_changes": "O técnico Carlo Ancelotti anunciou a lista oficial para a Copa do Mundo de 2026 e justificou a convocação de Neymar (que vem de lesões e fase conturbada no Santos) destacando a qualidade e o que o jogador pode agregar coletivamente."
+      "recent_changes": "O técnico Carlo Ancelotti anunciou a lista oficial para a Copa do Mundo de 2026 e justificou a convocação de Neymar (que vem de lesões e fase conturbada no Santos) destacando a qualidade e o que o jogador pode agregar coletivamente. Neymar segue em fase final de recuperação e, além disso, vive a expectativa de voltar a treinar em campo ainda nesta semana."
     },
     "Atlético-MG": {
       "coach": "Eduardo Domínguez",
@@ -153,7 +153,7 @@
       "recent_changes": "Avançou para as oitavas de final da Copa do Brasil, lucrando R$ 5 milhões em premiações, após eliminar o Bahia. A equipe também superou o time baiano no Campeonato Brasileiro com uma vitória por 4 a 1 nesta temporada, porém encontra-se atualmente na zona de rebaixamento da competição."
     },
     "Santos": {
-      "recent_changes": "O nome de Arboleda foi oferecido ao time para a próxima janela de transferências, e a diretoria está avaliando a possibilidade de contratação."
+      "recent_changes": "O nome de Arboleda foi oferecido ao time para a próxima janela de transferências, e a diretoria está avaliando a possibilidade de contratação. Neymar segue em fase final de recuperação e, além disso, vive a expectativa de voltar a treinar em campo ainda nesta semana."
     },
     "Vitória": {
       "league": "Copa do Brasil / Campeonato Brasileiro",
@@ -335,9 +335,9 @@
       "recent_changes": "Empatou em 1 a 1 com o Flamengo no dia 29 de abril, na Argentina. Logo no início desta partida, o meia adversário Giorgian de Arrascaeta caiu de mau jeito e sofreu uma fratura na clavícula direita."
     },
     "Marrocos": {
-      "coach": "Não mencionado",
+      "coach": "",
       "league": "Copa do Mundo de 2026",
-      "recent_changes": "Está no Grupo C da Copa do Mundo de 2026 e será o adversário da Seleção Brasileira na estreia da competição, em partida que acontecerá no dia 13 de junho, às 19h (de Brasília), em Nova Jersey (EUA)."
+      "recent_changes": "Está no Grupo C da Copa do Mundo de 2026 e será o adversário da Seleção Brasileira na estreia da competição, em partida que acontecerá no dia 13 de junho, às 19h (de Brasília), em Nova Jersey (EUA). Neymar segue em fase final de recuperação e, além disso, vive a expectativa de voltar a treinar em campo ainda nesta semana."
     },
     "Panamá": {
       "coach": "Não mencionado",
@@ -405,5 +405,5 @@
       "recent_changes": "Hiroki Ito foi convocado para a Copa do Mundo e tem raízes com o Santos, pois iniciou sua carreira em uma academia ligada ao clube paulista em Shizuoka."
     }
   },
-  "last_updated": "2026-06-06T16:07:14.725Z"
+  "last_updated": "2026-06-07T16:19:38.458Z"
 }

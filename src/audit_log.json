@@ -1605,5 +1605,21 @@
     "source_domain": "www.terra.com.br",
     "category": "Estreia",
     "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-06-07T16:20:04.019Z",
+    "headline": "NEYMAR SE RECUPERA",
+    "source_url": "https://www.terra.com.br/esportes/brasil/neymar-usa-esteira-com-tecnologia-da-nasa-para-tratar-lesao-na-panturrilha,d71040f658c8ef74cdd63c61d2ad85dfnru6rp72.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Futebol",
+    "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-06-07T16:21:16.930Z",
+    "headline": "MESTRES DO UNIVERSO",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/filmes/critica-mestres-do-universo-e-brega-e-com-orgulho,115277e466f62d997e51d8136257d9f0g16xdvav.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Crítica",
+    "status": "SUCCESS"
   }
 ]

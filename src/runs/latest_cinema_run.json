@@ -1,16 +1,16 @@
 {
-  "timestamp": "2026-06-06T22:05:01.694Z",
+  "timestamp": "2026-06-07T16:20:09.504Z",
   "status": "SUCCESS",
   "postsPlanned": 1,
-  "candidatesFound": 6,
+  "candidatesFound": 5,
   "successfulPosts": [
     {
-      "title": "'Cabo do Medo', doc do Tetra, true crime britânico e mais estreias da semana no streaming",
-      "headline": "NOVAS ESTREIAS",
-      "category": "Estreia",
-      "instagramId": "17997966320778988",
-      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-06-06/2026-06-06-22-06-01_feed.jpg",
-      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-06-06/2026-06-06-22-06-01_story.jpg"
+      "title": "Crítica | Mestres do Universo \"é brega e com orgulho\"",
+      "headline": "MESTRES DO UNIVERSO",
+      "category": "Crítica",
+      "instagramId": "17884021950593115",
+      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-06-07/2026-06-07-16-20-54_feed.jpg",
+      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-06-07/2026-06-07-16-20-54_story.jpg"
     }
   ],
   "failedPosts": []
