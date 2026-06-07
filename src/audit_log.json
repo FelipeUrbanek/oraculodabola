@@ -1621,5 +1621,13 @@
     "source_domain": "www.terra.com.br",
     "category": "Crítica",
     "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-06-07T22:07:29.917Z",
+    "headline": "TODO MUNDO EM PÂNICO",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/filmes/todo-mundo-em-panico-volta-aos-cinemas-com-criadores-originais-em-nova-era-de-ouro-das-parodias,de28e26ade593a8f211fd07b2346c5edf1oxcrdj.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Filmes",
+    "status": "SUCCESS"
   }
 ]

@@ -1,16 +1,16 @@
 {
-  "timestamp": "2026-06-07T16:20:09.504Z",
+  "timestamp": "2026-06-07T22:06:25.926Z",
   "status": "SUCCESS",
   "postsPlanned": 1,
   "candidatesFound": 5,
   "successfulPosts": [
     {
-      "title": "Crítica | Mestres do Universo \"é brega e com orgulho\"",
-      "headline": "MESTRES DO UNIVERSO",
-      "category": "Crítica",
-      "instagramId": "17884021950593115",
-      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-06-07/2026-06-07-16-20-54_feed.jpg",
-      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-06-07/2026-06-07-16-20-54_story.jpg"
+      "title": "'Todo Mundo em Pânico' volta aos cinemas com criadores originais, em nova 'era de ouro' das paródias",
+      "headline": "TODO MUNDO EM PÂNICO",
+      "category": "Filmes",
+      "instagramId": "17865462207626964",
+      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-06-07/2026-06-07-22-07-08_feed.jpg",
+      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-06-07/2026-06-07-22-07-08_story.jpg"
     }
   ],
   "failedPosts": []
