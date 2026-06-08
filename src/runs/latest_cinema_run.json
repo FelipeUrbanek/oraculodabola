@@ -1,16 +1,16 @@
 {
-  "timestamp": "2026-06-08T15:57:04.133Z",
+  "timestamp": "2026-06-08T22:28:49.319Z",
   "status": "SUCCESS",
   "postsPlanned": 1,
-  "candidatesFound": 6,
+  "candidatesFound": 4,
   "successfulPosts": [
     {
-      "title": "'Michael Jackson: O Veredicto' revela bastidores inéditos do processo e julgamento do cantor",
-      "headline": "MICHAEL JACKSON",
+      "title": "'Scooby-Doo': Netflix revela cachorro que protagonizará novo live-action em vídeo fofo; veja",
+      "headline": "SCOOBY-DOO",
       "category": "Séries",
-      "instagramId": "17910966213408924",
-      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-06-08/2026-06-08-15-57-45_feed.jpg",
-      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-06-08/2026-06-08-15-57-45_story.jpg"
+      "instagramId": "18443093596189814",
+      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-06-08/2026-06-08-22-29-42_feed.jpg",
+      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-06-08/2026-06-08-22-29-42_story.jpg"
     }
   ],
   "failedPosts": []

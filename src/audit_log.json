@@ -1645,5 +1645,21 @@
     "source_domain": "www.terra.com.br",
     "category": "Séries",
     "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-06-08T22:28:37.492Z",
+    "headline": "SANTOS EM PORTUGAL",
+    "source_url": "https://www.terra.com.br/esportes/futebol/internacional/portugal/santos-confirma-adversarios-da-intertemporada-em-portugal,e69ce673ada709d8395082ea5a35311168bf4m0n.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-06-08T22:30:05.168Z",
+    "headline": "SCOOBY-DOO",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/series/scooby-doo-netflix-revela-cachorro-que-protagonizara-novo-live-action-em-video-fofo-veja,7e0ea6e449e741df2c218ee223f4fcc1q0xvm5wt.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Séries",
+    "status": "SUCCESS"
   }
 ]
