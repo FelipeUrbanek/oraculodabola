@@ -1629,5 +1629,21 @@
     "source_domain": "www.terra.com.br",
     "category": "Filmes",
     "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-06-08T15:56:56.945Z",
+    "headline": "REFORÇOS PARA O SANTOS",
+    "source_url": "https://www.terra.com.br/esportes/santos/apos-semestre-com-improvisos-santos-mira-reforcos-em-posicao-carente,8f7a16e495d0b7888cd01fc6debdfd1dh8gvmfba.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-06-08T15:58:07.593Z",
+    "headline": "MICHAEL JACKSON",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/series/michael-jackson-o-veredicto-revela-bastidores-ineditos-do-processo-e-julgamento-do-cantor,91868421d65a0063520dc7d0ef1815bfd402ie23.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Séries",
+    "status": "SUCCESS"
   }
 ]

@@ -1,16 +1,16 @@
 {
-  "timestamp": "2026-06-07T22:06:25.926Z",
+  "timestamp": "2026-06-08T15:57:04.133Z",
   "status": "SUCCESS",
   "postsPlanned": 1,
-  "candidatesFound": 5,
+  "candidatesFound": 6,
   "successfulPosts": [
     {
-      "title": "'Todo Mundo em Pânico' volta aos cinemas com criadores originais, em nova 'era de ouro' das paródias",
-      "headline": "TODO MUNDO EM PÂNICO",
-      "category": "Filmes",
-      "instagramId": "17865462207626964",
-      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-06-07/2026-06-07-22-07-08_feed.jpg",
-      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-06-07/2026-06-07-22-07-08_story.jpg"
+      "title": "'Michael Jackson: O Veredicto' revela bastidores inéditos do processo e julgamento do cantor",
+      "headline": "MICHAEL JACKSON",
+      "category": "Séries",
+      "instagramId": "17910966213408924",
+      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-06-08/2026-06-08-15-57-45_feed.jpg",
+      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-06-08/2026-06-08-15-57-45_story.jpg"
     }
   ],
   "failedPosts": []
