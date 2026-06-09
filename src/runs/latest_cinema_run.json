@@ -1,16 +1,16 @@
 {
-  "timestamp": "2026-06-08T22:28:49.319Z",
+  "timestamp": "2026-06-09T22:26:24.587Z",
   "status": "SUCCESS",
   "postsPlanned": 1,
-  "candidatesFound": 4,
+  "candidatesFound": 10,
   "successfulPosts": [
     {
-      "title": "'Scooby-Doo': Netflix revela cachorro que protagonizará novo live-action em vídeo fofo; veja",
-      "headline": "SCOOBY-DOO",
-      "category": "Séries",
-      "instagramId": "18443093596189814",
-      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-06-08/2026-06-08-22-29-42_feed.jpg",
-      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-06-08/2026-06-08-22-29-42_story.jpg"
+      "title": "Qual o filme da Sessão da Tarde de hoje, 9 de junho? Globo exibe cinebiografia de Sidney Magal",
+      "headline": "SIDNEY MAGAL",
+      "category": "Filmes",
+      "instagramId": "17951092599157832",
+      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-06-09/2026-06-09-22-27-10_feed.jpg",
+      "storyPath": null
     }
   ],
   "failedPosts": []

@@ -1661,5 +1661,21 @@
     "source_domain": "www.terra.com.br",
     "category": "Séries",
     "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-06-09T22:26:16.120Z",
+    "headline": "SANTOS RENOVA SAMUEL PIERRI",
+    "source_url": "https://www.terra.com.br/esportes/santos/santos-renova-contrato-de-samuel-pierri-por-tres-anos,3cef667548ed92aad15707745431ad81ie4vvlcr.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-06-09T22:27:29.422Z",
+    "headline": "SIDNEY MAGAL",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/filmes/qual-o-filme-da-sessao-da-tarde-de-hoje-9-de-junho-globo-exibe-cinebiografia-de-sidney-magal,c3716cd91d2db660b45749f1429dda144rdba18m.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Filmes",
+    "status": "SUCCESS"
   }
 ]
