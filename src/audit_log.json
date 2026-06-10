@@ -1677,5 +1677,21 @@
     "source_domain": "www.terra.com.br",
     "category": "Filmes",
     "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-06-10T15:39:30.253Z",
+    "headline": "CT REI PELÉ À VENDA",
+    "source_url": "https://www.terra.com.br/esportes/santos/terreno-do-ct-rei-pele-tem-data-para-ser-leiloado-veja-detalhes,fb25a387d0489965b140334ae62bf128no4j9gjl.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-06-10T15:40:23.388Z",
+    "headline": "STEVEN SPIELBERG VOLTA",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/filmes/os-principais-filmes-de-spielberg-sobre-ets-antes-de-dia-d,048a0be8505c757eac88a360ecd27fd5huj46ope.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Filmes",
+    "status": "SUCCESS"
   }
 ]

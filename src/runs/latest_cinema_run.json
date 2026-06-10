@@ -1,16 +1,16 @@
 {
-  "timestamp": "2026-06-09T22:26:24.587Z",
+  "timestamp": "2026-06-10T15:39:37.256Z",
   "status": "SUCCESS",
   "postsPlanned": 1,
-  "candidatesFound": 10,
+  "candidatesFound": 11,
   "successfulPosts": [
     {
-      "title": "Qual o filme da Sessão da Tarde de hoje, 9 de junho? Globo exibe cinebiografia de Sidney Magal",
-      "headline": "SIDNEY MAGAL",
+      "title": "Os principais filmes de Spielberg sobre ETs antes de 'Dia D'",
+      "headline": "STEVEN SPIELBERG VOLTA",
       "category": "Filmes",
-      "instagramId": "17951092599157832",
-      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-06-09/2026-06-09-22-27-10_feed.jpg",
-      "storyPath": null
+      "instagramId": "18122867011740665",
+      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-06-10/2026-06-10-15-40-01_feed.jpg",
+      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-06-10/2026-06-10-15-40-01_story.jpg"
     }
   ],
   "failedPosts": []
