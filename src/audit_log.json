@@ -1693,5 +1693,21 @@
     "source_domain": "www.terra.com.br",
     "category": "Filmes",
     "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-06-11T16:06:24.721Z",
+    "headline": "SANTOS BLINDA TITULARES",
+    "source_url": "https://www.terra.com.br/esportes/santos/santos-blinda-titulares-e-limita-saidas-na-proxima-janela,81c89638bf8b7e4bebd1229d70e1d2eb0kl4cihp.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-06-11T16:07:44.931Z",
+    "headline": "DIA D",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/filmes/dia-d-spielberg-tem-total-dominio-do-cinema-de-espetaculo-e-escolhe-a-emocao-para-dar-seu-recado,73211afd62f93c39fb702db16cfbf853l9zxvhl2.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Filmes",
+    "status": "SUCCESS"
   }
 ]
