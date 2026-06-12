@@ -1736,5 +1736,21 @@
     "category": "Séries",
     "status": "FAILED",
     "reason": "Request failed with status code 500"
+  },
+  {
+    "timestamp": "2026-06-12T22:27:28.530Z",
+    "headline": "MIGUELITO RENOVA!",
+    "source_url": "https://www.terra.com.br/esportes/santos/santos-fecha-renovacao-contratual-de-miguelito-ate-maio-de-2029,e52e453d42dfcd43788755060f5c473d7pr21lm3.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-06-12T22:28:20.966Z",
+    "headline": "FILMES NA TOSCANA",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/filmes/na-onda-de-eu-voce-na-toscana-confira-5-filmes-no-streaming-que-se-passam-na-regiao-italiana,8dba31ee66d387124de1f0b36434577af9c26xjh.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Filmes",
+    "status": "SUCCESS"
   }
 ]

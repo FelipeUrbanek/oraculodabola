@@ -1,13 +1,17 @@
 {
-  "timestamp": "2026-06-12T15:19:10.623Z",
-  "status": "COMPLETED_WITHOUT_POSTS",
+  "timestamp": "2026-06-12T22:27:35.219Z",
+  "status": "SUCCESS",
   "postsPlanned": 1,
-  "candidatesFound": 8,
-  "successfulPosts": [],
-  "failedPosts": [
+  "candidatesFound": 10,
+  "successfulPosts": [
     {
-      "title": "'Off Campus': Amazon pede respeito ao elenco em comunicado oficial; entenda",
-      "error": "Request failed with status code 500"
+      "title": "Na onda de 'Eu & Você na Toscana', confira 5 filmes no streaming que se passam na região italiana",
+      "headline": "FILMES NA TOSCANA",
+      "category": "Filmes",
+      "instagramId": "18126438769618374",
+      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-06-12/2026-06-12-22-28-02_feed.jpg",
+      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-06-12/2026-06-12-22-28-02_story.jpg"
     }
-  ]
+  ],
+  "failedPosts": []
 }
