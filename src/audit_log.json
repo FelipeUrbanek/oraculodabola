@@ -1709,5 +1709,32 @@
     "source_domain": "www.terra.com.br",
     "category": "Filmes",
     "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-06-12T15:19:00.097Z",
+    "headline": "Santos fecha renovação contratual de Miguelito até maio de 2029",
+    "source_url": "https://www.terra.com.br/esportes/santos/santos-fecha-renovacao-contratual-de-miguelito-ate-maio-de-2029,e52e453d42dfcd43788755060f5c473d7pr21lm3.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "Request failed with status code 500"
+  },
+  {
+    "timestamp": "2026-06-12T15:19:01.520Z",
+    "headline": "Santos sonda situação de Gustavo Scarpa, do Atlético, mas negócio é difícil",
+    "source_url": "https://www.terra.com.br/esportes/futebol/mercado-da-bola/santos-sonda-situacao-de-gustavo-scarpa-do-atletico-mas-negocio-e-dificil,176b9484f89fe0cf30edbdd64ce2d201hp7xfhq3.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-06-12T15:20:05.398Z",
+    "headline": "'Off Campus': Amazon pede respeito ao elenco em comunicado oficial; entenda",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/series/off-campus-amazon-pede-respeito-ao-elenco-em-comunicado-oficial-entenda,4430a63cbea844a7ac338d25ebded5b8onke9rfm.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Séries",
+    "status": "FAILED",
+    "reason": "Request failed with status code 500"
   }
 ]

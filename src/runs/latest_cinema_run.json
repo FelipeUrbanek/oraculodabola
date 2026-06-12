@@ -1,17 +1,13 @@
 {
-  "timestamp": "2026-06-11T16:06:32.823Z",
-  "status": "SUCCESS",
+  "timestamp": "2026-06-12T15:19:10.623Z",
+  "status": "COMPLETED_WITHOUT_POSTS",
   "postsPlanned": 1,
-  "candidatesFound": 11,
-  "successfulPosts": [
+  "candidatesFound": 8,
+  "successfulPosts": [],
+  "failedPosts": [
     {
-      "title": "'Dia D': Spielberg tem total domínio do cinema de espetáculo e escolhe a emoção para dar seu recado",
-      "headline": "DIA D",
-      "category": "Filmes",
-      "instagramId": "18123961702645424",
-      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-06-11/2026-06-11-16-07-23_feed.jpg",
-      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-06-11/2026-06-11-16-07-23_story.jpg"
+      "title": "'Off Campus': Amazon pede respeito ao elenco em comunicado oficial; entenda",
+      "error": "Request failed with status code 500"
     }
-  ],
-  "failedPosts": []
+  ]
 }
