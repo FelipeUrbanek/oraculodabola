@@ -1768,5 +1768,21 @@
     "source_domain": "www.terra.com.br",
     "category": "Filmes",
     "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-06-13T22:06:40.401Z",
+    "headline": "SELEÇÃO BRASILEIRA",
+    "source_url": "https://www.terra.com.br/esportes/futebol/copa-2026/capitao-marquinhos-da-selecao-brasileira-destaca-e-importante-a-gente-comecar-bem,03088ea2f917a6dbb9ecca203bf840d8k0jow3pd.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Futebol",
+    "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-06-13T22:08:30.756Z",
+    "headline": "BOLSONARO NO CINEMA",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/filmes/produtora-diz-que-usou-r-75-milhoes-em-filme-de-bolsonaro-e-recursos-sairam-de-fundo-nos-eua,e853f2400a24f1189fd8ff3a90fb0259tudwvrzl.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Filmes",
+    "status": "SUCCESS"
   }
 ]
