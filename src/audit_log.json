@@ -1752,5 +1752,21 @@
     "source_domain": "www.terra.com.br",
     "category": "Filmes",
     "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-06-13T16:15:52.292Z",
+    "headline": "ZÉ RAFAEL DEIXA O SANTOS",
+    "source_url": "https://www.terra.com.br/esportes/santos/de-esperanca-a-decepcao-ze-rafael-caminha-para-fim-de-trajetoria-no-santos,b5c19b2f8524c8e0f9fe9b56e6cc4877g8q1rp5f.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-06-13T16:18:04.349Z",
+    "headline": "EU & VOCÊ NA TOSCANA",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/filmes/eu-voce-na-toscana-tenta-mostrar-que-ainda-ha-espaco-para-a-ingenuidade-nos-cinemas,475001da4bf9b83c0f4358893b1f30c1gcesbovy.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Filmes",
+    "status": "SUCCESS"
   }
 ]
