@@ -1,16 +1,16 @@
 {
-  "timestamp": "2026-06-14T16:24:02.136Z",
+  "timestamp": "2026-06-14T22:13:17.333Z",
   "status": "SUCCESS",
   "postsPlanned": 1,
-  "candidatesFound": 2,
+  "candidatesFound": 1,
   "successfulPosts": [
     {
-      "title": "'Hit para Dois', com Paul Rudd e Nick Jonas, discute o plágio na música sem vilões: 'É complexo'",
-      "headline": "HIT PARA DOIS",
-      "category": "Filmes",
-      "instagramId": "18082882910640494",
-      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-06-14/2026-06-14-16-26-18_feed.jpg",
-      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-06-14/2026-06-14-16-26-18_story.jpg"
+      "title": "House of the Dragon: Terceira temporada inicia gravações no Reino Unido",
+      "headline": "DRAGÃO VOLTA!",
+      "category": "Séries",
+      "instagramId": "18106628612077583",
+      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-06-14/2026-06-14-22-16-22_feed.jpg",
+      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-06-14/2026-06-14-22-16-22_story.jpg"
     }
   ],
   "failedPosts": []
