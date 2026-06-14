@@ -1,16 +1,16 @@
 {
-  "timestamp": "2026-06-13T22:07:15.850Z",
+  "timestamp": "2026-06-14T16:24:02.136Z",
   "status": "SUCCESS",
   "postsPlanned": 1,
-  "candidatesFound": 8,
+  "candidatesFound": 2,
   "successfulPosts": [
     {
-      "title": "Produtora diz que usou R$ 75 milhões em filme de Bolsonaro e recursos saíram de fundo nos EUA",
-      "headline": "BOLSONARO NO CINEMA",
+      "title": "'Hit para Dois', com Paul Rudd e Nick Jonas, discute o plágio na música sem vilões: 'É complexo'",
+      "headline": "HIT PARA DOIS",
       "category": "Filmes",
-      "instagramId": "18115853344876549",
-      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-06-13/2026-06-13-22-08-09_feed.jpg",
-      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-06-13/2026-06-13-22-08-09_story.jpg"
+      "instagramId": "18082882910640494",
+      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-06-14/2026-06-14-16-26-18_feed.jpg",
+      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-06-14/2026-06-14-16-26-18_story.jpg"
     }
   ],
   "failedPosts": []

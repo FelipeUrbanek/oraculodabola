@@ -1784,5 +1784,13 @@
     "source_domain": "www.terra.com.br",
     "category": "Filmes",
     "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-06-14T16:26:41.349Z",
+    "headline": "HIT PARA DOIS",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/filmes/hit-para-dois-com-paul-rudd-e-nick-jonas-discute-o-plagio-na-musica-sem-viloes-e-complexo,dda70205805daf7a1ebf17db4c35adf2bjvvdi80.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Filmes",
+    "status": "SUCCESS"
   }
 ]
