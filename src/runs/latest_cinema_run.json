@@ -1,16 +1,16 @@
 {
-  "timestamp": "2026-06-14T22:13:17.333Z",
+  "timestamp": "2026-06-17T15:37:37.720Z",
   "status": "SUCCESS",
   "postsPlanned": 1,
-  "candidatesFound": 1,
+  "candidatesFound": 13,
   "successfulPosts": [
     {
-      "title": "House of the Dragon: Terceira temporada inicia gravações no Reino Unido",
-      "headline": "DRAGÃO VOLTA!",
-      "category": "Séries",
-      "instagramId": "18106628612077583",
-      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-06-14/2026-06-14-22-16-22_feed.jpg",
-      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-06-14/2026-06-14-22-16-22_story.jpg"
+      "title": "No Rio, atriz de 'Supergirl' elogia 'energia' dos brasileiros: 'Vocês são meus heróis'",
+      "headline": "MILLY ALCOCK NO BRASIL",
+      "category": "Filmes",
+      "instagramId": "17949657468011345",
+      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-06-17/2026-06-17-15-38-16_feed.jpg",
+      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-06-17/2026-06-17-15-38-16_story.jpg"
     }
   ],
   "failedPosts": []

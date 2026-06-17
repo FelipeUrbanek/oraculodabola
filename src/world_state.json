@@ -156,7 +156,7 @@
     "Santos": {
       "coach": "Cuca",
       "league": "Brasileirão",
-      "recent_changes": "De esperança à decepção, Zé Rafael caminha para fim de trajetória no Santos. O meia está fora dos planos da comissão técnica e deve rescindir amigavelmente seu contrato nos próximos dias."
+      "recent_changes": "A intertemporada em Portugal foi cancelada devido à possibilidade de antecipação de rodadas do Campeonato Brasileiro."
     },
     "Vitória": {
       "league": "Copa do Brasil / Campeonato Brasileiro",
@@ -408,5 +408,5 @@
       "recent_changes": "Hiroki Ito foi convocado para a Copa do Mundo e tem raízes com o Santos, pois iniciou sua carreira em uma academia ligada ao clube paulista em Shizuoka."
     }
   },
-  "last_updated": "2026-06-13T22:06:13.042Z"
+  "last_updated": "2026-06-17T15:36:26.645Z"
 }

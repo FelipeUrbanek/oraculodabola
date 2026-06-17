@@ -1800,5 +1800,21 @@
     "source_domain": "backup_news",
     "category": "Séries",
     "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-06-17T15:36:53.307Z",
+    "headline": "SANTOS CANCELA VIAGEM",
+    "source_url": "https://www.terra.com.br/esportes/santos/santos-cancela-intertemporada-em-portugal-saiba-o-motivo,328a09cb082430e96455e0f5948497f0ex7fzhqf.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-06-17T15:38:42.729Z",
+    "headline": "MILLY ALCOCK NO BRASIL",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/filmes/no-rio-atriz-de-supergirl-elogia-energia-dos-brasileiros-voces-sao-meus-herois,9201736a375a231f9c93b9a204f4aa12i3dgnxlj.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Filmes",
+    "status": "SUCCESS"
   }
 ]
