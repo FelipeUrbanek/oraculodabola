@@ -1816,5 +1816,31 @@
     "source_domain": "www.terra.com.br",
     "category": "Filmes",
     "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-06-18T15:29:27.557Z",
+    "headline": "No Brasil, somente o Palmeiras viu jogador do elenco marcar na 1ª rodada da Copa",
+    "source_url": "https://www.terra.com.br/esportes/corinthians/no-brasil-somente-o-palmeiras-viu-jogador-do-elenco-marcar-na-1-rodada-da-copa,29652faa4c4c92f71f78c0c8514d61fdueeetpaz.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "MISMATCH: Conteúdo revisado perdeu a identidade do time Santos."
+  },
+  {
+    "timestamp": "2026-06-18T15:29:27.656Z",
+    "headline": "Santos inicia reforma no gramado da Vila Belmiro",
+    "source_url": "https://www.terra.com.br/esportes/santos/santos-inicia-reforma-no-gramado-da-vila-belmiro,750523719735be42c8e6dc10c8ae46e6v4a5cin0.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-06-18T15:30:41.197Z",
+    "headline": "LOUCADEMIA 7 CANCELADO",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/filmes/loucademia-de-policia-7-foi-cancelado-apos-policia-assassinar-homem-negro,06b0fea2dd887285b98c14bd54a76c2fyfydsd19.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Filmes",
+    "status": "SUCCESS"
   }
 ]

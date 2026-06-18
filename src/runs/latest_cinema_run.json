@@ -1,16 +1,16 @@
 {
-  "timestamp": "2026-06-17T15:37:37.720Z",
+  "timestamp": "2026-06-18T15:29:37.870Z",
   "status": "SUCCESS",
   "postsPlanned": 1,
-  "candidatesFound": 13,
+  "candidatesFound": 12,
   "successfulPosts": [
     {
-      "title": "No Rio, atriz de 'Supergirl' elogia 'energia' dos brasileiros: 'Vocês são meus heróis'",
-      "headline": "MILLY ALCOCK NO BRASIL",
+      "title": "Loucademia de Polícia 7 foi cancelado após polícia assassinar homem negro",
+      "headline": "LOUCADEMIA 7 CANCELADO",
       "category": "Filmes",
-      "instagramId": "17949657468011345",
-      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-06-17/2026-06-17-15-38-16_feed.jpg",
-      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-06-17/2026-06-17-15-38-16_story.jpg"
+      "instagramId": "18475073416096979",
+      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-06-18/2026-06-18-15-30-20_feed.jpg",
+      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-06-18/2026-06-18-15-30-20_story.jpg"
     }
   ],
   "failedPosts": []
