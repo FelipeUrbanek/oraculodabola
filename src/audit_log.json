@@ -1842,5 +1842,21 @@
     "source_domain": "www.terra.com.br",
     "category": "Filmes",
     "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-06-19T15:22:49.959Z",
+    "headline": "DÍVIDA DO SANTOS ULTRAPASSA R$ 1 BI",
+    "source_url": "https://www.terra.com.br/esportes/santos/divida-do-santos-cresce-e-supera-r-1-bilhao-no-primeiro-trimestre-aponta-relatorio,c551e5aa6eadd7ab08eb7c97f195be7e83zeejm1.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-06-19T15:23:59.496Z",
+    "headline": "TOY STORY 5",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/filmes/toy-story-5-coloca-brinquedos-diante-da-maior-ameaca-dos-novos-tempos-as-telas,1f2607feaa7708dcce2f79e4fc1358f5496zr8y6.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Filmes",
+    "status": "SUCCESS"
   }
 ]

@@ -1,16 +1,16 @@
 {
-  "timestamp": "2026-06-18T15:29:37.870Z",
+  "timestamp": "2026-06-19T15:22:59.848Z",
   "status": "SUCCESS",
   "postsPlanned": 1,
   "candidatesFound": 12,
   "successfulPosts": [
     {
-      "title": "Loucademia de Polícia 7 foi cancelado após polícia assassinar homem negro",
-      "headline": "LOUCADEMIA 7 CANCELADO",
+      "title": "'Toy Story 5' coloca brinquedos diante da maior ameaça dos novos tempos: as telas",
+      "headline": "TOY STORY 5",
       "category": "Filmes",
-      "instagramId": "18475073416096979",
-      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-06-18/2026-06-18-15-30-20_feed.jpg",
-      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-06-18/2026-06-18-15-30-20_story.jpg"
+      "instagramId": "18134513410563643",
+      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-06-19/2026-06-19-15-23-29_feed.jpg",
+      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-06-19/2026-06-19-15-23-29_story.jpg"
     }
   ],
   "failedPosts": []
