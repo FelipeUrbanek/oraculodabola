@@ -1858,5 +1858,13 @@
     "source_domain": "www.terra.com.br",
     "category": "Filmes",
     "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-06-19T22:06:06.034Z",
+    "headline": "FILME CANCELADO",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/filmes/amazon-desiste-de-filme-de-luca-guadagnino-sobre-sam-altman-ceo-da-openai-entenda,66a22445f882155e21e0e597635f15d1zsm90g8w.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Filmes",
+    "status": "SUCCESS"
   }
 ]
