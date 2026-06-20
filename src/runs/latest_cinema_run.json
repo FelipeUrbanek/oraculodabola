@@ -1,16 +1,16 @@
 {
-  "timestamp": "2026-06-19T22:05:25.126Z",
+  "timestamp": "2026-06-20T16:21:19.357Z",
   "status": "SUCCESS",
   "postsPlanned": 1,
-  "candidatesFound": 12,
+  "candidatesFound": 11,
   "successfulPosts": [
     {
-      "title": "Amazon desiste de filme de Luca Guadagnino sobre Sam Altman, CEO da OpenAI; entenda",
-      "headline": "FILME CANCELADO",
+      "title": "Tony Ramos: 'Empatia deve nos mover na vida', diz ator que volta em 'Se Eu Fosse Você 3'",
+      "headline": "SE EU FOSSE VOCÊ 3",
       "category": "Filmes",
-      "instagramId": "17882945478605291",
-      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-06-19/2026-06-19-22-05-43_feed.jpg",
-      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-06-19/2026-06-19-22-05-43_story.jpg"
+      "instagramId": "18084794498330230",
+      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-06-20/2026-06-20-16-22-35_feed.jpg",
+      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-06-20/2026-06-20-16-22-35_story.jpg"
     }
   ],
   "failedPosts": []

@@ -1866,5 +1866,21 @@
     "source_domain": "www.terra.com.br",
     "category": "Filmes",
     "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-06-20T16:21:13.101Z",
+    "headline": "VILA BELMIRO AMPLIADA",
+    "source_url": "https://www.terra.com.br/esportes/santos/santos-inicia-ampliacao-da-capacidade-da-vila-belmiro,b39ef132467553f5fbbda5401c183c7davqug6on.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-06-20T16:22:55.564Z",
+    "headline": "SE EU FOSSE VOCÊ 3",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/filmes/tony-ramos-empatia-deve-nos-mover-na-vida-diz-ator-que-volta-em-se-eu-fosse-voce-3,4fa237f8c3eff2e29af5c5253b4c7bf6clnprdgl.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Filmes",
+    "status": "SUCCESS"
   }
 ]
