@@ -1882,5 +1882,13 @@
     "source_domain": "www.terra.com.br",
     "category": "Filmes",
     "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-06-20T22:11:16.807Z",
+    "headline": "SUGAR 2",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/series/colin-farrell-fala-sobre-nova-temporada-de-sugar-e-a-diferenca-crucial-entre-ele-e-seu-personagem,91d0483930801749e1c68a8d0802f5afh4i0f5a3.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Séries",
+    "status": "SUCCESS"
   }
 ]
