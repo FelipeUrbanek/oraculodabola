@@ -1890,5 +1890,13 @@
     "source_domain": "www.terra.com.br",
     "category": "Séries",
     "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-06-21T22:18:48.127Z",
+    "headline": "CULPADOS",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/filmes/culpados-conheca-e-entenda-universo-de-filmes-do-prime-video,6953a0376837702b5179e96acd5f0ffdybrsavuw.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Filmes",
+    "status": "SUCCESS"
   }
 ]

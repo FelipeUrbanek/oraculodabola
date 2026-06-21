@@ -1,16 +1,16 @@
 {
-  "timestamp": "2026-06-20T22:09:47.260Z",
+  "timestamp": "2026-06-21T22:16:17.738Z",
   "status": "SUCCESS",
   "postsPlanned": 1,
-  "candidatesFound": 5,
+  "candidatesFound": 2,
   "successfulPosts": [
     {
-      "title": "Colin Farrell fala sobre nova temporada de 'Sugar' e a diferença crucial entre ele e seu personagem",
-      "headline": "SUGAR 2",
-      "category": "Séries",
-      "instagramId": "18065442083468127",
-      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-06-20/2026-06-20-22-10-52_feed.jpg",
-      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-06-20/2026-06-20-22-10-52_story.jpg"
+      "title": "'Culpados': Conheça e entenda universo de filmes do Prime Video",
+      "headline": "CULPADOS",
+      "category": "Filmes",
+      "instagramId": "18115594102876699",
+      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-06-21/2026-06-21-22-18-30_feed.jpg",
+      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-06-21/2026-06-21-22-18-30_story.jpg"
     }
   ],
   "failedPosts": []
