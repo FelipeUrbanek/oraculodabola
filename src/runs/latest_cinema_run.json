@@ -1,16 +1,16 @@
 {
-  "timestamp": "2026-06-21T22:16:17.738Z",
+  "timestamp": "2026-06-23T22:16:15.007Z",
   "status": "SUCCESS",
   "postsPlanned": 1,
-  "candidatesFound": 2,
+  "candidatesFound": 10,
   "successfulPosts": [
     {
-      "title": "'Culpados': Conheça e entenda universo de filmes do Prime Video",
-      "headline": "CULPADOS",
+      "title": "'Klara e o Sol': Jenna Ortega vive robô que desafia limites para salvar adolescente",
+      "headline": "KLARA E O SOL",
       "category": "Filmes",
-      "instagramId": "18115594102876699",
-      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-06-21/2026-06-21-22-18-30_feed.jpg",
-      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-06-21/2026-06-21-22-18-30_story.jpg"
+      "instagramId": "18003696641937634",
+      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-06-23/2026-06-23-22-17-02_feed.jpg",
+      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-06-23/2026-06-23-22-17-02_story.jpg"
     }
   ],
   "failedPosts": []

@@ -1898,5 +1898,21 @@
     "source_domain": "www.terra.com.br",
     "category": "Filmes",
     "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-06-23T22:16:06.343Z",
+    "headline": "TRANSFER BAN AMEAÇA O SANTOS",
+    "source_url": "https://www.terra.com.br/esportes/santos/teixeira-abre-o-jogo-sobre-ameaca-de-transfer-ban-no-santos-sempre-preocupa,3c2edb185274ae389488d4fcc11041b6e56vlf3q.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-06-23T22:17:23.717Z",
+    "headline": "KLARA E O SOL",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/filmes/klara-e-o-sol-jenna-ortega-vive-robo-que-desafia-limites-para-salvar-adolescente,f7214366150d0876622582f62a35b037do8bhwoz.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Filmes",
+    "status": "SUCCESS"
   }
 ]
