@@ -1914,5 +1914,21 @@
     "source_domain": "www.terra.com.br",
     "category": "Filmes",
     "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-06-24T22:20:17.423Z",
+    "headline": "RINCÓN DEIXA O SANTOS",
+    "source_url": "https://www.terra.com.br/esportes/santos/santos-antecipa-saida-de-tomas-rincon-e-entra-em-acordo-para-rescisao,e1c5d974cbf47cde958c53c267ffe8d93esib0ay.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-06-24T22:21:45.634Z",
+    "headline": "BRASILEIROS NO OSCAR",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/filmes/adolpho-veloso-marcelo-caetano-e-mais-brasileiros-sao-convidados-para-se-juntar-a-academia-do-oscar,f9ab4b38b24c20ce5d683b6ba865a550iuxjz458.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Bastidores",
+    "status": "SUCCESS"
   }
 ]
