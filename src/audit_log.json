@@ -1930,5 +1930,21 @@
     "source_domain": "www.terra.com.br",
     "category": "Bastidores",
     "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-06-25T22:22:54.750Z",
+    "headline": "NEYMAR VOLTA!",
+    "source_url": "https://www.terra.com.br/esportes/futebol/copa-2026/choro-e-medo-como-a-familia-de-neymar-acompanhou-o-retorno-do-craque-a-copa,75587f12f57113d25a49c4eec6bb1482gsbqyojn.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-06-25T22:24:11.624Z",
+    "headline": "BATMAN ANIMADO",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/series/hq-do-batman-que-fez-dc-superar-marvel-vai-ganhar-serie-saiba-mais,5ed482e81382237f08d5f0aa550b31cf68a0s2ob.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Séries",
+    "status": "SUCCESS"
   }
 ]
