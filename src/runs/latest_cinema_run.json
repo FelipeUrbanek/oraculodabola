@@ -1,16 +1,16 @@
 {
-  "timestamp": "2026-06-25T22:23:02.309Z",
+  "timestamp": "2026-06-26T22:16:28.109Z",
   "status": "SUCCESS",
   "postsPlanned": 1,
   "candidatesFound": 9,
   "successfulPosts": [
     {
-      "title": "HQ do Batman que fez DC superar Marvel vai ganhar série; saiba mais",
-      "headline": "BATMAN ANIMADO",
+      "title": "5 personagens de séries que são a cara da Brigitte, de 'Quem Ama Cuida'",
+      "headline": "BRIGITTE É UM FENÔMENO",
       "category": "Séries",
-      "instagramId": "17918797356180474",
-      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-06-25/2026-06-25-22-23-53_feed.jpg",
-      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-06-25/2026-06-25-22-23-53_story.jpg"
+      "instagramId": "18379743133202330",
+      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-06-26/2026-06-26-22-17-16_feed.jpg",
+      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-06-26/2026-06-26-22-17-16_story.jpg"
     }
   ],
   "failedPosts": []

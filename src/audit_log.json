@@ -1946,5 +1946,21 @@
     "source_domain": "www.terra.com.br",
     "category": "Séries",
     "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-06-26T22:16:22.113Z",
+    "headline": "SANTOS SE RECUPERA",
+    "source_url": "https://www.terra.com.br/esportes/santos/santos-recupera-lesionados-e-deve-ter-elenco-quase-completo-contra-o-botafogo,5152596e08e31e546a9c5303e094b35695p60rin.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-06-26T22:17:40.291Z",
+    "headline": "BRIGITTE É UM FENÔMENO",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/series/5-personagens-de-series-que-sao-a-cara-da-brigitte-de-quem-ama-cuida,f9af6bb262b9f04b1a5222ccbec43d68glfqmw4u.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Séries",
+    "status": "SUCCESS"
   }
 ]

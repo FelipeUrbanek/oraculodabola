@@ -13,7 +13,7 @@
     "Botafogo": {
       "coach": "Não mencionado",
       "league": "Campeonato Brasileiro / Copa do Brasil / Copa Sul-Americana",
-      "recent_changes": "O volante Danilo foi convocado pela Seleção Brasileira para a disputa da Copa do Mundo (o jogador também negocia transferência para o Palmeiras nos bastidores). A Justiça acatou o pedido de recuperação judicial da SAF; John Textor foi afastado e a GDA Luma negocia assumir 90% das ações. Pelo Brasileirão, venceu o Corinthians por 3 a 1 com hat-trick de Arthur Cabral (artilheiro do time ao lado de Danilo), saltando para a 8ª colocação com 21 pontos. O próximo jogo será contra o São Paulo no Morumbis. O clube vendeu o zagueiro Alexsander Barboza ao Palmeiras por US$ 4 milhões, com transferência prevista apenas para o segundo semestre de 2026, mantendo-o à disposição para os duelos da Sul-Americana contra Independiente Petrolero e Caracas."
+      "recent_changes": "Venceu o Corinthians por 3 a 1 com hat-trick de Arthur Cabral, saltando para a 8ª colocação com 21 pontos."
     },
     "Grêmio": {
       "coach": "Luís Castro",
@@ -26,7 +26,7 @@
     "Corinthians": {
       "coach": "Fernando Diniz",
       "league": "Campeonato Brasileiro / Copa do Brasil / Libertadores / Supercopa Rei do Brasil",
-      "recent_changes": "A diretoria rescindiu o contrato do meio-campista José Martínez após o jogador se reapresentar com 35 dias de atraso e diagnosticado com ruptura do ligamento cruzado anterior (LCA). O clube arcará com a cirurgia no joelho e pagará 30% dos salários de fevereiro a dezembro de 2026 (exceto janeiro). A diretoria também chegou a consultar a situação do atacante Lucas Ferreira no início do ano e vive a expectativa do retorno de Memphis Depay contra o Peñarol, pela Libertadores. A renovação do holandês segue indefinida. Anteriormente: foi derrotado pelo Botafogo por 3 a 1."
+      "recent_changes": "Derrotado pelo Botafogo por 3 a 1."
     },
     "Seleção Brasileira": {
       "coach": "Carlo Ancelotti",
@@ -156,7 +156,7 @@
     "Santos": {
       "coach": "Luís Felipe Scolari",
       "league": "Série A do Campeonato Brasileiro",
-      "recent_changes": "O clube enfrenta a possibilidade de sofrer um novo transfer ban devido a uma dívida de cerca de R$ 12 milhões com o Monaco, referente à contratação do volante Jean Lucas."
+      "recent_changes": "O elenco está quase completo para a retomada das competições, com apenas Vinícius Lira lesionado. O meio-campista João Schmidt e o meia-atacante Thaciano se recuperaram de lesões e iniciaram a transição para o gramado."
     },
     "Vitória": {
       "league": "Copa do Brasil / Campeonato Brasileiro",
@@ -200,7 +200,7 @@
     "Coritiba": {
       "coach": "Não mencionado",
       "league": "Brasileirão",
-      "recent_changes": "Venceu o Santos por 3 a 0 na Neo Química Arena, em partida válida pelo Campeonato Brasileiro no último domingo (17), em um jogo marcado pela polêmica substituição por engano de Neymar."
+      "recent_changes": "Venceu o Santos por 3 a 0 na Neo Química Arena."
     },
     "Olímpia": {
       "coach": "Não mencionado",
@@ -385,7 +385,7 @@
     "Recoleta": {
       "coach": "Não mencionado",
       "league": "Copa Sul-Americana",
-      "recent_changes": "Nesta temporada, empatou por 1 a 1 com o Santos na Vila Belmiro em duelo pela Copa Sul-Americana, jogo que foi marcado por discussão entre Neymar e um torcedor."
+      "recent_changes": "Empatou por 1 a 1 com o Santos na Vila Belmiro."
     },
     "Atlético Piauiense": {
       "coach": "Não mencionado",
@@ -408,5 +408,5 @@
       "recent_changes": "Hiroki Ito foi convocado para a Copa do Mundo e tem raízes com o Santos, pois iniciou sua carreira em uma academia ligada ao clube paulista em Shizuoka."
     }
   },
-  "last_updated": "2026-06-25T22:22:32.806Z"
+  "last_updated": "2026-06-26T22:15:58.323Z"
 }
