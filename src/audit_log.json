@@ -1962,5 +1962,22 @@
     "source_domain": "www.terra.com.br",
     "category": "Séries",
     "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-06-27T16:06:38.386Z",
+    "headline": "CBF altera cronograma e cria janela extraordinária para reforços nacionais na Série A",
+    "source_url": "https://www.terra.com.br/esportes/corinthians/cbf-altera-cronograma-e-cria-janela-extraordinaria-para-reforcos-nacionais-na-serie-a,444ee0e1ca6ce20ef43219ce5b2996dcqp374x8s.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "MISMATCH: Conteúdo revisado perdeu a identidade do time Santos."
+  },
+  {
+    "timestamp": "2026-06-27T16:07:52.804Z",
+    "headline": "AS CORRENTES",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/filmes/as-correntes-mostra-o-que-nao-cabe-em-palavras-o-rearranjo-silencioso-da-vida-apos-o-trauma,42196fef0d63e9440383deb4edf0d8a8yryquazy.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Filmes",
+    "status": "SUCCESS"
   }
 ]

@@ -1,16 +1,16 @@
 {
-  "timestamp": "2026-06-26T22:16:28.109Z",
+  "timestamp": "2026-06-27T16:06:46.076Z",
   "status": "SUCCESS",
   "postsPlanned": 1,
-  "candidatesFound": 9,
+  "candidatesFound": 8,
   "successfulPosts": [
     {
-      "title": "5 personagens de séries que são a cara da Brigitte, de 'Quem Ama Cuida'",
-      "headline": "BRIGITTE É UM FENÔMENO",
-      "category": "Séries",
-      "instagramId": "18379743133202330",
-      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-06-26/2026-06-26-22-17-16_feed.jpg",
-      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-06-26/2026-06-26-22-17-16_story.jpg"
+      "title": "'As Correntes' mostra o que não cabe em palavras: o rearranjo silencioso da vida após o trauma",
+      "headline": "AS CORRENTES",
+      "category": "Filmes",
+      "instagramId": "18083525081179647",
+      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-06-27/2026-06-27-16-07-31_feed.jpg",
+      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-06-27/2026-06-27-16-07-31_story.jpg"
     }
   ],
   "failedPosts": []
