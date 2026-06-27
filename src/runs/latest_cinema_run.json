@@ -1,16 +1,16 @@
 {
-  "timestamp": "2026-06-27T16:06:46.076Z",
+  "timestamp": "2026-06-27T22:05:25.318Z",
   "status": "SUCCESS",
   "postsPlanned": 1,
-  "candidatesFound": 8,
+  "candidatesFound": 5,
   "successfulPosts": [
     {
-      "title": "'As Correntes' mostra o que não cabe em palavras: o rearranjo silencioso da vida após o trauma",
-      "headline": "AS CORRENTES",
+      "title": "'Supergirl' aposta em vulnerabilidade para tirar heroína da sombra do Superman: 'Há força no trauma'",
+      "headline": "SUPERGIRL",
       "category": "Filmes",
-      "instagramId": "18083525081179647",
-      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-06-27/2026-06-27-16-07-31_feed.jpg",
-      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-06-27/2026-06-27-16-07-31_story.jpg"
+      "instagramId": "18050404211534695",
+      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-06-27/2026-06-27-22-06-20_feed.jpg",
+      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-06-27/2026-06-27-22-06-20_story.jpg"
     }
   ],
   "failedPosts": []

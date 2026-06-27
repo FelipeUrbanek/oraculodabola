@@ -1979,5 +1979,21 @@
     "source_domain": "www.terra.com.br",
     "category": "Filmes",
     "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-06-27T22:05:19.559Z",
+    "headline": "TERREMOTO AMEAÇA JOGO",
+    "source_url": "https://www.terra.com.br/esportes/santos/local-de-jogo-do-santos-pode-ser-alterado-apos-terremoto,14bac029ca645e05e556512bca5959031n82ozqd.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-06-27T22:06:44.793Z",
+    "headline": "SUPERGIRL",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/filmes/supergirl-aposta-em-vulnerabilidade-para-tirar-heroina-da-sombra-do-superman-ha-forca-no-trauma,c8a05ab4193b4e065a632b70c00df3cd0wcbdzh8.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Filmes",
+    "status": "SUCCESS"
   }
 ]

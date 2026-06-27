@@ -155,8 +155,8 @@
     },
     "Santos": {
       "coach": "Luís Felipe Scolari",
-      "league": "Série A do Campeonato Brasileiro",
-      "recent_changes": "O elenco está quase completo para a retomada das competições, com apenas Vinícius Lira lesionado. O meio-campista João Schmidt e o meia-atacante Thaciano se recuperaram de lesões e iniciaram a transição para o gramado."
+      "league": "Copa Sul-Americana",
+      "recent_changes": "Partida contra a Universidad Central pode ser transferida de local devido ao terremoto na Venezuela."
     },
     "Vitória": {
       "league": "Copa do Brasil / Campeonato Brasileiro",
@@ -408,5 +408,5 @@
       "recent_changes": "Hiroki Ito foi convocado para a Copa do Mundo e tem raízes com o Santos, pois iniciou sua carreira em uma academia ligada ao clube paulista em Shizuoka."
     }
   },
-  "last_updated": "2026-06-26T22:15:58.323Z"
+  "last_updated": "2026-06-27T22:04:53.662Z"
 }

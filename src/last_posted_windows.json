@@ -1,7 +1,4 @@
 {
-  "2026-06-17": {
-    "midday": true
-  },
   "2026-06-19": {
     "midday": true
   },
@@ -18,6 +15,9 @@
     "evening": true
   },
   "2026-06-26": {
+    "evening": true
+  },
+  "2026-06-27": {
     "evening": true
   }
 }
