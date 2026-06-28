@@ -1,16 +1,16 @@
 {
-  "timestamp": "2026-06-28T16:13:33.125Z",
+  "timestamp": "2026-06-28T22:04:34.229Z",
   "status": "SUCCESS",
   "postsPlanned": 1,
-  "candidatesFound": 2,
+  "candidatesFound": 1,
   "successfulPosts": [
     {
-      "title": "Ator de 'Alice in Borderland' é investigado por agressão à ex-namorada, diz jornal",
-      "headline": "ATOR AGREDIU EX",
-      "category": "Séries",
-      "instagramId": "18210730231340640",
-      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-06-28/2026-06-28-16-15-54_feed.jpg",
-      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-06-28/2026-06-28-16-15-54_story.jpg"
+      "title": "'O Urso', 'Nuremberg', 'Avatar' e mais estreias da semana no streaming",
+      "headline": "ESTREIAS IMPACTANTES",
+      "category": "Estreia",
+      "instagramId": "18086360351542753",
+      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-06-28/2026-06-28-22-06-55_feed.jpg",
+      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-06-28/2026-06-28-22-06-55_story.jpg"
     }
   ],
   "failedPosts": []

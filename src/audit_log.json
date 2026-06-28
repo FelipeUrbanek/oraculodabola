@@ -2011,5 +2011,21 @@
     "source_domain": "www.terra.com.br",
     "category": "Séries",
     "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-06-28T22:04:28.556Z",
+    "headline": "SANTOS VOLTA AO TRABALHO",
+    "source_url": "https://www.terra.com.br/esportes/santos/santos-faz-treino-fisico-no-ct-e-dupla-volta-a-trabalhar-no-campo,1054d76b93f344356518d5e9c8dd43bb25j76eqy.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-06-28T22:07:13.785Z",
+    "headline": "ESTREIAS IMPACTANTES",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/series/o-urso-nuremberg-avatar-e-mais-estreias-da-semana-no-streaming,195d67cebcd21c7465de182ddf65c408gvmn1dvx.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Estreia",
+    "status": "SUCCESS"
   }
 ]
