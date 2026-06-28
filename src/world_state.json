@@ -126,7 +126,7 @@
     "Cruzeiro": {
       "coach": "Artur Jorge",
       "league": "Copa do Brasil / Campeonato Brasileiro / Libertadores",
-      "recent_changes": "Avançou para as oitavas de final da Copa do Brasil (lucrando R$ 5 milhões). Pelo Campeonato Brasileiro, tenta reação e está em 12º lugar com 20 pontos após empate em 1 a 1 com o Palmeiras na Arena Barueri, com destaque para o goleiro Otávio, que assumiu a vaga de Matheus Cunha. O próximo desafio é pela Libertadores contra o Boca Juniors, terça-feira, em La Bombonera. A Raposa é vice-líder do Grupo D com 7 pontos e, se vencer, garante classificação antecipada, tendo já vencido o confronto do turno por 1 a 0. Nos bastidores, enviou uma proposta pelo zagueiro Igor Júlio, com valores abaixo de 6 milhões de euros, e aguarda resposta do Brighton. Há a expectativa de que o clube precise aumentar as cifras oferecidas e, caso a negociação tenha um final feliz, o defensor deve assinar contrato até o fim de 2030."
+      "recent_changes": "Recebeu proposta do Racing por empréstimo de Lautaro Díaz."
     },
     "Fluminense": {
       "coach": "Luis Zubeldía",
@@ -156,7 +156,7 @@
     "Santos": {
       "coach": "Luís Felipe Scolari",
       "league": "Copa Sul-Americana",
-      "recent_changes": "Partida contra a Universidad Central pode ser transferida de local devido ao terremoto na Venezuela."
+      "recent_changes": "Aguarda decisão do Cruzeiro sobre a possível liberação de Lautaro Díaz antes do fim do vínculo de empréstimo."
     },
     "Vitória": {
       "league": "Copa do Brasil / Campeonato Brasileiro",
@@ -408,5 +408,5 @@
       "recent_changes": "Hiroki Ito foi convocado para a Copa do Mundo e tem raízes com o Santos, pois iniciou sua carreira em uma academia ligada ao clube paulista em Shizuoka."
     }
   },
-  "last_updated": "2026-06-27T22:04:53.662Z"
+  "last_updated": "2026-06-28T16:13:07.924Z"
 }

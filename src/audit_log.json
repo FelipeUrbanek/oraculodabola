@@ -1995,5 +1995,21 @@
     "source_domain": "www.terra.com.br",
     "category": "Filmes",
     "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-06-28T16:13:27.865Z",
+    "headline": "RACING QUER LAUTARO",
+    "source_url": "https://www.terra.com.br/esportes/futebol/mercado-da-bola/racing-faz-proposta-ao-cruzeiro-por-lautaro-diaz-emprestado-ao-santos,e7828884fef9aa5fd52e2645e2f55002ilked67p.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-06-28T16:16:17.165Z",
+    "headline": "ATOR AGREDIU EX",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/series/ator-de-alice-in-borderland-e-investigado-por-agressao-a-ex-namorada-diz-jornal,1d236ba90bfa0c22345bc256af9f05f428zaudwj.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Séries",
+    "status": "SUCCESS"
   }
 ]
