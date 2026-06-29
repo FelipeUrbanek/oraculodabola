@@ -1,16 +1,16 @@
 {
-  "timestamp": "2026-06-29T15:51:21.198Z",
+  "timestamp": "2026-06-29T22:10:17.634Z",
   "status": "SUCCESS",
   "postsPlanned": 1,
-  "candidatesFound": 4,
+  "candidatesFound": 5,
   "successfulPosts": [
     {
-      "title": "'Supergirl': conheça a HQ com arte de brasileiros que deu origem ao filme",
-      "headline": "SUPERGIRL CHEGA",
-      "category": "Estreia",
-      "instagramId": "18123073216673727",
-      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-06-29/2026-06-29-15-52-06_feed.jpg",
-      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-06-29/2026-06-29-15-52-06_story.jpg"
+      "title": "Millie Bobby Brown e David Harbour, de 'Stranger Things', serão pai e filha espiões em série",
+      "headline": "MILLIE E DAVID UNIDOS",
+      "category": "Séries",
+      "instagramId": "17975477127061670",
+      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-06-29/2026-06-29-22-11-00_feed.jpg",
+      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-06-29/2026-06-29-22-11-00_story.jpg"
     }
   ],
   "failedPosts": []

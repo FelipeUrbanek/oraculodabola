@@ -2043,5 +2043,21 @@
     "source_domain": "www.terra.com.br",
     "category": "Estreia",
     "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-06-29T22:10:04.414Z",
+    "headline": "SANTOS RETOMA TREINOS",
+    "source_url": "https://www.terra.com.br/esportes/santos/santos-abre-semana-com-treino-tecnico-e-retorno-de-tres-jogadores,fb48a8406129ddeddf410d0bf40e270cwm5emif2.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-06-29T22:11:21.353Z",
+    "headline": "MILLIE E DAVID UNIDOS",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/series/millie-bobby-brown-e-david-harbour-de-stranger-things-serao-pai-e-filha-espioes-em-serie,eadb5735e1bf4be4681fe969a57bea82cjdetzs5.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Séries",
+    "status": "SUCCESS"
   }
 ]
