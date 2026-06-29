@@ -1,16 +1,16 @@
 {
-  "timestamp": "2026-06-28T22:04:34.229Z",
+  "timestamp": "2026-06-29T15:51:21.198Z",
   "status": "SUCCESS",
   "postsPlanned": 1,
-  "candidatesFound": 1,
+  "candidatesFound": 4,
   "successfulPosts": [
     {
-      "title": "'O Urso', 'Nuremberg', 'Avatar' e mais estreias da semana no streaming",
-      "headline": "ESTREIAS IMPACTANTES",
+      "title": "'Supergirl': conheça a HQ com arte de brasileiros que deu origem ao filme",
+      "headline": "SUPERGIRL CHEGA",
       "category": "Estreia",
-      "instagramId": "18086360351542753",
-      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-06-28/2026-06-28-22-06-55_feed.jpg",
-      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-06-28/2026-06-28-22-06-55_story.jpg"
+      "instagramId": "18123073216673727",
+      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-06-29/2026-06-29-15-52-06_feed.jpg",
+      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-06-29/2026-06-29-15-52-06_story.jpg"
     }
   ],
   "failedPosts": []

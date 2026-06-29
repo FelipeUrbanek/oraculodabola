@@ -2027,5 +2027,21 @@
     "source_domain": "www.terra.com.br",
     "category": "Estreia",
     "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-06-29T15:51:14.365Z",
+    "headline": "CLUBES BRASILEIROS CELEBRAM DIA DO ORGULHO LGBTQIA+",
+    "source_url": "https://www.terra.com.br/esportes/corinthians/clubes-brasileiros-celebram-o-dia-do-orgulho-lgbtqia-com-mensagens-de-inclusao,dfd7f8a23413b2bb7f9238f1824e98f2z0eltjv8.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-06-29T15:52:28.215Z",
+    "headline": "SUPERGIRL CHEGA",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/filmes/supergirl-conheca-a-hq-com-arte-de-brasileiros-que-deu-origem-ao-filme,d73a4c9544aa2b1dd2142a0c4bcc4baddqbhw5p1.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Estreia",
+    "status": "SUCCESS"
   }
 ]
