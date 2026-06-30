@@ -2059,5 +2059,21 @@
     "source_domain": "www.terra.com.br",
     "category": "Séries",
     "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-06-30T22:17:03.094Z",
+    "headline": "TIQUINHO SOARES NEGOCIA SAÍDA",
+    "source_url": "https://www.terra.com.br/esportes/santos/tiquinho-soares-negocia-saida-do-santos-e-entra-na-mira-do-fortaleza,f4abe07146748d4dd351cb0656dc649e01lz6cne.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-06-30T22:18:26.826Z",
+    "headline": "DORAMAS ROMÂNTICOS",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/series/5-doramas-enemies-to-lovers-viciantes-para-ver-na-netflix,921d63b99f2123746d076e1d424f11a3eevgu7fu.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Séries",
+    "status": "SUCCESS"
   }
 ]

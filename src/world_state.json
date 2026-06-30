@@ -3,7 +3,7 @@
     "Fortaleza": {
       "coach": "Thiago Carpini",
       "league": "Campeonato Brasileiro / Copa do Brasil / Campeonato Brasileiro Sub-20",
-      "recent_changes": "Avançou para as oitavas de final da Copa do Brasil e terá um clássico contra o Ceará no domingo. Pelo Campeonato Brasileiro Sub-20, sofreu uma derrota de virada para o Santos por 2 a 1 (gol de Peterson), permanecendo em 13º lugar com 13 pontos, e enfrentará o Bahia fora de casa, no CT Evaristo de Macedo, na quarta-feira (20), às 15h."
+      "recent_changes": "Monitora a situação do atacante Tiquinho Soares, que pode ser contratado após a rescisão de contrato com o Santos."
     },
     "Vasco": {
       "coach": "Renato Gaúcho",
@@ -156,7 +156,7 @@
     "Santos": {
       "coach": "Cuca",
       "league": "Campeonato Brasileiro",
-      "recent_changes": "Primeira semana de atividades no CT Rei Pelé é focada na parte física, com o técnico Cuca aprimorando tática e técnica a partir de segunda-feira. Celebrou o Dia do Orgulho LGBTQIA+ com mensagens de inclusão."
+      "recent_changes": "O atacante Tiquinho Soares negocia a rescisão de contrato com o clube."
     },
     "Vitória": {
       "league": "Copa do Brasil / Campeonato Brasileiro",
@@ -408,5 +408,5 @@
       "recent_changes": "Hiroki Ito foi convocado para a Copa do Mundo e tem raízes com o Santos, pois iniciou sua carreira em uma academia ligada ao clube paulista em Shizuoka."
     }
   },
-  "last_updated": "2026-06-29T15:50:50.327Z"
+  "last_updated": "2026-06-30T22:16:36.752Z"
 }
