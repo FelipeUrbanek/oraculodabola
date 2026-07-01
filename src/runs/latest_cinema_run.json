@@ -1,16 +1,16 @@
 {
-  "timestamp": "2026-06-30T22:17:09.839Z",
+  "timestamp": "2026-07-01T22:19:34.192Z",
   "status": "SUCCESS",
   "postsPlanned": 1,
-  "candidatesFound": 10,
+  "candidatesFound": 9,
   "successfulPosts": [
     {
-      "title": "5 doramas enemies to lovers viciantes para ver na Netflix",
-      "headline": "DORAMAS ROMÂNTICOS",
-      "category": "Séries",
-      "instagramId": "18135521419502511",
-      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-06-30/2026-06-30-22-18-02_feed.jpg",
-      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-06-30/2026-06-30-22-18-02_story.jpg"
+      "title": "Will Smith vem ao Brasil para participar de evento em São Paulo",
+      "headline": "WILL SMITH NO BRASIL",
+      "category": "Bastidores",
+      "instagramId": "18556266805066273",
+      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-07-01/2026-07-01-22-20-14_feed.jpg",
+      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-07-01/2026-07-01-22-20-14_story.jpg"
     }
   ],
   "failedPosts": []

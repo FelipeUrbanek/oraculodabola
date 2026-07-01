@@ -2075,5 +2075,21 @@
     "source_domain": "www.terra.com.br",
     "category": "Séries",
     "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-07-01T22:19:27.512Z",
+    "headline": "SANTOS PUNIDO!",
+    "source_url": "https://www.terra.com.br/esportes/santos/santos-e-punido-com-transfer-ban-por-divida-com-o-monaco-pela-contratacao-de-jean-lucas,bb9d3be094780c0f9c6b404f8f1f51944fnsxya2.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-07-01T22:20:41.089Z",
+    "headline": "WILL SMITH NO BRASIL",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/filmes/will-smith-vem-ao-brasil-para-participar-de-evento-em-sao-paulo,7aecbf4e6bd8f80f2e7c36357c9789depo9j7p07.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Bastidores",
+    "status": "SUCCESS"
   }
 ]

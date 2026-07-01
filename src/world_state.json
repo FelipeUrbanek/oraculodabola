@@ -29,9 +29,7 @@
       "recent_changes": "Derrotado pelo Botafogo por 3 a 1."
     },
     "Seleção Brasileira": {
-      "coach": "Carlo Ancelotti",
-      "league": "Copa do Mundo de 2026",
-      "recent_changes": "Neymar retornou à Copa do Mundo na partida contra a Escócia."
+      "league": "Copa do Mundo de 2026"
     },
     "Atlético-MG": {
       "coach": "Eduardo Domínguez",
@@ -156,7 +154,7 @@
     "Santos": {
       "coach": "Cuca",
       "league": "Campeonato Brasileiro",
-      "recent_changes": "O atacante Tiquinho Soares negocia a rescisão de contrato com o clube."
+      "recent_changes": "O Santos foi punido com transfer ban da Fifa por causa da dívida com o Mônaco pela contratação de Jean Lucas."
     },
     "Vitória": {
       "league": "Copa do Brasil / Campeonato Brasileiro",
@@ -408,5 +406,5 @@
       "recent_changes": "Hiroki Ito foi convocado para a Copa do Mundo e tem raízes com o Santos, pois iniciou sua carreira em uma academia ligada ao clube paulista em Shizuoka."
     }
   },
-  "last_updated": "2026-06-30T22:16:36.752Z"
+  "last_updated": "2026-07-01T22:18:58.072Z"
 }
