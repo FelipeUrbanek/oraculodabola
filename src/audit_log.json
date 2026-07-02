@@ -2091,5 +2091,21 @@
     "source_domain": "www.terra.com.br",
     "category": "Bastidores",
     "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-07-02T22:09:19.640Z",
+    "headline": "JOÃO DANIEL GRANDO ASSINA",
+    "source_url": "https://www.terra.com.br/esportes/santos/e-oficial-atacante-assina-com-o-santos-ate-2029,288b2d174d332153a5090588826894a2d65j2zd5.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-07-02T22:10:30.267Z",
+    "headline": "FILME SOB INVESTIGAÇÃO",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/filmes/stf-e-pf-avancam-em-investigacoes-sobre-possiveis-irregularidades-do-filme-dark-horse,1cb245acecadc100f1662567f106c3dazk9waa1t.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Bastidores",
+    "status": "SUCCESS"
   }
 ]
