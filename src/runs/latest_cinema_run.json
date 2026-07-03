@@ -1,16 +1,16 @@
 {
-  "timestamp": "2026-07-02T22:09:31.443Z",
+  "timestamp": "2026-07-03T16:26:41.600Z",
   "status": "SUCCESS",
   "postsPlanned": 1,
-  "candidatesFound": 10,
+  "candidatesFound": 11,
   "successfulPosts": [
     {
-      "title": "STF e PF avançam em investigações sobre possíveis irregularidades do filme 'Dark Horse'",
-      "headline": "FILME SOB INVESTIGAÇÃO",
-      "category": "Bastidores",
-      "instagramId": "18140615656555889",
-      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-07-02/2026-07-02-22-10-09_feed.jpg",
-      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-07-02/2026-07-02-22-10-09_story.jpg"
+      "title": "The Rock entra no clima brasileiro, canta com Péricles e ganha camisa da seleção; veja vídeo",
+      "headline": "THE ROCK NO BRASIL",
+      "category": "Filmes",
+      "instagramId": "18094170815198917",
+      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-07-03/2026-07-03-16-27-08_feed.jpg",
+      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-07-03/2026-07-03-16-27-08_story.jpg"
     }
   ],
   "failedPosts": []

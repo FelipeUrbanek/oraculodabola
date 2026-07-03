@@ -2107,5 +2107,21 @@
     "source_domain": "www.terra.com.br",
     "category": "Bastidores",
     "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-07-03T16:26:35.351Z",
+    "headline": "SANTOS RENOVÁ VILA BELMIRO",
+    "source_url": "https://www.terra.com.br/esportes/santos/coisa-linda-santos-divulga-imagens-atualizadas-da-vila-belmiro,097188bfabd47c2623eded960508ee75zqyfhgto.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-07-03T16:27:33.832Z",
+    "headline": "THE ROCK NO BRASIL",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/filmes/the-rock-entra-no-clima-brasileiro-canta-com-pericles-e-ganha-camisa-da-selecao-veja-video,658b4bde18067013361dfb398f6ad849wlz55xc3.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Filmes",
+    "status": "SUCCESS"
   }
 ]
