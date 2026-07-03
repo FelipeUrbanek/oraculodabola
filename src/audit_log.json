@@ -2123,5 +2123,21 @@
     "source_domain": "www.terra.com.br",
     "category": "Filmes",
     "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-07-03T22:06:27.527Z",
+    "headline": "Lautaro Díaz deixa o Santos para jogar no Racing",
+    "source_url": "https://www.terra.com.br/esportes/santos/adeus-atacante-deixa-o-santos-para-jogar-no-exterior,d6e9da31eeb178ef43e3697cd1da6cd1emi8x07i.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-07-03T22:07:28.299Z",
+    "headline": "MINIONS & MONSTROS",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/filmes/minions-monstros-diverte-faz-pensar-e-ate-emociona,871601294699156a1f41f5195994af44qsfp0lwk.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Crítica",
+    "status": "SUCCESS"
   }
 ]

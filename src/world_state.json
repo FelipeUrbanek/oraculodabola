@@ -122,9 +122,7 @@
       "recent_changes": "Pelo Campeonato Brasileiro, figura atualmente na zona de rebaixamento. Anteriormente, avançou para as oitavas de final da Copa do Brasil, lucrando R$ 5 milhões em premiações, após eliminar o Botafogo com uma vitória por 2 a 0."
     },
     "Cruzeiro": {
-      "coach": "Artur Jorge",
-      "league": "Copa do Brasil / Campeonato Brasileiro / Libertadores",
-      "recent_changes": "Recebeu proposta do Racing por empréstimo de Lautaro Díaz."
+      "recent_changes": "Encaminhou o empréstimo do atacante Lautaro Díaz para o Racing, da Argentina, por uma temporada, com opção de compra."
     },
     "Fluminense": {
       "coach": "Luis Zubeldía",
@@ -152,9 +150,7 @@
       "recent_changes": "Avançou para as oitavas de final da Copa do Brasil, lucrando R$ 5 milhões em premiações, após eliminar o Bahia. A equipe também superou o time baiano no Campeonato Brasileiro com uma vitória por 4 a 1 nesta temporada, porém encontra-se atualmente na zona de rebaixamento da competição."
     },
     "Santos": {
-      "coach": "Cuca",
-      "league": "Campeonato Brasileiro",
-      "recent_changes": "O Santos realizou um cronograma completo de engenharia agronômica no gramado da Vila Belmiro, com a parceria da empresa World Sports, e sua primeira partida no estádio após as intervenções será contra a Chapecoense no dia 25 de julho."
+      "recent_changes": "Liberou o atacante Lautaro Díaz para jogar no Racing, da Argentina, após receber proposta de empréstimo."
     },
     "Vitória": {
       "league": "Copa do Brasil / Campeonato Brasileiro",
@@ -406,5 +402,5 @@
       "recent_changes": "Hiroki Ito foi convocado para a Copa do Mundo e tem raízes com o Santos, pois iniciou sua carreira em uma academia ligada ao clube paulista em Shizuoka."
     }
   },
-  "last_updated": "2026-07-03T16:26:08.116Z"
+  "last_updated": "2026-07-03T22:06:07.475Z"
 }

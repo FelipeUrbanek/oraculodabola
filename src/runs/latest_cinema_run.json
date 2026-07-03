@@ -1,16 +1,16 @@
 {
-  "timestamp": "2026-07-03T16:26:41.600Z",
+  "timestamp": "2026-07-03T22:06:33.786Z",
   "status": "SUCCESS",
   "postsPlanned": 1,
-  "candidatesFound": 11,
+  "candidatesFound": 12,
   "successfulPosts": [
     {
-      "title": "The Rock entra no clima brasileiro, canta com Péricles e ganha camisa da seleção; veja vídeo",
-      "headline": "THE ROCK NO BRASIL",
-      "category": "Filmes",
-      "instagramId": "18094170815198917",
-      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-07-03/2026-07-03-16-27-08_feed.jpg",
-      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-07-03/2026-07-03-16-27-08_story.jpg"
+      "title": "'Minions & Monstros' diverte, faz pensar e até emociona",
+      "headline": "MINIONS & MONSTROS",
+      "category": "Crítica",
+      "instagramId": "18086510282404792",
+      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-07-03/2026-07-03-22-07-06_feed.jpg",
+      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-07-03/2026-07-03-22-07-06_story.jpg"
     }
   ],
   "failedPosts": []
