@@ -1,16 +1,16 @@
 {
-  "timestamp": "2026-07-04T16:04:40.697Z",
+  "timestamp": "2026-07-04T22:00:51.925Z",
   "status": "SUCCESS",
   "postsPlanned": 1,
-  "candidatesFound": 9,
+  "candidatesFound": 7,
   "successfulPosts": [
     {
-      "title": "Vilão de 'Mad Max 2' morre aos 76 anos após batalha contra doença renal",
-      "headline": "ATOR DE MAD MAX MORRE",
-      "category": "Filmes",
-      "instagramId": "18097785758582663",
-      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-07-04/2026-07-04-16-05-36_feed.jpg",
-      "storyPath": null
+      "title": "Oasis divulga primeiro trailer do documentário sobre a turnê Live '25",
+      "headline": "OASIS VOLTA!",
+      "category": "Estreia",
+      "instagramId": "18056826878754204",
+      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-07-04/2026-07-04-22-01-38_feed.jpg",
+      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-07-04/2026-07-04-22-01-38_story.jpg"
     }
   ],
   "failedPosts": []

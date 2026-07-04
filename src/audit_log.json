@@ -2155,5 +2155,21 @@
     "source_domain": "www.terra.com.br",
     "category": "Filmes",
     "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-07-04T22:00:47.517Z",
+    "headline": "JUNINHO É O NOVO NOME!",
+    "source_url": "https://www.terra.com.br/esportes/santos/robinho-jr-faz-pedido-importante-nos-bastidores-do-santos,9922eae0e6a4a20e9d95c7f552fcf302qde860vb.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-07-04T22:01:59.809Z",
+    "headline": "OASIS VOLTA!",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/filmes/oasis-divulga-primeiro-trailer-do-documentario-sobre-a-turne-live-25,535d9487b5d5f4bb04dee14ea1112f60wbinzwm4.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Estreia",
+    "status": "SUCCESS"
   }
 ]
