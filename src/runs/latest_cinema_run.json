@@ -1,16 +1,16 @@
 {
-  "timestamp": "2026-07-03T22:06:33.786Z",
+  "timestamp": "2026-07-04T16:04:40.697Z",
   "status": "SUCCESS",
   "postsPlanned": 1,
-  "candidatesFound": 12,
+  "candidatesFound": 9,
   "successfulPosts": [
     {
-      "title": "'Minions & Monstros' diverte, faz pensar e até emociona",
-      "headline": "MINIONS & MONSTROS",
-      "category": "Crítica",
-      "instagramId": "18086510282404792",
-      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-07-03/2026-07-03-22-07-06_feed.jpg",
-      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-07-03/2026-07-03-22-07-06_story.jpg"
+      "title": "Vilão de 'Mad Max 2' morre aos 76 anos após batalha contra doença renal",
+      "headline": "ATOR DE MAD MAX MORRE",
+      "category": "Filmes",
+      "instagramId": "18097785758582663",
+      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-07-04/2026-07-04-16-05-36_feed.jpg",
+      "storyPath": null
     }
   ],
   "failedPosts": []

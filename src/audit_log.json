@@ -2139,5 +2139,21 @@
     "source_domain": "www.terra.com.br",
     "category": "Crítica",
     "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-07-04T16:04:36.447Z",
+    "headline": "SANTOS PERDE BONTEMPO",
+    "source_url": "https://www.terra.com.br/esportes/santos/cuca-ganha-desfalque-no-santos-por-conta-de-problema-de-saude,933ab31650c6c7e52873cf2d24092f00y5920c5w.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-07-04T16:05:54.579Z",
+    "headline": "ATOR DE MAD MAX MORRE",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/filmes/vilao-de-mad-max-2-morre-aos-76-anos-apos-batalha-contra-doenca-renal,779f059f4fc39c78ec975d58d387be5e2ovx9ndo.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Filmes",
+    "status": "SUCCESS"
   }
 ]

@@ -150,7 +150,9 @@
       "recent_changes": "Avançou para as oitavas de final da Copa do Brasil, lucrando R$ 5 milhões em premiações, após eliminar o Bahia. A equipe também superou o time baiano no Campeonato Brasileiro com uma vitória por 4 a 1 nesta temporada, porém encontra-se atualmente na zona de rebaixamento da competição."
     },
     "Santos": {
-      "recent_changes": "Liberou o atacante Lautaro Díaz para jogar no Racing, da Argentina, após receber proposta de empréstimo."
+      "coach": "Cuca",
+      "league": "Campeonato Brasileiro",
+      "recent_changes": "Preparação para a retomada da temporada com desfalques de Gabriel Bontempo, Igor Vinicius e Thaciano."
     },
     "Vitória": {
       "league": "Copa do Brasil / Campeonato Brasileiro",
@@ -402,5 +404,5 @@
       "recent_changes": "Hiroki Ito foi convocado para a Copa do Mundo e tem raízes com o Santos, pois iniciou sua carreira em uma academia ligada ao clube paulista em Shizuoka."
     }
   },
-  "last_updated": "2026-07-03T22:06:07.475Z"
+  "last_updated": "2026-07-04T16:04:16.108Z"
 }
