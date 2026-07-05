@@ -2187,5 +2187,21 @@
     "source_domain": "www.terra.com.br",
     "category": "Filmes",
     "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-07-05T22:04:37.001Z",
+    "headline": "Manchester United mira Andrey Santos",
+    "source_url": "https://www.terra.com.br/esportes/futebol/internacional/gigante-ingles-mira-contratacao-de-andrey-santos,cc790d812ecca37b5bcdb32dd3b09fc9r3c8hv7z.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Mercado da Bola",
+    "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-07-05T22:07:46.017Z",
+    "headline": "DRAGÕES VOLTA!",
+    "source_url": "backup_cinema_1783289231515",
+    "source_domain": "backup_news",
+    "category": "Séries",
+    "status": "SUCCESS"
   }
 ]

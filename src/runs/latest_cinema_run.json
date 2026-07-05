@@ -1,16 +1,16 @@
 {
-  "timestamp": "2026-07-05T16:11:47.018Z",
+  "timestamp": "2026-07-05T22:04:49.190Z",
   "status": "SUCCESS",
   "postsPlanned": 1,
-  "candidatesFound": 2,
+  "candidatesFound": 0,
   "successfulPosts": [
     {
-      "title": "Klara Castanho celebra papel como Maiara em filme de Marília Mendonça: 'Fui criança muito sertaneja'",
-      "headline": "KLARA CASTANHO EM FILME",
-      "category": "Filmes",
-      "instagramId": "18123786964676463",
-      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-07-05/2026-07-05-16-13-39_feed.jpg",
-      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-07-05/2026-07-05-16-13-39_story.jpg"
+      "title": "House of the Dragon: Terceira temporada inicia gravações no Reino Unido",
+      "headline": "DRAGÕES VOLTA!",
+      "category": "Séries",
+      "instagramId": "18134510710579646",
+      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-07-05/2026-07-05-22-07-14_feed.jpg",
+      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-07-05/2026-07-05-22-07-14_story.jpg"
     }
   ],
   "failedPosts": []
