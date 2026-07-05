@@ -18,7 +18,7 @@
     "Grêmio": {
       "coach": "Luís Castro",
       "league": "Campeonato Brasileiro / Copa do Brasil / Brasileirão Feminino",
-      "recent_changes": "Neymar, do Santos, desfalcará o Grêmio em confronto futuro, pois não jogará mais pelo clube paulista antes da Copa do Mundo devido a lesão. O goleiro Weverton recuperou sua melhor forma técnica no clube, com atuações de destaque que lhe renderam uma convocação surpresa para a Seleção Brasileira na Copa do Mundo de 2026."
+      "recent_changes": "Neymar, do Santos, desfalcará o Grêmio em confronto futuro, pois não jogará mais pelo clube paulista antes da Copa do Mundo devido a lesão. O goleiro Weverton recuperou sua melhor forma técnica no clube, com atuações de destaque que lhe renderam uma convocação surpresa para a Seleção Brasileira na Copa do Mundo de 2026. O clube está disputando a contratação do lateral-direito Diego Caito, do Goiás."
     },
     "São Paulo": {
       "recent_changes": "O zagueiro Arboleda foi oferecido ao Santos, aumentando as dúvidas sobre o seu futuro no clube. Celebrou o Dia do Orgulho LGBTQIA+ com mensagens de inclusão."
@@ -152,7 +152,7 @@
     "Santos": {
       "coach": "Cuca",
       "league": "Campeonato Brasileiro",
-      "recent_changes": "Juninho busca consolidar seu espaço no elenco comandado por Cuca após alteração de nome de Robinho Jr. para Juninho."
+      "recent_changes": "Juninho busca consolidar seu espaço no elenco comandado por Cuca após alteração de nome de Robinho Jr. para Juninho. O time busca reforçar o elenco com a contratação do lateral-direito Diego Caito, do Goiás, para disputar posição com Igor Vinícius."
     },
     "Vitória": {
       "league": "Copa do Brasil / Campeonato Brasileiro",
@@ -404,5 +404,5 @@
       "recent_changes": "Hiroki Ito foi convocado para a Copa do Mundo e tem raízes com o Santos, pois iniciou sua carreira em uma academia ligada ao clube paulista em Shizuoka."
     }
   },
-  "last_updated": "2026-07-04T22:00:25.380Z"
+  "last_updated": "2026-07-05T16:11:12.190Z"
 }

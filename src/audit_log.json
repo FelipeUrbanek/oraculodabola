@@ -2171,5 +2171,21 @@
     "source_domain": "www.terra.com.br",
     "category": "Estreia",
     "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-07-05T16:11:36.899Z",
+    "headline": "SANTOS NO MERCADO",
+    "source_url": "https://www.terra.com.br/esportes/futebol/mercado-da-bola/santos-entra-na-disputa-com-gremio-por-jogador-entenda,eaf572834e3cedfcb84e463c9c5a1ebakkuf4z39.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-07-05T16:13:59.164Z",
+    "headline": "KLARA CASTANHO EM FILME",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/filmes/klara-castanho-celebra-papel-como-maiara-em-filme-de-marilia-mendonca-fui-crianca-muito-sertaneja,05751e103369a426c31ccaebc7eb9a00pjmo3398.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Filmes",
+    "status": "SUCCESS"
   }
 ]
