@@ -2219,5 +2219,21 @@
     "source_domain": "www.terra.com.br",
     "category": "Crítica",
     "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-07-06T22:15:50.914Z",
+    "headline": "BILLAL BRAHIMI DEIXA O SANTOS",
+    "source_url": "https://www.terra.com.br/esportes/santos/santos-rescinde-com-billal-brahimi-e-gera-economia-milionaria,60bf3f5017aa6e00065002f05533fabaafgbu8b6.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-07-06T22:18:32.139Z",
+    "headline": "ENOLA HOLMES 3",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/filmes/alem-de-enola-7-filmes-e-series-do-universo-de-sherlock-holmes-para-ver-no-streaming,9f8befa04c4e4538a35201c48d05073bgtj39mh4.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Filmes",
+    "status": "SUCCESS"
   }
 ]

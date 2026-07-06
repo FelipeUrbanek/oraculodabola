@@ -1,16 +1,16 @@
 {
-  "timestamp": "2026-07-06T15:37:13.393Z",
+  "timestamp": "2026-07-06T22:15:58.167Z",
   "status": "SUCCESS",
   "postsPlanned": 1,
   "candidatesFound": 4,
   "successfulPosts": [
     {
-      "title": "'Um Triste e Belo Mundo' fala, com poesia, sobre amor e família em tempos de guerra",
-      "headline": "UM TRISTE E BELO MUNDO",
-      "category": "Crítica",
-      "instagramId": "17854622172695646",
-      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-07-06/2026-07-06-15-37-56_feed.jpg",
-      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-07-06/2026-07-06-15-37-56_story.jpg"
+      "title": "Além de Enola: 7 filmes e séries do universo de Sherlock Holmes para ver no streaming",
+      "headline": "ENOLA HOLMES 3",
+      "category": "Filmes",
+      "instagramId": "18599892136038958",
+      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-07-06/2026-07-06-22-18-10_feed.jpg",
+      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-07-06/2026-07-06-22-18-10_story.jpg"
     }
   ],
   "failedPosts": []
