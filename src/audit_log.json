@@ -2203,5 +2203,21 @@
     "source_domain": "backup_news",
     "category": "Séries",
     "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-07-06T15:37:06.443Z",
+    "headline": "TOMÁS RINCÓN DEIXA O SANTOS",
+    "source_url": "https://www.terra.com.br/esportes/santos/tomas-rincon-se-despede-do-santos-em-publicacao-nas-redes-grande-honra,34f78cf27467c29a96c6097193b242a14nsif0se.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-07-06T15:38:19.538Z",
+    "headline": "UM TRISTE E BELO MUNDO",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/filmes/um-triste-e-belo-mundo-fala-com-poesia-sobre-amor-e-familia-em-tempos-de-guerra,0cc2c9bb9c175748d0e7d3690dea833ese9fu1sf.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Crítica",
+    "status": "SUCCESS"
   }
 ]

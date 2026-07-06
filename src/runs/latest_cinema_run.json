@@ -1,16 +1,16 @@
 {
-  "timestamp": "2026-07-05T22:04:49.190Z",
+  "timestamp": "2026-07-06T15:37:13.393Z",
   "status": "SUCCESS",
   "postsPlanned": 1,
-  "candidatesFound": 0,
+  "candidatesFound": 4,
   "successfulPosts": [
     {
-      "title": "House of the Dragon: Terceira temporada inicia gravações no Reino Unido",
-      "headline": "DRAGÕES VOLTA!",
-      "category": "Séries",
-      "instagramId": "18134510710579646",
-      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-07-05/2026-07-05-22-07-14_feed.jpg",
-      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-07-05/2026-07-05-22-07-14_story.jpg"
+      "title": "'Um Triste e Belo Mundo' fala, com poesia, sobre amor e família em tempos de guerra",
+      "headline": "UM TRISTE E BELO MUNDO",
+      "category": "Crítica",
+      "instagramId": "17854622172695646",
+      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-07-06/2026-07-06-15-37-56_feed.jpg",
+      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-07-06/2026-07-06-15-37-56_story.jpg"
     }
   ],
   "failedPosts": []
