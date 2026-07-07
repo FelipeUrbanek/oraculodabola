@@ -1,16 +1,16 @@
 {
-  "timestamp": "2026-07-06T22:15:58.167Z",
+  "timestamp": "2026-07-07T22:12:58.408Z",
   "status": "SUCCESS",
   "postsPlanned": 1,
-  "candidatesFound": 4,
+  "candidatesFound": 8,
   "successfulPosts": [
     {
-      "title": "Além de Enola: 7 filmes e séries do universo de Sherlock Holmes para ver no streaming",
-      "headline": "ENOLA HOLMES 3",
+      "title": "Após vazar na web, novo filme animado de 'Avatar' estreia mais cedo no streaming",
+      "headline": "AVATAR AANG CHEGA",
       "category": "Filmes",
-      "instagramId": "18599892136038958",
-      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-07-06/2026-07-06-22-18-10_feed.jpg",
-      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-07-06/2026-07-06-22-18-10_story.jpg"
+      "instagramId": "18060562730742044",
+      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-07-07/2026-07-07-22-13-37_feed.jpg",
+      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-07-07/2026-07-07-22-13-37_story.jpg"
     }
   ],
   "failedPosts": []

@@ -2235,5 +2235,21 @@
     "source_domain": "www.terra.com.br",
     "category": "Filmes",
     "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-07-07T22:12:48.280Z",
+    "headline": "PEPÊ FERMINO LESIONADO",
+    "source_url": "https://www.terra.com.br/esportes/santos/joia-da-base-tem-lesao-confirmada-e-vira-desfalque-no-santos,cffca238e9c6397295efd0509888bf39gz5z1gf8.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-07-07T22:13:58.828Z",
+    "headline": "AVATAR AANG CHEGA",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/series/apos-vazar-na-web-novo-filme-animado-de-avatar-estreia-mais-cedo-no-streaming,67c1cf53132c271eee31ec36989a87cdz3mppmv4.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Filmes",
+    "status": "SUCCESS"
   }
 ]
