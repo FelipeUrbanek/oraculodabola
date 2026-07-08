@@ -64,7 +64,7 @@
     "Ponte Preta": {
       "coach": "Não mencionado",
       "league": "Série B do Brasileirão",
-      "recent_changes": "O lateral-direito Júlio Oliveira teve seu contrato renovado até 2029 após um acordo judicial que encerrou uma disputa trabalhista por salários atrasados. O clube enfrenta problemas financeiros e está na zona de rebaixamento da Série B."
+      "recent_changes": "Chegada do meia-atacante Enzo Boer por empréstimo do Santos e do zagueiro Alex Nascimento também por empréstimo"
     },
     "Paraná Clube": {
       "coach": "Tcheco",
@@ -152,7 +152,7 @@
     "Santos": {
       "coach": "Cuca",
       "league": "Campeonato Brasileiro",
-      "recent_changes": "Pepê Fermino sofreu lesão muscular na coxa direita e tende a desfalcar o Peixe nos primeiros compromissos do segundo semestre"
+      "recent_changes": "Renovação do contrato do meia-atacante Enzo Boer até julho de 2028 e empréstimo para a Ponte Preta"
     },
     "Vitória": {
       "league": "Copa do Brasil / Campeonato Brasileiro",
@@ -404,5 +404,5 @@
       "recent_changes": "Hiroki Ito foi convocado para a Copa do Mundo e tem raízes com o Santos, pois iniciou sua carreira em uma academia ligada ao clube paulista em Shizuoka."
     }
   },
-  "last_updated": "2026-07-07T22:12:23.997Z"
+  "last_updated": "2026-07-08T22:08:19.298Z"
 }

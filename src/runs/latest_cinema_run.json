@@ -1,16 +1,16 @@
 {
-  "timestamp": "2026-07-07T22:12:58.408Z",
+  "timestamp": "2026-07-08T22:08:52.521Z",
   "status": "SUCCESS",
   "postsPlanned": 1,
-  "candidatesFound": 8,
+  "candidatesFound": 12,
   "successfulPosts": [
     {
-      "title": "Após vazar na web, novo filme animado de 'Avatar' estreia mais cedo no streaming",
-      "headline": "AVATAR AANG CHEGA",
+      "title": "Em 'O Convite', Olivia Wilde filma o colapso (e a reinvenção) de dois casamentos",
+      "headline": "O CONVITE CHEGA!",
       "category": "Filmes",
-      "instagramId": "18060562730742044",
-      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-07-07/2026-07-07-22-13-37_feed.jpg",
-      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-07-07/2026-07-07-22-13-37_story.jpg"
+      "instagramId": "17930938356345975",
+      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-07-08/2026-07-08-22-09-28_feed.jpg",
+      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-07-08/2026-07-08-22-09-28_story.jpg"
     }
   ],
   "failedPosts": []
