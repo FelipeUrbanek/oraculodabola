@@ -2267,5 +2267,21 @@
     "source_domain": "www.terra.com.br",
     "category": "Filmes",
     "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-07-09T15:13:46.891Z",
+    "headline": "SANTOS ATRASA SALÁRIOS",
+    "source_url": "https://www.terra.com.br/esportes/santos/santos-atrasa-salarios-e-acumula-pendencias-financeiras-com-o-elenco,315a12efb3b432ee75c037bcc31c980atz22n6jh.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-07-09T15:14:39.365Z",
+    "headline": "FESTIVAL DE GRAMADO",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/filmes/festival-de-gramado-revela-selecao-filme-com-marina-ruy-barbosa-abrira-a-54-edicao,d6141f6489c4a4efb67cb13cd48f85dfls7cead7.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Estreia",
+    "status": "SUCCESS"
   }
 ]
