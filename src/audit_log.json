@@ -2283,5 +2283,21 @@
     "source_domain": "www.terra.com.br",
     "category": "Estreia",
     "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-07-09T22:29:22.568Z",
+    "headline": "SANTOS LIBERA ZÉ IVALDO",
+    "source_url": "https://www.terra.com.br/esportes/futebol/mercado-da-bola/santos-libera-ze-ivaldo-para-acertar-emprestimo-com-o-remo,f2dd97d5865c4c2dd263ed995967c370nizug88i.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-07-09T22:30:09.724Z",
+    "headline": "FILME BRASILEIRO NO FESTIVAL DE LOCARNO",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/filmes/filme-brasileiro-a-margem-do-rio-integrara-competicao-do-festival-de-locarno-na-suica-conheca,6a7060dfae968cfca42579a204097855y44dzbwb.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Filmes",
+    "status": "SUCCESS"
   }
 ]

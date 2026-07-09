@@ -1,16 +1,16 @@
 {
-  "timestamp": "2026-07-09T15:13:53.275Z",
+  "timestamp": "2026-07-09T22:29:31.791Z",
   "status": "SUCCESS",
   "postsPlanned": 1,
-  "candidatesFound": 11,
+  "candidatesFound": 10,
   "successfulPosts": [
     {
-      "title": "Festival de Gramado revela seleção; filme com Marina Ruy Barbosa abrirá a 54ª edição",
-      "headline": "FESTIVAL DE GRAMADO",
-      "category": "Estreia",
-      "instagramId": "17980740759021229",
-      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-07-09/2026-07-09-15-14-16_feed.jpg",
-      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-07-09/2026-07-09-15-14-16_story.jpg"
+      "title": "Filme brasileiro 'A Margem do Rio' integrará competição do Festival de Locarno, na Suíça; conheça",
+      "headline": "FILME BRASILEIRO NO FESTIVAL DE LOCARNO",
+      "category": "Filmes",
+      "instagramId": "17901881646308570",
+      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-07-09/2026-07-09-22-29-48_feed.jpg",
+      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-07-09/2026-07-09-22-29-48_story.jpg"
     }
   ],
   "failedPosts": []
