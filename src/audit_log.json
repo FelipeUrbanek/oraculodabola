@@ -2299,5 +2299,21 @@
     "source_domain": "www.terra.com.br",
     "category": "Filmes",
     "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-07-10T22:05:39.407Z",
+    "headline": "NEYMAR: FUTURO INDEFINIDO",
+    "source_url": "https://www.terra.com.br/esportes/santos/futuro-de-neymar-segue-indefinido-no-santos-e-aposentadoria-nao-esta-descartada,05a31e710bb5a54d35f77c163f866540ro7o14kh.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-07-10T22:06:48.680Z",
+    "headline": "NOVO MOANA",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/filmes/novo-moana-chega-ao-cinemas-nao-queremos-substituir-o-original-diz-diretor,9ae3fc9abbb206c026049d72368012853wa5qzgq.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Filmes",
+    "status": "SUCCESS"
   }
 ]

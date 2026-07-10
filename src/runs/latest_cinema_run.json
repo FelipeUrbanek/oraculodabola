@@ -1,16 +1,16 @@
 {
-  "timestamp": "2026-07-09T22:29:31.791Z",
+  "timestamp": "2026-07-10T22:05:47.514Z",
   "status": "SUCCESS",
   "postsPlanned": 1,
-  "candidatesFound": 10,
+  "candidatesFound": 8,
   "successfulPosts": [
     {
-      "title": "Filme brasileiro 'A Margem do Rio' integrará competição do Festival de Locarno, na Suíça; conheça",
-      "headline": "FILME BRASILEIRO NO FESTIVAL DE LOCARNO",
+      "title": "Novo 'Moana' chega ao cinemas; 'Não queremos substituir o original', diz diretor",
+      "headline": "NOVO MOANA",
       "category": "Filmes",
-      "instagramId": "17901881646308570",
-      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-07-09/2026-07-09-22-29-48_feed.jpg",
-      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-07-09/2026-07-09-22-29-48_story.jpg"
+      "instagramId": "18076258583320115",
+      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-07-10/2026-07-10-22-06-26_feed.jpg",
+      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-07-10/2026-07-10-22-06-26_story.jpg"
     }
   ],
   "failedPosts": []
