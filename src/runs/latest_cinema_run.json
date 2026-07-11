@@ -1,16 +1,16 @@
 {
-  "timestamp": "2026-07-11T15:58:29.751Z",
+  "timestamp": "2026-07-11T21:52:30.920Z",
   "status": "SUCCESS",
   "postsPlanned": 1,
-  "candidatesFound": 4,
+  "candidatesFound": 3,
   "successfulPosts": [
     {
-      "title": "Atriz descobre que é neta de Charles Manson e transforma revelação em documentário",
-      "headline": "NETA DE CHARLES MANSON",
-      "category": "Bastidores",
-      "instagramId": "18088571435420464",
-      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-07-11/2026-07-11-15-59-11_feed.jpg",
-      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-07-11/2026-07-11-15-59-11_story.jpg"
+      "title": "House of the Dragon: Terceira temporada inicia gravações no Reino Unido",
+      "headline": "DRAGÕES VOLTA!",
+      "category": "Séries",
+      "instagramId": "18109124416963918",
+      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-07-11/2026-07-11-21-55-13_feed.jpg",
+      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-07-11/2026-07-11-21-55-13_story.jpg"
     }
   ],
   "failedPosts": []

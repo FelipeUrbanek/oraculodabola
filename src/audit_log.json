@@ -2347,5 +2347,21 @@
     "source_domain": "www.terra.com.br",
     "category": "Bastidores",
     "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-07-11T21:52:21.792Z",
+    "headline": "ZÉ IVALDO LIBERADO",
+    "source_url": "https://www.terra.com.br/esportes/santos/ele-foi-liberado-pelo-santos-e-vai-disputar-o-brasileirao-por-outra-equipe,43b996a016dabdfe9a14e1efb0c936ednhwf7358.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-07-11T21:55:35.551Z",
+    "headline": "DRAGÕES VOLTA!",
+    "source_url": "backup_cinema_1783806911521",
+    "source_domain": "backup_news",
+    "category": "Séries",
+    "status": "SUCCESS"
   }
 ]
