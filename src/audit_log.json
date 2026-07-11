@@ -2315,5 +2315,21 @@
     "source_domain": "www.terra.com.br",
     "category": "Filmes",
     "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-07-11T13:22:53.236Z",
+    "headline": "SANTOS EM CRISE",
+    "source_url": "https://www.terra.com.br/esportes/santos/santos-podera-perder-jogadores-na-justica-entenda,a80c5679a8600423e864c2ab2d7a413cqr8vs7j6.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-07-11T13:24:17.927Z",
+    "headline": "IA NO MUNDO DA MÚSICA",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/series/grammy-e-organizacoes-musicais-internacionais-lancam-selos-para-classificar-conteudo-gerado-por-ia,6b45d866bbf5c8ec76bddfb5872c626c8p275pv9.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Breaking",
+    "status": "SUCCESS"
   }
 ]

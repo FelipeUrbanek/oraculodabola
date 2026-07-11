@@ -1,16 +1,16 @@
 {
-  "timestamp": "2026-07-10T22:05:47.514Z",
+  "timestamp": "2026-07-11T13:22:59.606Z",
   "status": "SUCCESS",
   "postsPlanned": 1,
-  "candidatesFound": 8,
+  "candidatesFound": 7,
   "successfulPosts": [
     {
-      "title": "Novo 'Moana' chega ao cinemas; 'Não queremos substituir o original', diz diretor",
-      "headline": "NOVO MOANA",
-      "category": "Filmes",
-      "instagramId": "18076258583320115",
-      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-07-10/2026-07-10-22-06-26_feed.jpg",
-      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-07-10/2026-07-10-22-06-26_story.jpg"
+      "title": "Grammy e organizações musicais internacionais lançam selos para classificar conteúdo gerado por IA",
+      "headline": "IA NO MUNDO DA MÚSICA",
+      "category": "Breaking",
+      "instagramId": "18157745521476882",
+      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-07-11/2026-07-11-13-23-55_feed.jpg",
+      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-07-11/2026-07-11-13-23-55_story.jpg"
     }
   ],
   "failedPosts": []

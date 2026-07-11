@@ -150,9 +150,9 @@
       "recent_changes": "Avançou para as oitavas de final da Copa do Brasil, lucrando R$ 5 milhões em premiações, após eliminar o Bahia. A equipe também superou o time baiano no Campeonato Brasileiro com uma vitória por 4 a 1 nesta temporada, porém encontra-se atualmente na zona de rebaixamento da competição."
     },
     "Santos": {
-      "coach": "",
+      "coach": "Cuca",
       "league": "Brasileirão",
-      "recent_changes": ""
+      "recent_changes": "O clube atrasou os salários de junho e tem dívidas de imagem e salários atrasados, incluindo um total de R$ 1,1 bilhão de dívidas, e enfrenta a possibilidade de perder jogadores por meio de rescisões na Justiça do Trabalho."
     },
     "Vitória": {
       "league": "Copa do Brasil / Campeonato Brasileiro",
@@ -404,5 +404,5 @@
       "recent_changes": "Hiroki Ito foi convocado para a Copa do Mundo e tem raízes com o Santos, pois iniciou sua carreira em uma academia ligada ao clube paulista em Shizuoka."
     }
   },
-  "last_updated": "2026-07-10T22:05:19.317Z"
+  "last_updated": "2026-07-11T13:22:29.304Z"
 }
