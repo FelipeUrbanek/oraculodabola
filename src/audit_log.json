@@ -2331,5 +2331,21 @@
     "source_domain": "www.terra.com.br",
     "category": "Breaking",
     "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-07-11T15:58:23.606Z",
+    "headline": "ESCOBAR RENOVÁ!",
+    "source_url": "https://www.terra.com.br/esportes/santos/santos-encaminha-renovacao-de-escobar-ate-o-fim-de-2027,a5cc8e8ee1c5026e866be433de42afd6vsekecql.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-07-11T15:59:31.945Z",
+    "headline": "NETA DE CHARLES MANSON",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/filmes/atriz-descobre-que-e-neta-de-charles-manson-e-transforma-revelacao-em-documentario,cb584562d8018cde74b78319ee160f70iw1qr1li.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Bastidores",
+    "status": "SUCCESS"
   }
 ]
