@@ -150,8 +150,9 @@
       "recent_changes": "Avançou para as oitavas de final da Copa do Brasil, lucrando R$ 5 milhões em premiações, após eliminar o Bahia. A equipe também superou o time baiano no Campeonato Brasileiro com uma vitória por 4 a 1 nesta temporada, porém encontra-se atualmente na zona de rebaixamento da competição."
     },
     "Santos": {
+      "coach": "Cuca",
       "league": "Campeonato Brasileiro",
-      "recent_changes": "Renovação de contrato do lateral-esquerdo Gonzalo Escobar até o fim de 2027."
+      "recent_changes": "Preparação para o retorno aos jogos oficiais após a pausa, com dúvidas sobre a escalação de Moisés e Gabriel Bontempo devido a lesões."
     },
     "Vitória": {
       "league": "Copa do Brasil / Campeonato Brasileiro",
@@ -403,5 +404,5 @@
       "recent_changes": "Hiroki Ito foi convocado para a Copa do Mundo e tem raízes com o Santos, pois iniciou sua carreira em uma academia ligada ao clube paulista em Shizuoka."
     }
   },
-  "last_updated": "2026-07-11T15:58:02.423Z"
+  "last_updated": "2026-07-12T13:22:36.025Z"
 }

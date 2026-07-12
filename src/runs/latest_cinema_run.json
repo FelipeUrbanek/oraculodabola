@@ -1,16 +1,16 @@
 {
-  "timestamp": "2026-07-11T21:52:30.920Z",
+  "timestamp": "2026-07-12T13:23:04.024Z",
   "status": "SUCCESS",
   "postsPlanned": 1,
-  "candidatesFound": 3,
+  "candidatesFound": 4,
   "successfulPosts": [
     {
-      "title": "House of the Dragon: Terceira temporada inicia gravações no Reino Unido",
-      "headline": "DRAGÕES VOLTA!",
-      "category": "Séries",
-      "instagramId": "18109124416963918",
-      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-07-11/2026-07-11-21-55-13_feed.jpg",
-      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-07-11/2026-07-11-21-55-13_story.jpg"
+      "title": "'Primavera', sobre Vivaldi e sua pupila, frustra por não mergulhar de verdade na vida do compositor",
+      "headline": "PRIMAVERA FRUSTRA",
+      "category": "Crítica",
+      "instagramId": "17862532548643801",
+      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-07-12/2026-07-12-13-24-53_feed.jpg",
+      "storyPath": null
     }
   ],
   "failedPosts": []
