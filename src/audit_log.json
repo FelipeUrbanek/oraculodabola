@@ -2379,5 +2379,13 @@
     "source_domain": "www.terra.com.br",
     "category": "Crítica",
     "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-07-12T16:03:28.904Z",
+    "headline": "NOLAN REAGE",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/filmes/christopher-nolan-rebate-criticas-sobre-elenco-de-a-odisseia-e-assim-uma-adaptacao,e671c990e9a36e2bc3588d6e97f6a706mlm8epq7.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Filmes",
+    "status": "SUCCESS"
   }
 ]

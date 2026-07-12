@@ -1,16 +1,16 @@
 {
-  "timestamp": "2026-07-12T13:23:04.024Z",
+  "timestamp": "2026-07-12T16:01:16.944Z",
   "status": "SUCCESS",
   "postsPlanned": 1,
-  "candidatesFound": 4,
+  "candidatesFound": 1,
   "successfulPosts": [
     {
-      "title": "'Primavera', sobre Vivaldi e sua pupila, frustra por não mergulhar de verdade na vida do compositor",
-      "headline": "PRIMAVERA FRUSTRA",
-      "category": "Crítica",
-      "instagramId": "17862532548643801",
-      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-07-12/2026-07-12-13-24-53_feed.jpg",
-      "storyPath": null
+      "title": "Christopher Nolan rebate críticas sobre elenco de 'A Odisseia': 'É assim uma adaptação'",
+      "headline": "NOLAN REAGE",
+      "category": "Filmes",
+      "instagramId": "18122186488817053",
+      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-07-12/2026-07-12-16-03-09_feed.jpg",
+      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-07-12/2026-07-12-16-03-09_story.jpg"
     }
   ],
   "failedPosts": []
