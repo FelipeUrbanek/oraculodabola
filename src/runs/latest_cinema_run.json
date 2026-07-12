@@ -1,16 +1,16 @@
 {
-  "timestamp": "2026-07-12T16:01:16.944Z",
+  "timestamp": "2026-07-12T21:52:47.242Z",
   "status": "SUCCESS",
   "postsPlanned": 1,
   "candidatesFound": 1,
   "successfulPosts": [
     {
-      "title": "Christopher Nolan rebate críticas sobre elenco de 'A Odisseia': 'É assim uma adaptação'",
-      "headline": "NOLAN REAGE",
-      "category": "Filmes",
-      "instagramId": "18122186488817053",
-      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-07-12/2026-07-12-16-03-09_feed.jpg",
-      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-07-12/2026-07-12-16-03-09_story.jpg"
+      "title": "Stranger Things: Quinta e última temporada promete desfecho épico",
+      "headline": "STRANGER THINGS",
+      "category": "Séries",
+      "instagramId": "17926091046363356",
+      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-07-12/2026-07-12-21-55-16_feed.jpg",
+      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-07-12/2026-07-12-21-55-16_story.jpg"
     }
   ],
   "failedPosts": []

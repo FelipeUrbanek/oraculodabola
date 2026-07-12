@@ -2387,5 +2387,13 @@
     "source_domain": "www.terra.com.br",
     "category": "Filmes",
     "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-07-12T21:55:36.440Z",
+    "headline": "STRANGER THINGS",
+    "source_url": "backup_cinema_1783893314718",
+    "source_domain": "backup_news",
+    "category": "Séries",
+    "status": "SUCCESS"
   }
 ]
