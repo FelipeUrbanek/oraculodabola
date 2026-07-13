@@ -2395,5 +2395,13 @@
     "source_domain": "backup_news",
     "category": "Séries",
     "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-07-13T21:59:40.739Z",
+    "headline": "TOM CRUISE",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/filmes/tom-cruise-surge-irreconhecivel-em-trailer-de-digger-assista,ac2838de62557f05d23ae55fe555f41bpru0mm6m.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Filmes",
+    "status": "SUCCESS"
   }
 ]

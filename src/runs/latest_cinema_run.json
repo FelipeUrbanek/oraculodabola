@@ -1,16 +1,16 @@
 {
-  "timestamp": "2026-07-12T21:52:47.242Z",
+  "timestamp": "2026-07-13T21:58:40.629Z",
   "status": "SUCCESS",
   "postsPlanned": 1,
-  "candidatesFound": 1,
+  "candidatesFound": 6,
   "successfulPosts": [
     {
-      "title": "Stranger Things: Quinta e última temporada promete desfecho épico",
-      "headline": "STRANGER THINGS",
-      "category": "Séries",
-      "instagramId": "17926091046363356",
-      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-07-12/2026-07-12-21-55-16_feed.jpg",
-      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-07-12/2026-07-12-21-55-16_story.jpg"
+      "title": "Tom Cruise surge irreconhecível em trailer de 'Digger'; assista",
+      "headline": "TOM CRUISE",
+      "category": "Filmes",
+      "instagramId": "18119806048829327",
+      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-07-13/2026-07-13-21-59-16_feed.jpg",
+      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-07-13/2026-07-13-21-59-16_story.jpg"
     }
   ],
   "failedPosts": []
