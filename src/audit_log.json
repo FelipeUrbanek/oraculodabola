@@ -2419,5 +2419,21 @@
     "source_domain": "www.terra.com.br",
     "category": "Crítica",
     "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-07-14T21:59:45.366Z",
+    "headline": "SANTOS MUDA DE CENÁRIO",
+    "source_url": "https://www.terra.com.br/esportes/santos/conmebol-muda-cidade-de-jogo-do-santos-na-venezuela,be3b44cf50bc3833de857aa088edf528boayy7w2.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-07-14T22:00:47.330Z",
+    "headline": "ATRIZ DE 'O CHAMADO' MORRE",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/filmes/atriz-de-o-chamado-que-morava-nas-ruas-antes-de-morrer-deixa-patrimonio-milionario,4a9125fa663b7ee486bff607ceebce1cdmqve6xs.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Breaking",
+    "status": "SUCCESS"
   }
 ]

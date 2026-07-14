@@ -150,7 +150,8 @@
       "recent_changes": "Avançou para as oitavas de final da Copa do Brasil, lucrando R$ 5 milhões em premiações, após eliminar o Bahia. A equipe também superou o time baiano no Campeonato Brasileiro com uma vitória por 4 a 1 nesta temporada, porém encontra-se atualmente na zona de rebaixamento da competição."
     },
     "Santos": {
-      "recent_changes": "O clube vai lucrar cerca de R$ 5,1 milhões com a venda de Marcos Leonardo do Al-Hilal para o Ajax, totalizando aproximadamente R$ 27 milhões em receitas com as negociações internacionais envolvendo o jogador desde sua saída da Vila Belmiro."
+      "league": "Copa Sul-Americana",
+      "recent_changes": "A Conmebol mudou a cidade do jogo do Santos na Venezuela, de Caracas para Valência, devido aos terremotos que atingiram o país. O jogo contra a Universidad Central acontecerá no Estádio Misael Delgado em 21 de julho."
     },
     "Vitória": {
       "league": "Copa do Brasil / Campeonato Brasileiro",
@@ -400,7 +401,11 @@
       "coach": "Não mencionado",
       "league": "Copa do Mundo de 2026",
       "recent_changes": "Hiroki Ito foi convocado para a Copa do Mundo e tem raízes com o Santos, pois iniciou sua carreira em uma academia ligada ao clube paulista em Shizuoka."
+    },
+    "Universidad Central": {
+      "league": "Copa Sul-Americana",
+      "recent_changes": "O jogo contra o Santos foi transferido do Estádio em Caracas para o Estádio Misael Delgado em Valência, devido aos terremotos que atingiram o país."
     }
   },
-  "last_updated": "2026-07-14T16:17:05.213Z"
+  "last_updated": "2026-07-14T21:59:24.963Z"
 }

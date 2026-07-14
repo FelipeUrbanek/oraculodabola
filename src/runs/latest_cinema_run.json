@@ -1,16 +1,16 @@
 {
-  "timestamp": "2026-07-14T16:17:30.374Z",
+  "timestamp": "2026-07-14T21:59:49.655Z",
   "status": "SUCCESS",
   "postsPlanned": 1,
-  "candidatesFound": 5,
+  "candidatesFound": 6,
   "successfulPosts": [
     {
-      "title": "Por que o relógio é o símbolo mais sincero do cinema de Christopher Nolan (e isso não tem nada a ver com física)",
-      "headline": "NOLAN REVELA",
-      "category": "Crítica",
-      "instagramId": "18125475391678481",
-      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-07-14/2026-07-14-16-18-06_feed.jpg",
-      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-07-14/2026-07-14-16-18-06_story.jpg"
+      "title": "Atriz de 'O Chamado' que morava nas ruas antes de morrer deixa patrimônio milionário",
+      "headline": "ATRIZ DE 'O CHAMADO' MORRE",
+      "category": "Breaking",
+      "instagramId": "18601180210019446",
+      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-07-14/2026-07-14-22-00-28_feed.jpg",
+      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-07-14/2026-07-14-22-00-28_story.jpg"
     }
   ],
   "failedPosts": []
