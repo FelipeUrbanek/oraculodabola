@@ -2403,5 +2403,21 @@
     "source_domain": "www.terra.com.br",
     "category": "Filmes",
     "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-07-14T16:17:26.178Z",
+    "headline": "VENDA DE MARCOS LEONARDO!",
+    "source_url": "https://www.terra.com.br/esportes/santos/revelacao-do-santos-e-vendida-e-clube-vai-lucrar-milhoes,d1e312798aad9d68334f5374fde32cb6dssq9hlj.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-07-14T16:18:26.769Z",
+    "headline": "NOLAN REVELA",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/filmes/por-que-o-relogio-e-o-simbolo-mais-sincero-do-cinema-de-christopher-nolan-e-isso-nao-tem-nada-a-ver-com-fisica,94bd9e832ffbad94d3aa5db90b5acf4f3wy14rkh.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Crítica",
+    "status": "SUCCESS"
   }
 ]

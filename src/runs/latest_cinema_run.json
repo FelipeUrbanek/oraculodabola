@@ -1,16 +1,16 @@
 {
-  "timestamp": "2026-07-13T21:58:40.629Z",
+  "timestamp": "2026-07-14T16:17:30.374Z",
   "status": "SUCCESS",
   "postsPlanned": 1,
-  "candidatesFound": 6,
+  "candidatesFound": 5,
   "successfulPosts": [
     {
-      "title": "Tom Cruise surge irreconhecível em trailer de 'Digger'; assista",
-      "headline": "TOM CRUISE",
-      "category": "Filmes",
-      "instagramId": "18119806048829327",
-      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-07-13/2026-07-13-21-59-16_feed.jpg",
-      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-07-13/2026-07-13-21-59-16_story.jpg"
+      "title": "Por que o relógio é o símbolo mais sincero do cinema de Christopher Nolan (e isso não tem nada a ver com física)",
+      "headline": "NOLAN REVELA",
+      "category": "Crítica",
+      "instagramId": "18125475391678481",
+      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-07-14/2026-07-14-16-18-06_feed.jpg",
+      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-07-14/2026-07-14-16-18-06_story.jpg"
     }
   ],
   "failedPosts": []
