@@ -2451,5 +2451,21 @@
     "source_domain": "www.terra.com.br",
     "category": "Séries",
     "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-07-15T22:03:11.526Z",
+    "headline": "Luan Peres Fala Sobre Preparação do Santos para o Segundo Semestre",
+    "source_url": "https://www.terra.com.br/esportes/santos/a-declaracao-de-luan-peres-sobre-a-temporada-do-santos,53f752792d26582ccd452b422c7f131duk3db4d4.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-07-15T22:04:13.589Z",
+    "headline": "TOM HOLLAND DUVIDOU",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/filmes/tom-holland-e-o-pior-ator-de-a-odisseia-artista-confessa-que-acreditou-estar-estragando-o-filme-de-nolan-estava-comecando-a-acreditar-que-estava-fazendo-uma-mrda,723f3e6eb08167b42cf527988e8ebfc9t9ndbcwl.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Filmes",
+    "status": "SUCCESS"
   }
 ]

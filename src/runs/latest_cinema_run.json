@@ -1,16 +1,16 @@
 {
-  "timestamp": "2026-07-15T16:24:18.385Z",
+  "timestamp": "2026-07-15T22:03:20.423Z",
   "status": "SUCCESS",
   "postsPlanned": 1,
-  "candidatesFound": 3,
+  "candidatesFound": 4,
   "successfulPosts": [
     {
-      "title": "'Rancho Dutton', '1923' e mais: Entenda o universo das séries derivadas de 'Yellowstone'",
-      "headline": "YELLOWSTONE",
-      "category": "Séries",
-      "instagramId": "18323332429274262",
-      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-07-15/2026-07-15-16-25-01_feed.jpg",
-      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-07-15/2026-07-15-16-25-01_story.jpg"
+      "title": "Tom Holland é o pior ator de 'A Odisseia'? Artista confessa que acreditou estar estragando o filme de Nolan: 'Estava começando a acreditar que estav...",
+      "headline": "TOM HOLLAND DUVIDOU",
+      "category": "Filmes",
+      "instagramId": "17980361955028214",
+      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-07-15/2026-07-15-22-03-54_feed.jpg",
+      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-07-15/2026-07-15-22-03-54_story.jpg"
     }
   ],
   "failedPosts": []

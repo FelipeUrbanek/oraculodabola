@@ -151,8 +151,8 @@
     },
     "Santos": {
       "coach": "Cuca",
-      "league": "Campeonato Brasileiro",
-      "recent_changes": "Retorno antecipado do atacante Gustavo Caballero após a Copa do Mundo e preparação para o jogo contra o Botafogo."
+      "league": "Campeonato Brasileiro / Copa do Brasil / Sul-Americana",
+      "recent_changes": "Retomou os trabalhos após a pausa no calendário, se preparando para o returno do Campeonato Brasileiro, as oitavas de final da Copa do Brasil e o playoff da Sul-Americana."
     },
     "Vitória": {
       "league": "Copa do Brasil / Campeonato Brasileiro",
@@ -408,5 +408,5 @@
       "recent_changes": "O jogo contra o Santos foi transferido do Estádio em Caracas para o Estádio Misael Delgado em Valência, devido aos terremotos que atingiram o país."
     }
   },
-  "last_updated": "2026-07-15T16:23:49.404Z"
+  "last_updated": "2026-07-15T22:02:49.499Z"
 }
