@@ -1,16 +1,16 @@
 {
-  "timestamp": "2026-07-14T21:59:49.655Z",
+  "timestamp": "2026-07-15T16:24:18.385Z",
   "status": "SUCCESS",
   "postsPlanned": 1,
-  "candidatesFound": 6,
+  "candidatesFound": 3,
   "successfulPosts": [
     {
-      "title": "Atriz de 'O Chamado' que morava nas ruas antes de morrer deixa patrimônio milionário",
-      "headline": "ATRIZ DE 'O CHAMADO' MORRE",
-      "category": "Breaking",
-      "instagramId": "18601180210019446",
-      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-07-14/2026-07-14-22-00-28_feed.jpg",
-      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-07-14/2026-07-14-22-00-28_story.jpg"
+      "title": "'Rancho Dutton', '1923' e mais: Entenda o universo das séries derivadas de 'Yellowstone'",
+      "headline": "YELLOWSTONE",
+      "category": "Séries",
+      "instagramId": "18323332429274262",
+      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-07-15/2026-07-15-16-25-01_feed.jpg",
+      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-07-15/2026-07-15-16-25-01_story.jpg"
     }
   ],
   "failedPosts": []

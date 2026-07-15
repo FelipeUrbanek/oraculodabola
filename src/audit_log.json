@@ -2435,5 +2435,21 @@
     "source_domain": "www.terra.com.br",
     "category": "Breaking",
     "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-07-15T16:24:13.460Z",
+    "headline": "CABALLERO VOLTA!",
+    "source_url": "https://www.terra.com.br/esportes/santos/treino-do-santos-e-marcado-por-retorno-antecipado,8ce464432bb3abdf6bb5a7007e7cdac85sfx0m22.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-07-15T16:25:25.027Z",
+    "headline": "YELLOWSTONE",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/series/rancho-dutton-1923-e-mais-entenda-o-universo-das-series-derivadas-de-yellowstone,0a1a4af8f846236c774644c466eb82469ki4qah1.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Séries",
+    "status": "SUCCESS"
   }
 ]
