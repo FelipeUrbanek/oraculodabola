@@ -1,16 +1,16 @@
 {
-  "timestamp": "2026-07-15T22:03:20.423Z",
+  "timestamp": "2026-07-16T16:18:37.769Z",
   "status": "SUCCESS",
   "postsPlanned": 1,
-  "candidatesFound": 4,
+  "candidatesFound": 5,
   "successfulPosts": [
     {
-      "title": "Tom Holland é o pior ator de 'A Odisseia'? Artista confessa que acreditou estar estragando o filme de Nolan: 'Estava começando a acreditar que estav...",
-      "headline": "TOM HOLLAND DUVIDOU",
-      "category": "Filmes",
-      "instagramId": "17980361955028214",
-      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-07-15/2026-07-15-22-03-54_feed.jpg",
-      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-07-15/2026-07-15-22-03-54_story.jpg"
+      "title": "'Stranger Things': Elenco publica vídeo para comemorar aniversário de dez anos da série; assista",
+      "headline": "STRANGER THINGS 10 ANOS",
+      "category": "Séries",
+      "instagramId": "18038046014819656",
+      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-07-16/2026-07-16-16-19-20_feed.jpg",
+      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-07-16/2026-07-16-16-19-20_story.jpg"
     }
   ],
   "failedPosts": []

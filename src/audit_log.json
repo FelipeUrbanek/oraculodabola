@@ -2467,5 +2467,22 @@
     "source_domain": "www.terra.com.br",
     "category": "Filmes",
     "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-07-16T16:18:30.510Z",
+    "headline": "Afastado, presidente da Comissão de Arbitragem do Ceará é acusado de assédio sexual",
+    "source_url": "https://www.terra.com.br/esportes/santos/afastado-presidente-da-comissao-de-arbitragem-do-ceara-e-acusado-de-assedio-sexual,6ef6c8eebd752ba18940943467fa7789bdzfl5wj.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Erro de Rejeição/Placeholder detectado: Notícia rejeitada por não ter relação com o Santos FC"
+  },
+  {
+    "timestamp": "2026-07-16T16:19:41.658Z",
+    "headline": "STRANGER THINGS 10 ANOS",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/series/stranger-things-elenco-publica-video-para-comemorar-aniversario-de-dez-anos-da-serie-assista,b2bbd49faab6cf0ecf9430ff0ab6cc518rl5ypnj.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Séries",
+    "status": "SUCCESS"
   }
 ]
