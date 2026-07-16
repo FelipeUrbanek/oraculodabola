@@ -2484,5 +2484,22 @@
     "source_domain": "www.terra.com.br",
     "category": "Séries",
     "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-07-16T22:05:20.997Z",
+    "headline": "Afastado, presidente da Comissão de Arbitragem do Ceará é acusado de assédio sexual",
+    "source_url": "https://www.terra.com.br/esportes/santos/afastado-presidente-da-comissao-de-arbitragem-do-ceara-e-acusado-de-assedio-sexual,6ef6c8eebd752ba18940943467fa7789bdzfl5wj.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Erro de Rejeição/Placeholder detectado: A notícia sobre o afastamento do presidente da Comissão de Arbitragem do Ceará não tem relevância direta para o Santos Futebol Clube."
+  },
+  {
+    "timestamp": "2026-07-16T22:07:35.652Z",
+    "headline": "TOM HANKS 70",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/filmes/50-anos-de-carreira-uma-aposta-ousada-de-65-milhoes-de-dolares-e-2-oscars-um-dos-melhores-atores-de-todos-os-tempos-acaba-de-completar-70-anos,8a3ffd5730db7e9cc1b31bf9b055177c1o9q7489.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Filmes",
+    "status": "SUCCESS"
   }
 ]

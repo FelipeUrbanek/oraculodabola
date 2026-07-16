@@ -1,16 +1,16 @@
 {
-  "timestamp": "2026-07-16T16:18:37.769Z",
+  "timestamp": "2026-07-16T22:05:28.148Z",
   "status": "SUCCESS",
   "postsPlanned": 1,
-  "candidatesFound": 5,
+  "candidatesFound": 2,
   "successfulPosts": [
     {
-      "title": "'Stranger Things': Elenco publica vídeo para comemorar aniversário de dez anos da série; assista",
-      "headline": "STRANGER THINGS 10 ANOS",
-      "category": "Séries",
-      "instagramId": "18038046014819656",
-      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-07-16/2026-07-16-16-19-20_feed.jpg",
-      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-07-16/2026-07-16-16-19-20_story.jpg"
+      "title": "50 anos de carreira, uma 'aposta' ousada de 65 milhões de dólares e 2 Oscars: um dos melhores atores de todos os tempos acaba de completar 70 anos",
+      "headline": "TOM HANKS 70",
+      "category": "Filmes",
+      "instagramId": "17900409411469991",
+      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-07-16/2026-07-16-22-07-15_feed.jpg",
+      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-07-16/2026-07-16-22-07-15_story.jpg"
     }
   ],
   "failedPosts": []
