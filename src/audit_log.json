@@ -2517,5 +2517,21 @@
     "source_domain": "backup_news",
     "category": "Séries",
     "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-07-17T21:56:15.960Z",
+    "headline": "BRAZÃO SE DEFENDE",
+    "source_url": "https://www.terra.com.br/esportes/santos/brazao-se-defende-apos-falha-e-revela-orientacao-de-cuca-no-gol-da-derrota-do-santos,39d31a1ffd16586528f986e03d2358defq460vtd.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-07-17T21:58:14.562Z",
+    "headline": "NOLAN RECORD",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/filmes/a-odisseia-torna-se-filme-de-christopher-nolan-mais-bem-avaliado-no-rotten-tomatoes-veja-ranking,d88b1547bb6d4bce473a1e9368600928486xfz5r.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Crítica",
+    "status": "SUCCESS"
   }
 ]

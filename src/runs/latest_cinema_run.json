@@ -1,16 +1,16 @@
 {
-  "timestamp": "2026-07-17T16:17:50.394Z",
+  "timestamp": "2026-07-17T21:56:22.563Z",
   "status": "SUCCESS",
   "postsPlanned": 1,
-  "candidatesFound": 1,
+  "candidatesFound": 2,
   "successfulPosts": [
     {
-      "title": "House of the Dragon: Terceira temporada inicia gravações no Reino Unido",
-      "headline": "HOUSE OF DRAGON 3",
-      "category": "Séries",
-      "instagramId": "18167163271448422",
-      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-07-17/2026-07-17-16-19-34_feed.jpg",
-      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-07-17/2026-07-17-16-19-34_story.jpg"
+      "title": "'A Odisseia' torna-se filme de Christopher Nolan mais bem avaliado no Rotten Tomatoes; veja ranking",
+      "headline": "NOLAN RECORD",
+      "category": "Crítica",
+      "instagramId": "18080930294667822",
+      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-07-17/2026-07-17-21-57-49_feed.jpg",
+      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-07-17/2026-07-17-21-57-49_story.jpg"
     }
   ],
   "failedPosts": []
