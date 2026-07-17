@@ -1,16 +1,16 @@
 {
-  "timestamp": "2026-07-16T22:05:28.148Z",
+  "timestamp": "2026-07-17T16:17:50.394Z",
   "status": "SUCCESS",
   "postsPlanned": 1,
-  "candidatesFound": 2,
+  "candidatesFound": 1,
   "successfulPosts": [
     {
-      "title": "50 anos de carreira, uma 'aposta' ousada de 65 milhões de dólares e 2 Oscars: um dos melhores atores de todos os tempos acaba de completar 70 anos",
-      "headline": "TOM HANKS 70",
-      "category": "Filmes",
-      "instagramId": "17900409411469991",
-      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-07-16/2026-07-16-22-07-15_feed.jpg",
-      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-07-16/2026-07-16-22-07-15_story.jpg"
+      "title": "House of the Dragon: Terceira temporada inicia gravações no Reino Unido",
+      "headline": "HOUSE OF DRAGON 3",
+      "category": "Séries",
+      "instagramId": "18167163271448422",
+      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-07-17/2026-07-17-16-19-34_feed.jpg",
+      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-07-17/2026-07-17-16-19-34_story.jpg"
     }
   ],
   "failedPosts": []

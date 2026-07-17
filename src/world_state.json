@@ -149,8 +149,8 @@
     },
     "Santos": {
       "coach": "Cuca",
-      "league": "Campeonato Brasileiro / Copa do Brasil / Sul-Americana",
-      "recent_changes": "Retomou os trabalhos após a pausa no calendário, se preparando para o returno do Campeonato Brasileiro, as oitavas de final da Copa do Brasil e o playoff da Sul-Americana."
+      "league": "Campeonato Brasileiro / Copa do Brasil / Copa Sul-Americana",
+      "recent_changes": "Gustavo Henrique deixou o jogo lesionado e o time foi derrotado por 2 a 1 contra o Botafogo na volta ao Campeonato Brasileiro."
     },
     "Vitória": {
       "league": "Copa do Brasil / Campeonato Brasileiro",
@@ -406,5 +406,5 @@
       "recent_changes": "O jogo contra o Santos foi transferido do Estádio em Caracas para o Estádio Misael Delgado em Valência, devido aos terremotos que atingiram o país."
     }
   },
-  "last_updated": "2026-07-16T22:05:20.996Z"
+  "last_updated": "2026-07-17T16:17:21.369Z"
 }

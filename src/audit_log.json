@@ -2501,5 +2501,21 @@
     "source_domain": "www.terra.com.br",
     "category": "Filmes",
     "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-07-17T16:17:44.025Z",
+    "headline": "LESÃO PREOCUPA",
+    "source_url": "https://www.terra.com.br/esportes/santos/gustavo-henrique-deixa-campo-lesionado-e-preocupa-o-santos,3c79afd6cd1c563334f8c12ea0614c14p9j05njc.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-07-17T16:19:57.412Z",
+    "headline": "HOUSE OF DRAGON 3",
+    "source_url": "backup_cinema_1784305172214",
+    "source_domain": "backup_news",
+    "category": "Séries",
+    "status": "SUCCESS"
   }
 ]
