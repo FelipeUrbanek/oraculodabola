@@ -2557,5 +2557,21 @@
     "source_domain": "www.terra.com.br",
     "category": "Séries",
     "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-07-18T21:53:28.267Z",
+    "headline": "TIQUINHO SOARES DEIXA O SANTOS",
+    "source_url": "https://www.terra.com.br/esportes/santos/tiquinho-entra-na-justica-e-rescinde-com-o-santos,f891dcb36f90ecfe0d067fc165883e31cpvqdode.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-07-18T21:55:13.176Z",
+    "headline": "BRENDA FRICKER MORRE",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/filmes/morre-brenda-fricker-de-esqueceram-de-mim-2-aos-81-anos,85892519dc06bcae2d1a62d3ed178f8dzldnerof.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Filmes",
+    "status": "SUCCESS"
   }
 ]

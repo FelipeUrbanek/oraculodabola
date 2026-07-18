@@ -1,16 +1,16 @@
 {
-  "timestamp": "2026-07-18T15:59:12.981Z",
+  "timestamp": "2026-07-18T21:53:34.314Z",
   "status": "SUCCESS",
   "postsPlanned": 1,
-  "candidatesFound": 4,
+  "candidatesFound": 2,
   "successfulPosts": [
     {
-      "title": "5 doramas de fantasia e sobrenatural para quem busca histórias envolventes",
-      "headline": "K-DRAMA FANTÁSTICO",
-      "category": "Séries",
-      "instagramId": "17974856745116564",
-      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-07-18/2026-07-18-16-01-10_feed.jpg",
-      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-07-18/2026-07-18-16-01-10_story.jpg"
+      "title": "Morre Brenda Fricker, de 'Esqueceram de Mim 2', aos 81 anos",
+      "headline": "BRENDA FRICKER MORRE",
+      "category": "Filmes",
+      "instagramId": "18099516826963900",
+      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-07-18/2026-07-18-21-54-56_feed.jpg",
+      "storyPath": null
     }
   ],
   "failedPosts": []

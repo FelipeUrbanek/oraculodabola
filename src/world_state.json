@@ -3,7 +3,7 @@
     "Fortaleza": {
       "coach": "Thiago Carpini",
       "league": "Campeonato Brasileiro / Copa do Brasil / Campeonato Brasileiro Sub-20",
-      "recent_changes": "Monitora a situação do atacante Tiquinho Soares, que pode ser contratado após a rescisão de contrato com o Santos."
+      "recent_changes": "Sondou recentemente a situação do atacante Tiquinho Soares, que pode ser contratado após a rescisão de contrato com o Santos."
     },
     "Vasco": {
       "coach": "Renato Gaúcho",
@@ -150,7 +150,7 @@
     "Santos": {
       "coach": "Cuca",
       "league": "Campeonato Brasileiro / Copa do Brasil / Copa Sul-Americana",
-      "recent_changes": "Neymar se reapresentou ao time após a Copa do Mundo e está se preparando para voltar aos gramados."
+      "recent_changes": "O atacante Tiquinho Soares rescindiu contrato com o clube devido a atrasos salariais e de direitos de imagem."
     },
     "Vitória": {
       "league": "Copa do Brasil / Campeonato Brasileiro",
@@ -406,5 +406,5 @@
       "recent_changes": "O jogo contra o Santos foi transferido do Estádio em Caracas para o Estádio Misael Delgado em Valência, devido aos terremotos que atingiram o país."
     }
   },
-  "last_updated": "2026-07-18T13:18:41.797Z"
+  "last_updated": "2026-07-18T21:53:09.219Z"
 }
