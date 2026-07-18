@@ -1,16 +1,16 @@
 {
-  "timestamp": "2026-07-18T13:19:10.082Z",
+  "timestamp": "2026-07-18T15:59:12.981Z",
   "status": "SUCCESS",
   "postsPlanned": 1,
-  "candidatesFound": 3,
+  "candidatesFound": 4,
   "successfulPosts": [
     {
-      "title": "Pantera Negra 3 pode apresentar Tempestade em papel de destaque",
-      "headline": "PANTERA NEGRA 3",
-      "category": "Filmes",
-      "instagramId": "18543454765077505",
-      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-07-18/2026-07-18-13-20-36_feed.jpg",
-      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-07-18/2026-07-18-13-20-36_story.jpg"
+      "title": "5 doramas de fantasia e sobrenatural para quem busca histórias envolventes",
+      "headline": "K-DRAMA FANTÁSTICO",
+      "category": "Séries",
+      "instagramId": "17974856745116564",
+      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-07-18/2026-07-18-16-01-10_feed.jpg",
+      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-07-18/2026-07-18-16-01-10_story.jpg"
     }
   ],
   "failedPosts": []

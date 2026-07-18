@@ -2549,5 +2549,13 @@
     "source_domain": "www.terra.com.br",
     "category": "Filmes",
     "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-07-18T16:01:29.912Z",
+    "headline": "K-DRAMA FANTÁSTICO",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/series/5-doramas-de-fantasia-e-sobrenatural-para-quem-busca-historias-envolventes,e83b7d057f7f88ca38bed749bbc3ff29cqzmhq97.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Séries",
+    "status": "SUCCESS"
   }
 ]
