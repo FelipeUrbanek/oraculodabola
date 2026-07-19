@@ -2605,5 +2605,21 @@
     "source_domain": "backup_news",
     "category": "Séries",
     "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-07-19T21:55:09.718Z",
+    "headline": "BARBOZA CRITICA BOTAFOGO",
+    "source_url": "https://www.terra.com.br/esportes/botafogo/barboza-critica-retirada-de-fotos-no-nilton-santos-apos-saida-do-botafogo,c7a8a0143c90b66d34ea47cd63784d33nvnhzkx9.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Mercado da Bola",
+    "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-07-19T21:57:27.721Z",
+    "headline": "GLADIADOR II",
+    "source_url": "backup_cinema_1784498225672",
+    "source_domain": "backup_news",
+    "category": "Filmes",
+    "status": "SUCCESS"
   }
 ]

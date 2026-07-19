@@ -1,16 +1,16 @@
 {
-  "timestamp": "2026-07-19T16:00:16.468Z",
+  "timestamp": "2026-07-19T21:55:17.402Z",
   "status": "SUCCESS",
   "postsPlanned": 1,
   "candidatesFound": 1,
   "successfulPosts": [
     {
-      "title": "Stranger Things: Quinta e última temporada promete desfecho épico",
-      "headline": "STRANGER THINGS",
-      "category": "Séries",
-      "instagramId": "17933289063343940",
-      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-07-19/2026-07-19-16-02-05_feed.jpg",
-      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-07-19/2026-07-19-16-02-05_story.jpg"
+      "title": "Gladiador II: Ridley Scott entrega sequência histórica e avassaladora",
+      "headline": "GLADIADOR II",
+      "category": "Filmes",
+      "instagramId": "18146775127521741",
+      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-07-19/2026-07-19-21-57-06_feed.jpg",
+      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-07-19/2026-07-19-21-57-06_story.jpg"
     }
   ],
   "failedPosts": []

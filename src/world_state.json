@@ -13,7 +13,7 @@
     "Botafogo": {
       "coach": "Não informado",
       "league": "Campeonato Brasileiro / Copa do Brasil / Copa Sul-Americana",
-      "recent_changes": "Venceu o Santos por 2 a 1, com gol nos acréscimos."
+      "recent_changes": "Retirou fotos de jogadores que não fazem mais parte do elenco no Nilton Santos"
     },
     "Grêmio": {
       "coach": "Luís Castro",
@@ -140,7 +140,7 @@
     "Palmeiras": {
       "coach": "Abel Ferreira",
       "league": "Copa do Brasil / Campeonato Brasileiro Sub-20 / Campeonato Brasileiro / Libertadores",
-      "recent_changes": "Avançou para as oitavas de final da Copa do Brasil e lidera o Campeonato Brasileiro Sub-20 ao lado do Vasco. Pelo Campeonato Brasileiro, é o atual líder isolado e vem de um empate em 1 a 1 com o Cruzeiro na Arena Barueri. O próximo compromisso será contra o Cerro Porteño na quarta-feira, no Allianz Parque, pela quinta rodada da Libertadores. Confirmou a contratação do zagueiro Alexsander Barboza junto ao Botafogo por 4 milhões de dólares (R$ 20 milhões), com pagamento parcelado. O atleta defenderá o clube a partir do segundo semestre de 2026 e já realizou os exames médicos. Devido ao investimento, a diretoria segurou as tratativas com o zagueiro Nino, do Zenit. Nos bastidores, também negocia com o volante Danilo, do Botafogo. Na Justiça, a presidente Leila Pereira venceu um processo por danos morais contra o ex-jogador do clube, Dudu. O atleta foi condenado a pagar uma indenização de R$ 50 mil devido a ofensas publicadas nas redes sociais após sua saída em janeiro de 2025. A diretoria decidiu negociar o meia-atacante Rômulo na próxima janela e definiu o valor de venda em US$ 4 milhões (cerca de R$ 20 milhões). O atleta chegou ao clube em 2024 por R$ 7,4 milhões e encontra-se emprestado ao Novorizontino."
+      "recent_changes": "Confirmou a contratação do zagueiro Alexsander Barboza junto ao Botafogo por 4 milhões de dólares (R$ 20 milhões)"
     },
     "Remo": {
       "coach": "Não mencionado",
@@ -405,5 +405,5 @@
       "recent_changes": "O jogo contra o Santos foi transferido do Estádio em Caracas para o Estádio Misael Delgado em Valência, devido aos terremotos que atingiram o país."
     }
   },
-  "last_updated": "2026-07-19T15:59:46.067Z"
+  "last_updated": "2026-07-19T21:54:48.514Z"
 }
