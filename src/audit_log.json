@@ -2573,5 +2573,21 @@
     "source_domain": "www.terra.com.br",
     "category": "Filmes",
     "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-07-19T13:20:31.316Z",
+    "headline": "SANTOS PERDE PONTOS",
+    "source_url": "https://www.terra.com.br/esportes/santos/santos-acumula-pontos-perdidos-por-trapalhadas-e-segue-colado-no-z4-do-brasileirao,1884a072902e271f43d36a665f96c3385yudq70d.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-07-19T13:22:19.845Z",
+    "headline": "VINGADORES: ULTIMATO VOLTA",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/filmes/mais-de-356-milhoes-de-dolares-de-orcamento-e-bilheteria-de-us-279-bilhoes-o-maior-filme-de-super-herois-ja-feito-agora-esta-voltando-aos-cinemas-com-uma-versao-mais-longa-e-ambiciosa,a9b479420392e5653fddfcb1a1b6fc63yj07q2gs.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Filmes",
+    "status": "SUCCESS"
   }
 ]

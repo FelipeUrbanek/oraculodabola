@@ -1,16 +1,16 @@
 {
-  "timestamp": "2026-07-18T21:53:34.314Z",
+  "timestamp": "2026-07-19T13:20:37.550Z",
   "status": "SUCCESS",
   "postsPlanned": 1,
   "candidatesFound": 2,
   "successfulPosts": [
     {
-      "title": "Morre Brenda Fricker, de 'Esqueceram de Mim 2', aos 81 anos",
-      "headline": "BRENDA FRICKER MORRE",
+      "title": "Mais de 356 milhões de dólares de orçamento e bilheteria de US$ 2,79 bilhões: o maior filme de super-heróis já feito agora está voltando aos ci...",
+      "headline": "VINGADORES: ULTIMATO VOLTA",
       "category": "Filmes",
-      "instagramId": "18099516826963900",
-      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-07-18/2026-07-18-21-54-56_feed.jpg",
-      "storyPath": null
+      "instagramId": "17956078683188194",
+      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-07-19/2026-07-19-13-21-58_feed.jpg",
+      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-07-19/2026-07-19-13-21-58_story.jpg"
     }
   ],
   "failedPosts": []
