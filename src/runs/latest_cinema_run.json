@@ -1,16 +1,16 @@
 {
-  "timestamp": "2026-07-19T13:20:37.550Z",
+  "timestamp": "2026-07-19T16:00:16.468Z",
   "status": "SUCCESS",
   "postsPlanned": 1,
-  "candidatesFound": 2,
+  "candidatesFound": 1,
   "successfulPosts": [
     {
-      "title": "Mais de 356 milhões de dólares de orçamento e bilheteria de US$ 2,79 bilhões: o maior filme de super-heróis já feito agora está voltando aos ci...",
-      "headline": "VINGADORES: ULTIMATO VOLTA",
-      "category": "Filmes",
-      "instagramId": "17956078683188194",
-      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-07-19/2026-07-19-13-21-58_feed.jpg",
-      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-07-19/2026-07-19-13-21-58_story.jpg"
+      "title": "Stranger Things: Quinta e última temporada promete desfecho épico",
+      "headline": "STRANGER THINGS",
+      "category": "Séries",
+      "instagramId": "17933289063343940",
+      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-07-19/2026-07-19-16-02-05_feed.jpg",
+      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-07-19/2026-07-19-16-02-05_story.jpg"
     }
   ],
   "failedPosts": []

@@ -2589,5 +2589,21 @@
     "source_domain": "www.terra.com.br",
     "category": "Filmes",
     "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-07-19T16:00:08.417Z",
+    "headline": "SANTOS EM CRISE!",
+    "source_url": "https://www.terra.com.br/esportes/santos/santos-recomenda-terapia-para-socios-apos-derrota-para-o-botafogo,0ae509d7e5d09379bf050ee1d596f365vyy07bg5.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-07-19T16:02:26.843Z",
+    "headline": "STRANGER THINGS",
+    "source_url": "backup_cinema_1784476923125",
+    "source_domain": "backup_news",
+    "category": "Séries",
+    "status": "SUCCESS"
   }
 ]

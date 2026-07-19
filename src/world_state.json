@@ -148,8 +148,8 @@
       "recent_changes": "Avançou para as oitavas de final da Copa do Brasil, lucrando R$ 5 milhões em premiações, após eliminar o Bahia. A equipe também superou o time baiano no Campeonato Brasileiro com uma vitória por 4 a 1 nesta temporada, porém encontra-se atualmente na zona de rebaixamento da competição."
     },
     "Santos": {
-      "league": "Brasileirão",
-      "recent_changes": "Acumula pontos perdidos por 'trapalhadas' e segue colado no Z4 do Brasileirão"
+      "league": "Campeonato Brasileiro",
+      "recent_changes": "Derrota por 2 a 1 para o Botafogo e possível rebaixamento"
     },
     "Vitória": {
       "league": "Copa do Brasil / Campeonato Brasileiro",
@@ -405,5 +405,5 @@
       "recent_changes": "O jogo contra o Santos foi transferido do Estádio em Caracas para o Estádio Misael Delgado em Valência, devido aos terremotos que atingiram o país."
     }
   },
-  "last_updated": "2026-07-19T13:20:09.255Z"
+  "last_updated": "2026-07-19T15:59:46.067Z"
 }
