@@ -2621,5 +2621,21 @@
     "source_domain": "backup_news",
     "category": "Filmes",
     "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-07-20T16:25:44.105Z",
+    "headline": "SANTOS SEM 7!",
+    "source_url": "https://www.terra.com.br/esportes/santos/7-desfalques-cuca-tera-desafio-para-o-proximo-jogo-do-santos,3ee98a47a08baaf8e5d7fa8791e89874ukqssokq.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-07-20T16:27:33.925Z",
+    "headline": "ODISSEIA ARRECADOU!",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/filmes/a-odisseia-fatura-us-2641-milhoes-no-fim-de-semana-de-estreia-e-supera-oppenheimer,fd40119138dfc413a517be17bab68fe8r7kduwva.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Estreia",
+    "status": "SUCCESS"
   }
 ]

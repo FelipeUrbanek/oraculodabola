@@ -148,8 +148,9 @@
       "recent_changes": "Avançou para as oitavas de final da Copa do Brasil, lucrando R$ 5 milhões em premiações, após eliminar o Bahia. A equipe também superou o time baiano no Campeonato Brasileiro com uma vitória por 4 a 1 nesta temporada, porém encontra-se atualmente na zona de rebaixamento da competição."
     },
     "Santos": {
-      "league": "Campeonato Brasileiro",
-      "recent_changes": "Derrota por 2 a 1 para o Botafogo e possível rebaixamento"
+      "coach": "Cuca",
+      "league": "Campeonato Brasileiro / Copa do Brasil / Copa Sul-Americana",
+      "recent_changes": "Derrota por 2 a 1 para o Botafogo, 7 desfalques para o próximo jogo da Copa Sul-Americana"
     },
     "Vitória": {
       "league": "Copa do Brasil / Campeonato Brasileiro",
@@ -405,5 +406,5 @@
       "recent_changes": "O jogo contra o Santos foi transferido do Estádio em Caracas para o Estádio Misael Delgado em Valência, devido aos terremotos que atingiram o país."
     }
   },
-  "last_updated": "2026-07-19T21:54:48.514Z"
+  "last_updated": "2026-07-20T16:25:20.540Z"
 }
