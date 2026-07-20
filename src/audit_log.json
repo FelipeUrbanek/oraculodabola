@@ -2637,5 +2637,21 @@
     "source_domain": "www.terra.com.br",
     "category": "Estreia",
     "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-07-20T22:01:30.840Z",
+    "headline": "LEILÃO SUSPENSO",
+    "source_url": "https://www.terra.com.br/esportes/santos/orgao-do-governo-federal-suspende-leilao-do-terreno-do-ct-rei-pele-do-santos,6ae75fa57f71224c22ee64159f3389e081cl433k.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-07-20T22:02:31.264Z",
+    "headline": "LONDORES NO VENEZA",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/filmes/filme-brasileiro-london-e-selecionado-para-a-semana-da-critica-de-veneza,4a9ffd7b0c29df43731dad413300723fkg4szifd.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Filmes",
+    "status": "SUCCESS"
   }
 ]

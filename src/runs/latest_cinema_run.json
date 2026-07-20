@@ -1,16 +1,16 @@
 {
-  "timestamp": "2026-07-20T16:25:49.994Z",
+  "timestamp": "2026-07-20T22:01:35.953Z",
   "status": "SUCCESS",
   "postsPlanned": 1,
-  "candidatesFound": 3,
+  "candidatesFound": 5,
   "successfulPosts": [
     {
-      "title": "'A Odisseia' fatura US$ 264,1 milhões no fim de semana de estreia e supera Oppenheimer",
-      "headline": "ODISSEIA ARRECADOU!",
-      "category": "Estreia",
-      "instagramId": "18607796197063931",
-      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-07-20/2026-07-20-16-27-13_feed.jpg",
-      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-07-20/2026-07-20-16-27-13_story.jpg"
+      "title": "Filme brasileiro 'London' é selecionado para a Semana da Crítica de Veneza",
+      "headline": "LONDORES NO VENEZA",
+      "category": "Filmes",
+      "instagramId": "18110883598777573",
+      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-07-20/2026-07-20-22-02-10_feed.jpg",
+      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-07-20/2026-07-20-22-02-10_story.jpg"
     }
   ],
   "failedPosts": []

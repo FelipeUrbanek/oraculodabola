@@ -148,9 +148,9 @@
       "recent_changes": "Avançou para as oitavas de final da Copa do Brasil, lucrando R$ 5 milhões em premiações, após eliminar o Bahia. A equipe também superou o time baiano no Campeonato Brasileiro com uma vitória por 4 a 1 nesta temporada, porém encontra-se atualmente na zona de rebaixamento da competição."
     },
     "Santos": {
-      "coach": "Cuca",
       "league": "Campeonato Brasileiro / Copa do Brasil / Copa Sul-Americana",
-      "recent_changes": "Derrota por 2 a 1 para o Botafogo, 7 desfalques para o próximo jogo da Copa Sul-Americana"
+      "recent_changes": "Leilão do CT Rei Pelé foi suspenso devido a pendências técnicas, jurídicas, tributárias e patrimoniais",
+      "coach": "Cuca"
     },
     "Vitória": {
       "league": "Copa do Brasil / Campeonato Brasileiro",
@@ -406,5 +406,5 @@
       "recent_changes": "O jogo contra o Santos foi transferido do Estádio em Caracas para o Estádio Misael Delgado em Valência, devido aos terremotos que atingiram o país."
     }
   },
-  "last_updated": "2026-07-20T16:25:20.540Z"
+  "last_updated": "2026-07-20T22:01:10.024Z"
 }
