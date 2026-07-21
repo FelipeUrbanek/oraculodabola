@@ -1,16 +1,16 @@
 {
-  "timestamp": "2026-07-21T16:24:54.340Z",
+  "timestamp": "2026-07-21T22:05:30.058Z",
   "status": "SUCCESS",
   "postsPlanned": 1,
-  "candidatesFound": 10,
+  "candidatesFound": 11,
   "successfulPosts": [
     {
-      "title": "Kaylee Hottle | Atriz de Godzilla x Kong morre após acidente nos EUA",
-      "headline": "KAYLEE HOTTLE MORRE",
-      "category": "Breaking",
-      "instagramId": "18114475012733398",
-      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-07-21/2026-07-21-16-25-36_feed.jpg",
-      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-07-21/2026-07-21-16-25-36_story.jpg"
+      "title": "'23.000 Vidas' é baseado em história real? Conheça a trama e a inspiração para o filme da Netflix",
+      "headline": "23.000 VIDAS",
+      "category": "Filmes",
+      "instagramId": "18109941598971314",
+      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-07-21/2026-07-21-22-06-01_feed.jpg",
+      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-07-21/2026-07-21-22-06-01_story.jpg"
     }
   ],
   "failedPosts": []

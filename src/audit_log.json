@@ -2669,5 +2669,21 @@
     "source_domain": "www.terra.com.br",
     "category": "Breaking",
     "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-07-21T22:05:21.666Z",
+    "headline": "SANTOS SEM 7 JOGADORES",
+    "source_url": "https://www.terra.com.br/esportes/santos/rescisao-confirmada-sete-desfalques-e-decisao-de-robinho-jr-as-ultimas-noticias-do-santos,588df350e77b7482d536d77cbc58c6a31p9lhhr7.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-07-21T22:06:22.684Z",
+    "headline": "23.000 VIDAS",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/filmes/23000-vidas-e-baseado-em-historia-real-conheca-a-trama-e-a-inspiracao-para-o-filme-da-netflix,dc602e53c6facd8e8ffcfb9b642d46bbykyp9kfc.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Filmes",
+    "status": "SUCCESS"
   }
 ]

@@ -148,7 +148,9 @@
       "recent_changes": "Avançou para as oitavas de final da Copa do Brasil, lucrando R$ 5 milhões em premiações, após eliminar o Bahia. A equipe também superou o time baiano no Campeonato Brasileiro com uma vitória por 4 a 1 nesta temporada, porém encontra-se atualmente na zona de rebaixamento da competição."
     },
     "Santos": {
-      "recent_changes": "O clube acumula uma dívida superior a R$ 1 bilhão, com atrasos nos pagamentos ao elenco, incluindo 3 meses de atraso nos direitos de imagem."
+      "coach": "Cuca",
+      "league": "Campeonato Brasileiro / Copa do Brasil / Copa Sul-Americana",
+      "recent_changes": "Robinho Jr. decidiu manter seu nome original, sete jogadores estarão ausentes para a partida contra a Universidad Central"
     },
     "Vitória": {
       "league": "Copa do Brasil / Campeonato Brasileiro",
@@ -404,5 +406,5 @@
       "recent_changes": "O jogo contra o Santos foi transferido do Estádio em Caracas para o Estádio Misael Delgado em Valência, devido aos terremotos que atingiram o país."
     }
   },
-  "last_updated": "2026-07-21T16:24:24.112Z"
+  "last_updated": "2026-07-21T22:04:58.398Z"
 }
