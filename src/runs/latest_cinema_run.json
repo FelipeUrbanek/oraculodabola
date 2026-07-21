@@ -1,16 +1,16 @@
 {
-  "timestamp": "2026-07-20T22:01:35.953Z",
+  "timestamp": "2026-07-21T16:24:54.340Z",
   "status": "SUCCESS",
   "postsPlanned": 1,
-  "candidatesFound": 5,
+  "candidatesFound": 10,
   "successfulPosts": [
     {
-      "title": "Filme brasileiro 'London' é selecionado para a Semana da Crítica de Veneza",
-      "headline": "LONDORES NO VENEZA",
-      "category": "Filmes",
-      "instagramId": "18110883598777573",
-      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-07-20/2026-07-20-22-02-10_feed.jpg",
-      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-07-20/2026-07-20-22-02-10_story.jpg"
+      "title": "Kaylee Hottle | Atriz de Godzilla x Kong morre após acidente nos EUA",
+      "headline": "KAYLEE HOTTLE MORRE",
+      "category": "Breaking",
+      "instagramId": "18114475012733398",
+      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-07-21/2026-07-21-16-25-36_feed.jpg",
+      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-07-21/2026-07-21-16-25-36_story.jpg"
     }
   ],
   "failedPosts": []

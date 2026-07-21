@@ -2653,5 +2653,21 @@
     "source_domain": "www.terra.com.br",
     "category": "Filmes",
     "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-07-21T16:24:46.936Z",
+    "headline": "SANTOS EM CRISE",
+    "source_url": "https://www.terra.com.br/esportes/santos/em-meio-a-crise-santos-completa-tres-meses-de-atraso-dos-direitos-de-imagem,edcd4d23eb4457b15c7f2b6c7b21f1f7gvmtrhwt.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-07-21T16:25:57.687Z",
+    "headline": "KAYLEE HOTTLE MORRE",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/filmes/kaylee-hottle-atriz-de-godzilla-x-kong-morre-apos-acidente-nos-eua,7ae6659a6d0a77542f27a868afb81799vmqpbsjf.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Breaking",
+    "status": "SUCCESS"
   }
 ]
