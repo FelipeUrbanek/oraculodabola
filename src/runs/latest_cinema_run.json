@@ -1,16 +1,16 @@
 {
-  "timestamp": "2026-07-22T16:22:08.214Z",
+  "timestamp": "2026-07-22T22:05:32.451Z",
   "status": "SUCCESS",
   "postsPlanned": 1,
-  "candidatesFound": 12,
+  "candidatesFound": 13,
   "successfulPosts": [
     {
-      "title": "'Dona Flor', 'Bye Bye Brasil' e mais: filmes que fizeram de Barretão um gigante do cinema nacional",
-      "headline": "BARRETÃO ETERNO",
+      "title": "Elon Musk diz que fará versão 'historicamente correta' de 'A Odisseia' com uso de IA",
+      "headline": "MUSK REFAZ A ODISSÉIA",
       "category": "Filmes",
-      "instagramId": "17878055085619413",
-      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-07-22/2026-07-22-16-22-47_feed.jpg",
-      "storyPath": null
+      "instagramId": "17948863173227313",
+      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-07-22/2026-07-22-22-06-02_feed.jpg",
+      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-07-22/2026-07-22-22-06-02_story.jpg"
     }
   ],
   "failedPosts": []

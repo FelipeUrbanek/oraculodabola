@@ -2701,5 +2701,21 @@
     "source_domain": "www.terra.com.br",
     "category": "Filmes",
     "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-07-22T22:05:26.640Z",
+    "headline": "SANTOS PAGA PARCELA DE DIREITOS DE IMAGEM",
+    "source_url": "https://www.terra.com.br/esportes/santos/santos-realiza-pagamento-importante-e-jogadores-recebem-boa-noticia,64df256396eba93566a419c63f96b9403zikps4z.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-07-22T22:06:21.361Z",
+    "headline": "MUSK REFAZ A ODISSÉIA",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/filmes/elon-musk-diz-que-fara-versao-historicamente-correta-de-a-odisseia-com-uso-de-ia,4f18a96af6eb8a97a12fc85bbea577f2a7dmc129.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Filmes",
+    "status": "SUCCESS"
   }
 ]

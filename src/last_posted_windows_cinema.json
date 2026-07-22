@@ -26,6 +26,7 @@
     "evening": true
   },
   "2026-07-22": {
-    "midday": true
+    "midday": true,
+    "evening": true
   }
 }
