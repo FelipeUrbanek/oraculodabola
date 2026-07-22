@@ -2685,5 +2685,21 @@
     "source_domain": "www.terra.com.br",
     "category": "Filmes",
     "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-07-22T16:22:02.903Z",
+    "headline": "TRANSFER BANS!",
+    "source_url": "https://www.terra.com.br/esportes/corinthians/corinthians-santos-e-sao-paulo-somam-seis-transfer-bans-juntos,c70dd9ce92d5f52bdf8f02fe570e47dfv29dv72z.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-07-22T16:23:05.956Z",
+    "headline": "BARRETÃO ETERNO",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/filmes/dona-flor-bye-bye-brasil-e-mais-filmes-que-fizeram-de-barretao-um-gigante-do-cinema-nacional,7ed00d47c9b4cdb3c5c4e83505c35e7a9s623e7m.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Filmes",
+    "status": "SUCCESS"
   }
 ]

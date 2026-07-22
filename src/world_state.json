@@ -21,12 +21,10 @@
       "recent_changes": "Neymar, do Santos, desfalcará o Grêmio em confronto futuro, pois não jogará mais pelo clube paulista antes da Copa do Mundo devido a lesão. O goleiro Weverton recuperou sua melhor forma técnica no clube, com atuações de destaque que lhe renderam uma convocação surpresa para a Seleção Brasileira na Copa do Mundo de 2026. O clube está disputando a contratação do lateral-direito Diego Caito, do Goiás."
     },
     "São Paulo": {
-      "recent_changes": "O zagueiro Arboleda foi oferecido ao Santos, aumentando as dúvidas sobre o seu futuro no clube. Celebrou o Dia do Orgulho LGBTQIA+ com mensagens de inclusão."
+      "recent_changes": "Recebeu um transfer ban após deixar de pagar a primeira parcela da compra do volante Marcos Antônio junto à Lazio, da Itália."
     },
     "Corinthians": {
-      "coach": "Fernando Diniz",
-      "league": "Campeonato Brasileiro / Copa do Brasil / Libertadores / Supercopa Rei do Brasil",
-      "recent_changes": "Derrotado pelo Botafogo por 3 a 1."
+      "recent_changes": "Recebeu um novo transfer ban por descumprir o acordo de pagamento firmado com o Midtjylland, da Dinamarca, pela contratação do volante Charles, acumulando quatro punições em vigor."
     },
     "Seleção Brasileira": {
       "league": "Copa do Mundo de 2026"
@@ -148,9 +146,7 @@
       "recent_changes": "Avançou para as oitavas de final da Copa do Brasil, lucrando R$ 5 milhões em premiações, após eliminar o Bahia. A equipe também superou o time baiano no Campeonato Brasileiro com uma vitória por 4 a 1 nesta temporada, porém encontra-se atualmente na zona de rebaixamento da competição."
     },
     "Santos": {
-      "coach": "Cuca",
-      "league": "Campeonato Brasileiro / Copa do Brasil / Copa Sul-Americana",
-      "recent_changes": "Robinho Jr. decidiu manter seu nome original, sete jogadores estarão ausentes para a partida contra a Universidad Central"
+      "recent_changes": "Recebeu um transfer ban no último dia 1º de julho por causa da dívida com o Monaco, da França, referente à contratação do volante Jean Lucas."
     },
     "Vitória": {
       "league": "Copa do Brasil / Campeonato Brasileiro",
@@ -406,5 +402,5 @@
       "recent_changes": "O jogo contra o Santos foi transferido do Estádio em Caracas para o Estádio Misael Delgado em Valência, devido aos terremotos que atingiram o país."
     }
   },
-  "last_updated": "2026-07-21T22:04:58.398Z"
+  "last_updated": "2026-07-22T16:21:41.961Z"
 }
