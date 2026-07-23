@@ -1,16 +1,16 @@
 {
-  "timestamp": "2026-07-22T22:05:32.451Z",
+  "timestamp": "2026-07-23T16:29:06.851Z",
   "status": "SUCCESS",
   "postsPlanned": 1,
-  "candidatesFound": 13,
+  "candidatesFound": 14,
   "successfulPosts": [
     {
-      "title": "Elon Musk diz que fará versão 'historicamente correta' de 'A Odisseia' com uso de IA",
-      "headline": "MUSK REFAZ A ODISSÉIA",
-      "category": "Filmes",
-      "instagramId": "17948863173227313",
-      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-07-22/2026-07-22-22-06-02_feed.jpg",
-      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-07-22/2026-07-22-22-06-02_story.jpg"
+      "title": "André Mendonça autoriza inquérito sobre repasses para 'Dark Horse', filme sobre Jair Bolsonaro",
+      "headline": "INQUÉRITO AUTORIZADO",
+      "category": "Bastidores",
+      "instagramId": "18104110961518294",
+      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-07-23/2026-07-23-16-30-03_feed.jpg",
+      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-07-23/2026-07-23-16-30-03_story.jpg"
     }
   ],
   "failedPosts": []

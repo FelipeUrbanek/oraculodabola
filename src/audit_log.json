@@ -2717,5 +2717,21 @@
     "source_domain": "www.terra.com.br",
     "category": "Filmes",
     "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-07-23T16:29:00.385Z",
+    "headline": "SANTOS GOLEIA!",
+    "source_url": "https://www.terra.com.br/esportes/santos/goleada-rara-e-brilho-da-base-fazem-santos-sonhar-com-alivio-financeiro,88354b621f091e7f847b9b8044d74a28djez0unq.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-07-23T16:30:25.368Z",
+    "headline": "INQUÉRITO AUTORIZADO",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/filmes/andre-mendonca-autoriza-inquerito-sobre-repasses-para-dark-horse-filme-sobre-jair-bolsonaro,b4fcce8275ce35776a494ca1b22d59c5i99ty2oy.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Bastidores",
+    "status": "SUCCESS"
   }
 ]
