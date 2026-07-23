@@ -1,16 +1,16 @@
 {
-  "timestamp": "2026-07-23T16:29:06.851Z",
+  "timestamp": "2026-07-23T22:05:53.207Z",
   "status": "SUCCESS",
   "postsPlanned": 1,
-  "candidatesFound": 14,
+  "candidatesFound": 13,
   "successfulPosts": [
     {
-      "title": "André Mendonça autoriza inquérito sobre repasses para 'Dark Horse', filme sobre Jair Bolsonaro",
-      "headline": "INQUÉRITO AUTORIZADO",
+      "title": "De tradição no futebol a gigante do cinema: velório de Barretão celebra trajetória histórica",
+      "headline": "BARRETÃO ETERNO",
       "category": "Bastidores",
-      "instagramId": "18104110961518294",
-      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-07-23/2026-07-23-16-30-03_feed.jpg",
-      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-07-23/2026-07-23-16-30-03_story.jpg"
+      "instagramId": "18345951106217924",
+      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-07-23/2026-07-23-22-06-35_feed.jpg",
+      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-07-23/2026-07-23-22-06-35_story.jpg"
     }
   ],
   "failedPosts": []

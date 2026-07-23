@@ -2733,5 +2733,21 @@
     "source_domain": "www.terra.com.br",
     "category": "Bastidores",
     "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-07-23T22:05:49.431Z",
+    "headline": "SANTOS PAGA R$ 11 MILHÕES A NEYMAR",
+    "source_url": "https://www.terra.com.br/esportes/santos/santos-paga-montante-milionario-a-neymar,3f04ccd896846df0c5d4bfaa46cd27492p9dffcu.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-07-23T22:06:53.483Z",
+    "headline": "BARRETÃO ETERNO",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/filmes/de-tradicao-no-futebol-a-gigante-do-cinema-velorio-de-barretao-celebra-trajetoria-historica,f88a253599e8a519b7e5d51581290e0bv9j5kq65.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Bastidores",
+    "status": "SUCCESS"
   }
 ]
