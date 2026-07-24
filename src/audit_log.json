@@ -2749,5 +2749,21 @@
     "source_domain": "www.terra.com.br",
     "category": "Bastidores",
     "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-07-24T22:06:44.415Z",
+    "headline": "GUSTAVO CABALLERO LIBERADO!",
+    "source_url": "https://www.terra.com.br/esportes/santos/cuca-ganha-reforco-apos-santos-regularizar-atacante,b0584efa0fb2afe4a23e23149f6279768r3g2mue.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-07-24T22:07:50.484Z",
+    "headline": "PEQUENAS CRIATURAS",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/filmes/sai-exausta-carolina-dieckmmann-recorre-ao-silencio-no-premiado-pequenas-criaturas,11eee8136f0a773631d6dff135cbf969f8uekwup.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Filmes",
+    "status": "SUCCESS"
   }
 ]

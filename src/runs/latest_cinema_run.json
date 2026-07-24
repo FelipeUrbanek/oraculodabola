@@ -1,16 +1,16 @@
 {
-  "timestamp": "2026-07-23T22:05:53.207Z",
+  "timestamp": "2026-07-24T22:06:49.744Z",
   "status": "SUCCESS",
   "postsPlanned": 1,
-  "candidatesFound": 13,
+  "candidatesFound": 9,
   "successfulPosts": [
     {
-      "title": "De tradição no futebol a gigante do cinema: velório de Barretão celebra trajetória histórica",
-      "headline": "BARRETÃO ETERNO",
-      "category": "Bastidores",
-      "instagramId": "18345951106217924",
-      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-07-23/2026-07-23-22-06-35_feed.jpg",
-      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-07-23/2026-07-23-22-06-35_story.jpg"
+      "title": "'Saí exausta': Carolina Dieckmmann recorre ao silêncio no premiado 'Pequenas Criaturas'",
+      "headline": "PEQUENAS CRIATURAS",
+      "category": "Filmes",
+      "instagramId": "18105376736153470",
+      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-07-24/2026-07-24-22-07-30_feed.jpg",
+      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-07-24/2026-07-24-22-07-30_story.jpg"
     }
   ],
   "failedPosts": []
