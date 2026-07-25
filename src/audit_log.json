@@ -2781,5 +2781,21 @@
     "source_domain": "www.terra.com.br",
     "category": "Crítica",
     "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-07-25T21:58:28.151Z",
+    "headline": "SANTOS EXPICA REFORMA",
+    "source_url": "https://www.terra.com.br/esportes/santos/santos-explica-obra-na-vila-e-confirma-interdicao-parcial-contra-a-chape,a7e004acf4a54cd2b0c5a79781231ee6yuiwj4r7.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-07-25T21:59:35.381Z",
+    "headline": "FELIZ ANO VELHO",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/series/feliz-ano-velho-de-marcelo-rubens-paiva-ganhara-adaptacao-em-serie-pela-netflix,3bb98280e42da70f400d1be6e760244ckz17bn6b.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Séries",
+    "status": "SUCCESS"
   }
 ]
