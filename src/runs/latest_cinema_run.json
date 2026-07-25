@@ -1,16 +1,16 @@
 {
-  "timestamp": "2026-07-24T22:06:49.744Z",
+  "timestamp": "2026-07-25T16:06:17.237Z",
   "status": "SUCCESS",
   "postsPlanned": 1,
-  "candidatesFound": 9,
+  "candidatesFound": 7,
   "successfulPosts": [
     {
-      "title": "'Saí exausta': Carolina Dieckmmann recorre ao silêncio no premiado 'Pequenas Criaturas'",
-      "headline": "PEQUENAS CRIATURAS",
-      "category": "Filmes",
-      "instagramId": "18105376736153470",
-      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-07-24/2026-07-24-22-07-30_feed.jpg",
-      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-07-24/2026-07-24-22-07-30_story.jpg"
+      "title": "Entre tubarões e queda de avião, 'Águas Mortais' quase chega lá",
+      "headline": "ÁGUAS MORTAIS",
+      "category": "Crítica",
+      "instagramId": "18202382569367053",
+      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-07-25/2026-07-25-16-06-56_feed.jpg",
+      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-07-25/2026-07-25-16-06-56_story.jpg"
     }
   ],
   "failedPosts": []

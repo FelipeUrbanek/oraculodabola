@@ -2765,5 +2765,21 @@
     "source_domain": "www.terra.com.br",
     "category": "Filmes",
     "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-07-25T16:06:09.862Z",
+    "headline": "SANTOS NA ZONA DE REBAIXAMENTO",
+    "source_url": "https://www.terra.com.br/esportes/santos/a-probabilidade-do-santos-ser-rebaixado-no-campeonato-brasileiro,d3d7e10e0e1192b0d6dfba9791f37aaa5ra324p6.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-07-25T16:07:17.399Z",
+    "headline": "ÁGUAS MORTAIS",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/filmes/entre-tubaroes-e-queda-de-aviao-aguas-mortais-quase-chega-la,fdbca415e0d9e5b025b1b97e543c9965vnsnx15h.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Crítica",
+    "status": "SUCCESS"
   }
 ]
