@@ -1,16 +1,16 @@
 {
-  "timestamp": "2026-07-25T21:58:32.832Z",
+  "timestamp": "2026-07-26T13:25:55.329Z",
   "status": "SUCCESS",
   "postsPlanned": 1,
-  "candidatesFound": 5,
+  "candidatesFound": 4,
   "successfulPosts": [
     {
-      "title": "'Feliz Ano Velho', de Marcelo Rubens Paiva, ganhará adaptação em série pela Netflix",
-      "headline": "FELIZ ANO VELHO",
-      "category": "Séries",
-      "instagramId": "18069839855447287",
-      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-07-25/2026-07-25-21-59-14_feed.jpg",
-      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-07-25/2026-07-25-21-59-14_story.jpg"
+      "title": "'A gente precisa da dúvida', diz diretor de filme que mistura IA e trauma das enchentes do RS",
+      "headline": "FUTURO FUTURO",
+      "category": "Filmes",
+      "instagramId": "18158820250433856",
+      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-07-26/2026-07-26-13-26-41_feed.jpg",
+      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-07-26/2026-07-26-13-26-41_story.jpg"
     }
   ],
   "failedPosts": []

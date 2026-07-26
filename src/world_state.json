@@ -113,9 +113,7 @@
       "recent_changes": "O Athletico-PR sondou o atacante Rony, do Santos, para uma possível contratação."
     },
     "Chapecoense": {
-      "coach": "Não mencionado",
-      "league": "Copa do Brasil / Campeonato Brasileiro",
-      "recent_changes": "Pelo Campeonato Brasileiro, figura atualmente na zona de rebaixamento. Anteriormente, avançou para as oitavas de final da Copa do Brasil, lucrando R$ 5 milhões em premiações, após eliminar o Botafogo com uma vitória por 2 a 0."
+      "league": "Campeonato Brasileiro"
     },
     "Cruzeiro": {
       "recent_changes": "Encaminhou o empréstimo do atacante Lautaro Díaz para o Racing, da Argentina, por uma temporada, com opção de compra."
@@ -147,7 +145,7 @@
     },
     "Santos": {
       "league": "Campeonato Brasileiro",
-      "recent_changes": "Reforma no setor de arquibancadas da Vila Belmiro, com interdição parcial para o jogo contra a Chapecoense"
+      "recent_changes": "Empatou com a Chapecoense por 2 a 2, com a estreia do impedimento semiautomático no Brasileirão"
     },
     "Vitória": {
       "league": "Copa do Brasil / Campeonato Brasileiro",
@@ -403,5 +401,5 @@
       "recent_changes": "O jogo contra o Santos foi transferido do Estádio em Caracas para o Estádio Misael Delgado em Valência, devido aos terremotos que atingiram o país."
     }
   },
-  "last_updated": "2026-07-25T21:58:06.591Z"
+  "last_updated": "2026-07-26T13:25:29.435Z"
 }

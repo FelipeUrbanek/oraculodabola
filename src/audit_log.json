@@ -2797,5 +2797,21 @@
     "source_domain": "www.terra.com.br",
     "category": "Séries",
     "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-07-26T13:25:50.068Z",
+    "headline": "Santos Testa Tecnologia",
+    "source_url": "https://www.terra.com.br/esportes/santos/impedimento-semiautomatico-e-usado-pela-1-vez-no-brasileirao-em-santos-x-chapecoense-veja-lance,f38379bf8aa58616cb74f1d690390a09lp8m4p6p.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-07-26T13:27:00.096Z",
+    "headline": "FUTURO FUTURO",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/filmes/a-gente-precisa-da-duvida-diz-diretor-de-filme-que-mistura-ia-e-trauma-das-enchentes-do-rs,b743ff5afe24fe1821f90a984778125bwq8qtv79.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Filmes",
+    "status": "SUCCESS"
   }
 ]
