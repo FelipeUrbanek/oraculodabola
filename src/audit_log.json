@@ -2813,5 +2813,21 @@
     "source_domain": "www.terra.com.br",
     "category": "Filmes",
     "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-07-26T16:03:11.780Z",
+    "headline": "SANTOS PODE FATURAR MILHÕES",
+    "source_url": "https://www.terra.com.br/esportes/santos/santos-pode-faturar-milhoes-com-venda-de-joia-para-clube-europeu,840dc147f10926341df21bab645622752czrud4t.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-07-26T16:05:09.237Z",
+    "headline": "FILMES DE AÇÃO",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/filmes/os-15-filmes-de-acao-mais-pesquisados-pelos-brasileiros,17257afb5caf77e46987fab1f97d82544n2bq7b9.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Filmes",
+    "status": "SUCCESS"
   }
 ]

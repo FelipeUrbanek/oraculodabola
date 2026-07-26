@@ -1,16 +1,16 @@
 {
-  "timestamp": "2026-07-26T13:25:55.329Z",
+  "timestamp": "2026-07-26T16:03:19.537Z",
   "status": "SUCCESS",
   "postsPlanned": 1,
-  "candidatesFound": 4,
+  "candidatesFound": 1,
   "successfulPosts": [
     {
-      "title": "'A gente precisa da dúvida', diz diretor de filme que mistura IA e trauma das enchentes do RS",
-      "headline": "FUTURO FUTURO",
+      "title": "Os 15 filmes de ação mais pesquisados pelos brasileiros",
+      "headline": "FILMES DE AÇÃO",
       "category": "Filmes",
-      "instagramId": "18158820250433856",
-      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-07-26/2026-07-26-13-26-41_feed.jpg",
-      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-07-26/2026-07-26-13-26-41_story.jpg"
+      "instagramId": "17966242121949001",
+      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-07-26/2026-07-26-16-04-51_feed.jpg",
+      "storyPath": null
     }
   ],
   "failedPosts": []
