@@ -144,7 +144,8 @@
       "recent_changes": "Avançou para as oitavas de final da Copa do Brasil, lucrando R$ 5 milhões em premiações, após eliminar o Bahia. A equipe também superou o time baiano no Campeonato Brasileiro com uma vitória por 4 a 1 nesta temporada, porém encontra-se atualmente na zona de rebaixamento da competição."
     },
     "Santos": {
-      "recent_changes": "Pode faturar milhões com a venda de João Victor para o Benfica."
+      "league": "Campeonato Brasileiro",
+      "recent_changes": "Neymar está suspenso para a próxima rodada após receber o terceiro cartão amarelo seguido."
     },
     "Vitória": {
       "league": "Copa do Brasil / Campeonato Brasileiro",
@@ -400,5 +401,5 @@
       "recent_changes": "O jogo contra o Santos foi transferido do Estádio em Caracas para o Estádio Misael Delgado em Valência, devido aos terremotos que atingiram o país."
     }
   },
-  "last_updated": "2026-07-26T16:02:49.386Z"
+  "last_updated": "2026-07-26T22:00:53.784Z"
 }

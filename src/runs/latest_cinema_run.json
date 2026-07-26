@@ -1,16 +1,16 @@
 {
-  "timestamp": "2026-07-26T16:03:19.537Z",
+  "timestamp": "2026-07-26T22:01:23.723Z",
   "status": "SUCCESS",
   "postsPlanned": 1,
-  "candidatesFound": 1,
+  "candidatesFound": 2,
   "successfulPosts": [
     {
-      "title": "Os 15 filmes de ação mais pesquisados pelos brasileiros",
-      "headline": "FILMES DE AÇÃO",
-      "category": "Filmes",
-      "instagramId": "17966242121949001",
-      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-07-26/2026-07-26-16-04-51_feed.jpg",
-      "storyPath": null
+      "title": "Revista britânica põe 'Agente Secreto' em Top 5, mas cita Recife como 'cidade pequena'",
+      "headline": "AGENTE SECRETO NO TOP 5",
+      "category": "Crítica",
+      "instagramId": "18106585612860882",
+      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-07-26/2026-07-26-22-02-47_feed.jpg",
+      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-07-26/2026-07-26-22-02-47_story.jpg"
     }
   ],
   "failedPosts": []

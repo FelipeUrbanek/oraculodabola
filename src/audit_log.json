@@ -2829,5 +2829,21 @@
     "source_domain": "www.terra.com.br",
     "category": "Filmes",
     "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-07-26T22:01:15.907Z",
+    "headline": "NEYMAR SUSPENSO!",
+    "source_url": "https://www.terra.com.br/esportes/santos/santos-tera-desfalque-de-peso-para-proxima-rodada-do-brasileirao,1efe278e89f8eed528907c5bbadbb1e1r86i2rxi.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-07-26T22:03:05.469Z",
+    "headline": "AGENTE SECRETO NO TOP 5",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/filmes/revista-britanica-poe-agente-secreto-em-top-5-mas-cita-recife-como-cidade-pequena,54f124c0fd13ade3297309218af16d380ojtrabv.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Crítica",
+    "status": "SUCCESS"
   }
 ]
