@@ -2845,5 +2845,13 @@
     "source_domain": "www.terra.com.br",
     "category": "Crítica",
     "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-07-27T22:10:48.520Z",
+    "headline": "PANTERA NEGRA REVELADO",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/filmes/kevin-feige-revela-reacao-ao-conhecer-novo-pantera-negra-me-arrepiei,dcff5381b1ff0339d96c6e6598c187cams03kmb4.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Bastidores",
+    "status": "SUCCESS"
   }
 ]

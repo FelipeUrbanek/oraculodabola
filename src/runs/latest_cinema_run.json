@@ -1,16 +1,16 @@
 {
-  "timestamp": "2026-07-26T22:01:23.723Z",
+  "timestamp": "2026-07-27T22:09:46.607Z",
   "status": "SUCCESS",
   "postsPlanned": 1,
-  "candidatesFound": 2,
+  "candidatesFound": 8,
   "successfulPosts": [
     {
-      "title": "Revista britânica põe 'Agente Secreto' em Top 5, mas cita Recife como 'cidade pequena'",
-      "headline": "AGENTE SECRETO NO TOP 5",
-      "category": "Crítica",
-      "instagramId": "18106585612860882",
-      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-07-26/2026-07-26-22-02-47_feed.jpg",
-      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-07-26/2026-07-26-22-02-47_story.jpg"
+      "title": "Kevin Feige revela reação ao conhecer novo Pantera Negra: 'Me arrepiei'",
+      "headline": "PANTERA NEGRA REVELADO",
+      "category": "Bastidores",
+      "instagramId": "18015783953711755",
+      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-07-27/2026-07-27-22-10-24_feed.jpg",
+      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-07-27/2026-07-27-22-10-24_story.jpg"
     }
   ],
   "failedPosts": []
