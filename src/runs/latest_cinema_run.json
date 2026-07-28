@@ -1,16 +1,16 @@
 {
-  "timestamp": "2026-07-27T22:09:46.607Z",
+  "timestamp": "2026-07-28T22:05:20.215Z",
   "status": "SUCCESS",
   "postsPlanned": 1,
-  "candidatesFound": 8,
+  "candidatesFound": 10,
   "successfulPosts": [
     {
-      "title": "Kevin Feige revela reação ao conhecer novo Pantera Negra: 'Me arrepiei'",
-      "headline": "PANTERA NEGRA REVELADO",
-      "category": "Bastidores",
-      "instagramId": "18015783953711755",
-      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-07-27/2026-07-27-22-10-24_feed.jpg",
-      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-07-27/2026-07-27-22-10-24_story.jpg"
+      "title": "9 filmes elogiados e premiados que acabaram de chegar ao streaming",
+      "headline": "FILMES IMPERDÍVEIS",
+      "category": "Filmes",
+      "instagramId": "18026514233846593",
+      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-07-28/2026-07-28-22-06-02_feed.jpg",
+      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-07-28/2026-07-28-22-06-02_story.jpg"
     }
   ],
   "failedPosts": []

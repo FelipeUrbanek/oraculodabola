@@ -2853,5 +2853,13 @@
     "source_domain": "www.terra.com.br",
     "category": "Bastidores",
     "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-07-28T22:06:21.338Z",
+    "headline": "FILMES IMPERDÍVEIS",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/series/9-filmes-elogiados-e-premiados-que-acabaram-de-chegar-ao-streaming,e2db5c65c650264e39b6fed18fcf258clxeyme7k.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Filmes",
+    "status": "SUCCESS"
   }
 ]
