@@ -2861,5 +2861,21 @@
     "source_domain": "www.terra.com.br",
     "category": "Filmes",
     "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-07-29T16:23:14.445Z",
+    "headline": "SANTOS SOFRE 5 JOGOS COM GOLS",
+    "source_url": "https://www.terra.com.br/esportes/santos/santos-iguala-pior-sequencia-negativa-da-temporada-e-liga-sinal-de-alerta,b8f764a4be143916a9f654d9590af22a6p9vmver.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-07-29T16:24:17.806Z",
+    "headline": "GALINHA PINTADINHA!",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/filmes/galinha-pintadinha-o-filme-ganha-trailer-com-novos-personagens-e-aventura-original-assista,ca0ed2e40b5e804d9354182039e69be10f73e4z8.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Estreia",
+    "status": "SUCCESS"
   }
 ]

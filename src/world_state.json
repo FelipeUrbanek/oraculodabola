@@ -144,8 +144,9 @@
       "recent_changes": "Avançou para as oitavas de final da Copa do Brasil, lucrando R$ 5 milhões em premiações, após eliminar o Bahia. A equipe também superou o time baiano no Campeonato Brasileiro com uma vitória por 4 a 1 nesta temporada, porém encontra-se atualmente na zona de rebaixamento da competição."
     },
     "Santos": {
-      "league": "Campeonato Brasileiro",
-      "recent_changes": "Neymar está suspenso para a próxima rodada após receber o terceiro cartão amarelo seguido."
+      "coach": "Não mencionado",
+      "league": "Campeonato Brasileiro / Copa Sul-Americana",
+      "recent_changes": "Sofreu gols nos últimos cinco jogos, incluindo o Brasileirão e a Sul-Americana, antes de duelos decisivos pela Copa do Brasil."
     },
     "Vitória": {
       "league": "Copa do Brasil / Campeonato Brasileiro",
@@ -397,9 +398,8 @@
       "recent_changes": "Hiroki Ito foi convocado para a Copa do Mundo e tem raízes com o Santos, pois iniciou sua carreira em uma academia ligada ao clube paulista em Shizuoka."
     },
     "Universidad Central": {
-      "league": "Copa Sul-Americana",
-      "recent_changes": "O jogo contra o Santos foi transferido do Estádio em Caracas para o Estádio Misael Delgado em Valência, devido aos terremotos que atingiram o país."
+      "league": "Copa Sul-Americana"
     }
   },
-  "last_updated": "2026-07-26T22:00:53.784Z"
+  "last_updated": "2026-07-29T16:22:53.047Z"
 }
