@@ -2877,5 +2877,21 @@
     "source_domain": "www.terra.com.br",
     "category": "Estreia",
     "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-07-29T22:02:46.218Z",
+    "headline": "MAYKE PROCESSA SANTOS",
+    "source_url": "https://www.terra.com.br/esportes/santos/mayke-aciona-a-justica-e-pede-rescisao-de-contrato-com-o-santos,4730769207f133654414ae18c72256ebk1kmsagb.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-07-29T22:03:51.790Z",
+    "headline": "ATORES PERDIDOS",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/filmes/tom-chadbon-ator-de-game-of-thrones-e-doctor-who-morre-aos-80-anos,7bbd0012d1ed1c6992adb282cc2cd267sjuek9yh.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Breaking",
+    "status": "SUCCESS"
   }
 ]
