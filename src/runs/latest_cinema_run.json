@@ -1,16 +1,16 @@
 {
-  "timestamp": "2026-07-30T16:28:41.126Z",
+  "timestamp": "2026-07-30T22:09:26.662Z",
   "status": "SUCCESS",
   "postsPlanned": 1,
-  "candidatesFound": 6,
+  "candidatesFound": 8,
   "successfulPosts": [
     {
-      "title": "Daiane dos Santos será interpretada por Duda Santos em filme sobre trajetória da ginasta",
-      "headline": "DUDA SANTOS",
-      "category": "Filmes",
-      "instagramId": "17899736169480971",
-      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-07-30/2026-07-30-16-29-21_feed.jpg",
-      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-07-30/2026-07-30-16-29-21_story.jpg"
+      "title": "'Wonder Man': Disney cancela série da Marvel quatro meses após renová-la",
+      "headline": "WONDER MAN CANCELADA",
+      "category": "Séries",
+      "instagramId": "17975902310901951",
+      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-07-30/2026-07-30-22-10-05_feed.jpg",
+      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-07-30/2026-07-30-22-10-05_story.jpg"
     }
   ],
   "failedPosts": []

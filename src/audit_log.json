@@ -2909,5 +2909,21 @@
     "source_domain": "www.terra.com.br",
     "category": "Filmes",
     "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-07-30T22:09:17.973Z",
+    "headline": "SANTOS RECEBE R$ 3 MILHÕES",
+    "source_url": "https://www.terra.com.br/esportes/santos/santos-recebe-quantia-milionaria-da-conmebol,f42be6184985ceb46f8397e136122c5acu11i1ha.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-07-30T22:10:26.180Z",
+    "headline": "WONDER MAN CANCELADA",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/series/wonder-man-disney-cancela-serie-da-marvel-quatro-meses-apos-renova-la,19b3777124c3b57090530d99b0b3822dsxhthnvr.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Séries",
+    "status": "SUCCESS"
   }
 ]

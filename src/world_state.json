@@ -141,12 +141,12 @@
     "Remo": {
       "coach": "Não mencionado",
       "league": "Copa do Brasil / Campeonato Brasileiro",
-      "recent_changes": "Avançou para as oitavas de final da Copa do Brasil, lucrando R$ 5 milhões em premiações, após eliminar o Bahia. A equipe também superou o time baiano no Campeonato Brasileiro com uma vitória por 4 a 1 nesta temporada, porém encontra-se atualmente na zona de rebaixamento da competição."
+      "recent_changes": "O duelo de oitavas de final da Copa do Brasil acontece no próximo sábado, 01 de agosto, na Vila Belmiro, contra o Remo."
     },
     "Santos": {
       "coach": "Cuca",
       "league": "Campeonato Brasileiro / Copa Sul-Americana",
-      "recent_changes": "Seus zagueiros têm cometido erros fatais, e a equipe sofreu cinco gols consecutivos em cinco partidas."
+      "recent_changes": "A classificação do Santos às oitavas de final da Copa Sul-Americana também significou lucros aos cofres do clube, garantindo mais 600 mil dólares (cerca de R$ 3 milhões) em premiações no torneio. Caso avance às quartas de final, a equipe paulista ainda embolsará mais 700 mil dólares (R$ 3,5 milhões) pela classificação."
     },
     "Vitória": {
       "league": "Copa do Brasil / Campeonato Brasileiro",
@@ -401,5 +401,5 @@
       "league": "Copa Sul-Americana"
     }
   },
-  "last_updated": "2026-07-30T16:28:06.083Z"
+  "last_updated": "2026-07-30T22:08:56.667Z"
 }
