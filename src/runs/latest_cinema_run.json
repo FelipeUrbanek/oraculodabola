@@ -1,16 +1,16 @@
 {
-  "timestamp": "2026-07-29T22:02:53.108Z",
+  "timestamp": "2026-07-30T16:28:41.126Z",
   "status": "SUCCESS",
   "postsPlanned": 1,
-  "candidatesFound": 7,
+  "candidatesFound": 6,
   "successfulPosts": [
     {
-      "title": "Tom Chadbon, ator de 'Game of Thrones' e 'Doctor Who', morre aos 80 anos",
-      "headline": "ATORES PERDIDOS",
-      "category": "Breaking",
-      "instagramId": "18008682638752970",
-      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-07-29/2026-07-29-22-03-31_feed.jpg",
-      "storyPath": null
+      "title": "Daiane dos Santos será interpretada por Duda Santos em filme sobre trajetória da ginasta",
+      "headline": "DUDA SANTOS",
+      "category": "Filmes",
+      "instagramId": "17899736169480971",
+      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-07-30/2026-07-30-16-29-21_feed.jpg",
+      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-07-30/2026-07-30-16-29-21_story.jpg"
     }
   ],
   "failedPosts": []
