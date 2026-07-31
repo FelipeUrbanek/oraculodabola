@@ -141,12 +141,12 @@
     "Remo": {
       "coach": "Não mencionado",
       "league": "Copa do Brasil / Campeonato Brasileiro",
-      "recent_changes": "O duelo de oitavas de final da Copa do Brasil acontece no próximo sábado, 01 de agosto, na Vila Belmiro, contra o Remo."
+      "recent_changes": "Enfrentará o Santos no sábado (1º) pelo jogo de ida das oitavas de final da Copa do Brasil."
     },
     "Santos": {
-      "coach": "Cuca",
-      "league": "Campeonato Brasileiro / Copa Sul-Americana",
-      "recent_changes": "A classificação do Santos às oitavas de final da Copa Sul-Americana também significou lucros aos cofres do clube, garantindo mais 600 mil dólares (cerca de R$ 3 milhões) em premiações no torneio. Caso avance às quartas de final, a equipe paulista ainda embolsará mais 700 mil dólares (R$ 3,5 milhões) pela classificação."
+      "coach": "Não mencionado",
+      "league": "Campeonato Brasileiro / Copa Sul-Americana / Copa do Brasil",
+      "recent_changes": "Confirmou vaga na próxima fase da Copa Sul-Americana e agora enfrentará o Macará, do Equador. Neymar ajudou a equipe a crescer de rendimento na etapa final contra a Universidad Central."
     },
     "Vitória": {
       "league": "Copa do Brasil / Campeonato Brasileiro",
@@ -401,5 +401,5 @@
       "league": "Copa Sul-Americana"
     }
   },
-  "last_updated": "2026-07-30T22:08:56.667Z"
+  "last_updated": "2026-07-31T22:07:30.977Z"
 }

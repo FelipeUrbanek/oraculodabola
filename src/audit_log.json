@@ -2925,5 +2925,21 @@
     "source_domain": "www.terra.com.br",
     "category": "Séries",
     "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-07-31T22:07:49.876Z",
+    "headline": "NEYMAR BRILHA!",
+    "source_url": "https://www.terra.com.br/esportes/santos/neymar-deixa-o-campo-de-forma-incomum-apos-vitoria-do-santos,ec3fb08393cb6e4e587f2788db17fad9ze9hwqy1.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-07-31T22:08:57.214Z",
+    "headline": "HOMEM-ARANHA",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/filmes/o-que-relembrar-antes-de-assistir-homem-aranha-um-novo-dia,e6f65ff780425f7c1bfe57544ad7f3b0v75ctljc.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Filmes",
+    "status": "SUCCESS"
   }
 ]

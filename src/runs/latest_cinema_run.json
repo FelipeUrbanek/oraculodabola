@@ -1,16 +1,16 @@
 {
-  "timestamp": "2026-07-30T22:09:26.662Z",
+  "timestamp": "2026-07-31T22:08:00.014Z",
   "status": "SUCCESS",
   "postsPlanned": 1,
-  "candidatesFound": 8,
+  "candidatesFound": 9,
   "successfulPosts": [
     {
-      "title": "'Wonder Man': Disney cancela série da Marvel quatro meses após renová-la",
-      "headline": "WONDER MAN CANCELADA",
-      "category": "Séries",
-      "instagramId": "17975902310901951",
-      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-07-30/2026-07-30-22-10-05_feed.jpg",
-      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-07-30/2026-07-30-22-10-05_story.jpg"
+      "title": "O que relembrar antes de assistir 'Homem-Aranha: Um Novo Dia'",
+      "headline": "HOMEM-ARANHA",
+      "category": "Filmes",
+      "instagramId": "18146760607530661",
+      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-07-31/2026-07-31-22-08-37_feed.jpg",
+      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-07-31/2026-07-31-22-08-37_story.jpg"
     }
   ],
   "failedPosts": []
