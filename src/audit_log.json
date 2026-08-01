@@ -2941,5 +2941,21 @@
     "source_domain": "www.terra.com.br",
     "category": "Filmes",
     "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-08-01T13:23:53.505Z",
+    "headline": "SANTOS NA COPA DO BRASIL",
+    "source_url": "https://www.terra.com.br/esportes/futebol/copa-do-brasil/cuca-indica-forca-maxima-no-santos-contra-o-remo,3fed7bc92235952da46ed83b5b5ecaf7rs5g2i4q.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-08-01T13:24:47.728Z",
+    "headline": "BARBIE 2 EM RISCO",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/filmes/barbie-2-pode-nao-acontecer-por-veto-da-warner,aed964bd7baf5967dae38211589d56ccahgajgpk.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Filmes",
+    "status": "SUCCESS"
   }
 ]

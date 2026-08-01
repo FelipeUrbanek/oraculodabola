@@ -139,14 +139,13 @@
       "recent_changes": "Confirmou a contratação do zagueiro Alexsander Barboza junto ao Botafogo por 4 milhões de dólares (R$ 20 milhões)"
     },
     "Remo": {
-      "coach": "Não mencionado",
       "league": "Copa do Brasil / Campeonato Brasileiro",
       "recent_changes": "Enfrentará o Santos no sábado (1º) pelo jogo de ida das oitavas de final da Copa do Brasil."
     },
     "Santos": {
-      "coach": "Não mencionado",
+      "coach": "Cuca",
       "league": "Campeonato Brasileiro / Copa Sul-Americana / Copa do Brasil",
-      "recent_changes": "Confirmou vaga na próxima fase da Copa Sul-Americana e agora enfrentará o Macará, do Equador. Neymar ajudou a equipe a crescer de rendimento na etapa final contra a Universidad Central."
+      "recent_changes": "Enfrentará o Remo no sábado (1º) pelo jogo de ida das oitavas de final da Copa do Brasil."
     },
     "Vitória": {
       "league": "Copa do Brasil / Campeonato Brasileiro",
@@ -401,5 +400,5 @@
       "league": "Copa Sul-Americana"
     }
   },
-  "last_updated": "2026-07-31T22:07:30.977Z"
+  "last_updated": "2026-08-01T13:23:31.275Z"
 }

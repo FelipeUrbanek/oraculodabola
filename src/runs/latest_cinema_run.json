@@ -1,16 +1,16 @@
 {
-  "timestamp": "2026-07-31T22:08:00.014Z",
+  "timestamp": "2026-08-01T13:24:01.666Z",
   "status": "SUCCESS",
   "postsPlanned": 1,
-  "candidatesFound": 9,
+  "candidatesFound": 12,
   "successfulPosts": [
     {
-      "title": "O que relembrar antes de assistir 'Homem-Aranha: Um Novo Dia'",
-      "headline": "HOMEM-ARANHA",
+      "title": "Barbie 2 pode não acontecer por veto da Warner",
+      "headline": "BARBIE 2 EM RISCO",
       "category": "Filmes",
-      "instagramId": "18146760607530661",
-      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-07-31/2026-07-31-22-08-37_feed.jpg",
-      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-07-31/2026-07-31-22-08-37_story.jpg"
+      "instagramId": "18332719567283240",
+      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-08-01/2026-08-01-13-24-26_feed.jpg",
+      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-08-01/2026-08-01-13-24-26_story.jpg"
     }
   ],
   "failedPosts": []
