@@ -1,16 +1,16 @@
 {
-  "timestamp": "2026-08-01T16:03:15.450Z",
+  "timestamp": "2026-08-01T21:58:54.669Z",
   "status": "SUCCESS",
   "postsPlanned": 1,
-  "candidatesFound": 12,
+  "candidatesFound": 8,
   "successfulPosts": [
     {
-      "title": "Eliza Capai filma o sertão pelo olhar das meninas em 'A Fabulosa Máquina do Tempo'",
-      "headline": "ELIZA CAPAI NO CINEMA",
-      "category": "Estreia",
-      "instagramId": "18074528141361112",
-      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-08-01/2026-08-01-16-03-42_feed.jpg",
-      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-08-01/2026-08-01-16-03-42_story.jpg"
+      "title": "Diretora de documentário sobre Jared Leto diz que imagem do astro o blindou de acusações por abuso",
+      "headline": "JARED LETO ACUSADO",
+      "category": "Crítica",
+      "instagramId": "18184057825398079",
+      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-08-01/2026-08-01-21-59-25_feed.jpg",
+      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-08-01/2026-08-01-21-59-25_story.jpg"
     }
   ],
   "failedPosts": []

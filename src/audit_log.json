@@ -2973,5 +2973,21 @@
     "source_domain": "www.terra.com.br",
     "category": "Estreia",
     "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-08-01T21:58:44.391Z",
+    "headline": "RONY SE DESTACA",
+    "source_url": "https://www.terra.com.br/esportes/santos/a-declaracao-de-rony-sobre-atual-fase-no-santos,a078ff8664930d556abb162cd2ced2efqov16scr.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-08-01T21:59:45.318Z",
+    "headline": "JARED LETO ACUSADO",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/filmes/diretora-de-documentario-sobre-jared-leto-diz-que-imagem-do-astro-o-blindou-de-acusacoes-por-abuso,91a36e1516d244369b73194ba55bc2c4l58o7sdt.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Crítica",
+    "status": "SUCCESS"
   }
 ]
