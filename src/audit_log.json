@@ -2957,5 +2957,21 @@
     "source_domain": "www.terra.com.br",
     "category": "Filmes",
     "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-08-01T16:03:08.050Z",
+    "headline": "REFORÇOS CHEGAM!",
+    "source_url": "https://www.terra.com.br/esportes/santos/santos-cuca-ganha-reforcos-para-a-copa-do-brasil,58a9aea6fef3429e2f8aa9629fb1ebe0cebozl0b.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-08-01T16:04:02.190Z",
+    "headline": "ELIZA CAPAI NO CINEMA",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/filmes/eliza-capai-filma-o-sertao-pelo-olhar-das-meninas-em-a-fabulosa-maquina-do-tempo,9449d32673b680bc070af3bf0dcb601ejtamfvym.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Estreia",
+    "status": "SUCCESS"
   }
 ]

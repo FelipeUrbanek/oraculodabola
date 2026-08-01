@@ -143,9 +143,9 @@
       "recent_changes": "Enfrentará o Santos no sábado (1º) pelo jogo de ida das oitavas de final da Copa do Brasil."
     },
     "Santos": {
-      "coach": "Cuca",
       "league": "Campeonato Brasileiro / Copa Sul-Americana / Copa do Brasil",
-      "recent_changes": "Enfrentará o Remo no sábado (1º) pelo jogo de ida das oitavas de final da Copa do Brasil."
+      "coach": "Cuca",
+      "recent_changes": "Enfrentará o Remo no sábado (1º) pelo jogo de ida das oitavas de final da Copa do Brasil. Recebe reforços com a disponibilidade de João Paulo e Gustavo Caballero."
     },
     "Vitória": {
       "league": "Copa do Brasil / Campeonato Brasileiro",
@@ -400,5 +400,5 @@
       "league": "Copa Sul-Americana"
     }
   },
-  "last_updated": "2026-08-01T13:23:31.275Z"
+  "last_updated": "2026-08-01T16:02:45.886Z"
 }
