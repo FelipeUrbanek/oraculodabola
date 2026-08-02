@@ -3005,5 +3005,13 @@
     "source_domain": "www.terra.com.br",
     "category": "Séries",
     "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-08-02T16:03:47.096Z",
+    "headline": "AVATAR AANG",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/filmes/novo-filme-de-avatar-troca-a-batalha-pelo-luto-do-ultimo-dobrador-de-ar,f11a41dc60207382de3ad262c2db52c36fcvp0qt.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Filmes",
+    "status": "SUCCESS"
   }
 ]

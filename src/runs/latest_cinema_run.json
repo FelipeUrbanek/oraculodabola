@@ -1,16 +1,16 @@
 {
-  "timestamp": "2026-08-02T13:24:08.455Z",
+  "timestamp": "2026-08-02T16:02:47.005Z",
   "status": "SUCCESS",
   "postsPlanned": 1,
   "candidatesFound": 4,
   "successfulPosts": [
     {
-      "title": "5 documentários de true crime que solucionaram crimes emblemáticos",
-      "headline": "CRIMES DESVENDADOS",
-      "category": "Séries",
-      "instagramId": "18369474382237303",
-      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-08-02/2026-08-02-13-24-43_feed.jpg",
-      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-08-02/2026-08-02-13-24-43_story.jpg"
+      "title": "Novo filme de 'Avatar' troca a batalha pelo luto do último dobrador de ar",
+      "headline": "AVATAR AANG",
+      "category": "Filmes",
+      "instagramId": "18084242015216112",
+      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-08-02/2026-08-02-16-03-27_feed.jpg",
+      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-08-02/2026-08-02-16-03-27_story.jpg"
     }
   ],
   "failedPosts": []
