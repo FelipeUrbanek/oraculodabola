@@ -1,16 +1,16 @@
 {
-  "timestamp": "2026-08-02T16:02:47.005Z",
+  "timestamp": "2026-08-02T21:58:41.852Z",
   "status": "SUCCESS",
   "postsPlanned": 1,
-  "candidatesFound": 4,
+  "candidatesFound": 5,
   "successfulPosts": [
     {
-      "title": "Novo filme de 'Avatar' troca a batalha pelo luto do último dobrador de ar",
-      "headline": "AVATAR AANG",
+      "title": "'Há projetos impossíveis de serem feitos no Brasil sem o streaming', diz Fernando Meirelles",
+      "headline": "CORRIDA DOS BICHOS",
       "category": "Filmes",
-      "instagramId": "18084242015216112",
-      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-08-02/2026-08-02-16-03-27_feed.jpg",
-      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-08-02/2026-08-02-16-03-27_story.jpg"
+      "instagramId": "18122031863508758",
+      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-08-02/2026-08-02-21-59-15_feed.jpg",
+      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-08-02/2026-08-02-21-59-15_story.jpg"
     }
   ],
   "failedPosts": []

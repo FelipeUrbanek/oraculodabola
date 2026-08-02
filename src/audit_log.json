@@ -3013,5 +3013,21 @@
     "source_domain": "www.terra.com.br",
     "category": "Filmes",
     "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-08-02T21:58:35.349Z",
+    "headline": "LUCAS VERÍSSIMO DUVIDA",
+    "source_url": "https://www.terra.com.br/esportes/santos/lucas-verissimo-vira-duvida-no-santos-para-decisao-em-belem,a84ba2b65922ee82f90b6444918d4a143qira3di.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-08-02T21:59:33.984Z",
+    "headline": "CORRIDA DOS BICHOS",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/series/ha-projetos-impossiveis-de-serem-feitos-no-brasil-sem-o-streaming-diz-fernando-meirelles,5305f46b451b7cf2c2e04585c6ae1cdfdw0ejuob.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Filmes",
+    "status": "SUCCESS"
   }
 ]
