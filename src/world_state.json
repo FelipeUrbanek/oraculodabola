@@ -140,10 +140,12 @@
     },
     "Remo": {
       "league": "Copa do Brasil / Campeonato Brasileiro",
-      "recent_changes": "Enfrentará o Santos no sábado (1º) pelo jogo de ida das oitavas de final da Copa do Brasil."
+      "recent_changes": "Empatou sem gols com o Santos na Vila Belmiro e levou vantagem para o jogo de volta em Belém."
     },
     "Santos": {
-      "recent_changes": "Enfrentará o Remo no sábado (1º) pelo jogo de ida das oitavas de final da Copa do Brasil. Recebe reforços com a disponibilidade de João Paulo e Gustavo Caballero. Rony está em boa fase e confiante para a temporada."
+      "coach": "Cuca",
+      "league": "Copa do Brasil / Campeonato Brasileiro",
+      "recent_changes": "Empatou sem gols com o Remo na Vila Belmiro e ouviu vaias da torcida. Gabriel Bontempo expressou revolta com o resultado."
     },
     "Vitória": {
       "league": "Copa do Brasil / Campeonato Brasileiro",
@@ -398,5 +400,5 @@
       "league": "Copa Sul-Americana"
     }
   },
-  "last_updated": "2026-08-01T21:58:21.985Z"
+  "last_updated": "2026-08-02T13:23:40.636Z"
 }

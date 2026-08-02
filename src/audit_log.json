@@ -2989,5 +2989,21 @@
     "source_domain": "www.terra.com.br",
     "category": "Crítica",
     "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-08-02T13:24:01.363Z",
+    "headline": "SANTOS EMPATA COM REMO",
+    "source_url": "https://www.terra.com.br/esportes/santos/bontempo-concorda-com-vaias-de-santistas-na-vila-a-gente-cria-e-nao-faz-saimos-p-tambem,fa67e8cb75119ea04c11cc83bac8b19e4dsycc1m.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-08-02T13:25:03.690Z",
+    "headline": "CRIMES DESVENDADOS",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/series/5-documentarios-de-true-crime-que-solucionaram-crimes-emblematicos,7fc3d56224bfb6fc9598a0016df84b83bgnvyt8g.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Séries",
+    "status": "SUCCESS"
   }
 ]

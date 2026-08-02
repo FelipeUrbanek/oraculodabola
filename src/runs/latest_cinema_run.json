@@ -1,16 +1,16 @@
 {
-  "timestamp": "2026-08-01T21:58:54.669Z",
+  "timestamp": "2026-08-02T13:24:08.455Z",
   "status": "SUCCESS",
   "postsPlanned": 1,
-  "candidatesFound": 8,
+  "candidatesFound": 4,
   "successfulPosts": [
     {
-      "title": "Diretora de documentário sobre Jared Leto diz que imagem do astro o blindou de acusações por abuso",
-      "headline": "JARED LETO ACUSADO",
-      "category": "Crítica",
-      "instagramId": "18184057825398079",
-      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-08-01/2026-08-01-21-59-25_feed.jpg",
-      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-08-01/2026-08-01-21-59-25_story.jpg"
+      "title": "5 documentários de true crime que solucionaram crimes emblemáticos",
+      "headline": "CRIMES DESVENDADOS",
+      "category": "Séries",
+      "instagramId": "18369474382237303",
+      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-08-02/2026-08-02-13-24-43_feed.jpg",
+      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-08-02/2026-08-02-13-24-43_story.jpg"
     }
   ],
   "failedPosts": []
