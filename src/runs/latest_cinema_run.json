@@ -1,16 +1,16 @@
 {
-  "timestamp": "2026-08-02T21:58:41.852Z",
+  "timestamp": "2026-08-03T22:10:55.736Z",
   "status": "SUCCESS",
   "postsPlanned": 1,
   "candidatesFound": 5,
   "successfulPosts": [
     {
-      "title": "'Há projetos impossíveis de serem feitos no Brasil sem o streaming', diz Fernando Meirelles",
-      "headline": "CORRIDA DOS BICHOS",
-      "category": "Filmes",
-      "instagramId": "18122031863508758",
-      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-08-02/2026-08-02-21-59-15_feed.jpg",
-      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-08-02/2026-08-02-21-59-15_story.jpg"
+      "title": "Experiência 'Black Mirror' usa IA para criar história inédita e leva público à terapia com Freud",
+      "headline": "BLACK MIRROR",
+      "category": "Estreia",
+      "instagramId": "18120356174479502",
+      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-08-03/2026-08-03-22-11-28_feed.jpg",
+      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-08-03/2026-08-03-22-11-28_story.jpg"
     }
   ],
   "failedPosts": []

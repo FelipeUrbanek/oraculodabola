@@ -3029,5 +3029,21 @@
     "source_domain": "www.terra.com.br",
     "category": "Filmes",
     "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-08-03T22:10:49.203Z",
+    "headline": "GABIGOL PERDE GOL!",
+    "source_url": "https://www.terra.com.br/esportes/santos/video-gabigol-do-santos-perde-gol-inacreditavel,73328b39426672b7b3b90e708dd0fbcbb9ij7c6j.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-08-03T22:11:49.056Z",
+    "headline": "BLACK MIRROR",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/series/experiencia-black-mirror-usa-ia-para-criar-historia-inedita-e-leva-publico-a-terapia-com-freud,65af2e74f9e0557530733aba1e6bc4140ue93ii8.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Estreia",
+    "status": "SUCCESS"
   }
 ]

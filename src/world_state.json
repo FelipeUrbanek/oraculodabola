@@ -140,12 +140,11 @@
     },
     "Remo": {
       "league": "Copa do Brasil / Campeonato Brasileiro",
-      "recent_changes": "Empatou sem gols com o Santos na Vila Belmiro e levou vantagem para o jogo de volta em Belém."
+      "recent_changes": "Empatou sem gols com o Santos na Vila Belmiro e leva vantagem para o jogo de volta em Belém."
     },
     "Santos": {
-      "coach": "Cuca",
       "league": "Copa do Brasil / Campeonato Brasileiro",
-      "recent_changes": "Empatou sem gols com o Remo na Vila Belmiro, e pode perder o zagueiro Lucas Veríssimo para o jogo de volta em Belém devido a uma lesão na panturrilha direita."
+      "recent_changes": "Empatou sem gols com o Remo na Vila Belmiro, e terá a segunda chance de classificação no jogo de volta em Belém."
     },
     "Vitória": {
       "league": "Copa do Brasil / Campeonato Brasileiro",
@@ -400,5 +399,5 @@
       "league": "Copa Sul-Americana"
     }
   },
-  "last_updated": "2026-08-02T21:58:14.386Z"
+  "last_updated": "2026-08-03T22:10:27.938Z"
 }
