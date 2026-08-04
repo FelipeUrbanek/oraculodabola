@@ -1,16 +1,16 @@
 {
-  "timestamp": "2026-08-03T22:10:55.736Z",
+  "timestamp": "2026-08-04T22:14:29.260Z",
   "status": "SUCCESS",
   "postsPlanned": 1,
-  "candidatesFound": 5,
+  "candidatesFound": 6,
   "successfulPosts": [
     {
-      "title": "Experiência 'Black Mirror' usa IA para criar história inédita e leva público à terapia com Freud",
-      "headline": "BLACK MIRROR",
-      "category": "Estreia",
-      "instagramId": "18120356174479502",
-      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-08-03/2026-08-03-22-11-28_feed.jpg",
-      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-08-03/2026-08-03-22-11-28_story.jpg"
+      "title": "'Monstro': 4ª temporada abordará caso de Lizzie Borden, de 1892; relembre",
+      "headline": "Lizzie Borden em Foco: Série 'Monstro' Chega!",
+      "category": "Séries",
+      "instagramId": "18227363209320333",
+      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-08-04/2026-08-04-22-15-05_feed.jpg",
+      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-08-04/2026-08-04-22-15-05_story.jpg"
     }
   ],
   "failedPosts": []

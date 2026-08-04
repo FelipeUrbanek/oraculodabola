@@ -27,7 +27,7 @@
       "recent_changes": "Recebeu um novo transfer ban por descumprir o acordo de pagamento firmado com o Midtjylland, da Dinamarca, pela contratação do volante Charles, acumulando quatro punições em vigor."
     },
     "Seleção Brasileira": {
-      "league": "Copa do Mundo de 2026"
+      "league": "Copa do Brasil / Seleção Brasileira Sub-20"
     },
     "Atlético-MG": {
       "coach": "Eduardo Domínguez",
@@ -144,7 +144,7 @@
     },
     "Santos": {
       "league": "Copa do Brasil / Campeonato Brasileiro",
-      "recent_changes": "Empatou sem gols com o Remo na Vila Belmiro, e terá a segunda chance de classificação no jogo de volta em Belém."
+      "recent_changes": "Empatou sem gols com o Remo na Vila Belmiro, e terá a segunda chance de classificação no jogo de volta em Belém. O técnico Cuca reforçou a confiança no jovem defensor João Ananias, que não foi liberado para a Seleção Brasileira Sub-20 devido à lesão de Lucas Veríssimo."
     },
     "Vitória": {
       "league": "Copa do Brasil / Campeonato Brasileiro",
@@ -399,5 +399,5 @@
       "league": "Copa Sul-Americana"
     }
   },
-  "last_updated": "2026-08-03T22:10:27.938Z"
+  "last_updated": "2026-08-04T22:14:03.516Z"
 }

@@ -3045,5 +3045,21 @@
     "source_domain": "www.terra.com.br",
     "category": "Estreia",
     "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-08-04T22:14:25.065Z",
+    "headline": "SANTOS VETA ANANIAS",
+    "source_url": "https://www.terra.com.br/esportes/santos/montante-milionario-a-vista-santos-veta-pedido-e-revolta-de-bontempo-as-ultimas-noticias-do-santos,1f95dc12c7e6c1dd870d8c014c6be933prabmls2.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-08-04T22:15:25.224Z",
+    "headline": "Lizzie Borden em Foco: Série 'Monstro' Chega!",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/series/monstro-4-temporada-abordara-caso-de-lizzie-borden-de-1892-relembre,cdfaf9c430acac34b053cd67ab5411e0wywt6e41.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Séries",
+    "status": "SUCCESS"
   }
 ]
