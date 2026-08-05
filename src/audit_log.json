@@ -3061,5 +3061,21 @@
     "source_domain": "www.terra.com.br",
     "category": "Séries",
     "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-08-05T22:14:13.482Z",
+    "headline": "SANTOS LIDERARANKING",
+    "source_url": "https://www.terra.com.br/esportes/corinthians/flamengo-e-corinthians-santos-dispara-e-lidera-crescimento-nas-redes-veja,3d534ce59d585afbc75b32dd49b65c43ucdrtodv.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-08-05T22:15:15.104Z",
+    "headline": "CEM ANOS DE SOLIDÃO",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/series/cem-anos-de-solidao-mostra-a-transformacao-dos-buendia-e-de-macondo-na-parte-2-leia-entrevistas,7fe15ac4f1cbf7ff465abd511b9f9861q370f7zw.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Séries",
+    "status": "SUCCESS"
   }
 ]
