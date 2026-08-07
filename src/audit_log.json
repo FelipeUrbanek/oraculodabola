@@ -3109,5 +3109,21 @@
     "source_domain": "www.terra.com.br",
     "category": "Filmes",
     "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-08-07T15:57:52.858Z",
+    "headline": "SANTOS NA COPA DO BRASIL",
+    "source_url": "https://www.terra.com.br/esportes/santos/proximo-jogo-do-santos-na-copa-do-brasil-contara-com-novidade-importante,c674a3c63e297453e86868d15aaf77764bp01tum.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-08-07T15:58:40.100Z",
+    "headline": "GABRIEL MASCARO LANÇA TREMA",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/filmes/diretor-de-o-ultimo-azul-gabriel-mascaro-lanca-nova-produtora-ao-lado-de-paula-cosenza,34d05b1be8a923ea4d4494742ab97fe3g4vcx4zg.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Bastidores",
+    "status": "SUCCESS"
   }
 ]

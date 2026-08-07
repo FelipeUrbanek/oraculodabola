@@ -1,16 +1,16 @@
 {
-  "timestamp": "2026-08-07T13:06:37.652Z",
+  "timestamp": "2026-08-07T15:58:03.319Z",
   "status": "SUCCESS",
   "postsPlanned": 1,
   "candidatesFound": 12,
   "successfulPosts": [
     {
-      "title": "Kleber Mendonça Filho dirigiu curta sobre Jafar Panahi; filme será exibido no Festival de Nova York",
-      "headline": "KLEBER MENDONÇA FILHO NO NYFF",
-      "category": "Filmes",
-      "instagramId": "18120074668876694",
-      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-08-07/2026-08-07-13-06-55_feed.jpg",
-      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-08-07/2026-08-07-13-06-55_story.jpg"
+      "title": "Diretor de 'O Último Azul', Gabriel Mascaro lança nova produtora ao lado de Paula Cosenza",
+      "headline": "GABRIEL MASCARO LANÇA TREMA",
+      "category": "Bastidores",
+      "instagramId": "18112013281980198",
+      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-08-07/2026-08-07-15-58-19_feed.jpg",
+      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-08-07/2026-08-07-15-58-19_story.jpg"
     }
   ],
   "failedPosts": []
