@@ -27,6 +27,7 @@
       "recent_changes": "Teve um crescimento de 103 mil novos seguidores nas redes sociais, principalmente no TikTok."
     },
     "Seleção Brasileira": {
+      "coach": "Não informado",
       "league": "Copa do Brasil / Seleção Brasileira Sub-20"
     },
     "Atlético-MG": {
@@ -137,12 +138,14 @@
       "recent_changes": "Teve um crescimento de 57 mil novos seguidores nas redes sociais."
     },
     "Remo": {
+      "coach": "Não informado",
       "league": "Copa do Brasil / Campeonato Brasileiro",
-      "recent_changes": "Empatou sem gols com o Santos na Vila Belmiro e leva vantagem para o jogo de volta em Belém."
+      "recent_changes": "FOI DENUNCIADO pelo STJD por incapacidade de prevenir e reprimir desordens na praça de desportos, comportamento hostil ou falta grave e conduta contrária à disciplina ou à ética desportiva"
     },
     "Santos": {
-      "league": "Não mencionada",
-      "recent_changes": "Aguarda proposta do grupo Saint Dominique para venda de 80% das ações"
+      "coach": "Não informado",
+      "league": "Copa do Brasil / Campeonato Brasileiro",
+      "recent_changes": "Aguarda proposta do grupo Saint Dominique para venda de 80% das ações, Empatou sem gols com o Remo na Vila Belmiro e leva vantagem para o jogo de volta em Belém."
     },
     "Vitória": {
       "recent_changes": "Teve um crescimento de 50 mil novos seguidores nas redes sociais."
@@ -394,5 +397,5 @@
       "league": "Copa Sul-Americana"
     }
   },
-  "last_updated": "2026-08-07T13:06:10.163Z"
+  "last_updated": "2026-08-07T21:40:22.948Z"
 }

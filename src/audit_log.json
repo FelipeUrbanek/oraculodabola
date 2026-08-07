@@ -3125,5 +3125,21 @@
     "source_domain": "www.terra.com.br",
     "category": "Bastidores",
     "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-08-07T21:40:45.186Z",
+    "headline": "NEYMAR LIBERADO!",
+    "source_url": "https://www.terra.com.br/esportes/santos/stjd-toma-decisao-sobre-neymar,9ebc8e9d26ffdc1de4b16a630498b13fdcergnd1.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-08-07T21:41:47.141Z",
+    "headline": "RIVALIDADE ARDENTE 2",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/series/rivalidade-ardente-divulga-atores-que-viverao-novo-casal-conheca,1efc76c38320eb625708aa6b4e0737caslozrnkx.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Séries",
+    "status": "SUCCESS"
   }
 ]

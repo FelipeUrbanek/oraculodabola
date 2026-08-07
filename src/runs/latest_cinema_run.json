@@ -1,16 +1,16 @@
 {
-  "timestamp": "2026-08-07T15:58:03.319Z",
+  "timestamp": "2026-08-07T21:40:50.775Z",
   "status": "SUCCESS",
   "postsPlanned": 1,
-  "candidatesFound": 12,
+  "candidatesFound": 9,
   "successfulPosts": [
     {
-      "title": "Diretor de 'O Último Azul', Gabriel Mascaro lança nova produtora ao lado de Paula Cosenza",
-      "headline": "GABRIEL MASCARO LANÇA TREMA",
-      "category": "Bastidores",
-      "instagramId": "18112013281980198",
-      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-08-07/2026-08-07-15-58-19_feed.jpg",
-      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-08-07/2026-08-07-15-58-19_story.jpg"
+      "title": "'Rivalidade Ardente' divulga atores que viverão novo casal; conheça",
+      "headline": "RIVALIDADE ARDENTE 2",
+      "category": "Séries",
+      "instagramId": "18087486779392244",
+      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-08-07/2026-08-07-21-41-26_feed.jpg",
+      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-08-07/2026-08-07-21-41-26_story.jpg"
     }
   ],
   "failedPosts": []
