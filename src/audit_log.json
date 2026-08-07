@@ -3093,5 +3093,21 @@
     "source_domain": "www.terra.com.br",
     "category": "Filmes",
     "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-08-07T13:06:31.786Z",
+    "headline": "FUTURO DA SAF",
+    "source_url": "https://www.terra.com.br/esportes/santos/santos-aguarda-proposta-que-pode-definir-futuro-da-saf,9142fe3cb3d85ca62c76623a1ba66041n7r3enhl.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-08-07T13:07:15.099Z",
+    "headline": "KLEBER MENDONÇA FILHO NO NYFF",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/filmes/kleber-mendonca-filho-dirigiu-curta-sobre-jafar-panahi-filme-sera-exibido-no-festival-de-nova-york,fe65cecb255813b072b6b5498027f24bcnr7j6tn.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Filmes",
+    "status": "SUCCESS"
   }
 ]
