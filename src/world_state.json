@@ -141,7 +141,9 @@
       "recent_changes": "Empatou sem gols com o Santos na Vila Belmiro e leva vantagem para o jogo de volta em Belém."
     },
     "Santos": {
-      "recent_changes": "Teve um crescimento de 415 mil novos seguidores nas redes sociais, somando 28 milhões de seguidores no total."
+      "coach": "Cuca",
+      "league": "Não mencionada",
+      "recent_changes": "Mayke rescindiu contrato com o clube"
     },
     "Vitória": {
       "recent_changes": "Teve um crescimento de 50 mil novos seguidores nas redes sociais."
@@ -393,5 +395,5 @@
       "league": "Copa Sul-Americana"
     }
   },
-  "last_updated": "2026-08-05T22:13:54.883Z"
+  "last_updated": "2026-08-07T01:01:37.356Z"
 }

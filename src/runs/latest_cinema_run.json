@@ -1,16 +1,16 @@
 {
-  "timestamp": "2026-08-05T22:14:20.669Z",
+  "timestamp": "2026-08-07T01:02:05.402Z",
   "status": "SUCCESS",
   "postsPlanned": 1,
-  "candidatesFound": 10,
+  "candidatesFound": 12,
   "successfulPosts": [
     {
-      "title": "'Cem Anos de Solidão' mostra a transformação dos Buendía e de Macondo na Parte 2; leia entrevistas",
-      "headline": "CEM ANOS DE SOLIDÃO",
-      "category": "Séries",
-      "instagramId": "18122722033691318",
-      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-08-05/2026-08-05-22-14-55_feed.jpg",
-      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-08-05/2026-08-05-22-14-55_story.jpg"
+      "title": "Wagner Moura nos 'X-Men'? Ator responde a rumores",
+      "headline": "WAGNER MOURA NOS X-MEN?",
+      "category": "Filmes",
+      "instagramId": "18617888323000604",
+      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-08-07/2026-08-07-01-02-23_feed.jpg",
+      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-08-07/2026-08-07-01-02-23_story.jpg"
     }
   ],
   "failedPosts": []

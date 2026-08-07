@@ -3077,5 +3077,21 @@
     "source_domain": "www.terra.com.br",
     "category": "Séries",
     "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-08-07T01:01:58.952Z",
+    "headline": "MAYKE DEIXA O SANTOS",
+    "source_url": "https://www.terra.com.br/esportes/santos/cbf-publica-rescisao-no-bid-e-mayke-nao-e-mais-jogador-do-santos,67364b4afab924bbcef46b101d6a1700n0coejhl.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-08-07T01:02:44.231Z",
+    "headline": "WAGNER MOURA NOS X-MEN?",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/filmes/wagner-moura-nos-x-men-ator-responde-a-rumores,e5e902784853537092594ce7b203b7722poteohi.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Filmes",
+    "status": "SUCCESS"
   }
 ]
