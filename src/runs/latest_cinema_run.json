@@ -1,16 +1,16 @@
 {
-  "timestamp": "2026-08-08T15:31:28.676Z",
+  "timestamp": "2026-08-08T21:32:21.944Z",
   "status": "SUCCESS",
   "postsPlanned": 1,
-  "candidatesFound": 3,
+  "candidatesFound": 0,
   "successfulPosts": [
     {
-      "title": "Filme de 'One Piece' chegará aos cinemas do Brasil décadas após lançamento original; veja trailer",
-      "headline": "ONE PIECE CHEGA AO BRASIL",
-      "category": "Estreia",
-      "instagramId": "18088562687636029",
-      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-08-08/2026-08-08-15-33-02_feed.jpg",
-      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-08-08/2026-08-08-15-33-02_story.jpg"
+      "title": "House of the Dragon: Terceira temporada inicia gravações no Reino Unido",
+      "headline": "DRAGÕES VOLTA!",
+      "category": "Séries",
+      "instagramId": "18239262586312714",
+      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-08-08/2026-08-08-21-34-12_feed.jpg",
+      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-08-08/2026-08-08-21-34-12_story.jpg"
     }
   ],
   "failedPosts": []

@@ -144,8 +144,8 @@
     },
     "Santos": {
       "coach": "Cuca",
-      "league": "Campeonato Brasileiro",
-      "recent_changes": "Visita do ídolo Giovanni e preparação para o jogo contra o Athletico-PR"
+      "league": "Campeonato Brasileiro / Copa do Brasil / Copa Sul-Americana",
+      "recent_changes": "Inscrição de João Paulo e Caballero na Sul-Americana, retirada de Zé Ivaldo, Tomás Rincón e Zé Rafael, e mudanças nos números das camisas."
     },
     "Vitória": {
       "recent_changes": "Teve um crescimento de 50 mil novos seguidores nas redes sociais."
@@ -397,5 +397,5 @@
       "league": "Copa Sul-Americana"
     }
   },
-  "last_updated": "2026-08-08T15:30:58.253Z"
+  "last_updated": "2026-08-08T21:31:52.967Z"
 }

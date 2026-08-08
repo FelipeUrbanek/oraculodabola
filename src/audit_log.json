@@ -3173,5 +3173,21 @@
     "source_domain": "www.terra.com.br",
     "category": "Estreia",
     "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-08-08T21:32:15.843Z",
+    "headline": "SANTOS ATUALIZA LISTA DA SUL-AMERICANA",
+    "source_url": "https://www.terra.com.br/esportes/santos/santos-inscreve-joao-paulo-e-caballero-na-sul-americana,6cd3c7a77e0722113115d0e20401e607j0rlf5aw.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-08-08T21:34:35.188Z",
+    "headline": "DRAGÕES VOLTA!",
+    "source_url": "backup_cinema_1786224851025",
+    "source_domain": "backup_news",
+    "category": "Séries",
+    "status": "SUCCESS"
   }
 ]
