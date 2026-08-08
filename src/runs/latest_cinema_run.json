@@ -1,16 +1,16 @@
 {
-  "timestamp": "2026-08-08T12:51:04.853Z",
+  "timestamp": "2026-08-08T15:31:28.676Z",
   "status": "SUCCESS",
   "postsPlanned": 1,
-  "candidatesFound": 5,
+  "candidatesFound": 3,
   "successfulPosts": [
     {
-      "title": "'Estilhaços' une Ryan Murphy a Bret Easton Ellis em trama sangrenta",
-      "headline": "ESTREIA EM ALTO ESTILO",
+      "title": "Filme de 'One Piece' chegará aos cinemas do Brasil décadas após lançamento original; veja trailer",
+      "headline": "ONE PIECE CHEGA AO BRASIL",
       "category": "Estreia",
-      "instagramId": "18019303208915898",
-      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-08-08/2026-08-08-12-51-40_feed.jpg",
-      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-08-08/2026-08-08-12-51-40_story.jpg"
+      "instagramId": "18088562687636029",
+      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-08-08/2026-08-08-15-33-02_feed.jpg",
+      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-08-08/2026-08-08-15-33-02_story.jpg"
     }
   ],
   "failedPosts": []

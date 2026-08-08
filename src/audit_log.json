@@ -3157,5 +3157,21 @@
     "source_domain": "www.terra.com.br",
     "category": "Estreia",
     "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-08-08T15:31:20.209Z",
+    "headline": "GIOVANNI VISITA SANTOS",
+    "source_url": "https://www.terra.com.br/esportes/santos/santos-tem-visita-ilustre-em-meio-a-preparacao-para-jogo-do-brasileiro,75fdb1c8eedaac73cea3cf775fcfaba803d69pir.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-08-08T15:33:23.816Z",
+    "headline": "ONE PIECE CHEGA AO BRASIL",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/filmes/filme-de-one-piece-chegara-aos-cinemas-do-brasil-decadas-apos-lancamento-original-veja-trailer,d00b0d028529a4acf019cabe9dd99a8a3knoqd8u.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Estreia",
+    "status": "SUCCESS"
   }
 ]
