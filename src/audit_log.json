@@ -3141,5 +3141,21 @@
     "source_domain": "www.terra.com.br",
     "category": "Séries",
     "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-08-08T12:50:57.115Z",
+    "headline": "SANTOS PRÓXIMO À SAF",
+    "source_url": "https://www.terra.com.br/esportes/santos/gigante-do-brasileirao-assina-termo-para-aquisicao-de-saf,9559687533d0486cf0ec9aa6f94aef9bf3wk9leq.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-08-08T12:52:04.113Z",
+    "headline": "ESTREIA EM ALTO ESTILO",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/series/estilhacos-une-ryan-murphy-a-bret-easton-ellis-em-trama-sangrenta-e-pessoal,9db618bb6fd7af786c1df5754930cac1lanho5ep.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Estreia",
+    "status": "SUCCESS"
   }
 ]

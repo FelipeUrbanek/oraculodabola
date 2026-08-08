@@ -1,16 +1,16 @@
 {
-  "timestamp": "2026-08-07T21:40:50.775Z",
+  "timestamp": "2026-08-08T12:51:04.853Z",
   "status": "SUCCESS",
   "postsPlanned": 1,
-  "candidatesFound": 9,
+  "candidatesFound": 5,
   "successfulPosts": [
     {
-      "title": "'Rivalidade Ardente' divulga atores que viverão novo casal; conheça",
-      "headline": "RIVALIDADE ARDENTE 2",
-      "category": "Séries",
-      "instagramId": "18087486779392244",
-      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-08-07/2026-08-07-21-41-26_feed.jpg",
-      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-08-07/2026-08-07-21-41-26_story.jpg"
+      "title": "'Estilhaços' une Ryan Murphy a Bret Easton Ellis em trama sangrenta",
+      "headline": "ESTREIA EM ALTO ESTILO",
+      "category": "Estreia",
+      "instagramId": "18019303208915898",
+      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-08-08/2026-08-08-12-51-40_feed.jpg",
+      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-08-08/2026-08-08-12-51-40_story.jpg"
     }
   ],
   "failedPosts": []
