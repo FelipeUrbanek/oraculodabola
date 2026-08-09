@@ -1,16 +1,16 @@
 {
-  "timestamp": "2026-08-08T21:32:21.944Z",
+  "timestamp": "2026-08-09T12:53:12.654Z",
   "status": "SUCCESS",
   "postsPlanned": 1,
-  "candidatesFound": 0,
+  "candidatesFound": 2,
   "successfulPosts": [
     {
-      "title": "House of the Dragon: Terceira temporada inicia gravações no Reino Unido",
-      "headline": "DRAGÕES VOLTA!",
-      "category": "Séries",
-      "instagramId": "18239262586312714",
-      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-08-08/2026-08-08-21-34-12_feed.jpg",
-      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-08-08/2026-08-08-21-34-12_story.jpg"
+      "title": "12 kg a menos, isolamento, aulas de remo: Filipe Bragança detalha preparação intensa para viver Amyr Klink em filme",
+      "headline": "FILIPES BRAGANÇA",
+      "category": "Filmes",
+      "instagramId": "18104576105133872",
+      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-08-09/2026-08-09-12-54-43_feed.jpg",
+      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-08-09/2026-08-09-12-54-43_story.jpg"
     }
   ],
   "failedPosts": []

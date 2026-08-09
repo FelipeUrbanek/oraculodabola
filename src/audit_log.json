@@ -3189,5 +3189,21 @@
     "source_domain": "backup_news",
     "category": "Séries",
     "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-08-09T12:53:03.431Z",
+    "headline": "FOFURA NO CT!",
+    "source_url": "https://www.terra.com.br/esportes/videos/mavie-e-mel-esbanjam-fofura-em-treino-do-santos-em-acao-pelo-dia-dos-pais,a4165fe5130ff55223101078355b7038rqbmry1c.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-08-09T12:55:03.364Z",
+    "headline": "FILIPES BRAGANÇA",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/filmes/12-kg-a-menos-isolamento-aulas-de-remo-filipe-braganca-detalha-preparacao-intensa-para-viver-amyr-klink-em-filme,d9812b909654f156f19aa58d1025a1b35ku4ei0m.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Filmes",
+    "status": "SUCCESS"
   }
 ]
