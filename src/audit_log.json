@@ -3205,5 +3205,13 @@
     "source_domain": "www.terra.com.br",
     "category": "Filmes",
     "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-08-09T15:34:36.475Z",
+    "headline": "CORRIDA DOS BICHOS",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/filmes/nao-ha-filme-como-esse-no-brasil-como-e-corrida-dos-bichos-distopia-nacional-com-grande-elenco,8f9281d1d16ec358c52da321a5fe1559f2lexji0.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Estreia",
+    "status": "SUCCESS"
   }
 ]
