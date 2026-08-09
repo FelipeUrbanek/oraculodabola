@@ -1,16 +1,16 @@
 {
-  "timestamp": "2026-08-09T15:32:51.651Z",
+  "timestamp": "2026-08-09T21:34:02.168Z",
   "status": "SUCCESS",
   "postsPlanned": 1,
-  "candidatesFound": 2,
+  "candidatesFound": 1,
   "successfulPosts": [
     {
-      "title": "'Não há filme como esse no Brasil': Como é 'Corrida dos Bichos', distopia nacional com grande elenco",
-      "headline": "CORRIDA DOS BICHOS",
-      "category": "Estreia",
-      "instagramId": "18090859721437305",
-      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-08-09/2026-08-09-15-34-16_feed.jpg",
-      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-08-09/2026-08-09-15-34-16_story.jpg"
+      "title": "Maria Homem analisa 'A Odisseia': 'Nolan reescreveu herói contemporâneo por excelência'",
+      "headline": "NOLAN REESCREVE ODISSEIA",
+      "category": "Crítica",
+      "instagramId": "17964343620134457",
+      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-08-09/2026-08-09-21-35-16_feed.jpg",
+      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-08-09/2026-08-09-21-35-16_story.jpg"
     }
   ],
   "failedPosts": []

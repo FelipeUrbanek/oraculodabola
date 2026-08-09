@@ -3213,5 +3213,21 @@
     "source_domain": "www.terra.com.br",
     "category": "Estreia",
     "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-08-09T21:33:49.990Z",
+    "headline": "ÍDOLO DO BAHIA MORRE",
+    "source_url": "https://www.terra.com.br/esportes/santos/morre-douglas-franklin-idolo-do-bahia-e-ex-dupla-de-pele-no-santos,4a013a4380b61b8a233c36e225ee70ebxqevqg4s.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-08-09T21:35:35.164Z",
+    "headline": "NOLAN REESCREVE ODISSEIA",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/filmes/maria-homem-analisa-a-odisseia-nolan-reescreveu-heroi-contemporaneo-por-excelencia,e92ebbb2fd24ee21ea6c79c5dae0f6762ec5jimw.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Crítica",
+    "status": "SUCCESS"
   }
 ]
