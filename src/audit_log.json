@@ -3261,5 +3261,21 @@
     "source_domain": "www.terra.com.br",
     "category": "Filmes",
     "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-08-10T21:42:48.992Z",
+    "headline": "SANTOS PERDE PARA O ATHLETICO-PR",
+    "source_url": "https://www.terra.com.br/esportes/santos/bontempo-lamenta-reves-e-foca-em-reacao-do-santos-trabalhar-e-melhorar,b518e6caecdf3c2482e29dcbcd14c9a03x7zsv08.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-08-10T21:43:44.504Z",
+    "headline": "CHAMPAGNE",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/filmes/champagne-usa-comedia-e-viagem-para-falar-sobre-luto-em-vida-e-celebrar-possibilidade-de-despedida,7ad756974e109b26726ec48a20a813ba3hkkvz31.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Filmes",
+    "status": "SUCCESS"
   }
 ]

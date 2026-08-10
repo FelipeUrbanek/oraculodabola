@@ -8,7 +8,11 @@
     "Vasco": {
       "coach": "Renato Gaúcho",
       "league": "Copa do Brasil / Campeonato Brasileiro Sub-20 / Campeonato Brasileiro / Copa Sul-Americana",
-      "recent_changes": "Avançou para as oitavas de final da Copa do Brasil, garantindo R$ 5 milhões. Lidera o Campeonato Brasileiro Sub-20 ao lado do Palmeiras. Pelo Campeonato Brasileiro, sofreu uma goleada de 4 a 1 do Internacional e será mandante em confronto futuro contra o Atlético-MG. O técnico Renato Gaúcho confirmou que o lateral-direito Paulo Henrique sofreu uma entorse no tornozelo direito após pancada contra o Paysandu e não jogará antes da pausa para a Copa do Mundo. O jogador se junta a Spinelli e Thiago Mendes no departamento médico. Nos bastidores, o clube avalia investida pelo zagueiro Arboleda, do São Paulo. Os próximos confrontos serão contra o Olímpia, no Paraguai, pela Sul-Americana, seguidos por mais dois jogos pelo Brasileirão (incluindo o Bragantino, em São Januário) para fechar a primeira parte da tabela. O clube lamentou o falecimento do ex-jogador e ídolo do meio-campo Geovani Silva, o 'Pequeno Príncipe', que morreu aos 62 anos vítima de uma parada cardíaca. Celebrou o Dia do Orgulho LGBTQIA+ com mensagens de inclusão."
+      "recent_changes": "Avançou para as oitavas de final da Copa do Brasil, garantindo R$ 5 milhões. Lidera o Campeonato Brasileiro Sub-20 ao lado do Palmeiras. Pelo Campeonato Brasileiro, sofreu uma goleada de 4 a 1 do Internacional e será mandante em confronto futuro contra o Atlético-MG. O técnico Renato Gaúcho confirmou que o lateral-direito Paulo Henrique sofreu uma entorse no tornozelo direito após pancada contra o Paysandu e não jogará antes da pausa para a Copa do Mundo. O jogador se junta a Spinelli e Thiago Mendes no departamento médico. Nos bastidores, o clube avalia investida pelo zagueiro Arboleda, do São Paulo. Os próximos confrontos serão contra o Olímpia, no Paraguai, pela Sul-Americana, seguidos por mais dois jogos pelo Brasileirão (incluindo o Bragantino, em São Januário) para fechar a primeira parte da tabela. O clube lamentou o falecimento do ex-jogador e ídolo do meio-campo Geovani Silva, o 'Pequeno Príncipe', que morreu aos 62 anos vítima de uma parada cardíaca. Celebrou o Dia do Orgulho LGBTQIA+ com mensagens de inclusão.",
+      "next_matches": [
+        "Olímpia, no Paraguai, pela Sul-Americana",
+        "Bragantino, em São Januário"
+      ]
     },
     "Botafogo": {
       "coach": "Não informado",
@@ -18,7 +22,11 @@
     "Grêmio": {
       "coach": "Luís Castro",
       "league": "Campeonato Brasileiro / Copa do Brasil / Brasileirão Feminino",
-      "recent_changes": "Neymar, do Santos, desfalcará o Grêmio em confronto futuro, pois não jogará mais pelo clube paulista antes da Copa do Mundo devido a lesão. O goleiro Weverton recuperou sua melhor forma técnica no clube, com atuações de destaque que lhe renderam uma convocação surpresa para a Seleção Brasileira na Copa do Mundo de 2026. O clube está disputando a contratação do lateral-direito Diego Caito, do Goiás."
+      "recent_changes": "Neymar, do Santos, desfalcará o Grêmio em confronto futuro, pois não jogará mais pelo clube paulista antes da Copa do Mundo devido a lesão. O goleiro Weverton recuperou sua melhor forma técnica no clube, com atuações de destaque que lhe renderam uma convocação surpresa para a Seleção Brasileira na Copa do Mundo de 2026. O clube está disputando a contratação do lateral-direito Diego Caito, do Goiás.",
+      "next_matches": [
+        "Neymar não jogará mais pelo clube",
+        "Confronto futuro contra o Vasco"
+      ]
     },
     "São Paulo": {
       "recent_changes": "Recebeu um transfer ban após deixar de pagar a primeira parcela da compra do volante Marcos Antônio junto à Lazio, da Itália."
@@ -27,8 +35,12 @@
       "recent_changes": "Teve um crescimento de 103 mil novos seguidores nas redes sociais, principalmente no TikTok."
     },
     "Seleção Brasileira": {
-      "coach": "Não informado",
-      "league": "Copa do Brasil / Seleção Brasileira Sub-20"
+      "coach": "Tite",
+      "league": "Copa do Mundo de 2026",
+      "recent_changes": "O goleiro Weverton recuperou sua melhor forma técnica no clube, com atuações de destaque que lhe renderam uma convocação surpresa para a Seleção Brasileira na Copa do Mundo de 2026.",
+      "next_matches": [
+        "Copa do Mundo de 2026"
+      ]
     },
     "Atlético-MG": {
       "coach": "Eduardo Domínguez",
@@ -109,9 +121,12 @@
       "recent_changes": "Avançou para as oitavas de final da Copa do Brasil, garantindo cerca de R$ 9,59 milhões em premiações acumuladas por estar no torneio desde a 2ª fase. Recentemente, eliminou o São Paulo do torneio com uma vitória por 3 a 1 no estádio Alfredo Jaconi."
     },
     "Athletico-PR": {
-      "coach": "Não mencionado",
+      "coach": "Vágner Mancini",
       "league": "Campeonato Brasileiro / Copa do Brasil",
-      "recent_changes": "Venceu o Santos por 2 a 0 na 22ª rodada do Campeonato Brasileiro."
+      "recent_changes": "Goleou o Santos por 2 a 0 na Vila Belmiro, pela 22ª rodada do Brasileirão.",
+      "next_matches": [
+        "Vila Belmiro, pela 23ª rodada"
+      ]
     },
     "Chapecoense": {
       "league": "Campeonato Brasileiro"
@@ -125,9 +140,12 @@
       "recent_changes": "Venceu o São Paulo por 2 a 1 no sábado, 16, pelo Brasileirão, com gols de John Kennedy e Canobbio ainda no primeiro tempo (Dória descontou na segunda etapa). Com o tento, John Kennedy chegou a 12 gols em 31 jogos em 2026, tornando-se o artilheiro do time no ano, igualando sua temporada mais artilheira (2023) e se consolidando como titular. O atacante venceu a concorrência de Rodrigo Castillo, contratação mais cara da história do clube. A equipe segue viva no Brasileirão, Sul-Americana e Copa do Brasil. Anteriormente: enfrentaria o Club Bolívar pela Libertadores, apresentou o atacante Hulk, avançou para as oitavas de final da Copa do Brasil e, pelo Brasileirão Feminino, sofreu uma derrota para o Santos por 2 a 0."
     },
     "Internacional": {
-      "coach": "Não mencionado",
+      "coach": "Mano Menezes",
       "league": "Copa do Brasil / Campeonato Brasileiro",
-      "recent_changes": "Avançou para as oitavas de final da Copa do Brasil, lucrando R$ 5 milhões em premiações. Pelo Campeonato Brasileiro, goleou o Vasco por 4 a 1 no Beira-Rio, com gols de Carbonero (duas vezes), Alerrandro e Bernabei, saltando para o oitavo lugar com 21 pontos e ampliando sua invencibilidade para sete jogos na temporada. O próximo compromisso será contra o Vitória no Barradão, pela 17ª rodada."
+      "recent_changes": "Avançou para as oitavas de final da Copa do Brasil, lucrando R$ 5 milhões em premiações. Pelo Campeonato Brasileiro, goleou o Vasco por 4 a 1 no Beira-Rio, com gols de Carbonero (duas vezes), Alerrandro e Bernabei, saltando para o oitavo lugar com 21 pontos e ampliando sua invencibilidade para sete jogos na temporada. O próximo compromisso será contra o Vitória no Barradão, pela 17ª rodada.",
+      "next_matches": [
+        "Vitória no Barradão, pela 17ª rodada"
+      ]
     },
     "Mirassol": {
       "coach": "Não mencionado",
@@ -145,7 +163,11 @@
     "Santos": {
       "coach": "Cuca",
       "league": "Campeonato Brasileiro / Copa do Brasil",
-      "recent_changes": "Perdeu para o Athletico-PR por 2 a 0, gerando revolta de torcedores com o desempenho do atacante Caballero."
+      "recent_changes": "Perdeu para o Athletico-PR por 2 a 0, gerando revolta de torcedores com o desempenho do atacante Caballero.",
+      "next_matches": [
+        "Vila Belmiro, diante do Macará, na Vila Belmiro, dia 13 (quinta-feira), às 19h (de Brasília)",
+        "Vasco, no domingo (16), às 16h (de Brasília), em São Januário"
+      ]
     },
     "Vitória": {
       "recent_changes": "Teve um crescimento de 50 mil novos seguidores nas redes sociais."
@@ -395,5 +417,5 @@
       "league": "Copa Sul-Americana"
     }
   },
-  "last_updated": "2026-08-10T16:00:56.889Z"
+  "last_updated": "2026-08-10T21:42:28.976Z"
 }

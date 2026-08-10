@@ -1,16 +1,16 @@
 {
-  "timestamp": "2026-08-10T16:01:31.459Z",
+  "timestamp": "2026-08-10T21:42:55.535Z",
   "status": "SUCCESS",
   "postsPlanned": 1,
-  "candidatesFound": 2,
+  "candidatesFound": 4,
   "successfulPosts": [
     {
-      "title": "'A Última Casa': Novo filme de Wagner Moura lidera audiência da Netflix no mundo",
-      "headline": "SUCESSO NA NETFLIX",
+      "title": "'Champagne' usa comédia e viagem para falar sobre luto em vida e celebrar possibilidade de despedida",
+      "headline": "CHAMPAGNE",
       "category": "Filmes",
-      "instagramId": "17958978204195236",
-      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-08-10/2026-08-10-16-02-54_feed.jpg",
-      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-08-10/2026-08-10-16-02-54_story.jpg"
+      "instagramId": "18088798040235983",
+      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-08-10/2026-08-10-21-43-25_feed.jpg",
+      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-08-10/2026-08-10-21-43-25_story.jpg"
     }
   ],
   "failedPosts": []
