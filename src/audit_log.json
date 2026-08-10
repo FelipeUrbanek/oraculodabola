@@ -3229,5 +3229,21 @@
     "source_domain": "www.terra.com.br",
     "category": "Crítica",
     "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-08-10T13:11:03.090Z",
+    "headline": "CUCA PERMANECE",
+    "source_url": "https://www.terra.com.br/esportes/santos/cuca-nao-cogita-deixar-o-comando-do-santos-nao-resolvera-os-problemas,a5cefee21702e7c31620e0ffbb9f4472ypq5dxkz.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-08-10T13:13:01.721Z",
+    "headline": "MORTES CHOCANTES!",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/series/a-casa-do-dragao-quem-morreu-no-final-da-terceira-temporada,50d272bbc230f2c3de386c68095f6f900u0yvm0z.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Séries",
+    "status": "SUCCESS"
   }
 ]
