@@ -111,7 +111,7 @@
     "Athletico-PR": {
       "coach": "Não mencionado",
       "league": "Campeonato Brasileiro / Copa do Brasil",
-      "recent_changes": "O Athletico-PR sondou o atacante Rony, do Santos, para uma possível contratação."
+      "recent_changes": "Venceu o Santos por 2 a 0 na 22ª rodada do Campeonato Brasileiro."
     },
     "Chapecoense": {
       "league": "Campeonato Brasileiro"
@@ -144,8 +144,8 @@
     },
     "Santos": {
       "coach": "Cuca",
-      "league": "Campeonato Brasileiro / Copa do Brasil / Copa Sul-Americana",
-      "recent_changes": "Perdeu para o Athletico-PR por 2 a 0, voltou ao Z4 do Brasileirão e terá o próximo compromisso pela Sul-Americana diante do Macará."
+      "league": "Campeonato Brasileiro / Copa do Brasil",
+      "recent_changes": "Perdeu para o Athletico-PR por 2 a 0, gerando revolta de torcedores com o desempenho do atacante Caballero."
     },
     "Vitória": {
       "recent_changes": "Teve um crescimento de 50 mil novos seguidores nas redes sociais."
@@ -395,5 +395,5 @@
       "league": "Copa Sul-Americana"
     }
   },
-  "last_updated": "2026-08-10T13:10:43.025Z"
+  "last_updated": "2026-08-10T16:00:56.889Z"
 }

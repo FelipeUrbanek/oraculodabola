@@ -3245,5 +3245,21 @@
     "source_domain": "www.terra.com.br",
     "category": "Séries",
     "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-08-10T16:01:23.928Z",
+    "headline": "Caballero Criticado",
+    "source_url": "https://www.terra.com.br/esportes/santos/atacante-do-santos-gera-revolta-em-partida-contra-o-athletico-pr,deabb5153babe17dd64586aee49907f2uwyf9nxm.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-08-10T16:03:17.857Z",
+    "headline": "SUCESSO NA NETFLIX",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/filmes/a-ultima-casa-novo-filme-de-wagner-moura-lidera-audiencia-da-netflix-no-mundo,a4bbed8dbeaef46d4bf118210b40ba255i6aqz6m.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Filmes",
+    "status": "SUCCESS"
   }
 ]
