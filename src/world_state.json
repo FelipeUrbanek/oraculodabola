@@ -22,11 +22,7 @@
     "Grêmio": {
       "coach": "Luís Castro",
       "league": "Campeonato Brasileiro / Copa do Brasil / Brasileirão Feminino",
-      "recent_changes": "Neymar, do Santos, desfalcará o Grêmio em confronto futuro, pois não jogará mais pelo clube paulista antes da Copa do Mundo devido a lesão. O goleiro Weverton recuperou sua melhor forma técnica no clube, com atuações de destaque que lhe renderam uma convocação surpresa para a Seleção Brasileira na Copa do Mundo de 2026. O clube está disputando a contratação do lateral-direito Diego Caito, do Goiás.",
-      "next_matches": [
-        "Neymar não jogará mais pelo clube",
-        "Confronto futuro contra o Vasco"
-      ]
+      "recent_changes": "O goleiro Weverton recuperou sua melhor forma técnica no clube, com atuações de destaque que lhe renderam uma convocação surpresa para a Seleção Brasileira na Copa do Mundo de 2026. O clube está disputando a contratação do lateral-direito Diego Caito, do Goiás."
     },
     "São Paulo": {
       "recent_changes": "Recebeu um transfer ban após deixar de pagar a primeira parcela da compra do volante Marcos Antônio junto à Lazio, da Itália."
@@ -37,10 +33,7 @@
     "Seleção Brasileira": {
       "coach": "Tite",
       "league": "Copa do Mundo de 2026",
-      "recent_changes": "O goleiro Weverton recuperou sua melhor forma técnica no clube, com atuações de destaque que lhe renderam uma convocação surpresa para a Seleção Brasileira na Copa do Mundo de 2026.",
-      "next_matches": [
-        "Copa do Mundo de 2026"
-      ]
+      "recent_changes": "O goleiro Weverton recuperou sua melhor forma técnica no clube, com atuações de destaque que lhe renderam uma convocação surpresa para a Seleção Brasileira na Copa do Mundo de 2026."
     },
     "Atlético-MG": {
       "coach": "Eduardo Domínguez",
@@ -123,10 +116,7 @@
     "Athletico-PR": {
       "coach": "Vágner Mancini",
       "league": "Campeonato Brasileiro / Copa do Brasil",
-      "recent_changes": "Goleou o Santos por 2 a 0 na Vila Belmiro, pela 22ª rodada do Brasileirão.",
-      "next_matches": [
-        "Vila Belmiro, pela 23ª rodada"
-      ]
+      "recent_changes": "Goleou o Santos por 2 a 0 na Vila Belmiro, pela 22ª rodada do Brasileirão."
     },
     "Chapecoense": {
       "league": "Campeonato Brasileiro"
@@ -142,10 +132,7 @@
     "Internacional": {
       "coach": "Mano Menezes",
       "league": "Copa do Brasil / Campeonato Brasileiro",
-      "recent_changes": "Avançou para as oitavas de final da Copa do Brasil, lucrando R$ 5 milhões em premiações. Pelo Campeonato Brasileiro, goleou o Vasco por 4 a 1 no Beira-Rio, com gols de Carbonero (duas vezes), Alerrandro e Bernabei, saltando para o oitavo lugar com 21 pontos e ampliando sua invencibilidade para sete jogos na temporada. O próximo compromisso será contra o Vitória no Barradão, pela 17ª rodada.",
-      "next_matches": [
-        "Vitória no Barradão, pela 17ª rodada"
-      ]
+      "recent_changes": "Avançou para as oitavas de final da Copa do Brasil, lucrando R$ 5 milhões em premiações. Pelo Campeonato Brasileiro, goleou o Vasco por 4 a 1 no Beira-Rio, com gols de Carbonero (duas vezes), Alerrandro e Bernabei, saltando para o oitavo lugar com 21 pontos e ampliando sua invencibilidade para sete jogos na temporada. O próximo compromisso será contra o Vitória no Barradão, pela 17ª rodada."
     },
     "Mirassol": {
       "coach": "Não mencionado",
@@ -163,11 +150,7 @@
     "Santos": {
       "coach": "Cuca",
       "league": "Campeonato Brasileiro / Copa do Brasil",
-      "recent_changes": "Perdeu para o Athletico-PR por 2 a 0, gerando revolta de torcedores com o desempenho do atacante Caballero.",
-      "next_matches": [
-        "Vila Belmiro, diante do Macará, na Vila Belmiro, dia 13 (quinta-feira), às 19h (de Brasília)",
-        "Vasco, no domingo (16), às 16h (de Brasília), em São Januário"
-      ]
+      "recent_changes": "Perdeu para o Athletico-PR por 2 a 0, gerando revolta de torcedores com o desempenho do atacante Caballero."
     },
     "Vitória": {
       "recent_changes": "Teve um crescimento de 50 mil novos seguidores nas redes sociais."
@@ -415,7 +398,10 @@
     },
     "Universidad Central": {
       "league": "Copa Sul-Americana"
+    },
+    "Goiás": {
+      "recent_changes": "Perdeu o lateral-direito Diego Caito, que está sendo disputado pelo Grêmio."
     }
   },
-  "last_updated": "2026-08-10T21:42:28.976Z"
+  "last_updated": "2026-08-11T13:07:28.925Z"
 }

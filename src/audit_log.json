@@ -3277,5 +3277,21 @@
     "source_domain": "www.terra.com.br",
     "category": "Filmes",
     "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-08-11T13:07:50.167Z",
+    "headline": "SANTOS NO Z4!",
+    "source_url": "https://www.terra.com.br/esportes/santos/alerta-na-vila-santos-volta-ao-z4-com-cenario-pior-do-que-o-de-2025,5a42768f09cd01a3e8c57bc3f9419354ja91nyhr.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-08-11T13:08:46.214Z",
+    "headline": "FESTIVAL DE BRASÍLIA",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/filmes/festival-de-cinema-de-brasilia-vai-ocorrer-diz-governadora-do-df-apos-relatos-de-cancelamento,d5c6e424090c871ceea9c3d462ce4610f9uk55b9.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Filmes",
+    "status": "SUCCESS"
   }
 ]

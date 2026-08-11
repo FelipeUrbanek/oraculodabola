@@ -1,16 +1,16 @@
 {
-  "timestamp": "2026-08-10T21:42:55.535Z",
+  "timestamp": "2026-08-11T13:07:56.569Z",
   "status": "SUCCESS",
   "postsPlanned": 1,
-  "candidatesFound": 4,
+  "candidatesFound": 6,
   "successfulPosts": [
     {
-      "title": "'Champagne' usa comédia e viagem para falar sobre luto em vida e celebrar possibilidade de despedida",
-      "headline": "CHAMPAGNE",
+      "title": "Festival de Cinema de Brasília vai ocorrer, diz governadora do DF após relatos de cancelamento",
+      "headline": "FESTIVAL DE BRASÍLIA",
       "category": "Filmes",
-      "instagramId": "18088798040235983",
-      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-08-10/2026-08-10-21-43-25_feed.jpg",
-      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-08-10/2026-08-10-21-43-25_story.jpg"
+      "instagramId": "18090045767644788",
+      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-08-11/2026-08-11-13-08-28_feed.jpg",
+      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-08-11/2026-08-11-13-08-28_story.jpg"
     }
   ],
   "failedPosts": []
