@@ -1,16 +1,16 @@
 {
-  "timestamp": "2026-08-11T13:07:56.569Z",
+  "timestamp": "2026-08-11T16:03:05.829Z",
   "status": "SUCCESS",
   "postsPlanned": 1,
   "candidatesFound": 6,
   "successfulPosts": [
     {
-      "title": "Festival de Cinema de Brasília vai ocorrer, diz governadora do DF após relatos de cancelamento",
-      "headline": "FESTIVAL DE BRASÍLIA",
-      "category": "Filmes",
-      "instagramId": "18090045767644788",
-      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-08-11/2026-08-11-13-08-28_feed.jpg",
-      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-08-11/2026-08-11-13-08-28_story.jpg"
+      "title": "Bianca Comparato revela impacto emocional ao viver Jatobá em 'Tremembé': 'Mexeu num lugar diferente'",
+      "headline": "BIANCA COMPARATO REVELA",
+      "category": "Séries",
+      "instagramId": "18363448117213323",
+      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-08-11/2026-08-11-16-03-38_feed.jpg",
+      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-08-11/2026-08-11-16-03-38_story.jpg"
     }
   ],
   "failedPosts": []
