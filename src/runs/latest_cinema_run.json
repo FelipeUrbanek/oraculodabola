@@ -1,16 +1,16 @@
 {
-  "timestamp": "2026-08-11T16:03:05.829Z",
+  "timestamp": "2026-08-11T21:50:40.500Z",
   "status": "SUCCESS",
   "postsPlanned": 1,
-  "candidatesFound": 6,
+  "candidatesFound": 7,
   "successfulPosts": [
     {
-      "title": "Bianca Comparato revela impacto emocional ao viver Jatobá em 'Tremembé': 'Mexeu num lugar diferente'",
-      "headline": "BIANCA COMPARATO REVELA",
+      "title": "'Game of Thrones' revelou destino de Rhaenyra em 'A Casa do Dragão'; relembre",
+      "headline": "RHAENYRA MORRE!",
       "category": "Séries",
-      "instagramId": "18363448117213323",
-      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-08-11/2026-08-11-16-03-38_feed.jpg",
-      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-08-11/2026-08-11-16-03-38_story.jpg"
+      "instagramId": "18128840323679288",
+      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-08-11/2026-08-11-21-51-06_feed.jpg",
+      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-08-11/2026-08-11-21-51-06_story.jpg"
     }
   ],
   "failedPosts": []

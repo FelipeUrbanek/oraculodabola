@@ -3309,5 +3309,21 @@
     "source_domain": "www.terra.com.br",
     "category": "Séries",
     "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-08-11T21:50:33.907Z",
+    "headline": "NEYMAR X PALMEIRAS",
+    "source_url": "https://www.terra.com.br/esportes/futebol/copa-do-brasil/neymar-vai-enfrentar-o-palmeiras-pela-copa-do-brasil-craque-e-critico-do-sintetico-e-ja-afirmou-que-jogar-no-allianz-e-impossivel,99f4965b72e19136278d4cc401358848onlx1k39.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-08-11T21:51:27.236Z",
+    "headline": "RHAENYRA MORRE!",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/series/game-of-thrones-revelou-destino-de-rhaenyra-em-a-casa-do-dragao-relembre,4591066b635a37d003677cd975be662dsivk88wp.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Séries",
+    "status": "SUCCESS"
   }
 ]
