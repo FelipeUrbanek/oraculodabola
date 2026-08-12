@@ -1,16 +1,16 @@
 {
-  "timestamp": "2026-08-12T13:12:21.508Z",
+  "timestamp": "2026-08-12T16:00:41.903Z",
   "status": "SUCCESS",
   "postsPlanned": 1,
-  "candidatesFound": 10,
+  "candidatesFound": 9,
   "successfulPosts": [
     {
-      "title": "Atriz de 'The Office' e 'Mulher-Maravilha' revela câncer de mama incurável: 'Tarde demais'",
-      "headline": "LUCY DAVIS COM CÂNCER",
+      "title": "'Castle Walls': Prime Video estreia hoje sua primeira série inteiramente criada com IA; conheça",
+      "headline": "SÉRIE IA",
       "category": "Séries",
-      "instagramId": "18119144381317452",
-      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-08-12/2026-08-12-13-12-50_feed.jpg",
-      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-08-12/2026-08-12-13-12-50_story.jpg"
+      "instagramId": "18074848871361482",
+      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-08-12/2026-08-12-16-01-07_feed.jpg",
+      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-08-12/2026-08-12-16-01-07_story.jpg"
     }
   ],
   "failedPosts": []
