@@ -3325,5 +3325,21 @@
     "source_domain": "www.terra.com.br",
     "category": "Séries",
     "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-08-12T13:12:12.425Z",
+    "headline": "VILA BELMIRO ABRE PORTAS",
+    "source_url": "https://www.terra.com.br/esportes/santos/vila-belmiro-sera-utilizada-por-rival-do-santos-no-brasileirao,325a9a4e53d737a5fec4c8b8df575f8cc23579g5.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-08-12T13:13:13.333Z",
+    "headline": "LUCY DAVIS COM CÂNCER",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/series/atriz-de-the-office-e-mulher-maravilha-revela-cancer-de-mama-incuravel-tarde-demais,d5cd6c923fe217412a105f2b760d73e214gwgj1w.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Séries",
+    "status": "SUCCESS"
   }
 ]

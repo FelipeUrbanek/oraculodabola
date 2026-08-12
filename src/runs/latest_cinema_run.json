@@ -1,16 +1,16 @@
 {
-  "timestamp": "2026-08-11T21:50:40.500Z",
+  "timestamp": "2026-08-12T13:12:21.508Z",
   "status": "SUCCESS",
   "postsPlanned": 1,
-  "candidatesFound": 7,
+  "candidatesFound": 10,
   "successfulPosts": [
     {
-      "title": "'Game of Thrones' revelou destino de Rhaenyra em 'A Casa do Dragão'; relembre",
-      "headline": "RHAENYRA MORRE!",
+      "title": "Atriz de 'The Office' e 'Mulher-Maravilha' revela câncer de mama incurável: 'Tarde demais'",
+      "headline": "LUCY DAVIS COM CÂNCER",
       "category": "Séries",
-      "instagramId": "18128840323679288",
-      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-08-11/2026-08-11-21-51-06_feed.jpg",
-      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-08-11/2026-08-11-21-51-06_story.jpg"
+      "instagramId": "18119144381317452",
+      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-08-12/2026-08-12-13-12-50_feed.jpg",
+      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-08-12/2026-08-12-13-12-50_story.jpg"
     }
   ],
   "failedPosts": []
