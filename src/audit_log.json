@@ -3357,5 +3357,21 @@
     "source_domain": "www.terra.com.br",
     "category": "Séries",
     "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-08-12T21:47:28.210Z",
+    "headline": "SANTOS EM ZONA DE REBAIXAMENTO",
+    "source_url": "https://www.terra.com.br/esportes/santos/atacante-assina-com-o-santos-torcida-faz-exigencias-e-declaracao-de-brad-pitt-as-ultimas-noticias-do-peixe,d41f7607da9da4b6e5924e4d8edbd1cbb0os634x.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-08-12T21:49:10.442Z",
+    "headline": "COLEGAS 2",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/filmes/colegas-ganha-sequencia-com-elenco-neurodivergente-ampliado-e-mais-aventura-estava-com-saudade,f8b7750abcaf18a5e78ee04001c3a5543r1xczvt.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Estreia",
+    "status": "SUCCESS"
   }
 ]

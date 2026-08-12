@@ -1,16 +1,16 @@
 {
-  "timestamp": "2026-08-12T16:00:41.903Z",
+  "timestamp": "2026-08-12T21:47:43.653Z",
   "status": "SUCCESS",
   "postsPlanned": 1,
-  "candidatesFound": 9,
+  "candidatesFound": 7,
   "successfulPosts": [
     {
-      "title": "'Castle Walls': Prime Video estreia hoje sua primeira série inteiramente criada com IA; conheça",
-      "headline": "SÉRIE IA",
-      "category": "Séries",
-      "instagramId": "18074848871361482",
-      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-08-12/2026-08-12-16-01-07_feed.jpg",
-      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-08-12/2026-08-12-16-01-07_story.jpg"
+      "title": "'Colegas' ganha sequência com elenco neurodivergente ampliado e mais aventura: 'Estava com saudade'",
+      "headline": "COLEGAS 2",
+      "category": "Estreia",
+      "instagramId": "17860504983679539",
+      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-08-12/2026-08-12-21-48-49_feed.jpg",
+      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-08-12/2026-08-12-21-48-49_story.jpg"
     }
   ],
   "failedPosts": []
