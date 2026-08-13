@@ -1,16 +1,16 @@
 {
-  "timestamp": "2026-08-13T13:14:04.945Z",
+  "timestamp": "2026-08-13T16:00:31.173Z",
   "status": "SUCCESS",
   "postsPlanned": 1,
-  "candidatesFound": 6,
+  "candidatesFound": 7,
   "successfulPosts": [
     {
-      "title": "'Barbie 2' pode não acontecer em meio a disputas contratuais; entenda",
-      "headline": "BARBIE 2 EM RISCO",
-      "category": "Filmes",
-      "instagramId": "18475676227109825",
-      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-08-13/2026-08-13-13-15-07_feed.jpg",
-      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-08-13/2026-08-13-13-15-07_story.jpg"
+      "title": "A lição de psicologia que aprendi com 'Homem Aranha': Peter Parker se tornou um verdadeiro herói de carne e osso em seu último filme ao transforma...",
+      "headline": "HOMEM-ARANHA",
+      "category": "Crítica",
+      "instagramId": "17953023684227373",
+      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-08-13/2026-08-13-16-00-56_feed.jpg",
+      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-08-13/2026-08-13-16-00-56_story.jpg"
     }
   ],
   "failedPosts": []

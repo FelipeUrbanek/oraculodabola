@@ -3389,5 +3389,31 @@
     "source_domain": "www.terra.com.br",
     "category": "Filmes",
     "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-08-13T16:00:22.344Z",
+    "headline": "Em busca do gol 100 pelo Santos, Gabigol tenta encerrar seca",
+    "source_url": "https://www.terra.com.br/esportes/santos/em-busca-do-gol-100-pelo-santos-gabigol-tenta-encerrar-seca,ff55d89274e3defe8742cc24ec3b48791990n35o.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Notícia muito vaga: Sem nome de time ou de profissional no caption."
+  },
+  {
+    "timestamp": "2026-08-13T16:00:22.836Z",
+    "headline": "Com serviços open e de tatuagem, Mirassol inaugura camarote com oferta inédita",
+    "source_url": "https://www.terra.com.br/esportes/futebol/libertadores/com-servicos-open-e-de-tatuagem-mirassol-inaugura-camarote-com-oferta-inedita,8caaa6ed547c14784811768c89f173c5ckba7jbz.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-08-13T16:01:17.512Z",
+    "headline": "HOMEM-ARANHA",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/filmes/a-licao-de-psicologia-que-aprendi-com-homem-aranha-peter-parker-se-tornou-um-verdadeiro-heroi-de-carne-e-osso-em-seu-ultimo-filme-ao-transformar-a-dor-em-sua-forca,3c8a07b8247334ca020b1664293a5033baiurvi9.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Crítica",
+    "status": "SUCCESS"
   }
 ]
