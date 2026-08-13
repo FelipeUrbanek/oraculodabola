@@ -1,16 +1,16 @@
 {
-  "timestamp": "2026-08-12T21:47:43.653Z",
+  "timestamp": "2026-08-13T13:14:04.945Z",
   "status": "SUCCESS",
   "postsPlanned": 1,
-  "candidatesFound": 7,
+  "candidatesFound": 6,
   "successfulPosts": [
     {
-      "title": "'Colegas' ganha sequência com elenco neurodivergente ampliado e mais aventura: 'Estava com saudade'",
-      "headline": "COLEGAS 2",
-      "category": "Estreia",
-      "instagramId": "17860504983679539",
-      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-08-12/2026-08-12-21-48-49_feed.jpg",
-      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-08-12/2026-08-12-21-48-49_story.jpg"
+      "title": "'Barbie 2' pode não acontecer em meio a disputas contratuais; entenda",
+      "headline": "BARBIE 2 EM RISCO",
+      "category": "Filmes",
+      "instagramId": "18475676227109825",
+      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-08-13/2026-08-13-13-15-07_feed.jpg",
+      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-08-13/2026-08-13-13-15-07_story.jpg"
     }
   ],
   "failedPosts": []

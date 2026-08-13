@@ -3373,5 +3373,21 @@
     "source_domain": "www.terra.com.br",
     "category": "Estreia",
     "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-08-13T13:13:57.531Z",
+    "headline": "SANTOS PERDE R$ 20M",
+    "source_url": "https://www.terra.com.br/esportes/santos/santos-perde-quase-r-20-milhoes-com-saida-de-patrocinadores-no-uniforme,84d46a2a6a0c194cd3c216187eec543fdjjuu1ja.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-08-13T13:15:27.904Z",
+    "headline": "BARBIE 2 EM RISCO",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/filmes/barbie-2-pode-nao-acontecer-em-meio-a-disputas-contratuais-entenda,250b35e24c3df428dacf43e425e5bfefadbqx51c.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Filmes",
+    "status": "SUCCESS"
   }
 ]
