@@ -1,16 +1,16 @@
 {
-  "timestamp": "2026-08-13T16:00:31.173Z",
+  "timestamp": "2026-08-13T21:47:05.785Z",
   "status": "SUCCESS",
   "postsPlanned": 1,
-  "candidatesFound": 7,
+  "candidatesFound": 5,
   "successfulPosts": [
     {
-      "title": "A lição de psicologia que aprendi com 'Homem Aranha': Peter Parker se tornou um verdadeiro herói de carne e osso em seu último filme ao transforma...",
-      "headline": "HOMEM-ARANHA",
-      "category": "Crítica",
-      "instagramId": "17953023684227373",
-      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-08-13/2026-08-13-16-00-56_feed.jpg",
-      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-08-13/2026-08-13-16-00-56_story.jpg"
+      "title": "'Corrida dos Bichos' é o filme de língua não inglesa mais assistido do Prime Video",
+      "headline": "CORRIDA DOS BICHOS",
+      "category": "Filmes",
+      "instagramId": "17953151301012167",
+      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-08-13/2026-08-13-21-47-39_feed.jpg",
+      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-08-13/2026-08-13-21-47-39_story.jpg"
     }
   ],
   "failedPosts": []

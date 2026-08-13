@@ -3415,5 +3415,21 @@
     "source_domain": "www.terra.com.br",
     "category": "Crítica",
     "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-08-13T21:46:59.750Z",
+    "headline": "KEVYSON SE MACHUCA!",
+    "source_url": "https://www.terra.com.br/esportes/santos/lateral-do-santos-passara-por-segunda-cirurgia-no-joelho,28d6ab893f29b34edd9bb6bd4647b74f18oorvdx.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-08-13T21:48:01.289Z",
+    "headline": "CORRIDA DOS BICHOS",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/series/corrida-dos-bichos-e-o-filme-de-lingua-nao-inglesa-mais-assistido-do-prime-video,6b2a973d956efd979a4f27c25e1a82fc1j4zqyzj.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Filmes",
+    "status": "SUCCESS"
   }
 ]
