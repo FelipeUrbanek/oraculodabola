@@ -3447,5 +3447,21 @@
     "source_domain": "www.terra.com.br",
     "category": "Séries",
     "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-08-14T15:53:52.459Z",
+    "headline": "VOLANTE RETORNA!",
+    "source_url": "https://www.terra.com.br/esportes/santos/volante-retorna-ao-santos-apos-um-ano-fora,339d46eaa1c1facd029f391051952f8f9jklcnns.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-08-14T15:55:23.081Z",
+    "headline": "ESTREIAS IMPACTANTES",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/series/mel-gibson-como-agente-do-fbi-a-magia-de-zico-e-mais-8-estreias-para-ver-no-streaming,a7582022c70db4a7399111f83455fd90azduyd4r.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Estreia",
+    "status": "SUCCESS"
   }
 ]

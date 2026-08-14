@@ -1,16 +1,16 @@
 {
-  "timestamp": "2026-08-14T13:09:03.250Z",
+  "timestamp": "2026-08-14T15:53:58.442Z",
   "status": "SUCCESS",
   "postsPlanned": 1,
-  "candidatesFound": 4,
+  "candidatesFound": 2,
   "successfulPosts": [
     {
-      "title": "'Off Campus' escala Shay Rudolph para segunda temporada; saiba como será e quem é a atriz",
-      "headline": "OFF CAMPUS 2",
-      "category": "Séries",
-      "instagramId": "18123016196510146",
-      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-08-14/2026-08-14-13-09-41_feed.jpg",
-      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-08-14/2026-08-14-13-09-41_story.jpg"
+      "title": "Mel Gibson como agente do FBI, a magia de Zico e mais: 8 estreias para ver no streaming",
+      "headline": "ESTREIAS IMPACTANTES",
+      "category": "Estreia",
+      "instagramId": "18131815909728238",
+      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-08-14/2026-08-14-15-55-03_feed.jpg",
+      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-08-14/2026-08-14-15-55-03_story.jpg"
     }
   ],
   "failedPosts": []
