@@ -1,16 +1,16 @@
 {
-  "timestamp": "2026-08-14T15:53:58.442Z",
+  "timestamp": "2026-08-14T21:26:48.172Z",
   "status": "SUCCESS",
   "postsPlanned": 1,
-  "candidatesFound": 2,
+  "candidatesFound": 1,
   "successfulPosts": [
     {
-      "title": "Mel Gibson como agente do FBI, a magia de Zico e mais: 8 estreias para ver no streaming",
-      "headline": "ESTREIAS IMPACTANTES",
-      "category": "Estreia",
-      "instagramId": "18131815909728238",
-      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-08-14/2026-08-14-15-55-03_feed.jpg",
-      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-08-14/2026-08-14-15-55-03_story.jpg"
+      "title": "'Nando Entre Dois Mundos': Entenda a relação do novo filme da Netflix com a série 'Sintonia'",
+      "headline": "NANDO VOLTA!",
+      "category": "Filmes",
+      "instagramId": "18138758233579389",
+      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-08-14/2026-08-14-21-27-38_feed.jpg",
+      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-08-14/2026-08-14-21-27-38_story.jpg"
     }
   ],
   "failedPosts": []

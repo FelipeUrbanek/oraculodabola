@@ -3463,5 +3463,21 @@
     "source_domain": "www.terra.com.br",
     "category": "Estreia",
     "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-08-14T21:26:41.619Z",
+    "headline": "LESÃO DE GABRIEL MENINO PREOCUPA",
+    "source_url": "https://www.terra.com.br/esportes/santos/a-declaracao-de-gabriel-menino-sobre-sua-nova-lesao-no-santos,a5cef9e12ec702abe35bc22cbaa7bd44xt0qn3hb.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-08-14T21:28:01.378Z",
+    "headline": "NANDO VOLTA!",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/filmes/nando-entre-dois-mundos-entenda-a-relacao-do-novo-filme-da-netflix-com-a-serie-sintonia,cce8190cad6ec9530c6843616f7cf00cqmwmrr8p.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Filmes",
+    "status": "SUCCESS"
   }
 ]
