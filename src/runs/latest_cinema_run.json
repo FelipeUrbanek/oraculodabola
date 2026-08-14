@@ -1,16 +1,16 @@
 {
-  "timestamp": "2026-08-13T21:47:05.785Z",
+  "timestamp": "2026-08-14T13:09:03.250Z",
   "status": "SUCCESS",
   "postsPlanned": 1,
-  "candidatesFound": 5,
+  "candidatesFound": 4,
   "successfulPosts": [
     {
-      "title": "'Corrida dos Bichos' é o filme de língua não inglesa mais assistido do Prime Video",
-      "headline": "CORRIDA DOS BICHOS",
-      "category": "Filmes",
-      "instagramId": "17953151301012167",
-      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-08-13/2026-08-13-21-47-39_feed.jpg",
-      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-08-13/2026-08-13-21-47-39_story.jpg"
+      "title": "'Off Campus' escala Shay Rudolph para segunda temporada; saiba como será e quem é a atriz",
+      "headline": "OFF CAMPUS 2",
+      "category": "Séries",
+      "instagramId": "18123016196510146",
+      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-08-14/2026-08-14-13-09-41_feed.jpg",
+      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-08-14/2026-08-14-13-09-41_story.jpg"
     }
   ],
   "failedPosts": []

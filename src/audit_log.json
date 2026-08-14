@@ -3431,5 +3431,21 @@
     "source_domain": "www.terra.com.br",
     "category": "Filmes",
     "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-08-14T13:08:55.950Z",
+    "headline": "SANTOS PUNIDO!",
+    "source_url": "https://www.terra.com.br/esportes/santos/regulamento-da-conmebol-preve-punicao-ao-santos-por-conta-de-rony,6c787faf813d054358c0c4c7c50f44ea89kfgxrw.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-08-14T13:10:03.752Z",
+    "headline": "OFF CAMPUS 2",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/series/off-campus-escala-shay-rudolph-para-segunda-temporada-saiba-como-sera-e-quem-e-a-atriz,bcd9ca0d0afd50127ee2ca212e4be1bejpte7zd7.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Séries",
+    "status": "SUCCESS"
   }
 ]
