@@ -3527,5 +3527,21 @@
     "source_domain": "www.terra.com.br",
     "category": "Filmes",
     "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-08-15T21:22:46.222Z",
+    "headline": "FRÍAS PRÓXIMO A SAÍDA",
+    "source_url": "https://www.terra.com.br/esportes/santos/santos-encaminha-saida-de-adonis-frias-ao-racing-por-emprestimo,5cf63167ed05cbc1ac26458d953d2ebbloja51uq.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-08-15T21:24:23.882Z",
+    "headline": "DRAGÃO VOLTA!",
+    "source_url": "backup_cinema_1786829041313",
+    "source_domain": "backup_news",
+    "category": "Séries",
+    "status": "SUCCESS"
   }
 ]
