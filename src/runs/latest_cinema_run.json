@@ -1,16 +1,16 @@
 {
-  "timestamp": "2026-08-15T12:39:42.479Z",
+  "timestamp": "2026-08-15T15:21:51.984Z",
   "status": "SUCCESS",
   "postsPlanned": 1,
-  "candidatesFound": 3,
+  "candidatesFound": 2,
   "successfulPosts": [
     {
-      "title": "'Honestino' retrata história de líder estudantil morto pela ditadura: 'Todo mundo tem um pouco dele'",
-      "headline": "HONESTINO CHEGA!",
-      "category": "Estreia",
-      "instagramId": "18125229541809140",
-      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-08-15/2026-08-15-12-40-53_feed.jpg",
-      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-08-15/2026-08-15-12-40-53_story.jpg"
+      "title": "'Corrida dos Bichos' é o filme de língua não inglesa mais visto do Prime Video",
+      "headline": "CORRIDA DOS BICHOS",
+      "category": "Filmes",
+      "instagramId": "18057219161526277",
+      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-08-15/2026-08-15-15-22-39_feed.jpg",
+      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-08-15/2026-08-15-15-22-39_story.jpg"
     }
   ],
   "failedPosts": []

@@ -3511,5 +3511,21 @@
     "source_domain": "www.terra.com.br",
     "category": "Estreia",
     "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-08-15T15:21:46.442Z",
+    "headline": "NEYMAR COBRA UNIÃO",
+    "source_url": "https://www.terra.com.br/esportes/neymar-pede-santos-mais-unido-antes-de-jogo-pela-sul-americana,db71fb701f4138c14a9f075268c551c5xyzvc20p.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-08-15T15:23:01.148Z",
+    "headline": "CORRIDA DOS BICHOS",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/series/corrida-dos-bichos-e-o-filme-de-lingua-nao-inglesa-mais-visto-do-prime-video,6b2a973d956efd979a4f27c25e1a82fc1j4zqyzj.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Filmes",
+    "status": "SUCCESS"
   }
 ]
