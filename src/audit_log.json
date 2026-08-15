@@ -3495,5 +3495,21 @@
     "source_domain": "www.terra.com.br",
     "category": "Filmes",
     "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-08-15T12:39:37.196Z",
+    "headline": "WILLIAN ARÃO DISCUTE!",
+    "source_url": "https://www.terra.com.br/esportes/santos/video-willian-arao-discute-com-jornalista-apos-jogo-do-santos,91fe3f0f92ec38a11b9734a8ee56edfetd3d671h.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-08-15T12:41:13.038Z",
+    "headline": "HONESTINO CHEGA!",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/filmes/honestino-retrata-historia-de-lider-estudantil-morto-pela-ditadura-todo-mundo-tem-um-pouco-dele,0ca29d1e1ba97fb60a501ab44826117fnazi9q8x.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Estreia",
+    "status": "SUCCESS"
   }
 ]

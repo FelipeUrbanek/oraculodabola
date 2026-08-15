@@ -1,16 +1,16 @@
 {
-  "timestamp": "2026-08-15T01:17:45.819Z",
+  "timestamp": "2026-08-15T12:39:42.479Z",
   "status": "SUCCESS",
   "postsPlanned": 1,
-  "candidatesFound": 2,
+  "candidatesFound": 3,
   "successfulPosts": [
     {
-      "title": "'Corrida dos Bichos': Conheça antagonista de Dostoiévski que inspirou personagem de Rodrigo Santoro",
-      "headline": "CORRIDA DOS BICHOS",
-      "category": "Filmes",
-      "instagramId": "18139055125580032",
-      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-08-15/2026-08-15-01-18-45_feed.jpg",
-      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-08-15/2026-08-15-01-18-45_story.jpg"
+      "title": "'Honestino' retrata história de líder estudantil morto pela ditadura: 'Todo mundo tem um pouco dele'",
+      "headline": "HONESTINO CHEGA!",
+      "category": "Estreia",
+      "instagramId": "18125229541809140",
+      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-08-15/2026-08-15-12-40-53_feed.jpg",
+      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-08-15/2026-08-15-12-40-53_story.jpg"
     }
   ],
   "failedPosts": []
