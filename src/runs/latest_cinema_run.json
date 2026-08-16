@@ -1,16 +1,16 @@
 {
-  "timestamp": "2026-08-15T21:22:52.667Z",
+  "timestamp": "2026-08-16T01:22:12.470Z",
   "status": "SUCCESS",
   "postsPlanned": 1,
-  "candidatesFound": 1,
+  "candidatesFound": 2,
   "successfulPosts": [
     {
-      "title": "House of the Dragon: Terceira temporada inicia gravações no Reino Unido",
-      "headline": "DRAGÃO VOLTA!",
-      "category": "Séries",
-      "instagramId": "18118852003807055",
-      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-08-15/2026-08-15-21-24-03_feed.jpg",
-      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-08-15/2026-08-15-21-24-03_story.jpg"
+      "title": "'X-Men': veja quais atores estão no elenco de novo filme da Marvel",
+      "headline": "X-MEN VOLTA!",
+      "category": "Filmes",
+      "instagramId": "18140212771570804",
+      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-08-16/2026-08-16-01-23-06_feed.jpg",
+      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-08-16/2026-08-16-01-23-06_story.jpg"
     }
   ],
   "failedPosts": []

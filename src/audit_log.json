@@ -3543,5 +3543,21 @@
     "source_domain": "backup_news",
     "category": "Séries",
     "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-08-16T01:22:07.816Z",
+    "headline": "LESÕES NO SANTOS",
+    "source_url": "https://www.terra.com.br/esportes/santos/bruxa-solta-santos-ganha-duas-novas-preocupacoes,abec7bc48e59d0722545438cbb2ff8dbahhe1ojh.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-08-16T01:23:27.358Z",
+    "headline": "X-MEN VOLTA!",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/filmes/x-men-veja-quais-atores-estao-no-elenco-de-novo-filme-da-marvel,b510cc95011a6ff7858027179730b2a2ua3z26b0.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Filmes",
+    "status": "SUCCESS"
   }
 ]

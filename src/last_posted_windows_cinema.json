@@ -33,6 +33,7 @@
   "2026-08-15": {
     "morning": true,
     "midday": true,
-    "evening": true
+    "evening": true,
+    "night": true
   }
 }
