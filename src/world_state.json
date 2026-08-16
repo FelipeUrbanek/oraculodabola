@@ -6,13 +6,7 @@
       "recent_changes": "Sondou recentemente a situação do atacante Tiquinho Soares, que pode ser contratado após a rescisão de contrato com o Santos."
     },
     "Vasco": {
-      "coach": "Renato Gaúcho",
-      "league": "Copa do Brasil / Campeonato Brasileiro Sub-20 / Campeonato Brasileiro / Copa Sul-Americana",
-      "recent_changes": "Avançou para as oitavas de final da Copa do Brasil, garantindo R$ 5 milhões. Lidera o Campeonato Brasileiro Sub-20 ao lado do Palmeiras. Pelo Campeonato Brasileiro, sofreu uma goleada de 4 a 1 do Internacional e será mandante em confronto futuro contra o Atlético-MG. O técnico Renato Gaúcho confirmou que o lateral-direito Paulo Henrique sofreu uma entorse no tornozelo direito após pancada contra o Paysandu e não jogará antes da pausa para a Copa do Mundo. O jogador se junta a Spinelli e Thiago Mendes no departamento médico. Nos bastidores, o clube avalia investida pelo zagueiro Arboleda, do São Paulo. Os próximos confrontos serão contra o Olímpia, no Paraguai, pela Sul-Americana, seguidos por mais dois jogos pelo Brasileirão (incluindo o Bragantino, em São Januário) para fechar a primeira parte da tabela. O clube lamentou o falecimento do ex-jogador e ídolo do meio-campo Geovani Silva, o 'Pequeno Príncipe', que morreu aos 62 anos vítima de uma parada cardíaca. Celebrou o Dia do Orgulho LGBTQIA+ com mensagens de inclusão.",
-      "next_matches": [
-        "Olímpia, no Paraguai, pela Sul-Americana",
-        "Bragantino, em São Januário"
-      ]
+      "recent_changes": "O Vasco terá um confronto direto com o Santos, com 22 pontos na 23ª rodada da competição."
     },
     "Botafogo": {
       "coach": "Não informado",
@@ -148,9 +142,8 @@
       "recent_changes": "FOI DENUNCIADO pelo STJD por incapacidade de prevenir e reprimir desordens na praça de desportos, comportamento hostil ou falta grave e conduta contrária à disciplina ou à ética desportiva"
     },
     "Santos": {
-      "coach": "Cuca",
-      "league": "Copa Sul-Americana",
-      "recent_changes": "Neymar pediu mais união e espírito de equipe para os companheiros antes do jogo contra o Macará, pelas oitavas de final da Copa Sul-Americana."
+      "league": "Campeonato Brasileiro",
+      "recent_changes": "O Santos está na zona do rebaixamento e fará confronto direto com o Vasco, com 22 pontos na 23ª rodada da competição."
     },
     "Vitória": {
       "recent_changes": "Teve um crescimento de 50 mil novos seguidores nas redes sociais."
@@ -403,5 +396,5 @@
       "recent_changes": "Perdeu o lateral-direito Diego Caito, que está sendo disputado pelo Grêmio."
     }
   },
-  "last_updated": "2026-08-15T15:21:22.840Z"
+  "last_updated": "2026-08-16T12:40:35.007Z"
 }

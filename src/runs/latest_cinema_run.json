@@ -1,16 +1,16 @@
 {
-  "timestamp": "2026-08-16T01:22:12.470Z",
+  "timestamp": "2026-08-16T12:41:01.149Z",
   "status": "SUCCESS",
   "postsPlanned": 1,
   "candidatesFound": 2,
   "successfulPosts": [
     {
-      "title": "'X-Men': veja quais atores estão no elenco de novo filme da Marvel",
-      "headline": "X-MEN VOLTA!",
+      "title": "De tanque com ondas a histórias de família: como '100 Dias' recria travessia a remo de Amyr Klink pelo Atlântico para além do livro",
+      "headline": "100 DIASS",
       "category": "Filmes",
-      "instagramId": "18140212771570804",
-      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-08-16/2026-08-16-01-23-06_feed.jpg",
-      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-08-16/2026-08-16-01-23-06_story.jpg"
+      "instagramId": "17959998324194260",
+      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-08-16/2026-08-16-12-41-59_feed.jpg",
+      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-08-16/2026-08-16-12-41-59_story.jpg"
     }
   ],
   "failedPosts": []

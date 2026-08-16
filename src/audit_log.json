@@ -3559,5 +3559,21 @@
     "source_domain": "www.terra.com.br",
     "category": "Filmes",
     "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-08-16T12:40:55.504Z",
+    "headline": "SANTOS VOLTA A SÃO JANUÁRIO",
+    "source_url": "https://www.terra.com.br/esportes/santos/inadmissivel-santos-volta-a-palco-de-derrota-que-enfureceu-cartola,e07885df73dbc84935094df14917d8c0ch4j4lw6.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-08-16T12:42:18.969Z",
+    "headline": "100 DIASS",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/filmes/de-tanque-com-ondas-a-historias-de-familia-como-100-dias-recria-travessia-a-remo-de-amyr-klink-pelo-atlantico-para-alem-do-livro,c7072456437281d576d6e15d62f3e0d63rx6phc7.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Filmes",
+    "status": "SUCCESS"
   }
 ]
