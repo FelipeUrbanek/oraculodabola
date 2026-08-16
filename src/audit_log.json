@@ -3575,5 +3575,13 @@
     "source_domain": "www.terra.com.br",
     "category": "Filmes",
     "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-08-16T15:24:26.989Z",
+    "headline": "STRANGER THINGS 5",
+    "source_url": "backup_cinema_1786893844841",
+    "source_domain": "backup_news",
+    "category": "Séries",
+    "status": "SUCCESS"
   }
 ]
