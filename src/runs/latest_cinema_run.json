@@ -1,16 +1,16 @@
 {
-  "timestamp": "2026-08-16T15:22:57.825Z",
+  "timestamp": "2026-08-16T21:21:55.234Z",
   "status": "SUCCESS",
   "postsPlanned": 1,
-  "candidatesFound": 1,
+  "candidatesFound": 3,
   "successfulPosts": [
     {
-      "title": "Stranger Things: Quinta e última temporada promete desfecho épico",
-      "headline": "STRANGER THINGS 5",
-      "category": "Séries",
-      "instagramId": "17951327904249714",
-      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-08-16/2026-08-16-15-24-06_feed.jpg",
-      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-08-16/2026-08-16-15-24-06_story.jpg"
+      "title": "Novo filme Homem-Aranha: Um Novo Dia ultrapassa US$ 2 bilhões em bilheteria",
+      "headline": "HOMEM-ARANHA",
+      "category": "Filmes",
+      "instagramId": "18132783388617458",
+      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-08-16/2026-08-16-21-22-50_feed.jpg",
+      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-08-16/2026-08-16-21-22-50_story.jpg"
     }
   ],
   "failedPosts": []

@@ -3583,5 +3583,21 @@
     "source_domain": "backup_news",
     "category": "Séries",
     "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-08-16T21:21:50.265Z",
+    "headline": "Santos vence o Vasco por 3 a 0",
+    "source_url": "https://www.terra.com.br/esportes/futebol/brasileiro-serie-a/santos-se-vale-de-erros-do-vasco-tem-alivio-com-vitoria-e-deixa-o-z-4-do-brasileirao,1207b685e5ed66c93a53f2fd72e404423m9xe955.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-08-16T21:23:08.985Z",
+    "headline": "HOMEM-ARANHA",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/filmes/novo-filme-homem-aranha-um-novo-dia-ultrapassa-us-2-bilhoes-em-bilheteria,befaf5d7cc756bcdc587130282a18147lqib49s0.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Filmes",
+    "status": "SUCCESS"
   }
 ]
