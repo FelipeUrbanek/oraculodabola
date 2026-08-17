@@ -3696,5 +3696,41 @@
     "category": "Séries",
     "status": "FAILED",
     "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-08-17T21:27:43.306Z",
+    "headline": "Santos terá que lidar com lesão do ligamento cruzado anterior",
+    "source_url": "https://www.terra.com.br/esportes/santos/santos-tera-que-lidar-com-lesao-do-ligamento-cruzado-anterior,c07b730daf0200fd512e10df9bd5bbaaujbjrchm.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-08-17T21:27:43.399Z",
+    "headline": "Santos se movimenta nos bastidores para realizar troca de jogadores",
+    "source_url": "https://www.terra.com.br/esportes/santos/santos-se-movimenta-nos-bastidores-para-realizar-troca-de-jogadores,57c759807558e040e4f96386411359d7fii4gyy9.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-08-17T21:27:43.488Z",
+    "headline": "Comissão da Seleção acompanha rodada do Brasileirão",
+    "source_url": "https://www.terra.com.br/esportes/brasil/comissao-da-selecao-acompanha-rodada-do-brasileirao,bdf2b8e0685893efc77a918b5de037fca864n2s0.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-08-17T21:28:20.751Z",
+    "headline": "Além de 'Conversando com um Serial Killer': 4 filmes e séries sobre Charles Manson",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/series/alem-de-conversando-com-um-serial-killer-4-filmes-e-series-sobre-charles-manson,503982da53c486ad81585692a7e893f2kkahidqh.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Séries",
+    "status": "FAILED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
   }
 ]

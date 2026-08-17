@@ -1,12 +1,12 @@
 {
-  "timestamp": "2026-08-17T15:51:50.036Z",
+  "timestamp": "2026-08-17T21:27:50.330Z",
   "status": "COMPLETED_WITHOUT_POSTS",
   "postsPlanned": 1,
-  "candidatesFound": 8,
+  "candidatesFound": 11,
   "successfulPosts": [],
   "failedPosts": [
     {
-      "title": "Juliana Paes mostra caracterização para a 2ª temporada de 'Os Donos do Jogo'; veja vídeo",
+      "title": "Além de 'Conversando com um Serial Killer': 4 filmes e séries sobre Charles Manson",
       "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
     }
   ]
