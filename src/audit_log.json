@@ -3599,5 +3599,21 @@
     "source_domain": "www.terra.com.br",
     "category": "Filmes",
     "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-08-17T01:19:08.245Z",
+    "headline": "JUNIOR SANTOS CRITICA ARBITRAGEM",
+    "source_url": "https://www.terra.com.br/esportes/botafogo/junior-santos-fala-sobre-momento-e-dispara-contra-a-arbitragem-eu-queria-saber-da-cbf-o-que-acontece-contra-o-botafogo,9c9936cb0741e1e1d7b717f9372d7f9duichdfxv.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Futebol",
+    "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-08-17T01:20:42.264Z",
+    "headline": "BEATLES REVIVIDOS",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/filmes/beatles-atores-recriam-momento-classico-em-cena-na-abbey-road-veja,2f60b232a9d9a94cf9fec8a81d0ddb28m99glt4z.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Bastidores",
+    "status": "SUCCESS"
   }
 ]

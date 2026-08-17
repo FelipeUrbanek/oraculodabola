@@ -1,16 +1,16 @@
 {
-  "timestamp": "2026-08-16T21:21:55.234Z",
+  "timestamp": "2026-08-17T01:19:13.701Z",
   "status": "SUCCESS",
   "postsPlanned": 1,
-  "candidatesFound": 3,
+  "candidatesFound": 5,
   "successfulPosts": [
     {
-      "title": "Novo filme Homem-Aranha: Um Novo Dia ultrapassa US$ 2 bilhões em bilheteria",
-      "headline": "HOMEM-ARANHA",
-      "category": "Filmes",
-      "instagramId": "18132783388617458",
-      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-08-16/2026-08-16-21-22-50_feed.jpg",
-      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-08-16/2026-08-16-21-22-50_story.jpg"
+      "title": "Beatles: Atores recriam momento clássico em cena na Abbey Road; veja",
+      "headline": "BEATLES REVIVIDOS",
+      "category": "Bastidores",
+      "instagramId": "18113787533050906",
+      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-08-17/2026-08-17-01-20-21_feed.jpg",
+      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-08-17/2026-08-17-01-20-21_story.jpg"
     }
   ],
   "failedPosts": []
