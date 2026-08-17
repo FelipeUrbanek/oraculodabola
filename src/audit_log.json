@@ -3642,5 +3642,32 @@
     "category": "Filmes",
     "status": "FAILED",
     "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-08-17T15:27:01.867Z",
+    "headline": "Cuca valoriza vontade do Santos em \"final\" contra Vasco",
+    "source_url": "https://www.terra.com.br/esportes/santos/cuca-valoriza-vontade-do-santos-em-final-contra-vasco,3f429f0393f30e77a1b0392c974522f26vv0hl30.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-08-17T15:27:01.962Z",
+    "headline": "Gol e eficiência: veja os números de Gabigol em Vasco x Santos",
+    "source_url": "https://www.terra.com.br/esportes/santos/gol-e-eficiencia-veja-os-numeros-de-gabigol-em-vasco-x-santos,2077fc578072db008979bdb982b11bd4n8c212tv.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-08-17T15:27:31.346Z",
+    "headline": "Juliana Paes mostra caracterização para a 2ª temporada de 'Os Donos do Jogo'; veja vídeo",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/series/juliana-paes-mostra-caracterizacao-para-a-2-temporada-de-os-donos-do-jogo-veja-video,c5414aa1288205bbd2490d73069a33e7urs776fs.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Séries",
+    "status": "FAILED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
   }
 ]

@@ -1,12 +1,12 @@
 {
-  "timestamp": "2026-08-17T12:45:38.985Z",
+  "timestamp": "2026-08-17T15:27:08.436Z",
   "status": "COMPLETED_WITHOUT_POSTS",
   "postsPlanned": 1,
-  "candidatesFound": 4,
+  "candidatesFound": 8,
   "successfulPosts": [],
   "failedPosts": [
     {
-      "title": "Hayden Panettiere, atriz de 'Heroes' e 'Nashville', morre aos 36 anos",
+      "title": "Juliana Paes mostra caracterização para a 2ª temporada de 'Os Donos do Jogo'; veja vídeo",
       "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
     }
   ]
