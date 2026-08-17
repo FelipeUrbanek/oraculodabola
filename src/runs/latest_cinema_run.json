@@ -1,17 +1,13 @@
 {
-  "timestamp": "2026-08-17T01:19:13.701Z",
-  "status": "SUCCESS",
+  "timestamp": "2026-08-17T12:45:38.985Z",
+  "status": "COMPLETED_WITHOUT_POSTS",
   "postsPlanned": 1,
-  "candidatesFound": 5,
-  "successfulPosts": [
+  "candidatesFound": 4,
+  "successfulPosts": [],
+  "failedPosts": [
     {
-      "title": "Beatles: Atores recriam momento clássico em cena na Abbey Road; veja",
-      "headline": "BEATLES REVIVIDOS",
-      "category": "Bastidores",
-      "instagramId": "18113787533050906",
-      "feedPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-08-17/2026-08-17-01-20-21_feed.jpg",
-      "storyPath": "/home/runner/work/oraculodabola/oraculodabola/posts/2026-08-17/2026-08-17-01-20-21_story.jpg"
+      "title": "Hayden Panettiere, atriz de 'Heroes' e 'Nashville', morre aos 36 anos",
+      "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
     }
-  ],
-  "failedPosts": []
+  ]
 }

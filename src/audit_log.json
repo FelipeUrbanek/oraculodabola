@@ -3615,5 +3615,32 @@
     "source_domain": "www.terra.com.br",
     "category": "Bastidores",
     "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-08-17T12:45:32.902Z",
+    "headline": "Cuca valoriza vontade do Santos em \"final\" contra Vasco",
+    "source_url": "https://www.terra.com.br/esportes/santos/cuca-valoriza-vontade-do-santos-em-final-contra-vasco,3f429f0393f30e77a1b0392c974522f26vv0hl30.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-08-17T12:45:33.131Z",
+    "headline": "Gol e eficiência: veja os números de Gabigol em Vasco x Santos",
+    "source_url": "https://www.terra.com.br/esportes/santos/gol-e-eficiencia-veja-os-numeros-de-gabigol-em-vasco-x-santos,2077fc578072db008979bdb982b11bd4n8c212tv.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-08-17T12:46:35.052Z",
+    "headline": "Hayden Panettiere, atriz de 'Heroes' e 'Nashville', morre aos 36 anos",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/filmes/hayden-panettiere-atriz-de-heroes-e-nashville-morre-aos-36-anos,8890596fda867acf4248ad9b479da5f9gq3z3ys7.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Filmes",
+    "status": "FAILED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
   }
 ]
