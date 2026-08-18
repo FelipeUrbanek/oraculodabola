@@ -3876,5 +3876,23 @@
     "category": "Séries",
     "status": "FAILED",
     "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-08-18T21:49:27.228Z",
+    "headline": "Flamengo e Palmeiras têm 43% de chance de título no Brasileirão",
+    "source_url": "https://www.terra.com.br/esportes/corinthians/flamengo-e-palmeiras-tem-43-de-chance-de-titulo-no-brasileirao,1d68e5bf27884840d828ac57860fa29ak3056zl3.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-08-18T21:49:57.604Z",
+    "headline": "4 séries dos anos 1990 para ver (ou rever) na Netflix",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/series/4-series-dos-anos-1990-para-ver-ou-rever-na-netflix,af34b22637537c9ac2ac9451f8699d07koqbdynl.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Séries",
+    "status": "FAILED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
   }
 ]
