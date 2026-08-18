@@ -1,12 +1,12 @@
 {
-  "timestamp": "2026-08-18T12:48:14.681Z",
+  "timestamp": "2026-08-18T15:33:10.592Z",
   "status": "COMPLETED_WITHOUT_POSTS",
   "postsPlanned": 1,
   "candidatesFound": 12,
   "successfulPosts": [],
   "failedPosts": [
     {
-      "title": "Remédio contra overdose é encontrado no local da morte de Hayden Panettiere",
+      "title": "4 séries dos anos 1990 para ver (ou rever) na Netflix",
       "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
     }
   ]
