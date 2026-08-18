@@ -1,12 +1,12 @@
 {
-  "timestamp": "2026-08-17T21:57:22.428Z",
+  "timestamp": "2026-08-18T01:16:28.213Z",
   "status": "COMPLETED_WITHOUT_POSTS",
   "postsPlanned": 1,
   "candidatesFound": 12,
   "successfulPosts": [],
   "failedPosts": [
     {
-      "title": "'O Peso da Lei': Série criminal que virou hit na Netflix adapta produção brasileira; conheça",
+      "title": "Remédio contra overdose é encontrado no local da morte de Hayden Panettiere",
       "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
     }
   ]

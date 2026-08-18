@@ -3768,5 +3768,41 @@
     "category": "Séries",
     "status": "FAILED",
     "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-08-18T01:16:22.478Z",
+    "headline": "Time do exterior pode atrapalhar negociação do Santos",
+    "source_url": "https://www.terra.com.br/esportes/santos/time-do-exterior-pode-atrapalhar-negociacao-do-santos,f0450408e35d0957a4e5687068b90cb5tfcw1a63.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-08-18T01:16:22.568Z",
+    "headline": "Essa foi a declaração de Cuca após a vitória do Santos",
+    "source_url": "https://www.terra.com.br/esportes/santos/essa-foi-a-declaracao-de-cuca-apos-a-vitoria-do-santos,9dab20603c87cddaf0100216fad676c2h7kuxmca.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-08-18T01:16:22.653Z",
+    "headline": "Santos terá que lidar com lesão do ligamento cruzado anterior",
+    "source_url": "https://www.terra.com.br/esportes/santos/santos-tera-que-lidar-com-lesao-do-ligamento-cruzado-anterior,c07b730daf0200fd512e10df9bd5bbaaujbjrchm.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-08-18T01:16:44.624Z",
+    "headline": "Remédio contra overdose é encontrado no local da morte de Hayden Panettiere",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/series/remedio-contra-overdose-e-encontrado-no-local-da-morte-de-hayden-panettiere,04de4d02b283e6e2e40f5239adeb6e6aiwibj8fo.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Séries",
+    "status": "FAILED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
   }
 ]
