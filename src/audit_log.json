@@ -3912,5 +3912,32 @@
     "category": "Séries",
     "status": "FAILED",
     "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-08-19T12:49:22.724Z",
+    "headline": "Organizada do Santos critica diretoria e faz cobrança: \"Frutas podres\"",
+    "source_url": "https://www.terra.com.br/esportes/santos/organizada-do-santos-critica-diretoria-e-faz-cobranca-frutas-podres,dede1c4bf048115769c10e41813618f8v1j1ftfa.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-08-19T12:49:22.846Z",
+    "headline": "Regulamento da Conmebol prevê dura punição ao Fluminense por conta de Canobbio",
+    "source_url": "https://www.terra.com.br/esportes/santos/regulamento-da-conmebol-preve-dura-punicao-ao-fluminense-por-conta-de-canobbio,0d393867b69fbead91f6c606ba208bbcndhvwsbm.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-08-19T12:49:54.766Z",
+    "headline": "Namorado e cunhado de Hayden Panettiere estavam no local quando atriz sofreu parada cardíaca",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/series/namorado-e-cunhado-de-hayden-panettiere-estavam-no-local-quando-atriz-sofreu-parada-cardiaca,9d3a25a285c7350a6fc3eef6fbaf3fd33cf7qjdq.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Séries",
+    "status": "FAILED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
   }
 ]
