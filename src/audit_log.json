@@ -3939,5 +3939,50 @@
     "category": "Séries",
     "status": "FAILED",
     "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-08-19T15:32:45.897Z",
+    "headline": "Espanhola é condenada por acusar ex-técnico do Santos de assédio",
+    "source_url": "https://www.terra.com.br/esportes/futebol/futebol-feminino/espanhola-e-condenada-por-acusar-ex-tecnico-do-santos-de-assedio,4030da5e2b2ae9fc77ce81a2ba83c204q12bnz20.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-08-19T15:32:45.987Z",
+    "headline": "Fluminense vai liberar Lima para o Santos? Veja a situação",
+    "source_url": "https://www.terra.com.br/esportes/santos/fluminense-vai-liberar-lima-para-o-santos-veja-a-situacao,d1c06e965e0ae479649674526bd2df12rif2vq5j.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-08-19T15:32:46.076Z",
+    "headline": "Organizada do Santos critica diretoria e faz cobrança: \"Frutas podres\"",
+    "source_url": "https://www.terra.com.br/esportes/santos/organizada-do-santos-critica-diretoria-e-faz-cobranca-frutas-podres,dede1c4bf048115769c10e41813618f8v1j1ftfa.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-08-19T15:32:46.161Z",
+    "headline": "Regulamento da Conmebol prevê dura punição ao Fluminense por conta de Canobbio",
+    "source_url": "https://www.terra.com.br/esportes/santos/regulamento-da-conmebol-preve-dura-punicao-ao-fluminense-por-conta-de-canobbio,0d393867b69fbead91f6c606ba208bbcndhvwsbm.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-08-19T15:33:29.395Z",
+    "headline": "Namorado e cunhado de Hayden Panettiere estavam no local quando atriz sofreu parada cardíaca",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/series/namorado-e-cunhado-de-hayden-panettiere-estavam-no-local-quando-atriz-sofreu-parada-cardiaca,9d3a25a285c7350a6fc3eef6fbaf3fd33cf7qjdq.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Séries",
+    "status": "FAILED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
   }
 ]
