@@ -1,12 +1,12 @@
 {
-  "timestamp": "2026-08-19T15:33:00.117Z",
+  "timestamp": "2026-08-19T21:26:55.299Z",
   "status": "COMPLETED_WITHOUT_POSTS",
   "postsPlanned": 1,
-  "candidatesFound": 10,
+  "candidatesFound": 8,
   "successfulPosts": [],
   "failedPosts": [
     {
-      "title": "Namorado e cunhado de Hayden Panettiere estavam no local quando atriz sofreu parada cardíaca",
+      "title": "Kinoforum 2026 traz 260 curtas a festival gratuito de SP: 'Panorama do mundo'; confira 10 destaques",
       "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
     }
   ]
