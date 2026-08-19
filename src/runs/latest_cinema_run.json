@@ -1,12 +1,12 @@
 {
-  "timestamp": "2026-08-19T21:26:55.299Z",
+  "timestamp": "2026-08-19T21:52:24.015Z",
   "status": "COMPLETED_WITHOUT_POSTS",
   "postsPlanned": 1,
   "candidatesFound": 8,
   "successfulPosts": [],
   "failedPosts": [
     {
-      "title": "Kinoforum 2026 traz 260 curtas a festival gratuito de SP: 'Panorama do mundo'; confira 10 destaques",
+      "title": "Aos 92 anos, Shirley McLaine faz rara aparição em vídeo",
       "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
     }
   ]

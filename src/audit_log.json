@@ -4038,5 +4038,59 @@
     "category": "Filmes",
     "status": "FAILED",
     "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-08-19T21:52:10.692Z",
+    "headline": "Santos amplia Vila Belmiro e cria novo setor para 5 mil torcedores",
+    "source_url": "https://www.terra.com.br/esportes/santos/santos-amplia-vila-belmiro-e-cria-novo-setor-para-5-mil-torcedores,f58a9820205c76ffd38faf7ef38ec4bbetz2uy7r.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-08-19T21:52:10.779Z",
+    "headline": "Ele poderá ser a principal arma do Santos de Cuca para o jogo na altitude",
+    "source_url": "https://www.terra.com.br/esportes/santos/ele-podera-ser-a-principal-arma-do-santos-de-cuca-para-o-jogo-na-altitude,7d3bb2ef41a09a34eafb12af87fc7bc4x3976f4o.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-08-19T21:52:10.865Z",
+    "headline": "Meio-campista deve assinar com o Santos de Marcelo Teixeira até o final de 2027",
+    "source_url": "https://www.terra.com.br/esportes/santos/meio-campista-deve-assinar-com-o-santos-de-marcelo-teixeira-ate-o-final-de-2027,110d0ce59b76158ef89d3f2fbf28ddf3dd1affq2.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-08-19T21:52:10.952Z",
+    "headline": "Ele rescindiu com o Santos e já foi confirmado em seu novo time no exterior",
+    "source_url": "https://www.terra.com.br/esportes/santos/ele-rescindiu-com-o-santos-e-ja-foi-confirmado-em-seu-novo-time-no-exterior,6fb996e3405612d05b500f92144d03dfhuqw348i.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-08-19T21:52:11.041Z",
+    "headline": "Muita grana: Robinho Jr está próximo de ser vendido pelo Santos para a Europa",
+    "source_url": "https://www.terra.com.br/esportes/santos/muita-grana-robinho-jr-esta-proximo-de-ser-vendido-pelo-santos-para-a-europa,290fed28533939a19e22b492a86909606djjltvo.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-08-19T21:52:55.728Z",
+    "headline": "Aos 92 anos, Shirley McLaine faz rara aparição em vídeo",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/filmes/aos-92-anos-shirley-mclaine-faz-rara-aparicao-em-video,19fe13e94d6d8953d2866ee50ccda968rlfpyqtp.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Filmes",
+    "status": "FAILED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
   }
 ]
