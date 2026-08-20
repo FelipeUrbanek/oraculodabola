@@ -1,12 +1,12 @@
 {
-  "timestamp": "2026-08-19T21:52:24.015Z",
+  "timestamp": "2026-08-20T01:17:18.461Z",
   "status": "COMPLETED_WITHOUT_POSTS",
   "postsPlanned": 1,
-  "candidatesFound": 8,
+  "candidatesFound": 6,
   "successfulPosts": [],
   "failedPosts": [
     {
-      "title": "Aos 92 anos, Shirley McLaine faz rara aparição em vídeo",
+      "title": "Aos 92 anos, Shirley MacLaine faz rara aparição em vídeo",
       "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
     }
   ]
