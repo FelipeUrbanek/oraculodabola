@@ -1,12 +1,12 @@
 {
-  "timestamp": "2026-08-20T12:52:25.086Z",
+  "timestamp": "2026-08-20T15:35:19.641Z",
   "status": "COMPLETED_WITHOUT_POSTS",
   "postsPlanned": 1,
   "candidatesFound": 7,
   "successfulPosts": [],
   "failedPosts": [
     {
-      "title": "Aos 92 anos, Shirley MacLaine faz rara aparição em vídeo",
+      "title": "'A Morte de Robin Hood' traz Hugh Jackman envelhecido para filme que se leva a sério demais",
       "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
     }
   ]

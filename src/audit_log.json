@@ -4182,5 +4182,32 @@
     "category": "Filmes",
     "status": "FAILED",
     "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-08-20T15:35:11.943Z",
+    "headline": "Gabriel Brazão ou Ederson? Benfica procura substituto para Trubin; veja",
+    "source_url": "https://www.terra.com.br/esportes/santos/gabriel-brazao-ou-ederson-benfica-procura-substituto-para-trubin-veja,868053127107ee9799119acac487b2235g1ysl90.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-08-20T15:35:12.106Z",
+    "headline": "Santos amplia Vila Belmiro e cria novo setor para 5 mil torcedores",
+    "source_url": "https://www.terra.com.br/esportes/santos/santos-amplia-vila-belmiro-e-cria-novo-setor-para-5-mil-torcedores,f58a9820205c76ffd38faf7ef38ec4bbetz2uy7r.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-08-20T15:35:51.084Z",
+    "headline": "'A Morte de Robin Hood' traz Hugh Jackman envelhecido para filme que se leva a sério demais",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/filmes/a-morte-de-robin-hood-traz-hugh-jackman-envelhecido-para-filme-que-se-leva-a-serio-demais,00a7cdb0456fe427174d4ada150561089shrqvpc.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Filmes",
+    "status": "FAILED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
   }
 ]
