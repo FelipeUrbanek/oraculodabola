@@ -4434,5 +4434,41 @@
     "category": "Séries",
     "status": "FAILED",
     "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-08-21T21:50:39.949Z",
+    "headline": "Meia-atacante do Santos entra no radar do Brasil",
+    "source_url": "https://www.terra.com.br/esportes/santos/meia-atacante-do-santos-entra-no-radar-do-brasil,54e3e9b06cb3bbef8ec1f303da00f630pzrz58hc.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-08-21T21:50:40.099Z",
+    "headline": "Brazão celebra classificação e já mira duelo do Santos com Mirassol",
+    "source_url": "https://www.terra.com.br/esportes/santos/brazao-celebra-classificacao-e-ja-mira-duelo-do-santos-com-mirassol,fc90ceebe44850178138953945fb9267jbxco12c.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-08-21T21:50:40.284Z",
+    "headline": "Quem é a joia do Santos que despertou o interesse de Benfica e Shakhtar? Veja",
+    "source_url": "https://www.terra.com.br/esportes/santos/quem-e-a-joia-do-santos-que-despertou-o-interesse-de-benfica-e-shakhtar-veja,b80cba8debe3953b663269b0d20fe3a18xx5jj0u.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-08-21T21:52:11.534Z",
+    "headline": "Prime Video anuncia produções sobre morte de PC Farias e chacina em cinema",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/series/prime-video-anuncia-producoes-sobre-morte-de-pc-farias-e-chacina-em-cinema,c92604edca87a7b65fff3ef0e38d74c6qcgmz4h9.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Séries",
+    "status": "FAILED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
   }
 ]
