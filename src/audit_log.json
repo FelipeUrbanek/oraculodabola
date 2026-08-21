@@ -4344,5 +4344,50 @@
     "category": "Séries",
     "status": "FAILED",
     "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-08-21T15:34:46.032Z",
+    "headline": "Quem é a joia do Santos que despertou o interesse de Benfica e Shakhtar? Veja",
+    "source_url": "https://www.terra.com.br/esportes/santos/quem-e-a-joia-do-santos-que-despertou-o-interesse-de-benfica-e-shakhtar-veja,b80cba8debe3953b663269b0d20fe3a18xx5jj0u.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-08-21T15:34:46.156Z",
+    "headline": "Cuca comemora vaga do Santos e exalta defesa: \"Foi perfeita\"",
+    "source_url": "https://www.terra.com.br/esportes/santos/cuca-comemora-vaga-do-santos-e-exalta-defesa-foi-perfeita,70062cea35facc58389971b466e096b6188g5v5d.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-08-21T15:34:46.319Z",
+    "headline": "Gabriel Brazão tem atuação decisiva na classificação do Santos; veja números",
+    "source_url": "https://www.terra.com.br/esportes/santos/gabriel-brazao-tem-atuacao-decisiva-na-classificacao-do-santos-veja-numeros,a0d5b43ef91f30401ab1b1b9778f51cage9odgdr.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-08-21T15:34:46.453Z",
+    "headline": "Regulamento da Conmebol prevê punição ao Santos por conta de Rony",
+    "source_url": "https://www.terra.com.br/esportes/santos/regulamento-da-conmebol-preve-punicao-ao-santos-por-conta-de-rony,846bf5cd38f1735c0140dafea07be0516q5ejm8j.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-08-21T15:35:28.181Z",
+    "headline": "Prime Video anuncia produções sobre morte de PC Farias e chacina em cinema",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/series/prime-video-anuncia-producoes-sobre-morte-de-pc-farias-e-chacina-em-cinema,c92604edca87a7b65fff3ef0e38d74c6qcgmz4h9.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Séries",
+    "status": "FAILED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
   }
 ]
