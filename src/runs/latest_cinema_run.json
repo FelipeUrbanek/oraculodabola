@@ -1,12 +1,12 @@
 {
-  "timestamp": "2026-08-21T21:50:46.577Z",
+  "timestamp": "2026-08-22T01:16:46.915Z",
   "status": "COMPLETED_WITHOUT_POSTS",
   "postsPlanned": 1,
-  "candidatesFound": 4,
+  "candidatesFound": 5,
   "successfulPosts": [],
   "failedPosts": [
     {
-      "title": "Prime Video anuncia produções sobre morte de PC Farias e chacina em cinema",
+      "title": "Ícaro Silva surge caracterizado como Robinho para 2ª temporada de 'Tremembé'; veja fotos",
       "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
     }
   ]
