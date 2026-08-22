@@ -4596,5 +4596,50 @@
     "category": "Filmes",
     "status": "FAILED",
     "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-08-22T15:47:29.552Z",
+    "headline": "Robinho Jr. pode deixar o Santos rumo à Itália; veja os valores",
+    "source_url": "https://www.terra.com.br/esportes/santos/robinho-jr-pode-deixar-o-santos-rumo-a-italia-veja-os-valores,802bfc7c823a12985ed50c26af8294a7xm8w5wak.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-08-22T15:47:29.637Z",
+    "headline": "Santos quita parte do direito de imagem atrasado do elenco",
+    "source_url": "https://www.terra.com.br/esportes/santos/santos-quita-parte-do-direito-de-imagem-atrasado-do-elenco,48bfc63e28c2bb07b7e8a084582d79davifad04u.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-08-22T15:47:29.728Z",
+    "headline": "Santos: a declaração de Brazão direcionada ao Mirassol",
+    "source_url": "https://www.terra.com.br/esportes/santos/santos-a-declaracao-de-brazao-direcionada-ao-mirassol,c18e1f5020aac914a536f0547f96ad63k3zc80oi.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-08-22T15:47:29.820Z",
+    "headline": "Meia-atacante do Santos entra no radar do Brasil",
+    "source_url": "https://www.terra.com.br/esportes/santos/meia-atacante-do-santos-entra-no-radar-do-brasil,54e3e9b06cb3bbef8ec1f303da00f630pzrz58hc.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-08-22T15:48:25.475Z",
+    "headline": "A Odisseia bate US$ 1,35 bi em arrecadação, novo recorde para filmes com classificação para adultos",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/filmes/a-odisseia-bate-us-135-bi-em-arrecadacao-novo-recorde-para-filmes-com-classificacao-para-adultos,b5dc3265c0146bc2de13b8888e2596b5utzambj0.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Filmes",
+    "status": "FAILED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
   }
 ]

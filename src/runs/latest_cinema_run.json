@@ -1,12 +1,12 @@
 {
-  "timestamp": "2026-08-22T15:22:07.291Z",
+  "timestamp": "2026-08-22T15:47:37.070Z",
   "status": "COMPLETED_WITHOUT_POSTS",
   "postsPlanned": 1,
-  "candidatesFound": 5,
+  "candidatesFound": 8,
   "successfulPosts": [],
   "failedPosts": [
     {
-      "title": "'Sobrenatural: Agora Entre Nós' encontra um pouco de fôlego em meio ao cansaço da franquia",
+      "title": "A Odisseia bate US$ 1,35 bi em arrecadação, novo recorde para filmes com classificação para adultos",
       "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
     }
   ]
