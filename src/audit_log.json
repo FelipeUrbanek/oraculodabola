@@ -4776,5 +4776,23 @@
     "category": "Séries",
     "status": "FAILED",
     "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-08-23T15:23:40.394Z",
+    "headline": "Santos pode faturar caminhão de dinheiro nos próximos dias",
+    "source_url": "https://www.terra.com.br/esportes/santos/santos-pode-faturar-caminhao-de-dinheiro-nos-proximos-dias,02e7cc85ecb5f96a84e8b1769600be73n20vvysy.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-08-23T15:24:24.799Z",
+    "headline": "4 produções para ver nos 50 anos da morte de JK, de documentário à minissérie da Globo",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/series/4-producoes-para-ver-nos-50-anos-da-morte-de-jk-de-documentario-a-minisserie-da-globo,8ed87d2daa3d0026bacf06522bfd17d0d1vr3g1x.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Séries",
+    "status": "FAILED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
   }
 ]
