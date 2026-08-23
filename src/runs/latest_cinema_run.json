@@ -1,12 +1,12 @@
 {
-  "timestamp": "2026-08-22T21:48:00.846Z",
+  "timestamp": "2026-08-23T01:23:04.030Z",
   "status": "COMPLETED_WITHOUT_POSTS",
   "postsPlanned": 1,
   "candidatesFound": 6,
   "successfulPosts": [],
   "failedPosts": [
     {
-      "title": "A Odisseia bate US$ 1,35 bi em arrecadação, novo recorde para filmes com classificação para adultos",
+      "title": "4 produções para ver nos 50 anos da morte de JK, de documentário à minissérie da Globo",
       "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
     }
   ]

@@ -4731,5 +4731,32 @@
     "category": "Filmes",
     "status": "FAILED",
     "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-08-23T01:22:57.817Z",
+    "headline": "Santos pode faturar caminhão de dinheiro nos próximos dias",
+    "source_url": "https://www.terra.com.br/esportes/santos/santos-pode-faturar-caminhao-de-dinheiro-nos-proximos-dias,02e7cc85ecb5f96a84e8b1769600be73n20vvysy.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-08-23T01:22:57.903Z",
+    "headline": "Robinho Jr. pode deixar o Santos rumo à Itália; veja os valores",
+    "source_url": "https://www.terra.com.br/esportes/santos/robinho-jr-pode-deixar-o-santos-rumo-a-italia-veja-os-valores,802bfc7c823a12985ed50c26af8294a7xm8w5wak.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-08-23T01:23:40.183Z",
+    "headline": "4 produções para ver nos 50 anos da morte de JK, de documentário à minissérie da Globo",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/series/4-producoes-para-ver-nos-50-anos-da-morte-de-jk-de-documentario-a-minisserie-da-globo,8ed87d2daa3d0026bacf06522bfd17d0d1vr3g1x.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Séries",
+    "status": "FAILED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
   }
 ]
