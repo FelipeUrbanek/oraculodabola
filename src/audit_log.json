@@ -4929,5 +4929,59 @@
     "category": "Séries",
     "status": "FAILED",
     "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-08-24T15:40:34.907Z",
+    "headline": "Ex-Santos, Zé Rafael é anunciado pelo Alverca, de Portugal",
+    "source_url": "https://www.terra.com.br/esportes/santos/ex-santos-ze-rafael-e-anunciado-pelo-alverca-de-portugal,dc75645352a082048498034d2c51f92a1ranal1p.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-08-24T15:40:35.023Z",
+    "headline": "Santos blinda joia da base após interesse de clubes de Portugal",
+    "source_url": "https://www.terra.com.br/esportes/santos/santos-blinda-joia-da-base-apos-interesse-de-clubes-de-portugal,d65024869c6acb7b34b844b85dd5a6a8cg0b30dy.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-08-24T15:40:35.126Z",
+    "headline": "Reinaldo cobra medidas após receber cusparada de torcedor do Santos",
+    "source_url": "https://www.terra.com.br/esportes/santos/reinaldo-cobra-medidas-apos-receber-cusparada-de-torcedor-do-santos,6fc2e2dedae70b325a4379f2368e4cd1evlws0bs.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-08-24T15:40:35.206Z",
+    "headline": "Davi Lucca protagoniza cena de carinho com 'Neydrasta' em camarote da Vila Belmiro",
+    "source_url": "https://www.terra.com.br/esportes/craques/neymar/davi-lucca-protagoniza-cena-de-carinho-com-neydrasta-em-camarote-da-vila-belmiro,c551a62ced8c64ce86b6e1eec2ff1b282e6aauwd.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-08-24T15:40:35.289Z",
+    "headline": "Santos sofre desfalque para confronto com Corinthians pelo Brasileirão",
+    "source_url": "https://www.terra.com.br/esportes/santos/santos-sofre-desfalque-para-confronto-com-corinthians-pelo-brasileirao,9ce13f78f3823b6aa51cd1e9a36230a5rpys7rll.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-08-24T15:41:43.453Z",
+    "headline": "Morre Bunny Levine, atriz de 'Gilmore Girls' e 'La La Land', aos 97 anos",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/filmes/morre-bunny-levine-atriz-de-gilmore-girls-e-la-la-land-aos-97-anos,8e286fa8539d4497dbe3e3fc4f38da596zriti5l.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Filmes",
+    "status": "FAILED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
   }
 ]

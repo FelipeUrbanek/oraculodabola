@@ -1,12 +1,12 @@
 {
-  "timestamp": "2026-08-24T12:52:26.467Z",
+  "timestamp": "2026-08-24T15:40:42.099Z",
   "status": "COMPLETED_WITHOUT_POSTS",
   "postsPlanned": 1,
-  "candidatesFound": 6,
+  "candidatesFound": 7,
   "successfulPosts": [],
   "failedPosts": [
     {
-      "title": "Filmes, séries e documentários para entender a Família Real Britânica e seus principais escândalos",
+      "title": "Morre Bunny Levine, atriz de 'Gilmore Girls' e 'La La Land', aos 97 anos",
       "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
     }
   ]
