@@ -1,12 +1,12 @@
 {
-  "timestamp": "2026-08-24T01:20:52.809Z",
+  "timestamp": "2026-08-24T12:52:26.467Z",
   "status": "COMPLETED_WITHOUT_POSTS",
   "postsPlanned": 1,
   "candidatesFound": 6,
   "successfulPosts": [],
   "failedPosts": [
     {
-      "title": "'Niu Lai': Por que animação chinesa bizarra de baixo orçamento está faturando milhões",
+      "title": "Filmes, séries e documentários para entender a Família Real Britânica e seus principais escândalos",
       "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
     }
   ]

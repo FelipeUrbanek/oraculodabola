@@ -4875,5 +4875,59 @@
     "category": "Filmes",
     "status": "FAILED",
     "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-08-24T12:52:12.933Z",
+    "headline": "Reinaldo lamenta cusparada na Vila: 'Nojento, lamentável e vergonhoso'; confira",
+    "source_url": "https://www.terra.com.br/esportes/santos/reinaldo-lamenta-cusparada-na-vila-nojento-lamentavel-e-vergonhoso-confira,6fdbdbb4ab4488f2c5b98718f04487b2z9di4wfo.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-08-24T12:52:12.984Z",
+    "headline": "Santos sofre desfalque para confronto com Corinthians pelo Brasileirão",
+    "source_url": "https://www.terra.com.br/esportes/santos/santos-sofre-desfalque-para-confronto-com-corinthians-pelo-brasileirao,9ce13f78f3823b6aa51cd1e9a36230a5rpys7rll.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-08-24T12:52:13.035Z",
+    "headline": "Cuca exalta atuação do Santos, mas lamenta tropeço na Vila Belmiro: 'Faltou efetividade'",
+    "source_url": "https://www.terra.com.br/esportes/santos/cuca-exalta-atuacao-do-santos-mas-lamenta-tropeco-na-vila-belmiro-faltou-efetividade,67e0a27d277beb2ecb7218d148d116f9hfi22et6.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-08-24T12:52:13.082Z",
+    "headline": "Cuca lamenta falta de pontaria do Santos: \"Gosto de quero mais\"",
+    "source_url": "https://www.terra.com.br/esportes/santos/cuca-lamenta-falta-de-pontaria-do-santos-gosto-de-quero-mais,5e14ca0aac642caf211758063c623bf4817l35my.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-08-24T12:52:13.132Z",
+    "headline": "Barreal admite frustração com tropeço do Santos: \"Jogamos bem\"",
+    "source_url": "https://www.terra.com.br/esportes/santos/barreal-admite-frustracao-com-tropeco-do-santos-jogamos-bem,4d50ab42e3e281097603fffc8e6bd161e8ahot95.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-08-24T12:53:09.321Z",
+    "headline": "Filmes, séries e documentários para entender a Família Real Britânica e seus principais escândalos",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/series/filmes-series-e-documentarios-para-entender-a-familia-real-britanica-e-seus-principais-escandalos,9782bf670edf0cb9de9fb4082c2fd43135figxcf.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Séries",
+    "status": "FAILED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
   }
 ]
