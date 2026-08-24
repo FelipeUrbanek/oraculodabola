@@ -1,12 +1,12 @@
 {
-  "timestamp": "2026-08-23T21:47:19.299Z",
+  "timestamp": "2026-08-24T01:20:52.809Z",
   "status": "COMPLETED_WITHOUT_POSTS",
   "postsPlanned": 1,
   "candidatesFound": 6,
   "successfulPosts": [],
   "failedPosts": [
     {
-      "title": "4 produções para ver nos 50 anos da morte de JK, de documentário à minissérie da Globo",
+      "title": "'Niu Lai': Por que animação chinesa bizarra de baixo orçamento está faturando milhões",
       "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
     }
   ]

@@ -4830,5 +4830,50 @@
     "category": "Séries",
     "status": "FAILED",
     "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-08-24T01:20:44.582Z",
+    "headline": "Cuca lamenta falta de pontaria do Santos: \"Gosto de quero mais\"",
+    "source_url": "https://www.terra.com.br/esportes/santos/cuca-lamenta-falta-de-pontaria-do-santos-gosto-de-quero-mais,5e14ca0aac642caf211758063c623bf4817l35my.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-08-24T01:20:44.702Z",
+    "headline": "Barreal admite frustração com tropeço do Santos: \"Jogamos bem\"",
+    "source_url": "https://www.terra.com.br/esportes/santos/barreal-admite-frustracao-com-tropeco-do-santos-jogamos-bem,4d50ab42e3e281097603fffc8e6bd161e8ahot95.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-08-24T01:20:44.844Z",
+    "headline": "Santos empata com Mirassol e não aproveita vantagem numérica na Vila",
+    "source_url": "https://www.terra.com.br/esportes/futebol/brasileiro-serie-a/santos-empata-com-mirassol-e-nao-aproveita-vantagem-numerica-na-vila,8ae256140d130654302952797b6002aah2uk8f3a.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-08-24T01:20:44.958Z",
+    "headline": "Reinaldo é alvo de cusparada de torcedor durante Santos x Mirassol; assista",
+    "source_url": "https://www.terra.com.br/esportes/futebol/reinaldo-e-alvo-de-cusparada-de-torcedor-durante-santos-x-mirassol-assista,58232ceb31ebeab24269ba951a4001b3djabcv39.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-08-24T01:21:37.900Z",
+    "headline": "'Niu Lai': Por que animação chinesa bizarra de baixo orçamento está faturando milhões",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/filmes/niu-lai-por-que-animacao-chinesa-bizarra-de-baixo-orcamento-esta-faturando-milhoes,4a285ec4d4b52318f6961ff322c3ff722hxe9m1u.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Filmes",
+    "status": "FAILED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
   }
 ]
