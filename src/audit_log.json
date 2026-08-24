@@ -4983,5 +4983,68 @@
     "category": "Filmes",
     "status": "FAILED",
     "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-08-24T21:30:37.235Z",
+    "headline": "Robinho Jr na Europa? Saiba quanto Santos deseja lucrar com o atacante",
+    "source_url": "https://www.terra.com.br/esportes/santos/robinho-jr-na-europa-saiba-quanto-santos-deseja-lucrar-com-o-atacante,b803e07773ed19f853a5319448974697fc4yrok6.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-08-24T21:30:37.518Z",
+    "headline": "Zé Rafael responde provocação de torcedor do Santos; veja",
+    "source_url": "https://www.terra.com.br/esportes/futebol/internacional/portugal/ze-rafael-responde-provocacao-de-torcedor-do-santos-veja,6b12e1c0499bbaa7fdf8fd0e5e6b72f2mdqrpnwr.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-08-24T21:30:37.962Z",
+    "headline": "Ex-Santos, Zé Rafael é anunciado pelo Alverca, de Portugal",
+    "source_url": "https://www.terra.com.br/esportes/santos/ex-santos-ze-rafael-e-anunciado-pelo-alverca-de-portugal,dc75645352a082048498034d2c51f92a1ranal1p.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-08-24T21:30:38.138Z",
+    "headline": "Santos blinda joia da base após interesse de clubes de Portugal",
+    "source_url": "https://www.terra.com.br/esportes/santos/santos-blinda-joia-da-base-apos-interesse-de-clubes-de-portugal,d65024869c6acb7b34b844b85dd5a6a8cg0b30dy.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-08-24T21:30:38.887Z",
+    "headline": "Reinaldo cobra medidas após receber cusparada de torcedor do Santos",
+    "source_url": "https://www.terra.com.br/esportes/santos/reinaldo-cobra-medidas-apos-receber-cusparada-de-torcedor-do-santos,6fc2e2dedae70b325a4379f2368e4cd1evlws0bs.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-08-24T21:30:39.310Z",
+    "headline": "Davi Lucca protagoniza cena de carinho com 'Neydrasta' em camarote da Vila Belmiro",
+    "source_url": "https://www.terra.com.br/esportes/craques/neymar/davi-lucca-protagoniza-cena-de-carinho-com-neydrasta-em-camarote-da-vila-belmiro,c551a62ced8c64ce86b6e1eec2ff1b282e6aauwd.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-08-24T21:31:43.496Z",
+    "headline": "Kit Harington entra para elenco de 'Harry Potter' como Gilderoy Lockhart no lugar de Nicholas Hoult",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/series/kit-harington-entra-para-elenco-de-harry-potter-como-gilderoy-lockhart-no-lugar-de-nicholas-hoult,87bbcba8f62f97f244e784e3121f9bff05t26lwm.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Séries",
+    "status": "FAILED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
   }
 ]

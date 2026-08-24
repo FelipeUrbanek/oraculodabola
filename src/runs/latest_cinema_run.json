@@ -1,12 +1,12 @@
 {
-  "timestamp": "2026-08-24T15:40:42.099Z",
+  "timestamp": "2026-08-24T21:30:46.659Z",
   "status": "COMPLETED_WITHOUT_POSTS",
   "postsPlanned": 1,
-  "candidatesFound": 7,
+  "candidatesFound": 8,
   "successfulPosts": [],
   "failedPosts": [
     {
-      "title": "Morre Bunny Levine, atriz de 'Gilmore Girls' e 'La La Land', aos 97 anos",
+      "title": "Kit Harington entra para elenco de 'Harry Potter' como Gilderoy Lockhart no lugar de Nicholas Hoult",
       "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
     }
   ]
