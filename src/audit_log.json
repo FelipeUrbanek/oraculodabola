@@ -5163,5 +5163,41 @@
     "category": "Filmes",
     "status": "FAILED",
     "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-08-25T12:49:28.665Z",
+    "headline": "Santos terá retorno de goleiro após transferência frustrada",
+    "source_url": "https://www.terra.com.br/esportes/santos/santos-tera-retorno-de-goleiro-apos-transferencia-frustrada,1a6f29e84ac32d67e326fc4d8afb7a41fdyqcybo.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-08-25T12:49:28.752Z",
+    "headline": "STJD denuncia Santos após torcedor cuspir em Reinaldo",
+    "source_url": "https://www.terra.com.br/esportes/santos/stjd-denuncia-santos-apos-torcedor-cuspir-em-reinaldo,16f9a7ebfc68eb8ac23ac549b3ea32cdunqg0abi.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-08-25T12:49:28.874Z",
+    "headline": "Atacante detona o Santos: \"Vou passar bem longe desse lugar sem sentir saudade alguma\"",
+    "source_url": "https://www.terra.com.br/esportes/santos/atacante-detona-o-santos-vou-passar-bem-longe-desse-lugar-sem-sentir-saudade-alguma,80e552337b33fe332d590b67211c2105ia3nja5n.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-08-25T12:50:39.291Z",
+    "headline": "'Vocês vão parar no tempo?', reclama Flávio ao ser cobrado por prestação de contas do 'Dark Horse'",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/filmes/voces-vao-parar-no-tempo-reclama-flavio-ao-ser-cobrado-por-prestacao-de-contas-do-dark-horse,0cf43c3cd5b7cda22bd6ce227512cc8bzrf23ju4.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Filmes",
+    "status": "FAILED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
   }
 ]
