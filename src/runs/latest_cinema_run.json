@@ -1,12 +1,12 @@
 {
-  "timestamp": "2026-08-25T12:49:37.677Z",
+  "timestamp": "2026-08-25T15:43:08.959Z",
   "status": "COMPLETED_WITHOUT_POSTS",
   "postsPlanned": 1,
-  "candidatesFound": 11,
+  "candidatesFound": 12,
   "successfulPosts": [],
   "failedPosts": [
     {
-      "title": "'Vocês vão parar no tempo?', reclama Flávio ao ser cobrado por prestação de contas do 'Dark Horse'",
+      "title": "'Como Perder um Homem em 10 Dias': clássico dos anos 2000 pode ter continuação com Kate Hudson",
       "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
     }
   ]

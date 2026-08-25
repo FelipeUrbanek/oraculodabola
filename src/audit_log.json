@@ -5199,5 +5199,68 @@
     "category": "Filmes",
     "status": "FAILED",
     "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-08-25T15:42:59.699Z",
+    "headline": "Santos transforma base com nova metodologia; entenda",
+    "source_url": "https://www.terra.com.br/esportes/santos/santos-transforma-base-com-nova-metodologia-entenda,54c7076a4054139b69e87cbe51e323ecj99ngi97.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-08-25T15:42:59.808Z",
+    "headline": "Santos é denunciado no STJD após cusparada de torcedor em jogador do Mirassol; veja a possível pena",
+    "source_url": "https://www.terra.com.br/esportes/santos/santos-e-denunciado-no-stjd-apos-cusparada-de-torcedor-em-jogador-do-mirassol-veja-a-possivel-pena,e80a824c4dfad3485fd8e22f8077cf1889qdnu1i.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-08-25T15:42:59.914Z",
+    "headline": "Santos poderá receber punição do STJD por conta do jogo com o Mirassol",
+    "source_url": "https://www.terra.com.br/esportes/santos/santos-podera-receber-punicao-do-stjd-por-conta-do-jogo-com-o-mirassol,fb716bbee371480f83f622e38f63121fy25o9la2.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-08-25T15:43:00.019Z",
+    "headline": "Santos fecha acordo para remodelar acesso à Vila Belmiro",
+    "source_url": "https://www.terra.com.br/esportes/santos/santos-fecha-acordo-para-remodelar-acesso-a-vila-belmiro,7b37bcf79e6d64d66c28d5859c056e697u55t0yi.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-08-25T15:43:00.133Z",
+    "headline": "Veja as chances de título, vaga na Libertadores e rebaixamento no Brasileirão",
+    "source_url": "https://www.terra.com.br/esportes/corinthians/veja-as-chances-de-titulo-vaga-na-libertadores-e-rebaixamento-no-brasileirao,14c0694124286b616db9a26a660a005761j4i4qm.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-08-25T15:43:00.235Z",
+    "headline": "Santos terá retorno de goleiro após transferência frustrada",
+    "source_url": "https://www.terra.com.br/esportes/santos/santos-tera-retorno-de-goleiro-apos-transferencia-frustrada,1a6f29e84ac32d67e326fc4d8afb7a41fdyqcybo.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-08-25T15:44:02.110Z",
+    "headline": "'Como Perder um Homem em 10 Dias': clássico dos anos 2000 pode ter continuação com Kate Hudson",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/filmes/como-perder-um-homem-em-10-dias-classico-dos-anos-2000-pode-ter-continuacao-com-kate-hudson,f0d8fa92f0749168ea7f28609622d57d4pv5gr1k.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Filmes",
+    "status": "FAILED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
   }
 ]
