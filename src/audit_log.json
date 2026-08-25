@@ -5262,5 +5262,77 @@
     "category": "Filmes",
     "status": "FAILED",
     "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-08-25T21:29:50.609Z",
+    "headline": "Santos anuncia renovação de Miguelito e amplia vínculo até 2029",
+    "source_url": "https://www.terra.com.br/esportes/santos/santos-anuncia-renovacao-de-miguelito-e-amplia-vinculo-ate-2029,7a7e18c4f50f2769baf1df20d21071db5uiokmh5.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-08-25T21:29:50.825Z",
+    "headline": "Santos é denunciado pelo STJD e pode pegar até 10 jogos de suspensão por cusparada em Reinaldo",
+    "source_url": "https://www.terra.com.br/esportes/santos/santos-e-denunciado-pelo-stjd-e-pode-pegar-ate-10-jogos-de-suspensao-por-cusparada-em-reinaldo,4dd07fbd112a81696079c43c933bf775uuimzux7.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-08-25T21:29:50.982Z",
+    "headline": "Reunião do Conselho do Santos é suspensa após reclamações da oposição",
+    "source_url": "https://www.terra.com.br/esportes/santos/reuniao-do-conselho-do-santos-e-suspensa-apos-reclamacoes-da-oposicao,e95e9c03d0b332cc0ae2b3fafc6422f3ukp3n4kd.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-08-25T21:29:51.121Z",
+    "headline": "Ele deixou o Santos e assinou com o seu novo time na Europa",
+    "source_url": "https://www.terra.com.br/esportes/santos/ele-deixou-o-santos-e-assinou-com-o-seu-novo-time-na-europa,5d469f75c93fb5273bf926c4737d4ac34v7hgujh.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-08-25T21:29:51.257Z",
+    "headline": "Santos transforma base com nova metodologia; entenda",
+    "source_url": "https://www.terra.com.br/esportes/santos/santos-transforma-base-com-nova-metodologia-entenda,54c7076a4054139b69e87cbe51e323ecj99ngi97.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-08-25T21:29:51.391Z",
+    "headline": "Santos poderá receber punição do STJD por conta do jogo com o Mirassol",
+    "source_url": "https://www.terra.com.br/esportes/santos/santos-podera-receber-punicao-do-stjd-por-conta-do-jogo-com-o-mirassol,fb716bbee371480f83f622e38f63121fy25o9la2.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-08-25T21:29:51.531Z",
+    "headline": "Santos fecha acordo para remodelar acesso à Vila Belmiro",
+    "source_url": "https://www.terra.com.br/esportes/santos/santos-fecha-acordo-para-remodelar-acesso-a-vila-belmiro,7b37bcf79e6d64d66c28d5859c056e697u55t0yi.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-08-25T21:31:08.504Z",
+    "headline": "'Como Perder um Homem em 10 Dias': clássico dos anos 2000 pode ter continuação com Kate Hudson",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/filmes/como-perder-um-homem-em-10-dias-classico-dos-anos-2000-pode-ter-continuacao-com-kate-hudson,f0d8fa92f0749168ea7f28609622d57d4pv5gr1k.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Filmes",
+    "status": "FAILED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
   }
 ]
