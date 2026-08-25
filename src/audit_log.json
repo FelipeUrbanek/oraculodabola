@@ -5334,5 +5334,68 @@
     "category": "Filmes",
     "status": "FAILED",
     "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-08-25T21:55:58.908Z",
+    "headline": "Importante! Santos fecha acordo milionário e prepara mudança na Vila Belmiro",
+    "source_url": "https://www.terra.com.br/esportes/santos/importante-santos-fecha-acordo-milionario-e-prepara-mudanca-na-vila-belmiro,d62061b97b173ee368a5cef7c3f31442s2gu8ntp.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-08-25T21:55:58.996Z",
+    "headline": "Santos anuncia renovação de Miguelito e amplia vínculo até 2029",
+    "source_url": "https://www.terra.com.br/esportes/santos/santos-anuncia-renovacao-de-miguelito-e-amplia-vinculo-ate-2029,7a7e18c4f50f2769baf1df20d21071db5uiokmh5.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-08-25T21:55:59.084Z",
+    "headline": "Santos é denunciado pelo STJD e pode pegar até 10 jogos de suspensão por cusparada em Reinaldo",
+    "source_url": "https://www.terra.com.br/esportes/santos/santos-e-denunciado-pelo-stjd-e-pode-pegar-ate-10-jogos-de-suspensao-por-cusparada-em-reinaldo,4dd07fbd112a81696079c43c933bf775uuimzux7.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-08-25T21:55:59.172Z",
+    "headline": "Reunião do Conselho do Santos é suspensa após reclamações da oposição",
+    "source_url": "https://www.terra.com.br/esportes/santos/reuniao-do-conselho-do-santos-e-suspensa-apos-reclamacoes-da-oposicao,e95e9c03d0b332cc0ae2b3fafc6422f3ukp3n4kd.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-08-25T21:55:59.263Z",
+    "headline": "Ele deixou o Santos e assinou com o seu novo time na Europa",
+    "source_url": "https://www.terra.com.br/esportes/santos/ele-deixou-o-santos-e-assinou-com-o-seu-novo-time-na-europa,5d469f75c93fb5273bf926c4737d4ac34v7hgujh.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-08-25T21:55:59.347Z",
+    "headline": "Santos transforma base com nova metodologia; entenda",
+    "source_url": "https://www.terra.com.br/esportes/santos/santos-transforma-base-com-nova-metodologia-entenda,54c7076a4054139b69e87cbe51e323ecj99ngi97.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-08-25T21:57:10.422Z",
+    "headline": "'Vocês vão parar no tempo?', reclama Flávio ao ser cobrado por prestação de contas do 'Dark Horse'",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/filmes/voces-vao-parar-no-tempo-reclama-flavio-ao-ser-cobrado-por-prestacao-de-contas-do-dark-horse,0cf43c3cd5b7cda22bd6ce227512cc8bzrf23ju4.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Filmes",
+    "status": "FAILED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
   }
 ]
