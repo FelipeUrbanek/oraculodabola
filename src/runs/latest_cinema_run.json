@@ -1,12 +1,12 @@
 {
-  "timestamp": "2026-08-24T21:57:08.884Z",
+  "timestamp": "2026-08-25T01:19:07.334Z",
   "status": "COMPLETED_WITHOUT_POSTS",
   "postsPlanned": 1,
-  "candidatesFound": 9,
+  "candidatesFound": 10,
   "successfulPosts": [],
   "failedPosts": [
     {
-      "title": "Kit Harington entra para elenco de 'Harry Potter' como Gilderoy Lockhart no lugar de Nicholas Hoult",
+      "title": "'Vocês vão parar no tempo?', reclama Flávio ao ser cobrado por prestação de contas do 'Dark Horse'",
       "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
     }
   ]
