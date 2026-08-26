@@ -5478,5 +5478,41 @@
     "category": "Filmes",
     "status": "FAILED",
     "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-08-26T16:19:01.201Z",
+    "headline": "Revelação do Santos pode deixar o Brasil de lado para defender Seleção da Europa",
+    "source_url": "https://www.terra.com.br/esportes/santos/revelacao-do-santos-pode-deixar-o-brasil-de-lado-para-defender-selecao-da-europa,084adba194a9955b97b3797cdcffa17c3xeyqdtp.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-08-26T16:19:01.303Z",
+    "headline": "É oficial! Meia assina com o Santos até 2031",
+    "source_url": "https://www.terra.com.br/esportes/santos/e-oficial-meia-assina-com-o-santos-ate-2031,392e154540b878a7f0fa696d050dcaabn3tco8ix.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-08-26T16:19:01.401Z",
+    "headline": "Santos reencontra Palmeiras e tenta quebrar tabu na Copa do Brasil",
+    "source_url": "https://www.terra.com.br/esportes/santos/santos-reencontra-palmeiras-e-tenta-quebrar-tabu-na-copa-do-brasil,6a26d0d3c772fc47b666acb52a5b786bftk3gkp4.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-08-26T16:20:12.092Z",
+    "headline": "'Como Perder um Homem em 10 Dias': clássico dos anos 2000 pode ter continuação com Kate Hudson",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/filmes/como-perder-um-homem-em-10-dias-classico-dos-anos-2000-pode-ter-continuacao-com-kate-hudson,f0d8fa92f0749168ea7f28609622d57d4pv5gr1k.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Filmes",
+    "status": "FAILED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
   }
 ]
