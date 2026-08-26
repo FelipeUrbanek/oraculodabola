@@ -5397,5 +5397,50 @@
     "category": "Filmes",
     "status": "FAILED",
     "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-08-26T01:21:53.527Z",
+    "headline": "Santos define salário e avança por Arthur Melo; Veja tempo de contrato",
+    "source_url": "https://www.terra.com.br/esportes/santos/santos-define-salario-e-avanca-por-arthur-melo-veja-tempo-de-contrato,ea2f131c1d17ed1e45d47c99346cdca76m06pij4.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-08-26T01:21:53.622Z",
+    "headline": "Gabriel Brazão, Barreal, Rollheiser, Gabriel Bontempo, Willian Arão, Escobar, Gabigol, Rony, Igor Vinícius e Luan Peres: os jogadores do Santos com...",
+    "source_url": "https://www.terra.com.br/esportes/santos/gabriel-brazao-barreal-rollheiser-gabriel-bontempo-willian-arao-escobar-gabigol-rony-igor-vinicius-e-luan-peres-os-jogadores-do-santos-com-mais-jogos-em-2026,43bfcda1bc5abd6d08c95b98ecac09d5p6ko7hio.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-08-26T01:21:53.710Z",
+    "headline": "Após polêmica com torcedor, Zé Rafael ameaça processar jornalista",
+    "source_url": "https://www.terra.com.br/esportes/santos/apos-polemica-com-torcedor-ze-rafael-ameaca-processar-jornalista,6a6aaa8568828f6f3b4dc32e68388218nep4bxkv.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-08-26T01:21:53.797Z",
+    "headline": "É oficial! Meia assina com o Santos até 2029",
+    "source_url": "https://www.terra.com.br/esportes/santos/e-oficial-meia-assina-com-o-santos-ate-2029,9cc727b9af776bcca44c026c299b66af1tilw9mb.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-08-26T01:23:10.217Z",
+    "headline": "'Como Perder um Homem em 10 Dias': clássico dos anos 2000 pode ter continuação com Kate Hudson",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/filmes/como-perder-um-homem-em-10-dias-classico-dos-anos-2000-pode-ter-continuacao-com-kate-hudson,f0d8fa92f0749168ea7f28609622d57d4pv5gr1k.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Filmes",
+    "status": "FAILED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
   }
 ]
