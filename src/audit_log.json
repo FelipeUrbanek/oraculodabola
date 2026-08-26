@@ -5442,5 +5442,41 @@
     "category": "Filmes",
     "status": "FAILED",
     "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-08-26T12:53:56.881Z",
+    "headline": "Agência que intermediou contrato de Lucas Veríssimo processa o Santos em valor milionário",
+    "source_url": "https://www.terra.com.br/esportes/santos/agencia-que-intermediou-contrato-de-lucas-verissimo-processa-o-santos-em-valor-milionario,5c4ad3c2ae30989c031a12ce117a5a84vuiuilq8.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-08-26T12:53:56.967Z",
+    "headline": "MP-SP notifica Santos por terreno comprado para novo CT da base",
+    "source_url": "https://www.terra.com.br/esportes/santos/mp-sp-notifica-santos-por-terreno-comprado-para-novo-ct-da-base,21c82113d037f62a79245082b387602bn1pzemsv.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-08-26T12:53:57.069Z",
+    "headline": "Santos define salário e avança por Arthur Melo; Veja tempo de contrato",
+    "source_url": "https://www.terra.com.br/esportes/santos/santos-define-salario-e-avanca-por-arthur-melo-veja-tempo-de-contrato,ea2f131c1d17ed1e45d47c99346cdca76m06pij4.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-08-26T12:54:56.430Z",
+    "headline": "'Como Perder um Homem em 10 Dias': clássico dos anos 2000 pode ter continuação com Kate Hudson",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/filmes/como-perder-um-homem-em-10-dias-classico-dos-anos-2000-pode-ter-continuacao-com-kate-hudson,f0d8fa92f0749168ea7f28609622d57d4pv5gr1k.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Filmes",
+    "status": "FAILED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
   }
 ]

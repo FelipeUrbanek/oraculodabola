@@ -1,8 +1,8 @@
 {
-  "timestamp": "2026-08-26T01:22:01.044Z",
+  "timestamp": "2026-08-26T12:54:03.250Z",
   "status": "COMPLETED_WITHOUT_POSTS",
   "postsPlanned": 1,
-  "candidatesFound": 11,
+  "candidatesFound": 10,
   "successfulPosts": [],
   "failedPosts": [
     {
