@@ -5514,5 +5514,41 @@
     "category": "Filmes",
     "status": "FAILED",
     "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-08-27T00:31:06.663Z",
+    "headline": "Santos define valor milionário para negociar zagueiro que ganhou espaço com Cuca",
+    "source_url": "https://www.terra.com.br/esportes/santos/santos-define-valor-milionario-para-negociar-zagueiro-que-ganhou-espaco-com-cuca,7b08ef67021b70e43966a3adc414b05cfwu8h0dl.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-08-27T00:31:06.862Z",
+    "headline": "Adeus! Meia-atacante rescinde com o Santos",
+    "source_url": "https://www.terra.com.br/esportes/santos/adeus-meia-atacante-rescinde-com-o-santos,1081400ef3d0f3712641b58763684f58grzg6w7i.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-08-27T00:31:07.334Z",
+    "headline": "Desfalque confirmado, julgamento no STJD e jogador detona o clube: as últimas notícias do Santos",
+    "source_url": "https://www.terra.com.br/esportes/santos/desfalque-confirmado-julgamento-no-stjd-e-jogador-detona-o-clube-as-ultimas-noticias-do-santos,f1bfd3e7bb5f64601fa4cb7bee051922r3qppb7j.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-08-27T00:32:54.935Z",
+    "headline": "'Cem Anos de Solidão' chega ao fim na Netflix: 'Senti um arrepio percorrer meu corpo', diz atriz",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/series/cem-anos-de-solidao-chega-ao-fim-na-netflix-senti-um-arrepio-percorrer-meu-corpo-diz-atriz,45d6c590f68d098b82695962b9fb3d5fg72g9kb3.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Séries",
+    "status": "FAILED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
   }
 ]

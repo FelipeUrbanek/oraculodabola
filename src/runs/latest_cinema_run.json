@@ -1,12 +1,12 @@
 {
-  "timestamp": "2026-08-26T16:19:10.420Z",
+  "timestamp": "2026-08-27T00:31:12.496Z",
   "status": "COMPLETED_WITHOUT_POSTS",
   "postsPlanned": 1,
-  "candidatesFound": 10,
+  "candidatesFound": 6,
   "successfulPosts": [],
   "failedPosts": [
     {
-      "title": "'Como Perder um Homem em 10 Dias': clássico dos anos 2000 pode ter continuação com Kate Hudson",
+      "title": "'Cem Anos de Solidão' chega ao fim na Netflix: 'Senti um arrepio percorrer meu corpo', diz atriz",
       "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
     }
   ]
