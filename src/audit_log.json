@@ -5550,5 +5550,23 @@
     "category": "Séries",
     "status": "FAILED",
     "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-08-27T21:54:46.787Z",
+    "headline": "Alison dos Santos, Torcedor do São Paulo, quebra recorde mundial",
+    "source_url": "https://www.terra.com.br/esportes/atletismo/alison-dos-santos-torcedor-do-sao-paulo-quebra-recorde-mundial,6df82cbb311cff1e2a0047b69e24ae14u1ozkhrx.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-08-27T21:55:46.828Z",
+    "headline": "'Me chamaram de Neguinho' e 'gordo não pode amar': atores de 'Quinze Dias' reagem a ataques preconceituosos",
+    "source_url": "https://www.terra.com.br/diversao/videos/me-chamaram-de-neguinho-e-gordo-nao-pode-amar-atores-de-quinze-dias-reagem-a-ataques-preconceituosos,5a9d01fd70d3cbe48f46445db2a27490cxhb8jlw.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Filmes",
+    "status": "FAILED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
   }
 ]
