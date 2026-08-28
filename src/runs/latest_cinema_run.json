@@ -1,12 +1,12 @@
 {
-  "timestamp": "2026-08-27T21:54:59.130Z",
+  "timestamp": "2026-08-28T21:48:07.196Z",
   "status": "COMPLETED_WITHOUT_POSTS",
   "postsPlanned": 1,
   "candidatesFound": 5,
   "successfulPosts": [],
   "failedPosts": [
     {
-      "title": "'Me chamaram de Neguinho' e 'gordo não pode amar': atores de 'Quinze Dias' reagem a ataques preconceituosos",
+      "title": "Alice Braga reflete sobre trajetória e conta como a percepção de Hollywood sobre o Brasil mudou",
       "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
     }
   ]

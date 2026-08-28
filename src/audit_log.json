@@ -5568,5 +5568,50 @@
     "category": "Filmes",
     "status": "FAILED",
     "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-08-28T21:47:59.121Z",
+    "headline": "Arthur faz exames e fica perto de ser anunciado pelo Santos",
+    "source_url": "https://www.terra.com.br/esportes/santos/arthur-faz-exames-e-fica-perto-de-ser-anunciado-pelo-santos,db8219cea7a2098055f5f5371e5b8396a2f7sf80.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-08-28T21:47:59.212Z",
+    "headline": "A declaração de Tiquinho Soares direcionada ao Santos",
+    "source_url": "https://www.terra.com.br/esportes/santos/a-declaracao-de-tiquinho-soares-direcionada-ao-santos,9b7d3ede032ec13f235b13bcf329dd37ylx76b8e.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-08-28T21:47:59.306Z",
+    "headline": "Santos é absolvido pelo STJD no caso da cusparada em Reinaldo",
+    "source_url": "https://www.terra.com.br/esportes/santos/santos-e-absolvido-pelo-stjd-no-caso-da-cusparada-em-reinaldo,87931129b4cd1b466c180592908c405chxbq70xc.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-08-28T21:47:59.401Z",
+    "headline": "Santos x Palmeiras terá ingresso popular; veja valores",
+    "source_url": "https://www.terra.com.br/esportes/santos/santos-x-palmeiras-tera-ingresso-popular-veja-valores,9a4aaa952b0a2576c2e9f031035b33dbqtkk19xq.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-08-28T21:49:02.983Z",
+    "headline": "Alice Braga reflete sobre trajetória e conta como a percepção de Hollywood sobre o Brasil mudou",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/series/alice-braga-reflete-sobre-trajetoria-e-conta-como-a-percepcao-de-hollywood-sobre-o-brasil-mudou,08b1d7d5cecd5c9e6ed7a7274a445580uu675vio.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Séries",
+    "status": "FAILED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
   }
 ]
