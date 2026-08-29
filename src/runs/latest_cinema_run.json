@@ -1,12 +1,12 @@
 {
-  "timestamp": "2026-08-28T21:48:07.196Z",
+  "timestamp": "2026-08-29T16:20:48.905Z",
   "status": "COMPLETED_WITHOUT_POSTS",
   "postsPlanned": 1,
-  "candidatesFound": 5,
+  "candidatesFound": 7,
   "successfulPosts": [],
   "failedPosts": [
     {
-      "title": "Alice Braga reflete sobre trajetória e conta como a percepção de Hollywood sobre o Brasil mudou",
+      "title": "'Fúria' e mais: 7 séries de investigação recentes para maratonar no streaming",
       "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
     }
   ]

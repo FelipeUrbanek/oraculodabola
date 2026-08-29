@@ -5613,5 +5613,59 @@
     "category": "Séries",
     "status": "FAILED",
     "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-08-29T16:20:35.166Z",
+    "headline": "Revelação do Santos acerta transferência para a Europa",
+    "source_url": "https://www.terra.com.br/esportes/santos/revelacao-do-santos-acerta-transferencia-para-a-europa,8df1be2d184819162a202008fa4842acwk3sawxg.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-08-29T16:20:35.229Z",
+    "headline": "Atacante é emprestado pelo Santos",
+    "source_url": "https://www.terra.com.br/esportes/santos/atacante-e-emprestado-pelo-santos,ba6e32684736ca4a128086b4cc9cec8bw4hhcnmh.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-08-29T16:20:35.288Z",
+    "headline": "Santos negocia a contratação de Emerson Palmieri, do Marseille",
+    "source_url": "https://www.terra.com.br/esportes/santos/santos-negocia-a-contratacao-de-emerson-palmieri-do-marseille,374ce48bae669ff41042160d21ffe7a8swjifvjf.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-08-29T16:20:35.343Z",
+    "headline": "É oficial! Zagueiro assina com o Santos até 2028",
+    "source_url": "https://www.terra.com.br/esportes/santos/e-oficial-zagueiro-assina-com-o-santos-ate-2028,bea0b926c0fd9ba79b65e31920e77808lzegpyfe.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-08-29T16:20:35.397Z",
+    "headline": "Arthur Melo terá salário astronômico no Santos, revela portal",
+    "source_url": "https://www.terra.com.br/esportes/santos/arthur-melo-tera-salario-astronomico-no-santos-revela-portal,32991271f00170737cebaf100e276ae4c0lc57aj.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-08-29T16:21:39.489Z",
+    "headline": "'Fúria' e mais: 7 séries de investigação recentes para maratonar no streaming",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/series/furia-e-mais-7-series-de-investigacao-recentes-para-maratonar-no-streaming,061f83733708a5544ff5a5a5393bf92463mn0n2r.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Séries",
+    "status": "FAILED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
   }
 ]
