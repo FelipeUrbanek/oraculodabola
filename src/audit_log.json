@@ -5667,5 +5667,23 @@
     "category": "Séries",
     "status": "FAILED",
     "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-08-30T16:13:49.284Z",
+    "headline": "Seleção italiana monitora Robinho Jr, diz jornal",
+    "source_url": "https://www.terra.com.br/esportes/santos/selecao-italiana-monitora-robinho-jr-diz-jornal,ff0240195963ba72fabbbde9655907d0twgi0r5m.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-08-30T16:15:05.796Z",
+    "headline": "Cameron Diaz, aos 53 anos, sobre corpo e mente: 'Envelhecer é um privilégio. Meus pilares para o bem-estar são alimentação, sono, menos estresse ...",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/filmes/cameron-diaz-aos-53-anos-sobre-corpo-e-mente-envelhecer-e-um-privilegio-meus-pilares-para-o-bem-estar-sao-alimentacao-sono-menos-estresse-e-amor,143caab50b295b3dd40d41b472bba3fbwkfnu1vh.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Filmes",
+    "status": "FAILED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
   }
 ]

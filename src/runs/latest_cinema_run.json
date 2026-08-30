@@ -1,12 +1,12 @@
 {
-  "timestamp": "2026-08-29T16:20:48.905Z",
+  "timestamp": "2026-08-30T16:13:57.921Z",
   "status": "COMPLETED_WITHOUT_POSTS",
   "postsPlanned": 1,
-  "candidatesFound": 7,
+  "candidatesFound": 8,
   "successfulPosts": [],
   "failedPosts": [
     {
-      "title": "'Fúria' e mais: 7 séries de investigação recentes para maratonar no streaming",
+      "title": "Cameron Diaz, aos 53 anos, sobre corpo e mente: 'Envelhecer é um privilégio. Meus pilares para o bem-estar são alimentação, sono, menos estresse ...",
       "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
     }
   ]
