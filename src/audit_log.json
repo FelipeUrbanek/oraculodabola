@@ -5685,5 +5685,50 @@
     "category": "Filmes",
     "status": "FAILED",
     "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-09-01T00:26:13.747Z",
+    "headline": "A declaração de Christian Oliva após marcar seu primeiro gol pelo Santos",
+    "source_url": "https://www.terra.com.br/esportes/santos/a-declaracao-de-christian-oliva-apos-marcar-seu-primeiro-gol-pelo-santos,4c3d3bca9604c5444f1e8335f464ca37zbf0m9sf.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-09-01T00:26:13.875Z",
+    "headline": "Ex-jogador do Santos é alvo de operação que investiga tráfico de drogas e armas",
+    "source_url": "https://www.terra.com.br/esportes/santos/ex-jogador-do-santos-e-alvo-de-operacao-que-investiga-trafico-de-drogas-e-armas,480aff507d187e66bca04259f4638923r7enjplw.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-09-01T00:26:13.997Z",
+    "headline": "Santos recusa terceira proposta da Europa por revelação do clube",
+    "source_url": "https://www.terra.com.br/esportes/santos/santos-recusa-terceira-proposta-da-europa-por-revelacao-do-clube,1e42cde2ff3eec6ca90ac135e88f5245wkjjvptl.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-09-01T00:26:14.119Z",
+    "headline": "É oficial! Zagueiro assina com o Santos até 2028",
+    "source_url": "https://www.terra.com.br/esportes/santos/e-oficial-zagueiro-assina-com-o-santos-ate-2028,4083fc18401c97332e0894eb0ddca8cdsy4pl82t.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-09-01T00:27:19.365Z",
+    "headline": "'Não seja covarde': Por que ator de 'Dias de Trovão' detonou Tom Cruise no anúncio da sequência",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/filmes/nao-seja-covarde-por-que-ator-de-dias-de-trovao-detonou-tom-cruise-no-anuncio-da-sequencia,0c843ee1a4fbfa5db156eda683f19e7aikqak0zx.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Filmes",
+    "status": "FAILED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
   }
 ]

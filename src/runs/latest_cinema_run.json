@@ -1,12 +1,12 @@
 {
-  "timestamp": "2026-08-30T16:13:57.921Z",
+  "timestamp": "2026-09-01T00:26:22.373Z",
   "status": "COMPLETED_WITHOUT_POSTS",
   "postsPlanned": 1,
-  "candidatesFound": 8,
+  "candidatesFound": 7,
   "successfulPosts": [],
   "failedPosts": [
     {
-      "title": "Cameron Diaz, aos 53 anos, sobre corpo e mente: 'Envelhecer é um privilégio. Meus pilares para o bem-estar são alimentação, sono, menos estresse ...",
+      "title": "'Não seja covarde': Por que ator de 'Dias de Trovão' detonou Tom Cruise no anúncio da sequência",
       "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
     }
   ]
