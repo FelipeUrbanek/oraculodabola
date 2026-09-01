@@ -1,12 +1,12 @@
 {
-  "timestamp": "2026-09-01T00:26:22.373Z",
+  "timestamp": "2026-09-01T16:13:00.513Z",
   "status": "COMPLETED_WITHOUT_POSTS",
   "postsPlanned": 1,
-  "candidatesFound": 7,
+  "candidatesFound": 12,
   "successfulPosts": [],
   "failedPosts": [
     {
-      "title": "'Não seja covarde': Por que ator de 'Dias de Trovão' detonou Tom Cruise no anúncio da sequência",
+      "title": "Flávio diz que produtora de 'Dark Horse' é quem deve responder sobre novo repasse feito por Vorcaro",
       "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
     }
   ]

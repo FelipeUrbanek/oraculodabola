@@ -5730,5 +5730,23 @@
     "category": "Filmes",
     "status": "FAILED",
     "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-09-01T16:12:51.097Z",
+    "headline": "CBF detalha quatro rodadas do Brasileirão com clássicos e jogo às 11h",
+    "source_url": "https://www.terra.com.br/esportes/corinthians/cbf-detalha-quatro-rodadas-do-brasileirao-com-classicos-e-jogo-as-11h,7d6fca0aaab5f518842320ea17f965c5ahnekyxt.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-09-01T16:14:28.216Z",
+    "headline": "Flávio diz que produtora de 'Dark Horse' é quem deve responder sobre novo repasse feito por Vorcaro",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/filmes/flavio-diz-que-produtora-de-dark-horse-e-quem-deve-responder-sobre-novo-repasse-feito-por-vorcaro,b603e65bde31e869489f8f8157bbd11cudwqwpgq.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Filmes",
+    "status": "FAILED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
   }
 ]
