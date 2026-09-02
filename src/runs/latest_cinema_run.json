@@ -1,12 +1,12 @@
 {
-  "timestamp": "2026-09-01T16:13:00.513Z",
+  "timestamp": "2026-09-02T16:08:22.761Z",
   "status": "COMPLETED_WITHOUT_POSTS",
   "postsPlanned": 1,
-  "candidatesFound": 12,
+  "candidatesFound": 11,
   "successfulPosts": [],
   "failedPosts": [
     {
-      "title": "Flávio diz que produtora de 'Dark Horse' é quem deve responder sobre novo repasse feito por Vorcaro",
+      "title": "Tarcísio defende investigação contra Moraes e quebra de sigilo do caso Dark Horse",
       "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
     }
   ]

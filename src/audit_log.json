@@ -5748,5 +5748,50 @@
     "category": "Filmes",
     "status": "FAILED",
     "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-09-02T16:08:14.392Z",
+    "headline": "Santos FC e Estado de SP são condenados a pagar R$ 90 mil a torcedor que perdeu o olho após jogo",
+    "source_url": "https://www.terra.com.br/esportes/santos/santos-fc-e-estado-de-sp-sao-condenados-a-pagar-r-90-mil-a-torcedor-que-perdeu-o-olho-apos-jogo,bb347140c7ebbca32063eaa25137cf72zsgrf8gf.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-09-02T16:08:14.585Z",
+    "headline": "STJD aplica multa de R$ 10 mil ao Santos por atraso em campo",
+    "source_url": "https://www.terra.com.br/esportes/santos/stjd-aplica-multa-de-r-10-mil-ao-santos-por-atraso-em-campo,a6c87c3a5294dd948005ed5b3c514fffiv8nhy05.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-09-02T16:08:14.784Z",
+    "headline": "Santos recebe punição por conta de jogos do Coritiba e Palmeiras",
+    "source_url": "https://www.terra.com.br/esportes/santos/santos-recebe-punicao-por-conta-de-jogos-do-coritiba-e-palmeiras,50fa9f2cfc0a6c4d4ec34bf041ddb7d644zec5ll.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-09-02T16:08:14.921Z",
+    "headline": "Palmeiras visita o Santos para garantir classificação na Copa do Brasil",
+    "source_url": "https://www.terra.com.br/esportes/futebol/copa-do-brasil/palmeiras-visita-o-santos-para-garantir-classificacao-na-copa-do-brasil,c1adc5dee07ac6d723b14d0ac2fb4396cayn5avo.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-09-02T16:08:46.689Z",
+    "headline": "Tarcísio defende investigação contra Moraes e quebra de sigilo do caso Dark Horse",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/filmes/tarcisio-defende-investigacao-contra-moraes-e-quebra-de-sigilo-do-caso-dark-horse,598b7dc76a082707407899347c5bb70cnw884e0i.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Filmes",
+    "status": "FAILED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
   }
 ]
