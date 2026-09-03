@@ -1,12 +1,12 @@
 {
-  "timestamp": "2026-09-02T16:08:22.761Z",
+  "timestamp": "2026-09-03T15:57:05.316Z",
   "status": "COMPLETED_WITHOUT_POSTS",
   "postsPlanned": 1,
-  "candidatesFound": 11,
+  "candidatesFound": 7,
   "successfulPosts": [],
   "failedPosts": [
     {
-      "title": "Tarcísio defende investigação contra Moraes e quebra de sigilo do caso Dark Horse",
+      "title": "PT pede à PGR para tirar Mendonça da relatoria do caso Master no STF",
       "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
     }
   ]

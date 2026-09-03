@@ -5793,5 +5793,41 @@
     "category": "Filmes",
     "status": "FAILED",
     "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-09-03T15:56:58.151Z",
+    "headline": "Cuca projeta estreias do Santos após reforços serem regularizados",
+    "source_url": "https://www.terra.com.br/esportes/santos/cuca-projeta-estreias-do-santos-apos-reforcos-serem-regularizados,9b93bf93e0ca6030eccbdc25915ad911jusmae73.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-09-03T15:56:58.278Z",
+    "headline": "Luan Peres analisa desempenho e projeta sequência do Santos: \"Não tem jogo fácil\"",
+    "source_url": "https://www.terra.com.br/esportes/santos/luan-peres-analisa-desempenho-e-projeta-sequencia-do-santos-nao-tem-jogo-facil,658e3494bc4dbd4551692b6c11d928350kch9pu0.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-09-03T15:56:58.407Z",
+    "headline": "Cuca afirma que desconhecia desejo de Gabigol em sair do Santos: 'Para mim é novidade'",
+    "source_url": "https://www.terra.com.br/esportes/santos/cuca-afirma-que-desconhecia-desejo-de-gabigol-em-sair-do-santos-para-mim-e-novidade,ae16a22325b3ac39e243498990f4e1387be15gkw.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-09-03T15:57:55.622Z",
+    "headline": "PT pede à PGR para tirar Mendonça da relatoria do caso Master no STF",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/filmes/pt-pede-a-pgr-para-tirar-mendonca-da-relatoria-do-caso-master-no-stf,7ce0c8c2b7886d4325059a21c378f405fv8vtaab.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Filmes",
+    "status": "FAILED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
   }
 ]
