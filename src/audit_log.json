@@ -5829,5 +5829,50 @@
     "category": "Filmes",
     "status": "FAILED",
     "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-09-04T15:54:59.937Z",
+    "headline": "Campeão da Libertadores pelo Fluminense é novo reforço do Santos",
+    "source_url": "https://www.terra.com.br/esportes/futebol/mercado-da-bola/campeao-da-libertadores-pelo-fluminense-e-novo-reforco-do-santos,873c7936ad5edd705c46a942d3a2efecqmogbis2.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-09-04T15:55:00.028Z",
+    "headline": "Botafogo avança por Cebolinha, mas dois clubes podem atravessar negociação",
+    "source_url": "https://www.terra.com.br/esportes/futebol/mercado-da-bola/botafogo-avanca-por-cebolinha-mas-dois-clubes-podem-atravessar-negociacao,ed918982ea3a3ddfe953a393b981e586pq6j62uk.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-09-04T15:55:00.123Z",
+    "headline": "Cria do Santos acaba de deixar o clube e já é anunciado na Itália",
+    "source_url": "https://www.terra.com.br/esportes/santos/cria-do-santos-acaba-de-deixar-o-clube-e-ja-e-anunciado-na-italia,c58015a521c8d1f51b2ffdda93c5d339kygwr6p1.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-09-04T15:55:00.217Z",
+    "headline": "Santos fecha novo patrocínio e fortalece os cofres do clube",
+    "source_url": "https://www.terra.com.br/esportes/santos/santos-fecha-novo-patrocinio-e-fortalece-os-cofres-do-clube,2f39d1c6692cd222de950f51934f35cewfovm8ig.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-09-04T15:56:32.528Z",
+    "headline": "De Baby Yoda a comédia na Guerra Fria com Ryan Reynolds: as estreias da semana no streaming",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/series/de-baby-yoda-a-comedia-na-guerra-fria-com-ryan-reynolds-as-estreias-da-semana-no-streaming,eaaf0f7bc2db685350bf53e37b0b64c2sxcj2p1h.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Séries",
+    "status": "FAILED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
   }
 ]
