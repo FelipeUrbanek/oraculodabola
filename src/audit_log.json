@@ -5874,5 +5874,32 @@
     "category": "Séries",
     "status": "FAILED",
     "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-09-06T15:04:37.367Z",
+    "headline": "Torcedores que hostilizaram criança são identificados e podem ser banidos de jogos do Corinthians",
+    "source_url": "https://www.terra.com.br/esportes/craques/neymar/torcedores-que-hostilizaram-crianca-sao-identificados-e-podem-ser-banidos-de-jogos-do-corinthians,88db0c056147f8e4112dfde998417af7a12wq7ho.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-09-06T15:04:37.512Z",
+    "headline": "Crise e Mercado: Torcida do Santos pressiona Cuca após eliminação, e clube busca reforços baixo custo",
+    "source_url": "https://www.terra.com.br/esportes/santos/crise-e-mercado-torcida-do-santos-pressiona-cuca-apos-eliminacao-e-clube-busca-reforcos-baixo-custo,ac8517bcbbecdaa176f3dde0c047870bgm9hnnbp.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-09-06T15:06:00.948Z",
+    "headline": "Streamer GH pede desculpas por vídeo, mas acusa João Victor Gonçalves de racismo",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/series/streamer-gh-pede-desculpas-por-video-mas-acusa-joao-victor-goncalves-de-racismo,08f86ff5fb0907a1eb6fd655a1370ad73eablmzk.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Séries",
+    "status": "FAILED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
   }
 ]

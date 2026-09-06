@@ -1,12 +1,12 @@
 {
-  "timestamp": "2026-09-04T15:55:06.144Z",
+  "timestamp": "2026-09-06T15:04:47.172Z",
   "status": "COMPLETED_WITHOUT_POSTS",
   "postsPlanned": 1,
-  "candidatesFound": 4,
+  "candidatesFound": 6,
   "successfulPosts": [],
   "failedPosts": [
     {
-      "title": "De Baby Yoda a comédia na Guerra Fria com Ryan Reynolds: as estreias da semana no streaming",
+      "title": "Streamer GH pede desculpas por vídeo, mas acusa João Victor Gonçalves de racismo",
       "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
     }
   ]
