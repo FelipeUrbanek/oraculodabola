@@ -5901,5 +5901,23 @@
     "category": "Séries",
     "status": "FAILED",
     "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-09-08T16:10:58.066Z",
+    "headline": "Santos tem proposta recusada e prepara nova investida por meio-campista",
+    "source_url": "https://www.terra.com.br/esportes/santos/santos-tem-proposta-recusada-e-prepara-nova-investida-por-meio-campista,22a8dc0ebed47e4acaad81ec419cef8f9wu4yn6o.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-09-08T16:12:33.988Z",
+    "headline": "Arnold Schwarzenegger aluga traje de Mr. Freeze por 1 dólar ao ano; entenda",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/filmes/arnold-schwarzenegger-aluga-traje-de-mr-freeze-por-1-dolar-ao-ano-entenda,bf862f537359e234c34958245706d6701x3nn2q1.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Filmes",
+    "status": "FAILED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
   }
 ]

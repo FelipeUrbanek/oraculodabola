@@ -1,12 +1,12 @@
 {
-  "timestamp": "2026-09-06T15:04:47.172Z",
+  "timestamp": "2026-09-08T16:11:04.672Z",
   "status": "COMPLETED_WITHOUT_POSTS",
   "postsPlanned": 1,
-  "candidatesFound": 6,
+  "candidatesFound": 5,
   "successfulPosts": [],
   "failedPosts": [
     {
-      "title": "Streamer GH pede desculpas por vídeo, mas acusa João Victor Gonçalves de racismo",
+      "title": "Arnold Schwarzenegger aluga traje de Mr. Freeze por 1 dólar ao ano; entenda",
       "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
     }
   ]
