@@ -1,12 +1,12 @@
 {
-  "timestamp": "2026-09-08T16:11:04.672Z",
+  "timestamp": "2026-09-09T16:05:12.457Z",
   "status": "COMPLETED_WITHOUT_POSTS",
   "postsPlanned": 1,
-  "candidatesFound": 5,
+  "candidatesFound": 6,
   "successfulPosts": [],
   "failedPosts": [
     {
-      "title": "Arnold Schwarzenegger aluga traje de Mr. Freeze por 1 dólar ao ano; entenda",
+      "title": "'Pressão' encontra tensão na previsão do tempo da Segunda Guerra",
       "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
     }
   ]

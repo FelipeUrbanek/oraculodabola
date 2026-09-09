@@ -5919,5 +5919,50 @@
     "category": "Filmes",
     "status": "FAILED",
     "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-09-09T16:05:03.168Z",
+    "headline": "Santos mira ex-Atlético-MG e esbarra em exigência do Dínamo Moscou",
+    "source_url": "https://www.terra.com.br/esportes/santos/santos-mira-ex-atletico-mg-e-esbarra-em-exigencia-do-dinamo-moscou,d86c170a2364ed2cbf8577376272a1643qq5jg42.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-09-09T16:05:03.258Z",
+    "headline": "Cebolinha chega a SP e veste camisa de novo clube no Brasileirão",
+    "source_url": "https://www.terra.com.br/esportes/santos/cebolinha-chega-a-sp-e-veste-camisa-de-novo-clube-no-brasileirao,af76ce091c3015b89d79fa37e07898b1wm3sf04i.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-09-09T16:05:03.345Z",
+    "headline": "Ídolo do Santos nos anos 70 e 80 Juary revela: \"O Uber me tirou da depressão\"",
+    "source_url": "https://www.terra.com.br/esportes/santos/idolo-do-santos-nos-anos-70-e-80-juary-revela-o-uber-me-tirou-da-depressao,8e3994251298db5ffc67e48d6ab7c524snnwmh72.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-09-09T16:05:03.436Z",
+    "headline": "Juary comenta como surgiu a sua comemoração famosa",
+    "source_url": "https://www.terra.com.br/esportes/santos/juary-comenta-como-surgiu-a-sua-comemoracao-famosa,f2091bf10170b0452ef01896061dfc82mhxgjm02.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-09-09T16:06:16.123Z",
+    "headline": "'Pressão' encontra tensão na previsão do tempo da Segunda Guerra",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/filmes/pressao-encontra-tensao-na-previsao-do-tempo-da-segunda-guerra,817eb789236b7d098e67a5fd20b20a4c3vhz9kzf.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Filmes",
+    "status": "FAILED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
   }
 ]
