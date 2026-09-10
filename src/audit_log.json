@@ -5964,5 +5964,41 @@
     "category": "Filmes",
     "status": "FAILED",
     "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-09-10T15:58:46.238Z",
+    "headline": "Santos faz publicação direcionada a Gabriel Bontempo após convocação",
+    "source_url": "https://www.terra.com.br/esportes/santos/santos-faz-publicacao-direcionada-a-gabriel-bontempo-apos-convocacao,fcec885e26f8ec2ffde42e99bb02b00daryvp12x.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-09-10T15:58:46.340Z",
+    "headline": "Cuca avalia vantagem do Santos e reforça: \"Não me iludo nem um pouco\"",
+    "source_url": "https://www.terra.com.br/esportes/santos/cuca-avalia-vantagem-do-santos-e-reforca-nao-me-iludo-nem-um-pouco,bc35b1e6d7d6b445cd5d43fca2b35a26bfihd4u1.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-09-10T15:58:46.439Z",
+    "headline": "A declaração de Cuca direcionada a Philippe Coutinho",
+    "source_url": "https://www.terra.com.br/esportes/santos/a-declaracao-de-cuca-direcionada-a-philippe-coutinho,9ad9cad0760806bcb7d74a1b72b5a556oi52v7r0.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-09-10T16:00:29.140Z",
+    "headline": "Tatunca Nara e Akakor: conheça a história que inspirou a série true crime da HBO Max",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/series/tatunca-nara-e-akakor-conheca-a-historia-que-inspirou-a-serie-true-crime-da-hbo-max,884c288f64d5ee59e1fa3cfb428a32373qx5ofkw.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Séries",
+    "status": "FAILED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
   }
 ]

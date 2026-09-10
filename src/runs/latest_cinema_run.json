@@ -1,12 +1,12 @@
 {
-  "timestamp": "2026-09-09T16:05:12.457Z",
+  "timestamp": "2026-09-10T15:58:53.545Z",
   "status": "COMPLETED_WITHOUT_POSTS",
   "postsPlanned": 1,
-  "candidatesFound": 6,
+  "candidatesFound": 9,
   "successfulPosts": [],
   "failedPosts": [
     {
-      "title": "'Pressão' encontra tensão na previsão do tempo da Segunda Guerra",
+      "title": "Tatunca Nara e Akakor: conheça a história que inspirou a série true crime da HBO Max",
       "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
     }
   ]
