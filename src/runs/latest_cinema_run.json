@@ -1,12 +1,12 @@
 {
-  "timestamp": "2026-09-10T15:58:53.545Z",
+  "timestamp": "2026-09-11T16:02:40.470Z",
   "status": "COMPLETED_WITHOUT_POSTS",
   "postsPlanned": 1,
   "candidatesFound": 9,
   "successfulPosts": [],
   "failedPosts": [
     {
-      "title": "Tatunca Nara e Akakor: conheça a história que inspirou a série true crime da HBO Max",
+      "title": "Produtora de 'Dark Horse' pagou R$ 102 mil em dinheiro vivo por carro BYD, mostra decisão de Dino",
       "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
     }
   ]

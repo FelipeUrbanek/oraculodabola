@@ -6000,5 +6000,50 @@
     "category": "Séries",
     "status": "FAILED",
     "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-09-11T16:02:33.483Z",
+    "headline": "Santos lança terceira camisa inspirada no título histórico de 1997",
+    "source_url": "https://www.terra.com.br/esportes/santos/santos-lanca-terceira-camisa-inspirada-no-titulo-historico-de-1997,2b1392a0078f2ebbf4906b26dfa053454yf1nwfy.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-09-11T16:02:33.582Z",
+    "headline": "Veja o planejamento do Santos para contar com Coutinho",
+    "source_url": "https://www.terra.com.br/esportes/santos/veja-o-planejamento-do-santos-para-contar-com-coutinho,d30ff1a2a1c619ead0776086c4d705dd9gwxt0vd.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-09-11T16:02:33.679Z",
+    "headline": "Saiba quando Everton Cebolinha deve estrear pelo Santos",
+    "source_url": "https://www.terra.com.br/esportes/santos/saiba-quando-everton-cebolinha-deve-estrear-pelo-santos,7d1e156b7b8abc1e2933cabe53c8787a5kykzt1c.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-09-11T16:02:33.770Z",
+    "headline": "Cienciano bate Montevideo City Torque e constrói vantagem no Peru",
+    "source_url": "https://www.terra.com.br/esportes/futebol/internacional/cienciano-bate-montevideo-city-torque-e-constroi-vantagem-no-peru,2d5dd75f610fb8e601fdbae3d3955e76quvxw26k.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-09-11T16:03:41.618Z",
+    "headline": "Produtora de 'Dark Horse' pagou R$ 102 mil em dinheiro vivo por carro BYD, mostra decisão de Dino",
+    "source_url": "https://www.terra.com.br/noticias/brasil/politica/produtora-de-dark-horse-pagou-r-102-mil-em-dinheiro-vivo-por-carro-byd-mostra-decisao-de-dino,d9160ae3606357b9813269d079504b4dwvgd8aax.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Filmes",
+    "status": "FAILED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
   }
 ]
