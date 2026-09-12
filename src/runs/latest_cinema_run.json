@@ -1,12 +1,12 @@
 {
-  "timestamp": "2026-09-11T16:02:40.470Z",
+  "timestamp": "2026-09-12T15:10:17.587Z",
   "status": "COMPLETED_WITHOUT_POSTS",
   "postsPlanned": 1,
-  "candidatesFound": 9,
+  "candidatesFound": 11,
   "successfulPosts": [],
   "failedPosts": [
     {
-      "title": "Produtora de 'Dark Horse' pagou R$ 102 mil em dinheiro vivo por carro BYD, mostra decisão de Dino",
+      "title": "'A Maravilhosa Árvore Encantada' tenta tirar crianças das telas, mas falta ousadia",
       "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
     }
   ]

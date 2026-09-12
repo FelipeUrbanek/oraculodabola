@@ -6045,5 +6045,41 @@
     "category": "Filmes",
     "status": "FAILED",
     "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-09-12T15:10:10.049Z",
+    "headline": "Jovem meia do Corinthians é emprestado ao Santos por um ano",
+    "source_url": "https://www.terra.com.br/esportes/futebol/jovem-meia-do-corinthians-e-emprestado-ao-santos-por-um-ano,5939fb026486f059e38e122ada5298ab9s35c7qx.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-09-12T15:10:10.168Z",
+    "headline": "Por sequência de vitórias, Santos recebe Cruzeiro na Vila Belmiro",
+    "source_url": "https://www.terra.com.br/esportes/santos/por-sequencia-de-vitorias-santos-recebe-cruzeiro-na-vila-belmiro,ca18ffb5912382019e7cbcb53d09f64aflbigho6.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-09-12T15:10:10.275Z",
+    "headline": "Santos lança novo uniforme; veja fotos",
+    "source_url": "https://www.terra.com.br/esportes/santos/santos-lanca-novo-uniforme-veja-fotos,eece0cec70d68e75b4f161442d73ef32vfx32rxb.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-09-12T15:11:44.005Z",
+    "headline": "'A Maravilhosa Árvore Encantada' tenta tirar crianças das telas, mas falta ousadia",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/filmes/a-maravilhosa-arvore-encantada-tenta-tirar-criancas-das-telas-mas-falta-ousadia,787ef9044e5c10047d70bf0b92f0ef16evln8qmr.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Filmes",
+    "status": "FAILED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
   }
 ]
