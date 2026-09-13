@@ -6081,5 +6081,41 @@
     "category": "Filmes",
     "status": "FAILED",
     "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-09-13T15:45:59.877Z",
+    "headline": "Cuca: \"Seremos ajudados por Philippe Coutinho. E vamos ajudá-lo\"",
+    "source_url": "https://www.terra.com.br/esportes/santos/cuca-seremos-ajudados-por-philippe-coutinho-e-vamos-ajuda-lo,633eca4dd48c3faf285c9c59659d380cm9nygipx.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-09-13T15:45:59.959Z",
+    "headline": "A declaração de Cuca direcionada a Santos x Cruzeiro",
+    "source_url": "https://www.terra.com.br/esportes/santos/a-declaracao-de-cuca-direcionada-a-santos-x-cruzeiro,a4d3f5dd1c3421d5a153f047adc0bce2l6ox2sh1.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-09-13T15:46:00.043Z",
+    "headline": "Cebolinha enche os olhos na estreia: \"Estou me sentindo em casa\"",
+    "source_url": "https://www.terra.com.br/esportes/santos/cebolinha-enche-os-olhos-na-estreia-estou-me-sentindo-em-casa,00bec8cf4fbc25c1fc8cbe7a151e7f3aqyrxg3zt.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-09-13T15:47:25.185Z",
+    "headline": "Morre Jeremy Thomas, vencedor do Oscar por 'O Último Imperador', aos 77 anos",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/filmes/morre-jeremy-thomas-vencedor-do-oscar-por-o-ultimo-imperador-aos-77-anos,17d12d3cd2c057f29572377c7b6c33ab7af1udan.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Filmes",
+    "status": "FAILED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
   }
 ]

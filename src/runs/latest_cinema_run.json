@@ -1,12 +1,12 @@
 {
-  "timestamp": "2026-09-12T15:10:17.587Z",
+  "timestamp": "2026-09-13T15:46:07.515Z",
   "status": "COMPLETED_WITHOUT_POSTS",
   "postsPlanned": 1,
-  "candidatesFound": 11,
+  "candidatesFound": 5,
   "successfulPosts": [],
   "failedPosts": [
     {
-      "title": "'A Maravilhosa Árvore Encantada' tenta tirar crianças das telas, mas falta ousadia",
+      "title": "Morre Jeremy Thomas, vencedor do Oscar por 'O Último Imperador', aos 77 anos",
       "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
     }
   ]
