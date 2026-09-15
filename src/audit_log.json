@@ -6117,5 +6117,41 @@
     "category": "Filmes",
     "status": "FAILED",
     "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-09-15T16:28:22.763Z",
+    "headline": "Santos estipula valor inicial milionário para negociar Gabriel Bontempo; entenda",
+    "source_url": "https://www.terra.com.br/esportes/santos/santos-estipula-valor-inicial-milionario-para-negociar-gabriel-bontempo-entenda,04938eac8dbb9a410658b60b99d89c88rpdg1qsl.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-09-15T16:28:22.893Z",
+    "headline": "Arthur, Rollheiser, Barreal, Bontempo, Oliva, João Schmidt, Igor Vinícius, Gustavinho, Escobar e Miguelito: os jogadores do Santos com maior distân...",
+    "source_url": "https://www.terra.com.br/esportes/santos/arthur-rollheiser-barreal-bontempo-oliva-joao-schmidt-igor-vinicius-gustavinho-escobar-e-miguelito-os-jogadores-do-santos-com-maior-distancia-percorrida-no-brasileirao-2026,aa5d935a645b35df93bbd45bbec5875dlobawjra.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-09-15T16:28:23.001Z",
+    "headline": "Santos terá que pagar R$ 20 milhões para acertar rescisão com jogador",
+    "source_url": "https://www.terra.com.br/esportes/santos/santos-tera-que-pagar-r-20-milhoes-para-acertar-rescisao-com-jogador,6731a9b5c1ea07c7a32f6762978b9d1eke2k9wnp.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-09-15T16:29:46.243Z",
+    "headline": "Emmy 2026 consagra 'O Segredo de Widow's Bay' e 'The Pitt'; Veja lista completa de vencedores",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/series/emmy-2026-consagra-o-segredo-de-widows-bay-e-the-pitt-veja-lista-completa-de-vencedores,53b69227ffeafdffaeffba292e59b1a84o5pjllr.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Séries",
+    "status": "FAILED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
   }
 ]

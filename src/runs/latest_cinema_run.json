@@ -1,12 +1,12 @@
 {
-  "timestamp": "2026-09-13T15:46:07.515Z",
+  "timestamp": "2026-09-15T16:28:33.205Z",
   "status": "COMPLETED_WITHOUT_POSTS",
   "postsPlanned": 1,
-  "candidatesFound": 5,
+  "candidatesFound": 9,
   "successfulPosts": [],
   "failedPosts": [
     {
-      "title": "Morre Jeremy Thomas, vencedor do Oscar por 'O Último Imperador', aos 77 anos",
+      "title": "Emmy 2026 consagra 'O Segredo de Widow's Bay' e 'The Pitt'; Veja lista completa de vencedores",
       "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
     }
   ]
