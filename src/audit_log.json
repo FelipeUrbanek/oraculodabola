@@ -6153,5 +6153,59 @@
     "category": "Séries",
     "status": "FAILED",
     "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-09-16T16:19:40.794Z",
+    "headline": "Com vantagem, Santos encara tabu do Atlético-MG por vaga na semifinal",
+    "source_url": "https://www.terra.com.br/esportes/santos/com-vantagem-santos-encara-tabu-do-atletico-mg-por-vaga-na-semifinal,caf2fcf5cf8ee4c69ea765bde29598176yhtzc1m.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-09-16T16:19:40.881Z",
+    "headline": "Santos tem planos ousados para novo CT",
+    "source_url": "https://www.terra.com.br/esportes/santos/santos-tem-planos-ousados-para-novo-ct,10230a660d2ce2674075db452f61a1894caqozag.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-09-16T16:19:40.978Z",
+    "headline": "Após rescindir com o Santos, Zé Rafael receberá valor estratosférico do clube",
+    "source_url": "https://www.terra.com.br/esportes/santos/apos-rescindir-com-o-santos-ze-rafael-recebera-valor-estratosferico-do-clube,7ff65d2899f8599d81a101081bc00f54ufgwkhfd.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-09-16T16:19:41.061Z",
+    "headline": "Cuca pode mudar esquema do Santos com retorno de Veríssimo",
+    "source_url": "https://www.terra.com.br/esportes/santos/cuca-pode-mudar-esquema-do-santos-com-retorno-de-verissimo,8bfa5c48a9ecca93763fabd167875b17xfwsvr2a.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-09-16T16:19:41.147Z",
+    "headline": "CBF define data para o clássico entre São Paulo e Santos",
+    "source_url": "https://www.terra.com.br/esportes/santos/cbf-define-data-para-o-classico-entre-sao-paulo-e-santos,97eea5c121f40dd77f79289795b1fdc3zzcipdu6.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-09-16T16:20:56.575Z",
+    "headline": "Lula diz que Flávio Bolsonaro precisa explicar os R$ 130 milhões de Vorcaro para 'o filme do pai'",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/filmes/lula-diz-que-flavio-bolsonaro-precisa-explicar-os-r-130-milhoes-de-vorcaro-para-o-filme-do-pai,dd94f60462537e49e778db1ec858c675a7ltzscq.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Filmes",
+    "status": "FAILED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
   }
 ]
