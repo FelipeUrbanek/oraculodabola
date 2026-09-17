@@ -6207,5 +6207,41 @@
     "category": "Filmes",
     "status": "FAILED",
     "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-09-17T16:26:42.577Z",
+    "headline": "Vídeo mostra suposta tentativa de agressão sofrida por Cuca após eliminação do Santos",
+    "source_url": "https://www.terra.com.br/esportes/santos/video-mostra-suposta-tentativa-de-agressao-sofrida-por-cuca-apos-eliminacao-do-santos,29d70b8d4c0d1e3c0fa2cf0f46f90d66s0ql7stp.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-09-17T16:26:42.710Z",
+    "headline": "Regulamento da Conmebol prevê multa ao Santos por Rodinei e Luan Peres",
+    "source_url": "https://www.terra.com.br/esportes/santos/regulamento-da-conmebol-preve-multa-ao-santos-por-rodinei-e-luan-peres,dffd92445548b93c8765558a5243b1b2i2gsop9u.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-09-17T16:26:42.867Z",
+    "headline": "A declaração de Cuca envolvendo João Schmidt e Christian Oliva",
+    "source_url": "https://www.terra.com.br/esportes/santos/a-declaracao-de-cuca-envolvendo-joao-schmidt-e-christian-oliva,f70c6f0a2bf3cd6b111274071d21a4ca59jyegyw.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-09-17T16:27:47.149Z",
+    "headline": "Jennifer Garner recusa convite de Ben Affleck para viver romance no cinema; entenda",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/filmes/jennifer-garner-recusa-convite-de-ben-affleck-para-viver-romance-no-cinema-entenda,703dfebceae0a43516edd5b09448ee933gjvvsx9.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Filmes",
+    "status": "FAILED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
   }
 ]
