@@ -1,12 +1,12 @@
 {
-  "timestamp": "2026-09-17T16:26:50.766Z",
+  "timestamp": "2026-09-18T15:59:22.601Z",
   "status": "COMPLETED_WITHOUT_POSTS",
   "postsPlanned": 1,
-  "candidatesFound": 9,
+  "candidatesFound": 8,
   "successfulPosts": [],
   "failedPosts": [
     {
-      "title": "Jennifer Garner recusa convite de Ben Affleck para viver romance no cinema; entenda",
+      "title": "Meryl Streep dará voz ao leão Aslan em filme de 'As Crônicas de Nárnia'",
       "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
     }
   ]

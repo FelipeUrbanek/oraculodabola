@@ -6243,5 +6243,41 @@
     "category": "Filmes",
     "status": "FAILED",
     "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-09-18T15:59:15.588Z",
+    "headline": "Agentes de jogador desistem de cobrar R$ 4 milhões do Santos",
+    "source_url": "https://www.terra.com.br/esportes/santos/agentes-de-jogador-desistem-de-cobrar-r-4-milhoes-do-santos,dac8d4cbc8629681f7b8b766f1f0cf8bd3jmml3x.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-09-18T15:59:15.727Z",
+    "headline": "Aproveitamento de clubes brasileiros na altitude em 2026 é de apenas 23%; veja números",
+    "source_url": "https://www.terra.com.br/esportes/futebol/aproveitamento-de-clubes-brasileiros-na-altitude-em-2026-e-de-apenas-23-veja-numeros,e1ea49f6cfa90f251b62afd692ce132cfe15oms4.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-09-18T15:59:15.864Z",
+    "headline": "Santos tem baixa importante e pode perder titular pelo resto da temporada",
+    "source_url": "https://www.terra.com.br/esportes/santos/santos-tem-baixa-importante-e-pode-perder-titular-pelo-resto-da-temporada,15ef6fea1ea0c14a05b9c7f35d47f453i3fis6gj.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-09-18T16:00:26.240Z",
+    "headline": "Meryl Streep dará voz ao leão Aslan em filme de 'As Crônicas de Nárnia'",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/filmes/meryl-streep-dara-voz-ao-leao-aslan-em-filme-de-as-cronicas-de-narnia,6d9277cb835b10718acbbf0b47208b00m1cb4496.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Filmes",
+    "status": "FAILED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
   }
 ]
