@@ -6279,5 +6279,41 @@
     "category": "Filmes",
     "status": "FAILED",
     "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-09-19T15:31:43.097Z",
+    "headline": "Santos assina com meia e define multa milionária",
+    "source_url": "https://www.terra.com.br/esportes/santos/santos-assina-com-meia-e-define-multa-milionaria,37e902128acd34350b06ab014a3142dd0cj56p5h.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-09-19T15:31:43.219Z",
+    "headline": "Santos recebe oferta vantajosa e pode reeditar parceira histórica",
+    "source_url": "https://www.terra.com.br/esportes/santos/santos-recebe-oferta-vantajosa-e-pode-reeditar-parceira-historica,c3ba608a809baeaf1861c4cfae81a58adkw7m8ui.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-09-19T15:31:43.457Z",
+    "headline": "Santos se livra de cobrança de R$ 4 milhões",
+    "source_url": "https://www.terra.com.br/esportes/santos/santos-se-livra-de-cobranca-de-r-4-milhoes,bedf0da459ea48f0a809937b763aad2bfj1vp0p1.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-09-19T15:32:12.569Z",
+    "headline": "Adaptação de Thalita Rebouças, 'Era Uma Vez Minha 1ª Vez' leva às telas história de amizade",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/filmes/adaptacao-de-thalita-reboucas-era-uma-vez-minha-1-vez-leva-as-telas-historia-de-amizade,690a2bb42a7ab89cbe0e02272164426es189wl6m.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Filmes",
+    "status": "FAILED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
   }
 ]

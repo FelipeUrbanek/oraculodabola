@@ -1,12 +1,12 @@
 {
-  "timestamp": "2026-09-18T15:59:22.601Z",
+  "timestamp": "2026-09-19T15:31:50.186Z",
   "status": "COMPLETED_WITHOUT_POSTS",
   "postsPlanned": 1,
-  "candidatesFound": 8,
+  "candidatesFound": 10,
   "successfulPosts": [],
   "failedPosts": [
     {
-      "title": "Meryl Streep dará voz ao leão Aslan em filme de 'As Crônicas de Nárnia'",
+      "title": "Adaptação de Thalita Rebouças, 'Era Uma Vez Minha 1ª Vez' leva às telas história de amizade",
       "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
     }
   ]
