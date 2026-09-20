@@ -6315,5 +6315,59 @@
     "category": "Filmes",
     "status": "FAILED",
     "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-09-20T15:37:19.395Z",
+    "headline": "Gabigol atinge 130 gols no Brasileirão e se aproxima de Zico",
+    "source_url": "https://www.terra.com.br/esportes/futebol/gabigol-atinge-130-gols-no-brasileirao-e-se-aproxima-de-zico,f4e1295a1eefd958e9a95b96e2594ea1p9bomjvc.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-09-20T15:37:19.569Z",
+    "headline": "Gabigol dá resposta imediata e se firma como protagonista do Santos",
+    "source_url": "https://www.terra.com.br/esportes/santos/gabigol-da-resposta-imediata-e-se-firma-como-protagonista-do-santos,7d4880c4b0674e66015fe61c07d5dfddwsz8qu7x.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-09-20T15:37:19.708Z",
+    "headline": "Cuca celebra arrancada do Santos no Brasileirão; veja",
+    "source_url": "https://www.terra.com.br/esportes/santos/cuca-celebra-arrancada-do-santos-no-brasileirao-veja,3b1775fcbdf2cfde6822b1887a6023d0tb55fqj3.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-09-20T15:37:19.817Z",
+    "headline": "\"Se me derem sequência, vou fazer gol\", diz Gabigol após decidir vitória",
+    "source_url": "https://www.terra.com.br/esportes/santos/se-me-derem-sequencia-vou-fazer-gol-diz-gabigol-apos-decidir-vitoria,5197410180250069666f5bbd988b72c489ijl758.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-09-20T15:37:19.932Z",
+    "headline": "Veja as declarações de Cuca envolvendo Diógenes, Gabriel Brazão, João Schmidt e Oliva",
+    "source_url": "https://www.terra.com.br/esportes/santos/veja-as-declaracoes-de-cuca-envolvendo-diogenes-gabriel-brazao-joao-schmidt-e-oliva,81a3d6c149e302398ce1237632cf8b0316e7epx8.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-09-20T15:38:22.087Z",
+    "headline": "Zach Cregger leva sensações dos jogos 'Resident Evil' aos cinemas: 'Queria protagonista como eu'",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/filmes/zach-cregger-leva-sensacoes-dos-jogos-resident-evil-aos-cinemas-queria-protagonista-como-eu,d7e384d85c0dd1e9d1f1c57b0bab33feoabg7l7z.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Filmes",
+    "status": "FAILED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
   }
 ]

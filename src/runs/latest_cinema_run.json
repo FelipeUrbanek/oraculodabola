@@ -1,12 +1,12 @@
 {
-  "timestamp": "2026-09-19T15:31:50.186Z",
+  "timestamp": "2026-09-20T15:37:29.380Z",
   "status": "COMPLETED_WITHOUT_POSTS",
   "postsPlanned": 1,
-  "candidatesFound": 10,
+  "candidatesFound": 8,
   "successfulPosts": [],
   "failedPosts": [
     {
-      "title": "Adaptação de Thalita Rebouças, 'Era Uma Vez Minha 1ª Vez' leva às telas história de amizade",
+      "title": "Zach Cregger leva sensações dos jogos 'Resident Evil' aos cinemas: 'Queria protagonista como eu'",
       "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
     }
   ]
