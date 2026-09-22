@@ -6369,5 +6369,59 @@
     "category": "Filmes",
     "status": "FAILED",
     "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-09-22T16:28:20.563Z",
+    "headline": "A Umbro ainda pode cobrir? Bastidores do negócio entre Santos e Adidas",
+    "source_url": "https://www.terra.com.br/esportes/santos/a-umbro-ainda-pode-cobrir-bastidores-do-negocio-entre-santos-e-adidas,4ba812712de67b8db70f2555e23765c6vo3rall2.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-09-22T16:28:20.683Z",
+    "headline": "Gabriel Brazão passa por cirurgia e Santos define futuro do goleiro na temporada",
+    "source_url": "https://www.terra.com.br/esportes/santos/gabriel-brazao-passa-por-cirurgia-e-santos-define-futuro-do-goleiro-na-temporada,04092be8e13eb3e4c64f4054f565aae0mw1hfm3b.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-09-22T16:28:20.826Z",
+    "headline": "São Paulo tem menor média de estrangeiros relacionados por rodada entre os quatro grandes paulistas",
+    "source_url": "https://www.terra.com.br/esportes/futebol/sao-paulo-tem-menor-media-de-estrangeiros-relacionados-por-rodada-entre-os-quatro-grandes-paulistas,b13adfe9abb0ec7fd1af770fd5622200arqcg9ns.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-09-22T16:28:20.950Z",
+    "headline": "Futuro de Gabigol no Santos segue indefinido para 2027",
+    "source_url": "https://www.terra.com.br/esportes/santos/futuro-de-gabigol-no-santos-segue-indefinido-para-2027,639231a7be1056da05e0c0b0be30d3a3jiplt5f9.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-09-22T16:28:21.059Z",
+    "headline": "Clubes pedem fim de limite de jogos para transferências no Brasileirão",
+    "source_url": "https://www.terra.com.br/esportes/corinthians/clubes-pedem-fim-de-limite-de-jogos-para-transferencias-no-brasileirao,f1505e5751a76f6d958cd6e41c5f83fah6mj0z32.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-09-22T16:29:13.030Z",
+    "headline": "Rodrigo Lombardi e Milhem Cortaz falam sobre o realismo fantástico de 'Vermelho Sangue'",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/series/rodrigo-lombardi-e-milhem-cortaz-falam-sobre-o-realismo-fantastico-de-vermelho-sangue,c522685674d74193bd41336de5ed5a1cdaw9ajkl.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Séries",
+    "status": "FAILED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
   }
 ]

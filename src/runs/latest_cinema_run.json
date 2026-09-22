@@ -1,12 +1,12 @@
 {
-  "timestamp": "2026-09-20T15:37:29.380Z",
+  "timestamp": "2026-09-22T16:28:28.429Z",
   "status": "COMPLETED_WITHOUT_POSTS",
   "postsPlanned": 1,
-  "candidatesFound": 8,
+  "candidatesFound": 5,
   "successfulPosts": [],
   "failedPosts": [
     {
-      "title": "Zach Cregger leva sensações dos jogos 'Resident Evil' aos cinemas: 'Queria protagonista como eu'",
+      "title": "Rodrigo Lombardi e Milhem Cortaz falam sobre o realismo fantástico de 'Vermelho Sangue'",
       "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
     }
   ]
