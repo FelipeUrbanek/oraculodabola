@@ -1,12 +1,12 @@
 {
-  "timestamp": "2026-09-22T16:28:28.429Z",
+  "timestamp": "2026-09-23T16:18:22.688Z",
   "status": "COMPLETED_WITHOUT_POSTS",
   "postsPlanned": 1,
-  "candidatesFound": 5,
+  "candidatesFound": 11,
   "successfulPosts": [],
   "failedPosts": [
     {
-      "title": "Rodrigo Lombardi e Milhem Cortaz falam sobre o realismo fantástico de 'Vermelho Sangue'",
+      "title": "'A Hipótese do Amor' leva às telas história que foi de fanfic a fenômeno editorial; veja entrevista",
       "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
     }
   ]

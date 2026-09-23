@@ -6423,5 +6423,86 @@
     "category": "Séries",
     "status": "FAILED",
     "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-09-23T16:18:09.550Z",
+    "headline": "Dirigente rechaça saida de Gabigol para o Cruzeiro: \"Não é o momento\"",
+    "source_url": "https://www.terra.com.br/esportes/santos/dirigente-rechaca-saida-de-gabigol-para-o-cruzeiro-nao-e-o-momento,1bf139e631efeedcf58334dce1a1e2ddziypv6dr.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-09-23T16:18:09.697Z",
+    "headline": "Gabigol lidera arrancada do Santos e pode quebrar recorde pelo clube",
+    "source_url": "https://www.terra.com.br/esportes/santos/gabigol-lidera-arrancada-do-santos-e-pode-quebrar-recorde-pelo-clube,21f4e2843a7c892c03edc64d5f720b30hqouh2xf.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-09-23T16:18:09.832Z",
+    "headline": "Santos tem três jogadores convocados para a Super Data Fifa e pode ter desfalques no clássico",
+    "source_url": "https://www.terra.com.br/esportes/santos/santos-tem-tres-jogadores-convocados-para-a-super-data-fifa-e-pode-ter-desfalques-no-classico,d56be5446583a581d26dca01ee8ddafff2i2ider.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-09-23T16:18:10.531Z",
+    "headline": "Atacante rescinde contrato e retorna ao Santos",
+    "source_url": "https://www.terra.com.br/esportes/santos/atacante-rescinde-contrato-e-retorna-ao-santos,cda71e29d8a0406cd2cd67e22468576amwhdo7ls.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-09-23T16:18:10.682Z",
+    "headline": "Cuiabá cobra, e Santos terá que pagar dívida de quase R$ 20 milhões",
+    "source_url": "https://www.terra.com.br/esportes/corinthians/cuiaba-cobra-e-santos-tera-que-pagar-divida-de-quase-r-20-milhoes,284372eda167f3e135ba3d28ad940e49sbe2ql0z.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-09-23T16:18:10.796Z",
+    "headline": "CBF usa estudo para cortar estrangeiros e abrir espaço para a base",
+    "source_url": "https://www.terra.com.br/esportes/corinthians/cbf-usa-estudo-para-cortar-estrangeiros-e-abrir-espaco-para-a-base,cd9e06848d221a55f3378bd3b7420c1cw9r76vxp.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-09-23T16:18:10.943Z",
+    "headline": "Cruzeiro ou Santos? Entenda o cenário para futuro de Gabigol",
+    "source_url": "https://www.terra.com.br/esportes/futebol/mercado-da-bola/cruzeiro-ou-santos-entenda-o-cenario-para-futuro-de-gabigol,5905d43277aee4b76de3e42fb712bc3ealttukkd.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-09-23T16:18:11.111Z",
+    "headline": "Com passagens por gigantes brasileiros, Giuliano anuncia aposentadoria",
+    "source_url": "https://www.terra.com.br/esportes/corinthians/com-passagens-por-gigantes-brasileiros-giuliano-anuncia-aposentadoria,9e8f0bb03858bb30d5376891cff6821dusqn34du.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-09-23T16:18:47.923Z",
+    "headline": "'A Hipótese do Amor' leva às telas história que foi de fanfic a fenômeno editorial; veja entrevista",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/filmes/a-hipotese-do-amor-leva-as-telas-historia-que-foi-de-fanfic-a-fenomeno-editorial-veja-entrevista,0b95357ef0eef6159d8c01846ee1087fer2gifgx.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Filmes",
+    "status": "FAILED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
   }
 ]
