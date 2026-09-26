@@ -1,12 +1,12 @@
 {
-  "timestamp": "2026-09-23T16:18:22.688Z",
+  "timestamp": "2026-09-26T15:58:00.956Z",
   "status": "COMPLETED_WITHOUT_POSTS",
   "postsPlanned": 1,
   "candidatesFound": 11,
   "successfulPosts": [],
   "failedPosts": [
     {
-      "title": "'A Hipótese do Amor' leva às telas história que foi de fanfic a fenômeno editorial; veja entrevista",
+      "title": "Sabrina Carpenter será Ginger Rogers em filme sobre Fred Astaire com Tom Holland",
       "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
     }
   ]

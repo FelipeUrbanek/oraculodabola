@@ -6504,5 +6504,32 @@
     "category": "Filmes",
     "status": "FAILED",
     "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-09-26T15:57:52.940Z",
+    "headline": "No Brasileirão, Santos faz melhor campanha na década e mira Libertadores",
+    "source_url": "https://www.terra.com.br/esportes/santos/no-brasileirao-santos-faz-melhor-campanha-na-decada-e-mira-libertadores,04cb8a5f84a3e479c518e1449453809004rdd4eh.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-09-26T15:57:53.144Z",
+    "headline": "Diógenes ou João Paulo? Veja quem será o goleiro titular do Santos",
+    "source_url": "https://www.terra.com.br/esportes/santos/diogenes-ou-joao-paulo-veja-quem-sera-o-goleiro-titular-do-santos,c813f99977be11bae044fd4a01e1aa85qeozdbjb.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-09-26T15:58:25.160Z",
+    "headline": "Sabrina Carpenter será Ginger Rogers em filme sobre Fred Astaire com Tom Holland",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/filmes/sabrina-carpenter-sera-ginger-rogers-em-filme-sobre-fred-astaire-com-tom-holland,e511ca9818b15f82dabcacefd8b2ac1cuw34u8os.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Filmes",
+    "status": "FAILED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
   }
 ]
