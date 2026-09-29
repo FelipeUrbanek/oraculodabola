@@ -6531,5 +6531,41 @@
     "category": "Filmes",
     "status": "FAILED",
     "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-09-29T00:51:37.149Z",
+    "headline": "Santos perde titulares, mas deve contar com reforços para clássico com o São Paulo",
+    "source_url": "https://www.terra.com.br/esportes/santos/santos-perde-titulares-mas-deve-contar-com-reforcos-para-classico-com-o-sao-paulo,2519123f36404da16cd61bc4400946b69k13pew9.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-09-29T00:51:37.425Z",
+    "headline": "Governo convoca clubes para discutir impacto da proibição das bets",
+    "source_url": "https://www.terra.com.br/esportes/corinthians/governo-convoca-clubes-para-discutir-impacto-da-proibicao-das-bets,d6b528de4541179c5d721756ba4c06b3fzsvkh99.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-09-29T00:51:37.627Z",
+    "headline": "Santos e Umbro lançarão coleção especial com a Marca Pelé",
+    "source_url": "https://www.terra.com.br/esportes/santos/santos-e-umbro-lancarao-colecao-especial-com-a-marca-pele,c5e629ea51f89a1fe42f8147dd93d8a2xjuwci4e.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-09-29T00:52:31.248Z",
+    "headline": "Wagner Moura e Kristen Stewart trabalharão juntos mais uma vez em filme de Olivier Assayas",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/filmes/wagner-moura-e-kristen-stewart-trabalharao-juntos-mais-uma-vez-em-filme-de-olivier-assayas,b48249059dd613edc09f69ae5eba1579u7m9i35n.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Filmes",
+    "status": "FAILED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
   }
 ]
