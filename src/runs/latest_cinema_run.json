@@ -1,12 +1,12 @@
 {
-  "timestamp": "2026-09-29T00:51:45.204Z",
+  "timestamp": "2026-09-30T00:06:52.007Z",
   "status": "COMPLETED_WITHOUT_POSTS",
   "postsPlanned": 1,
-  "candidatesFound": 6,
+  "candidatesFound": 7,
   "successfulPosts": [],
   "failedPosts": [
     {
-      "title": "Wagner Moura e Kristen Stewart trabalharão juntos mais uma vez em filme de Olivier Assayas",
+      "title": "'Game of Thrones' chegará aos cinemas com filme sobre conquista de Aegon; estreia será em 2029",
       "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
     }
   ]

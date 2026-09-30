@@ -6567,5 +6567,50 @@
     "category": "Filmes",
     "status": "FAILED",
     "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-09-30T00:06:36.402Z",
+    "headline": "Santos suspende contrato com casa de apostas, após proibição do Governo",
+    "source_url": "https://www.terra.com.br/esportes/santos/santos-suspende-contrato-com-casa-de-apostas-apos-proibicao-do-governo,50ac6f85568b31e5559579a29e1c2e9a6xj67fuz.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-09-30T00:06:36.526Z",
+    "headline": "Santos homenageia Naty Potira com patch na camisa em clássico",
+    "source_url": "https://www.terra.com.br/esportes/santos/santos-homenageia-naty-potira-com-patch-na-camisa-em-classico,7c87ea1f869a4b272e09e987315a45e7ktvc8l36.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-09-30T00:06:36.648Z",
+    "headline": "Sem previsão, Santos tem dois meses de direitos de imagem em atraso",
+    "source_url": "https://www.terra.com.br/esportes/santos/sem-previsao-santos-tem-dois-meses-de-direitos-de-imagem-em-atraso,2985d75185474b1d25f1ed591bb7539cb0agu99d.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-09-30T00:06:36.774Z",
+    "headline": "Santos mantém jogo com Flamengo na Vila após impasse por Morumbi",
+    "source_url": "https://www.terra.com.br/esportes/flamengo/santos-mantem-jogo-com-flamengo-na-vila-apos-impasse-por-morumbi,56bd0c2425c416370a6a38b03b72fa750kalk2md.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-09-30T00:07:45.078Z",
+    "headline": "'Game of Thrones' chegará aos cinemas com filme sobre conquista de Aegon; estreia será em 2029",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/filmes/game-of-thrones-chegara-aos-cinemas-com-filme-sobre-conquista-de-aegon-estreia-sera-em-2029,2fdf8018cdebe7ed9efd418cf197a3686zgw1n9g.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Filmes",
+    "status": "FAILED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
   }
 ]
