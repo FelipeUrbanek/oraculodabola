@@ -6612,5 +6612,32 @@
     "category": "Filmes",
     "status": "FAILED",
     "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-10-01T00:25:01.808Z",
+    "headline": "Gabriel Brazão inicia fisioterapia no Santos após cirurgia no ombro",
+    "source_url": "https://www.terra.com.br/esportes/santos/gabriel-brazao-inicia-fisioterapia-no-santos-apos-cirurgia-no-ombro,149848a9de274bc0498b8a1279de69abvyqfaqu8.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-10-01T00:25:01.943Z",
+    "headline": "Santos fecha venda de JP Chermont e terá de repassar valor ao Coritiba",
+    "source_url": "https://www.terra.com.br/esportes/futebol/mercado-da-bola/santos-fecha-venda-de-jp-chermont-e-tera-de-repassar-valor-ao-coritiba,2e62b5d6c310125f599078cda1db5ef3yys6uddi.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-10-01T00:26:17.850Z",
+    "headline": "Martin e Charlie Sheen vão interpretar pai e filho em 'Happy Jack', nova série de comédia",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/series/martin-e-charlie-sheen-vao-interpretar-pai-e-filho-em-happy-jack-nova-serie-de-comedia,cdc790d8491f771250912033058375d1kbu35li4.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Séries",
+    "status": "FAILED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
   }
 ]

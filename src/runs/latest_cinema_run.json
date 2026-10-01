@@ -1,12 +1,12 @@
 {
-  "timestamp": "2026-09-30T00:06:52.007Z",
+  "timestamp": "2026-10-01T00:25:09.072Z",
   "status": "COMPLETED_WITHOUT_POSTS",
   "postsPlanned": 1,
-  "candidatesFound": 7,
+  "candidatesFound": 8,
   "successfulPosts": [],
   "failedPosts": [
     {
-      "title": "'Game of Thrones' chegará aos cinemas com filme sobre conquista de Aegon; estreia será em 2029",
+      "title": "Martin e Charlie Sheen vão interpretar pai e filho em 'Happy Jack', nova série de comédia",
       "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
     }
   ]
