@@ -1,12 +1,12 @@
 {
-  "timestamp": "2026-10-01T00:25:09.072Z",
+  "timestamp": "2026-10-02T00:35:18.875Z",
   "status": "COMPLETED_WITHOUT_POSTS",
   "postsPlanned": 1,
-  "candidatesFound": 8,
+  "candidatesFound": 10,
   "successfulPosts": [],
   "failedPosts": [
     {
-      "title": "Martin e Charlie Sheen vão interpretar pai e filho em 'Happy Jack', nova série de comédia",
+      "title": "'Vingadores: Doutor Destino': Tudo o que se sabe sobre novo filme da Marvel",
       "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
     }
   ]

@@ -6639,5 +6639,50 @@
     "category": "Séries",
     "status": "FAILED",
     "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-10-02T00:35:13.250Z",
+    "headline": "Coutinho é relacionado e pode estrear pelo Santos no clássico",
+    "source_url": "https://www.terra.com.br/esportes/santos/coutinho-e-relacionado-e-pode-estrear-pelo-santos-no-classico,995296a86d4b4e134cea918fee1e8946eb6yrwqi.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-10-02T00:35:13.392Z",
+    "headline": "Santos enfrenta cobranças na Fifa por dívidas de dois zagueiros",
+    "source_url": "https://www.terra.com.br/esportes/santos/santos-enfrenta-cobrancas-na-fifa-por-dividas-de-dois-zagueiros,649f61ae9550479563ba918404d313337a0ljgay.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-10-02T00:35:13.504Z",
+    "headline": "Santos lança camisa especial para a campanha do Outubro Rosa",
+    "source_url": "https://www.terra.com.br/esportes/santos/santos-lanca-camisa-especial-para-a-campanha-do-outubro-rosa,bcbcd179b2e899179771a6b81dbf601fuf0yr3ib.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-10-02T00:35:13.616Z",
+    "headline": "Governo Lula assina concessão de CT Rei Pelé ao Santos por 40 anos",
+    "source_url": "https://www.terra.com.br/esportes/santos/governo-lula-assina-concessao-de-ct-rei-pele-ao-santos-por-40-anos,454b58b316fbfdc73ed19014061624bdaf24n05w.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-10-02T00:36:08.003Z",
+    "headline": "'Vingadores: Doutor Destino': Tudo o que se sabe sobre novo filme da Marvel",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/filmes/vingadores-doutor-destino-tudo-o-que-se-sabe-sobre-novo-filme-da-marvel,db3b34aa84907ac5ba0224c1eb243aa32fgw8u98.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Filmes",
+    "status": "FAILED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
   }
 ]
