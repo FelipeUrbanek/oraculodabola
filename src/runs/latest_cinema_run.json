@@ -1,12 +1,12 @@
 {
-  "timestamp": "2026-10-03T00:12:42.371Z",
+  "timestamp": "2026-10-03T15:52:03.741Z",
   "status": "COMPLETED_WITHOUT_POSTS",
   "postsPlanned": 1,
-  "candidatesFound": 10,
+  "candidatesFound": 9,
   "successfulPosts": [],
   "failedPosts": [
     {
-      "title": "Eddie Murphy estrelará nova série do criador de 'Mad Men'",
+      "title": "Digger, sátira controversa, coloca Tom Cruise na corrida pelo Oscar: 'Nunca vi um personagem assim'",
       "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
     }
   ]

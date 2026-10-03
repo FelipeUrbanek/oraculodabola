@@ -6711,5 +6711,77 @@
     "category": "Séries",
     "status": "FAILED",
     "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-10-03T15:51:58.074Z",
+    "headline": "Santos x Flamengo: em boa fase, clubes prometem 'jogão' pelo Brasileiro",
+    "source_url": "https://www.terra.com.br/esportes/flamengo/santos-x-flamengo-em-boa-fase-clubes-prometem-jogao-pelo-brasileiro,10042ba3e6b0ac5f60846cca4ae67c666anjocqt.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-10-03T15:51:58.219Z",
+    "headline": "Destaque do Santos, Gabigol alfineta o campo da Vila Belmiro",
+    "source_url": "https://www.terra.com.br/esportes/santos/destaque-do-santos-gabigol-alfineta-o-campo-da-vila-belmiro,f1dae3b3fa3934d91ac15cea1079aadc9tl8fw8x.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-10-03T15:51:58.359Z",
+    "headline": "\"Volta difícil, mas aguentei\", diz Coutinho após vitória em estreia",
+    "source_url": "https://www.terra.com.br/esportes/santos/volta-dificil-mas-aguentei-diz-coutinho-apos-vitoria-em-estreia,5eca5c71e3bffa0f5622ce872f5a1b28vdf9589e.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-10-03T15:51:58.490Z",
+    "headline": "Arboleda expõe falha do São Paulo após virada do Santos: \"Desconcentração\"",
+    "source_url": "https://www.terra.com.br/esportes/santos/arboleda-expoe-falha-do-sao-paulo-apos-virada-do-santos-desconcentracao,d314f1e62898f97f7bfdf30303278107tgy31px3.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-10-03T15:51:58.627Z",
+    "headline": "Coutinho abre o jogo após estreia pelo Santos: \"Novos ares\"",
+    "source_url": "https://www.terra.com.br/esportes/santos/coutinho-abre-o-jogo-apos-estreia-pelo-santos-novos-ares,1128bb8329ecdcb8759c1dd11704fb7e0llub4sb.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-10-03T15:51:58.739Z",
+    "headline": "Gabigol decide clássico e Santos vence São Paulo pelo Brasileirão",
+    "source_url": "https://www.terra.com.br/esportes/futebol/gabigol-decide-classico-e-santos-vence-sao-paulo-pelo-brasileirao,698a833ea320ea6ec01a1c2a507eee70afq6tv6s.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-10-03T15:51:58.840Z",
+    "headline": "Após clássico, Cuca explica melhora do Santos: \"Subimos de produção\"",
+    "source_url": "https://www.terra.com.br/esportes/santos/apos-classico-cuca-explica-melhora-do-santos-subimos-de-producao,80636ee210a9f8aee26911e795d5958cualdkxc8.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-10-03T15:52:47.970Z",
+    "headline": "Digger, sátira controversa, coloca Tom Cruise na corrida pelo Oscar: 'Nunca vi um personagem assim'",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/filmes/digger-satira-controversa-coloca-tom-cruise-na-corrida-pelo-oscar-nunca-vi-um-personagem-assim,6d88c26d8616197a62c5c88fc1fe8101wa5dgzwl.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Filmes",
+    "status": "FAILED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
   }
 ]
