@@ -1,12 +1,12 @@
 {
-  "timestamp": "2026-10-02T00:35:18.875Z",
+  "timestamp": "2026-10-03T00:12:42.371Z",
   "status": "COMPLETED_WITHOUT_POSTS",
   "postsPlanned": 1,
   "candidatesFound": 10,
   "successfulPosts": [],
   "failedPosts": [
     {
-      "title": "'Vingadores: Doutor Destino': Tudo o que se sabe sobre novo filme da Marvel",
+      "title": "Eddie Murphy estrelará nova série do criador de 'Mad Men'",
       "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
     }
   ]

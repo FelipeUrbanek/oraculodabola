@@ -6684,5 +6684,32 @@
     "category": "Filmes",
     "status": "FAILED",
     "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-10-03T00:12:37.482Z",
+    "headline": "Apesar de proibição, clássico entre São Paulo x Santos ainda tem publicidade de bets; entenda",
+    "source_url": "https://www.terra.com.br/esportes/futebol/brasileiro-serie-a/apesar-de-proibicao-classico-entre-sao-paulo-x-santos-ainda-tem-publicidade-de-bets-entenda,282403b1f285f586a0f3699705b1d21fb2ne9c79.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-10-03T00:12:37.616Z",
+    "headline": "Philippe Coutinho x São Paulo: veja o retrospecto do jogador do Santos",
+    "source_url": "https://www.terra.com.br/esportes/santos/philippe-coutinho-x-sao-paulo-veja-o-retrospecto-do-jogador-do-santos,28cc891ac1363b76e4ba1aa30de304c1ajtc3ps9.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-10-03T00:13:37.170Z",
+    "headline": "Eddie Murphy estrelará nova série do criador de 'Mad Men'",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/series/eddie-murphy-estrelara-nova-serie-do-criador-de-mad-men,ec9f1eeea89e5853ec821e3c51ad47f2e2gicyp3.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Séries",
+    "status": "FAILED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
   }
 ]
