@@ -6783,5 +6783,23 @@
     "category": "Filmes",
     "status": "FAILED",
     "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-10-07T00:24:53.549Z",
+    "headline": "Santos homenageia Naty Potira e cria núcleo de saúde da mulher",
+    "source_url": "https://www.terra.com.br/esportes/santos/santos-homenageia-naty-potira-e-cria-nucleo-de-saude-da-mulher,5c978e4cd8f2eeb28a74a1b6febe62aaifk1c281.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-10-07T00:25:52.566Z",
+    "headline": "Por que as séries turcas como 'Meu nome é Farah' e 'Sol da Minha Vida' são tão viciantes? Entenda",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/series/por-que-as-series-turcas-como-meu-nome-e-farah-e-sol-da-minha-vida-sao-tao-viciantes-entenda,8603d0486e6b528f62d097468ffce135qbeupseg.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Séries",
+    "status": "FAILED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
   }
 ]

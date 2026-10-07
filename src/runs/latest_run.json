@@ -1,43 +1,13 @@
 {
-  "timestamp": "2026-10-03T15:51:42.582Z",
+  "timestamp": "2026-10-07T00:24:40.663Z",
   "status": "COMPLETED",
   "postsPlanned": 1,
-  "candidatesFound": 11,
+  "candidatesFound": 7,
   "successfulPosts": [],
   "failedPosts": [
     {
       "category": "Santos",
-      "title": "Santos x Flamengo: em boa fase, clubes prometem 'jogão' pelo Brasileiro",
-      "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
-    },
-    {
-      "category": "Santos",
-      "title": "Destaque do Santos, Gabigol alfineta o campo da Vila Belmiro",
-      "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
-    },
-    {
-      "category": "Santos",
-      "title": "\"Volta difícil, mas aguentei\", diz Coutinho após vitória em estreia",
-      "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
-    },
-    {
-      "category": "Santos",
-      "title": "Arboleda expõe falha do São Paulo após virada do Santos: \"Desconcentração\"",
-      "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
-    },
-    {
-      "category": "Santos",
-      "title": "Coutinho abre o jogo após estreia pelo Santos: \"Novos ares\"",
-      "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
-    },
-    {
-      "category": "Santos",
-      "title": "Gabigol decide clássico e Santos vence São Paulo pelo Brasileirão",
-      "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
-    },
-    {
-      "category": "Santos",
-      "title": "Após clássico, Cuca explica melhora do Santos: \"Subimos de produção\"",
+      "title": "Santos homenageia Naty Potira e cria núcleo de saúde da mulher",
       "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
     }
   ]

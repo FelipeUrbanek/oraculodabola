@@ -1,12 +1,12 @@
 {
-  "timestamp": "2026-10-03T15:52:03.741Z",
+  "timestamp": "2026-10-07T00:24:56.790Z",
   "status": "COMPLETED_WITHOUT_POSTS",
   "postsPlanned": 1,
-  "candidatesFound": 9,
+  "candidatesFound": 7,
   "successfulPosts": [],
   "failedPosts": [
     {
-      "title": "Digger, sátira controversa, coloca Tom Cruise na corrida pelo Oscar: 'Nunca vi um personagem assim'",
+      "title": "Por que as séries turcas como 'Meu nome é Farah' e 'Sol da Minha Vida' são tão viciantes? Entenda",
       "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
     }
   ]

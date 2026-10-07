@@ -1,0 +1,14 @@
+{
+  "timestamp": "2026-10-07T00:24:40.663Z",
+  "status": "COMPLETED",
+  "postsPlanned": 1,
+  "candidatesFound": 7,
+  "successfulPosts": [],
+  "failedPosts": [
+    {
+      "category": "Santos",
+      "title": "Santos homenageia Naty Potira e cria núcleo de saúde da mulher",
+      "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+    }
+  ]
+}
