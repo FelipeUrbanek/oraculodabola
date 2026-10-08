@@ -1,13 +1,28 @@
 {
-  "timestamp": "2026-10-07T00:24:40.663Z",
+  "timestamp": "2026-10-08T00:45:23.275Z",
   "status": "COMPLETED",
   "postsPlanned": 1,
-  "candidatesFound": 7,
+  "candidatesFound": 11,
   "successfulPosts": [],
   "failedPosts": [
     {
       "category": "Santos",
-      "title": "Santos homenageia Naty Potira e cria núcleo de saúde da mulher",
+      "title": "Santos x Flamengo: Peixe encerra preparação no CT Rei Pelé e Gabriel Bontempo projeta grande duelo na Vila Belmiro",
+      "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+    },
+    {
+      "category": "Santos",
+      "title": "Santos: entenda como vai funcionar o novo patrocínio do clube",
+      "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+    },
+    {
+      "category": "Santos",
+      "title": "Dois titulares do Santos podem assinar com o Grêmio",
+      "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+    },
+    {
+      "category": "Santos",
+      "title": "Cruzeiro debate com Paulinho e define situação de Gabigol no Santos",
       "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
     }
   ]

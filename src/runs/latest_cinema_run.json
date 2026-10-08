@@ -1,12 +1,12 @@
 {
-  "timestamp": "2026-10-07T00:24:56.790Z",
+  "timestamp": "2026-10-08T00:45:45.972Z",
   "status": "COMPLETED_WITHOUT_POSTS",
   "postsPlanned": 1,
-  "candidatesFound": 7,
+  "candidatesFound": 11,
   "successfulPosts": [],
   "failedPosts": [
     {
-      "title": "Por que as séries turcas como 'Meu nome é Farah' e 'Sol da Minha Vida' são tão viciantes? Entenda",
+      "title": "É oficial: a Warner Bros. e a DC Studios suspendem a produção de 'The Batman Parte II' a pedido do diretor Matt Reeves",
       "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
     }
   ]

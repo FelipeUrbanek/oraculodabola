@@ -6801,5 +6801,50 @@
     "category": "Séries",
     "status": "FAILED",
     "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-10-08T00:45:41.817Z",
+    "headline": "Santos x Flamengo: Peixe encerra preparação no CT Rei Pelé e Gabriel Bontempo projeta grande duelo na Vila Belmiro",
+    "source_url": "https://www.terra.com.br/esportes/futebol/santos-x-flamengo-peixe-encerra-preparacao-no-ct-rei-pele-e-gabriel-bontempo-projeta-grande-duelo-na-vila-belmiro,4e553321e351b5be7a2f7b07b34681d47cfs4qh7.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-10-08T00:45:41.908Z",
+    "headline": "Santos: entenda como vai funcionar o novo patrocínio do clube",
+    "source_url": "https://www.terra.com.br/esportes/santos/santos-entenda-como-vai-funcionar-o-novo-patrocinio-do-clube,ea672befcfafd1f385c17e078ff6d855x26tye9s.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-10-08T00:45:42.004Z",
+    "headline": "Dois titulares do Santos podem assinar com o Grêmio",
+    "source_url": "https://www.terra.com.br/esportes/santos/dois-titulares-do-santos-podem-assinar-com-o-gremio,2884ef73cd36ffa28d0240cb39aa303cifn672nq.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-10-08T00:45:42.100Z",
+    "headline": "Cruzeiro debate com Paulinho e define situação de Gabigol no Santos",
+    "source_url": "https://www.terra.com.br/esportes/futebol/cruzeiro-debate-com-paulinho-e-define-situacao-de-gabigol-no-santos,5aac43f6963958c284784d4497303df3j1e09obv.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-10-08T00:46:40.784Z",
+    "headline": "É oficial: a Warner Bros. e a DC Studios suspendem a produção de 'The Batman Parte II' a pedido do diretor Matt Reeves",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/filmes/e-oficial-a-warner-bros-e-a-dc-studios-suspendem-a-producao-de-the-batman-parte-ii-a-pedido-do-diretor-matt-reeves,d3d7f96f2d2bf21cfd12aeae628aba268v6oro3p.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Filmes",
+    "status": "FAILED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
   }
 ]
