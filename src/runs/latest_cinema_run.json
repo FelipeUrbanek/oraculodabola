@@ -1,12 +1,12 @@
 {
-  "timestamp": "2026-10-08T00:45:45.972Z",
+  "timestamp": "2026-10-09T01:01:53.871Z",
   "status": "COMPLETED_WITHOUT_POSTS",
   "postsPlanned": 1,
-  "candidatesFound": 11,
+  "candidatesFound": 12,
   "successfulPosts": [],
   "failedPosts": [
     {
-      "title": "É oficial: a Warner Bros. e a DC Studios suspendem a produção de 'The Batman Parte II' a pedido do diretor Matt Reeves",
+      "title": "O filme foi um fracasso de bilheteria, mas Jack Nicholson, hoje aos 89 anos, não o esqueceu: 'A melhor coisa que já fiz'",
       "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
     }
   ]

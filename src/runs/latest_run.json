@@ -1,28 +1,23 @@
 {
-  "timestamp": "2026-10-08T00:45:23.275Z",
+  "timestamp": "2026-10-09T01:01:32.511Z",
   "status": "COMPLETED",
   "postsPlanned": 1,
-  "candidatesFound": 11,
+  "candidatesFound": 12,
   "successfulPosts": [],
   "failedPosts": [
     {
       "category": "Santos",
-      "title": "Santos x Flamengo: Peixe encerra preparação no CT Rei Pelé e Gabriel Bontempo projeta grande duelo na Vila Belmiro",
+      "title": "Santos e Flamengo empatam pelo Campeonato Brasileiro",
       "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
     },
     {
       "category": "Santos",
-      "title": "Santos: entenda como vai funcionar o novo patrocínio do clube",
+      "title": "Santos sofre novo transfer ban por dívida com auxiliar de Caixinha",
       "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
     },
     {
       "category": "Santos",
-      "title": "Dois titulares do Santos podem assinar com o Grêmio",
-      "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
-    },
-    {
-      "category": "Santos",
-      "title": "Cruzeiro debate com Paulinho e define situação de Gabigol no Santos",
+      "title": "Flamengo atua com protesto na parte nobre do uniforme",
       "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
     }
   ]

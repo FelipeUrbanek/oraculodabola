@@ -6846,5 +6846,41 @@
     "category": "Filmes",
     "status": "FAILED",
     "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-10-09T01:01:50.021Z",
+    "headline": "Santos e Flamengo empatam pelo Campeonato Brasileiro",
+    "source_url": "https://www.terra.com.br/esportes/santos-e-flamengo-empatam-pelo-campeonato-brasileiro,8ff352f3a733a8c414cda2ea8aed1be27iwuwxj1.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-10-09T01:01:50.128Z",
+    "headline": "Santos sofre novo transfer ban por dívida com auxiliar de Caixinha",
+    "source_url": "https://www.terra.com.br/esportes/santos/santos-sofre-novo-transfer-ban-por-divida-com-auxiliar-de-caixinha,b3e3789956aa64d5c73cb7cad5a00ca7z60rqkl9.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-10-09T01:01:50.235Z",
+    "headline": "Flamengo atua com protesto na parte nobre do uniforme",
+    "source_url": "https://www.terra.com.br/esportes/flamengo/flamengo-atua-com-protesto-na-parte-nobre-do-uniforme,98635451fe9e32986b01b762c1a83aa0orhcetuo.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-10-09T01:02:16.241Z",
+    "headline": "O filme foi um fracasso de bilheteria, mas Jack Nicholson, hoje aos 89 anos, não o esqueceu: 'A melhor coisa que já fiz'",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/filmes/o-filme-foi-um-fracasso-de-bilheteria-mas-jack-nicholson-hoje-aos-89-anos-nao-o-esqueceu-a-melhor-coisa-que-ja-fiz,96220c947e8cd9c9fa285adfd8d894afotszh7a7.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Filmes",
+    "status": "FAILED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
   }
 ]
