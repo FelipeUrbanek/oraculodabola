@@ -6882,5 +6882,23 @@
     "category": "Filmes",
     "status": "FAILED",
     "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-10-10T00:31:41.898Z",
+    "headline": "CBF divulga análise do VAR em Santos x Flamengo; Comissão vê acerto",
+    "source_url": "https://www.terra.com.br/esportes/flamengo/cbf-divulga-analise-do-var-em-santos-x-flamengo-comissao-ve-acerto,0a8fc092698ea7379816ca5b9b3648e00m67gz8o.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-10-10T00:32:06.940Z",
+    "headline": "Tom Cruise, aos 64 anos, minimiza o fracasso inicial de seu novo filme, 'Digger': 'Não estou pensando no fim de semana de estreia'",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/filmes/tom-cruise-aos-64-anos-minimiza-o-fracasso-inicial-de-seu-novo-filme-digger-nao-estou-pensando-no-fim-de-semana-de-estreia,14a2b2aa2182253bb9f345acbc2d31c197spgl69.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Filmes",
+    "status": "FAILED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
   }
 ]

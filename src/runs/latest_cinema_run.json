@@ -1,12 +1,12 @@
 {
-  "timestamp": "2026-10-09T01:01:53.871Z",
+  "timestamp": "2026-10-10T00:31:45.818Z",
   "status": "COMPLETED_WITHOUT_POSTS",
   "postsPlanned": 1,
-  "candidatesFound": 12,
+  "candidatesFound": 10,
   "successfulPosts": [],
   "failedPosts": [
     {
-      "title": "O filme foi um fracasso de bilheteria, mas Jack Nicholson, hoje aos 89 anos, não o esqueceu: 'A melhor coisa que já fiz'",
+      "title": "Tom Cruise, aos 64 anos, minimiza o fracasso inicial de seu novo filme, 'Digger': 'Não estou pensando no fim de semana de estreia'",
       "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
     }
   ]

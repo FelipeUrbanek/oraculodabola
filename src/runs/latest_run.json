@@ -1,23 +1,13 @@
 {
-  "timestamp": "2026-10-09T01:01:32.511Z",
+  "timestamp": "2026-10-10T00:31:23.250Z",
   "status": "COMPLETED",
   "postsPlanned": 1,
-  "candidatesFound": 12,
+  "candidatesFound": 10,
   "successfulPosts": [],
   "failedPosts": [
     {
       "category": "Santos",
-      "title": "Santos e Flamengo empatam pelo Campeonato Brasileiro",
-      "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
-    },
-    {
-      "category": "Santos",
-      "title": "Santos sofre novo transfer ban por dívida com auxiliar de Caixinha",
-      "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
-    },
-    {
-      "category": "Santos",
-      "title": "Flamengo atua com protesto na parte nobre do uniforme",
+      "title": "CBF divulga análise do VAR em Santos x Flamengo; Comissão vê acerto",
       "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
     }
   ]
