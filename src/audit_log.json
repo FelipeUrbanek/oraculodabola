@@ -6900,5 +6900,14 @@
     "category": "Filmes",
     "status": "FAILED",
     "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-10-11T00:10:00.566Z",
+    "headline": "Tony Ramos e Gloria Pires explicam motivo de retorno de 'Se Eu Fosse Você' e revelam pegadinha em cena famosa",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/filmes/tony-ramos-e-gloria-pires-explicam-motivo-de-retorno-de-se-eu-fosse-voce-e-revelam-pegadinha-em-cena-famosa,f430877fc1140003895672c3d7c86f60ifm570vd.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Filmes",
+    "status": "FAILED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
   }
 ]

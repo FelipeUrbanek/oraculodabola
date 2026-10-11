@@ -1,12 +1,12 @@
 {
-  "timestamp": "2026-10-10T00:31:45.818Z",
+  "timestamp": "2026-10-11T00:09:06.019Z",
   "status": "COMPLETED_WITHOUT_POSTS",
   "postsPlanned": 1,
-  "candidatesFound": 10,
+  "candidatesFound": 7,
   "successfulPosts": [],
   "failedPosts": [
     {
-      "title": "Tom Cruise, aos 64 anos, minimiza o fracasso inicial de seu novo filme, 'Digger': 'Não estou pensando no fim de semana de estreia'",
+      "title": "Tony Ramos e Gloria Pires explicam motivo de retorno de 'Se Eu Fosse Você' e revelam pegadinha em cena famosa",
       "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
     }
   ]
