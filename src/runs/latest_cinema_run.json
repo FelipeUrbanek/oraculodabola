@@ -1,12 +1,12 @@
 {
-  "timestamp": "2026-10-12T00:16:21.523Z",
+  "timestamp": "2026-10-12T21:01:19.012Z",
   "status": "COMPLETED_WITHOUT_POSTS",
   "postsPlanned": 1,
-  "candidatesFound": 4,
+  "candidatesFound": 6,
   "successfulPosts": [],
   "failedPosts": [
     {
-      "title": "5 filmes que marcaram a infância de várias gerações para voltarmos a ser crianças por um momento",
+      "title": "'Saí antes de terminar': Jack Nicholson, 89 anos, não conseguiu concluir uma das melhores trilogias do cinema de fantasia",
       "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
     }
   ]

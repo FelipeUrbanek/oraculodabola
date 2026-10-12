@@ -6954,5 +6954,86 @@
     "category": "Séries",
     "status": "FAILED",
     "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-10-12T21:01:14.446Z",
+    "headline": "Gabigol provoca Alexsander durante o jogo Atlético-MG x Santos",
+    "source_url": "https://www.terra.com.br/esportes/santos/gabigol-provoca-alexsander-durante-o-jogo-atletico-mg-x-santos,cbd06d5a91d5333bfc8872ddf56f54bd0xtaxlwg.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-10-12T21:01:14.538Z",
+    "headline": "Após nova falha, comissão do Santos avalia situação de Diógenes",
+    "source_url": "https://www.terra.com.br/esportes/santos/apos-nova-falha-comissao-do-santos-avalia-situacao-de-diogenes,0e4e96ceeb0b69e71a0847dea150ed8634zi9yyb.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-10-12T21:01:14.650Z",
+    "headline": "Gabigol rebate provocação do Atlético após revés do Santos",
+    "source_url": "https://www.terra.com.br/esportes/santos/gabigol-rebate-provocacao-do-atletico-apos-reves-do-santos,340800d809bdb503c135919e14cbfa4d60a0861b.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-10-12T21:01:14.800Z",
+    "headline": "Willian Arão recebe terceiro amarelo e desfalca o Santos no Maracanã",
+    "source_url": "https://www.terra.com.br/esportes/santos/willian-arao-recebe-terceiro-amarelo-e-desfalca-o-santos-no-maracana,42c57a841e08d0e3365cf2b420a75dcamsp1gpg9.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-10-12T21:01:14.922Z",
+    "headline": "Santos perde série invicta, mas mantém foco por vaga na Libertadores",
+    "source_url": "https://www.terra.com.br/esportes/santos/santos-perde-serie-invicta-mas-mantem-foco-por-vaga-na-libertadores,e439a834773f0f66b0a769214ee3862difjsjpzt.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-10-12T21:01:15.031Z",
+    "headline": "Cuca lamenta derrota do Santos nos acréscimos: \"Pior dos sabores que pode existir\"",
+    "source_url": "https://www.terra.com.br/esportes/santos/cuca-lamenta-derrota-do-santos-nos-acrescimos-pior-dos-sabores-que-pode-existir,9dfd2fdfd3ccf87fc6ae981029ded0c9899h7gwy.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-10-12T21:01:15.179Z",
+    "headline": "Grêmio mira retorno de Arthur e Everton Cebolinha em 2027; saiba detalhes",
+    "source_url": "https://www.terra.com.br/esportes/futebol/gremio-mira-retorno-de-arthur-e-everton-cebolinha-em-2027-saiba-detalhes,c1e263920b53d5a829f2fb637a8f0c8a4l1o5tby.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-10-12T21:01:15.280Z",
+    "headline": "Transfer ban: veja dívidas e punições dos clubes brasileiros",
+    "source_url": "https://www.terra.com.br/esportes/futebol/transfer-ban-veja-dividas-e-punicoes-dos-clubes-brasileiros,4f8ed5da369339faf9897d0c315d02d2ifbw7oaa.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-10-12T21:02:14.753Z",
+    "headline": "'Saí antes de terminar': Jack Nicholson, 89 anos, não conseguiu concluir uma das melhores trilogias do cinema de fantasia",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/filmes/sai-antes-de-terminar-jack-nicholson-89-anos-nao-conseguiu-concluir-uma-das-melhores-trilogias-do-cinema-de-fantasia,46d6f6bf658448615cd7f540cc1f35c453awpqpc.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Filmes",
+    "status": "FAILED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
   }
 ]

@@ -1,0 +1,49 @@
+{
+  "timestamp": "2026-10-12T21:00:56.837Z",
+  "status": "COMPLETED",
+  "postsPlanned": 1,
+  "candidatesFound": 12,
+  "successfulPosts": [],
+  "failedPosts": [
+    {
+      "category": "Santos",
+      "title": "Gabigol provoca Alexsander durante o jogo Atlético-MG x Santos",
+      "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+    },
+    {
+      "category": "Santos",
+      "title": "Após nova falha, comissão do Santos avalia situação de Diógenes",
+      "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+    },
+    {
+      "category": "Santos",
+      "title": "Gabigol rebate provocação do Atlético após revés do Santos",
+      "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+    },
+    {
+      "category": "Santos",
+      "title": "Willian Arão recebe terceiro amarelo e desfalca o Santos no Maracanã",
+      "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+    },
+    {
+      "category": "Santos",
+      "title": "Santos perde série invicta, mas mantém foco por vaga na Libertadores",
+      "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+    },
+    {
+      "category": "Santos",
+      "title": "Cuca lamenta derrota do Santos nos acréscimos: \"Pior dos sabores que pode existir\"",
+      "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+    },
+    {
+      "category": "Santos",
+      "title": "Grêmio mira retorno de Arthur e Everton Cebolinha em 2027; saiba detalhes",
+      "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+    },
+    {
+      "category": "Santos",
+      "title": "Transfer ban: veja dívidas e punições dos clubes brasileiros",
+      "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+    }
+  ]
+}
