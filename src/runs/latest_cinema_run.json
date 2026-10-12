@@ -1,12 +1,12 @@
 {
-  "timestamp": "2026-10-11T00:09:06.019Z",
+  "timestamp": "2026-10-12T00:16:21.523Z",
   "status": "COMPLETED_WITHOUT_POSTS",
   "postsPlanned": 1,
-  "candidatesFound": 7,
+  "candidatesFound": 4,
   "successfulPosts": [],
   "failedPosts": [
     {
-      "title": "Tony Ramos e Gloria Pires explicam motivo de retorno de 'Se Eu Fosse Você' e revelam pegadinha em cena famosa",
+      "title": "5 filmes que marcaram a infância de várias gerações para voltarmos a ser crianças por um momento",
       "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
     }
   ]

@@ -6909,5 +6909,50 @@
     "category": "Filmes",
     "status": "FAILED",
     "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-10-12T00:16:15.948Z",
+    "headline": "Veja chances de título e Libertadores e risco de Z4 após a 30ª Rodada",
+    "source_url": "https://www.terra.com.br/esportes/futebol/libertadores/veja-chances-de-titulo-e-libertadores-e-risco-de-z4-apos-a-30-rodada,33681afb97a6063addf682b205d4ef277vnkk9g8.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-10-12T00:16:16.060Z",
+    "headline": "Confusão marca fim de Atlético x Santos após virada emocionante na Arena MRV",
+    "source_url": "https://www.terra.com.br/esportes/confusao-marca-fim-de-atletico-x-santos-apos-virada-emocionante-na-arena-mrv,6b7421df8f42c346bff1102a25e790346fbfooxu.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-10-12T00:16:16.170Z",
+    "headline": "Cuca comenta revés do Santos: \"Devíamos ter segurado o resultado\"",
+    "source_url": "https://www.terra.com.br/esportes/santos/cuca-comenta-reves-do-santos-deviamos-ter-segurado-o-resultado,7808980f3e89e3ac7ae67c7646dffa1aid506rcv.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-10-12T00:16:16.280Z",
+    "headline": "Rodinei aponta erro decisivo do Santos após derrota para o Atlético-MG; veja",
+    "source_url": "https://www.terra.com.br/esportes/santos/rodinei-aponta-erro-decisivo-do-santos-apos-derrota-para-o-atletico-mg-veja,4cc2e52168469fee5764b57e6d840bdbhjzspxyq.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-10-12T00:17:11.936Z",
+    "headline": "5 filmes que marcaram a infância de várias gerações para voltarmos a ser crianças por um momento",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/series/5-filmes-que-marcaram-a-infancia-de-varias-geracoes-para-voltarmos-a-ser-criancas-por-um-momento,8d5721f73b1727522542ea6b2e521428j4j8pfcq.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Séries",
+    "status": "FAILED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
   }
 ]

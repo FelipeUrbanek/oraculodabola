@@ -1,13 +1,28 @@
 {
-  "timestamp": "2026-10-10T00:31:23.250Z",
+  "timestamp": "2026-10-12T00:16:01.282Z",
   "status": "COMPLETED",
   "postsPlanned": 1,
-  "candidatesFound": 10,
+  "candidatesFound": 12,
   "successfulPosts": [],
   "failedPosts": [
     {
       "category": "Santos",
-      "title": "CBF divulga análise do VAR em Santos x Flamengo; Comissão vê acerto",
+      "title": "Veja chances de título e Libertadores e risco de Z4 após a 30ª Rodada",
+      "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+    },
+    {
+      "category": "Santos",
+      "title": "Confusão marca fim de Atlético x Santos após virada emocionante na Arena MRV",
+      "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+    },
+    {
+      "category": "Santos",
+      "title": "Cuca comenta revés do Santos: \"Devíamos ter segurado o resultado\"",
+      "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+    },
+    {
+      "category": "Santos",
+      "title": "Rodinei aponta erro decisivo do Santos após derrota para o Atlético-MG; veja",
       "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
     }
   ]

@@ -1,0 +1,29 @@
+{
+  "timestamp": "2026-10-12T00:16:01.282Z",
+  "status": "COMPLETED",
+  "postsPlanned": 1,
+  "candidatesFound": 12,
+  "successfulPosts": [],
+  "failedPosts": [
+    {
+      "category": "Santos",
+      "title": "Veja chances de título e Libertadores e risco de Z4 após a 30ª Rodada",
+      "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+    },
+    {
+      "category": "Santos",
+      "title": "Confusão marca fim de Atlético x Santos após virada emocionante na Arena MRV",
+      "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+    },
+    {
+      "category": "Santos",
+      "title": "Cuca comenta revés do Santos: \"Devíamos ter segurado o resultado\"",
+      "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+    },
+    {
+      "category": "Santos",
+      "title": "Rodinei aponta erro decisivo do Santos após derrota para o Atlético-MG; veja",
+      "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+    }
+  ]
+}
