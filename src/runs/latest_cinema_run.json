@@ -1,12 +1,12 @@
 {
-  "timestamp": "2026-10-12T21:01:19.012Z",
+  "timestamp": "2026-10-14T00:11:32.922Z",
   "status": "COMPLETED_WITHOUT_POSTS",
   "postsPlanned": 1,
-  "candidatesFound": 6,
+  "candidatesFound": 12,
   "successfulPosts": [],
   "failedPosts": [
     {
-      "title": "'Saí antes de terminar': Jack Nicholson, 89 anos, não conseguiu concluir uma das melhores trilogias do cinema de fantasia",
+      "title": "'Hope' é um blockbuster que coloca a humanidade em seu devido lugar",
       "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
     }
   ]

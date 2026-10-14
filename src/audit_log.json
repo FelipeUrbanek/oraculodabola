@@ -7035,5 +7035,41 @@
     "category": "Filmes",
     "status": "FAILED",
     "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-10-14T00:11:28.204Z",
+    "headline": "Santos lança nova camisa em homenagem a Pelé",
+    "source_url": "https://www.terra.com.br/esportes/santos/santos-lanca-nova-camisa-em-homenagem-a-pele,a53766ce3bd137bffd8b75677e0a239e13tn7a4y.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-10-14T00:11:28.332Z",
+    "headline": "Santos paga dívidas e derruba três transfer bans, mas segue com quatro punições",
+    "source_url": "https://www.terra.com.br/esportes/santos/santos-paga-dividas-e-derruba-tres-transfer-bans-mas-segue-com-quatro-punicoes,088f1e840eda58bb2b380dcdee214d2b3l5n7304.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-10-14T00:11:28.460Z",
+    "headline": "Santos mira novidades na Vila Belmiro durante pausa",
+    "source_url": "https://www.terra.com.br/esportes/santos/santos-mira-novidades-na-vila-belmiro-durante-pausa,5a4c370d2c1f8ffd45d886d596ab44a5oxaan3kq.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-10-14T00:11:59.190Z",
+    "headline": "'Hope' é um blockbuster que coloca a humanidade em seu devido lugar",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/filmes/hope-e-um-blockbuster-que-coloca-a-humanidade-em-seu-devido-lugar,7b1f1e7ce3e1cb597aba7afd9fea71b9dafxh9rt.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Filmes",
+    "status": "FAILED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
   }
 ]
