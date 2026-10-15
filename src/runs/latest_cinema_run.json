@@ -1,12 +1,12 @@
 {
-  "timestamp": "2026-10-14T00:11:32.922Z",
+  "timestamp": "2026-10-15T16:29:04.092Z",
   "status": "COMPLETED_WITHOUT_POSTS",
   "postsPlanned": 1,
-  "candidatesFound": 12,
+  "candidatesFound": 9,
   "successfulPosts": [],
   "failedPosts": [
     {
-      "title": "'Hope' é um blockbuster que coloca a humanidade em seu devido lugar",
+      "title": "Karim Aïnouz faz sátira de família de super-ricos em 'Rosebush Pruning': 'Personagens quebrados'",
       "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
     }
   ]

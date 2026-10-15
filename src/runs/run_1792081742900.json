@@ -1,0 +1,29 @@
+{
+  "timestamp": "2026-10-15T16:28:48.558Z",
+  "status": "COMPLETED",
+  "postsPlanned": 1,
+  "candidatesFound": 4,
+  "successfulPosts": [],
+  "failedPosts": [
+    {
+      "category": "Santos",
+      "title": "Santos perde Willian Arão por três semanas e amplia lista de baixas",
+      "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+    },
+    {
+      "category": "Santos",
+      "title": "Santos tem baixa confirmada e novidade para enfrentar o Fluminense",
+      "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+    },
+    {
+      "category": "Santos",
+      "title": "Santos acumula desfalques para pegar o Flu, e Cuca prepara mudanças",
+      "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+    },
+    {
+      "category": "Santos",
+      "title": "Calote? Santos ainda não recebeu valor milionário dos Emirados Árabes",
+      "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+    }
+  ]
+}

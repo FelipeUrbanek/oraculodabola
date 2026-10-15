@@ -7071,5 +7071,50 @@
     "category": "Filmes",
     "status": "FAILED",
     "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-10-15T16:28:59.838Z",
+    "headline": "Santos perde Willian Arão por três semanas e amplia lista de baixas",
+    "source_url": "https://www.terra.com.br/esportes/santos/santos-perde-willian-arao-por-tres-semanas-e-amplia-lista-de-baixas,a7ab2cdfc31966625e86490473c2076dhuwfjy10.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-10-15T16:28:59.984Z",
+    "headline": "Santos tem baixa confirmada e novidade para enfrentar o Fluminense",
+    "source_url": "https://www.terra.com.br/esportes/santos/santos-tem-baixa-confirmada-e-novidade-para-enfrentar-o-fluminense,65b0f5b62bb3307694a35d20b1fd73bc70vtier0.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-10-15T16:29:00.136Z",
+    "headline": "Santos acumula desfalques para pegar o Flu, e Cuca prepara mudanças",
+    "source_url": "https://www.terra.com.br/esportes/craques/neymar/santos-acumula-desfalques-para-pegar-o-flu-e-cuca-prepara-mudancas,d4e7405bf382a20dde20c4d7b858d0d28v3sy07u.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-10-15T16:29:00.284Z",
+    "headline": "Calote? Santos ainda não recebeu valor milionário dos Emirados Árabes",
+    "source_url": "https://www.terra.com.br/esportes/santos/calote-santos-ainda-nao-recebeu-valor-milionario-dos-emirados-arabes,7529badebcbe39b5e3ae81580b67a989yvxdqo5l.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-10-15T16:30:00.711Z",
+    "headline": "Karim Aïnouz faz sátira de família de super-ricos em 'Rosebush Pruning': 'Personagens quebrados'",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/filmes/karim-ainouz-faz-satira-de-familia-de-super-ricos-em-rosebush-pruning-personagens-quebrados,5721c0a7e31e23be93cec3b92f4303d61670ghzz.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Filmes",
+    "status": "FAILED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
   }
 ]
