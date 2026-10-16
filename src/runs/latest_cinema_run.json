@@ -1,12 +1,12 @@
 {
-  "timestamp": "2026-10-15T16:29:04.092Z",
+  "timestamp": "2026-10-16T16:14:24.327Z",
   "status": "COMPLETED_WITHOUT_POSTS",
   "postsPlanned": 1,
-  "candidatesFound": 9,
+  "candidatesFound": 10,
   "successfulPosts": [],
   "failedPosts": [
     {
-      "title": "Karim Aïnouz faz sátira de família de super-ricos em 'Rosebush Pruning': 'Personagens quebrados'",
+      "title": "Steven Soderbergh entra em 'Batman 2' para concluir filmagens após pausa de Matt Reeves",
       "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
     }
   ]

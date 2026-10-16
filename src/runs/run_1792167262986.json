@@ -1,0 +1,19 @@
+{
+  "timestamp": "2026-10-16T16:14:08.134Z",
+  "status": "COMPLETED",
+  "postsPlanned": 1,
+  "candidatesFound": 7,
+  "successfulPosts": [],
+  "failedPosts": [
+    {
+      "category": "Santos",
+      "title": "Apagões defensivos distanciam Santos de vaga na Libertadores",
+      "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+    },
+    {
+      "category": "Santos",
+      "title": "Santos tem preocupação para enfrentar o Fluminense e Cuca testa alternativa",
+      "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+    }
+  ]
+}

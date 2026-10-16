@@ -7116,5 +7116,32 @@
     "category": "Filmes",
     "status": "FAILED",
     "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-10-16T16:14:20.457Z",
+    "headline": "Apagões defensivos distanciam Santos de vaga na Libertadores",
+    "source_url": "https://www.terra.com.br/esportes/santos/apagoes-defensivos-distanciam-santos-de-vaga-na-libertadores,db3db1d2e606903107d29b2177569f51seoiflso.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-10-16T16:14:20.624Z",
+    "headline": "Santos tem preocupação para enfrentar o Fluminense e Cuca testa alternativa",
+    "source_url": "https://www.terra.com.br/esportes/santos/santos-tem-preocupacao-para-enfrentar-o-fluminense-e-cuca-testa-alternativa,870ca905a0b44e98bd89a8fb6e486e601je3ihb4.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-10-16T16:15:40.432Z",
+    "headline": "Steven Soderbergh entra em 'Batman 2' para concluir filmagens após pausa de Matt Reeves",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/filmes/steven-soderbergh-entra-em-batman-2-para-concluir-filmagens-apos-pausa-de-matt-reeves,a0b8790e3ef98a0ab33dd6f5abe3f2d82a9ibaz3.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Filmes",
+    "status": "FAILED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
   }
 ]

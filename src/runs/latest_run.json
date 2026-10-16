@@ -1,28 +1,18 @@
 {
-  "timestamp": "2026-10-15T16:28:48.558Z",
+  "timestamp": "2026-10-16T16:14:08.134Z",
   "status": "COMPLETED",
   "postsPlanned": 1,
-  "candidatesFound": 4,
+  "candidatesFound": 7,
   "successfulPosts": [],
   "failedPosts": [
     {
       "category": "Santos",
-      "title": "Santos perde Willian Arão por três semanas e amplia lista de baixas",
+      "title": "Apagões defensivos distanciam Santos de vaga na Libertadores",
       "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
     },
     {
       "category": "Santos",
-      "title": "Santos tem baixa confirmada e novidade para enfrentar o Fluminense",
-      "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
-    },
-    {
-      "category": "Santos",
-      "title": "Santos acumula desfalques para pegar o Flu, e Cuca prepara mudanças",
-      "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
-    },
-    {
-      "category": "Santos",
-      "title": "Calote? Santos ainda não recebeu valor milionário dos Emirados Árabes",
+      "title": "Santos tem preocupação para enfrentar o Fluminense e Cuca testa alternativa",
       "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
     }
   ]
