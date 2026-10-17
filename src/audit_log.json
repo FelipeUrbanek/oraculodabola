@@ -7143,5 +7143,32 @@
     "category": "Filmes",
     "status": "FAILED",
     "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-10-17T15:08:00.812Z",
+    "headline": "Cuca deve escalar um Santos ofensivo com \"quarteto mágico\" no ataque",
+    "source_url": "https://www.terra.com.br/esportes/santos/cuca-deve-escalar-um-santos-ofensivo-com-quarteto-magico-no-ataque,c9db087b3c6e51991754a46be7f854738pv2dv78.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-10-17T15:08:01.019Z",
+    "headline": "Santos anuncia nova patrocinadora máster até o fim da temporada",
+    "source_url": "https://www.terra.com.br/esportes/santos/santos-anuncia-nova-patrocinadora-master-ate-o-fim-da-temporada,4ec9964791228099491bd696b33826fa059fixr2.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-10-17T15:08:39.747Z",
+    "headline": "S.S. Rajamouli, diretor de 'RRR', dará masterclass na Mostra de São Paulo",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/filmes/ss-rajamouli-diretor-de-rrr-dara-masterclass-na-mostra-de-sao-paulo,a9185b89c9797b96674089dbffd951eechbvdr7m.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Filmes",
+    "status": "FAILED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
   }
 ]

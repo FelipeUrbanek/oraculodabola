@@ -1,18 +1,18 @@
 {
-  "timestamp": "2026-10-16T16:14:08.134Z",
+  "timestamp": "2026-10-17T15:07:51.680Z",
   "status": "COMPLETED",
   "postsPlanned": 1,
-  "candidatesFound": 7,
+  "candidatesFound": 3,
   "successfulPosts": [],
   "failedPosts": [
     {
       "category": "Santos",
-      "title": "Apagões defensivos distanciam Santos de vaga na Libertadores",
+      "title": "Cuca deve escalar um Santos ofensivo com \"quarteto mágico\" no ataque",
       "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
     },
     {
       "category": "Santos",
-      "title": "Santos tem preocupação para enfrentar o Fluminense e Cuca testa alternativa",
+      "title": "Santos anuncia nova patrocinadora máster até o fim da temporada",
       "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
     }
   ]

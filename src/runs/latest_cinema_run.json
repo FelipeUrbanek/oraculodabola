@@ -1,12 +1,12 @@
 {
-  "timestamp": "2026-10-16T16:14:24.327Z",
+  "timestamp": "2026-10-17T15:08:04.819Z",
   "status": "COMPLETED_WITHOUT_POSTS",
   "postsPlanned": 1,
-  "candidatesFound": 10,
+  "candidatesFound": 13,
   "successfulPosts": [],
   "failedPosts": [
     {
-      "title": "Steven Soderbergh entra em 'Batman 2' para concluir filmagens após pausa de Matt Reeves",
+      "title": "S.S. Rajamouli, diretor de 'RRR', dará masterclass na Mostra de São Paulo",
       "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
     }
   ]
