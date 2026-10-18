@@ -1,12 +1,12 @@
 {
-  "timestamp": "2026-10-17T15:08:04.819Z",
+  "timestamp": "2026-10-18T15:30:56.452Z",
   "status": "COMPLETED_WITHOUT_POSTS",
   "postsPlanned": 1,
-  "candidatesFound": 13,
+  "candidatesFound": 11,
   "successfulPosts": [],
   "failedPosts": [
     {
-      "title": "S.S. Rajamouli, diretor de 'RRR', dará masterclass na Mostra de São Paulo",
+      "title": "Ela fez sucesso em 'Mulher-Maravilha' e 'Carrie",
       "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
     }
   ]

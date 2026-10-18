@@ -1,0 +1,14 @@
+{
+  "timestamp": "2026-10-18T15:30:39.208Z",
+  "status": "COMPLETED",
+  "postsPlanned": 1,
+  "candidatesFound": 7,
+  "successfulPosts": [],
+  "failedPosts": [
+    {
+      "category": "Santos",
+      "title": "Fluminense se apega ao bom desempenho como mandante diante do Santos",
+      "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+    }
+  ]
+}

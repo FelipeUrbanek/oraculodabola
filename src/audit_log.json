@@ -7170,5 +7170,23 @@
     "category": "Filmes",
     "status": "FAILED",
     "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-10-18T15:30:52.323Z",
+    "headline": "Fluminense se apega ao bom desempenho como mandante diante do Santos",
+    "source_url": "https://www.terra.com.br/esportes/fluminense/fluminense-se-apega-ao-bom-desempenho-como-mandante-diante-do-santos,5fd1b5cdada6b16c1d7d8e3d841f6e63iex0a20h.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-10-18T15:32:13.498Z",
+    "headline": "Ela fez sucesso em 'Mulher-Maravilha' e 'Carrie",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/filmes/ela-fez-sucesso-em-mulher-maravilha-e-carrie-a-estranha-mas-deixou-a-carreira-de-atriz-para-trabalhar-como-doula-da-morte-hoje-aos-37-anos-estrela-de-hollywood-acompanha-pessoas-no-fim-da-vida,77129d3f9f1e3fce9910b2afe72dea9d4etnsvho.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Filmes",
+    "status": "FAILED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
   }
 ]

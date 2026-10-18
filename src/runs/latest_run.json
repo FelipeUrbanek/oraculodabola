@@ -1,18 +1,13 @@
 {
-  "timestamp": "2026-10-17T15:07:51.680Z",
+  "timestamp": "2026-10-18T15:30:39.208Z",
   "status": "COMPLETED",
   "postsPlanned": 1,
-  "candidatesFound": 3,
+  "candidatesFound": 7,
   "successfulPosts": [],
   "failedPosts": [
     {
       "category": "Santos",
-      "title": "Cuca deve escalar um Santos ofensivo com \"quarteto mágico\" no ataque",
-      "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
-    },
-    {
-      "category": "Santos",
-      "title": "Santos anuncia nova patrocinadora máster até o fim da temporada",
+      "title": "Fluminense se apega ao bom desempenho como mandante diante do Santos",
       "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
     }
   ]
