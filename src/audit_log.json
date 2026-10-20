@@ -7215,5 +7215,59 @@
     "category": "Filmes",
     "status": "FAILED",
     "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-10-20T16:29:13.118Z",
+    "headline": "Por Libertadores, Santos quer repetir na Vila força exibida fora de casa",
+    "source_url": "https://www.terra.com.br/esportes/santos/por-libertadores-santos-quer-repetir-na-vila-forca-exibida-fora-de-casa,d8bcd20df4a92f76e04c3303c6074c8aw1d1g97g.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-10-20T16:29:13.276Z",
+    "headline": "12 clubes da Série A têm débitos pendentes com a CBF, diz agência",
+    "source_url": "https://www.terra.com.br/esportes/botafogo/12-clubes-da-serie-a-tem-debitos-pendentes-com-a-cbf-diz-agencia,900eb0a2efc49f85ce0da988acc95cb07sgf4d60.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-10-20T16:29:13.438Z",
+    "headline": "Coutinho reencontra a felicidade no Santos e conquista equipe, diz fonte",
+    "source_url": "https://www.terra.com.br/esportes/santos/coutinho-reencontra-a-felicidade-no-santos-e-conquista-equipe-diz-fonte,122dfd9d79ca4739a5981596c4bacefdjfza5wfw.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-10-20T16:29:13.599Z",
+    "headline": "Cofres cheios! Santos recebe bolada dos Emirados Árabes",
+    "source_url": "https://www.terra.com.br/esportes/santos/cofres-cheios-santos-recebe-bolada-dos-emirados-arabes,22520cbbbb541808d7ffcab7ce1f300fnwspeq81.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-10-20T16:29:13.747Z",
+    "headline": "Zagueiro do Santos rebate pergunta após gol sofrido pelo Santos",
+    "source_url": "https://www.terra.com.br/esportes/santos/zagueiro-do-santos-rebate-pergunta-apos-gol-sofrido-pelo-santos,9f63813fda0cc0bf63b60fb1e9ca980f65ybhcu4.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-10-20T16:30:52.752Z",
+    "headline": "Como 'Sobrevivência': 5 filmes de suspense para ver no streaming no fim de semana",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/series/como-sobrevivencia-5-filmes-de-suspense-para-ver-no-streaming-no-fim-de-semana,f320e8bc78a330ef5b8a857d4ca88dc7aw7oakhp.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Séries",
+    "status": "FAILED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
   }
 ]

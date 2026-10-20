@@ -1,0 +1,34 @@
+{
+  "timestamp": "2026-10-20T16:28:55.339Z",
+  "status": "COMPLETED",
+  "postsPlanned": 1,
+  "candidatesFound": 11,
+  "successfulPosts": [],
+  "failedPosts": [
+    {
+      "category": "Santos",
+      "title": "Por Libertadores, Santos quer repetir na Vila força exibida fora de casa",
+      "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+    },
+    {
+      "category": "Santos",
+      "title": "12 clubes da Série A têm débitos pendentes com a CBF, diz agência",
+      "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+    },
+    {
+      "category": "Santos",
+      "title": "Coutinho reencontra a felicidade no Santos e conquista equipe, diz fonte",
+      "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+    },
+    {
+      "category": "Santos",
+      "title": "Cofres cheios! Santos recebe bolada dos Emirados Árabes",
+      "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+    },
+    {
+      "category": "Santos",
+      "title": "Zagueiro do Santos rebate pergunta após gol sofrido pelo Santos",
+      "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+    }
+  ]
+}

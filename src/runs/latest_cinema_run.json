@@ -1,12 +1,12 @@
 {
-  "timestamp": "2026-10-20T00:08:56.347Z",
+  "timestamp": "2026-10-20T16:29:18.112Z",
   "status": "COMPLETED_WITHOUT_POSTS",
   "postsPlanned": 1,
-  "candidatesFound": 9,
+  "candidatesFound": 8,
   "successfulPosts": [],
   "failedPosts": [
     {
-      "title": "Nada de descanso: depois de 4 filmes e uma série em 2026, Zendaya já faz parte do elenco de um projeto de ficção científica em 2027",
+      "title": "Como 'Sobrevivência': 5 filmes de suspense para ver no streaming no fim de semana",
       "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
     }
   ]
