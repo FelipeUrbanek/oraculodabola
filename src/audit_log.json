@@ -7188,5 +7188,32 @@
     "category": "Filmes",
     "status": "FAILED",
     "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-10-20T00:08:53.084Z",
+    "headline": "Zagueiro do Santos rebate pergunta após gol sofrido pelo Santos",
+    "source_url": "https://www.terra.com.br/esportes/santos/zagueiro-do-santos-rebate-pergunta-apos-gol-sofrido-pelo-santos,9f63813fda0cc0bf63b60fb1e9ca980f65ybhcu4.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-10-20T00:08:53.218Z",
+    "headline": "Zagueiro titular sente a coxa e Santos pode ter nova baixa no fim da temporada",
+    "source_url": "https://www.terra.com.br/esportes/santos/zagueiro-titular-sente-a-coxa-e-santos-pode-ter-nova-baixa-no-fim-da-temporada,6a1b093d03752f793d8980cd62c22b8du9oafsih.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-10-20T00:10:04.141Z",
+    "headline": "Nada de descanso: depois de 4 filmes e uma série em 2026, Zendaya já faz parte do elenco de um projeto de ficção científica em 2027",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/filmes/nada-de-descanso-depois-de-4-filmes-e-uma-serie-em-2026-zendaya-ja-faz-parte-do-elenco-de-um-projeto-de-ficcao-cientifica-em-2027,3d03ee8831e9814b297e8d1d11b0b8d4gcokqwt4.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Filmes",
+    "status": "FAILED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
   }
 ]

@@ -1,0 +1,19 @@
+{
+  "timestamp": "2026-10-20T00:08:38.400Z",
+  "status": "COMPLETED",
+  "postsPlanned": 1,
+  "candidatesFound": 10,
+  "successfulPosts": [],
+  "failedPosts": [
+    {
+      "category": "Santos",
+      "title": "Zagueiro do Santos rebate pergunta após gol sofrido pelo Santos",
+      "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+    },
+    {
+      "category": "Santos",
+      "title": "Zagueiro titular sente a coxa e Santos pode ter nova baixa no fim da temporada",
+      "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+    }
+  ]
+}

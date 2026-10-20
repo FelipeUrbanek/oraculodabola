@@ -1,12 +1,12 @@
 {
-  "timestamp": "2026-10-18T15:30:56.452Z",
+  "timestamp": "2026-10-20T00:08:56.347Z",
   "status": "COMPLETED_WITHOUT_POSTS",
   "postsPlanned": 1,
-  "candidatesFound": 11,
+  "candidatesFound": 9,
   "successfulPosts": [],
   "failedPosts": [
     {
-      "title": "Ela fez sucesso em 'Mulher-Maravilha' e 'Carrie",
+      "title": "Nada de descanso: depois de 4 filmes e uma série em 2026, Zendaya já faz parte do elenco de um projeto de ficção científica em 2027",
       "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
     }
   ]
