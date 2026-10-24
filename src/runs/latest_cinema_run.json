@@ -1,12 +1,12 @@
 {
-  "timestamp": "2026-10-20T16:29:18.112Z",
+  "timestamp": "2026-10-24T15:32:01.205Z",
   "status": "COMPLETED_WITHOUT_POSTS",
   "postsPlanned": 1,
-  "candidatesFound": 8,
+  "candidatesFound": 14,
   "successfulPosts": [],
   "failedPosts": [
     {
-      "title": "Como 'Sobrevivência': 5 filmes de suspense para ver no streaming no fim de semana",
+      "title": "Terror corporal chega ao universo dos super-heróis com 'Cara-de-Barro', novo filme da DC",
       "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
     }
   ]

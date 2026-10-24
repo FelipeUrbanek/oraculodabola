@@ -7269,5 +7269,59 @@
     "category": "Séries",
     "status": "FAILED",
     "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-10-24T15:31:56.757Z",
+    "headline": "Botafogo deve ao Santos por negociações de 2024 e 2025; saiba detalhes",
+    "source_url": "https://www.terra.com.br/esportes/futebol/botafogo-deve-ao-santos-por-negociacoes-de-2024-e-2025-saiba-detalhes,b8d6c6843d18ed5c955dd757e9556ddcec2q7cou.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-10-24T15:31:56.840Z",
+    "headline": "Vila Belmiro terá locais interditados para o próximo jogo do Santos",
+    "source_url": "https://www.terra.com.br/esportes/santos/vila-belmiro-tera-locais-interditados-para-o-proximo-jogo-do-santos,55a18442b5720c790cd5dad89ad051a312aod8by.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-10-24T15:31:56.944Z",
+    "headline": "Eliminação do Flamengo pode custar caro para São Paulo e Santos; entenda",
+    "source_url": "https://www.terra.com.br/esportes/santos/eliminacao-do-flamengo-pode-custar-caro-para-sao-paulo-e-santos-entenda,113798a22a61833321ddedbc7c7a024fjs6seukc.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-10-24T15:31:57.045Z",
+    "headline": "Dirigente do Santos alfineta e manda indireta para o Botafogo",
+    "source_url": "https://www.terra.com.br/esportes/santos/dirigente-do-santos-alfineta-e-manda-indireta-para-o-botafogo,607ecc48b78671cf7f3bcc94d941e689fh75b8xq.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-10-24T15:31:57.166Z",
+    "headline": "Santos tenta Neo Química Arena, mas confirma clássico na Vila Belmiro",
+    "source_url": "https://www.terra.com.br/esportes/corinthians/santos-tenta-neo-quimica-arena-mas-confirma-classico-na-vila-belmiro,b4237e9ef3d417397a689238a256cd123imq6m55.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-10-24T15:32:34.024Z",
+    "headline": "Terror corporal chega ao universo dos super-heróis com 'Cara-de-Barro', novo filme da DC",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/filmes/terror-corporal-chega-ao-universo-dos-super-herois-com-cara-de-barro-novo-filme-da-dc,73df3e28ae5cd40748011bc9d907e549ofox8qv7.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Filmes",
+    "status": "FAILED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
   }
 ]
