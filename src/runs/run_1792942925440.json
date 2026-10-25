@@ -1,0 +1,14 @@
+{
+  "timestamp": "2026-10-25T15:41:45.404Z",
+  "status": "COMPLETED",
+  "postsPlanned": 1,
+  "candidatesFound": 11,
+  "successfulPosts": [],
+  "failedPosts": [
+    {
+      "category": "Santos",
+      "title": "Luan Peres marca nos acréscimos e Santos empata com o Bahia",
+      "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+    }
+  ]
+}

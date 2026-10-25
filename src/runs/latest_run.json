@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-10-24T15:31:42.590Z",
+  "timestamp": "2026-10-25T15:41:45.404Z",
   "status": "COMPLETED",
   "postsPlanned": 1,
   "candidatesFound": 11,
@@ -7,27 +7,7 @@
   "failedPosts": [
     {
       "category": "Santos",
-      "title": "Botafogo deve ao Santos por negociações de 2024 e 2025; saiba detalhes",
-      "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
-    },
-    {
-      "category": "Santos",
-      "title": "Vila Belmiro terá locais interditados para o próximo jogo do Santos",
-      "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
-    },
-    {
-      "category": "Santos",
-      "title": "Eliminação do Flamengo pode custar caro para São Paulo e Santos; entenda",
-      "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
-    },
-    {
-      "category": "Santos",
-      "title": "Dirigente do Santos alfineta e manda indireta para o Botafogo",
-      "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
-    },
-    {
-      "category": "Santos",
-      "title": "Santos tenta Neo Química Arena, mas confirma clássico na Vila Belmiro",
+      "title": "Luan Peres marca nos acréscimos e Santos empata com o Bahia",
       "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
     }
   ]

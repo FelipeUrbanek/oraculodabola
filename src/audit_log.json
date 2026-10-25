@@ -7323,5 +7323,23 @@
     "category": "Filmes",
     "status": "FAILED",
     "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-10-25T15:42:02.411Z",
+    "headline": "Luan Peres marca nos acréscimos e Santos empata com o Bahia",
+    "source_url": "https://www.terra.com.br/esportes/santos/luan-peres-marca-nos-acrescimos-e-santos-empata-com-o-bahia,95184bbbc650b02168338dba28015e865pvpz25c.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-10-25T15:42:48.847Z",
+    "headline": "Terror corporal chega ao universo dos super-heróis com 'Cara-de-Barro', novo filme da DC",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/filmes/terror-corporal-chega-ao-universo-dos-super-herois-com-cara-de-barro-novo-filme-da-dc,73df3e28ae5cd40748011bc9d907e549ofox8qv7.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Filmes",
+    "status": "FAILED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
   }
 ]
