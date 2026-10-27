@@ -7341,5 +7341,50 @@
     "category": "Filmes",
     "status": "FAILED",
     "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-10-27T00:16:04.831Z",
+    "headline": "Luan Peres dá declaração sincera após empate no jogo entre Santos x Bahia",
+    "source_url": "https://www.terra.com.br/esportes/santos/luan-peres-da-declaracao-sincera-apos-empate-no-jogo-entre-santos-x-bahia,00f9c066595d675f6958b8e0d383d68f4pl97vuj.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-10-27T00:16:04.957Z",
+    "headline": "Colunista aponta três jogadores que podem ser vendidos pelo Santos",
+    "source_url": "https://www.terra.com.br/esportes/santos/colunista-aponta-tres-jogadores-que-podem-ser-vendidos-pelo-santos,da94114e27a779c55d375996d41b16aamqe9otim.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-10-27T00:16:05.071Z",
+    "headline": "Santos pode avançar para se tornar SAF na próxima semana",
+    "source_url": "https://www.terra.com.br/esportes/santos/santos-pode-avancar-para-se-tornar-saf-na-proxima-semana,28d8d6b8209baec4d5ef565f1939d52etdeuquzy.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-10-27T00:16:05.185Z",
+    "headline": "Problemas no gramado vão além da Vila e preocupam o Santos",
+    "source_url": "https://www.terra.com.br/esportes/santos/problemas-no-gramado-vao-alem-da-vila-e-preocupam-o-santos,832f712d03b52c1cda3f1100cab75e21o47ukfsr.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-10-27T00:17:08.027Z",
+    "headline": "Festival do Cinema Brasileiro terá ingressos a R$ 12 nos cinemas; saiba tudo",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/filmes/festival-do-cinema-brasileiro-tera-ingressos-a-r-12-nos-cinemas-saiba-tudo,0980873cff5620fa37ad1e2c958451fb1ifyxfn0.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Filmes",
+    "status": "FAILED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
   }
 ]

@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-10-25T15:41:45.404Z",
+  "timestamp": "2026-10-27T00:15:48.729Z",
   "status": "COMPLETED",
   "postsPlanned": 1,
   "candidatesFound": 11,
@@ -7,7 +7,22 @@
   "failedPosts": [
     {
       "category": "Santos",
-      "title": "Luan Peres marca nos acréscimos e Santos empata com o Bahia",
+      "title": "Luan Peres dá declaração sincera após empate no jogo entre Santos x Bahia",
+      "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+    },
+    {
+      "category": "Santos",
+      "title": "Colunista aponta três jogadores que podem ser vendidos pelo Santos",
+      "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+    },
+    {
+      "category": "Santos",
+      "title": "Santos pode avançar para se tornar SAF na próxima semana",
+      "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+    },
+    {
+      "category": "Santos",
+      "title": "Problemas no gramado vão além da Vila e preocupam o Santos",
       "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
     }
   ]
