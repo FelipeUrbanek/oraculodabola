@@ -7386,5 +7386,41 @@
     "category": "Filmes",
     "status": "FAILED",
     "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-10-28T00:17:27.812Z",
+    "headline": "Santos mira G5 por vaga na Libertadores; veja as contas",
+    "source_url": "https://www.terra.com.br/esportes/santos/santos-mira-g5-por-vaga-na-libertadores-veja-as-contas,5cf1607cc73e219af980e7103fab4b5dz5znbyv6.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-10-28T00:17:27.867Z",
+    "headline": "Santos planeja trocar gramados da Vila Belmiro e do CT Rei Pelé ainda em 2026",
+    "source_url": "https://www.terra.com.br/esportes/santos/santos-planeja-trocar-gramados-da-vila-belmiro-e-do-ct-rei-pele-ainda-em-2026,2e3f40206d028c246b0f16815e4da47czl4isxgu.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-10-28T00:17:27.924Z",
+    "headline": "Giuliano explica decisão de deixar o Santos após título da Série B em 2024",
+    "source_url": "https://www.terra.com.br/esportes/santos/giuliano-explica-decisao-de-deixar-o-santos-apos-titulo-da-serie-b-em-2024,a947dbea7f3ed3c9749fd0c261d1fc9fd13nqn8q.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-10-28T00:18:40.028Z",
+    "headline": "'Até que a Sorte Nos Separe' ganhará quarto filme, após 11 anos",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/filmes/ate-que-a-sorte-nos-separe-ganhara-quarto-filme-apos-11-anos,f104e4985bed2c782bd46b0773091317435cmcq9.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Filmes",
+    "status": "FAILED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
   }
 ]

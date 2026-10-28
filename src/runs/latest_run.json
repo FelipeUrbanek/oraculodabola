@@ -1,28 +1,23 @@
 {
-  "timestamp": "2026-10-27T00:15:48.729Z",
+  "timestamp": "2026-10-28T00:17:12.925Z",
   "status": "COMPLETED",
   "postsPlanned": 1,
-  "candidatesFound": 11,
+  "candidatesFound": 7,
   "successfulPosts": [],
   "failedPosts": [
     {
       "category": "Santos",
-      "title": "Luan Peres dá declaração sincera após empate no jogo entre Santos x Bahia",
+      "title": "Santos mira G5 por vaga na Libertadores; veja as contas",
       "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
     },
     {
       "category": "Santos",
-      "title": "Colunista aponta três jogadores que podem ser vendidos pelo Santos",
+      "title": "Santos planeja trocar gramados da Vila Belmiro e do CT Rei Pelé ainda em 2026",
       "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
     },
     {
       "category": "Santos",
-      "title": "Santos pode avançar para se tornar SAF na próxima semana",
-      "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
-    },
-    {
-      "category": "Santos",
-      "title": "Problemas no gramado vão além da Vila e preocupam o Santos",
+      "title": "Giuliano explica decisão de deixar o Santos após título da Série B em 2024",
       "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
     }
   ]
