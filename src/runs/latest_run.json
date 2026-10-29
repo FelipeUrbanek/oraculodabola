@@ -1,23 +1,18 @@
 {
-  "timestamp": "2026-10-28T00:17:12.925Z",
+  "timestamp": "2026-10-29T00:38:55.148Z",
   "status": "COMPLETED",
   "postsPlanned": 1,
-  "candidatesFound": 7,
+  "candidatesFound": 10,
   "successfulPosts": [],
   "failedPosts": [
     {
       "category": "Santos",
-      "title": "Santos mira G5 por vaga na Libertadores; veja as contas",
+      "title": "Atletas do Santos pedem pênalti em jogada polêmica diante do Palmeiras",
       "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
     },
     {
       "category": "Santos",
-      "title": "Santos planeja trocar gramados da Vila Belmiro e do CT Rei Pelé ainda em 2026",
-      "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
-    },
-    {
-      "category": "Santos",
-      "title": "Giuliano explica decisão de deixar o Santos após título da Série B em 2024",
+      "title": "Pacaembu considera abandonar gramado sintético, mas espera apoio de clubes interessados",
       "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
     }
   ]

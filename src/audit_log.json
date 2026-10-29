@@ -7422,5 +7422,32 @@
     "category": "Filmes",
     "status": "FAILED",
     "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-10-29T00:39:11.818Z",
+    "headline": "Atletas do Santos pedem pênalti em jogada polêmica diante do Palmeiras",
+    "source_url": "https://www.terra.com.br/esportes/palmeiras/atletas-do-santos-pedem-penalti-em-jogada-polemica-diante-do-palmeiras,8326fb28b2037acb4da8c3b43dcbd6a6is1jxp5b.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-10-29T00:39:11.945Z",
+    "headline": "Pacaembu considera abandonar gramado sintético, mas espera apoio de clubes interessados",
+    "source_url": "https://www.terra.com.br/esportes/futebol/pacaembu-considera-abandonar-gramado-sintetico-mas-espera-apoio-de-clubes-interessados,638017400c55ca00dfec3e4558090be5pht1shlv.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-10-29T00:40:34.242Z",
+    "headline": "Nem 'Avatar' e nem 'Os Vingadores': com uma nota de 4,4 de 5, essa obra-prima atemporal foi o filme de maior bilheteria de todos os tempos por 36 anos",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/filmes/nem-avatar-e-nem-os-vingadores-com-uma-nota-de-44-de-5-essa-obra-prima-atemporal-foi-o-filme-de-maior-bilheteria-de-todos-os-tempos-por-36-anos,559a3dd598aabc20fa8f2f49f9da445dk0xa9i4s.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Filmes",
+    "status": "FAILED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
   }
 ]

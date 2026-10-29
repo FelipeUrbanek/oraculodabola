@@ -1,12 +1,12 @@
 {
-  "timestamp": "2026-10-28T00:17:32.074Z",
+  "timestamp": "2026-10-29T00:39:16.094Z",
   "status": "COMPLETED_WITHOUT_POSTS",
   "postsPlanned": 1,
-  "candidatesFound": 9,
+  "candidatesFound": 8,
   "successfulPosts": [],
   "failedPosts": [
     {
-      "title": "'Até que a Sorte Nos Separe' ganhará quarto filme, após 11 anos",
+      "title": "Nem 'Avatar' e nem 'Os Vingadores': com uma nota de 4,4 de 5, essa obra-prima atemporal foi o filme de maior bilheteria de todos os tempos por 36 anos",
       "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
     }
   ]

@@ -1,0 +1,19 @@
+{
+  "timestamp": "2026-10-29T00:38:55.148Z",
+  "status": "COMPLETED",
+  "postsPlanned": 1,
+  "candidatesFound": 10,
+  "successfulPosts": [],
+  "failedPosts": [
+    {
+      "category": "Santos",
+      "title": "Atletas do Santos pedem pênalti em jogada polêmica diante do Palmeiras",
+      "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+    },
+    {
+      "category": "Santos",
+      "title": "Pacaembu considera abandonar gramado sintético, mas espera apoio de clubes interessados",
+      "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+    }
+  ]
+}
