@@ -1,12 +1,12 @@
 {
-  "timestamp": "2026-10-29T00:39:16.094Z",
+  "timestamp": "2026-10-30T00:40:00.542Z",
   "status": "COMPLETED_WITHOUT_POSTS",
   "postsPlanned": 1,
-  "candidatesFound": 8,
+  "candidatesFound": 7,
   "successfulPosts": [],
   "failedPosts": [
     {
-      "title": "Nem 'Avatar' e nem 'Os Vingadores': com uma nota de 4,4 de 5, essa obra-prima atemporal foi o filme de maior bilheteria de todos os tempos por 36 anos",
+      "title": "Três países em 24 horas: Tom Cruise e Emily Blunt fizeram rotina insana para apresentar um dos melhores filmes de ficção científica da história ...",
       "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
     }
   ]

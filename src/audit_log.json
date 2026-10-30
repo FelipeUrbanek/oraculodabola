@@ -7449,5 +7449,68 @@
     "category": "Filmes",
     "status": "FAILED",
     "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-10-30T00:39:55.013Z",
+    "headline": "Colunista aponta motivos para Santos deixar a Vila Belmiro",
+    "source_url": "https://www.terra.com.br/esportes/santos/colunista-aponta-motivos-para-santos-deixar-a-vila-belmiro,10357220d2212e6baa7f0daa958db4c6uh3uxp8d.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-10-30T00:39:55.152Z",
+    "headline": "Cuca entra para a história após o clássico Santos x Palmeiras no Brasileirão",
+    "source_url": "https://www.terra.com.br/esportes/santos/cuca-entra-para-a-historia-apos-o-classico-santos-x-palmeiras-no-brasileirao,f869b1f410c36f6e862e6b74cc070e3evmeir18s.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-10-30T00:39:55.530Z",
+    "headline": "Gabigol não é convocado para Seleção, mas recebe elogios de Ancelotti",
+    "source_url": "https://www.terra.com.br/esportes/brasil/gabigol-nao-e-convocado-para-selecao-mas-recebe-elogios-de-ancelotti,510c1bcf9942558bb79b4972b1f7886cy6lppyi3.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-10-30T00:39:55.685Z",
+    "headline": "Santos: veja quando Lucas Veríssimo realmente vai voltar a jogar",
+    "source_url": "https://www.terra.com.br/esportes/santos/santos-veja-quando-lucas-verissimo-realmente-vai-voltar-a-jogar,9312034abbce0bc8708ff520c730646czsav0wzy.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-10-30T00:39:55.798Z",
+    "headline": "Cuca dá declaração sincera voltada para Gabigol, do Santos",
+    "source_url": "https://www.terra.com.br/esportes/santos/cuca-da-declaracao-sincera-voltada-para-gabigol-do-santos,cb6bdc0573084d4bb69c92d24031a7d4ws39tx6v.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-10-30T00:39:55.909Z",
+    "headline": "Justiça condena três torcedores do Santos por morte de palmeirense",
+    "source_url": "https://www.terra.com.br/esportes/futebol/estaduais/campeonato-paulista/justica-condena-tres-torcedores-do-santos-por-morte-de-palmeirense,79ae0db077ca27001cc27211eee5f7139ske44ne.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-10-30T00:41:22.281Z",
+    "headline": "Três países em 24 horas: Tom Cruise e Emily Blunt fizeram rotina insana para apresentar um dos melhores filmes de ficção científica da história ...",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/filmes/tres-paises-em-24-horas-tom-cruise-e-emily-blunt-fizeram-rotina-insana-para-apresentar-um-dos-melhores-filmes-de-ficcao-cientifica-da-historia-em-todo-o-mundo,9be15e8397ab0762e21498aabf81e0e8sj9lq1yk.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Filmes",
+    "status": "FAILED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
   }
 ]
