@@ -1,12 +1,12 @@
 {
-  "timestamp": "2026-10-30T00:40:00.542Z",
+  "timestamp": "2026-10-31T00:29:14.967Z",
   "status": "COMPLETED_WITHOUT_POSTS",
   "postsPlanned": 1,
-  "candidatesFound": 7,
+  "candidatesFound": 11,
   "successfulPosts": [],
   "failedPosts": [
     {
-      "title": "Três países em 24 horas: Tom Cruise e Emily Blunt fizeram rotina insana para apresentar um dos melhores filmes de ficção científica da história ...",
+      "title": "Livro 'Os Imortais', de Paulliny Tort, ganhará versão no cinema por produtora de 'Ainda Estou Aqui'",
       "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
     }
   ]

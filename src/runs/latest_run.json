@@ -1,38 +1,18 @@
 {
-  "timestamp": "2026-10-30T00:39:39.411Z",
+  "timestamp": "2026-10-31T00:29:00.249Z",
   "status": "COMPLETED",
   "postsPlanned": 1,
-  "candidatesFound": 10,
+  "candidatesFound": 6,
   "successfulPosts": [],
   "failedPosts": [
     {
       "category": "Santos",
-      "title": "Colunista aponta motivos para Santos deixar a Vila Belmiro",
+      "title": "Veja detalhes da discussão entre Coutinho e Marlon Freitas no jogo entre Santos x Palmeiras",
       "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
     },
     {
       "category": "Santos",
-      "title": "Cuca entra para a história após o clássico Santos x Palmeiras no Brasileirão",
-      "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
-    },
-    {
-      "category": "Santos",
-      "title": "Gabigol não é convocado para Seleção, mas recebe elogios de Ancelotti",
-      "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
-    },
-    {
-      "category": "Santos",
-      "title": "Santos: veja quando Lucas Veríssimo realmente vai voltar a jogar",
-      "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
-    },
-    {
-      "category": "Santos",
-      "title": "Cuca dá declaração sincera voltada para Gabigol, do Santos",
-      "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
-    },
-    {
-      "category": "Santos",
-      "title": "Justiça condena três torcedores do Santos por morte de palmeirense",
+      "title": "CBF divulga datas e horários da 35ª e 36ª rodadas do Brasileirão",
       "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
     }
   ]

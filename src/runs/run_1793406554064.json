@@ -1,0 +1,19 @@
+{
+  "timestamp": "2026-10-31T00:29:00.249Z",
+  "status": "COMPLETED",
+  "postsPlanned": 1,
+  "candidatesFound": 6,
+  "successfulPosts": [],
+  "failedPosts": [
+    {
+      "category": "Santos",
+      "title": "Veja detalhes da discussão entre Coutinho e Marlon Freitas no jogo entre Santos x Palmeiras",
+      "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+    },
+    {
+      "category": "Santos",
+      "title": "CBF divulga datas e horários da 35ª e 36ª rodadas do Brasileirão",
+      "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+    }
+  ]
+}

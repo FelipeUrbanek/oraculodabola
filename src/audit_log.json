@@ -7512,5 +7512,32 @@
     "category": "Filmes",
     "status": "FAILED",
     "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-10-31T00:29:10.866Z",
+    "headline": "Veja detalhes da discussão entre Coutinho e Marlon Freitas no jogo entre Santos x Palmeiras",
+    "source_url": "https://www.terra.com.br/esportes/santos/veja-detalhes-da-discussao-entre-coutinho-e-marlon-freitas-no-jogo-entre-santos-x-palmeiras,b60a628add9b2ecf2ddd7cead7019cadpvt2e2fm.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-10-31T00:29:11.063Z",
+    "headline": "CBF divulga datas e horários da 35ª e 36ª rodadas do Brasileirão",
+    "source_url": "https://www.terra.com.br/esportes/botafogo/cbf-divulga-datas-e-horarios-da-35-e-36-rodadas-do-brasileirao,1e4252f48d9f4021f4b1bc75682a85a6bygapmig.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-10-31T00:29:38.300Z",
+    "headline": "Livro 'Os Imortais', de Paulliny Tort, ganhará versão no cinema por produtora de 'Ainda Estou Aqui'",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/filmes/livro-os-imortais-de-paulliny-tort-ganhara-versao-no-cinema-por-produtora-de-ainda-estou-aqui,9a2d322367ed710cc6287ec7f9dcf3179h5wx2uh.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Filmes",
+    "status": "FAILED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
   }
 ]
