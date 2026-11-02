@@ -1,13 +1,28 @@
 {
-  "timestamp": "2026-11-02T00:21:43.735Z",
+  "timestamp": "2026-11-02T21:28:51.678Z",
   "status": "COMPLETED",
   "postsPlanned": 1,
-  "candidatesFound": 4,
+  "candidatesFound": 8,
   "successfulPosts": [],
   "failedPosts": [
     {
       "category": "Santos",
-      "title": "Jornalista revela salário astronômico que Everton Cebolinha recebe no Santos",
+      "title": "Cuca encosta reforços que custaram R$ 54 milhões ao Santos",
+      "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+    },
+    {
+      "category": "Santos",
+      "title": "Santos pode sofrer novo transfer ban após ação do Coritiba",
+      "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+    },
+    {
+      "category": "Santos",
+      "title": "Santos é acionado na Justiça pelo Coritiba por venda de JP Chermont",
+      "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+    },
+    {
+      "category": "Santos",
+      "title": "Jornalista revela bolada que Rodinei recebe no Santos",
       "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
     }
   ]

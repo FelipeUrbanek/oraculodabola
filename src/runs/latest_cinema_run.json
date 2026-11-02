@@ -1,12 +1,12 @@
 {
-  "timestamp": "2026-11-02T00:22:00.670Z",
+  "timestamp": "2026-11-02T21:29:10.195Z",
   "status": "COMPLETED_WITHOUT_POSTS",
   "postsPlanned": 1,
-  "candidatesFound": 3,
+  "candidatesFound": 5,
   "successfulPosts": [],
   "failedPosts": [
     {
-      "title": "Roberta Rodrigues celebra personagem em 'Verônika com K': 'É bonito se ver em lugar de poder'",
+      "title": "18 anos depois, um sucesso esquecido por muitos: este filme intenso reuniu Leonardo DiCaprio e Kate Winslet após 'Titanic'",
       "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
     }
   ]

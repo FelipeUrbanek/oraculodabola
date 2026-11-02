@@ -7557,5 +7557,50 @@
     "category": "Séries",
     "status": "FAILED",
     "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-11-02T21:29:04.905Z",
+    "headline": "Cuca encosta reforços que custaram R$ 54 milhões ao Santos",
+    "source_url": "https://www.terra.com.br/esportes/santos/cuca-encosta-reforcos-que-custaram-r-54-milhoes-ao-santos,4e600efb0f27a514505348f3e9710d2av229wsap.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-11-02T21:29:04.988Z",
+    "headline": "Santos pode sofrer novo transfer ban após ação do Coritiba",
+    "source_url": "https://www.terra.com.br/esportes/futebol/santos-pode-sofrer-novo-transfer-ban-apos-acao-do-coritiba,caf45c995fbdb8e633d35d3186fa2f86ocqgcjqv.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-11-02T21:29:05.105Z",
+    "headline": "Santos é acionado na Justiça pelo Coritiba por venda de JP Chermont",
+    "source_url": "https://www.terra.com.br/esportes/futebol/mercado-da-bola/santos-e-acionado-na-justica-pelo-coritiba-por-venda-de-jp-chermont,546f6ae073819405efded63a1877f0c3o7ushrxd.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-11-02T21:29:05.239Z",
+    "headline": "Jornalista revela bolada que Rodinei recebe no Santos",
+    "source_url": "https://www.terra.com.br/esportes/santos/jornalista-revela-bolada-que-rodinei-recebe-no-santos,5af6d85c36a52ead72e4f1f98f7e70b9187l7734.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-11-02T21:30:20.990Z",
+    "headline": "18 anos depois, um sucesso esquecido por muitos: este filme intenso reuniu Leonardo DiCaprio e Kate Winslet após 'Titanic'",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/filmes/18-anos-depois-um-sucesso-esquecido-por-muitos-este-filme-intenso-reuniu-leonardo-dicaprio-e-kate-winslet-apos-titanic,3a6b59ce541921b653b5d2b409d219c8zoy64b44.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Filmes",
+    "status": "FAILED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
   }
 ]
