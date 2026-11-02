@@ -7539,5 +7539,23 @@
     "category": "Filmes",
     "status": "FAILED",
     "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-11-02T00:21:57.127Z",
+    "headline": "Jornalista revela salário astronômico que Everton Cebolinha recebe no Santos",
+    "source_url": "https://www.terra.com.br/esportes/santos/jornalista-revela-salario-astronomico-que-everton-cebolinha-recebe-no-santos,84b9a71be27b650f7c5283d2c1f199341wq4lpxq.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-11-02T00:25:51.805Z",
+    "headline": "Roberta Rodrigues celebra personagem em 'Verônika com K': 'É bonito se ver em lugar de poder'",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/series/roberta-rodrigues-celebra-personagem-em-veronika-com-k-e-bonito-se-ver-em-lugar-de-poder,f295c2e1e1f73e2bc2c53d1ef5084fbcut8alqlz.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Séries",
+    "status": "FAILED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
   }
 ]

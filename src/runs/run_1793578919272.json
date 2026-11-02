@@ -1,0 +1,14 @@
+{
+  "timestamp": "2026-11-02T00:21:43.735Z",
+  "status": "COMPLETED",
+  "postsPlanned": 1,
+  "candidatesFound": 4,
+  "successfulPosts": [],
+  "failedPosts": [
+    {
+      "category": "Santos",
+      "title": "Jornalista revela salário astronômico que Everton Cebolinha recebe no Santos",
+      "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+    }
+  ]
+}

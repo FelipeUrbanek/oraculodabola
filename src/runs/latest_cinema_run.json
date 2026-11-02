@@ -1,12 +1,12 @@
 {
-  "timestamp": "2026-10-31T00:29:14.967Z",
+  "timestamp": "2026-11-02T00:22:00.670Z",
   "status": "COMPLETED_WITHOUT_POSTS",
   "postsPlanned": 1,
-  "candidatesFound": 11,
+  "candidatesFound": 3,
   "successfulPosts": [],
   "failedPosts": [
     {
-      "title": "Livro 'Os Imortais', de Paulliny Tort, ganhará versão no cinema por produtora de 'Ainda Estou Aqui'",
+      "title": "Roberta Rodrigues celebra personagem em 'Verônika com K': 'É bonito se ver em lugar de poder'",
       "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
     }
   ]
