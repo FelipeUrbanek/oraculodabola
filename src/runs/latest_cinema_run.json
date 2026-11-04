@@ -1,12 +1,12 @@
 {
-  "timestamp": "2026-11-02T21:29:10.195Z",
+  "timestamp": "2026-11-04T01:04:46.151Z",
   "status": "COMPLETED_WITHOUT_POSTS",
   "postsPlanned": 1,
-  "candidatesFound": 5,
+  "candidatesFound": 10,
   "successfulPosts": [],
   "failedPosts": [
     {
-      "title": "18 anos depois, um sucesso esquecido por muitos: este filme intenso reuniu Leonardo DiCaprio e Kate Winslet após 'Titanic'",
+      "title": "14 pastas com 1 milhão de dólares cada: em 2013, George Clooney decidiu dar um presente inesperado para seus amigos. 'Adeus, hipoteca'",
       "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
     }
   ]

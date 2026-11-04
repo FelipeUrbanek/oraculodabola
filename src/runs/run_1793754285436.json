@@ -1,0 +1,34 @@
+{
+  "timestamp": "2026-11-04T01:04:23.412Z",
+  "status": "COMPLETED",
+  "postsPlanned": 1,
+  "candidatesFound": 11,
+  "successfulPosts": [],
+  "failedPosts": [
+    {
+      "category": "Santos",
+      "title": "Caballero, do Santos, é levado até delegacia por conta de carro roubado",
+      "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+    },
+    {
+      "category": "Santos",
+      "title": "Jovem lateral participa de treino físico na reapresentação do Santos",
+      "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+    },
+    {
+      "category": "Santos",
+      "title": "Atacante do Santos é parado em blitz após erro em contrato de carro alugado",
+      "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+    },
+    {
+      "category": "Santos",
+      "title": "Cuca dá declaração sincera após derrota do Santos para o Bragantino",
+      "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+    },
+    {
+      "category": "Santos",
+      "title": "Salário de Rodinei revelado, nova competição e desfalque confirmado: as últimas notícias do Santos",
+      "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+    }
+  ]
+}

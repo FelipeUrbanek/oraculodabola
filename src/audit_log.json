@@ -7602,5 +7602,59 @@
     "category": "Filmes",
     "status": "FAILED",
     "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-11-04T01:04:40.903Z",
+    "headline": "Caballero, do Santos, é levado até delegacia por conta de carro roubado",
+    "source_url": "https://www.terra.com.br/esportes/santos/caballero-do-santos-e-levado-ate-delegacia-por-conta-de-carro-roubado,78a4f6ac3bd34b0d781997f40bbbccb05vzylidb.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-11-04T01:04:41.053Z",
+    "headline": "Jovem lateral participa de treino físico na reapresentação do Santos",
+    "source_url": "https://www.terra.com.br/esportes/santos/jovem-lateral-participa-de-treino-fisico-na-reapresentacao-do-santos,55e75f6a47d8c4bbda0e654cda71de6ch2ljdnyq.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-11-04T01:04:41.209Z",
+    "headline": "Atacante do Santos é parado em blitz após erro em contrato de carro alugado",
+    "source_url": "https://www.terra.com.br/esportes/santos/atacante-do-santos-e-parado-em-blitz-apos-erro-em-contrato-de-carro-alugado,ecb06f8ad0b4198ae793886aabb93f96v4zb7pde.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-11-04T01:04:41.368Z",
+    "headline": "Cuca dá declaração sincera após derrota do Santos para o Bragantino",
+    "source_url": "https://www.terra.com.br/esportes/santos/cuca-da-declaracao-sincera-apos-derrota-do-santos-para-o-bragantino,f54bb881bace19365b2213750449c7dbjyywzjnr.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-11-04T01:04:41.615Z",
+    "headline": "Salário de Rodinei revelado, nova competição e desfalque confirmado: as últimas notícias do Santos",
+    "source_url": "https://www.terra.com.br/esportes/santos/salario-de-rodinei-revelado-nova-competicao-e-desfalque-confirmado-as-ultimas-noticias-do-santos,aecca6e3b962082574530e41e618975bm3gsadfj.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-11-04T01:05:09.843Z",
+    "headline": "14 pastas com 1 milhão de dólares cada: em 2013, George Clooney decidiu dar um presente inesperado para seus amigos. 'Adeus, hipoteca'",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/filmes/14-pastas-com-1-milhao-de-dolares-cada-em-2013-george-clooney-decidiu-dar-um-presente-inesperado-para-seus-amigos-adeus-hipoteca,ea7f792dec0c6c1d4770f0348a1a737amogg8cav.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Filmes",
+    "status": "FAILED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
   }
 ]

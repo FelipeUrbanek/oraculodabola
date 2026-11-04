@@ -1,28 +1,33 @@
 {
-  "timestamp": "2026-11-02T21:28:51.678Z",
+  "timestamp": "2026-11-04T01:04:23.412Z",
   "status": "COMPLETED",
   "postsPlanned": 1,
-  "candidatesFound": 8,
+  "candidatesFound": 11,
   "successfulPosts": [],
   "failedPosts": [
     {
       "category": "Santos",
-      "title": "Cuca encosta reforços que custaram R$ 54 milhões ao Santos",
+      "title": "Caballero, do Santos, é levado até delegacia por conta de carro roubado",
       "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
     },
     {
       "category": "Santos",
-      "title": "Santos pode sofrer novo transfer ban após ação do Coritiba",
+      "title": "Jovem lateral participa de treino físico na reapresentação do Santos",
       "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
     },
     {
       "category": "Santos",
-      "title": "Santos é acionado na Justiça pelo Coritiba por venda de JP Chermont",
+      "title": "Atacante do Santos é parado em blitz após erro em contrato de carro alugado",
       "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
     },
     {
       "category": "Santos",
-      "title": "Jornalista revela bolada que Rodinei recebe no Santos",
+      "title": "Cuca dá declaração sincera após derrota do Santos para o Bragantino",
+      "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+    },
+    {
+      "category": "Santos",
+      "title": "Salário de Rodinei revelado, nova competição e desfalque confirmado: as últimas notícias do Santos",
       "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
     }
   ]
