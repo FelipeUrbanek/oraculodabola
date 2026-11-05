@@ -1,33 +1,28 @@
 {
-  "timestamp": "2026-11-04T01:04:23.412Z",
+  "timestamp": "2026-11-05T01:20:03.213Z",
   "status": "COMPLETED",
   "postsPlanned": 1,
-  "candidatesFound": 11,
+  "candidatesFound": 12,
   "successfulPosts": [],
   "failedPosts": [
     {
       "category": "Santos",
-      "title": "Caballero, do Santos, é levado até delegacia por conta de carro roubado",
+      "title": "Santos quer contratar meio-campista do Internacional",
       "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
     },
     {
       "category": "Santos",
-      "title": "Jovem lateral participa de treino físico na reapresentação do Santos",
+      "title": "Atacante assina com o Santos até 2029",
       "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
     },
     {
       "category": "Santos",
-      "title": "Atacante do Santos é parado em blitz após erro em contrato de carro alugado",
+      "title": "Santos mantém votação de reforma estatuária após Justiça negar suspensão",
       "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
     },
     {
       "category": "Santos",
-      "title": "Cuca dá declaração sincera após derrota do Santos para o Bragantino",
-      "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
-    },
-    {
-      "category": "Santos",
-      "title": "Salário de Rodinei revelado, nova competição e desfalque confirmado: as últimas notícias do Santos",
+      "title": "Vitória deve valor milionário ao Santos por negócio de 2025",
       "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
     }
   ]

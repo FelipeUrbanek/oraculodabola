@@ -1,0 +1,29 @@
+{
+  "timestamp": "2026-11-05T01:20:03.213Z",
+  "status": "COMPLETED",
+  "postsPlanned": 1,
+  "candidatesFound": 12,
+  "successfulPosts": [],
+  "failedPosts": [
+    {
+      "category": "Santos",
+      "title": "Santos quer contratar meio-campista do Internacional",
+      "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+    },
+    {
+      "category": "Santos",
+      "title": "Atacante assina com o Santos até 2029",
+      "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+    },
+    {
+      "category": "Santos",
+      "title": "Santos mantém votação de reforma estatuária após Justiça negar suspensão",
+      "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+    },
+    {
+      "category": "Santos",
+      "title": "Vitória deve valor milionário ao Santos por negócio de 2025",
+      "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+    }
+  ]
+}

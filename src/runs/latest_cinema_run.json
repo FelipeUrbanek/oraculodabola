@@ -1,12 +1,12 @@
 {
-  "timestamp": "2026-11-04T01:04:46.151Z",
+  "timestamp": "2026-11-05T01:20:28.117Z",
   "status": "COMPLETED_WITHOUT_POSTS",
   "postsPlanned": 1,
   "candidatesFound": 10,
   "successfulPosts": [],
   "failedPosts": [
     {
-      "title": "14 pastas com 1 milhão de dólares cada: em 2013, George Clooney decidiu dar um presente inesperado para seus amigos. 'Adeus, hipoteca'",
+      "title": "Sharon Stone, aos 68 anos, sobre rotina de exercícios durante seus filmes: 'Faço todos aqueles exercícios de academia à moda antiga, como abdomina...",
       "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
     }
   ]
