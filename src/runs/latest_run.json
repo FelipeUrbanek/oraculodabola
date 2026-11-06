@@ -1,28 +1,38 @@
 {
-  "timestamp": "2026-11-05T01:20:03.213Z",
+  "timestamp": "2026-11-06T01:24:33.002Z",
   "status": "COMPLETED",
   "postsPlanned": 1,
-  "candidatesFound": 12,
+  "candidatesFound": 11,
   "successfulPosts": [],
   "failedPosts": [
     {
       "category": "Santos",
-      "title": "Santos quer contratar meio-campista do Internacional",
+      "title": "Barreal sofre lesão na coxa e desfalca Santos na reta final",
       "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
     },
     {
       "category": "Santos",
-      "title": "Atacante assina com o Santos até 2029",
+      "title": "É oficial! Zagueira assina com o Santos até 2027",
       "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
     },
     {
       "category": "Santos",
-      "title": "Santos mantém votação de reforma estatuária após Justiça negar suspensão",
+      "title": "Santos define o seu primeiro alvo para 2027",
       "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
     },
     {
       "category": "Santos",
-      "title": "Vitória deve valor milionário ao Santos por negócio de 2025",
+      "title": "Reviravolta: STJD atende pedido do Santos",
+      "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+    },
+    {
+      "category": "Santos",
+      "title": "Flamengo? Com Íbis na cola, Santos lidera crescimento digital entre clubes",
+      "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+    },
+    {
+      "category": "Santos",
+      "title": "Santos recebe aval da Prefeitura de São Paulo para projetar futuro CT da base na capital",
       "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
     }
   ]

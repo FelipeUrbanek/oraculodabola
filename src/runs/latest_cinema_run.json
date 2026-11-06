@@ -1,12 +1,12 @@
 {
-  "timestamp": "2026-11-05T01:20:28.117Z",
+  "timestamp": "2026-11-06T01:24:55.390Z",
   "status": "COMPLETED_WITHOUT_POSTS",
   "postsPlanned": 1,
-  "candidatesFound": 10,
+  "candidatesFound": 12,
   "successfulPosts": [],
   "failedPosts": [
     {
-      "title": "Sharon Stone, aos 68 anos, sobre rotina de exercícios durante seus filmes: 'Faço todos aqueles exercícios de academia à moda antiga, como abdomina...",
+      "title": "Cinemas trazem John Malkovich, candidato brasileiro ao Oscar e filme para a família",
       "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
     }
   ]

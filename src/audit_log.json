@@ -7701,5 +7701,68 @@
     "category": "Filmes",
     "status": "FAILED",
     "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-11-06T01:24:50.942Z",
+    "headline": "Barreal sofre lesão na coxa e desfalca Santos na reta final",
+    "source_url": "https://www.terra.com.br/esportes/santos/barreal-sofre-lesao-na-coxa-e-desfalca-santos-na-reta-final,3f2c179c319bf32799c7288eaca438b5hiihymzz.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-11-06T01:24:51.070Z",
+    "headline": "É oficial! Zagueira assina com o Santos até 2027",
+    "source_url": "https://www.terra.com.br/esportes/santos/e-oficial-zagueira-assina-com-o-santos-ate-2027,caac6c82fd75cc149ab61a3167cb44ce73o9gd9e.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-11-06T01:24:51.269Z",
+    "headline": "Santos define o seu primeiro alvo para 2027",
+    "source_url": "https://www.terra.com.br/esportes/santos/santos-define-o-seu-primeiro-alvo-para-2027,ba9978a5187e145af47401f6f4a5f1330hln1gxy.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-11-06T01:24:51.533Z",
+    "headline": "Reviravolta: STJD atende pedido do Santos",
+    "source_url": "https://www.terra.com.br/esportes/santos/reviravolta-stjd-atende-pedido-do-santos,f5f7ed851492c2349644c8f811ea4826trzzc6a0.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-11-06T01:24:51.695Z",
+    "headline": "Flamengo? Com Íbis na cola, Santos lidera crescimento digital entre clubes",
+    "source_url": "https://www.terra.com.br/esportes/craques/neymar/flamengo-com-ibis-na-cola-santos-lidera-crescimento-digital-entre-clubes,5d7ca12eab3fba8159f12a09cf6c6cdeytynyry9.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-11-06T01:24:51.823Z",
+    "headline": "Santos recebe aval da Prefeitura de São Paulo para projetar futuro CT da base na capital",
+    "source_url": "https://www.terra.com.br/esportes/santos/santos-recebe-aval-da-prefeitura-de-sao-paulo-para-projetar-futuro-ct-da-base-na-capital,10408e16986b4e7b8901a674651b6c59izfzob0m.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-11-06T01:25:44.475Z",
+    "headline": "Cinemas trazem John Malkovich, candidato brasileiro ao Oscar e filme para a família",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/filmes/cinemas-trazem-john-malkovich-candidato-brasileiro-ao-oscar-e-filme-para-a-familia,3adfe6686439e2ab959e53f11d06e3c82tge87sp.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Filmes",
+    "status": "FAILED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
   }
 ]
