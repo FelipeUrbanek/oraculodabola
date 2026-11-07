@@ -7764,5 +7764,23 @@
     "category": "Filmes",
     "status": "FAILED",
     "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-11-07T00:40:33.078Z",
+    "headline": "Ídolo do Real Madrid visita CT do Santos",
+    "source_url": "https://www.terra.com.br/esportes/santos/idolo-do-real-madrid-visita-ct-do-santos,4de20d43869dfb27862e78f4c06bab07wcj4a4z0.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-11-07T00:41:17.001Z",
+    "headline": "Novos filmes de Natal começam a chegar ao streaming; veja lista",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/series/novos-filmes-de-natal-comecam-a-chegar-ao-streaming-veja-lista,65410461283065a45a10f283eac636e66ti5cw1r.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Séries",
+    "status": "FAILED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
   }
 ]

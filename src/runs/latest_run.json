@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-11-06T01:24:33.002Z",
+  "timestamp": "2026-11-07T00:40:15.368Z",
   "status": "COMPLETED",
   "postsPlanned": 1,
   "candidatesFound": 11,
@@ -7,32 +7,7 @@
   "failedPosts": [
     {
       "category": "Santos",
-      "title": "Barreal sofre lesão na coxa e desfalca Santos na reta final",
-      "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
-    },
-    {
-      "category": "Santos",
-      "title": "É oficial! Zagueira assina com o Santos até 2027",
-      "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
-    },
-    {
-      "category": "Santos",
-      "title": "Santos define o seu primeiro alvo para 2027",
-      "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
-    },
-    {
-      "category": "Santos",
-      "title": "Reviravolta: STJD atende pedido do Santos",
-      "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
-    },
-    {
-      "category": "Santos",
-      "title": "Flamengo? Com Íbis na cola, Santos lidera crescimento digital entre clubes",
-      "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
-    },
-    {
-      "category": "Santos",
-      "title": "Santos recebe aval da Prefeitura de São Paulo para projetar futuro CT da base na capital",
+      "title": "Ídolo do Real Madrid visita CT do Santos",
       "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
     }
   ]

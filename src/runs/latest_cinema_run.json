@@ -1,12 +1,12 @@
 {
-  "timestamp": "2026-11-06T01:24:55.390Z",
+  "timestamp": "2026-11-07T00:40:36.599Z",
   "status": "COMPLETED_WITHOUT_POSTS",
   "postsPlanned": 1,
-  "candidatesFound": 12,
+  "candidatesFound": 11,
   "successfulPosts": [],
   "failedPosts": [
     {
-      "title": "Cinemas trazem John Malkovich, candidato brasileiro ao Oscar e filme para a família",
+      "title": "Novos filmes de Natal começam a chegar ao streaming; veja lista",
       "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
     }
   ]
