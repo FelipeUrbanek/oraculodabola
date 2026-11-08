@@ -7782,5 +7782,32 @@
     "category": "Séries",
     "status": "FAILED",
     "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-11-08T00:14:05.766Z",
+    "headline": "\"Visita especial\": Portela faz novo convite a Rodinei e Coutinho",
+    "source_url": "https://www.terra.com.br/esportes/santos/visita-especial-portela-faz-novo-convite-a-rodinei-e-coutinho,8ee76f700cd5c095548fd6a0d51d6bc3ld5wy377.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-11-08T00:14:05.980Z",
+    "headline": "Palmeiras, São Paulo, Santos e Grêmio têm convocados pelo Paraguai",
+    "source_url": "https://www.terra.com.br/esportes/gremio/palmeiras-sao-paulo-santos-e-gremio-tem-convocados-pelo-paraguai,dbadb001b9c6ef02ec5f09df33329f1en18l69ls.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-11-08T00:14:49.163Z",
+    "headline": "Para Jenna Ortega, empatia é o trunfo da androide esperançosa que ela interpreta em 'Klara e o Sol'",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/filmes/para-jenna-ortega-empatia-e-o-trunfo-da-androide-esperancosa-que-ela-interpreta-em-klara-e-o-sol,2576b08e895cefd633d05391cc9d7505b4zug6mz.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Filmes",
+    "status": "FAILED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
   }
 ]

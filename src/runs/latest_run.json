@@ -1,13 +1,18 @@
 {
-  "timestamp": "2026-11-07T00:40:15.368Z",
+  "timestamp": "2026-11-08T00:13:47.074Z",
   "status": "COMPLETED",
   "postsPlanned": 1,
-  "candidatesFound": 11,
+  "candidatesFound": 7,
   "successfulPosts": [],
   "failedPosts": [
     {
       "category": "Santos",
-      "title": "Ídolo do Real Madrid visita CT do Santos",
+      "title": "\"Visita especial\": Portela faz novo convite a Rodinei e Coutinho",
+      "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+    },
+    {
+      "category": "Santos",
+      "title": "Palmeiras, São Paulo, Santos e Grêmio têm convocados pelo Paraguai",
       "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
     }
   ]

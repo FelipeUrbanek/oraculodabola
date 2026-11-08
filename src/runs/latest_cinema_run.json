@@ -1,12 +1,12 @@
 {
-  "timestamp": "2026-11-07T00:40:36.599Z",
+  "timestamp": "2026-11-08T00:14:10.728Z",
   "status": "COMPLETED_WITHOUT_POSTS",
   "postsPlanned": 1,
-  "candidatesFound": 11,
+  "candidatesFound": 12,
   "successfulPosts": [],
   "failedPosts": [
     {
-      "title": "Novos filmes de Natal começam a chegar ao streaming; veja lista",
+      "title": "Para Jenna Ortega, empatia é o trunfo da androide esperançosa que ela interpreta em 'Klara e o Sol'",
       "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
     }
   ]
