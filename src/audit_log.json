@@ -7827,5 +7827,50 @@
     "category": "Filmes",
     "status": "FAILED",
     "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-11-09T22:01:07.243Z",
+    "headline": "Pai do atacante Rony, do Santos, é assassinado no interior do Pará",
+    "source_url": "https://www.terra.com.br/esportes/santos/pai-do-atacante-rony-do-santos-e-assassinado-no-interior-do-para,bab713f8047d4933bbcb4c725dbd5f53wmq4cvtm.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-11-09T22:01:07.344Z",
+    "headline": "Santos pode se dar bem em possível rebaixamento do Grêmio",
+    "source_url": "https://www.terra.com.br/esportes/santos/santos-pode-se-dar-bem-em-possivel-rebaixamento-do-gremio,0d2699e8cac020397a12b850b3b5bc1ba4k5y5jh.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-11-09T22:01:07.439Z",
+    "headline": "Gabigol busca caminho para voltar ao Flamengo em 2027",
+    "source_url": "https://www.terra.com.br/esportes/futebol/gabigol-busca-caminho-para-voltar-ao-flamengo-em-2027,c7adb8878dfda786828812293b46ab2cz88ft5ue.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-11-09T22:01:07.545Z",
+    "headline": "Santos encara dilema com seis atletas e prepara reformulação para 2027",
+    "source_url": "https://www.terra.com.br/esportes/santos/santos-encara-dilema-com-seis-atletas-e-prepara-reformulacao-para-2027,ee2c7e52277fc37cb8c24b33531c6a8ey7aynmua.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-11-09T22:02:52.190Z",
+    "headline": "'Meu Deus, você está fedendo': em 2009, Brad Pitt não aguentava o mau odor de um ator de 'Bastardos Inglórios' e deu uma dica a ele",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/filmes/meu-deus-voce-esta-fedendo-em-2009-brad-pitt-nao-aguentava-o-mau-odor-de-um-ator-de-bastardos-inglorios-e-deu-uma-dica-a-ele,5907cb0d6bd331f7e7a74232800b0b07ktfup7oh.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Filmes",
+    "status": "FAILED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
   }
 ]

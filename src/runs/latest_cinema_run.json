@@ -1,12 +1,12 @@
 {
-  "timestamp": "2026-11-09T00:36:45.028Z",
+  "timestamp": "2026-11-09T22:01:11.450Z",
   "status": "COMPLETED_WITHOUT_POSTS",
   "postsPlanned": 1,
-  "candidatesFound": 6,
+  "candidatesFound": 10,
   "successfulPosts": [],
   "failedPosts": [
     {
-      "title": "'É um dos melhores livros que conheço': Miguel Gomes fala de 'Os Sertões' e a adaptação 'Selvajaria'",
+      "title": "'Meu Deus, você está fedendo': em 2009, Brad Pitt não aguentava o mau odor de um ator de 'Bastardos Inglórios' e deu uma dica a ele",
       "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
     }
   ]

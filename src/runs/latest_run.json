@@ -1,13 +1,28 @@
 {
-  "timestamp": "2026-11-09T00:36:24.917Z",
+  "timestamp": "2026-11-09T22:00:48.499Z",
   "status": "COMPLETED",
   "postsPlanned": 1,
-  "candidatesFound": 7,
+  "candidatesFound": 10,
   "successfulPosts": [],
   "failedPosts": [
     {
       "category": "Santos",
-      "title": "Com acesso do Novorizontino, paulistas podem ocupar 35% do Brasileirão-2027",
+      "title": "Pai do atacante Rony, do Santos, é assassinado no interior do Pará",
+      "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+    },
+    {
+      "category": "Santos",
+      "title": "Santos pode se dar bem em possível rebaixamento do Grêmio",
+      "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+    },
+    {
+      "category": "Santos",
+      "title": "Gabigol busca caminho para voltar ao Flamengo em 2027",
+      "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+    },
+    {
+      "category": "Santos",
+      "title": "Santos encara dilema com seis atletas e prepara reformulação para 2027",
       "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
     }
   ]
