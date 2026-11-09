@@ -7809,5 +7809,23 @@
     "category": "Filmes",
     "status": "FAILED",
     "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-11-09T00:36:41.580Z",
+    "headline": "Com acesso do Novorizontino, paulistas podem ocupar 35% do Brasileirão-2027",
+    "source_url": "https://www.terra.com.br/esportes/corinthians/com-acesso-do-novorizontino-paulistas-podem-ocupar-35-do-brasileirao-2027,88108ea310b3f1fafb658cd22c09d7706f01msek.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-11-09T00:37:57.101Z",
+    "headline": "'É um dos melhores livros que conheço': Miguel Gomes fala de 'Os Sertões' e a adaptação 'Selvajaria'",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/filmes/e-um-dos-melhores-livros-que-conheco-miguel-gomes-fala-de-os-sertoes-e-a-adaptacao-selvajaria,fa517faf9207297b648a7691fbcf52e0s06xfqil.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Filmes",
+    "status": "FAILED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
   }
 ]

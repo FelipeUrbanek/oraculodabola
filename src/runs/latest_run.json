@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-11-08T00:13:47.074Z",
+  "timestamp": "2026-11-09T00:36:24.917Z",
   "status": "COMPLETED",
   "postsPlanned": 1,
   "candidatesFound": 7,
@@ -7,12 +7,7 @@
   "failedPosts": [
     {
       "category": "Santos",
-      "title": "\"Visita especial\": Portela faz novo convite a Rodinei e Coutinho",
-      "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
-    },
-    {
-      "category": "Santos",
-      "title": "Palmeiras, São Paulo, Santos e Grêmio têm convocados pelo Paraguai",
+      "title": "Com acesso do Novorizontino, paulistas podem ocupar 35% do Brasileirão-2027",
       "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
     }
   ]

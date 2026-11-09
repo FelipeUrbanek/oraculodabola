@@ -1,12 +1,12 @@
 {
-  "timestamp": "2026-11-08T00:14:10.728Z",
+  "timestamp": "2026-11-09T00:36:45.028Z",
   "status": "COMPLETED_WITHOUT_POSTS",
   "postsPlanned": 1,
-  "candidatesFound": 12,
+  "candidatesFound": 6,
   "successfulPosts": [],
   "failedPosts": [
     {
-      "title": "Para Jenna Ortega, empatia é o trunfo da androide esperançosa que ela interpreta em 'Klara e o Sol'",
+      "title": "'É um dos melhores livros que conheço': Miguel Gomes fala de 'Os Sertões' e a adaptação 'Selvajaria'",
       "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
     }
   ]

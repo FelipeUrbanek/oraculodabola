@@ -1,0 +1,14 @@
+{
+  "timestamp": "2026-11-09T00:36:24.917Z",
+  "status": "COMPLETED",
+  "postsPlanned": 1,
+  "candidatesFound": 7,
+  "successfulPosts": [],
+  "failedPosts": [
+    {
+      "category": "Santos",
+      "title": "Com acesso do Novorizontino, paulistas podem ocupar 35% do Brasileirão-2027",
+      "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+    }
+  ]
+}
