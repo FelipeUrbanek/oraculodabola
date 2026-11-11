@@ -7872,5 +7872,86 @@
     "category": "Filmes",
     "status": "FAILED",
     "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-11-11T01:04:40.480Z",
+    "headline": "Rival do Santos entra na Justiça e cobra valor milionário",
+    "source_url": "https://www.terra.com.br/esportes/santos/rival-do-santos-entra-na-justica-e-cobra-valor-milionario,28f1f05bf4800429d05c1461b92063c50qnxzxe3.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-11-11T01:04:40.608Z",
+    "headline": "Paulistão 2027: veja confrontos da primeira fase e novidades",
+    "source_url": "https://www.terra.com.br/esportes/corinthians/paulistao-2027-veja-confrontos-da-primeira-fase-e-novidades,abefceb62d63b26fecfa0b43b911ca275nq2unxu.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-11-11T01:04:40.733Z",
+    "headline": "Esquecido no banco de reservas do Santos, Miguelito é convocado para a Seleção Boliviana",
+    "source_url": "https://www.terra.com.br/esportes/santos/esquecido-no-banco-de-reservas-do-santos-miguelito-e-convocado-para-a-selecao-boliviana,1286f756dd711480385893d6a7c32f512cqyagl4.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-11-11T01:04:40.866Z",
+    "headline": "Presa por morte de pai de Rony diz que não se arrepende do crime",
+    "source_url": "https://www.terra.com.br/esportes/santos/presa-por-morte-de-pai-de-rony-diz-que-nao-se-arrepende-do-crime,9a84c5dff88317936278afbaf83cfcb6kz0dinxj.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-11-11T01:04:40.985Z",
+    "headline": "Clube europeu prepara oferta por joia da base, e São Paulo avalia venda",
+    "source_url": "https://www.terra.com.br/esportes/santos/clube-europeu-prepara-oferta-por-joia-da-base-e-sao-paulo-avalia-venda,981705d53aff6ae7b104bdb9d4dffe7du6awpfg0.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-11-11T01:04:41.107Z",
+    "headline": "Gabigol coloca Libertadores como condição para seguir no Santos",
+    "source_url": "https://www.terra.com.br/esportes/santos/gabigol-coloca-libertadores-como-condicao-para-seguir-no-santos,4d6e663e77c022d43cdeea98bb390452upbnxsmd.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-11-11T01:04:41.234Z",
+    "headline": "Gabigol define prioridade e pode deixar o Santos",
+    "source_url": "https://www.terra.com.br/esportes/santos/gabigol-define-prioridade-e-pode-deixar-o-santos,d2e5933b3124896972f9eddaa92c7eabwferfz0x.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-11-11T01:04:41.358Z",
+    "headline": "Santos prepara retorno de Escobar e Arão e pode ganhar reforços na reta final",
+    "source_url": "https://www.terra.com.br/esportes/santos/santos-prepara-retorno-de-escobar-e-arao-e-pode-ganhar-reforcos-na-reta-final,2b07ab614970a459fe7deb983e12db67qcc7phuz.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-11-11T01:05:55.815Z",
+    "headline": "James Gunn trabalhava em 'Superman 3' antes de ser demitido da DC, diz revista",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/filmes/james-gunn-trabalhava-em-superman-3-antes-de-ser-demitido-da-dc-diz-revista,23aa970fc93b704c0aff3569c10df575ls4joado.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Filmes",
+    "status": "FAILED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
   }
 ]

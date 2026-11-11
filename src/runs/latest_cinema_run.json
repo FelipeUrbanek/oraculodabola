@@ -1,12 +1,12 @@
 {
-  "timestamp": "2026-11-09T22:01:11.450Z",
+  "timestamp": "2026-11-11T01:04:47.742Z",
   "status": "COMPLETED_WITHOUT_POSTS",
   "postsPlanned": 1,
-  "candidatesFound": 10,
+  "candidatesFound": 7,
   "successfulPosts": [],
   "failedPosts": [
     {
-      "title": "'Meu Deus, você está fedendo': em 2009, Brad Pitt não aguentava o mau odor de um ator de 'Bastardos Inglórios' e deu uma dica a ele",
+      "title": "James Gunn trabalhava em 'Superman 3' antes de ser demitido da DC, diz revista",
       "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
     }
   ]

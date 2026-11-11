@@ -1,0 +1,49 @@
+{
+  "timestamp": "2026-11-11T01:04:24.939Z",
+  "status": "COMPLETED",
+  "postsPlanned": 1,
+  "candidatesFound": 12,
+  "successfulPosts": [],
+  "failedPosts": [
+    {
+      "category": "Santos",
+      "title": "Rival do Santos entra na Justiça e cobra valor milionário",
+      "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+    },
+    {
+      "category": "Santos",
+      "title": "Paulistão 2027: veja confrontos da primeira fase e novidades",
+      "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+    },
+    {
+      "category": "Santos",
+      "title": "Esquecido no banco de reservas do Santos, Miguelito é convocado para a Seleção Boliviana",
+      "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+    },
+    {
+      "category": "Santos",
+      "title": "Presa por morte de pai de Rony diz que não se arrepende do crime",
+      "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+    },
+    {
+      "category": "Santos",
+      "title": "Clube europeu prepara oferta por joia da base, e São Paulo avalia venda",
+      "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+    },
+    {
+      "category": "Santos",
+      "title": "Gabigol coloca Libertadores como condição para seguir no Santos",
+      "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+    },
+    {
+      "category": "Santos",
+      "title": "Gabigol define prioridade e pode deixar o Santos",
+      "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+    },
+    {
+      "category": "Santos",
+      "title": "Santos prepara retorno de Escobar e Arão e pode ganhar reforços na reta final",
+      "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+    }
+  ]
+}
