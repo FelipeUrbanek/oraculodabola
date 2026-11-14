@@ -1,48 +1,43 @@
 {
-  "timestamp": "2026-11-11T01:04:24.939Z",
+  "timestamp": "2026-11-14T01:19:21.343Z",
   "status": "COMPLETED",
   "postsPlanned": 1,
-  "candidatesFound": 12,
+  "candidatesFound": 10,
   "successfulPosts": [],
   "failedPosts": [
     {
       "category": "Santos",
-      "title": "Rival do Santos entra na Justiça e cobra valor milionário",
+      "title": "Vice-presidente de clube uruguaio critica Santos e Botafogo, mas elogia Fluminense; entenda",
       "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
     },
     {
       "category": "Santos",
-      "title": "Paulistão 2027: veja confrontos da primeira fase e novidades",
+      "title": "Rony tem data marcada para retorno ao Santos",
       "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
     },
     {
       "category": "Santos",
-      "title": "Esquecido no banco de reservas do Santos, Miguelito é convocado para a Seleção Boliviana",
+      "title": "Ex-Santos disputa prêmio de melhor jogador com Messi",
       "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
     },
     {
       "category": "Santos",
-      "title": "Presa por morte de pai de Rony diz que não se arrepende do crime",
+      "title": "Recuperado de lesão, ele deve voltar ao time titular do Santos",
       "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
     },
     {
       "category": "Santos",
-      "title": "Clube europeu prepara oferta por joia da base, e São Paulo avalia venda",
+      "title": "VP do Nacional-URU cobra times brasileiros por contratações não pagas",
       "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
     },
     {
       "category": "Santos",
-      "title": "Gabigol coloca Libertadores como condição para seguir no Santos",
+      "title": "Santos avalia Canindé para o Paulistão, mas Morumbi segue favorito",
       "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
     },
     {
       "category": "Santos",
-      "title": "Gabigol define prioridade e pode deixar o Santos",
-      "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
-    },
-    {
-      "category": "Santos",
-      "title": "Santos prepara retorno de Escobar e Arão e pode ganhar reforços na reta final",
+      "title": "Arthur Melo: Renato Portaluppi entra no circuito para convencer o jogador a voltar para o Grêmio",
       "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
     }
   ]

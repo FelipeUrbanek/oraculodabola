@@ -7953,5 +7953,77 @@
     "category": "Filmes",
     "status": "FAILED",
     "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-11-14T01:19:40.765Z",
+    "headline": "Vice-presidente de clube uruguaio critica Santos e Botafogo, mas elogia Fluminense; entenda",
+    "source_url": "https://www.terra.com.br/esportes/vice-presidente-de-clube-uruguaio-critica-santos-e-botafogo-mas-elogia-fluminense-entenda,f59f5e45ca1194df16622b98e493e72cdyipryed.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-11-14T01:19:40.878Z",
+    "headline": "Rony tem data marcada para retorno ao Santos",
+    "source_url": "https://www.terra.com.br/esportes/santos/rony-tem-data-marcada-para-retorno-ao-santos,b12dd8852c30a460a84bc83e8bbff048kelizufe.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-11-14T01:19:41.037Z",
+    "headline": "Ex-Santos disputa prêmio de melhor jogador com Messi",
+    "source_url": "https://www.terra.com.br/esportes/santos/ex-santos-disputa-premio-de-melhor-jogador-com-messi,7969c50b5c8aad2085edf91f8c51f657srdsjlo2.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-11-14T01:19:41.175Z",
+    "headline": "Recuperado de lesão, ele deve voltar ao time titular do Santos",
+    "source_url": "https://www.terra.com.br/esportes/santos/recuperado-de-lesao-ele-deve-voltar-ao-time-titular-do-santos,b5d3ce2638fcb22900ee1766d67960135rp674td.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-11-14T01:19:41.310Z",
+    "headline": "VP do Nacional-URU cobra times brasileiros por contratações não pagas",
+    "source_url": "https://www.terra.com.br/esportes/futebol/internacional/vp-do-nacional-uru-cobra-times-brasileiros-por-contratacoes-nao-pagas,f46bf12aef9a31ec1ea2f4b98cce0fc443ni0mcb.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-11-14T01:19:41.458Z",
+    "headline": "Santos avalia Canindé para o Paulistão, mas Morumbi segue favorito",
+    "source_url": "https://www.terra.com.br/esportes/santos/santos-avalia-caninde-para-o-paulistao-mas-morumbi-segue-favorito,48be1bb4a5bf96a7eb8e343039cc8853k2mytyaf.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-11-14T01:19:41.575Z",
+    "headline": "Arthur Melo: Renato Portaluppi entra no circuito para convencer o jogador a voltar para o Grêmio",
+    "source_url": "https://www.terra.com.br/esportes/santos/arthur-melo-renato-portaluppi-entra-no-circuito-para-convencer-o-jogador-a-voltar-para-o-gremio,0fb13241c24305e0047f06d78424fd72kwjz98f0.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-11-14T01:20:21.260Z",
+    "headline": "'Não concordamos em muitas coisas, mas ele me parece um dos atores mais profissionais com quem já trabalhei': em 1973, Kirk Douglas deu um sincero e...",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/filmes/nao-concordamos-em-muitas-coisas-mas-ele-me-parece-um-dos-atores-mais-profissionais-com-quem-ja-trabalhei-em-1973-kirk-douglas-deu-um-sincero-elogio-ao-icone-dos-faroeste-john-wayne,3562d8e42c42d14066550f9719d5486ffkj4xqts.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Filmes",
+    "status": "FAILED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
   }
 ]

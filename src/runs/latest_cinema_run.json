@@ -1,12 +1,12 @@
 {
-  "timestamp": "2026-11-11T01:04:47.742Z",
+  "timestamp": "2026-11-14T01:19:45.206Z",
   "status": "COMPLETED_WITHOUT_POSTS",
   "postsPlanned": 1,
-  "candidatesFound": 7,
+  "candidatesFound": 11,
   "successfulPosts": [],
   "failedPosts": [
     {
-      "title": "James Gunn trabalhava em 'Superman 3' antes de ser demitido da DC, diz revista",
+      "title": "'Não concordamos em muitas coisas, mas ele me parece um dos atores mais profissionais com quem já trabalhei': em 1973, Kirk Douglas deu um sincero e...",
       "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
     }
   ]
