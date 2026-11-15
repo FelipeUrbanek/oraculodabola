@@ -1,0 +1,24 @@
+{
+  "timestamp": "2026-11-15T00:49:40.071Z",
+  "status": "COMPLETED",
+  "postsPlanned": 1,
+  "candidatesFound": 7,
+  "successfulPosts": [],
+  "failedPosts": [
+    {
+      "category": "Santos",
+      "title": "Santos e Botafogo são alfinetados por vice-presidente; Fluminense recebe elogios",
+      "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+    },
+    {
+      "category": "Santos",
+      "title": "Santos é condenado a pagar quase R$ 30 milhões a Tiquinho Soares",
+      "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+    },
+    {
+      "category": "Santos",
+      "title": "Flamengo lidera ranking de renda líquida do Brasileirão; veja os outros",
+      "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+    }
+  ]
+}

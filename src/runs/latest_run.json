@@ -1,43 +1,23 @@
 {
-  "timestamp": "2026-11-14T01:19:21.343Z",
+  "timestamp": "2026-11-15T00:49:40.071Z",
   "status": "COMPLETED",
   "postsPlanned": 1,
-  "candidatesFound": 10,
+  "candidatesFound": 7,
   "successfulPosts": [],
   "failedPosts": [
     {
       "category": "Santos",
-      "title": "Vice-presidente de clube uruguaio critica Santos e Botafogo, mas elogia Fluminense; entenda",
+      "title": "Santos e Botafogo são alfinetados por vice-presidente; Fluminense recebe elogios",
       "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
     },
     {
       "category": "Santos",
-      "title": "Rony tem data marcada para retorno ao Santos",
+      "title": "Santos é condenado a pagar quase R$ 30 milhões a Tiquinho Soares",
       "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
     },
     {
       "category": "Santos",
-      "title": "Ex-Santos disputa prêmio de melhor jogador com Messi",
-      "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
-    },
-    {
-      "category": "Santos",
-      "title": "Recuperado de lesão, ele deve voltar ao time titular do Santos",
-      "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
-    },
-    {
-      "category": "Santos",
-      "title": "VP do Nacional-URU cobra times brasileiros por contratações não pagas",
-      "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
-    },
-    {
-      "category": "Santos",
-      "title": "Santos avalia Canindé para o Paulistão, mas Morumbi segue favorito",
-      "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
-    },
-    {
-      "category": "Santos",
-      "title": "Arthur Melo: Renato Portaluppi entra no circuito para convencer o jogador a voltar para o Grêmio",
+      "title": "Flamengo lidera ranking de renda líquida do Brasileirão; veja os outros",
       "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
     }
   ]

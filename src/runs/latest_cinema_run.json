@@ -1,12 +1,12 @@
 {
-  "timestamp": "2026-11-14T01:19:45.206Z",
+  "timestamp": "2026-11-15T00:49:59.415Z",
   "status": "COMPLETED_WITHOUT_POSTS",
   "postsPlanned": 1,
   "candidatesFound": 11,
   "successfulPosts": [],
   "failedPosts": [
     {
-      "title": "'Não concordamos em muitas coisas, mas ele me parece um dos atores mais profissionais com quem já trabalhei': em 1973, Kirk Douglas deu um sincero e...",
+      "title": "De casamento conturbado com Fergie à vida longe dos holofotes: aos 54 anos, Josh Duhamel troca Hollywood por refúgio na floresta e surpreende com so...",
       "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
     }
   ]

@@ -8025,5 +8025,41 @@
     "category": "Filmes",
     "status": "FAILED",
     "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-11-15T00:49:55.244Z",
+    "headline": "Santos e Botafogo são alfinetados por vice-presidente; Fluminense recebe elogios",
+    "source_url": "https://www.terra.com.br/esportes/santos/santos-e-botafogo-sao-alfinetados-por-vice-presidente-fluminense-recebe-elogios,458ada817a0b2329c2e82ec1abbc9b0abz9rgbbx.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-11-15T00:49:55.362Z",
+    "headline": "Santos é condenado a pagar quase R$ 30 milhões a Tiquinho Soares",
+    "source_url": "https://www.terra.com.br/esportes/santos/santos-e-condenado-a-pagar-quase-r-30-milhoes-a-tiquinho-soares,596453701f8410385d04d6483b2566efedrcmlpf.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-11-15T00:49:55.480Z",
+    "headline": "Flamengo lidera ranking de renda líquida do Brasileirão; veja os outros",
+    "source_url": "https://www.terra.com.br/esportes/futebol/flamengo-lidera-ranking-de-renda-liquida-do-brasileirao-veja-os-outros,8eaa284633b5d9f1a74f4da76e3357e58077vly7.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-11-15T00:50:24.574Z",
+    "headline": "De casamento conturbado com Fergie à vida longe dos holofotes: aos 54 anos, Josh Duhamel troca Hollywood por refúgio na floresta e surpreende com so...",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/filmes/de-casamento-conturbado-com-fergie-a-vida-longe-dos-holofotes-aos-54-anos-josh-duhamel-troca-hollywood-por-refugio-na-floresta-e-surpreende-com-sonho-de-carreira-longe-do-cinema,ddb9aeefa94ced2db2450957a2228e0af0xpkwza.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Filmes",
+    "status": "FAILED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
   }
 ]
