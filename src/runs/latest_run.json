@@ -1,13 +1,18 @@
 {
-  "timestamp": "2026-11-16T00:48:08.683Z",
+  "timestamp": "2026-11-16T21:43:42.428Z",
   "status": "COMPLETED",
   "postsPlanned": 1,
-  "candidatesFound": 7,
+  "candidatesFound": 6,
   "successfulPosts": [],
   "failedPosts": [
     {
       "category": "Santos",
-      "title": "Santos é condenado na justiça e terá de pagar fortuna a ex-atacante",
+      "title": "Santos avalia estratégia para contratar Rodrygo, do Real Madrid, revela jornal",
+      "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+    },
+    {
+      "category": "Santos",
+      "title": "River Plate pode negociar zagueiro com o Santos em 2027, aponta portal argentino",
       "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
     }
   ]

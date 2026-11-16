@@ -1,12 +1,12 @@
 {
-  "timestamp": "2026-11-16T00:48:28.504Z",
+  "timestamp": "2026-11-16T21:44:00.816Z",
   "status": "COMPLETED_WITHOUT_POSTS",
   "postsPlanned": 1,
-  "candidatesFound": 3,
+  "candidatesFound": 7,
   "successfulPosts": [],
   "failedPosts": [
     {
-      "title": "'O Senhor dos Anéis', 'Obsessão', Suzane von Richthofen e mais estreias da semana no streaming",
+      "title": "007: veja as primeiras imagens de Robert Pattinson como o novo James Bond",
       "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
     }
   ]

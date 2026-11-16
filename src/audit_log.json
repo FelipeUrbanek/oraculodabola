@@ -8079,5 +8079,32 @@
     "category": "Séries",
     "status": "FAILED",
     "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-11-16T21:43:56.616Z",
+    "headline": "Santos avalia estratégia para contratar Rodrygo, do Real Madrid, revela jornal",
+    "source_url": "https://www.terra.com.br/esportes/santos/santos-avalia-estrategia-para-contratar-rodrygo-do-real-madrid-revela-jornal,285958e6e1c11529fe5fb944b73b9b38fgjwukhs.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-11-16T21:43:56.709Z",
+    "headline": "River Plate pode negociar zagueiro com o Santos em 2027, aponta portal argentino",
+    "source_url": "https://www.terra.com.br/esportes/santos/river-plate-pode-negociar-zagueiro-com-o-santos-em-2027-aponta-portal-argentino,80d5821dd5772bbca062c7f9ca5104e8g5n8vt0a.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-11-16T21:45:09.994Z",
+    "headline": "007: veja as primeiras imagens de Robert Pattinson como o novo James Bond",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/filmes/007-veja-as-primeiras-imagens-de-robert-pattinson-como-o-novo-james-bond,a36dc3d8f196451e2dcd7090154e4e824ygqmq2f.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Filmes",
+    "status": "FAILED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
   }
 ]
