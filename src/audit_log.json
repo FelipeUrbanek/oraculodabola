@@ -8061,5 +8061,23 @@
     "category": "Filmes",
     "status": "FAILED",
     "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-11-16T00:48:25.004Z",
+    "headline": "Santos é condenado na justiça e terá de pagar fortuna a ex-atacante",
+    "source_url": "https://www.terra.com.br/esportes/santos/santos-e-condenado-na-justica-e-tera-de-pagar-fortuna-a-ex-atacante,54c889f62b1fa12aeb0ec65b723e69b94ejzw83n.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-11-16T00:49:19.601Z",
+    "headline": "'O Senhor dos Anéis', 'Obsessão', Suzane von Richthofen e mais estreias da semana no streaming",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/series/o-senhor-dos-aneis-obsessao-suzane-von-richthofen-e-mais-estreias-da-semana-no-streaming,2b67de56154a414647b420c585ed18faulab2nuz.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Séries",
+    "status": "FAILED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
   }
 ]

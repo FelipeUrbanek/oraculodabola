@@ -1,0 +1,14 @@
+{
+  "timestamp": "2026-11-16T00:48:08.683Z",
+  "status": "COMPLETED",
+  "postsPlanned": 1,
+  "candidatesFound": 7,
+  "successfulPosts": [],
+  "failedPosts": [
+    {
+      "category": "Santos",
+      "title": "Santos é condenado na justiça e terá de pagar fortuna a ex-atacante",
+      "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+    }
+  ]
+}

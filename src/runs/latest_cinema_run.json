@@ -1,12 +1,12 @@
 {
-  "timestamp": "2026-11-15T00:49:59.415Z",
+  "timestamp": "2026-11-16T00:48:28.504Z",
   "status": "COMPLETED_WITHOUT_POSTS",
   "postsPlanned": 1,
-  "candidatesFound": 11,
+  "candidatesFound": 3,
   "successfulPosts": [],
   "failedPosts": [
     {
-      "title": "De casamento conturbado com Fergie à vida longe dos holofotes: aos 54 anos, Josh Duhamel troca Hollywood por refúgio na floresta e surpreende com so...",
+      "title": "'O Senhor dos Anéis', 'Obsessão', Suzane von Richthofen e mais estreias da semana no streaming",
       "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
     }
   ]
