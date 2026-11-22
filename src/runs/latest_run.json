@@ -1,18 +1,18 @@
 {
-  "timestamp": "2026-11-16T21:43:42.428Z",
+  "timestamp": "2026-11-22T01:00:08.852Z",
   "status": "COMPLETED",
   "postsPlanned": 1,
-  "candidatesFound": 6,
+  "candidatesFound": 4,
   "successfulPosts": [],
   "failedPosts": [
     {
       "category": "Santos",
-      "title": "Santos avalia estratégia para contratar Rodrygo, do Real Madrid, revela jornal",
+      "title": "Gabigol leva esporro de sua namorada e vídeo viraliza",
       "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
     },
     {
       "category": "Santos",
-      "title": "River Plate pode negociar zagueiro com o Santos em 2027, aponta portal argentino",
+      "title": "Real Madrid pode frustrar planos do Santos para 2027",
       "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
     }
   ]

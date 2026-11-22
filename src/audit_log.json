@@ -8106,5 +8106,32 @@
     "category": "Filmes",
     "status": "FAILED",
     "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-11-22T01:00:22.687Z",
+    "headline": "Gabigol leva esporro de sua namorada e vídeo viraliza",
+    "source_url": "https://www.terra.com.br/esportes/santos/gabigol-leva-esporro-de-sua-namorada-e-video-viraliza,00ef02c98e7bd45b248c6e7fde3360fepo22y59l.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-11-22T01:00:22.753Z",
+    "headline": "Real Madrid pode frustrar planos do Santos para 2027",
+    "source_url": "https://www.terra.com.br/esportes/santos/real-madrid-pode-frustrar-planos-do-santos-para-2027,0294ad90d902478b697f030d554053cfwdap9iil.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-11-22T01:01:09.511Z",
+    "headline": "Trauma real de cineasta americana filha de brasileiro vira o premiado 'Josephine'; leia entrevista",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/filmes/trauma-real-de-cineasta-americana-filha-de-brasileiro-vira-o-premiado-josephine-leia-entrevista,e190ff62e2514eed328e668b5082caea1v5hbtzp.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Filmes",
+    "status": "FAILED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
   }
 ]
