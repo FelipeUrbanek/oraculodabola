@@ -8133,5 +8133,32 @@
     "category": "Filmes",
     "status": "FAILED",
     "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-11-23T01:26:44.865Z",
+    "headline": "Santos: após interesse do Grêmio, Arthur define prioridade para 2027",
+    "source_url": "https://www.terra.com.br/esportes/santos/santos-apos-interesse-do-gremio-arthur-define-prioridade-para-2027,538dc5c4edc43b8f1d209398c7d9ae9d6avx4vgc.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-11-23T01:26:45.026Z",
+    "headline": "Santos soma bom retrospecto fora de casa no returno do Brasileirão",
+    "source_url": "https://www.terra.com.br/esportes/santos/santos-soma-bom-retrospecto-fora-de-casa-no-returno-do-brasileirao,e1248a7e9b69331fe6e38dd15c88b321bmk8p53x.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-11-23T01:29:16.099Z",
+    "headline": "Trauma real de cineasta americana filha de brasileiro vira o premiado 'Josephine'; leia entrevista",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/filmes/trauma-real-de-cineasta-americana-filha-de-brasileiro-vira-o-premiado-josephine-leia-entrevista,e190ff62e2514eed328e668b5082caea1v5hbtzp.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Filmes",
+    "status": "FAILED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
   }
 ]

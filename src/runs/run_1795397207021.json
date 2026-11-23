@@ -1,0 +1,19 @@
+{
+  "timestamp": "2026-11-23T01:26:30.757Z",
+  "status": "COMPLETED",
+  "postsPlanned": 1,
+  "candidatesFound": 5,
+  "successfulPosts": [],
+  "failedPosts": [
+    {
+      "category": "Santos",
+      "title": "Santos: após interesse do Grêmio, Arthur define prioridade para 2027",
+      "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+    },
+    {
+      "category": "Santos",
+      "title": "Santos soma bom retrospecto fora de casa no returno do Brasileirão",
+      "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+    }
+  ]
+}

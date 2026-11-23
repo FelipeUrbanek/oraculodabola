@@ -1,18 +1,18 @@
 {
-  "timestamp": "2026-11-22T01:00:08.852Z",
+  "timestamp": "2026-11-23T01:26:30.757Z",
   "status": "COMPLETED",
   "postsPlanned": 1,
-  "candidatesFound": 4,
+  "candidatesFound": 5,
   "successfulPosts": [],
   "failedPosts": [
     {
       "category": "Santos",
-      "title": "Gabigol leva esporro de sua namorada e vídeo viraliza",
+      "title": "Santos: após interesse do Grêmio, Arthur define prioridade para 2027",
       "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
     },
     {
       "category": "Santos",
-      "title": "Real Madrid pode frustrar planos do Santos para 2027",
+      "title": "Santos soma bom retrospecto fora de casa no returno do Brasileirão",
       "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
     }
   ]
