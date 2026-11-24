@@ -8160,5 +8160,32 @@
     "category": "Filmes",
     "status": "FAILED",
     "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-11-24T22:00:12.630Z",
+    "headline": "Santos esquece Cebolinha no Morumbis após derrota para o Grêmio",
+    "source_url": "https://www.terra.com.br/esportes/santos/santos-esquece-cebolinha-no-morumbis-apos-derrota-para-o-gremio,6cb442b4930fabbf31bc16ab6a2ea3cfk4gytdjo.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-11-24T22:00:12.867Z",
+    "headline": "Pumas do México monitora Cuca e pode fazer proposta",
+    "source_url": "https://www.terra.com.br/esportes/santos/pumas-do-mexico-monitora-cuca-e-pode-fazer-proposta,cb354c343b96499bf7f613b941e4014crwcr5smk.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-11-24T22:00:47.923Z",
+    "headline": "Série 'Ted Lasso' é renovada para 5ª temporada",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/series/serie-ted-lasso-e-renovada-para-5-temporada,c36e56a32b6bd0dd4ec626dcec9c8fdeel2frix9.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Séries",
+    "status": "FAILED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
   }
 ]

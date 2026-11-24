@@ -1,18 +1,18 @@
 {
-  "timestamp": "2026-11-23T01:26:30.757Z",
+  "timestamp": "2026-11-24T21:59:54.020Z",
   "status": "COMPLETED",
   "postsPlanned": 1,
-  "candidatesFound": 5,
+  "candidatesFound": 12,
   "successfulPosts": [],
   "failedPosts": [
     {
       "category": "Santos",
-      "title": "Santos: após interesse do Grêmio, Arthur define prioridade para 2027",
+      "title": "Santos esquece Cebolinha no Morumbis após derrota para o Grêmio",
       "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
     },
     {
       "category": "Santos",
-      "title": "Santos soma bom retrospecto fora de casa no returno do Brasileirão",
+      "title": "Pumas do México monitora Cuca e pode fazer proposta",
       "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
     }
   ]
