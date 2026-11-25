@@ -1,0 +1,24 @@
+{
+  "timestamp": "2026-11-25T21:12:47.406Z",
+  "status": "COMPLETED",
+  "postsPlanned": 1,
+  "candidatesFound": 10,
+  "successfulPosts": [],
+  "failedPosts": [
+    {
+      "category": "Santos",
+      "title": "Cabelos pintados e 'oba-oba' de jogadores do Santos foram assunto no vestiário do Grêmio",
+      "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+    },
+    {
+      "category": "Santos",
+      "title": "Vila terá restrições e preocupa Santos para último jogo do ano",
+      "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+    },
+    {
+      "category": "Santos",
+      "title": "Santos desmente ter esquecido Everton Cebolinha no Morumbis",
+      "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+    }
+  ]
+}

@@ -1,12 +1,12 @@
 {
-  "timestamp": "2026-11-24T22:00:15.874Z",
+  "timestamp": "2026-11-25T21:13:05.625Z",
   "status": "COMPLETED_WITHOUT_POSTS",
   "postsPlanned": 1,
-  "candidatesFound": 6,
+  "candidatesFound": 2,
   "successfulPosts": [],
   "failedPosts": [
     {
-      "title": "Série 'Ted Lasso' é renovada para 5ª temporada",
+      "title": "Visitamos o set da nova série de 'Harry Potter' em Londres; veja o que esperar da adaptação",
       "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
     }
   ]

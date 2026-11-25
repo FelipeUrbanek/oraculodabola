@@ -1,18 +1,23 @@
 {
-  "timestamp": "2026-11-24T21:59:54.020Z",
+  "timestamp": "2026-11-25T21:12:47.406Z",
   "status": "COMPLETED",
   "postsPlanned": 1,
-  "candidatesFound": 12,
+  "candidatesFound": 10,
   "successfulPosts": [],
   "failedPosts": [
     {
       "category": "Santos",
-      "title": "Santos esquece Cebolinha no Morumbis após derrota para o Grêmio",
+      "title": "Cabelos pintados e 'oba-oba' de jogadores do Santos foram assunto no vestiário do Grêmio",
       "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
     },
     {
       "category": "Santos",
-      "title": "Pumas do México monitora Cuca e pode fazer proposta",
+      "title": "Vila terá restrições e preocupa Santos para último jogo do ano",
+      "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+    },
+    {
+      "category": "Santos",
+      "title": "Santos desmente ter esquecido Everton Cebolinha no Morumbis",
       "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
     }
   ]

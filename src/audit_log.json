@@ -8187,5 +8187,41 @@
     "category": "Séries",
     "status": "FAILED",
     "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-11-25T21:13:02.594Z",
+    "headline": "Cabelos pintados e 'oba-oba' de jogadores do Santos foram assunto no vestiário do Grêmio",
+    "source_url": "https://www.terra.com.br/esportes/gremio/cabelos-pintados-e-oba-oba-de-jogadores-do-santos-foram-assunto-no-vestiario-do-gremio,36acc84aba943766551488032ceed5106it0lh6g.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-11-25T21:13:02.696Z",
+    "headline": "Vila terá restrições e preocupa Santos para último jogo do ano",
+    "source_url": "https://www.terra.com.br/esportes/santos/vila-tera-restricoes-e-preocupa-santos-para-ultimo-jogo-do-ano,41740bca73636c3bae5505f94df06c3cv273cn7q.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-11-25T21:13:02.810Z",
+    "headline": "Santos desmente ter esquecido Everton Cebolinha no Morumbis",
+    "source_url": "https://www.terra.com.br/esportes/santos/santos-desmente-ter-esquecido-everton-cebolinha-no-morumbis,4f87a3ac0f2938da6980f95ae243e1739pee9a5m.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-11-25T21:14:32.683Z",
+    "headline": "Visitamos o set da nova série de 'Harry Potter' em Londres; veja o que esperar da adaptação",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/series/visitamos-o-set-da-nova-serie-de-harry-potter-em-londres-veja-o-que-esperar-da-adaptacao,4794f6c42cba825728f26c15b7360c70gk0ttbkl.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Séries",
+    "status": "FAILED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
   }
 ]
