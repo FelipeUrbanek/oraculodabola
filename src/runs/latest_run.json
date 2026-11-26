@@ -1,23 +1,23 @@
 {
-  "timestamp": "2026-11-25T21:12:47.406Z",
+  "timestamp": "2026-11-26T21:01:59.118Z",
   "status": "COMPLETED",
   "postsPlanned": 1,
-  "candidatesFound": 10,
+  "candidatesFound": 11,
   "successfulPosts": [],
   "failedPosts": [
     {
       "category": "Santos",
-      "title": "Cabelos pintados e 'oba-oba' de jogadores do Santos foram assunto no vestiário do Grêmio",
+      "title": "Meia perde espaço com Cuca no Santos e fica incomodado",
       "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
     },
     {
       "category": "Santos",
-      "title": "Vila terá restrições e preocupa Santos para último jogo do ano",
+      "title": "Com \"quinteto platinado\", falta de eficácia impede Santos de encostar no G6",
       "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
     },
     {
       "category": "Santos",
-      "title": "Santos desmente ter esquecido Everton Cebolinha no Morumbis",
+      "title": "Confira a pontuação de seu time no returno do Brasileirão",
       "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
     }
   ]

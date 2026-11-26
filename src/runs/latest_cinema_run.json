@@ -1,12 +1,12 @@
 {
-  "timestamp": "2026-11-25T21:13:05.625Z",
+  "timestamp": "2026-11-26T21:02:17.867Z",
   "status": "COMPLETED_WITHOUT_POSTS",
   "postsPlanned": 1,
-  "candidatesFound": 2,
+  "candidatesFound": 3,
   "successfulPosts": [],
   "failedPosts": [
     {
-      "title": "Visitamos o set da nova série de 'Harry Potter' em Londres; veja o que esperar da adaptação",
+      "title": "Gérard Depardieu será julgado por estupro após pedido de apelação ser negado",
       "error": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
     }
   ]

@@ -8223,5 +8223,41 @@
     "category": "Séries",
     "status": "FAILED",
     "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-11-26T21:02:12.831Z",
+    "headline": "Meia perde espaço com Cuca no Santos e fica incomodado",
+    "source_url": "https://www.terra.com.br/esportes/santos/meia-perde-espaco-com-cuca-no-santos-e-fica-incomodado,2641613e30ba39ef14387041eb81f09615n9uccp.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-11-26T21:02:12.884Z",
+    "headline": "Com \"quinteto platinado\", falta de eficácia impede Santos de encostar no G6",
+    "source_url": "https://www.terra.com.br/esportes/santos/com-quinteto-platinado-falta-de-eficacia-impede-santos-de-encostar-no-g6,3e560f30a920a957ad745fff82cf170fge7e18y3.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-11-26T21:02:12.944Z",
+    "headline": "Confira a pontuação de seu time no returno do Brasileirão",
+    "source_url": "https://www.terra.com.br/esportes/atletico-mg/confira-a-pontuacao-de-seu-time-no-returno-do-brasileirao,73f2c5f4bd195cc5efa39f353cdd34852so3w5ma.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Santos",
+    "status": "REJECTED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
+  },
+  {
+    "timestamp": "2026-11-26T21:02:48.622Z",
+    "headline": "Gérard Depardieu será julgado por estupro após pedido de apelação ser negado",
+    "source_url": "https://www.terra.com.br/diversao/entre-telas/filmes/gerard-depardieu-sera-julgado-por-estupro-apos-pedido-de-apelacao-ser-negado,efd7221d8d652d2be3fd5284535a679a3gezt390.html",
+    "source_domain": "www.terra.com.br",
+    "category": "Filmes",
+    "status": "FAILED",
+    "reason": "❌ Falha crítica: Nenhum modelo (Gemini ou Groq) respondeu."
   }
 ]
